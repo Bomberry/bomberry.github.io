@@ -1,0 +1,692 @@
+/* CSS Document */
+$color-white: rgba(255,255,255,1.00)
+$color-gray-lightest: rgba(236,236,236,1.00)
+$color-gray-lighter: rgba(188,188,188,1.00)
+$color-gray-light: rgba(156,156,156,1.00)
+$color-gray: rgba(124,124,124,1.00)
+$color-gray-dark: rgba(48,48,48,1.00)
+$color-gray-darker: rgba(32,32,32,1.00)
+$color-gray-darkest: rgba(16,16,16,1.00)
+$color-black: rgba(0,0,0,1.00)
+
+$color-red: rgba(255,4,4,1.00)
+$color-orange: rgba(255,165,1,1.00)
+$color-yellow: rgba(255,255,1,1.00)
+$color-green: rgba(0,159,0,1.00)
+$color-blue: rgba(38,38,255,1.00)
+$color-purple: rgba(198,0,198,1.00)
+
+$color-site: $color-black
+$color-resume: $color-red
+$color-portfolio: $color-orange
+$color-kitchen: $color-yellow
+$color-1: $color-green
+$color-2: $color-blue
+$color-contact: $color-purple
+$color-adobe: rgba(14,132,207,1.00)
+
+
+$color-hibiscus: rgba(129,4,130,1.00)
+$color-cinnamon: rgba(86,47,5,1.00)
+$color-lemongrass: rgba(207,226,173,1.00)
+$color-mint: rgba(27,77,18,1.00)
+$color-ginger: rgba(234,228,165,1.00)
+$color-galangal: rgba(231,229,191,1.00)
+$color-greencardamon: rgba(189,212,126,1.00)
+$color-meyerlemon: rgba(250,234,79,1.00)
+$color-brownsugar: rgba(108,78,16,1.00)
+$color-chicory: rgba(25,16,0,1.00)
+$color-clove: rgba(52,32,16,1.00)
+$color-staranise: rgba(58,19,2,1.00)
+$color-coconut: rgba(245,238,225,1.00)
+$color-chilipepper: rgba(156,23,20,1.00)
+$color-blackpepper: rgba(20,18,17,1.00)
+
+
+$layout-breath-unit: 7vmin
+
+
+$map: (color-portfolio: $color-portfolio, color-resume: $color-resume, color-kitchen: $color-kitchen)
+
+
+$text-shadow-dark: 0px 3px 6px rgba($color-gray-darkest, 0.62)
+$text-shadow-light: 0px 3px 6px rgba($color-gray-lightest, 0.62)
+
+
+// HTML OVERIDES
+p
+  line-height: 1.4
+
+// BOOSTRAP OVERRIDES
+.navbar
+  border-radius: 0px
+  &.noMargin-bottom
+    margin-bottom: 0px
+  &-nav
+    margin-left: 0px
+    margin-right: 0px
+  > *[class*="location-"]
+    border-right: 0
+    padding-right: 0
+  &.location
+    &-site
+      border-bottom: .25em solid $color-site
+      color: $color-gray-light
+    &-resume
+      border-bottom: .25em solid $color-resume
+      color: $color-resume
+    &-portfolio
+      border-bottom: .25em solid $color-portfolio
+      color: $color-portfolio
+    &-kitchen
+      border-bottom: .25em solid $color-kitchen
+      color: $color-kitchen
+    &-1
+      border-bottom: .25em solid $color-1
+      color: $color-1
+    &-2
+      border-bottom: .25em solid $color-2
+      text-decoration: none
+      color: $color-2
+    &-contact
+      border-bottom: .25em solid $color-contact
+      color: $color-contact
+    &-adobe
+      border-bottom: .25em solid $color-adobe
+      color: $color-adobe
+  &.navbar-inverse
+    > .dropdown open
+      > ul.dropdown-menu
+        background-color: $color-gray-darkest
+        > li:hover
+          background-color: $color-gray-darker
+
+.dropdown-menu
+  background-color: $color-gray-darker
+  > li
+    > a
+      //color: $color-gray-light
+      background-color: $color-gray-darker
+      &:hover
+        //color: $color-black
+        background-color: $color-black
+      &:focus
+        //color: $color-portfolio
+        background-color: $color-gray-darker
+
+.navbar-brand
+  padding-left: 0
+  padding-right: 0
+  &.location
+    color: $color-gray-light
+    &-resume
+      color: $color-resume
+    &-portfolio
+      color: $color-portfolio
+    &-kitchen
+      color: $color-kitchen
+    &-1
+      color: $color-1
+    &-2
+      color: $color-2
+    &-contact
+      color: $color-contact
+    &-adobe
+      color: $color-adobe
+  &.site
+    padding-left: 0
+    color: $color-gray
+
+@media (max-width: 768px)
+  .nav > li > a
+    &.navbar-brand
+      padding-right: 0
+
+.background-color
+  &-www
+    background-color: $color-gray-light
+  &-resume
+    background-color: $color-resume
+  &-portfolio
+    background-color: $color-portfolio
+  &-kitchen
+    background-color: $color-kitchen
+  &-1
+    background-color: $color-1
+  &-2
+    background-color: $color-2
+  &-contact
+    background-color: $color-contact
+  &-adobe
+    background-color: $color-adobe
+  &-site
+    background-color: $color-gray
+
+
+//img[src*="Icon-Compass.svg"] path.icon-svg-compass
+  fill: $color-resume
+
+//.fx-shadow
+//  -webkit-box-shadow: inset 0px 2px 3px rgba(114,114,114,0.64), inset 0px 3px 6px rgba(114,114,114,0.52)
+//  box-shadow: inset 0px 2px 3px rgba(114,114,114,0.64), inset 0px 3px 6px rgba(114,114,114,0.52)
+//  -webkit-filter: brightness(97%)
+//  filter: brightness(97%)
+//  &:hover
+//    -webkit-box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+//    box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+//    -webkit-filter: brightness(100%)
+//    filter: brightness(100%)
+//    //-webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+//    //filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+
+@mixin fx-hover-shadow
+  -webkit-filter: brightness(40%)
+  filter: brightness(40%)
+  //-webkit-filter: drop-shadow(0px 2px 3px rgba(0,0,0,.64))
+  //filter: drop-shadow(0px 2px 3px rgba(0,0,0,.64))
+@mixin fx-hover-stroke
+  stroke: $color-site
+    width: 4px
+    //dasharray: 2,2
+    //dashoffset: 25%
+    linejoin: round
+
+svg
+  border: 0
+  vertical-align: middle
+  > .icon-svg-
+    &compass, &spatula, &pencil
+      fill: $color-site
+  &:hover .icon-svg-
+    &compass
+      fill: $color-resume
+      @include fx-hover-shadow
+      @include fx-hover-stroke
+    &spatula
+      fill: $color-kitchen
+      @include fx-hover-shadow
+      @include fx-hover-stroke
+    &pencil
+      fill: $color-portfolio
+      @include fx-hover-shadow
+      @include fx-hover-stroke
+
+
+.color,
+a.location
+  &-www
+    color: $color-gray-light !important
+  &-resume
+    color: $color-resume !important
+  &-portfolio
+    color: $color-portfolio !important
+  &-kitchen
+    color: $color-kitchen !important
+  &-1
+    color: $color-1 !important
+  &-2
+    color: $color-2 !important
+  &-contact
+    color: $color-contact !important
+  &-adobe
+    color: $color-adobe !important
+  &-site
+    color: $color-gray !important
+
+.full-carousel
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  //background-position: center
+  //background-size: cover
+  .row
+    margin: 0px
+    padding: 0px
+  .carousel
+    height: 100%
+  .carousel-indicators
+    > li
+      height: 1ch
+      width: 6ch
+      margin: 1px
+      background-color: $color-greencardamon
+      -webkit-border-radius: 1ch
+      border-radius: 1ch
+      &.active
+        background-color: transparent
+  .carousel-inner
+    height: 100%
+    > .item
+      > .img-responsive
+        -webkit-filter: brightness(62%)
+        filter: brightness(62%)
+  .carousel,.item,.active
+    height: 100%
+  > .item
+    img
+      background-position: center
+      background-size: cover
+  .carousel-caption
+    bottom: 10%
+    //top: 1ch
+    font-size: 8vmin
+    //font-size: 6ch
+    text-overflow: ellipsis
+    min-height: 20%
+    line-height: initial
+    span
+      display: block
+      font-size: 112%
+    p
+      font-size: 42%
+      color: white
+  .carousel-control
+    width: 12.5%
+    > .icon-next, .icon-prev
+      font-size: 7.75ch
+      top: 40%
+      position: absolute
+      
+
+@media (max-width: 598px)
+  .carousel-inner
+    .img-responsive
+      -webkit-filter: brightness(62%)
+      filter: brightness(62%)
+
+.media-object
+  img &
+    height: 75px
+    width: 75px
+    &.img-100
+      height: 100px
+      width: 100px
+img, svg
+  &.media-object
+    height: 75px
+    width: 75px
+  &.img-100
+    height: 100px
+    width: 100px
+img.thumbnail
+  + span.caption
+    display: block
+    position: relative
+    margin-top: -16px
+    margin-bottom: 16px
+@media (max-width: 1023px)
+  .media
+    .media-body
+      p
+        &:last-child
+          padding-bottom: 4ch
+//@media (min-width: 769) and (max-width: 1024px)
+//  .media
+//    .media-body
+//      p
+//        &:last-child
+//          padding-bottom: 4ch
+.caption
+  > .ingredients
+    color: $color-gray-light
+    span.title
+      font-weight: 600
+  > .col-xs-12
+    padding-bottom: 1ch
+      
+.item
+  > h4.item-name
+    margin: 10px 0 0 10px
+    position: absolute
+    display: inline-block
+  &:hover
+    outline: rgba(216,216,216,0.40) solid .25ch
+    background-color: rgba(216,216,216,0.10)
+    -webkit-box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+    box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+    h4.item-name
+      text-shadow: 0px 3px 6px rgba(114,114,114,0.52)
+
+.text-tall
+  line-height: 140%
+
+.breath
+  &-top
+    margin-top: $layout-breath-unit
+  &-bottom
+    margin-bottom: $layout-breath-unit
+  &-left
+    margin-left: $layout-breath-unit
+  &-right
+    margin-right: $layout-breath-unit
+  &-h
+    margin-left: $layout-breath-unit
+    margin-right: $layout-breath-unit
+  &-v
+    margin-top: $layout-breath-unit
+    margin-bottom: $layout-breath-unit
+  &-all
+    margin: $layout-breath-unit
+  &-none
+    margin: 0
+
+.icon.glyphicon
+  height: 48px
+  width: 48px
+  min-height: 48px
+  min-width: 48px
+  font-size: 6ch
+  padding-right: 1.5ch
+  &.icon-large
+    height: 72px
+    width: 72px
+    min-height: 48px
+    min-width: 48px
+    font-size: 8ch
+    padding-right: 2ch
+  &[data-item-name="hibiscus"]
+    color: $color-hibiscus
+  &[data-item-name="cinnamon"]
+    color: $color-cinnamon
+  &[data-item-name="lemongrass"]
+    color: $color-lemongrass
+  &[data-item-name="mint"]
+    color: $color-mint
+  &[data-item-name="ginger"]
+    color: $color-ginger
+  &[data-item-name="galangal"]
+    color: $color-galangal
+  &[data-item-name="greencardamon"]
+    color: $color-greencardamon
+  &[data-item-name="meyerlemon"]
+    color: $color-meyerlemon
+  &[data-item-name="brownsugar"]
+    color: $color-brownsugar
+  &[data-item-name="chicory"]
+    color: $color-chicory
+  &[data-item-name="clove"]
+    color: $color-clove
+  &[data-item-name="staranise"]
+    color: $color-staranise
+  &[data-item-name="coconut"]
+    color: $color-coconut
+  &[data-item-name="chilipepper"]
+    color: $color-chilipepper
+  &[data-item-name="blackpepper"]
+    color: $color-blackpepper
+
+#area-resume
+  section
+    div.container
+      article
+        div.row.link-portfolio
+          padding-bottom: 1.5ch
+          &-hide-show
+            display: none
+          .btn-default
+            //color: $color-gray-lighter
+            //background-color: $color-white
+            &:hover
+              color: $color-white
+              background-color: $color-resume
+        div.col-show-col
+          display: none
+        &:hover
+          background-color: rgba(216,216,216,0.10)
+          div.row.link-portfolio
+            display: block
+            &-hide-show
+              display: block
+          .btn-default
+            color: $color-gray-darker
+            background-color: $color-gray-lightest
+          div.col-show-col
+            display: block
+        
+#area-kitchen
+  .btn.btn-primary
+    margin-bottom: 10px
+    color: $color-black
+    background-color: $color-kitchen
+    border-color: $color-gray-light
+    -webkit-box-shadow: inset 0px 2px 3px rgba(114,114,114,0.64), inset 0px 3px 6px rgba(114,114,114,0.52)
+    box-shadow: inset 0px 2px 3px rgba(114,114,114,0.64), inset 0px 3px 6px rgba(114,114,114,0.52)
+    -webkit-filter: brightness(97%)
+    filter: brightness(97%)
+    &:hover
+      outline: $color-gray
+      -webkit-filter: brightness(100%)
+      filter: brightness(100%)
+      -webkit-box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+      box-shadow: 0px 2px 3px rgba(114,114,114,0.64), 0px 3px 6px rgba(114,114,114,0.52)
+
+
+#area-casestudy, #area-portfolio
+  ul.nav.navbar-right
+    .dropdown-menu
+      background-color: $color-gray-darker
+      > li
+        > a
+          color: $color-gray-light
+          background-color: $color-gray-darker
+          &:hover
+            color: $color-black
+            background-color: $color-portfolio
+          &:focus
+            color: $color-portfolio
+            background-color: $color-gray-darker
+  .carousel-indicators
+    > li
+      height: 1ch
+      width: 6ch
+      margin: 1px
+      background-color: $color-portfolio
+      -webkit-border-radius: 1ch
+      border-radius: 1ch
+      &.active
+        background-color: transparent
+
+
+
+//.casestudy
+//  &.cs-light
+//    color: $color-gray-darkest
+//    background: $color-gray-lightest
+//  &.cs-dark
+//    color: $color-white
+//    background: $color-gray-darker
+
+section.casestudy
+  margin-top: 14vmin
+  margin-bottom: 14vmin
+  &.cs-light
+    color: $color-gray-darkest
+    background: $color-gray-lightest
+  &.cs-dark
+    color: $color-white
+    background: $color-gray-darker
+  > .container.gallery
+    text-aligh: center
+    .img-thumbnail
+      margin: 2ch 1ch
+      border-color: transparent
+      &:hover, &:focus, &.active
+        //border-color: $color-portfolio
+        border-color: transparent
+
+
+.thumbnail
+  display: block
+  padding: 4px
+  margin-bottom: 20px
+  line-height: 1.42857143
+  background-color: #fff
+  border: 1px solid #ddd
+  border-radius: 4px
+  -webkit-transition: border .2s ease-in-out
+  -o-transition: border .2s ease-in-out
+  transition: border .2s ease-in-out
+  > img, a > img
+  margin-right: auto
+  margin-left: auto
+  caption
+    padding: 9px
+    color: $color-gray-darkest
+
+a.thumbnail
+  &:hover, &:focus, &.active
+    border-color: $color-portfolio
+
+.background-shade
+  background-color: rgba($color-gray-darker, .6)
+
+
+.jumbotron
+  &-salts, &-syrups
+    background: $color-gray-lightest no-repeat scroll center
+    background-size: cover
+    > h1
+      color: $color-white
+      text-shadow: $text-shadow-dark
+  &-salts
+    background-image: url("../kitchen/assets/Hero-KevinsKitchen-Salts.png")
+  &-syrups
+    background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png")
+
+
+.jumbotron.casestudy
+  margin: 0
+  padding: 7vmin
+  min-height: 35vh
+  width: 100%
+  height: 100%
+  display: block
+  position: relative
+  z-index: 1
+  color: $color-gray-darkest
+  background-color: $color-white
+  //position: relative
+  &.cs-light
+    color: $color-gray-darkest
+    background: $color-gray-lightest
+  &.cs-dark
+    color: $color-white
+    background: $color-gray-darker
+  h1, h2, h3, h4, h5
+    color: $color-portfolio
+  > .container
+    //-webkit-filter: brightness(100%)
+    //filter: brightness(100%)
+    &.background-shade
+      background-color: rgba($color-gray-darker, .6)
+  &.cs-design
+    > .row
+      &.background
+        background: url("../images/Hero-KevinBomberry-WatchAndGearsIllustration.jpg") no-repeat scroll center
+        -webkit-filter: brightness(62%)
+        filter: brightness(62%)
+  &.cs-cooking
+    background: url("../images/Hero-KevinBomberry-Design.jpg") no-repeat scroll center
+  &.cs-felix
+    background: url("../portfolio/assets/felix/projectfelix-marquee-1200x550.png") no-repeat scroll center
+  &.cs-photoshopcom
+    background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center
+  &.cs-craftmaster
+    background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center
+  &.cs-cm-masterly
+    background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center
+
+
+.boxshadow
+  
+  &:hover
+    -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 1ch
+    -moz-box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+    box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+
+.label
+  &.tag, &.keyword, &.breadcrumb
+    padding: 1ch 2ch
+    margin-left: 1ch
+    margin-right: 1ch
+    display: inline-block
+    position: relative
+    border: 1px solid rgba(0,0,0,.3)
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+    &:hover
+      color: $color-gray-darkest
+      /* box-shadow */
+      -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 1ch
+      -moz-box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+      box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+  &.tag
+    /* border-radius */
+    -webkit-border-radius: 2ch
+    -moz-border-radius: 2ch
+    border-radius: 2ch
+  &.keyword
+    -webkit-border-radius: 0ch 2ch 2ch 0
+    -moz-border-radius: 0ch 2ch 2ch 0
+    border-radius: 0ch 2ch 2ch 0
+  &.breadcrumb
+    border-radius: 1ch
+
+/*    ANIMATIONS:   */
+
+
+/*    DROPDOWN ANIMATION    */
+//.dropdown .dropdown-menu
+//    display: block
+//    opacity: 0
+//
+//    -moz-transition:    all 1000ms ease
+//    -webkit-transition: all 1000ms ease
+//    -o-transition:      all 1000ms ease
+//    -ms-transition:     all 1000ms ease
+//    transition:         all 1000ms ease
+
+//.dropdown:hover .dropdown-menu 
+//    display: block
+//    opacity: 1
+
+/*    DROPDOWN ANIMATION - TO BE USED/FIXED FOR TOUCH/MOBILE    */
+//.dropdown .dropdown-menu 
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+
+  max-height: 0
+  display: block
+  overflow: hidden
+  opacity: 0
+
+//.dropdown:hover .dropdown-menu 
+  max-height: 200px
+  opacity: 1
+
+
+
+/*    HOVER ANIMATION - Center Out    */
+
+.underline-center-outward
+  display: inline-block
+  position: relative
+  padding-bottom: 1vmin
+  &:after
+    content: ''
+    display: block
+    margin: auto
+    height: .5vmin
+    width: 0px
+    background: transparent
+    transition: width 382ms ease-in-out, background-color 618ms ease-in-out
+  &:hover:after
+    width: 100%
+    background-color: $color-portfolio
+
