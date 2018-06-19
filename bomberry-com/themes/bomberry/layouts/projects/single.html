@@ -1,0 +1,13 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "bodystart" }}<body id="{{ .Params.title | urlize }}" class="">{{ end }}
+{{ define "main" }}
+  <h6> projects/single </h6>
+  {{/* <pre>
+  Params.location_name : {{ .Params.location_name}}
+  Kind : {{ .Kind }}
+  </pre> */}}
+
+  {{ partial "whatsthis.html" . }}
+
+  {{ .Content }}
+{{ end }}

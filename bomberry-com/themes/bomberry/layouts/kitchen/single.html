@@ -1,0 +1,12 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "bodystart" }}<body id="{{ .Params.title | urlize }}" class="">{{ end }}
+{{ define "main" }}
+<h6> kichen/single </h6>
+{{/* <pre>
+  params : {{ .Params.location_name}}
+</pre> */}}
+
+{{ partial "whatsthis.html" . }}
+
+  {{ .Content }}
+{{ end }}

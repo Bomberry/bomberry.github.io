@@ -1,0 +1,17 @@
+{{ partial "head.html" . }}
+
+{{ block "bodystart" . }}<body>{{ end }}
+
+{{ partial "navigation.html" . }}
+
+<h6> -default/baseof </h6>
+{{/* {{ partial "whatsthis.html" . }} */}}
+{{ block "main" . }}
+This is the baseof main content block.
+{{ end }}
+
+{{ partial "footer.html" . }}
+
+{{ block "bodyend" . }}</body>{{ end }}
+
+{{ partial "foot.html" . }}

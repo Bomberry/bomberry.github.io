@@ -1,0 +1,12 @@
+{{ range .tools }}
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+    <p class="lead">{{ .name }}</p>
+  </div>
+  <div class="col-md-5 col-md-offset-1">
+    <div class="progress">
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="{{ .value }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ .value }}%"></div>
+    </div>
+  </div>
+</div>
+{{ end }}

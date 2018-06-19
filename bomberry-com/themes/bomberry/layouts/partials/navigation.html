@@ -1,0 +1,92 @@
+<!-- Global Nav -->
+{{ $currentNode := . }}
+<nav class="navbar navbar-fixed-top navbar-inverse location-{{if .Params.location_name}}{{.Params.location_name}}{{else}}site{{end}} noMargin-bottom">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+<!--      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown"><a href="#" class="dropdown-toggle location-{{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}} navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret"></span> {{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}}.</a>
+          <ul class="dropdown-menu">
+            {{/* <li><a class="location-resume" href="/resume/" title="Learn about Kevin's work history.">resume</a></li> */}}
+            {{/* <li><a class="location-portfolio" href="/portfolio/" title="See some of Kevin's past works.">portfolio</a></li> */}}
+            {{/* <li><a class="location-kitchen" href="/kitchen/" title="Learn about Kevin's Kitchen.">kitchen</a></li> */}}
+<!--            <li><a class="location-1" href="/1/index.html" title="Learn about Kevin's Kitchen's Seasoning Salts.">Seasoning Salts</a></li>-->
+<!--            <li><a class="location-2" href="/2/index.html" title="Learn about Kevin's Kitchen's Superior Soups.">Superior Soups</a></li>-->
+<!--            <li><a class="location-contact" href="/contact/index.html">contact</a></li>-->
+<!--            <li role="separator" class="divider"></li>-->
+<!--            <li><a class="location-adobe" href="adobe/index.html" title="Look at some of Kevin's work with Adobe Systems.">adobe</a></li>-->
+            {{/* {{ $currentNode := . }} */}}
+            {{ range .Site.Menus.main }}
+            <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        <li><a class="location-site navbar-brand site" href="/" role="button" aria-expanded="false" aria-haspopup="false">bomberry.com</a></li>
+        {{/* <li>
+          .Parent: {{ .Parent }} |.Section: {{ .Section }} | .CurrentSection: {{ .CurrentSection }} | .Sections: {{ .Sections }} | .URL: {{ .URL}}
+        </li> */}}
+        {{/* <li>
+          {{ $currentPage := . }}
+          .Parent: {{ $currentPage.Parent }} |.Section: {{ $currentPage.Section }} | .CurrentSection: {{ $currentPage.CurrentSection }} | .Sections: {{ $currentPage.Sections }} | .URL: {{ $currentPage.URL}}
+        </li> */}}
+      </ul>
+<!--      <a class="navbar-brand location" href="#">www.</a><a class="navbar-brand site" href="#">bomberry.com</a> -->
+    </div>
+
+
+
+
+{{/* Secondary Navigation */}}
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="myInverseNavbar2">
+  <ul class="nav navbar-nav navbar-right">
+    {{ $location := .Params.location_name }}
+    {{/* {{ $hidden := .Site.Menus.main.hidden }} */}}
+    {{ if (not $location) }}
+      {{ range .Site.Menus.main }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }}<br/><span class="location-names">{{ .Name }}</span></a></li>
+      {{ end }}
+    {{ else if (eq $location "resume") }}
+      {{ range .Site.Menus.resume }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq $location "portfolio") }}
+      {{ range .Site.Menus.portfolio }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq $location "projects") }}
+      {{ range .Site.Menus.projects }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "projects" . }}active{{end}}{{if $currentNode.IsMenuCurrent "projects" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq $location "kitchen") }}
+      {{ range .Site.Menus.kitchen }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "kitchen" . }}active{{end}}{{if $currentNode.IsMenuCurrent "kitchen" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else }}
+      {{/* {{ range .Site.Menus.main }} */}}
+        {{/* {{ if (eq $hidden true) }} */}}
+          {{/* <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }}<br/><span class="location-names">{{ .Name }}</span></a></li> */}}
+        {{/* {{ end }} */}}
+      {{/* {{ end }} */}}
+
+    {{ end }}
+
+    {{/* {{ range .Site.Menus.resume }}
+    <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+    {{ end }} */}}
+  </ul>
+</div>
+<!-- /.navbar-collapse -->
+
+
+
+
+
+
+
+
+  </div>
+  <!-- /.container-fluid -->
+</nav>

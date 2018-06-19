@@ -1,0 +1,17 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "bodystart" }}<body id="{{ .Params.title }}" class="">{{ end }}
+{{ define "main" }}
+  <h6> -default/list </h6>
+
+
+  {{ partial "whatsthis.html" . }}
+
+
+  {{ .Content }}
+  <ul>
+    {{ range .Pages}}
+    <li><a href="{{.URL}}">{{.Title}}</a><br />
+    <p>{{.Content}}</p></li>
+    {{ end }}
+  </ul>
+{{ end }}

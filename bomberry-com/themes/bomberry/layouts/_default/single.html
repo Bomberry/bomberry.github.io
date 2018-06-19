@@ -1,0 +1,11 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "bodystart" }}<body id="{{ .Params.title | urlize }}" class="">{{ end }}
+{{ define "main" }}
+  <h6> -default/single </h6>
+
+
+  {{ partial "whatsthis.html" . }}
+
+
+  {{ .Content }}
+{{ end }}

@@ -1,0 +1,239 @@
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
+{{ define "main" }}
+<h6> resume/list </h6>
+{{/* <pre>
+Params.location_name : {{ .Params.location_name}}
+Kind : {{ .Kind }}
+Data : {{ .Data }}
+</pre> */}}
+
+{{ partial "whatsthis.html" . }}
+
+  {{ .Content }}
+  {{/* <section>
+    <a id="introduction"></a>
+    <div class="container">
+     <hr>
+      <div class="row color-{{.Params.location_name}}">
+        <div class="col-md-5 col-md-offset-1 text-left">
+          <h2>Kevin Bomberry</h2>
+        </div>
+        <div class="col-md-5 text-right">
+          <h2>R&eacute;sum&eacute;</h2>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-left">
+          <h6> resume/list </h6>
+          <h3 class="text-tall">25+ years of success working with amazing companies including Adobe, IDEO, Microsoft, and the MIT/Stanford Venture Lab (VLAB)</h3>
+          <p class="lead">For the past 6+ years I’ve been directly involved in Adobe’s direction in 3D including 3D in Photoshop, 3D Printing, and Project Felix, as well as influencing additional Adobe titles, keeping my focus on 3D, AR/VR, and touch/mobile UX/IxD all the while.</p>
+        </div>
+      </div>
+    </div>
+  </section> */}}
+
+
+  <section>
+    <a id="experience"></a>
+    <div class="container">
+     <hr>
+      <div class="row color-{{.Params.location_name}}">
+        <div class="col-md-10 col-md-offset-1 text-left">
+          <h6> resume/list </h6>
+          <h2>Experience</h2>
+        </div>
+      </div>
+      <hr>
+
+    {{ range .Pages.ByWeight.Reverse }}
+    <article>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <h4>{{.Params.job_title}}</h4>
+        </div>
+        <div class="col-md-3 text-right">
+          <h4>{{.Params.company_name}}</h4>
+        </div>
+        <div class="col-md-2 text-right">
+          <h4>{{.Params.job_duration}}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-left">
+          <p class="lead">{{.Params.job_summary}}</p>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+      {{/* <a href="{{.URL}}">{{.Title}}</a>, {{.Params.job_title}} */}}
+    </article>
+    <hr>
+    {{ end }}
+  </div>
+</section>
+
+
+<section>
+  <a id="skills"></a>
+  <div class="container">
+   {{/* <hr> */}}
+    <div class="row color-resume">
+      <div class="col-md-10 col-md-offset-1 text-left">
+        <h6> resume/list </h6>
+        <h2>Skills</h2>
+      </div>
+    </div>
+    <hr>
+    <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Focus</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Design</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Experience</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">3D/AR/VR</p>
+        </div>
+      </div>
+</article>
+    <hr>
+    <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Abilities</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Product Design</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Experience Design</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Interaction Design</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">3D Design</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Media Production</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Web Development</p>
+        </div>
+      </div>
+</article>
+    <hr>
+    <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h3>Traits</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Analytical</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Imaginative</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Innovative</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Adaptive</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Passionate</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Communicator</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Critical Thinking</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Design Thinking</p>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <p class="lead">Team Player</p>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <article>
+      <a id="tools"></a>
+      <div class="row color-resume">
+        <div class="col-md-4 col-md-offset-1">
+          <h6> resume/list </h6>
+          <h3>Tools</h3>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <h6>&nbsp;</h6>
+          <h3><span class="text-muted">Proficiency</span></h3>
+        </div>
+      </div>
+      <hr />
+      {{ range $.Site.Data.resume }}
+        {{ partial "toolsList" . }}
+      {{ end }}
+    </article>
+  </div>
+</section>
+
+
+
+
+<a id="contact"></a>
+<hr>
+<div class="container contact well">
+  <div class="row">
+    <div class="col-md-12">
+      <h6> resume/list </h6>
+      <h3>Contact</h3>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4">
+      <address>
+      <span class="fa fa-user-circle" aria-hidden="true"></span> <strong>Kevin Bomberry</strong><br>
+      <span class="fa fa-home" aria-hidden="true"></span> Burlingame, CA 94010<br>
+      <span class="fa fa-envelope-o" aria-hidden="true"></span> <a href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+  <!--  <abbr title="Phone">P:</abbr> (123) 456-7890-->
+      </address>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right"> </span>
+      <address>
+        <span class="fa fa-desktop" aria-hidden="true"></span> <strong>Work</strong><br>
+        <a href="http://www.ablepear.com">Able Pear Software</a><br>
+        <a href="http://www.craftmastersoftware.com">CraftMaster Software</a><br>
+        <a href="http://www.photoshopdimensions.com">Photoshop Dimensions</a><br>
+      </address>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right"> </span>
+      <address>
+        <span class="fa fa-sign-in" aria-hidden="true"></span> <strong>Social</strong><br>
+        <span class="fa fa-linkedin-square" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/bomberry/">Linkedin</a><br>
+        <span class="fa fa-facebook-square" aria-hidden="true"></span> <a href="https://www.facebook.com/kevinbomberry">Facebook</a><br>
+        <span class="fa fa-twitter-square" aria-hidden="true"></span> <a href="https://twitter.com/Bomberry">Twitter</a><br>
+      </address>
+    </div>
+  </div>
+</div>
+
+
+{{ end }}

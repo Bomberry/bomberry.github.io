@@ -1,0 +1,13 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        {{ if .Site.Params.CopyrightHTML }}
+        <p class="copyrightNotice">{{ .Site.Params.CopyrightHTML | htmlUnescape }}</p>
+        {{ else }}
+        <p class="copyrightNotice">Copyright &copy; 1989&mdash;2018 Kevin Bomberry. All rights reserved. All other &copy;&nbsp;&#124;&nbsp;&reg;&nbsp;&#124;&nbsp;&trade; rights reserved by original holders respectivly.</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
