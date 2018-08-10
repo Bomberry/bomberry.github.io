@@ -540,11 +540,11 @@ section.casestudy {
       .featured > .feature.feature-1:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-1 .btn {
-        background-color: #520000;
+        background-color: #854300;
         border: 0.1rem solid white;
         color: white; }
         .featured > .feature.feature-1 .btn:hover {
-          background-color: #cc0000;
+          background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-2 {
       background-color: rgba(236, 236, 236, 0.62);
@@ -576,11 +576,11 @@ section.casestudy {
       .featured > .feature.feature-3:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-3 .btn {
-        background-color: #001fb8;
+        background-color: #854300;
         border: 0.1rem solid white;
         color: white; }
         .featured > .feature.feature-3 .btn:hover {
-          background-color: #3355ff;
+          background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-4 {
       background-color: rgba(236, 236, 236, 0.62);
@@ -594,11 +594,11 @@ section.casestudy {
       .featured > .feature.feature-4:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-4 .btn {
-        background-color: #001fb8;
+        background-color: #854300;
         border: 0.1rem solid white;
         color: white; }
         .featured > .feature.feature-4 .btn:hover {
-          background-color: #3355ff;
+          background-color: #ff8000;
           color: white; }
   .featured > .feature.feature-invert {
     color: white;
