@@ -1,55 +1,68 @@
-<h6> whatsthis.html </h6>
-<pre>
-  Params.location_name : {{ .Params.location_name }}
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#wt{{.UniqueID}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+    show/hide whatsthis variables
+  </a>
+</p>
+<div class="collapse" id="wt{{.UniqueID}}">
+  <div class="card card-body">
+    <pre>
+      Params.location_name : {{ .Params.location_name }}
+    {{ if .Site.Params.includeHugoMeta }}
+      LinkTitle : {{ .LinkTitle }}
+      Title : {{ .Title }}
+      Dir : {{ .Dir }}
+      File : {{ .File }}  See also File Variables.
+      Kind : {{ .Kind }}
+      Type : {{ .Type }}
+      IsHome : {{ .IsHome }}
+      Weight : {{ .Weight }}
+      Draft : {{ .Draft }}
+      Keywords : {{ .Keywords }}
+      Pages : {{ .Pages }}
+      Data : {{ .Data }}
+      FuzzyWordCount : {{ .FuzzyWordCount }}
+      ReadingTime : {{ .ReadingTime }}
+      IsNode : {{ .IsNode }}
+      IsPage : {{ .IsPage }}
+      Lang : {{ .Lang }}
+      Language : {{ .Language }}
+      {{/* Prev : {{ .Prev }} */}}
+      {{/* PrevInSection : {{ .PrevInSection }} */}}
+      Permalink : {{ .Permalink }}
+      RSSLink : {{ .RSSLink }}
+      {{/* Next : {{ .Next }} */}}
+      {{/* NextInSection : {{ .NextInSection }} */}}
+      URL : {{ .URL }}
+      Ref : {{ .Ref }}
+      RelPermalink : {{ .RelPermalink }}
+      RelRef : {{ .RelRef }}
+      UniqueID : {{ .UniqueID }}
+      Site : {{ .Site }}     see Site Variables.
+      Stratch : {{ .Scratch }}
+      TableOfContents : {{ .TableOfContents }}
+      {{/* RawContent : {{ .RawContent }} */}}
+      Date : {{ .Date }}
+      Lastmod : {{ .Lastmod }}
+      PublishDate : {{ .PublishDate }}
+      ExpiryDate : {{ .ExpiryDate }}
+      {{/* Hugo : {{ .Hugo }}     see Hugo Variables. */}}
 
-  LinkTitle : {{ .LinkTitle }}
-  Title : {{ .Title }}
-  Dir : {{ .Dir }}
-  File : {{ .File }}  See also File Variables.
-  Kind : {{ .Kind }}
-  Type : {{ .Type }}
-  IsHome : {{ .IsHome }}
-  Weight : {{ .Weight }}
-  Draft : {{ .Draft }}
-  Keywords : {{ .Keywords }}
-  Pages : {{ .Pages }}
-  Data : {{ .Data }}
-  FuzzyWordCount : {{ .FuzzyWordCount }}
-  ReadingTime : {{ .ReadingTime }}
-  IsNode : {{ .IsNode }}
-  IsPage : {{ .IsPage }}
-  Lang : {{ .Lang }}
-  Language : {{ .Language }}
-  {{/* Prev : {{ .Prev }} */}}
-  {{/* PrevInSection : {{ .PrevInSection }} */}}
-  Permalink : {{ .Permalink }}
-  RSSLink : {{ .RSSLink }}
-  {{/* Next : {{ .Next }} */}}
-  {{/* NextInSection : {{ .NextInSection }} */}}
-  URL : {{ .URL }}
-  Ref : {{ .Ref }}
-  RelPermalink : {{ .RelPermalink }}
-  RelRef : {{ .RelRef }}
-  UniqueID : {{ .UniqueID }}
-  Site : {{ .Site }}     see Site Variables.
-  Stratch : {{ .Scratch }}
-  TableOfContents : {{ .TableOfContents }}
-  {{/* RawContent : {{ .RawContent }} */}}
-  Date : {{ .Date }}
-  Lastmod : {{ .Lastmod }}
-  PublishDate : {{ .PublishDate }}
-  ExpiryDate : {{ .ExpiryDate }}
-  {{/* Hugo : {{ .Hugo }}     see Hugo Variables. */}}
 
-
-  CurrentSection : {{ .CurrentSection }}
-  Parent : {{ .Parent }}
-  Section : {{ .Section }}
-  Sections : {{ .Sections }}
-  {{/* Dir : {{ .Dir }} */}}
-  {{/* Dir : {{ .Dir }} */}}
-  {{/* Dir : {{ .Dir }} */}}
-  {{/* Dir : {{ .Dir }} */}}
-  {{/* Params : {{ .Params }} */}}
-
-</pre>
+      CurrentSection : {{ .CurrentSection }}
+      Parent : {{ .Parent }}
+      Section : {{ .Section }}
+      Sections : {{ .Sections }}
+      {{/* Dir : {{ .Dir }} */}}
+      {{/* Dir : {{ .Dir }} */}}
+      {{/* Dir : {{ .Dir }} */}}
+      {{/* Dir : {{ .Dir }} */}}
+      {{/* Params : {{ .Params }} */}}
+    {{ else }}
+      includeHugoMeta = false
+    {{ end }}
+    </pre>
+  </div>
+</div>

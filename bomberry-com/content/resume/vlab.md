@@ -5,12 +5,14 @@ draft = true
 weight = 5
 company_name = "MIT/Stanford Venture Lab (VLAB)"
 project_name = ""
-job_title = "Operations Chair, Web Chair"
+job_title = "Operations/Web Chair"
 job_duration = "2001-2007"
 start_date = "2001"
 end_date = "2007"
 keywords = []
-job_summary = "MIT/Stanford Venture Lab (VLAB) is the Bay Area chapter of the MIT Enterprise Forum, a global non-profit organization dedicated to connecting Silicon Valley’s entrepreneurs, industry experts, venture capitalists, private investors and technologists. As an active member of the board during the initial years, I worked closely with the Chairmen and board members to manage operations of the organization, including rebranding for the chapter, creating an automated registration system, planning and managing events including media, and trained and mentored several of volunteers for roles within the organization."
+job_summary = "VLAB is the Bay Area chapter of the MIT Enterprise Forum, a global non-profit organization dedicated to connecting entrepreneurs, industry experts, venture capitalists, private investors and technologists. As a member of the board, I worked closely with the Chairmen and board members to manage operations. I trained and mentored volunteers for roles within the organization. I lead a rebranding effort, built an automated registration system, planned events, and created event materials."
+has_job_details = false
+has_case_study = false
 +++
 
 Sitting on the board of directors, developing teams and team training, producing events, and mentoring volunteers was an enjoyable, althought sometime increadable hectic, experience, tought me the lesson of delegation and mentoring, fostering growth in individual contributers to produce events and more.

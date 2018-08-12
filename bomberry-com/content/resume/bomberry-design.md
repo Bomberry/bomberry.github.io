@@ -5,10 +5,12 @@ draft = true
 weight = 3
 company_name = "Bomberry Design"
 project_name = ""
-job_title = "Founder, Designer, Educator"
+job_title = "Designer/Educator"
 job_duration = "1994—1996"
 start_date = "1994"
 end_date = "1996"
 keywords = []
-job_summary = "Creating designs/projects for products and publications as well as teaching renown designers the latest features of Adobe products including Photoshop and Illustrator."
+job_summary = "I crafted identity systems, graphic designs, and artwork for clients. I taught renowned designers and students the latest features of Photoshop, Illustrator, Quark, and PageMaker."
+has_job_details = false
+has_case_study = false
 +++

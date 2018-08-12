@@ -13,3 +13,7 @@ keywords = []
 #   weight = 1000
 
 +++
+
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}

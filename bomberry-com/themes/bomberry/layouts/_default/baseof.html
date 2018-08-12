@@ -4,10 +4,14 @@
 
 {{ partial "navigation.html" . }}
 
-<h6> -default/baseof </h6>
-{{/* {{ partial "whatsthis.html" . }} */}}
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
+{{/* {{ if .Site.Params.includeHugoMeta }}
+  {{ partial "whatsthis.html" . }}
+{{ end }} */}}
 {{ block "main" . }}
-This is the baseof main content block.
+This is the baseof main content block ( block "main" . ).
 {{ end }}
 
 {{ partial "footer.html" . }}

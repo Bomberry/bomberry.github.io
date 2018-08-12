@@ -79,12 +79,20 @@ body
 
 p
   line-height: 1.62
+  // padding-bottom: 3.24rem
+
+// h1, .h1, h2, .h2, h3, .h3,
+// h4, .h4, h5, .h5, h6, .h6
+//   margin-top: 1.62rem
+//   margin-bottom: 2.62rem
+// h4, .h4, h5, .h5, h6, .h6
+//   margin-bottom: 1.62rem
 
 
 //  FONTAWESOME OVERRIDES
 .fa
   nav &
-    margin-right: 1.5rem
+    margin-right: .75rem
   footer &,
   .contact &
     margin-right: .5rem
@@ -172,6 +180,8 @@ p
           background-color: $color-gray-darker
 
 .dropdown-menu
+  font-size: 1rem
+  line-height: 20px
   background-color: $color-gray-darker
   > li
     > a
@@ -322,11 +332,18 @@ a.location
       height: 1ch
       width: 6ch
       margin: 1px
-      background-color: $color-greencardamon
+      background-color: rgba ($color-gray, $opacity-half)
       -webkit-border-radius: 1ch
       border-radius: 1ch
+      transition: $transition-slow
+      box-shadow: $box-shadow-glow-white
+      &:hover
+        box-shadow: $box-shadow-glow-whiter
+        background-color: rgba($color-white, $opacity-half)
       &.active
-        background-color: transparent
+        background-color: $color-white
+        box-shadow: $box-shadow-glow-whiter
+        transition: $transition-slow
   .carousel-inner
     height: 100%
     > .item
@@ -355,10 +372,29 @@ a.location
       color: white
   .carousel-control
     width: 12.5%
+    transition: $transition-slow
     > .icon-next, .icon-prev
-      font-size: 7.75ch
-      top: 40%
+      font-family: "FontAwesome"
+      font-size: 3ch
+      top: 35%
       position: absolute
+      margin: 0
+    .icon-next
+      right: 1rem
+      &::before
+        content: '\25d6'
+    .icon-prev
+      left: 1rem
+      &::before
+        content: '\25d7'
+    //&.left
+      margin-left: 0
+    //&.right
+      margin-right: 0
+// .carousel-indicators
+  background-color: transparent
+  .active
+    background-color: transparent
 
 
 @media (max-width: 598px)
@@ -366,6 +402,11 @@ a.location
     .img-responsive
       -webkit-filter: brightness(62%)
       filter: brightness(62%)
+
+.media-heading
+  padding-bottom: .5rem
+.media + .media
+  padding-top: 3.25rem
 
 .media-object
   img &
@@ -426,6 +467,8 @@ img.thumbnail
 .breath
   &-top
     margin-top: $layout-breath-unit
+  &-top-small
+    margin-top: $layout-breath-unit / 2
   &-bottom
     margin-bottom: $layout-breath-unit
   &-left
@@ -440,6 +483,12 @@ img.thumbnail
     margin-bottom: $layout-breath-unit
   &-all
     margin: $layout-breath-unit
+  &-no-h
+    margin-left: 0
+    margin-right: 0
+  &-no-v
+    margin-top: 0
+    margin-bottom: 0
   &-none
     margin: 0
 
@@ -502,15 +551,27 @@ img.thumbnail
         margin-right: 2.5rem
         text-align: center
         a
-          padding: 0
+          padding-top: 5px
         .fa
-          margin-right: 0
+          margin-right: .5rem
+          line-height: 20px
         .location-names
           font-size: .5rem
         &:last-of-type
           margin-right: 0
   .container.well
     margin-top: $layout-breath-unit
+
+.container
+  &.contact
+    @extend .pad-h-small
+    &.well
+      background-color: transparent
+    address > span
+      margin-top: .5rem
+      margin-bottom: .5rem
+  .title
+    margin-bottom: 1.5rem
 
 
 #area-resume
@@ -596,6 +657,9 @@ img.thumbnail
 //    color: $color-white
 //    background: $color-gray-darker
 
+section.page-introduction
+  background-color: $color-black
+
 section.casestudy
   margin-top: 14vmin
   margin-bottom: 14vmin
@@ -615,6 +679,166 @@ section.casestudy
         border-color: transparent
 
 
+
+@mixin setBgColorAndHover($baseColor)
+  background-color: lighten(rgba($baseColor, .62), 24%)
+  &:hover
+    background-color: darken(rgba($baseColor, .62), 38%)
+
+@mixin setBgImageColorAndHover
+  background-color: rgba($color-gray-lightest, .62)
+  &:hover
+    background-color: rgba($color-gray-darkest, .38)
+
+@mixin setBgImage($project, $image)
+  background-image: url('/portfolio/assets/#{$project}/#{$image}')
+  background-repeat: no-repeat
+  // background-attachment: fixed
+  background-position: center
+  background-size: cover
+  background-blend-mode: screen, multiply
+  // -webkit-filter: grayscale(100%), alpha(opacity=50)
+  // filter: grayscale(100%), alpha(opacity=50)
+  &:hover
+    background-blend-mode: multiply, screen
+  //   background-color: darken($baseColor, 38%)
+@mixin setBgImageColorAndHoverInvert
+  background-color: rgba($color-gray-darkest, .38)
+  &:hover
+    background-color: rgba($color-gray-lightest, .62)
+
+@mixin setBgImageInvert($project, $image)
+  background-image: url('/portfolio/assets/#{$project}/#{$image}')
+  background-repeat: no-repeat
+  // background-attachment: fixed
+  background-position: center
+  background-size: cover
+  // -webkit-filter: grayscale(100%), alpha(opacity=50)
+  // filter: grayscale(100%), alpha(opacity=50)
+  background-blend-mode: multiply, screen
+  &:hover
+    background-blend-mode: screen, multiply
+  //   background-color: darken($baseColor, 38%)
+
+@mixin setBtnColorAndHover($baseColor)
+  background-color: darken($baseColor, 24%)
+  border: .1rem solid white
+  color: white
+  &:hover
+    background-color: $baseColor
+    color: white
+
+.featured
+  min-height: 100%
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  > .feature
+    display: flex
+    min-height: 62vh
+    flex-basis: calc(50%)
+    justify-content: center
+    flex-direction: column
+    padding: 3rem
+    transition: $transition-default
+    @media (max-width: 768px)
+      flex-basis: calc(100%)
+    &:hover
+      // background-color: $color-gray-darkest
+      color: $color-white
+      box-shadow: $box-shadow-large
+      > div
+        @extend .background-shade
+    > div
+      @extend .background-shade-light
+      display: flex
+      justify-content: center
+      flex-direction: column
+      text-align: center
+      padding: 2.62rem
+      // &:hover
+        @extend .background-shade
+      a.btn
+        border-radius: 1ch
+        .fa:first-of-type
+          margin-right: .75rem
+        .fa:last-of-type
+          margin-left: .75rem
+    &.feature
+      &-1
+        // @include setBgImageAndHover("streamlio", "Streamlio-BC-Rendering-PlexusUV.png")
+        // @include setBgColorAndHover($color-resume)
+        // @include setBgColorAndHover($color-resume)
+        // &::before
+        @include setBgImageColorAndHover
+        @include setBgImage("streamlio", "Streamlio-BC-Rendering.png")
+        & .btn
+          @include setBtnColorAndHover($color-portfolio)
+      &-2
+        @include setBgImageColorAndHover
+        @include setBgImage("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
+        & .btn
+          @include setBtnColorAndHover($color-portfolio)
+      &-3
+        @include setBgImageColorAndHover
+        @include setBgImage("default", "placeholderA.png")
+        & .btn
+          @include setBtnColorAndHover($color-portfolio)
+      &-4
+        @include setBgImageColorAndHover
+        @include setBgImage("default", "placeholderA.png")
+        & .btn
+          @include setBtnColorAndHover($color-portfolio)
+  >.feature.feature-invert
+    color: $color-white
+    transition: $transition-default
+    &:hover
+      color: $color-black
+      > div
+        @extend .background-shade-light
+    > div
+      @extend .background-shade
+    &.feature
+      &-1
+        @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("streamlio", "Streamlio-BC-Rendering.png")
+        & .btn
+          @include setBtnColorAndHover($color-resume)
+      &-2
+        @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
+        & .btn
+          @include setBtnColorAndHover($color-portfolio)
+      &-3
+        @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("default", "placeholderA.png")
+        & .btn
+          @include setBtnColorAndHover($color-projects)
+      &-4
+        @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("default", "placeholderA.png")
+        & .btn
+          @include setBtnColorAndHover($color-projects)
+
+
+// .feature-test
+  background-color: gold
+  margin: 0px
+  padding: 0px
+
+
+.full-width
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  //background-position: center
+  //background-size: cover
+  .row
+    margin: 0px
+    padding: 0px
+
+
 .thumbnail
   display: block
   padding: 4px
@@ -628,18 +852,49 @@ section.casestudy
   transition: border .2s ease-in-out
   > img,
   a > img
-  margin-right: auto
-  margin-left: auto
+    margin-right: auto
+    margin-left: auto
   caption
     padding: 9px
     color: $color-gray-darkest
+
+.flex-gallery
+  padding: .5vw
+  // font-size: 0
+  display: -ms-flexbox
+  -ms-flex-wrap: wrap
+  -ms-flex-direction: column
+  -webkit-flex-flow: row wrap
+  flex-flow: row wrap
+  display: -webkit-box
+  display: flex
+  > figure
+    -webkit-box-flex: auto
+    -ms-flex: auto
+    flex: auto
+    width: 300px
+    margin: .5vw
+    > img
+      width: 100%
+      height: auto
+    > figcaption
+      padding-top: 1rem
+      // display: block
+      // position: relative
+      // margin-top: -16px
+      // margin-bottom: 16px
+
+
+
 
 a.thumbnail
   &:hover, &:focus, &.active
     border-color: $color-portfolio
 
 .background-shade
-  background-color: rgba($color-gray-darker, .6)
+  background-color: rgba($color-black, .6)
+.background-shade-light
+  background-color: rgba($color-white, .6)
 
 
 .jumbotron
@@ -653,6 +908,12 @@ a.thumbnail
     background-image: url("../kitchen/assets/Hero-KevinsKitchen-Salts.png")
   &-syrups
     background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png")
+
+
+%cs-spacing-reset
+  margin: 0
+  padding-top: 0
+  padding-bottom: 0
 
 
 .jumbotron.casestudy,
@@ -674,11 +935,28 @@ a.thumbnail
   &.cs-dark
     color: $color-white
     background: $color-gray-darker
+  &.cs-type
+    min-height: 5rem
+    // background-image: url('../kitchen/assets/Hero-KevinsKitchen-Salts.png')
+    @extend %cs-spacing-reset
+    > .container
+      @extend %cs-spacing-reset
+      > .row
+        @extend %cs-spacing-reset
+        margin-left: -15px
+        margin-right: -15px
+        padding-top: 5rem
+        &:last-of-type
+          margin-bottom: 10rem
+  &.cs-type + .jumbotron.casestudy > .container
+    @extend %cs-spacing-reset
+
   h1, h2, h3, h4, h5
     color: $color-portfolio
   > .container
     //-webkit-filter: brightness(100%)
     //filter: brightness(100%)
+    padding-top: $layout-breath-unit
     &.background-shade
       background-color: rgba($color-gray-darker, .6)
   &.cs-design
@@ -690,7 +968,9 @@ a.thumbnail
   &.cs-cooking
     background: url("../images/Hero-KevinBomberry-Design.jpg") no-repeat scroll center
   &.cs-felix
-    background: url("../portfolio/assets/felix/projectfelix-marquee-1200x550.png") no-repeat scroll center
+    // background-color: $color-black
+    background: url("../portfolio/assets/felix/projectfelix-marquee-1200x550.png") no-repeat scroll center black
+    background-size: cover
   &.cs-photoshopcom
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center
   &.cs-craftmaster
@@ -742,8 +1022,26 @@ a.thumbnail
 
 
 .pad-top
-  padding-top: 10rem
-
+  padding-top: 7.5rem
+  &-small
+    padding-top: 2.5rem
+  &-medium
+    padding-top: 5rem
+  &-large
+    padding-top: 10rem
+.pad-all-small
+  padding: 2.5rem
+.pad-h-small
+  padding-left: 2.5rem
+  padding-right: 2.5rem
+.m-pad-top
+  margin-top: 7.5rem
+  &-small
+    margin-top: 2.5rem
+  &-medium
+    margin-top: 5rem
+  &-large
+    margin-top: 10rem
 
 
 /*    ANIMATIONS:   */

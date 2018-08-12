@@ -5,10 +5,12 @@ draft = true
 weight = 1
 company_name = "Macy's"
 project_name = ""
-job_title = "MIS Specialist, Manager"
+job_title = "MIS Specialist/Manager"
 job_duration = "1992-1994"
 start_date = "1992"
 end_date = "1994"
 keywords = []
-job_summary = "Advisory/management role in the redefinition of the MIS Department for Macy*s. I was directly responsible for training 71 buyers and assistants as a department manager and SABER data programmer/analyst, as well as “walking the floor” checking on departments’ product requirements/goals and to troubleshooting logistical issues."
+job_summary = "I trained 71 buyers, assistants, and department managers on SABER data processing. I advised management on the redefinition of product SKUs for merchandising and logistics."
+has_job_details = false
+has_case_study = false
 +++

@@ -1,0 +1,47 @@
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
+{{ define "main" }}
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
+{{/* <pre>
+  params : {{ .Params.location_name}}
+</pre> */}}
+
+{{ if .Site.Params.includeHugoMeta }}
+  {{ partial "whatsthis.html" . }}
+{{ end }}
+
+  {{ .Content }}
+<p class="lead">casestudy</p>
+
+{{ if .Params.sections }}
+  {{ range .Params.sections.case_study_content }}
+  <div class="jumbotron casestudy">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+      </div>
+      <div class="row breath-top-small">
+        <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 text-left">
+          <div class="lead"><a href="../#{{ .File }}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->Return to Portfolio <span class="fa fa-arrow-circle-left"></span></a></div>
+        </div>
+        casestudy - inline
+        <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 text-right">
+          <div class="lead"><a href="{{ .Permalink }}/craftmaster" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->Case Study <span class="fa fa-briefcase"></span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+{{ end }}
+
+  {{/* get portfolio content */}}
+  partial - return-portfolio
+  {{ partial "return-portfolio.html" . }}
+
+
+{{ end }}

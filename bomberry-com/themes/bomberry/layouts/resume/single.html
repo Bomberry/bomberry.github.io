@@ -1,13 +1,93 @@
-{{ define "title" }}{{ .Title }}{{ end }}
-{{ define "bodystart" }}<body id="{{ .Params.title | urlize }}" class="">{{ end }}
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
-<h6> resume/single </h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
 {{/* <pre>
   Params.location_name : {{ .Params.location_name}}
 </pre>
  */}}
-{{ partial "whatsthis.html" . }}
+ {{ if .Site.Params.includeHugoMeta }}
+   {{ partial "whatsthis.html" . }}
+ {{ end }}
+
+{{/* {{ .Content }} */}}
+  <!-- Experience Section -->
+  <section>
+    <a id="experience"></a>
+    <div class="container">
+     <hr>
+      <div class="row color-{{.Params.location_name}}">
+        <div class="col-md-10 col-md-offset-1 text-left">
+          <h2>Experience – {{ .Params.Title}}</h2>
+        </div>
+      </div>
+      <hr>
+
+    <article>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <h4>{{.Params.job_title}}</h4>
+        </div>
+        <div class="col-md-3 text-right">
+          <h4>{{.Params.company_name}}</h4>
+        </div>
+        <div class="col-md-2 text-right">
+          <h4>{{.Params.job_duration}}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-left">
+          <p class="lead">{{.Params.job_summary}}</p>
+          <p>{{ .Content }}</p>
+        </div>
+      </div>
+      {{/* <a href="{{.URL}}">{{.Title}}</a>, {{.Params.job_title}} */}}
+    </article>
+    <hr>
+    {{ if .Params.has_case_study }}
+    <div class="lead"><a href="../../portfolio/{{.File}}" class=" color-portfolio"><!--<span class="fa fa-briefcase"></span> -->View in Portfolio <span class="fa fa-external-link"></span></a></div>
+    {{ end }}
+    <div class="lead"><a href="../#{{.File}}" class=" color-resume"><!--<span class="fa fa-briefcase"></span> -->Return to Resume <span class="fa fa-external-link"></span></a></div>
+  </div>
+</section>
 
 
-  {{ .Content }}
+<!-- Contact Section -->
+<a id="contact"></a>
+<hr>
+<div class="container contact well">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Contact</h3>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4">
+      <address>
+      <span class="fa fa-user-circle" aria-hidden="true"></span> <strong>Kevin Bomberry</strong><br>
+      <span class="fa fa-home" aria-hidden="true"></span> Burlingame, CA 94010<br>
+      <span class="fa fa-envelope-o" aria-hidden="true"></span> <a href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+  <!--  <abbr title="Phone">P:</abbr> (123) 456-7890-->
+      </address>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right"> </span>
+      <address>
+        <span class="fa fa-desktop" aria-hidden="true"></span> <strong>Work</strong><br>
+        <a href="http://www.ablepear.com">Able Pear Software</a><br>
+        <a href="http://www.craftmastersoftware.com">CraftMaster Software</a><br>
+        {{/* <a href="http://www.photoshopdimensions.com">Photoshop Dimensions</a><br> */}}
+      </address>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right"> </span>
+      <address>
+        <span class="fa fa-sign-in" aria-hidden="true"></span> <strong>Social</strong><br>
+        <span class="fa fa-linkedin-square" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/bomberry/">Linkedin</a><br>
+        <span class="fa fa-facebook-square" aria-hidden="true"></span> <a href="https://www.facebook.com/kevinbomberry">Facebook</a><br>
+        <span class="fa fa-twitter-square" aria-hidden="true"></span> <a href="https://twitter.com/Bomberry">Twitter</a><br>
+      </address>
+    </div>
+  </div>
+</div>
+
+
 {{ end }}

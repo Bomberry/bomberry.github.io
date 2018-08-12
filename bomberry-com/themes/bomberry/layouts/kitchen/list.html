@@ -1,14 +1,25 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
-  <h6> kichen/list </h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
   {{/* <pre>
     params : {{ .Params.location_name}}
   </pre> */}}
-  {{ partial "whatsthis.html" . }}
+  {{ if .Site.Params.includeHugoMeta }}
+    {{ partial "whatsthis.html" . }}
+  {{ end }}
 
   {{ .Content }}
 
+  <section>
+    <div class="container text-muted pad-top-medium">
+      <p class="lead">{{.Params.intro_statement | markdownify}}</p>
+    </div>
+  </section>
+
+  <hr>
 
 
   <div class="container">

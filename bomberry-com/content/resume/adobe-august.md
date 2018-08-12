@@ -3,17 +3,19 @@ title = "Adobe August"
 date = 2018-05-05T23:10:22-07:00
 draft = true
 weight = 12
-company_name = "Adobe Systems"
+company_name = "Adobe"
 project_name = ""
-job_title = "Lead Designer (Project Felix | Mobile App)"
+job_title = "Product Design (Consultant)"
 job_duration = "2016"
 start_date = "2016"
 end_date = "2016"
 keywords = []
-job_summary = "I was given 4 months on task to craft a desktop/mobile (touch/stylus) application to demo at Adobe MAX 2016 based on interactive realtime 3D sculpting technology working with a PM and developer. From initial concept to a functional demo I helped define goals and features, create wireframes, comps, and final assets for the (Project Felix) Interactive Painting app."
+job_summary = "This project had an aggressive four month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals & features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface."
+has_job_details = false
+has_case_study = false
 +++
 
-Create a product based on an 3D painting model developed by Sebastain
+Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem
 
 Defined and constructed a user experience that would directly align with Adobe XD's design goals while adding new conventions for touch (primary)/stylus (secondary) focused user input.
 This includes defining interaction models and specifications for single/multi-input gestures; one hand, two hands, stylus, hand + stylus, optional 3D devince input (gyroscope).

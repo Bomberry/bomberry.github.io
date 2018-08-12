@@ -5,10 +5,12 @@ draft = true
 weight = 9
 company_name = "Doppler Publishing"
 project_name = ""
-job_title = "Editor-in-Chief, Photoshop Dimensions"
-job_duration = "2012—Present"
+job_title = "Editor-in-Chief, Lead Writer"
+job_duration = "2012—2017"
 start_date = "2012"
-end_date = "2018"
+end_date = "2017"
 keywords = []
-job_summary = "Editor-in-Chief and contributing writer for Photoshop Dimensions (electronic) magazine. Managing writers/contributors creating assets and articles teaching Photoshop users about the power features of Photoshop’s 3D toolset."
+job_summary = "I was editor-in-chief and lead writer for Photoshop Dimensions, an electronic magazine focused on teaching users about Photoshop’s 3D toolset. As editor-in-chief, I managed contributing writers, conducted design reviews, and laid out articles. As lead writer, I created articles and illustrations covering workflows, material creation, and rendering."
+has_job_details = false
+has_case_study = false
 +++

@@ -7,6 +7,7 @@ metaDataFormat = "toml"
 
 # canonifyurls = true
 baseURL = "/"
+casestudy_asset_path = "/portfolio/assets/"
 
 date_format = "Jan 2, 2006"
 time_format = "3:04 PM"
@@ -17,6 +18,8 @@ time_format = "3:04 PM"
   CopyrightHTML = "Copyright &#xA9; 2018 Kevin Bomberry. All rights reserved. All other &copy;&nbsp;&#124;&nbsp;&reg;&nbsp;&#124;&nbsp;&trade; rights reserved by original holders respectivly."
   TwitterUser = "bomberry"
 
+  includeFileInfo = false
+  includeHugoMeta = false
 # [permalinks]
 # 	page = "/:title/"
 # 	about = "/:filename/"
@@ -28,6 +31,7 @@ time_format = "3:04 PM"
 [params.menus]
   # Align the main menu to the right of the page? (true/false)
   align_right = true
+
 [menu]
   # [[menu.main]]
   #   identifier = "news"
@@ -53,13 +57,13 @@ time_format = "3:04 PM"
     weight = 40
     hidden = false
 
-  [[menu.main]]
-    identifier = "kitchen"
-    name = "kitchen"
-    pre = "<i class='fa fa-coffee'> </i>"
-    url = "/kitchen/"
-    weight = 60
-    hidden = false
+#  [[menu.main]]
+#    identifier = "kitchen"
+#    name = "kitchen"
+#    pre = "<i class='fa fa-coffee'> </i>"
+#    url = "/kitchen/"
+#    weight = 60
+#    hidden = false
 
   # [[menu.main]]
   #   identifier = "1"
@@ -69,13 +73,13 @@ time_format = "3:04 PM"
   #   weight = 80
   #   hidden = true
 
-  [[menu.main]]
-    identifier = "projects"
-    name = "projects"
-    pre = "<i class='fa fa-paint-brush'></i>"
-    url = "/projects/"
-    weight = 100
-    hidden = false
+  # [[menu.main]]
+  #   identifier = "projects"
+  #   name = "projects"
+  #   pre = "<i class='fa fa-paint-brush'></i>"
+  #   url = "/projects/"
+  #   weight = 100
+  #   hidden = false
 
   # [[menu.main]]
   #   identifier = "contact"
@@ -126,6 +130,11 @@ time_format = "3:04 PM"
 
 
 
+  [[menu.portfolio]]
+    name = "Streamlio"
+    url = "#streamlio"
+    weight = 900
+
 
   [[menu.portfolio]]
     name = "CraftMaster"
@@ -134,28 +143,28 @@ time_format = "3:04 PM"
 
   [[menu.portfolio]]
     name = "Auguste"
-    url = "#auguste"
+    url = "#adobe-august"
     weight = 1010
 
   [[menu.portfolio]]
     name = "Photoshop"
-    url = "#photoshop"
+    url = "#adobe-photoshop"
     weight = 1020
 
-  [[menu.portfolio]]
-    name = "Felix"
-    url = "#felix"
-    weight = 1030
+  # [[menu.portfolio]]
+  #   name = "Felix"
+  #   url = "#felix"
+  #   weight = 1030
 
-  [[menu.portfolio]]
-    name = "Adobe"
-    url = "#adobe"
-    weight = 1040
+  # [[menu.portfolio]]
+  #   name = "Adobe"
+  #   url = "#adobe"
+  #   weight = 1040
 
-  [[menu.portfolio]]
-    name = "Dimensions"
-    url = "#dimensions"
-    weight = 1050
+  # [[menu.portfolio]]
+  #   name = "Dimensions"
+  #   url = "#dimensions"
+  #   weight = 1050
 
   # [[menu.portfolio]]
   #   name = "Ps.com"
@@ -169,7 +178,7 @@ time_format = "3:04 PM"
 
   [[menu.portfolio]]
     name = "Able Pear"
-    url = "#ablePear"
+    url = "#able-pear"
     weight = 1080
 
   # [[menu.portfolio]]
@@ -178,25 +187,50 @@ time_format = "3:04 PM"
   #   weight = 1090
 
 
+  # [[menu.casestudy_streamlio]]
+  #   name = "introduction"
+  #   url = "#bananas"
+  #   weight = 1000
+  #
+  # [[menu.casestudy_streamlio]]
+  #   name = "Challange"
+  #   url = "#apples"
+  #   weight = 1010
+  #
+  # [[menu.casestudy_streamlio]]
+  #   name = "Process"
+  #   url = "#apples"
+  #   weight = 1020
+  #
+  # [[menu.casestudy_streamlio]]
+  #   name = "Response"
+  #   url = "#apples"
+  #   weight = 1030
+  #
+  # [[menu.casestudy_streamlio]]
+  #   name = "Conclusion"
+  #   url = "#apples"
+  #   weight = 1040
+
 
   [[menu.projects]]
-    name = "Able Pear"
-    url = "#ablePear"
+    name = "Project ARIA"
+    url = "#aria"
     weight = 1000
 
   [[menu.projects]]
-    name = "Able Pear"
-    url = "#ablePear"
+    name = "Watch & Gears"
+    url = "#watchAndGears"
     weight = 1010
 
   [[menu.projects]]
-    name = "Able Pear"
-    url = "#ablePear"
+    name = "AppGraph Study"
+    url = "#appGraph"
     weight = 1020
 
   [[menu.projects]]
-    name = "Able Pear"
-    url = "#ablePear"
+    name = "Contextual UI"
+    url = "#contextUI"
     weight = 1030
 
 
@@ -230,3 +264,15 @@ time_format = "3:04 PM"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+
+
+
+
+
+
+# Sitemap Variables
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5

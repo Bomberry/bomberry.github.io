@@ -40,30 +40,35 @@
 
 [[tools]]
   name = "Logic Pro"
-  value = 80
+  value = 75
   weight = 1080
 
 [[tools]]
-  name = "Xcode"
-  value = 85
+  name = "Xcode/Interface Builder"
+  value = 80
   weight = 1090
 
 [[tools]]
-  name = "Dreamweaver, Atom, Brackets"
+  name = "Atom, Electron, Brackets"
   value = 75
   weight = 1100
 
 [[tools]]
-  name = "BBEdit, TextWrangler"
+  name = "BBEdit, TextWrangler, TextEdit"
   value = 90
   weight = 1110
 
 [[tools]]
-  name = "GitHub, Subversion"
+  name = "GitHub, Git, Subversion"
   value = 60
   weight = 1120
 
 [[tools]]
   name = "Cinema 4D"
   value = 85
+  weight = 1130
+
+[[tools]]
+  name = "Blender"
+  value = 55
   weight = 1130

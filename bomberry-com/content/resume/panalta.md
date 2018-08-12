@@ -3,19 +3,22 @@ title = "Panalta"
 date = 2018-05-05T23:11:02-07:00
 draft = true
 weight = 4
-company_name = "Panalta Inc."
+company_name = "Panalta"
 project_name = ""
-job_title = "Founder, Front End Architect, UI/UX/IxD"
+job_title = "Front End Architect/Consultant"
 job_duration = "1996—2008"
 start_date = "1996"
 end_date = "2008"
 keywords = []
-job_summary = "From customer services and cold calls to creating process documentation, hiring staff and managing contractors, projects, and budgets. Clients include Johnson & Johnson, WebTV, Microsoft, GE, SVC and many more small business and individuals. Services ranged from Corporate Identity Packages to creating new departments in corporations; complete with SOP, guidelines, and training, media production, web sites, intranets, business literature (print & electronic forms), marketing media and product production."
+job_summary = "I was a principal in a small technology consulting firm. I managed many aspects of the business, including branding, design, and production. Clients include Johnson & Johnson, WebTV, Microsoft, and GE. Services included corporate identity, business process development, web development, graphic and print design, and photography."
+has_job_details = false
+has_case_study = false
 +++
 
 
 
 #### Microsoft/Web TV
+
 
 #### IDEO
 

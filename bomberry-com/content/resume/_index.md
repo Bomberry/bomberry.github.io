@@ -8,7 +8,6 @@ location_name = "resume"
 keywords = []
 +++
 
-<h6>resume/-index</h6>
 <section>
   <a id="introduction"></a>
   <div class="container">
@@ -24,9 +23,8 @@ keywords = []
     <hr>
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-left">
-        <h6>resume/-index</h6>
-        <h3 class="text-tall">25+ years of success designing brand, crafting products, and developing intuitive user experience for amazing companies, including; Adobe, IDEO, Microsoft, and the MIT/Stanford Venture Lab (VLAB).</h3>
-        <p class="lead">For the past 6+ years I’ve been directly involved in Adobe’s direction in 3D including 3D in Photoshop, 3D Printing, and Project Felix, as well as influencing additional Adobe titles, keeping my focus on 3D, AR/VR, and touch/mobile UX/IxD all the while.</p>
+        <h3 class="text-tall">I am a product designer and entrepreneur with 20+ years of success developing products, user experiences, and content for amazing organizations: Adobe, IDEO, Microsoft, and the MIT/Stanford Venture Lab (VLAB).</h3>
+        <p class="lead">At Adobe, I spent 7 years working closely with managers, VPs, engineers, and designers helping to shape their 3D initiatives including Photoshop, Dimension, and 3D Printing. My focus is on intuitive and  contextual Interaction design for 3D, AR/VR, touch and mobile user experiences.</p>
       </div>
     </div>
   </div>

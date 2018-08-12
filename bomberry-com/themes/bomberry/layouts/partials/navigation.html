@@ -43,17 +43,35 @@
 <div class="collapse navbar-collapse" id="myInverseNavbar2">
   <ul class="nav navbar-nav navbar-right">
     {{ $location := .Params.location_name }}
-    {{/* {{ $hidden := .Site.Menus.main.hidden }} */}}
+    {{ $hasCaseStudy := .Params.has_case_study }}
+    {{ $casestudy := .Params.case_study_file }}
+    {{/* {{ $hidden := .Site.Menus.main.
+    hidden }} */}}
     {{ if (not $location) }}
       {{ range .Site.Menus.main }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }}<br/><span class="location-names">{{ .Name }}</span></a></li>
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }} <span class="location-{{ .Name }}">{{ .Name }}</span></a></li>
       {{ end }}
     {{ else if (eq $location "resume") }}
       {{ range .Site.Menus.resume }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
-    {{ else if (eq $location "portfolio") }}
+    {{ else if (eq .URL "/portfolio/") }}
       {{ range .Site.Menus.portfolio }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq .URL "/portfolio/streamlio/") }}
+
+      {{/* {{if (eq $casestudy) "craftmaster" }}
+        {{ range .Site.Menus.portfolio.craftmaster }}
+        <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+        {{ end }}
+      {{ else }}
+        {{ range .Site.Menus.portfolio }}
+        <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+        {{ end }}
+      {{ end }} */}}
+
+      {{ range .Site.Menus.casestudy_streamlio }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
     {{ else if (eq $location "projects") }}

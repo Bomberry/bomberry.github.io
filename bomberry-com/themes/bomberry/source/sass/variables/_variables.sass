@@ -6,6 +6,11 @@
 
 // NOTE: Variables used in bomberry "theme" — bomberry.sass and associated files.
 
+$fa-font-path: "../fonts"
+
+
+
+
 $color-white: rgba(255,255,255,1.00)
 $color-gray-lightest: rgba(236,236,236,1.00)
 $color-gray-lighter: rgba(188,188,188,1.00)
@@ -32,11 +37,8 @@ $color-projects: $color-blue
 $color-contact: $color-purple
 $color-adobe: rgba(14,132,207,1.00)
 
-
 $map: (color-portfolio: $color-portfolio, color-resume: $color-resume, color-kitchen: $color-kitchen)
 $color-map: (site: $color-black, resume: $color-red, portfolio: $color-orange, kitchen: $color-yellow, 1: $color-green, projects: $color-blue, contact: $color-purple, adobe: rgba(14,132,207,1.00), apple: rgba(14,132,207,1.00))
-
-
 
 $color-hibiscus: rgba(129,4,130,1.00)
 $color-cinnamon: rgba(86,47,5,1.00)
@@ -55,8 +57,75 @@ $color-chilipepper: rgba(156,23,20,1.00)
 $color-blackpepper: rgba(20,18,17,1.00)
 
 
+
+
 $layout-breath-unit: 7vmin
 
 
-$text-shadow-dark: 0px 3px 6px rgba($color-gray-darkest, 0.62)
-$text-shadow-light: 0px 3px 6px rgba($color-gray-lightest, 0.62)
+$shadow-size-default: 0rem .25rem .5rem
+$shadow-size-px: 0px 3px 6px
+$shadow-size: $shadow-size-px
+$shadow-color-light: 0, 0, 0
+$shadow-color-medium: 127, 127, 127
+$shadow-color-dark: 255, 255, 255
+$opacity-0: 0
+$opacity-low: 0.38
+$opacity-half: 0.5
+$opacity-high: 0.62
+$opacity-1: 1
+
+
+$box-shadow: $shadow-size rgba($color-gray-darkest, 0.62)
+$box-shadow-dark: $shadow-size rgba($color-gray-darkest, 0.62)
+$box-shadow-light: $shadow-size rgba($color-gray-lightest, 0.62)
+
+$text-shadow-dark: $shadow-size rgba($color-gray-darkest, 0.62)
+$text-shadow-light: $shadow-size rgba($color-gray-lightest, 0.62)
+
+
+//  global-box-shadow variables:
+$box-shadow: 0 5px 15px rgba(0,0,0,0.35)
+$box-shadow-white: 0 5px 15px rgba(255,255,255,0.62)
+$box-shadow-large: 0 10px 30px rgba(0,0,0,0.30)
+$box-shadow-medium: 0 3px 5px rgba(0,0,0,0.15)
+$box-shadow-small: 0 1px 2px rgba(0,0,0,0.15)
+$box-shadow-small-white: 0 1px 2px rgba(255,255,255,0.62)
+$box-shadow-hidden: 0 0px 0px rgba(0,0,0,0.0)
+
+$box-shadow-glow-white: 0 0px 0.68rem rgba(255,255,255,0.38)
+$box-shadow-glow-whiter: 0 0px 0.68rem rgba(255,255,255,0.62)
+
+//  global-box-shadow variables:
+$text-shadow: $box-shadow
+$text-shadow-medium: $box-shadow-medium
+$text-shadow-small: $box-shadow-small
+$text-shadow-small-white: $box-shadow-small-white
+$text-shadow-hidden: $box-shadow-hidden
+$text-shadow-heavy: 0 5px 15px rgba(0,0,0,0.62)
+$text-shadow-heavy-medium: 0 3px 5px rgba(0,0,0,0.62)
+$text-shadow-heavy-small: 0 1px 2px rgba(0,0,0,0.62)
+$text-shadow-heavy-hidden: $box-shadow-hidden
+
+//  global-"transition" default:
+$transition: all .16s ease-in-out
+$transition-default: all .16s ease
+$transition-slow: all .32s ease
+$transition-box-shadow: box-shadow .16s ease-in-out
+
+
+//  Box Shadow Classes
+.box-shadow
+  box-shadow: $box-shadow
+  &-medium
+    box-shadow: $box-shadow-medium
+  &-small
+    box-shadow: $box-shadow-small
+  &-small-white
+    box-shadow: $box-shadow-small-white
+
+//  Box Hover Class
+.box-hover
+  // box-shadow: $box-shadow-small
+  transition: $transition-box-shadow
+  &:hover
+    box-shadow: $box-shadow

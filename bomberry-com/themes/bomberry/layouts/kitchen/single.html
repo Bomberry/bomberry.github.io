@@ -1,12 +1,16 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "bodystart" }}<body id="{{ .Params.title | urlize }}" class="">{{ end }}
 {{ define "main" }}
-<h6> kichen/single </h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
 {{/* <pre>
   params : {{ .Params.location_name}}
 </pre> */}}
 
-{{ partial "whatsthis.html" . }}
+{{ if .Site.Params.includeHugoMeta }}
+  {{ partial "whatsthis.html" . }}
+{{ end }}
 
   {{ .Content }}
 {{ end }}

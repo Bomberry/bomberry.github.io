@@ -1,20 +1,92 @@
 {{ define "title" }}{{ .Params.title }}{{ end }}
 {{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
-  <h6> portfolio/list </h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
   {{/* <pre>
   Params.location_name : {{ .Params.location_name}}
   Kind : {{ .Kind }}
 </pre> */}}
 
+{{ if .Site.Params.includeHugoMeta }}
   {{ partial "whatsthis.html" . }}
+{{ end }}
 
-  {{ .Content }}
+  {{/* {{ .Content }} */}}
+
+
+
+
+  <!--  CASE STUDY  Streamlio -->
+  <a id="streamlio"></a>
+  <div class="jumbotron casestudy cs-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Streamlio</h3>
+          <p>The challange was to build a brand around an existing logo for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.</p>
+        </div>
+      </div>
+
+  <!--
+
+      <div class="row breath-top">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera2a.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera4_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera5_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+          </div>
+        </div>
+
+  -->
+
+         {{/* <div class="row">
+          <div class="col-lg-12">
+            <p>Project Auguste's engine was designed by Adobe's <a href="https://www.linkedin.com/in/sebastian-marketsmueller-46733956" target="new">Sebastian Marketsmueller</a> and allows the user to "sculpt" in a virtual space, complete with various brushes, filters, and symmetrical drawing effects. I introduced an interaction system that would allow for users to interact with the "camera" object while at the same time editing the object's surface using a combination of multi-touch gestures and optionally using a stylus.</p>
+          </div>
+        </div> */}}
+
+
+        {{/* {{ if or .Params.has_job_details .Params.has_case_study }} */}}
+        <div class="row breath-top-small">
+          <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-left">
+            {{/* {{ if .Params.has_job_details }} */}}
+            {{/* <p>{{ .Content }}</p> */}}
+            {{/* <div class="lead"><a href="http://www.craftmastersoftware.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit CraftMaster Software <span class="fa fa-external-link"></span></a></div> */}}
+            {{/* {{ end }} */}}
+          </div>
+          <div class="col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-1 text-right">
+            {{/* {{ if .Params.has_case_study }} */}}
+            {{/* <p>{{ .Content }}</p> */}}
+            <div class="lead"><a href="{{ .Permalink }}/streamlio" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div>
+            {{/* {{ end }} */}}
+          </div>
+        </div>
+        {{/* {{ end }} */}}
+
+
+      <div class="row breath-top">
+          <a href="#" class="thumbnail">
+            <img class="img-responsive" src="./assets/streamlio/Streamlio-BC-Rendering.png" alt="placeholder image">
+          </a>
+          <p class="small text-muted">Updated business cards for Streamlio.</p>
+        </div>
+
+    </div>
+  </div>
+
+
 
 
 
 
   <!--  CASE STUDY  CraftMaster Software  -->
+  <a id="craftmaster"></a>
   <div class="jumbotron casestudy">
     <div class="container">
       <div class="row">
@@ -22,10 +94,26 @@
           <h3>CraftMaster Software</h3>
           <p data_temp_dwid="1">A complete <strong data_temp_dwid="2">Identity System</strong> for CraftMaster Software, <strong data_temp_dwid="4">product design</strong> for CraftMaster — a multi-platform Minecraft companion application, <strong>web site design</strong>, and social/ad design and production.</p>
   <!--        <div class="lead"><a href="casestudy-craftmaster.html" class=" color-portfolio"><span class="fa fa-briefcase"></span> View Case Study <span class="fa fa-arrow-circle-right"></span></a></div>-->
-          <div class="lead"><a href="http://www.craftmastersoftware.com" class=" color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit CraftMaster Software <span class="fa fa-external-link"></span></a></div>
-
         </div>
       </div>
+
+      {{/* {{ if or .Params.has_job_details .Params.has_case_study }} */}}
+      <div class="row breath-top-small">
+        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-left">
+          {{/* {{ if .Params.has_job_details }} */}}
+          {{/* <p>{{ .Content }}</p> */}}
+          {{/* <div class="lead"><a href="http://www.craftmastersoftware.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit CraftMaster Software <span class="fa fa-external-link"></span></a></div> */}}
+          {{/* {{ end }} */}}
+        </div>
+        <div class="col-sm-10 col-sm-offset-2 col-md-6 col-md-offset-1 text-right">
+          {{/* {{ if .Params.has_case_study }} */}}
+          {{/* <p>{{ .Content }}</p> */}}
+          <div class="lead"><a href="{{ .Permalink }}/craftmaster" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->Case Study <span class="fa fa-briefcase"></span></a></div>
+          {{/* {{ end }} */}}
+        </div>
+      </div>
+      {{/* {{ end }} */}}
+
       <div class="row breath-top">
         <div class="col-xs-6 col-md-3">
           <a href="#" class="thumbnail">
@@ -52,11 +140,12 @@
   </div>
 
 
-  <!--  CASE STUDY  Adobe Service Award -->
+  <!--  CASE STUDY  Adobe Project Auguste -->
+  <a id="adobe-august"></a>
   <div class="jumbotron casestudy cs-dark">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 background-shade">
+        <div class="col-lg-12">
           <h3>Project Auguste for Adobe</h3>
           <p>Project Auguste, <strong>a touch-first interactive sculpting mobile app</strong>, is part of Adobe's Project Felix. My task was to take a technology and wrap a product design around it that would comply with and extend Adobe's application aestetic. It took three months and a demo was presented during Adobe MAX 2016.</p>
         </div>
@@ -79,10 +168,28 @@
   -->
 
          <div class="row">
-          <div class="col-lg-12 background-shade">
+          <div class="col-lg-12">
             <p>Project Auguste's engine was designed by Adobe's <a href="https://www.linkedin.com/in/sebastian-marketsmueller-46733956" target="new">Sebastian Marketsmueller</a> and allows the user to "sculpt" in a virtual space, complete with various brushes, filters, and symmetrical drawing effects. I introduced an interaction system that would allow for users to interact with the "camera" object while at the same time editing the object's surface using a combination of multi-touch gestures and optionally using a stylus.</p>
           </div>
         </div>
+
+
+        {{/* {{ if or .Params.has_job_details .Params.has_case_study }} */}}
+        <div class="row breath-top-small">
+          <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-left">
+            {{/* {{ if .Params.has_job_details }} */}}
+            {{/* <p>{{ .Content }}</p> */}}
+            {{/* <div class="lead"><a href="http://www.craftmastersoftware.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->visit CraftMaster Software <span class="fa fa-external-link"></span></a></div> */}}
+            {{/* {{ end }} */}}
+          </div>
+          <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 text-right">
+            {{/* {{ if .Params.has_case_study }} */}}
+            {{/* <p>{{ .Content }}</p> */}}
+            {{/* <div class="lead"><a href="{{ .Permalink }}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div> */}}
+            {{/* {{ end }} */}}
+          </div>
+        </div>
+        {{/* {{ end }} */}}
 
 
       <div class="row breath-top">
@@ -97,6 +204,7 @@
 
 
   <!--  CASE STUDY  Photoshop 3D -->
+  <a id="adobe-photoshop"></a>
   <div class="jumbotron casestudy cs-light">
     <div class="container">
       <div class="row">
@@ -112,6 +220,7 @@
 
 
   <!--  CASE STUDY  Something 3D -->
+  <a id="adobe-felix"></a>
   <div class="jumbotron casestudy cs-dark cs-felix">
     <div class="container">
       <div class="row background-shade">
@@ -128,6 +237,7 @@
 
 
   <!--  CASE STUDY  Adobe Service Award -->
+  <a id="adobe-awards"></a>
   <div class="jumbotron casestudy cs-light">
     <div class="container">
       <div class="row">
@@ -140,13 +250,13 @@
 
       <div class="row breath-top">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera2a.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+            <img src="./assets/artwork/AdobeServiceAward02c3a3upCamera2a.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera4_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+            <img src="./assets/artwork/AdobeServiceAward02c3a3upCamera4_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/AdobeServiceAward02c3a3upCamera5_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
+            <img src="./assets/artwork/AdobeServiceAward02c3a3upCamera5_1.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
           </div>
         </div>
 
@@ -155,14 +265,15 @@
 
 
   <!--  CASE STUDY  Photoshop Dimensions -->
+  <a id="adobe-doppler"></a>
   <div class="jumbotron casestudy cs-dark">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 background-shade">
+        <div class="col-lg-12">
           <h3>Photoshop Dimensions</h3>
           <p>Executive editor and writer of Photoshop Dimensions – the ultimate guide to 3D in Adobe Photoshop — which explores and explains the extensive functionality of Photoshop’s 3D tools as articles, how-to guides, and tips, on modeling, texturing, lighting, and composition.</p>
           <p>As well as writing and managing the editing and production of the electronic publication, I’ve created and release new “Freebies” assets, such as Image Based Lights (IBLs), freely available for everyone to download and use in most 3D applications.</p>
-          <div class="lead"><a href="http://www.photoshopdimensions.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit Photoshop Dimensions <span class="fa fa-external-link"></span></a></div>
+          {{/* <div class="lead"><a href="http://www.photoshopdimensions.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit Photoshop Dimensions <span class="fa fa-external-link"></span></a></div> */}}
         </div>
       </div>
       <div class="row breath-top">
@@ -175,6 +286,7 @@
 
 
   <!--  CASE STUDY  Something 3D -->
+  <a id="adobe-photoshop-com"></a>
   <div class="jumbotron casestudy cs-light">
     <div class="container">
       <div class="row">
@@ -211,10 +323,11 @@
 
 
   <!--  CASE STUDY  Photoshop Content -->
+  <a id="adobe-materials"></a>
   <div class="jumbotron casestudy cs-dark">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 background-shade">
+        <div class="col-lg-12">
           <h3>Photoshop – 3D Materials</h3>
           <p>I developed more than 150 materials for Photoshop CS3, ranging from several categories from woods and metals to gemstones and synthetic materials. All materials are composed of Photoshop files with several layers that allow for real-time customization.</p>
           <div class="lead"><a href="http://www.photoshop.com/products/photoshop/3d/content" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit Photoshop.com to download the materials <span class="fa fa-external-link"></span></a></div>
@@ -248,13 +361,14 @@
   </div>
 
   <!--  CASE STUDY  Project Felix Volumetric Painting App -->
+  <a id="able-pear"></a>
   <div class="jumbotron casestudy">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h3>Able Pear Software</h3>
           <p>CXO of Able Pear Software, founded in 2008 by <a href="https://www.linkedin.com/in/donmccaughey" target="new">Don McCaughey</a> and myself, a boutique software development firm focused on creating distinctive mobile apps for iOS, as well as consulting and mentoring to companies interested in macOS, iOS and mobile/touch-first application development, agile development, and engineering solutions.</p>
-          <div class="lead"><a href="http://www.ablepear.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit Able Pear Software <span class="fa fa-external-link"></span></a></div>
+          {{/* <div class="lead"><a href="http://www.ablepear.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit Able Pear Software <span class="fa fa-external-link"></span></a></div> */}}
         </div>
       </div>
 
@@ -316,202 +430,9 @@
   </div>
 
   -->
-  <!--  CASE STUDY  Project Felix Volumetric Painting App -->
-  <div class="jumbotron casestudy cs-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 background-shade">
-          <h3>Artwork</h3>
-          <p>A collection of random designs, projects, illustrations, and 3D renderings.</p>
-        </div>
-      </div>
-  <!--
-      <div class="row breath-top">
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-  -->
-    </div>
-  </div>
-
-  <!--  ARTWORK -->
-  <section>
-    <div class="container breath-top">
 
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <img src="./assets/projects/PhotoshopCom3DHero-KevinBomberry.jpg" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail"> </div>
-      </div>
-
-
-  <!--
-       <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-  -->
-
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/ChessBoardScene01b.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/ChessBoardScene01a.png" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-
-
-
-  <!--
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="../images/400X200.gif" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-  -->
-
-      <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/IBLTestStage01cIBLTestRig01d.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/Lighting-Room-MaterialViewer01aWithObject.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <img src="./assets/projects/RoomLighting-Scene01a.png" alt="Thumbnail Image 1" class="img-responsive thumbnail img-thumbnail">
-          </div>
-        </div>
-
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Art-CheckerLightCubeInBlue-01a.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Birthdaze-iPhone-App-Artwork-512x512.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/DesignMilk-FlatwareSet-01-Rendering.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Dinosaurs-iPhone-App-Artwork-512x512.png" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/3DUX2.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/3DUX1.png" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/ProfilePlanter-Test-Isabelle01c.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Texture-Map-Test-Scene-A3.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Materials2014Q4Pod01a.png" alt="placeholder image">
-          </a>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <a href="#" class="thumbnail">
-            <img class="img-responsive" src="./assets/projects/Watering-PlanterWaterFlowIllustration-ScreenShot20170404.png" alt="placeholder image">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
+{{/*
   <div class="container well">
     <div class="row">
   <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right">
@@ -559,6 +480,7 @@
   -->
   </div>
   </div>
+
   <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4"> <span class="text-right"> </span>
     <h3>Contact Me</h3>
     <hr>
@@ -596,7 +518,7 @@
       </div>
     </div>
   </div>
-
+ */}}
 
 
 

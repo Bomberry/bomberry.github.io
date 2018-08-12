@@ -1,9 +1,13 @@
 {{ partial "header.html" . }}
 
-  <h6>List - Single</h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
 
 
+{{ if .Site.Params.includeHugoMeta }}
   {{ partial "whatsthis.html" . }}
+{{ end }}
 
 
   <h1>{{ .Title }}</h1>

@@ -7,9 +7,14 @@ company_name = "Bomberry.com"
 location_name = "projects"
 keywords = []
 
-[menu.projects]
-  name = "watchAndGears"
-  url = "#watchAndGears"
-  weight = 1000
+# [menu.projects]
+#  name = "Watch & Gears"
+#  url = "#watchAndGears"
+#  weight = 1000
+
+# [menu.projects]
+#  name = "Project ARIA"
+#  url = "#aria"
+#  weight = 1010
 
 +++

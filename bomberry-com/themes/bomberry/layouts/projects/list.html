@@ -1,13 +1,17 @@
 {{ define "title" }}{{ .Params.title }}{{ end }}
 {{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
-  <h6> projects/list </h6>
+{{ if .Site.Params.includeFileInfo }}
+  {{ partial "file-info.html" . }}
+{{ end }}
   {{/* <pre>
   Params.location_name : {{ .Params.location_name}}
   Kind : {{ .Kind }}
   </pre> */}}
-  
-  {{ partial "whatsthis.html" . }}
+
+  {{ if .Site.Params.includeHugoMeta }}
+    {{ partial "whatsthis.html" . }}
+  {{ end }}
 
   {{ .Content }}
 
