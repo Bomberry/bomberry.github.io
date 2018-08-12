@@ -73,12 +73,30 @@
               ( odd )
             {{ end }} */}}
             {{/* {{ $len := .figures }} */}}
-            {{ if modBool (len .figures) 2 }}
+            {{/* {{ if modBool (len .figures) 2 }}
               {{ $.Scratch.Set "colWidth" 6 }}
+              <p>
+                no
+              </p>
             {{ else }}
               {{ $.Scratch.Set "colWidth" 12 }}
+              <p>
+                yes
+              </p>
+            {{ end }} */}}
+            {{/* <p>{{ len .figures }}</p> */}}
+            {{ if .figures }}
+              <div class="col-xs-12 flex-gallery breath-top">
+              {{ range .figures }}
+                  <figure>
+                    <img src="{{ $mediaPath }}/{{ $projectName }}/{{ .src }}"
+                      width="100%" height="100%"
+                      alt="{{ .figcaption }}">
+                    <figcaption class="text-center">{{ .figcaption }}</figcaption>
+                  </figure>
+              {{ end }}
+              </div>
             {{ end }}
-
             {{/* {{ range .figures }}
               <div class="col-lg-{{$.Scratch.Get "colWidth"}} breath-top">
                 <figure>
@@ -91,7 +109,7 @@
             {{ end }} */}}
 
 
-            <div class="col-xs-12 flex-gallery breath-top">
+            {{/* <div class="col-xs-12 flex-gallery breath-top">
             {{ range .figures }}
                 <figure>
                   <img src="{{ $mediaPath }}/{{ $projectName }}/{{ .src }}"
@@ -100,7 +118,7 @@
                   <figcaption class="text-center">{{ .figcaption }}</figcaption>
                 </figure>
             {{ end }}
-            </div>
+            </div> */}}
 
 
           </div>

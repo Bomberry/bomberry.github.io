@@ -133,9 +133,9 @@ featured = false
     caption = "Streamlio Logo(The Problem)"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    [[sections.case_study_content.figures]]
-      src = "Streamlio-BC-Rendering.png"
-      figcaption = "3D rendering of redesigned business cards"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-Rendering.png"
+    #   figcaption = "3D rendering of redesigned business cards"
 
   [[sections.case_study_content]]
     name = "goals"
@@ -150,15 +150,15 @@ featured = false
     caption = "Streamlio Logo (The Solution)"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    [[sections.case_study_content.figures]]
-      # src = "original-streamlio-buiness-card-1.png"
-      # figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "updated-streamlio-buiness-card-1.png"
-      # figcaption = "Redesign (SOLUTION END)"
+    #   src = "original-streamlio-buiness-card-1.png"
+    #   figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-ColorCallout.png"
-      # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
+    #   src = "updated-streamlio-buiness-card-1.png"
+    #   figcaption = "Redesign (SOLUTION END)"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-ColorCallout.png"
+    #   figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
 
   [[sections.case_study_content]]
     name = "logo"
@@ -242,15 +242,15 @@ featured = false
     caption = "Streamlio Logo (The Solution)"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    [[sections.case_study_content.figures]]
-      # src = "original-streamlio-buiness-card-1.png"
-      # figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "updated-streamlio-buiness-card-1.png"
-      # figcaption = "Redesign (SOLUTION END)"
+    #   src = "original-streamlio-buiness-card-1.png"
+    #   figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-ColorCallout.png"
-      # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
+    #   src = "updated-streamlio-buiness-card-1.png"
+    #   figcaption = "Redesign (SOLUTION END)"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-ColorCallout.png"
+    #   figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
 
   [[sections.case_study_content]]
     name = "branding"
@@ -265,15 +265,15 @@ featured = false
     caption = "Streamlio Logo (The Solution)"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    [[sections.case_study_content.figures]]
-      # src = "original-streamlio-buiness-card-1.png"
-      # figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "updated-streamlio-buiness-card-1.png"
-      # figcaption = "Redesign (SOLUTION END)"
+    #   src = "original-streamlio-buiness-card-1.png"
+    #   figcaption = "Original"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-ColorCallout.png"
-      # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
+    #   src = "updated-streamlio-buiness-card-1.png"
+    #   figcaption = "Redesign (SOLUTION END)"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-ColorCallout.png"
+    #   figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
 
   [[sections.case_study_content]]
     name = "cards"
@@ -311,12 +311,12 @@ featured = false
     caption = "Streamlio Logo (The Result)"
     media = ["Streamlio-BC-Rendering.png"]
 
-    [[sections.case_study_content.figures]]
+    # [[sections.case_study_content.figures]]
     #   src = "Streamlio-BC-Rendering.png"
     #   figcaption = "Logo"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering-PlexusUV.png"
-      # figcaption = "RESULT END"
+    #   src = "Streamlio-BC-Rendering-PlexusUV.png"
+    #   figcaption = "RESULT END"
 
   [[sections.case_study_content]]
     name = "architecture"
@@ -374,12 +374,12 @@ featured = false
     caption = "Streamlio Logo (The Result)"
     media = ["Streamlio-BC-Rendering.png"]
 
-    [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering.png"
-      # figcaption = "Logo"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering-PlexusUV.png"
-      # figcaption = "RESULT END"
+    #   src = "Streamlio-BC-Rendering.png"
+    #   figcaption = "Logo"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-Rendering-PlexusUV.png"
+    #   figcaption = "RESULT END"
 
   [[sections.case_study_content]]
     name = "result"
@@ -394,12 +394,12 @@ featured = false
     caption = "Streamlio Logo (The Result)"
     media = ["Streamlio-BC-Rendering.png"]
 
-    [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering.png"
-      # figcaption = "Logo"
     # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering-PlexusUV.png"
-      # figcaption = "RESULT END"
+    #   src = "Streamlio-BC-Rendering.png"
+    #   figcaption = "Logo"
+    # [[sections.case_study_content.figures]]
+    #   src = "Streamlio-BC-Rendering-PlexusUV.png"
+    #   figcaption = "RESULT END"
 
 
 +++
