@@ -1,0 +1,61 @@
+<!-- Experience Section -->
+<section class="pad-top-small">
+  <a id="experience"></a>
+  <div class="container">
+   <hr>
+    <div class="row color-{{.Params.location_name}}">
+      <div class="col-md-10 col-md-offset-1 text-left">
+        <h2>Experience</h2>
+      </div>
+    </div>
+    <hr>
+
+  {{ range .Pages.ByWeight.Reverse }}
+  <a id="{{.File}}"></a>
+  <article>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <h4>{{.Params.job_title}}</h4>
+      </div>
+      <div class="col-md-3 text-right">
+        <h4>{{.Params.company_name}}</h4>
+      </div>
+      <div class="col-md-2 text-right">
+        <h4>{{.Params.job_duration}}</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-left">
+        <p class="lead">{{.Params.job_summary}}</p>
+      </div>
+    </div>
+    {{ if or .Params.has_job_details .Params.has_case_study }}
+    <div class="row breath-top-small">
+      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 text-left">
+        {{ if .Params.has_job_details }}
+        {{/* <p>{{ .Content }}</p> */}}
+        {{/* <div class="lead"><a href="{{ .Permalink }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->more info <span class="fa fa-arrow-circle-down"></span></a></div> */}}
+        <div class="lead"><a class="color-resume" data-toggle="collapse" href="#{{ .File }}-content" role="button" aria-expanded="false" aria-controls="{{ .File }}-content">more info <span class="fa fa-arrow-circle-down"></span></a></div>
+        {{ end }}
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-right">
+        {{ if .Params.has_case_study }}
+        {{/* <p>{{ .Content }}</p> */}}
+        {{/* <div class="lead"><a href="{{ .Permalink }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div> */}}
+        <div class="lead"><a href="../portfolio/{{ .Params.case_study_file }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div>
+        {{ end }}
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="{{ .File }}-content">
+        <div class="card card-body">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{/* <a href="{{.URL}}">{{.Title}}</a>, {{.Params.job_title}} */}}
+  </article>
+  <hr>
+  {{ end }}
+</div>
+</section>

@@ -25,6 +25,10 @@ body {
 p {
   line-height: 1.62; }
 
+hr {
+  color: transparent;
+  border-color: transparent; }
+
 nav .fa {
   margin-right: 0.75rem; }
 footer .fa, .contact .fa {
@@ -223,7 +227,9 @@ a.location-site {
     height: 100%; }
     .full-carousel .carousel-inner > .item > .img-responsive {
       -webkit-filter: brightness(62%);
-      filter: brightness(62%); }
+      filter: brightness(62%);
+      width: 100%;
+      object-fit: cover; }
   .full-carousel .carousel, .full-carousel .item, .full-carousel .active {
     height: 100%; }
   .full-carousel > .item img {
@@ -247,9 +253,10 @@ a.location-site {
     .full-carousel .carousel-control > .icon-next, .full-carousel .carousel-control .icon-prev {
       font-family: "FontAwesome";
       font-size: 3ch;
-      top: 35%;
-      position: absolute;
-      margin: 0; }
+      position: relative;
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%); }
     .full-carousel .carousel-control .icon-next {
       right: 1rem; }
       .full-carousel .carousel-control .icon-next::before {
@@ -418,7 +425,7 @@ img.thumbnail + span.caption {
 
 #area-resume section div.container article {
   padding-top: 7vmin;
-  padding-bottom: 7vmin; }
+  padding-bottom: 4.3209876543vmin; }
   #area-resume section div.container article div.row.link-portfolio {
     padding-bottom: 1.5ch; }
     #area-resume section div.container article div.row.link-portfolio-hide-show {
@@ -477,9 +484,6 @@ img.thumbnail + span.caption {
   #area-casestudy .carousel-indicators > li.active, #area-portfolio .carousel-indicators > li.active {
     background-color: transparent; }
 
-section.page-introduction {
-  background-color: black; }
-
 section.casestudy {
   margin-top: 14vmin;
   margin-bottom: 14vmin; }
@@ -505,14 +509,18 @@ section.casestudy {
   .featured > .feature {
     display: flex;
     min-height: 62vh;
-    flex-basis: calc(50%);
+    margin: 0;
+    flex: 1 1 calc(50% - 60px);
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    padding: 3rem;
+    padding: 30px;
     transition: all 0.16s ease; }
-    @media (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .featured > .feature {
-        flex-basis: calc(100%); } }
+        flex-basis: 1 1 calc(100% - 60px);
+        flex-direction: column;
+        min-height: 38vh;
+        margin: 0; } }
     .featured > .feature:hover {
       color: white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
@@ -736,6 +744,23 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .background-shade-light, .featured > .feature > div, .featured > .feature.feature-invert:hover > div {
   background-color: rgba(255, 255, 255, 0.6); }
 
+.jumbotron.casestudy.cs-type,
+.jumbotron.projects.cs-type, .jumbotron.casestudy.cs-type > .container,
+.jumbotron.projects.cs-type > .container, .jumbotron.casestudy.cs-type > .container > .row,
+.jumbotron.projects.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
+.jumbotron.projects.cs-type + .jumbotron.casestudy > .container {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.cs-light {
+  color: #101010;
+  background: #ececec; }
+
+.cs-dark {
+  color: white;
+  background: #202020; }
+
 .jumbotron-salts, .jumbotron-syrups {
   background: #ececec no-repeat scroll center;
   background-size: cover; }
@@ -746,15 +771,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-image: url("../kitchen/assets/Hero-KevinsKitchen-Salts.png"); }
 .jumbotron-syrups {
   background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png"); }
-
-.jumbotron.casestudy.cs-type,
-.jumbotron.projects.cs-type, .jumbotron.casestudy.cs-type > .container,
-.jumbotron.projects.cs-type > .container, .jumbotron.casestudy.cs-type > .container > .row,
-.jumbotron.projects.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
-.jumbotron.projects.cs-type + .jumbotron.casestudy > .container {
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 0; }
 
 .jumbotron.casestudy,
 .jumbotron.projects {
@@ -869,13 +885,20 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     padding-top: 5rem; }
   .pad-top-large {
     padding-top: 10rem; }
-
 .pad-all-small {
   padding: 2.5rem; }
-
 .pad-h-small, .container.contact {
   padding-left: 2.5rem;
   padding-right: 2.5rem; }
+.pad-h-default {
+  padding-left: 15px;
+  padding-right: 15px; }
+.pad-h-zero {
+  padding-left: 0;
+  padding-right: 0; }
+.pad-h-clear {
+  padding-left: -15px;
+  padding-right: -15px; }
 
 .m-pad-top {
   margin-top: 7.5rem; }

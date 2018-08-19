@@ -132,3 +132,8 @@
     border-bottom-color: rgba(14,132,207,1.00)
   @else
     border-bottom-color: $color-gray-light
+
+@mixin setDataAndColors
+  @each $map-name, $map-color in $syrupNameColorMap
+    &[data-item-name="#{$map-name}"]
+      color: #{$map-color}

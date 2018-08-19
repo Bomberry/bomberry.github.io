@@ -76,7 +76,6 @@ body
   font-size: 1rem
   margin-top: 61px
 
-
 p
   line-height: 1.62
   // padding-bottom: 3.24rem
@@ -88,6 +87,9 @@ p
 // h4, .h4, h5, .h5, h6, .h6
 //   margin-bottom: 1.62rem
 
+hr
+  color: transparent
+  border-color: transparent
 
 //  FONTAWESOME OVERRIDES
 .fa
@@ -350,6 +352,10 @@ a.location
       > .img-responsive
         -webkit-filter: brightness(62%)
         filter: brightness(62%)
+        width: 100%
+        object-fit: cover
+      // > img,
+      // > a > img
   .carousel,.item,.active
     height: 100%
   > .item
@@ -373,12 +379,19 @@ a.location
   .carousel-control
     width: 12.5%
     transition: $transition-slow
+
     > .icon-next, .icon-prev
       font-family: "FontAwesome"
       font-size: 3ch
-      top: 35%
-      position: absolute
+      position: relative
       margin: 0
+      top: 50%
+      transform: translateY(-50%)
+      // position: relative
+      // float: left
+      // top: 50%
+      // left: 50%
+      // transform: translate(-50%, -50%)
     .icon-next
       right: 1rem
       &::before
@@ -396,12 +409,12 @@ a.location
   .active
     background-color: transparent
 
-
 @media (max-width: 598px)
   .carousel-inner
     .img-responsive
       -webkit-filter: brightness(62%)
       filter: brightness(62%)
+
 
 .media-heading
   padding-bottom: .5rem
@@ -506,36 +519,38 @@ img.thumbnail
     min-width: 48px
     font-size: 8ch
     padding-right: 2ch
-  &[data-item-name="hibiscus"]
-    color: $color-hibiscus
-  &[data-item-name="cinnamon"]
-    color: $color-cinnamon
-  &[data-item-name="lemongrass"]
-    color: $color-lemongrass
-  &[data-item-name="mint"]
-    color: $color-mint
-  &[data-item-name="ginger"]
-    color: $color-ginger
-  &[data-item-name="galangal"]
-    color: $color-galangal
-  &[data-item-name="greencardamon"]
-    color: $color-greencardamon
-  &[data-item-name="meyerlemon"]
-    color: $color-meyerlemon
-  &[data-item-name="brownsugar"]
-    color: $color-brownsugar
-  &[data-item-name="chicory"]
-    color: $color-chicory
-  &[data-item-name="clove"]
-    color: $color-clove
-  &[data-item-name="staranise"]
-    color: $color-staranise
-  &[data-item-name="coconut"]
-    color: $color-coconut
-  &[data-item-name="chilipepper"]
-    color: $color-chilipepper
-  &[data-item-name="blackpepper"]
-    color: $color-blackpepper
+  @include setDataAndColors
+
+  // &[data-item-name="hibiscus"]
+  //   color: $color-hibiscus
+  // &[data-item-name="cinnamon"]
+  //   color: $color-cinnamon
+  // &[data-item-name="lemongrass"]
+  //   color: $color-lemongrass
+  // &[data-item-name="mint"]
+  //   color: $color-mint
+  // &[data-item-name="ginger"]
+  //   color: $color-ginger
+  // &[data-item-name="galangal"]
+  //   color: $color-galangal
+  // &[data-item-name="greencardamon"]
+  //   color: $color-greencardamon
+  // &[data-item-name="meyerlemon"]
+  //   color: $color-meyerlemon
+  // &[data-item-name="brownsugar"]
+  //   color: $color-brownsugar
+  // &[data-item-name="chicory"]
+  //   color: $color-chicory
+  // &[data-item-name="clove"]
+  //   color: $color-clove
+  // &[data-item-name="staranise"]
+  //   color: $color-staranise
+  // &[data-item-name="coconut"]
+  //   color: $color-coconut
+  // &[data-item-name="chilipepper"]
+  //   color: $color-chilipepper
+  // &[data-item-name="blackpepper"]
+  //   color: $color-blackpepper
 
 
 #area-site
@@ -579,7 +594,7 @@ img.thumbnail
     div.container
       article
         padding-top: $layout-breath-unit
-        padding-bottom: $layout-breath-unit
+        padding-bottom: $layout-breath-unit/1.62
         div.row.link-portfolio
           padding-bottom: 1.5ch
           &-hide-show
@@ -657,8 +672,13 @@ img.thumbnail
 //    color: $color-white
 //    background: $color-gray-darker
 
-section.page-introduction
+//section.page-introduction
   background-color: $color-black
+
+// section.introduction
+  #area-resume &
+    background-color: $color-gray-lightest
+
 
 section.casestudy
   margin-top: 14vmin
@@ -728,7 +748,9 @@ section.casestudy
     background-color: $baseColor
     color: white
 
+// $feature-padding: 62px
 .featured
+  // $feature-padding: 3rem
   min-height: 100%
   display: flex
   flex-wrap: wrap
@@ -736,13 +758,17 @@ section.casestudy
   > .feature
     display: flex
     min-height: 62vh
-    flex-basis: calc(50%)
+    margin: 0
+    flex: 1 1 calc(50% - 60px)
+    flex-direction: row
     justify-content: center
-    flex-direction: column
-    padding: 3rem
+    padding: 30px
     transition: $transition-default
-    @media (max-width: 768px)
-      flex-basis: calc(100%)
+    @media screen and (max-width: 767px)
+      flex-basis: 1 1 calc(100% - 60px)
+      flex-direction: column
+      min-height: 38vh
+      margin: 0
     &:hover
       // background-color: $color-gray-darkest
       color: $color-white
@@ -897,6 +923,20 @@ a.thumbnail
   background-color: rgba($color-white, .6)
 
 
+
+%cs-spacing-reset
+  margin: 0
+  padding-top: 0
+  padding-bottom: 0
+
+.cs-light
+  color: $color-gray-darkest
+  background: $color-gray-lightest
+.cs-dark
+  color: $color-white
+  background: $color-gray-darker
+
+
 .jumbotron
   &-salts, &-syrups
     background: $color-gray-lightest no-repeat scroll center
@@ -908,13 +948,6 @@ a.thumbnail
     background-image: url("../kitchen/assets/Hero-KevinsKitchen-Salts.png")
   &-syrups
     background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png")
-
-
-%cs-spacing-reset
-  margin: 0
-  padding-top: 0
-  padding-bottom: 0
-
 
 .jumbotron.casestudy,
 .jumbotron.projects
@@ -1020,28 +1053,39 @@ a.thumbnail
     border-radius: 1ch
 
 
+.pad
+  &-top
+    padding-top: 7.5rem
+    &-small
+      padding-top: 2.5rem
+    &-medium
+      padding-top: 5rem
+    &-large
+      padding-top: 10rem
+  &-all-small
+    padding: 2.5rem
+  &-h-small
+    padding-left: 2.5rem
+    padding-right: 2.5rem
+  &-h-default
+    padding-left: 15px
+    padding-right: 15px
+  &-h-zero
+    padding-left: 0
+    padding-right: 0
+  &-h-clear
+    padding-left: -15px
+    padding-right: -15px
 
-.pad-top
-  padding-top: 7.5rem
-  &-small
-    padding-top: 2.5rem
-  &-medium
-    padding-top: 5rem
-  &-large
-    padding-top: 10rem
-.pad-all-small
-  padding: 2.5rem
-.pad-h-small
-  padding-left: 2.5rem
-  padding-right: 2.5rem
-.m-pad-top
-  margin-top: 7.5rem
-  &-small
-    margin-top: 2.5rem
-  &-medium
-    margin-top: 5rem
-  &-large
-    margin-top: 10rem
+.m-pad
+  &-top
+    margin-top: 7.5rem
+    &-small
+      margin-top: 2.5rem
+    &-medium
+      margin-top: 5rem
+    &-large
+      margin-top: 10rem
 
 
 /*    ANIMATIONS:   */
