@@ -256,15 +256,22 @@ a.location-site {
       position: relative;
       margin: 0;
       top: 50%;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      transition: all 0.32s ease; }
     .full-carousel .carousel-control .icon-next {
-      right: 1rem; }
+      right: 1rem;
+      transform: translate(150%, -50%); }
       .full-carousel .carousel-control .icon-next::before {
-        content: "◖"; }
+        content: "◇"; }
+      .full-carousel .carousel-control .icon-next:hover::before {
+        content: "◆"; }
     .full-carousel .carousel-control .icon-prev {
-      left: 1rem; }
+      left: 1rem;
+      transform: translate(-150%, -50%); }
       .full-carousel .carousel-control .icon-prev::before {
-        content: "◗"; }
+        content: "◇"; }
+      .full-carousel .carousel-control .icon-prev:hover::before {
+        content: "◆"; }
 
 @media (max-width: 598px) {
   .carousel-inner .img-responsive {

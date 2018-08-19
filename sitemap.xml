@@ -192,7 +192,90 @@
   </url>
   
   <url>
+    <loc>/tools/atom/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/services/branding-guidelines/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/css/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/html/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/hugo/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tools/illustrator/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/javascript/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/keywords/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/services/logo-update/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/mac/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/languages/markdown/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
@@ -212,6 +295,20 @@
   </url>
   
   <url>
+    <loc>/tools/photoshop/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2014-09-29T21:54:53-05:00</lastmod>
     <changefreq>daily</changefreq>
@@ -219,7 +316,42 @@
   </url>
   
   <url>
+    <loc>/services/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tools/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/web-browsers/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/services/web-development/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/windows/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
