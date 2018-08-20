@@ -80,10 +80,18 @@ footer .fa, .contact .fa {
   .navbar.location-adobe {
     border-bottom-color: #0e84cf;
     color: #0e84cf; }
-  .navbar.navbar-inverse > .dropdown open > ul.dropdown-menu {
+  .navbar.navbar-inverse .navbar-nav > .open a {
+    background-color: transparent; }
+    .navbar.navbar-inverse .navbar-nav > .open a:hover, .navbar.navbar-inverse .navbar-nav > .open a:active {
+      color: white !important;
+      background-color: transparent; }
+  .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu {
     background-color: #101010; }
-    .navbar.navbar-inverse > .dropdown open > ul.dropdown-menu > li:hover {
-      background-color: #202020; }
+    .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu > li:hover {
+      background-color: black !important; }
+      .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu > li:hover > a:hover,
+      .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu > li:hover > a:active {
+        background-color: black !important; }
 
 .dropdown-menu {
   font-size: 1rem;
@@ -408,6 +416,11 @@ img.thumbnail + span.caption {
 #area-site section {
   padding-top: 7vmin;
   padding-bottom: 7vmin; }
+  #area-site section.page-introduction {
+    background-image: url("/media/images/Headshot-DarkGray-Masked.png");
+    background-repeat: no-repeat;
+    background-position: 110% 70%;
+    background-attachment: local; }
 #area-site ul.nav.navbar-right {
   margin: 0;
   padding: 0;

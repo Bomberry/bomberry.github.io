@@ -131,10 +131,10 @@
   {{/* return to portfolio */}}
   {{ partial "return-portfolio.html" . }}
 
-
-  {{/* <ul id="tools" class="taxonomy">
+{{/* {{ $taxonomyGroup := "services" }}
+  <ul id="{{$taxonomyGroup}}" class="taxonomy">
     {{ range .Params.tools }}
-      <li><a href="{{ "/tools/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      <li><a href="{{ "/{{$taxonomyGroup}}/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
     {{ end }}
   </ul> */}}
 

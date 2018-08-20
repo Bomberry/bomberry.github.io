@@ -175,11 +175,32 @@ hr
       border-bottom-color: $color-adobe
       color: $color-adobe
   &.navbar-inverse
-    > .dropdown open
+    .navbar-nav > .open
+      a
+        background-color: transparent
+        &:hover,
+        &:active
+          color: $color-white !important
+          background-color: transparent
+    > .dropdown.open
       > ul.dropdown-menu
         background-color: $color-gray-darkest
         > li:hover
-          background-color: $color-gray-darker
+          background-color: black !important
+          > a:hover,
+          > a:active
+            background-color: $color-black !important
+// This area needs work for dropdown-menu list
+
+// .navbar-inverse .navbar-nav > .open > a
+// .navbar-inverse .navbar-nav > .open > a,
+// .navbar-inverse .navbar-nav > .open > a:hover,
+// .navbar-inverse .navbar-nav > .open > a:focus
+
+// .navbar.navbar-inverse .navbar-nav > .open a,
+// .navbar.navbar-inverse .navbar-nav > .open a:hover,
+// .navbar.navbar-inverse .navbar-nav > .open a:active
+
 
 .dropdown-menu
   font-size: 1rem
@@ -588,6 +609,14 @@ img.thumbnail
   section
     padding-top: $layout-breath-unit
     padding-bottom: $layout-breath-unit
+    &.page-introduction
+      background-image: url('/media/images/Headshot-DarkGray-Masked.png')
+      // background-size: 50%
+      background-repeat: no-repeat
+      background-position: 110% 70%
+      background-attachment: local
+      //@media(xs)
+        background-position: 120% 0%
   ul.nav
     &.navbar-right
       margin: 0
