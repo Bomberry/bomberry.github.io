@@ -355,6 +355,11 @@ img.thumbnail + span.caption {
 .breath-none {
   margin: 0; }
 
+.icon-pad-right {
+  margin-right: 0.75rem; }
+.icon-pad-left {
+  margin-left: 0.75rem; }
+
 .icon.glyphicon {
   height: 48px;
   width: 48px;
@@ -507,6 +512,15 @@ section.casestudy {
       border-color: transparent; }
       section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy > .container.gallery .img-thumbnail:focus, section.casestudy > .container.gallery .img-thumbnail.active {
         border-color: transparent; }
+
+.jumbotron.casestudy.return-portfolio {
+  margin-bottom: 0;
+  min-height: 5ch; }
+
+.jumbotron.casestudy.return-portfolio + .jumbotron.cta {
+  padding-top: 0; }
+  .jumbotron.casestudy.return-portfolio + .jumbotron.cta > .container {
+    padding-top: 0; }
 
 .featured {
   min-height: 100%;
@@ -752,10 +766,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-color: rgba(255, 255, 255, 0.6); }
 
 .jumbotron.casestudy.cs-type,
-.jumbotron.projects.cs-type, .jumbotron.casestudy.cs-type > .container,
-.jumbotron.projects.cs-type > .container, .jumbotron.casestudy.cs-type > .container > .row,
-.jumbotron.projects.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
-.jumbotron.projects.cs-type + .jumbotron.casestudy > .container {
+.jumbotron.projects.cs-type,
+.jumbotron.cta.cs-type, .jumbotron.casestudy.cs-type > .container,
+.jumbotron.projects.cs-type > .container,
+.jumbotron.cta.cs-type > .container, .jumbotron.casestudy.cs-type > .container > .row,
+.jumbotron.projects.cs-type > .container > .row,
+.jumbotron.cta.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
+.jumbotron.projects.cs-type + .jumbotron.casestudy > .container,
+.jumbotron.cta.cs-type + .jumbotron.casestudy > .container {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0; }
@@ -780,7 +798,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png"); }
 
 .jumbotron.casestudy,
-.jumbotron.projects {
+.jumbotron.projects,
+.jumbotron.cta {
   margin: 0;
   padding: 7vmin;
   min-height: 35vh;
@@ -792,59 +811,79 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   color: #101010;
   background-color: white; }
   .jumbotron.casestudy.cs-light,
-  .jumbotron.projects.cs-light {
+  .jumbotron.projects.cs-light,
+  .jumbotron.cta.cs-light {
     color: #101010;
     background: #ececec; }
   .jumbotron.casestudy.cs-dark,
-  .jumbotron.projects.cs-dark {
+  .jumbotron.projects.cs-dark,
+  .jumbotron.cta.cs-dark {
     color: white;
     background: #202020; }
   .jumbotron.casestudy.cs-type,
-  .jumbotron.projects.cs-type {
+  .jumbotron.projects.cs-type,
+  .jumbotron.cta.cs-type {
     min-height: 5rem; }
     .jumbotron.casestudy.cs-type > .container > .row,
-    .jumbotron.projects.cs-type > .container > .row {
+    .jumbotron.projects.cs-type > .container > .row,
+    .jumbotron.cta.cs-type > .container > .row {
       margin-left: -15px;
       margin-right: -15px;
       padding-top: 5rem; }
       .jumbotron.casestudy.cs-type > .container > .row:last-of-type,
-      .jumbotron.projects.cs-type > .container > .row:last-of-type {
+      .jumbotron.projects.cs-type > .container > .row:last-of-type,
+      .jumbotron.cta.cs-type > .container > .row:last-of-type {
         margin-bottom: 10rem; }
   .jumbotron.casestudy h1, .jumbotron.casestudy h2, .jumbotron.casestudy h3, .jumbotron.casestudy h4, .jumbotron.casestudy h5,
   .jumbotron.projects h1,
   .jumbotron.projects h2,
   .jumbotron.projects h3,
   .jumbotron.projects h4,
-  .jumbotron.projects h5 {
+  .jumbotron.projects h5,
+  .jumbotron.cta h1,
+  .jumbotron.cta h2,
+  .jumbotron.cta h3,
+  .jumbotron.cta h4,
+  .jumbotron.cta h5 {
     color: #ff8000; }
   .jumbotron.casestudy > .container,
-  .jumbotron.projects > .container {
+  .jumbotron.projects > .container,
+  .jumbotron.cta > .container {
     padding-top: 7vmin; }
     .jumbotron.casestudy > .container.background-shade, .featured > .feature.jumbotron.casestudy:hover > div.container, .featured > .feature.feature-invert.jumbotron.casestudy > div.container,
     .jumbotron.projects > .container.background-shade,
     .featured > .feature.jumbotron.projects:hover > div.container,
-    .featured > .feature.feature-invert.jumbotron.projects > div.container {
+    .featured > .feature.feature-invert.jumbotron.projects > div.container,
+    .jumbotron.cta > .container.background-shade,
+    .featured > .feature.jumbotron.cta:hover > div.container,
+    .featured > .feature.feature-invert.jumbotron.cta > div.container {
       background-color: rgba(32, 32, 32, 0.6); }
   .jumbotron.casestudy.cs-design > .row.background,
-  .jumbotron.projects.cs-design > .row.background {
+  .jumbotron.projects.cs-design > .row.background,
+  .jumbotron.cta.cs-design > .row.background {
     background: url("../images/Hero-KevinBomberry-WatchAndGearsIllustration.jpg") no-repeat scroll center;
     -webkit-filter: brightness(62%);
     filter: brightness(62%); }
   .jumbotron.casestudy.cs-cooking,
-  .jumbotron.projects.cs-cooking {
+  .jumbotron.projects.cs-cooking,
+  .jumbotron.cta.cs-cooking {
     background: url("../images/Hero-KevinBomberry-Design.jpg") no-repeat scroll center; }
   .jumbotron.casestudy.cs-felix,
-  .jumbotron.projects.cs-felix {
+  .jumbotron.projects.cs-felix,
+  .jumbotron.cta.cs-felix {
     background: url("../portfolio/assets/felix/projectfelix-marquee-1200x550.png") no-repeat scroll center black;
     background-size: cover; }
   .jumbotron.casestudy.cs-photoshopcom,
-  .jumbotron.projects.cs-photoshopcom {
+  .jumbotron.projects.cs-photoshopcom,
+  .jumbotron.cta.cs-photoshopcom {
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center; }
   .jumbotron.casestudy.cs-craftmaster,
-  .jumbotron.projects.cs-craftmaster {
+  .jumbotron.projects.cs-craftmaster,
+  .jumbotron.cta.cs-craftmaster {
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center; }
   .jumbotron.casestudy.cs-cm-masterly,
-  .jumbotron.projects.cs-cm-masterly {
+  .jumbotron.projects.cs-cm-masterly,
+  .jumbotron.cta.cs-cm-masterly {
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center; }
 
 .jumbotron.projects h1, .jumbotron.projects h2, .jumbotron.projects h3, .jumbotron.projects h4, .jumbotron.projects h5 {

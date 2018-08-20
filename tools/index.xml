@@ -21,6 +21,33 @@
     </item>
     
     <item>
+      <title>Dreamweaver</title>
+      <link>/tools/dreamweaver/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/dreamweaver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Final Cut</title>
+      <link>/tools/final-cut/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/final-cut/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github Desktop</title>
+      <link>/tools/github-desktop/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/github-desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Illustrator</title>
       <link>/tools/illustrator/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
@@ -30,11 +57,38 @@
     </item>
     
     <item>
+      <title>Logic</title>
+      <link>/tools/logic/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Motion</title>
+      <link>/tools/motion/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/motion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Photoshop</title>
       <link>/tools/photoshop/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/tools/photoshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Terminal</title>
+      <link>/tools/terminal/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/tools/terminal/</guid>
       <description></description>
     </item>
     

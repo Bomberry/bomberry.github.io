@@ -12,11 +12,29 @@
     
     
     <item>
+      <title>Ios</title>
+      <link>/platforms/ios/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mac</title>
       <link>/platforms/mac/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/platforms/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macos</title>
+      <link>/platforms/macos/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/macos/</guid>
       <description></description>
     </item>
     
