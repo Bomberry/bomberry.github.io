@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Platforms on Bomberry.com</title>
+    <link>/platforms/</link>
+    <description>Recent content in Platforms on Bomberry.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 May 2018 23:11:05 -0700</lastBuildDate>
+    
+	<atom:link href="/platforms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ios</title>
+      <link>/platforms/ios/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>/platforms/mac/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Macos</title>
+      <link>/platforms/macos/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Browsers</title>
+      <link>/platforms/web-browsers/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/web-browsers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/platforms/windows/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/platforms/windows/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

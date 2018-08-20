@@ -387,19 +387,43 @@ a.location
       margin: 0
       top: 50%
       transform: translateY(-50%)
+      transition: $transition-slow
+      // box-shadow: $box-shadow-glow-white
       // position: relative
       // float: left
       // top: 50%
       // left: 50%
       // transform: translate(-50%, -50%)
+      // &:hover
+        box-shadow: $box-shadow-glow-whiter
+        background-color: rgba($color-white, $opacity-half)
     .icon-next
       right: 1rem
+      transform: translate(150%,-50%)
       &::before
-        content: '\25d6'
+        // content: '\25d6'
+        // content: '\276D'
+        // content: '\261E'
+        content: '\25C7'
+        // content: '\25CE'
+      &:hover::before
+        // content: '\261B'
+        content: '\25C6'
+        // content: '\25C9'
     .icon-prev
       left: 1rem
+      transform: translate(-150%,-50%)
       &::before
-        content: '\25d7'
+        // content: '\25d7'
+        // content: '\276C'
+        // content: '\261C'
+        content: '\25C7'
+        // content: '\25CE'
+      &:hover::before
+        // content: '\261A'
+        content: '\25C6'
+        // content: '\25C9'
+
     //&.left
       margin-left: 0
     //&.right
@@ -504,6 +528,13 @@ img.thumbnail
     margin-bottom: 0
   &-none
     margin: 0
+
+.icon
+  &-pad
+    &-right
+      margin-right: .75rem
+    &-left
+      margin-left: .75rem
 
 .icon.glyphicon
   height: 48px
@@ -698,7 +729,14 @@ section.casestudy
         //border-color: $color-portfolio
         border-color: transparent
 
-
+.jumbotron.casestudy
+  &.return-portfolio
+    margin-bottom: 0
+    min-height: 5ch
+.jumbotron.casestudy.return-portfolio + .jumbotron.cta
+  padding-top: 0
+  > .container
+    padding-top: 0
 
 @mixin setBgColorAndHover($baseColor)
   background-color: lighten(rgba($baseColor, .62), 24%)
@@ -950,7 +988,8 @@ a.thumbnail
     background-image: url("../kitchen/assets/Hero-KevinsKitchen-Syrups.png")
 
 .jumbotron.casestudy,
-.jumbotron.projects
+.jumbotron.projects,
+.jumbotron.cta
   margin: 0
   padding: 7vmin
   min-height: 35vh

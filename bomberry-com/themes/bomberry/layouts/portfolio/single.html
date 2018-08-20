@@ -131,6 +131,14 @@
   {{/* return to portfolio */}}
   {{ partial "return-portfolio.html" . }}
 
+
+  {{/* <ul id="tools" class="taxonomy">
+    {{ range .Params.tools }}
+      <li><a href="{{ "/tools/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+  </ul> */}}
+
+
   {{ partial "cta-b.html" . }}
 
   {{ partial "about-tiny.html" . }}

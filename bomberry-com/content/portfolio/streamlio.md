@@ -25,10 +25,10 @@ case_study_file = "streamlio"
 # Tags and categories
 # Use tags = [] for none, or tags = ["Tag A", "Tag B"] for 1+
 tags = []
-services = ["Logo Update","Branding Guidelines", "Web Development"]
-tools = ["Illustrator", "Photoshop", "Atom"]
+services = ["Logo Refresh", "Branding Guidelines", "Web Development"]
+tools = ["Illustrator", "Photoshop", "Atom", "Terminal", "GitHub Desktop"]
 languages = ["HTML", "CSS", "JavaScript", "Markdown", "HuGo"]
-platforms = ["Mac", "Windows", "Web Browsers"]
+platforms = ["Web Browsers", "macOS*"]
 categories = []
 
 

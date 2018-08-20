@@ -20,6 +20,72 @@ time_format = "3:04 PM"
 
   includeFileInfo = false
   includeHugoMeta = false
+
+  my_name = "Kevin Bomberry"
+  my_title = "Product, Interaction, and Experience Designer"
+  my_contact_email = "kevin+contact@bomberry.com"
+  my_email = "kevin+contact@bomberry.com"
+
+  #   (relative to /static/css and /static/js respectively)
+  custom_fonts = []
+  custom_css = []
+  custom_js  = []
+
+
+
+  # Configuration of resume pages.
+  [params.resume]
+    # Show talk time?
+    show_details = true
+
+  # Configuration of casestudies pages.
+  [params.casestudies]
+    # Show talk time?
+    reading_time = true
+
+  # Configuration of publication pages.
+  [params.publications]
+    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
+    #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+    date_format = "January, 2006"
+
+  # Configuration of project pages.
+  [params.projects]
+    # List publications and talks related to the project?
+    list_children = true
+
+    # Publication list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = APA
+    #   3 = MLA
+    publication_format = 3
+
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:kevin+contact@bomberry.com"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/kevinbomberry"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/bomberry"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/bomberry"
+
+
+
+
+
 # [permalinks]
 # 	page = "/:title/"
 # 	about = "/:filename/"
@@ -261,14 +327,16 @@ time_format = "3:04 PM"
 
 
 # Taxonomies.
+# Turn off Taxonomy indexing by uncommenting the line below and commenting out the taxonomy lines
+# disableKinds = ["taxonomy", "taxonomyTerm"]
 [taxonomies]
-  tag = "tags"
   category = "categories"
-
-
-
-
-
+  keyword = "keywords"
+  tag = "tags"
+  language = "languages"
+  platform = "platforms"
+  service = "services"
+  tool = "tools"
 
 
 # Sitemap Variables

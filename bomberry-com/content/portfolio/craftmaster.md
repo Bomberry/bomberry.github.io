@@ -22,13 +22,13 @@ has_job_details = false
 has_case_study = false
 case_study_file = "craftmaster"
 
-# Tags and categories
+# Taxonomies
 # Use tags = [] for none, or tags = ["Tag A", "Tag B"] for 1+
 tags = []
-services = ["Logo Update","Branding Guidelines", "Web Development"]
-tools = ["Illustrator", "Photoshop", "Atom"]
-languages = ["HTML", "CSS", "JavaScript", "Markdown", "HuGo"]
-platforms = ["Mac", "Windows", "Web Browsers"]
+services = ["Branding Design", "Product Design", "UX/UI Design", "Web Development", "Video Production", "Audio Design"]
+tools = ["Illustrator", "Photoshop", "Dreamweaver", "Motion", "Final Cut", "Logic"]
+languages = ["HTML", "CSS", "JavaScript"]
+platforms = ["macOS", "iOS", "Windows", "Web Browsers"]
 categories = []
 
 
