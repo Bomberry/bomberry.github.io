@@ -33,6 +33,9 @@ nav .fa {
   margin-right: 0.75rem; }
 footer .fa, .contact .fa {
   margin-right: 0.5rem; }
+  @media screen and (max-width: 767px) {
+    footer .fa, .contact .fa {
+      margin-right: 0; } }
 
 .navbar.location-site, .navbar.location-resume, .navbar.location-portfolio, .navbar.location-kitchen, .navbar.location-1, .navbar.location-projects, .navbar.location-contact, .navbar.location-adobe {
   border-bottom-width: 0.38rem;
@@ -268,7 +271,7 @@ a.location-site {
       transition: all 0.32s ease; }
     .full-carousel .carousel-control .icon-next {
       right: 1rem;
-      transform: translate(150%, -50%); }
+      transform: translate(145%, -50%); }
       .full-carousel .carousel-control .icon-next::before {
         content: "◇"; }
       .full-carousel .carousel-control .icon-next:hover::before {
@@ -846,7 +849,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
       .jumbotron.casestudy.cs-type > .container > .row:last-of-type,
       .jumbotron.projects.cs-type > .container > .row:last-of-type,
       .jumbotron.cta.cs-type > .container > .row:last-of-type {
-        margin-bottom: 10rem; }
+        margin-bottom: 5rem; }
   .jumbotron.casestudy h1, .jumbotron.casestudy h2, .jumbotron.casestudy h3, .jumbotron.casestudy h4, .jumbotron.casestudy h5,
   .jumbotron.projects h1,
   .jumbotron.projects h2,

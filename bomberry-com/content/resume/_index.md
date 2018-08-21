@@ -3,7 +3,7 @@ title = "Kevin Bomberry - Resume"
 date = 2018-05-05T23:11:05-07:00
 draft = true
 weight = 3
-company_name = "Bomberry Design"
+client_name = "Bomberry Design"
 location_name = "resume"
 keywords = []
 +++

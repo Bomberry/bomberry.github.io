@@ -98,6 +98,8 @@ hr
   footer &,
   .contact &
     margin-right: .5rem
+    @media screen and (max-width: 767px)
+      margin-right: 0
 
 
 // BOOTSTRAP OVERRIDES
@@ -420,7 +422,7 @@ a.location
         background-color: rgba($color-white, $opacity-half)
     .icon-next
       right: 1rem
-      transform: translate(150%,-50%)
+      transform: translate(145%,-50%)
       &::before
         // content: '\25d6'
         // content: '\276D'
@@ -1048,7 +1050,7 @@ a.thumbnail
         margin-right: -15px
         padding-top: 5rem
         &:last-of-type
-          margin-bottom: 10rem
+          margin-bottom: 5rem //10rem
   &.cs-type + .jumbotron.casestudy > .container
     @extend %cs-spacing-reset
 

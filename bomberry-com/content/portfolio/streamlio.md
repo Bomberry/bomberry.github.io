@@ -5,7 +5,7 @@ date = 2018-05-05T23:11:05-07:00
 kind = "casestudy"
 draft = true
 weight = 3
-company_name = "Streamlio"
+client_name = "Streamlio"
 project_name = "streamlio"
 location_name = "portfolio"
 job_title = "Branding/Web Development (Consultant)"
@@ -63,7 +63,7 @@ url_code = ""
 #   url = "#apples"
 #   weight = 1000
 
-featured = false
+featured = true
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
