@@ -36,7 +36,7 @@ time_format = "3:04 PM"
   # Configuration of resume pages.
   [params.resume]
     # Show talk time?
-    show_details = true
+    show_details = false
 
   # Configuration of casestudies pages.
   [params.casestudies]

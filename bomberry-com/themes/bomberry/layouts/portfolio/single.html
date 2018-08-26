@@ -33,26 +33,32 @@
         <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
           <h4 class="small">Services:</h4>
           {{ $taxonomyGroup := "services" }}
-          <ul id="{{$taxonomyGroup}}" class="taxonomy">
+          <ul id="{{$taxonomyGroup}}" class="taxonomy list-unstyled">
             {{ range .Params.services }}
             {{/* <li><a href="{{ "/{{$taxonomyGroup}}/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li> */}}
             <li>{{ . }}</li>
             {{ end }}
           </ul>
         </div>
-          <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
           <h4 class="small">Tools:</h4>
           {{ $taxonomyGroup := "tools" }}
-          <ul id="{{$taxonomyGroup}}" class="taxonomy">
+          <ul id="{{$taxonomyGroup}}" class="taxonomy list-unstyled">
             {{ range .Params.tools }}
               {{/* <li><a href="{{ "/{{$taxonomyGroup}}/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li> */}}
             <li>{{ . }}</li>
             {{ end }}
           </ul>
         </div>
+        {{/* <div class="row cs-job">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <h4><small>&nbsp;&nbsp;Reading time: {{ .ReadingTime }} | {{ .WordCount }} | {{ .FuzzyWordCount }}</small></h4>
+          </div>
+        </div> */}}
       </div>
     </div>
   </div>
+
   {{ if .Params.sections }}
     {{ $projectName := .Params.project_name }}
     {{ $mediaPath := .Params.sections.media_path }}
@@ -79,23 +85,25 @@
               </div>
             {{ end }}
 
+            {{ if .videos }}
+              {{ range .videos }}
+              <div class="col-xs-12 breath-top">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{.src }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="small text-muted">{{ .figcaption }}</p>
+              </div>
+              {{ end }}
+            {{ end }}
+
           </div>
         </div>
       </div>
     {{ end }}
-
-
   {{ end }}
+
   {{/* return to portfolio */}}
   {{ partial "return-portfolio.html" . }}
-
-{{/* {{ $taxonomyGroup := "services" }}
-  <ul id="{{$taxonomyGroup}}" class="taxonomy">
-    {{ range .Params.tools }}
-      <li><a href="{{ "/{{$taxonomyGroup}}/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-    {{ end }}
-  </ul> */}}
-
 
   {{ partial "cta-b.html" . }}
 

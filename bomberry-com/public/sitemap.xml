@@ -192,6 +192,20 @@
   </url>
   
   <url>
+    <loc>/services/3d-design/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/services/a/v-production/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tools/atom/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -199,14 +213,7 @@
   </url>
   
   <url>
-    <loc>/services/audio-design/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/services/branding-design/</loc>
+    <loc>/services/branding--identity/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -247,7 +254,7 @@
   </url>
   
   <url>
-    <loc>/tools/github-desktop/</loc>
+    <loc>/services/graphic-design/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -282,6 +289,13 @@
   </url>
   
   <url>
+    <loc>/tools/iwork/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/languages/javascript/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -303,13 +317,6 @@
   
   <url>
     <loc>/tools/logic/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/services/logo-refresh/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -406,13 +413,6 @@
   </url>
   
   <url>
-    <loc>/tools/terminal/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tools/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -420,14 +420,7 @@
   </url>
   
   <url>
-    <loc>/services/ux/ui-design/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/services/video-production/</loc>
+    <loc>/services/ux--ui-design/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>

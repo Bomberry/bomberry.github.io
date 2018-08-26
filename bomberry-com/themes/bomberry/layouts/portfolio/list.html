@@ -1,22 +1,83 @@
 {{ define "title" }}{{ .Params.title }}{{ end }}
 {{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
-{{ if .Site.Params.includeFileInfo }}
-  {{ partial "file-info.html" . }}
-{{ end }}
-  {{/* <pre>
-  Params.location_name : {{ .Params.location_name}}
-  Kind : {{ .Kind }}
-</pre> */}}
 
-{{ if .Site.Params.includeHugoMeta }}
-  {{ partial "whatsthis.html" . }}
-{{ end }}
+  {{ if .Site.Params.includeFileInfo }}
+    {{ partial "file-info.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.includeHugoMeta }}
+    {{ partial "whatsthis.html" . }}
+  {{ end }}
 
   {{/* {{ .Content }} */}}
 
+  {{ if .Params.sections }}
+    {{/* {{ $projectName := .Params.project_name }} */}}
+    {{ $mediaPath := .Params.sections.media_path }}
+    {{ $permalink := .Permalink }}
+    {{ range .Params.sections.project }}
+      {{ $asset_folder := .asset_path }}
+      <div class="jumbotron casestudy {{ .style }}">
+        <div class="container">
+          <div class="row">
 
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+              <h3>{{ .title }}</h3>
+              <p>{{ with .text }}{{ . | safeHTML }}{{ end }}</p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+              <h3></h3>
+              <p>Roles: {{ with .role }}{{ . | safeHTML }}{{ end }}</p>
+            </div>
 
+            {{ if .has_case_study }}
+              <div class="col-xs-12 col-xs-offset-0 breath-top-small">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2 text-left">
+                  {{/* {{ if .Params.has_job_details }} */}}
+                  {{/* <p>{{ .Content }}</p> */}}
+                  {{/* <div class="lead"><a href="http://www.craftmastersoftware.com" class="color-portfolio" target="new"><!--<span class="fa fa-briefcase"></span> -->Visit CraftMaster Software <span class="fa fa-external-link"></span></a></div> */}}
+                  {{/* {{ end }} */}}
+                </div>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0 text-right">
+                  {{/* {{ if .Params.has_case_study }} */}}
+                  {{/* <p>{{ .Content }}</p> */}}
+
+                  <div class="lead"><a href="{{ $permalink }}/{{.name}}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div>
+                  {{/* {{ end }} */}}
+                </div>
+              </div>
+            {{ end }}
+
+            {{ if .figures }}
+              <div class="col-xs-12 flex-gallery {{ if .gallery_class}}{{ .gallery_class }}{{ end }} breath-top">
+              {{ range .figures }}
+                  <figure>
+                    <img src="{{ $mediaPath }}/{{ $asset_folder }}/{{ .src }}"
+                      width="100%" height="100%"
+                      alt="{{ .figcaption }}">
+                    <figcaption class="text-center">{{ .figcaption }}</figcaption>
+                  </figure>
+              {{ end }}
+              </div>
+            {{ end }}
+
+            {{ if .videos }}
+              {{ range .videos }}
+              <div class="col-xs-12 breath-top">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{.src }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="small text-muted">{{ .figcaption }}</p>
+              </div>
+              {{ end }}
+            {{ end }}
+
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
 
   <!--  CASE STUDY  Streamlio -->
   <a id="streamlio"></a>
@@ -25,7 +86,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h3>Streamlio</h3>
-          <p>The challange was to build a brand around an existing logo for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.</p>
+          <p>The challange was to build a brand and web site around an existing logo for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.</p>
         </div>
       </div>
 

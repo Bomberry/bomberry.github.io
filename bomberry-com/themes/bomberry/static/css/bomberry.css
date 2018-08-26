@@ -754,12 +754,20 @@ section.casestudy {
 .flex-gallery {
   padding: 0.5vw;
   display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
   display: -webkit-box;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .flex-gallery.flex-gallery-xsmall > figure {
+    width: 100px; }
+  .flex-gallery.flex-gallery-small > figure {
+    width: 200px; }
+  .flex-gallery.flex-gallery-large > figure {
+    width: 400px; }
+  .flex-gallery.flex-gallery-xlarge > figure {
+    width: 500px; }
   .flex-gallery > figure {
     -webkit-box-flex: auto;
     -ms-flex: auto;
@@ -789,7 +797,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .jumbotron.projects.cs-type > .container > .row,
 .jumbotron.cta.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
 .jumbotron.projects.cs-type + .jumbotron.casestudy > .container,
-.jumbotron.cta.cs-type + .jumbotron.casestudy > .container {
+.jumbotron.cta.cs-type + .jumbotron.casestudy > .container, .jumbotron.casestudy > .container,
+.jumbotron.projects > .container,
+.jumbotron.cta > .container {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0; }

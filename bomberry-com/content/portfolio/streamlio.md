@@ -8,7 +8,7 @@ weight = 3
 client_name = "Streamlio"
 project_name = "streamlio"
 location_name = "portfolio"
-job_title = "Branding/Web Development (Consultant)"
+job_title = "Branding Design | Web Development | Graphic Design"
 job_duration = "2017—2018"
 start_date = "2017"
 end_date = "Present"
@@ -22,13 +22,13 @@ has_job_details = false
 has_case_study = true
 case_study_file = "streamlio"
 
-# Tags and categories
-# Use tags = [] for none, or tags = ["Tag A", "Tag B"] for 1+
+# Taxonomies
+# Use [] for none or ["Item 1", "Item 2"] for one or more items
 tags = []
-services = ["Logo Refresh", "Branding Guidelines", "Web Development"]
-tools = ["Illustrator", "Photoshop", "Atom", "Terminal", "GitHub Desktop"]
+services = ["Branding & Identity", "UX & UI Design", "Web Development", "Graphic Design"]
+tools = ["Illustrator", "Photoshop", "Atom", "iWork"]
 languages = ["HTML", "CSS", "JavaScript", "Markdown", "HuGo"]
-platforms = ["Web Browsers", "macOS*"]
+platforms = ["Web Browsers", "macOS"]
 categories = []
 
 
@@ -63,16 +63,13 @@ url_code = ""
 #   url = "#apples"
 #   weight = 1000
 
+# Featured
 featured = true
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [feature]
   image = ""
   caption = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# Header
 [header]
   name = "introduction"
   title = "Building a Better Brand"
@@ -95,28 +92,8 @@ featured = true
 
 
 # Sections
-
-
 [sections]
   media_path = "../assets"
-  # [[sections.case_study_content]]
-  # name = "introduction"
-  # title = "Building a Better Brand"
-  # weight = 1000
-  # layout = ""
-  # class = ""
-  # style = "cs-dark"
-  # section = ""
-  # heading = "Building a Better Brand"
-  # text = "How do you move a from logo and web site to a complete brand and content solution? <strong>Keep it simple.</strong>"
-  # asset_path = "streamlio"
-  # image = "Streamlio-BC-Rendering-PlexusUV.png"
-  # caption = "Streamlio Logo(The Problem)"
-  # media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-
-  # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-Rendering-PlexusUV.png"
-      # figcaption = "INTRODUCTION END"
 
   [[sections.case_study_content]]
     name = "problem"
@@ -403,25 +380,3 @@ featured = true
 
 
 +++
-
-<!--  CASE STUDY  Streamlio -->
-<!--
-<div class="jumbotron casestudy cs-dark">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3>Streamlio</h3>
-        <p>Brand and web development for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.</p>
-      </div>
-    </div>
- -->
-<!--
-    <div class="row breath-top">
-      <a href="#" class="thumbnail">
-        <img class="img-responsive" src="../assets/streamlio/Streamlio-BC-Rendering.png" alt="placeholder image">
-      </a>
-      <p class="small text-muted">Updated business cards for Streamlio.</p>
-    </div>
-  </div>
-</div>
- -->

@@ -957,12 +957,20 @@ section.casestudy
   padding: .5vw
   // font-size: 0
   display: -ms-flexbox
-  -ms-flex-wrap: wrap
-  -ms-flex-direction: column
-  -webkit-flex-flow: row wrap
-  flex-flow: row wrap
   display: -webkit-box
   display: flex
+  -ms-flex-wrap: wrap
+  -ms-flex-direction: row
+  -webkit-flex-flow: row wrap
+  flex-flow: row wrap
+  &.flex-gallery-xsmall > figure
+    width: 100px
+  &.flex-gallery-small > figure
+    width: 200px
+  &.flex-gallery-large > figure
+    width: 400px
+  &.flex-gallery-xlarge > figure
+    width: 500px
   > figure
     -webkit-box-flex: auto
     -ms-flex: auto
@@ -992,6 +1000,8 @@ a.thumbnail
   background-color: rgba($color-white, .6)
 
 
+%cs-margin-reset
+  margin: 0
 
 %cs-spacing-reset
   margin: 0
@@ -1052,6 +1062,8 @@ a.thumbnail
         &:last-of-type
           margin-bottom: 5rem //10rem
   &.cs-type + .jumbotron.casestudy > .container
+    @extend %cs-spacing-reset
+  > .container
     @extend %cs-spacing-reset
 
   h1, h2, h3, h4, h5

@@ -1,11 +1,11 @@
 +++
-title = "Bomberry - Portfolio"
+title = "Bomberry - Portfolio - __CLIENT_NAME__"
 date = {{ .Date }}
 #type = "casestudy"
 kind = "casestudy"
 draft = true
 weight = 3
-company_name = ""
+client_name = ""
 project_name = ""
 location_name = "portfolio"
 job_title = ""
@@ -22,13 +22,13 @@ has_job_details = false
 has_case_study = false
 case_study_file = ""
 
-# Tags and categories
-# Use tags = [] for none, or tags = ["Tag A", "Tag B"] for 1+
+# Taxonomies
+# Use [] for none or ["Item 1", "Item 2"] for one or more items
 tags = []
-services = ["Logo Update","Branding Guidelines", "Web Development"]
-tools = ["Illustrator", "Photoshop", "Atom"]
+services = ["Logo Refresh", "Branding Guidelines", "Web Development"]
+tools = ["Illustrator", "Photoshop", "Atom", "Terminal", "GitHub Desktop"]
 languages = ["HTML", "CSS", "JavaScript", "Markdown", "HuGo"]
-platforms = ["Mac", "Windows", "Web Browsers"]
+platforms = ["Web Browsers", "macOS", "iOS"]
 categories = []
 
 
@@ -65,32 +65,49 @@ featured = false
   image = ""
   caption = ""
 
-# Header image
+# Header
 [header]
+  name = "introduction"
+  title = ""
+  weight = 1000
+  layout = ""
+  class = ""
+  style = "cs-dark"
+  section = ""
+  heading = "Crafting Case Studies"
+  text = "Writing a case study can be a complicated endeavor. But if you keep focus on 5 main points you will quickly create compelling document to share. <strong>Keep it simple.</strong>"
+  summary = ""
+  asset_path = "default"
   image = ""
   caption = ""
-  summary = ""
+  media = [""]
+
+  [[header.figures]]
+    # src = ""
+    # figcaption = ""
+
 
 # Sections
 [sections]
   media_path = "../assets"
+
   [[sections.case_study_content]]
-    name = "name"
-    title = "Title"
-    weight = 100
+    name = ""
+    title = ""
+    weight = 1000
     layout = ""
     class = ""
     style = "cs-light"
     section = ""
-    heading = "Heading"
-    text = "Text."
+    heading = ""
+    text = ""
     asset_path = ""
     image = ""
-    caption = "Caption"
-    media = []
+    caption = ""
+    media = [""]
 
-    [[sections.case_study_content.figures]]
-      src = ""
-      figcaption = "FigCaption"
+    # [[sections.case_study_content.figures]]
+    #   src = ""
+    #   figcaption = ""
 
 +++
