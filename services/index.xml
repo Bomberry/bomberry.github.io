@@ -12,20 +12,29 @@
     
     
     <item>
-      <title>Audio Design</title>
-      <link>/services/audio-design/</link>
+      <title>3d Design</title>
+      <link>/services/3d-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/audio-design/</guid>
+      <guid>/services/3d-design/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Branding Design</title>
-      <link>/services/branding-design/</link>
+      <title>A/V Production</title>
+      <link>/services/a/v-production/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/branding-design/</guid>
+      <guid>/services/a/v-production/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Branding  Identity</title>
+      <link>/services/branding--identity/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/services/branding--identity/</guid>
       <description></description>
     </item>
     
@@ -39,11 +48,11 @@
     </item>
     
     <item>
-      <title>Logo Refresh</title>
-      <link>/services/logo-refresh/</link>
+      <title>Graphic Design</title>
+      <link>/services/graphic-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/logo-refresh/</guid>
+      <guid>/services/graphic-design/</guid>
       <description></description>
     </item>
     
@@ -66,20 +75,11 @@
     </item>
     
     <item>
-      <title>Ux/Ui Design</title>
-      <link>/services/ux/ui-design/</link>
+      <title>Ux  Ui Design</title>
+      <link>/services/ux--ui-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/ux/ui-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Video Production</title>
-      <link>/services/video-production/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/services/video-production/</guid>
+      <guid>/services/ux--ui-design/</guid>
       <description></description>
     </item>
     
