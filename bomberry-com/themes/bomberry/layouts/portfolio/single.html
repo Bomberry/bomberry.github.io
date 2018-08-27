@@ -89,7 +89,13 @@
               {{ range .videos }}
               <div class="col-xs-12 breath-top">
                 <div class="embed-responsive embed-responsive-16by9">
+                  {{ if eq .service "YouTube" }}
                   <iframe class="embed-responsive-item" src="{{.src }}" frameborder="0" allowfullscreen></iframe>
+                  {{ else }}
+                  <video autoplay>
+                    <source src="{{ $mediaPath }}/{{ $projectName }}/{{ .src }}" type="video/mp4">
+                  </video>
+                  {{ end }}
                 </div>
                 <p class="small text-muted">{{ .figcaption }}</p>
               </div>

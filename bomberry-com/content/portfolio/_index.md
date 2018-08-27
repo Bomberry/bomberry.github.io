@@ -56,8 +56,11 @@ media_path = "./assets"
     has_case_study = true
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
-      src = "Streamlio-BC-Rendering.png"
-      figcaption = "Updated business cards for Streamlio"
+      src = "Streamlio-Site-Device-Comps.png"
+      figcaption = "Streamlio web site"
+    # [[sections.project.figures]]
+    #   src = "Streamlio-BC-Rendering.png"
+    #   figcaption = "Updated business cards for Streamlio"
 
   [[sections.project]]
     name = "craftmaster"
@@ -70,9 +73,9 @@ media_path = "./assets"
     heading = "CraftMaster Software"
     text = "This project is a designers greatest challange and goal. To create a complete brand and identity solution, prodcut design and application development, and marketing content and media for CraftMaster Software — a multi-platform Minecraft companion application.<br /><br />The project required me use all of my extensive design, media production, and product development skills to create a unified brand and application that is approachable for all ages of users."
     asset_path = "craftmaster"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    image = ""
+    caption = ""
+    media = [""]
     role = "Founder, CDO/CXO, Lead Designer, Web/App Development, 3D Design"
     has_case_study = true
     gallery_class = "flex-gallery-small"
@@ -89,10 +92,15 @@ media_path = "./assets"
     #   src = "CraftMaster-Branding-AppScreenShot1@1x.png"
     #   figcaption = "Screen shot of CraftMaster"
     [[sections.project.videos]]
-      service = ""
+      service = "youtube"
       service_id = "arpOCEoxvwg"
       src = "https://www.youtube.com/embed/6FHzRfx-G9M"
       figcaption = "CraftMaster Demo feature video - short version"
+    # [[sections.project.videos]]
+    #   service = "video"
+    #   service_id = ""
+    #   src = "LoadingAnimation01a.mp4"
+    #   figcaption = "Loading animation"
 
   [[sections.project]]
     name = "adobe-august"
@@ -104,18 +112,18 @@ media_path = "./assets"
     section = ""
     heading = "Project Auguste for Adobe"
     text = "Project Auguste, <strong>a touch-first interactive sculpting mobile app</strong>, is part of Adobe's Project Felix. My task was to take a technology and wrap a product design around it that would comply with and extend Adobe's application aestetic. It took three months and a demo was presented during Adobe MAX 2016.<br /><br />Project Auguste's engine was designed by Adobe's Sebastian Marketsmueller and allows the user to <em>sculpt</em> in a virtual space, complete with various brushes, filters, and symmetrical drawing effects. I introduced an interaction system that would allow for users to interact with the <em>camera</em> object while at the same time editing the object's surface using a combination of multi-touch gestures and optionally using a stylus."
-    asset_path = "streamlio"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    asset_path = ""
+    image = ""
+    caption = ""
+    media = [""]
     role = "Product Design, Artwork, Development"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Updated business cards for Streamlio"
+    #   src = "filename.type"
+    #   figcaption = "A short caption"
     [[sections.project.videos]]
-      service = ""
+      service = "youtube"
       service_id = "arpOCEoxvwg"
       src = "https://www.youtube.com/embed/arpOCEoxvwg"
       figcaption = "Adobe's Daichi Ito using Project Auguste demo app on Surface Book."
@@ -131,15 +139,15 @@ media_path = "./assets"
     heading = "Adobe Photoshop (XD Lead for 3D)"
     text = "For five years I worked on Adobe Photoshop’s 3D toolset, moving it from the modal Repoussé dialog in Photoshop CS3, into an intergraded experience and <em>first-class</em> citizen of Adobe Photoshop CC.<br /><br />During the time I worked with research, engineering, and product management to develop several of the key 3D tools, interaction models, filters, and features available in Photoshop, including, 3D objects, features, and workflows; on-canvas controls, interaction and contextual menu systems; redesigned Lighting Effects; and introduced the Properties panel for all of Photoshop’s tools, layers, and effects. Yay!"
     asset_path = "photoshop"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    image = ""
+    caption = ""
+    media = [""]
     role = "Lead Designer, UX/UI Design, 3D Content Design"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Updated business cards for Streamlio"
+    #   src = "filename.type"
+    #   figcaption = "A short caption"
 
   [[sections.project]]
     name = "adobe-felix"
@@ -159,8 +167,8 @@ media_path = "./assets"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Updated business cards for Streamlio"
+    #   src = "filename.type"
+    #   figcaption = "A short caption"
 
 
   [[sections.project]]
@@ -262,8 +270,8 @@ media_path = "./assets"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Updated business cards for Streamlio"
+    #   src = "filename.type"
+    #   figcaption = "A short caption"
 
   [[sections.project]]
     name = "able-pear"
@@ -303,9 +311,9 @@ media_path = "./assets"
   #   media = []
   #   role = "Direction, Design, Artwork, Development"
   #   has_case_study = false
-  #   # [[sections.project.figures]]
-  #   #   src = "Streamlio-BC-Rendering.png"
-  #   #   figcaption = "Updated business cards for Streamlio"
+  # # [[sections.project.figures]]
+  # #   src = "filename.type"
+  # #   figcaption = "A short caption"
 
 
 

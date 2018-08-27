@@ -268,7 +268,7 @@ featured = true
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "Working with business development, I created the website with the main purpose of providing the value proposition for the application and to facilitate registering and downloading the application.<br /><br />In addition to the web site being a sales tool, it was also used as our online help system we built into CraftMaster and as a cloud database for metrics and asset distribution. This kept our overhead low while maintaining flexibility and control over data and delivery."
+    text = "Working with the goal of providing the value proposition for the application and to facilitate registering and downloading the application, the web site was designed with minimal pages.<br /><br />In addition to the web site being a sales tool, it was also used as our online help system we built into CraftMaster and as a cloud database for metrics and asset distribution. This kept our overhead low while maintaining flexibility and control over data and delivery."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
@@ -282,28 +282,28 @@ featured = true
     #   src = "Streamlio-BC-Rendering.png"
     #   figcaption = "3D rendering of redesigned business cards"
 
-  [[sections.case_study_content]]
-    name = "media"
-    title = "Media Content"
-    weight = 1000
-    layout = ""
-    class = ""
-    style = "cs-dark"
-    section = ""
-    heading = "The Problem with Problems"
-    text = "Now that we had an application and site, we needed videos to start promoting CraftMaster’s features."
-    asset_path = "streamlio"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-    # [[sections.case_study_content.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "3D rendering of redesigned business cards"
-    # [[sections.case_study_content.videos]]
-    #   service = ""
-    #   service_id = ""
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "3D rendering of redesigned business cards"
+  # [[sections.case_study_content]]
+  #   name = "media"
+  #   title = "Media Content"
+  #   weight = 1000
+  #   layout = ""
+  #   class = ""
+  #   style = "cs-dark"
+  #   section = ""
+  #   heading = "The Problem with Problems"
+  #   text = "Now that we had an application and site, we needed videos to start promoting CraftMaster’s features."
+  #   asset_path = "streamlio"
+  #   image = "Streamlio-BC-Rendering-PlexusUV.png"
+  #   caption = "Rendered comp"
+  #   media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+  #   # [[sections.case_study_content.figures]]
+  #   #   src = "Streamlio-BC-Rendering.png"
+  #   #   figcaption = "3D rendering of redesigned business cards"
+  #   # [[sections.case_study_content.videos]]
+  #   #   service = ""
+  #   #   service_id = ""
+  #   #   src = "Streamlio-BC-Rendering.png"
+  #   #   figcaption = "3D rendering of redesigned business cards"
 
   [[sections.case_study_content]]
     name = "avatars"
@@ -314,7 +314,7 @@ featured = true
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "For the online persona of MineCraft's team members, custom <em>skins</em> were create for use with Minecraft. In addition, fully rigged 3D models were create and texture so that <em>photos</em> could be taken for marketing or that the actual 3D avatars could be used in-app to provide help with on-boarding new users."
+    text = "I created fully rigged 3D models and skin textures for each of of our team members for use online, in media, and in MineCraft itself. This provided us characters who's photos could be taken and used for media, marketing, or in-app to provide help with on-boarding new users."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
@@ -336,14 +336,14 @@ featured = true
 
   [[sections.case_study_content]]
     name = "conclusion"
-    title = "Conclusiton"
+    title = "In conclusion"
     weight = 1000
     layout = ""
     class = ""
     style = "cs-dark"
     section = ""
     heading = "The Problem with Problems"
-    text = "I love all types of computer games from first-person shooters and MMORPGs to strategy simulations. I love exploring the new environments, story lines, characters, and game mechanics.  I also love deconstructing the user experience and interface of the game. This reinforces my ability to see patterns and trends for user interaction systems.<br /><br />When MineCraft came out many of my friends and their kids started playing — I joined in the fun. Exploring the world was great, but creating a home, fortress, village, or a work of art was even more rewarding.<br /><br />However, MineCraft lacked the ability to import and export these incredible creations. How could we share something we made with a friend, or load a 3D model into MineCraft? How could we show our creations with the rest of the world?<br /><br />We needed an application to provide 3D model import and export, as well as voxelization, material editing, asset management, and content sharing. From these conversations an engineer, a business developer, and myself, a product designer formed a business and CraftMaster was born.<br /><br />We then had the difficult task all startups face — to create an identity system, build a web site and social content, all while developing an engaging product our target users. This was an incredible amount of design work, but I was ready for the challenge."
+    text = "This was a tremendous endeavor. Due to licensing limitations with a closed path to monetization, without significant investment in developing a standalone content platform or additional application, CraftMaster will remain in its beta state — a useable application with 10 new downloads a day.<br /><br />Since the project was built around open standards and libraries, we are in the process of releasing the it as a open project in GitHub, allowing for continued development and future versions."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
