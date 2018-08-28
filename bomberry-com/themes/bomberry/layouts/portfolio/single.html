@@ -13,24 +13,24 @@
 
   {{ .Content }}
   <a id="JUMP"></a>
-  <div class="jumbotron casestudy cs-type cs-dark">
+  <div class="jumbotron casestudy cs-type cs-dark {{ .Params.header.class }}">
     <div class="container cs-intro-block">
       <div class="row cs-job">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
           <h4><small>{{ .Params.job_title }}</small></h4>
         </div>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
           <h6 class="lead">{{ .Params.client_name }}</h6>
         </div>
       </div>
       <div class="row cs-intro">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
           <h3 class="underline-center-outward">{{ .Params.header.title }}</h3>
           <p>{{ with .Params.header.text }}{{ . | safeHTML }}{{ end }}</p>
         </div>
       </div>
       <div class="row cs-taxonomies">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
           <h4 class="small">Services:</h4>
           {{ $taxonomyGroup := "services" }}
           <ul id="{{$taxonomyGroup}}" class="taxonomy list-unstyled">
@@ -40,7 +40,7 @@
             {{ end }}
           </ul>
         </div>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-4 col-md-offset-2">
+        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
           <h4 class="small">Tools:</h4>
           {{ $taxonomyGroup := "tools" }}
           <ul id="{{$taxonomyGroup}}" class="taxonomy list-unstyled">
@@ -56,6 +56,13 @@
           </div>
         </div> */}}
       </div>
+      {{ if .Params.header.footnote}}
+      <div class="row cs-footnote">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+          <h4><small>{{ .Params.header.footnote }}</small></h4>
+        </div>
+      </div>
+      {{end}}
     </div>
   </div>
 
@@ -67,7 +74,7 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
               <h3>{{ .title }}</h3>
               <p>{{ with .text }}{{ . | safeHTML }}{{ end }}</p>
             </div>

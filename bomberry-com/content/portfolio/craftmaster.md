@@ -71,16 +71,17 @@ featured = true
     title = "Enabling User I/O Workflows with MineCraft"
     weight = 1000
     layout = ""
-    class = ""
+    class = "cs-craftmaster-bg"
     style = "cs-dark"
     section = ""
     heading = "Enabling User I/O Workflows with MineCraft"
-    text = "How do you help MineCraft users import, export, and share their 3D creations? <strong>Build a compantion application for users of all ages.</strong>"
+    text = "How do you help MineCraft users import, export, and share their 3D creations? <strong>Build a companion application for users of all ages.</strong>"
     summary = ""
     asset_path = "streamlio"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    image = ""
+    caption = ""
+    media = [""]
+    footnote = "Background image: CraftMaster tiled background used for web, video, and collateral design"
     [[header.figures]]
       # src = "Streamlio-BC-Rendering-PlexusUV.png"
       # figcaption = "3D rendering of updated business cards"
@@ -98,11 +99,11 @@ featured = true
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "I love all types of computer games from first-person shooters and MMORPGs to strategy simulations. I love exploring the new environments, story lines, characters, and game mechanics.  I also love deconstructing the user experience and interface of the game. This reinforces my ability to see patterns and trends for user interaction systems.<br /><br />When MineCraft came out many of my friends and their kids started playing — I joined in the fun. Exploring the world was great, but creating a home, fortress, village, or a work of art was even more rewarding.<br /><br />However, MineCraft lacked the ability to import and export these incredible creations. How could we share something we made with a friend, or load a 3D model into MineCraft? How could we show our creations with the rest of the world?<br /><br />We needed an application to provide 3D model import and export, as well as voxelization, material editing, asset management, and content sharing. From these conversations an engineer, a business developer, and myself, a product designer formed a business and CraftMaster was born.<br /><br />We then had the difficult task all startups face — to create an identity system, build a web site and social content, all while developing an engaging product our target users. This was an incredible amount of design work, but I was ready for the challenge."
+    text = "I love all types of computer games from first-person shooters and MMORPGs to strategy simulations. I love exploring the new environments, story lines, characters, and game mechanics.  I also love deconstructing the user experience and interface of the game. This reinforces my ability to see patterns and trends for user interaction systems.<br /><br />When MineCraft came out many of my friends and their kids started playing — I joined in the fun. Exploring the world was great, but creating a home, fortress, village, or a work of art was even more rewarding.<br /><br />However, MineCraft lacked the ability to import and export these incredible creations. How could we share something we made with a friend, or load a 3D model into MineCraft? How could we show our creations with the rest of the world?<br /><br />We needed an application to provide 3D model import and export, as well as voxelization, material editing, asset management, and content sharing. From these conversations an engineer, a business developer, and myself, a product designer formed a business and CraftMaster was born.<br /><br />We then had the difficult task all startups face — to create an identity system, build a web site and social content, all while developing an engaging product for our target users.<br /><br />This would be an incredible amount of design work, but I'm always ready for a challenge — and to practice my craft."
     asset_path = "streamlio"
-    image = "Streamlio-BC-Rendering-PlexusUV.png"
-    caption = "Rendered comp"
-    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    image = ""
+    caption = ""
+    media = [""]
     # [[sections.case_study_content.figures]]
     #   src = "Streamlio-BC-Rendering.png"
     #   figcaption = "3D rendering of redesigned business cards"
@@ -114,7 +115,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "challange"
-    title = "challange"
+    title = "Mapping out a path forward"
     weight = 1000
     layout = ""
     class = ""
@@ -144,7 +145,7 @@ featured = true
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "The challenge with the logo was to show the relationship of the app ecosystem; user-content, CraftMaster content, MineCraft content, or more familiarly as a <em>block</em>, inside of a <em>structures</em>, as part of your “world.”<br /><br />I sketched out several ideas and then started to prepare illustrations for the team to review. The idea that resonated was nested cubes, or blocks, that represent the core of the experience. Using a silhouette of a cube at an angle, we had a hexagon to use to reinforce symbology. This would be the bases of the main logo “bug” and related icons in the application."
+    text = "The challenge with the logo was to show the relationship of the app ecosystem; user-content, CraftMaster content, MineCraft content, or more familiarly as a <em>block</em>, inside of a <em>structures</em>, as part of your <em>world</em>.<br /><br />I sketched out several ideas and then started to prepare illustrations for the team to review. The idea that resonated was nested cubes, or blocks, that represent the core of the experience. Using a silhouette of a cube at an angle, we had a hexagon to use to reinforce symbology. This would be the bases of the main logo <em>bug</em> and related icons in the application."
     asset_path = "craftmaster"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
@@ -196,14 +197,17 @@ featured = true
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "The main challenge for building the application was to define the user workflows. This process started on a whiteboard and paper sketches. This was also time for engineering to weigh in on application architecture.<br /><br />Our priority was to solidify our approach to the UI layer. We had decided to use Chromium as the top-layer. This allows us to create an HTML/CSS based interface and to integrate with our various open-source components.<br /><br />After deciding on the UI layer, I started working on wireframes and lo-fi comps. This allowed us to focus on workspace functionality, and components, as well as test user workflows.<br /><br />As soon as there was a framework in place, I began working with engineering to present the UI layer. We could approach this in two ways, by engineering pushing controls to be styled in the UI and by presenting UI that needed to be hooked up to supporting functions.<br /><br />This process had a few bumps along the way, but after a few weeks working on the same tasks the process was easy to start implementing meaningful MVP functionality into the UI and to allow for user testing."
+    text = "The main challenge for building the application was to define the user workflows. This process started on a whiteboard and paper sketches. This was also time for engineering to weigh in on application architecture.<br /><br />Our priority was to solidify our approach to the UI layer. We had decided to use Chromium as the foundation and (UI) top-layer. This allowed us to create a platform-agnostic HTML/CSS based interface on top of our various open-source components.<br /><br />After deciding on the UI layer, I started working on wireframes and lo-fi comps. This allowed us to focus on workspace functionality, and components, as well as test user workflows.<br /><br />As soon as there was a framework in place, I began working with engineering to present the UI layer. We could approach this in two ways, by engineering pushing controls to be styled in the UI and by presenting UI that needed to be hooked up to supporting functions.<br /><br />This process had a few bumps along the way, but after a few weeks working together the process became easy and we were able to start implementing meaningful MVP functionality into the UI and start user testing."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-    # [[sections.case_study_content.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "3D rendering of redesigned business cards"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterFeaturesV2.png"
+      figcaption = "Feature block diagram"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterFeatureUIMap.png"
+      figcaption = "UI feature map"
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -267,15 +271,15 @@ featured = true
     class = ""
     style = "cs-light"
     section = ""
-    heading = "The Problem with Problems"
+    heading = "Web site: to register, download, and provide informaiton and help"
     text = "Working with the goal of providing the value proposition for the application and to facilitate registering and downloading the application, the web site was designed with minimal pages.<br /><br />In addition to the web site being a sales tool, it was also used as our online help system we built into CraftMaster and as a cloud database for metrics and asset distribution. This kept our overhead low while maintaining flexibility and control over data and delivery."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-    # [[sections.case_study_content.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "3D rendering of redesigned business cards"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterSiteDisplayLaptop.png"
+      figcaption = "Web site displayed on laptop"
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -343,7 +347,7 @@ featured = true
     style = "cs-dark"
     section = ""
     heading = "The Problem with Problems"
-    text = "This was a tremendous endeavor. Due to licensing limitations with a closed path to monetization, without significant investment in developing a standalone content platform or additional application, CraftMaster will remain in its beta state — a useable application with 10 new downloads a day.<br /><br />Since the project was built around open standards and libraries, we are in the process of releasing the it as a open project in GitHub, allowing for continued development and future versions."
+    text = "This was a tremendous endeavor. Due to licensing limitations, a path to monetization be came an issue, without significant investment in developing a standalone content platform or application, CraftMaster will remain in its current, beta state — a useable application with an average of 10 new downloads a day.<br /><br />Since the project was built around open standards and libraries, we are in the process of releasing the it as a open project on GitHub to allow for continued development."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"

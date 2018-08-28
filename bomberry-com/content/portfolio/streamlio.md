@@ -75,16 +75,17 @@ featured = true
   title = "Building a Better Brand"
   weight = 1000
   layout = ""
-  class = ""
+  class = "cs-streamlio-bg"
   style = "cs-dark"
   section = ""
   heading = "Building a Better Brand"
   text = "How do you move a from logo and web site to a complete brand and content solution? <strong>Keep it simple.</strong>"
   summary = ""
   asset_path = "streamlio"
-  image = "Streamlio-BC-Rendering-PlexusUV.png"
-  caption = "Rendered comp"
-  media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+  image = ""
+  caption = ""
+  media = [""]
+  footnote = "Background image: one of a series of plexus graphics created for Streamlio branding"
 
   [[header.figures]]
     # src = "Streamlio-BC-Rendering-PlexusUV.png"
@@ -152,7 +153,7 @@ featured = true
 
     [[sections.case_study_content.figures]]
       src = "guide-logo.png"
-      figcaption = "Logo composition from branding guidlines"
+      figcaption = "Logo composition page from Streamlio branding guidlines"
     # [[sections.case_study_content.figures]]
       # src = "updated-streamlio-buiness-card-1.png"
       # figcaption = "Redesign (SOLUTION END)"
@@ -178,7 +179,7 @@ featured = true
       figcaption = "Original"
     [[sections.case_study_content.figures]]
       src = "Logotype-Study-Bug-Simplified.png"
-      figcaption = "Simplified"
+      figcaption = "Refresh"
     # [[sections.case_study_content.figures]]
       # src = "Streamlio-BC-ColorCallout.png"
       # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
@@ -201,7 +202,7 @@ featured = true
       figcaption = "Kerning samples"
     [[sections.case_study_content.figures]]
       src = "Logotype-Study-Logotype-Variations-on-Grays.png"
-      figcaption = "Testing logo visibility"
+      figcaption = "Contrast visibility test"
     # [[sections.case_study_content.figures]]
       # src = "Streamlio-BC-ColorCallout.png"
       # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
@@ -219,9 +220,9 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    # [[sections.case_study_content.figures]]
-    #   src = "original-streamlio-buiness-card-1.png"
-    #   figcaption = "Original"
+    [[sections.case_study_content.figures]]
+      src = "Streamlio-Logo-Artboards.png"
+      figcaption = "Logo variations (Adobe Illustrator Artboards)"
     # [[sections.case_study_content.figures]]
     #   src = "updated-streamlio-buiness-card-1.png"
     #   figcaption = "Redesign (SOLUTION END)"
@@ -270,10 +271,10 @@ featured = true
       figcaption = "Original"
     [[sections.case_study_content.figures]]
       src = "updated-streamlio-buiness-card-1.png"
-      figcaption = "Redesign (SOLUTION END)"
+      figcaption = "Redesign"
     [[sections.case_study_content.figures]]
       src = "Streamlio-BC-ColorCallout.png"
-      figcaption = "Business Card Template (Adobe Illustrator)"
+      figcaption = "Template (Adobe Illustrator)"
 
   [[sections.case_study_content]]
     name = "sitestart"
@@ -310,10 +311,10 @@ featured = true
 
     [[sections.case_study_content.figures]]
       src = "streamlio-site-content-map.png"
-      figcaption = "Site strcture and element callout"
+      figcaption = "Site structure and element callout"
     [[sections.case_study_content.figures]]
       src = "block-components.png"
-      figcaption = "Block components"
+      figcaption = "HTML block component comps"
 
   [[sections.case_study_content]]
     name = "comps"
@@ -351,9 +352,9 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering.png"]
 
-    # [[sections.case_study_content.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Logo"
+    [[sections.case_study_content.figures]]
+      src = "Streamlio-Site-Device-Comps.png"
+      figcaption = "Streamlio web site"
     # [[sections.case_study_content.figures]]
     #   src = "Streamlio-BC-Rendering-PlexusUV.png"
     #   figcaption = "RESULT END"

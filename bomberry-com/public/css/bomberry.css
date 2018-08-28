@@ -860,6 +860,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
       .jumbotron.projects.cs-type > .container > .row:last-of-type,
       .jumbotron.cta.cs-type > .container > .row:last-of-type {
         margin-bottom: 5rem; }
+      .jumbotron.casestudy.cs-type > .container > .row.cs-footnote,
+      .jumbotron.projects.cs-type > .container > .row.cs-footnote,
+      .jumbotron.cta.cs-type > .container > .row.cs-footnote {
+        margin-bottom: 1rem; }
   .jumbotron.casestudy h1, .jumbotron.casestudy h2, .jumbotron.casestudy h3, .jumbotron.casestudy h4, .jumbotron.casestudy h5,
   .jumbotron.projects h1,
   .jumbotron.projects h2,
@@ -903,6 +907,10 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   .jumbotron.projects.cs-photoshopcom,
   .jumbotron.cta.cs-photoshopcom {
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center; }
+  .jumbotron.casestudy.cs-craftmaster-bg,
+  .jumbotron.projects.cs-craftmaster-bg,
+  .jumbotron.cta.cs-craftmaster-bg {
+    background: url("../portfolio/assets/craftmaster/CraftMasterBackground.png") repeat scroll center; }
   .jumbotron.casestudy.cs-craftmaster,
   .jumbotron.projects.cs-craftmaster,
   .jumbotron.cta.cs-craftmaster {
@@ -911,6 +919,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   .jumbotron.projects.cs-cm-masterly,
   .jumbotron.cta.cs-cm-masterly {
     background: url("../portfolio/assets/craftmaster/CraftMaster-MasterlyFont-Background.png") no-repeat scroll center; }
+  .jumbotron.casestudy.cs-streamlio-bg,
+  .jumbotron.projects.cs-streamlio-bg,
+  .jumbotron.cta.cs-streamlio-bg {
+    background: url("../portfolio/assets/streamlio/plexus-bg.png") no-repeat scroll center;
+    background-size: cover; }
 
 .jumbotron.projects h1, .jumbotron.projects h2, .jumbotron.projects h3, .jumbotron.projects h4, .jumbotron.projects h5 {
   color: #3355ff; }
