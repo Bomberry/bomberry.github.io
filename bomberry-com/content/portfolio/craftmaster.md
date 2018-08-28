@@ -220,7 +220,7 @@ featured = true
     weight = 1000
     layout = ""
     class = ""
-    style = "cs-dark"
+    style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
     text = "Icons were designed to conveying their symbolic meaning while being easily adapted for use in the Masterly font. Icons reinforce the hexagon symbol and are used for represent application workspaces, controls, buttons, and functions."
@@ -240,16 +240,39 @@ featured = true
     #   src = "Streamlio-BC-Rendering.png"
     #   figcaption = "3D rendering of redesigned business cards"
 
+  # [[sections.case_study_content]]
+  #   name = "files"
+  #   title = "File Icons"
+  #   weight = 1000
+  #   layout = ""
+  #   class = ""
+  #   style = "cs-dark"
+  #   section = ""
+  #   heading = "The Problem with Problems"
+  #   text = "After finishing the first round of icons, I began the task of creating the “file” icons — the icons normally used for application specific for CraftMaster."
+  #   asset_path = "streamlio"
+  #   image = "Streamlio-BC-Rendering-PlexusUV.png"
+  #   caption = "Rendered comp"
+  #   media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+  #   # [[sections.case_study_content.figures]]
+  #   #   src = "Streamlio-BC-Rendering.png"
+  #   #   figcaption = "3D rendering of redesigned business cards"
+  #   # [[sections.case_study_content.videos]]
+  #   #   service = ""
+  #   #   service_id = ""
+  #   #   src = "Streamlio-BC-Rendering.png"
+  #   #   figcaption = "3D rendering of redesigned business cards"
+
   [[sections.case_study_content]]
-    name = "files"
-    title = "File Icons"
+    name = "beta"
+    title = "The initial release"
     weight = 1000
     layout = ""
     class = ""
-    style = "cs-dark"
+    style = "cs-light"
     section = ""
-    heading = "The Problem with Problems"
-    text = "After finishing the first round of icons, I began the task of creating the “file” icons — the icons normally used for application specific for CraftMaster."
+    heading = "The initial release"
+    text = "With the design and engineering collaboration flowing smoothly, we were able to produce and iterate a functional demo app. It was now time to develop and grow our relationship with out user base, and to start vetting the app in the wild."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
@@ -257,11 +280,11 @@ featured = true
     # [[sections.case_study_content.figures]]
     #   src = "Streamlio-BC-Rendering.png"
     #   figcaption = "3D rendering of redesigned business cards"
-    # [[sections.case_study_content.videos]]
-    #   service = ""
-    #   service_id = ""
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "3D rendering of redesigned business cards"
+    [[sections.case_study_content.videos]]
+      service = "YouTube"
+      service_id = "arpOCEoxvwg"
+      src = "https://www.youtube.com/embed/6FHzRfx-G9M"
+      figcaption = "CraftMaster Demo feature video - short version"
 
   [[sections.case_study_content]]
     name = "site"
@@ -269,7 +292,7 @@ featured = true
     weight = 1000
     layout = ""
     class = ""
-    style = "cs-light"
+    style = "cs-dark"
     section = ""
     heading = "Web site: to register, download, and provide informaiton and help"
     text = "Working with the goal of providing the value proposition for the application and to facilitate registering and downloading the application, the web site was designed with minimal pages.<br /><br />In addition to the web site being a sales tool, it was also used as our online help system we built into CraftMaster and as a cloud database for metrics and asset distribution. This kept our overhead low while maintaining flexibility and control over data and delivery."
