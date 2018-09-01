@@ -2,10 +2,6 @@
 {{ define "bodystart" }}<body id="area-{{.Params.location_name}}" class="location-{{.Params.location_name}}">{{ end }}
 {{ define "main" }}
 
-  {{ if .Site.Params.includeFileInfo }}
-    {{ partial "file-info.html" . }}
-  {{ end }}
-
   {{ if .Site.Params.includeHugoMeta }}
     {{ partial "whatsthis.html" . }}
   {{ end }}
@@ -18,6 +14,7 @@
     {{ $permalink := .Permalink }}
     {{ range .Params.sections.project }}
       {{ $asset_folder := .asset_path }}
+      <a id="{{ .name }}"></a>
       <div class="jumbotron casestudy {{ .style }}">
         <div class="container">
           <div class="row">

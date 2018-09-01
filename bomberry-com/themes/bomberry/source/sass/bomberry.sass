@@ -168,6 +168,11 @@ hr
       border-bottom-color: $color-projects
       text-decoration: none
       color: $color-projects
+    &-about
+      @extend %navbar-brand-border
+      border-bottom-color: $color-about
+      text-decoration: none
+      color: $color-about
     &-contact
       @extend %navbar-brand-border
       border-bottom-color: $color-contact
@@ -235,6 +240,8 @@ hr
       color: $color-1
     &-projects
       color: $color-projects
+    &-about
+      color: $color-about
     &-contact
       color: $color-contact
     &-adobe
@@ -248,6 +255,10 @@ hr
     &.navbar-brand
       padding-right: 0
 
+.lead
+  line-height: 1.61
+  .carousel-caption &
+    line-height: 1
 
 .background-color
   &-www
@@ -262,6 +273,8 @@ hr
     background-color: $color-1
   &-projects
     background-color: $color-projects
+  &-about
+    background-color: $color-about
   &-contact
     background-color: $color-contact
   &-adobe
@@ -323,6 +336,8 @@ svg
 a.location
   &-www
     color: $color-gray-light !important
+  &-home
+    color: $color-gray-light !important
   &-resume
     color: $color-resume !important
   &-portfolio
@@ -333,6 +348,8 @@ a.location
     color: $color-1 !important
   &-projects
     color: $color-projects !important
+  &-about
+    color: $color-about !important
   &-contact
     color: $color-contact !important
   &-adobe
@@ -352,7 +369,10 @@ a.location
     padding: 0px
   .carousel
     height: 100%
+    &.slide
+      // min-height: 30vh
   .carousel-indicators
+    bottom: 0.5rem
     > li
       height: 1ch
       width: 6ch
@@ -371,20 +391,38 @@ a.location
         transition: $transition-slow
   .carousel-inner
     height: 100%
+    width: auto
     > .item
+      min-height: 35vh
+      height: auto
+      width: 100%
+      max-height: 70vh
       > .img-responsive
         -webkit-filter: brightness(62%)
         filter: brightness(62%)
-        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        min-width: 100%
+        height: 100%
         object-fit: cover
       // > img,
       // > a > img
   .carousel,.item,.active
-    height: 100%
+    // height: 100%
+    // width: auto
   > .item
+    // min-height: 30vh
+    display: block
+    height: auto
+    width: 100%
     img
-      background-position: center
-      background-size: cover
+      // background-position: center
+      // background-size: cover
+      // display: block !important
+      // max-width: 100% !important
+      // height: auto !important
+      // object-fit: cover
   .carousel-caption
     bottom: 10%
     //top: 1ch
@@ -396,9 +434,25 @@ a.location
     span
       display: block
       font-size: 112%
+      line-height: 1
     p
       font-size: 42%
       color: white
+      line-height: 1.4
+  .item.active .carousel-caption
+    span, p
+      -webkit-animation-duration: 600ms
+      -moz-animation-duration: 600ms
+      animation-duration: 600ms
+      -webkit-animation-delay: 900ms
+      -moz-animation-delay: 900ms
+      animation-delay: 900ms
+    p
+      -webkit-animation-delay: 1000ms
+      -moz-animation-delay: 1000ms
+      animation-delay: 1000ms
+
+
   .carousel-control
     width: 12.5%
     transition: $transition-slow
@@ -522,7 +576,8 @@ img.thumbnail
       text-shadow: 0px 3px 6px rgba(114,114,114,0.52)
 
 .text-tall
-  line-height: 140%
+  line-height: 1.62
+  padding-bottom: 2rem
 
 .breath
   &-top
@@ -609,8 +664,9 @@ img.thumbnail
 
 #area-site
   section
-    padding-top: $layout-breath-unit
-    padding-bottom: $layout-breath-unit
+    &.pad
+      padding-top: $layout-breath-unit
+      padding-bottom: $layout-breath-unit
     &.page-introduction
       background-image: url('/media/images/Headshot-DarkGray-Masked.png')
       // background-size: 50%
@@ -653,6 +709,9 @@ img.thumbnail
 
 #area-resume
   section
+    &.pad
+      padding-top: $layout-breath-unit
+      padding-bottom: $layout-breath-unit
     div.container
       article
         padding-top: $layout-breath-unit
@@ -741,24 +800,58 @@ img.thumbnail
   #area-resume &
     background-color: $color-gray-lightest
 
-
-section.casestudy
-  margin-top: 14vmin
-  margin-bottom: 14vmin
-  &.cs-light
+.theme
+  &-light
     color: $color-gray-darkest
     background: $color-gray-lightest
-  &.cs-dark
+    .btn:hover a
+      color: $color-white !important
+  &-dark
     color: $color-white
     background: $color-gray-darker
-  > .container.gallery
-    text-align: center
-    .img-thumbnail
-      margin: 2ch 1ch
-      border-color: transparent
-      &:hover, &:focus, &.active
-        //border-color: $color-portfolio
+    .btn:hover a
+      color: $color-white !important
+  &-black
+    color: $color-gray-darkest
+    background: $color-black
+    .btn:hover a
+      color: $color-white !important
+
+section.indicator-continue
+  .btn,
+  .btn-block
+    border: 0
+  .btn a
+      padding-top: 1rem
+      padding-bottom: 1rem
+  &:hover .btn a
+    color: $color-white !important
+
+section
+  &.pad
+    padding-top: $layout-breath-unit
+    padding-bottom: $layout-breath-unit
+  &.no-pad
+    padding-top: 0
+    padding-bottom: 0
+
+  .casestudy
+    margin-top: 14vmin
+    margin-bottom: 14vmin
+    &.cs-light
+      color: $color-gray-darkest
+      background: $color-gray-lightest
+    &.cs-dark
+      color: $color-white
+      background: $color-gray-darker
+    > .container.gallery
+      text-align: center
+      .img-thumbnail
+        margin: 2ch 1ch
         border-color: transparent
+        &:hover, &:focus, &.active
+          //border-color: $color-portfolio
+          border-color: transparent
 
 .jumbotron.casestudy
   &.return-portfolio
@@ -898,7 +991,7 @@ section.casestudy
         @include setBgImageColorAndHoverInvert
         @include setBgImageInvert("streamlio", "Streamlio-BC-Rendering.png")
         & .btn
-          @include setBtnColorAndHover($color-resume)
+          @include setBtnColorAndHover($color-portfolio)
       &-2
         @include setBgImageColorAndHoverInvert
         @include setBgImageInvert("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
@@ -1165,6 +1258,13 @@ a.thumbnail
   &-h-clear
     padding-left: -15px
     padding-right: -15px
+  &-v-small
+    padding-left: 2.5rem
+    padding-right: 2.5rem
+  &-v-large
+    padding-left: 7rem
+    padding-right: 7rem
+    background-color: green
 
 .m-pad
   &-top
@@ -1175,6 +1275,27 @@ a.thumbnail
       margin-top: 5rem
     &-large
       margin-top: 10rem
+  &-bottom
+    margin-bottom: 7.5rem
+    &-small
+      margin-bottom: 2.5rem
+    &-medium
+      margin-bottom: 5rem
+    &-large
+      margin-bottom: 10rem
+  &-v
+    margin-top: 7.5rem
+    margin-bottom: 7.5rem
+
+    &-small
+      margin-top: 2.5rem
+      margin-bottom: 2.5rem
+    &-medium
+      margin-top: 5rem
+      margin-bottom: 5rem
+    &-large
+      margin-top: 10rem
+      margin-bottom: 10rem
 
 
 /*    ANIMATIONS:   */

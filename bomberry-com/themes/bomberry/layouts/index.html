@@ -1,31 +1,27 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "bodystart" }}<body id="area-{{if .Params.location_name}}{{.Params.location_name}}{{else}}site{{end}}" class="location-{{if .Params.location_name}}{{.Params.location_name}}{{else}}site{{end}}">{{ end }}
 {{ define "main" }}
-{{ if .Site.Params.includeFileInfo }}
-  {{ partial "file-info.html" . }}
-{{ end }}
-  {{/* <pre>
-    Params.location_name : {{ .Params.location_name }}
-    Kind : {{ .Kind }}
-  </pre>
-  <p>Hugo says, "hello, Bitches!"</p>
-  <p>This is part of the index.html file.</p> */}}
+
 {{ if .Site.Params.includeHugoMeta }}
   {{ partial "whatsthis.html" . }}
 {{ end }}
+
   {{ .Content }}
+
   {{/* <h1> First: </h1>
   {{ range first 10 .Data.Pages }}
     {{ if eq .Type "post"}}
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     {{ end }}
   {{ end }} */}}
+
   {{/* <h1> Second: </h1>
   {{ range .Data.Pages }}
     {{ if eq .Type "page"}}
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     {{ end }}
   {{ end }} */}}
+
   {{/* <h1> Third: </h1>
   {{ range .Data.Pages }}
     {{ if eq .Type "news"}}
@@ -35,24 +31,13 @@
 
 {{ partial "carousel-index.html" . }}
 
+{{ partial "indicator-scroll-down.html" . }}
 
-{{/* {{ partial "indicator-scroll-down.html" . }} */}}
-
-
-  <section class="page-introduction cs-dark">
-    <div class="container">
-      <div class="row breath-v">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-          <p class="lead">{{.Params.intro_statement | markdownify }}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+{{ partial "introduction-index.html" . }}
 
 {{ partial "featured.html" . }}
 
 {{ partial "cta-a.html" . }}
-
 
 {{ partial "about-tiny.html" . }}
 

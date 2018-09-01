@@ -1,14 +1,8 @@
 {{ partial "header.html" . }}
 
-{{ if .Site.Params.includeFileInfo }}
-  {{ partial "file-info.html" . }}
-{{ end }}
-
-
 {{ if .Site.Params.includeHugoMeta }}
   {{ partial "whatsthis.html" . }}
 {{ end }}
-
 
   <h1>{{ .Title }}</h1>
   <!-- <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2> -->

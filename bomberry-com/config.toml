@@ -14,8 +14,9 @@ time_format = "3:04 PM"
 
 
 [params]
-  CopyrightHTMLA = "Copyright &#xA9; 2018 Kevin Bomberry. All Rights Reserved."
-  CopyrightHTML = "Copyright &#xA9; 2018 Kevin Bomberry. All rights reserved. All other &copy;&nbsp;&#124;&nbsp;&reg;&nbsp;&#124;&nbsp;&trade; rights reserved by original holders respectivly."
+  copyright = "Copyright &copy; {year} Kevin Bomberry. All rights reserved. All other &copy;&nbsp;&#124;&nbsp;&reg;&nbsp;&#124;&nbsp;&trade; rights reserved by original holders respectively."
+  copyrightHTMLA = "Copyright &#xA9; 2018 Kevin Bomberry. All Rights Reserved."
+  copyrightHTML = "Copyright &#xA9; 2018 Kevin Bomberry. All rights reserved. All other &copy;&nbsp;&#124;&nbsp;&reg;&nbsp;&#124;&nbsp;&trade; rights reserved by original holders respectivly."
   TwitterUser = "bomberry"
 
   includeFileInfo = false
@@ -146,6 +147,14 @@ time_format = "3:04 PM"
   #   url = "/projects/"
   #   weight = 100
   #   hidden = false
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    pre = "<i class='fa fa-user-circle-o'></i>"
+    url = "/about/"
+    weight = 110
+    hidden = true
 
   # [[menu.main]]
   #   identifier = "contact"

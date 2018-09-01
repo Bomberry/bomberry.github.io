@@ -1,7 +1,14 @@
 {{ define "title" }}<title>404 Not Found Error: BOMBERRY.COM</title>{{ end }}
 {{ define "main" }}
+
   {{ partial "navigation.html" }}
+
+  {{ if .Site.Params.includeHugoMeta }}
+    {{ partial "whatsthis.html" . }}
+  {{ end }}
+
   {{ .Content }}
+
   <div class="jumbotron casestudy">
     <div class="container">
       <div class="row breath-top-small">
@@ -14,4 +21,5 @@
       </div>
     </div>
   </div>
+
 {{ end }}

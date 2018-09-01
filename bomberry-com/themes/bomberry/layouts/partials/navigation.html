@@ -51,6 +51,10 @@
       {{ range .Site.Menus.main }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }} <span class="location-{{ .Name }}">{{ .Name }}</span></a></li>
       {{ end }}
+    {{ else if (eq $location "about") }}
+      {{ range .Site.Menus.main }}
+      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "about" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
     {{ else if (eq $location "resume") }}
       {{ range .Site.Menus.resume }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
