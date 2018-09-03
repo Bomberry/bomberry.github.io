@@ -466,6 +466,24 @@ img.thumbnail + span.caption {
   .icon.glyphicon[data-item-name="blackpepper"] {
     color: #141211; }
 
+#modalDialog {
+  margin-top: 7vmin; }
+  #modalDialog .modal-content {
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+    #modalDialog .modal-content button.close {
+      color: #303030;
+      margin-bottom: 1rem;
+      opacity: 0.63;
+      transition: all 0.16s ease-in-out; }
+      #modalDialog .modal-content button.close:hover {
+        color: #101010;
+        transform: scale(1.5); }
+    #modalDialog .modal-content figcaption {
+      color: #202020; }
+    #modalDialog .modal-content .imagePreview {
+      width: 100%; }
+
 #area-site section.pad {
   padding-top: 7vmin;
   padding-bottom: 7vmin; }
