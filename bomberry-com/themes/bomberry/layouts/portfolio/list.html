@@ -49,7 +49,7 @@
             {{ if .figures }}
               <div class="col-xs-12 flex-gallery {{ if .gallery_class}}{{ .gallery_class }}{{ end }} breath-top">
               {{ range .figures }}
-                  <figure>
+                  <figure class="popModal" data-style="{{ .style }}">
                     <img src="{{ $mediaPath }}/{{ $asset_folder }}/{{ .src }}"
                       width="100%" height="100%"
                       alt="{{ .figcaption }}">
@@ -79,15 +79,16 @@
               </div>
               {{ end }}
             {{ end }}
-
           </div>
         </div>
       </div>
     {{ end }}
   {{ end }}
 
+  {{ partial "modal-dialog.html" . }}
+
   {{ partial "cta-b.html" . }}
 
-  {{ partial "about-tiny.html" . }}
+  {{ partial "contact-tiny.html" . }}
 
 {{ end }}

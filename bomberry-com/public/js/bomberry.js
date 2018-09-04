@@ -44,3 +44,15 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+// popModal function for showing imaage
+$(function() {
+  $('.popModal').on('click', function() {
+    $('.modal-content').attr('data-style', $(this).find('figure').attr(
+      'data-style'));
+    $('.imagePreview').attr('src', $(this).find('img').attr('src'));
+    $('figcaption').text($(this).find('figcaption').text());
+    $('#modalDialog').modal('show');
+  });
+});

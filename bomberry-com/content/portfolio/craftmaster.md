@@ -189,15 +189,15 @@ featured = true
     #   figcaption = "3D rendering of redesigned business cards"
 
   [[sections.case_study_content]]
-    name = "application"
-    title = "Application Development"
+    name = "appPlanning"
+    title = "Application planning"
     weight = 1000
     layout = ""
     class = ""
     style = "cs-light"
     section = ""
     heading = "The Problem with Problems"
-    text = "The main challenge for building the application was to define the user workflows. This process started on a whiteboard and paper sketches. This was also time for engineering to weigh in on application architecture.<br /><br />Our priority was to solidify our approach to the UI layer. We had decided to use Chromium as the foundation and (UI) top-layer. This allowed us to create a platform-agnostic HTML/CSS based interface on top of our various open-source components.<br /><br />After deciding on the UI layer, I started working on wireframes and lo-fi comps. This allowed us to focus on workspace functionality, and components, as well as test user workflows.<br /><br />As soon as there was a framework in place, I began working with engineering to present the UI layer. We could approach this in two ways, by engineering pushing controls to be styled in the UI and by presenting UI that needed to be hooked up to supporting functions.<br /><br />This process had a few bumps along the way, but after a few weeks working together the process became easy and we were able to start implementing meaningful MVP functionality into the UI and start user testing."
+    text = "The main challenge for building the application was to define user workflows and develop a feature list. This process started with whiteboard and paper brainstorming. This was also time for engineering to weigh in on application architecture.<br /><br />Our priority was to solidify our approach to the UI layer. We had decided to use Chromium as the foundation and (UI) top-layer. This allowed us to create a platform-agnostic HTML/CSS based interface on top of our various open-source components."
     asset_path = "streamlio"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
@@ -208,6 +208,56 @@ featured = true
     [[sections.case_study_content.figures]]
       src = "CraftMasterFeatureUIMap.png"
       figcaption = "UI feature map"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterUIComponents.png"
+      figcaption = "UI components map"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterUserWorkflowUIPaths.png"
+      figcaption = "User workflow map"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeaturesV2.png"
+    #   figcaption = "Feature block diagram"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeatureUIMap.png"
+    #   figcaption = "UI feature map"
+    # [[sections.case_study_content.videos]]
+    #   service = ""
+    #   service_id = ""
+    #   src = "Streamlio-BC-Rendering.png"
+    #   figcaption = "3D rendering of redesigned business cards"
+
+  [[sections.case_study_content]]
+    name = "uiDev"
+    title = "UI Development"
+    weight = 1000
+    layout = ""
+    class = ""
+    style = "cs-light"
+    section = ""
+    heading = "The Problem with Problems"
+    text = "After deciding on the UI layer, I started working on wireframes and lo-fi comps. This allowed us to focus on workspace functionality, and components, as well as test user workflows.<br /><br />As soon as there was a framework in place, I began working with engineering to present the UI layer. We could approach this in two ways, by engineering pushing controls to be styled in the UI and by presenting UI that needed to be hooked up to supporting functions.<br /><br />This process had a few bumps along the way, but after a few weeks working together the process became easy and we were able to start implementing meaningful MVP functionality into the UI and start user testing."
+    asset_path = "streamlio"
+    image = "Streamlio-BC-Rendering-PlexusUV.png"
+    caption = "Rendered comp"
+    media = ["Streamlio-BC-Rendering-PlexusUV.png"]
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterFeaturesV2.png"
+      figcaption = "Feature block diagram"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterFeatureUIMap.png"
+      figcaption = "UI feature map"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterUIComponents.png"
+      figcaption = "UI components map"
+    [[sections.case_study_content.figures]]
+      src = "CraftMasterUserWorkflowUIPaths.png"
+      figcaption = "User workflow map"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeaturesV2.png"
+    #   figcaption = "Feature block diagram"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeatureUIMap.png"
+    #   figcaption = "UI feature map"
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""

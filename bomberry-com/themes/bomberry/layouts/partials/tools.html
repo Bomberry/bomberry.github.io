@@ -1,0 +1,26 @@
+<!-- Skills Section -->
+<section class="pad-top-small">
+  <a id="tools"></a>
+  <div class="container">
+    <hr>
+    <div class="row color-{{.Params.location_name}}">
+      <div class="col-md-4 col-md-offset-1">
+        <h3>Tools</h3>
+      </div>
+      <div class="col-md-5 col-md-offset-1 hidden-sm">
+        {{/*
+        <h6>&nbsp;</h6> */}}
+        <h3><span class="text-muted">Proficiency</span></h3>
+      </div>
+    </div>
+
+    <hr class="hidden-sm">
+    <!-- Tools -->
+    <article>
+      {{ range $.Site.Data.resume }}
+        {{ partial "toolsList" . }}
+      {{ end }}
+    </article>
+    <hr>
+  </div>
+</section>

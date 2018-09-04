@@ -56,9 +56,11 @@ media_path = "./assets"
     has_case_study = true
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
+      style = "cs-light"
       src = "Streamlio-Site-Device-Comps.png"
       figcaption = ""
     [[sections.project.figures]]
+      style = "cs-light"
       src = "Streamlio-BC-Rendering.png"
       figcaption = ""
 

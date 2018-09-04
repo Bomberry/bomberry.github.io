@@ -1,15 +1,14 @@
 <!-- Skills Section -->
-<section>
+<section class="pad-top-small">
   <a id="skills"></a>
   <div class="container">
-   {{/* <hr> */}}
-    <div class="row color-resume">
+   <hr>
+    <div class="row color-{{.Params.location_name}}">
       <div class="col-md-10 col-md-offset-1 text-left">
         <h2>Skills</h2>
       </div>
     </div>
-
-    <hr>
+    <hr class="hidden-sm">
     <!-- Focus -->
     <article>
       <div class="row">
@@ -61,22 +60,5 @@
     </article>
 
     <hr>
-    <!-- Tools -->
-    <article>
-      <a id="tools"></a>
-      <div class="row color-resume">
-        <div class="col-md-4 col-md-offset-1">
-          <h3>Tools</h3>
-        </div>
-        <div class="col-md-5 col-md-offset-1">
-          {{/* <h6>&nbsp;</h6> */}}
-          <h3><span class="text-muted">Proficiency</span></h3>
-        </div>
-      </div>
-      <hr />
-      {{ range $.Site.Data.resume }}
-        {{ partial "toolsList" . }}
-      {{ end }}
-    </article>
   </div>
 </section>

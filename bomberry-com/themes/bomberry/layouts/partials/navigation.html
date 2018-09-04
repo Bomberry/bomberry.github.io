@@ -7,8 +7,8 @@
 <!--      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
 
       <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown"><a href="#" class="dropdown-toggle location-{{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}} navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret"></span> {{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}}.</a>
-          <ul class="dropdown-menu">
+        <li class="dropdown"><a href="#" class="animated fadeInDown dropdown-toggle location-{{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}} navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret animated pulse"></span> {{if .Params.location_name}}{{.Params.location_name}}{{else}}www{{end}}.</a>
+          <ul class="dropdown-menu animated fadeIn">
             {{/* <li><a class="location-resume" href="/resume/" title="Learn about Kevin's work history.">resume</a></li> */}}
             {{/* <li><a class="location-portfolio" href="/portfolio/" title="See some of Kevin's past works.">portfolio</a></li> */}}
             {{/* <li><a class="location-kitchen" href="/kitchen/" title="Learn about Kevin's Kitchen.">kitchen</a></li> */}}
@@ -23,7 +23,7 @@
             {{ end }}
           </ul>
         </li>
-        <li><a class="location-site navbar-brand site" href="/" role="button" aria-expanded="false" aria-haspopup="false">bomberry.com</a></li>
+        <li><a class="animated fadeInDown location-site navbar-brand site" href="/" role="button" aria-expanded="false" aria-haspopup="false">bomberry.com</a></li>
         {{/* <li>
           .Parent: {{ .Parent }} |.Section: {{ .Section }} | .CurrentSection: {{ .CurrentSection }} | .Sections: {{ .Sections }} | .URL: {{ .URL}}
         </li> */}}
@@ -49,19 +49,19 @@
     hidden }} */}}
     {{ if (not $location) }}
       {{ range .Site.Menus.main }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }} <span class="location-{{ .Name }}">{{ .Name }}</span></a></li>
+      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }} <span class="location-{{ .Name }}">{{ .Name }}</span></a></li>
       {{ end }}
     {{ else if (eq $location "about") }}
       {{ range .Site.Menus.main }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "about" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "about" . }}active{{end}}{{if $currentNode.IsMenuCurrent "about" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
     {{ else if (eq $location "resume") }}
       {{ range .Site.Menus.resume }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
     {{ else if (eq .URL "/portfolio/") }}
       {{ range .Site.Menus.portfolio }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
     {{ else if (eq .URL "/portfolio/streamlio/") }}
 
@@ -85,6 +85,10 @@
     {{ else if (eq $location "kitchen") }}
       {{ range .Site.Menus.kitchen }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "kitchen" . }}active{{end}}{{if $currentNode.IsMenuCurrent "kitchen" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq .Kind "404") }}
+      {{ range .Site.Menus.main }}
+      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "main" . }}active{{end}}{{if $currentNode.IsMenuCurrent "main" . }}resume{{end}}" href="{{ .URL }}" title="{{ .Name }}" alt="{{ .Name }}">{{ .Pre }}{{ .Post }} <span class="location-{{ .Name }}">{{ .Name }}</span></a></li>
       {{ end }}
     {{ else }}
       {{/* {{ range .Site.Menus.main }} */}}

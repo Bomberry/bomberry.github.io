@@ -5,9 +5,12 @@
   {{ if .Site.Params.includeHugoMeta }}
     {{ partial "whatsthis.html" . }}
   {{ end }}
+
   {{ .Content }}
   {{ partial "experience.html" . }}
   {{ partial "skills.html" . }}
+  {{ partial "tools.html" . }}
+
   <!-- Contact Section -->
-  {{ partial "about-tiny.html" . }}
+  {{ partial "contact-tiny.html" . }}
 {{ end }}

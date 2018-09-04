@@ -25,9 +25,15 @@ body {
 p {
   line-height: 1.62; }
 
+p.lead + p.lead {
+  padding-top: 3.25rem; }
+
 hr {
   color: transparent;
   border-color: transparent; }
+
+*:focus {
+  outline: 0; }
 
 nav .fa {
   margin-right: 0.75rem; }
@@ -460,6 +466,24 @@ img.thumbnail + span.caption {
   .icon.glyphicon[data-item-name="blackpepper"] {
     color: #141211; }
 
+#modalDialog {
+  margin-top: 7vmin; }
+  #modalDialog .modal-content {
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+    #modalDialog .modal-content button.close {
+      color: #303030;
+      margin-bottom: 1rem;
+      opacity: 0.63;
+      transition: all 0.16s ease-in-out; }
+      #modalDialog .modal-content button.close:hover {
+        color: #101010;
+        transform: scale(1.5); }
+    #modalDialog .modal-content figcaption {
+      color: #202020; }
+    #modalDialog .modal-content .imagePreview {
+      width: 100%; }
+
 #area-site section.pad {
   padding-top: 7vmin;
   padding-bottom: 7vmin; }
@@ -468,6 +492,8 @@ img.thumbnail + span.caption {
   background-repeat: no-repeat;
   background-position: 110% 70%;
   background-attachment: local; }
+  #area-site section.page-introduction .animated {
+    transition: all 0.32s ease; }
 #area-site ul.nav.navbar-right {
   margin: 0;
   padding: 0;
@@ -629,7 +655,7 @@ section .casestudy {
     flex-direction: row;
     justify-content: center;
     padding: 30px;
-    transition: all 0.16s ease; }
+    transition: all 0.16s ease-in-out; }
     @media screen and (max-width: 767px) {
       .featured > .feature {
         flex-basis: 1 1 calc(100% - 60px);
@@ -638,8 +664,22 @@ section .casestudy {
         margin: 0; } }
     .featured > .feature:hover {
       color: white;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: all 0.16s ease-in-out; }
+      .featured > .feature:hover > div {
+        transition: all 0.16s ease-in-out;
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+        .featured > .feature:hover > div .btn {
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+          transition: all 0.16s ease-in-out; }
+          .featured > .feature:hover > div .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
     .featured > .feature > div {
+      transition: all 0.16s ease-in-out;
+      transform: scale(1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -725,9 +765,12 @@ section .casestudy {
           color: white; }
   .featured > .feature.feature-invert {
     color: white;
-    transition: all 0.16s ease; }
+    transition: all 0.16s ease-in-out; }
     .featured > .feature.feature-invert:hover {
+      transition: all 0.16s ease-in-out;
       color: black; }
+    .featured > .feature.feature-invert > div {
+      transition: all 0.16s ease-in-out; }
     .featured > .feature.feature-invert.feature-1 {
       background-color: rgba(16, 16, 16, 0.38);
       background-image: url("/portfolio/assets/streamlio/Streamlio-BC-Rendering.png");
@@ -869,15 +912,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 
 .jumbotron.casestudy.cs-type,
 .jumbotron.projects.cs-type,
-.jumbotron.cta.cs-type, .jumbotron.casestudy.cs-type > .container,
-.jumbotron.projects.cs-type > .container,
-.jumbotron.cta.cs-type > .container, .jumbotron.casestudy.cs-type > .container > .row,
+.jumbotron.cta.cs-type, .jumbotron.casestudy.cs-type > .container > .row,
 .jumbotron.projects.cs-type > .container > .row,
 .jumbotron.cta.cs-type > .container > .row, .jumbotron.casestudy.cs-type + .jumbotron.casestudy > .container,
 .jumbotron.projects.cs-type + .jumbotron.casestudy > .container,
-.jumbotron.cta.cs-type + .jumbotron.casestudy > .container, .jumbotron.casestudy > .container,
-.jumbotron.projects > .container,
-.jumbotron.cta > .container {
+.jumbotron.cta.cs-type + .jumbotron.casestudy > .container {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0; }
@@ -1118,6 +1157,15 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   .underline-center-outward:hover:after {
     width: 100%;
     background-color: #ff8000; }
+
+.shadow-ellipse:after {
+  display: block;
+  content: "";
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 1rem;
+  background: radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%); }
 
 footer {
   position: static;
