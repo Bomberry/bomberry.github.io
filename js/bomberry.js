@@ -27,6 +27,7 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        // document.addEventListener('touchstart', handler, {passive: true});
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
@@ -49,8 +50,10 @@ $('a[href*="#"]')
 // popModal function for showing imaage
 $(function() {
   $('.popModal').on('click', function() {
+    $('.modal-content').attr('class', 'modal-content ' + $(this).attr(
+      'data-style'));
     $('.imagePreview').attr('src', $(this).find('img').attr('src'));
-    $('.imageCaption').text($(this).find('figcaption').val());
+    $('.imageCaption').text($(this).find('figcaption').text());
     $('#modalDialog').modal('show');
   });
 });
