@@ -78,7 +78,7 @@ media_path = "./assets"
     image = ""
     caption = ""
     media = [""]
-    role = "Founder, CDO/CXO, Lead Designer, Web/App Development, 3D Design"
+    role = "Founder, CDO, Product Design, Web/App Development, 3D Design"
     has_case_study = true
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
@@ -253,11 +253,11 @@ media_path = "./assets"
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-1.png"
       figcaption = "Photoshop 3D landing page"
-      figdetail = "The 3D landing page on Photoshop.com was also a direct link in the Help menu of Photoshop."
+      figdetail = "The 3D landing page on Photoshop.com was — also accessible via the Photoshop Help menu, 3D menu, and 3D Printer properties panel."
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-2.png"
       figcaption = "Photoshop 3D printing page"
-      figdetail = "I developed a 3D printing portal for Photoshop.com, and Adobe Photoshop, to facilitate downloading drivers for various 3D printers easily. This also provided a single location for updated and updated drivers to be added to the list easily."
+      figdetail = "A 3D printing portal for Photoshop.com and Adobe Photoshop, to facilitate downloading drivers for various 3D printers easily. This also provided a single location for new or updated device drivers to be added to the list."
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-3.png"
       figcaption = "Photoshop 3D content page"
@@ -293,12 +293,12 @@ media_path = "./assets"
     style = "cs-light"
     section = ""
     heading = "Able Pear Software"
-    text = "CXO of Able Pear Software, founded in 2008 by Don McCaughey and myself, a boutique software development firm focused on creating distinctive mobile apps for iOS, as well as consulting and mentoring to companies interested in macOS, iOS and mobile/touch-first application development, agile development, and engineering solutions."
+    text = "Chief Design Officer (CDO) of Able Pear Software, founded in 2008 by Don McCaughey and myself, a boutique software development firm focused on creating distinctive mobile apps for iOS, as well as consulting and mentoring to companies interested in macOS, iOS and mobile/touch-first application development, agile development, and engineering solutions."
     asset_path = "ablepear"
     image = ""
     caption = ""
     media = []
-    role = "Founder, CDO/CXO, Designer, Developer, Managment, Artist"
+    role = "Founder, CDO, Product Designer, Developer, Artist"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
