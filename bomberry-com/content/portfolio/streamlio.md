@@ -270,6 +270,7 @@ featured = true
       src = "original-streamlio-buiness-card-1.png"
       figcaption = "Original"
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "updated-streamlio-buiness-card-1.png"
       figcaption = "Redesign"
     [[sections.case_study_content.figures]]
@@ -318,7 +319,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "comps"
-    title = "Lo-fi comps and block templates"
+    title = "Templates and comps"
     weight = 1020
     layout = ""
     style = "cs-dark"

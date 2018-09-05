@@ -159,6 +159,10 @@ featured = true
     [[sections.case_study_content.figures]]
       src = "CraftMaster-Branding-Logo3@1x.png"
       figcaption = "Logo Positioning"
+    [[sections.case_study_content.figures]]
+      style = "cs-light"
+      src = "CraftMasterLogoGraphicShapeExploration01.png"
+      figcaption = "Exploratory logo illustrations"
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -202,15 +206,15 @@ featured = true
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-    [[sections.case_study_content.figures]]
-      src = "CraftMasterFeaturesV2.png"
-      figcaption = "Feature block diagram"
-    [[sections.case_study_content.figures]]
-      src = "CraftMasterFeatureUIMap.png"
-      figcaption = "UI feature map"
-    [[sections.case_study_content.figures]]
-      src = "CraftMasterUIComponents.png"
-      figcaption = "UI components map"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeaturesV2.png"
+    #   figcaption = "Feature block diagram"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterFeatureUIMap.png"
+    #   figcaption = "UI feature map"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterUIComponents.png"
+    #   figcaption = "UI components map"
     [[sections.case_study_content.figures]]
       src = "CraftMasterUserWorkflowUIPaths.png"
       figcaption = "User workflow map"
@@ -249,9 +253,9 @@ featured = true
     [[sections.case_study_content.figures]]
       src = "CraftMasterUIComponents.png"
       figcaption = "UI components map"
-    [[sections.case_study_content.figures]]
-      src = "CraftMasterUserWorkflowUIPaths.png"
-      figcaption = "User workflow map"
+    # [[sections.case_study_content.figures]]
+    #   src = "CraftMasterUserWorkflowUIPaths.png"
+    #   figcaption = "User workflow map"
     # [[sections.case_study_content.figures]]
     #   src = "CraftMasterFeaturesV2.png"
     #   figcaption = "Feature block diagram"

@@ -56,11 +56,11 @@ media_path = "./assets"
     has_case_study = true
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
-      style = "cs-light"
+      style = ""
       src = "Streamlio-Site-Device-Comps.png"
       figcaption = ""
     [[sections.project.figures]]
-      style = "cs-light"
+      style = ""
       src = "Streamlio-BC-Rendering.png"
       figcaption = ""
 
@@ -82,15 +82,21 @@ media_path = "./assets"
     has_case_study = true
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
+      style = "cs-light"
       src = "CraftMaster-Branding-Icon@1x.png"
       figcaption = "Branding — Logo page"
     [[sections.project.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-Font@1x.png"
       figcaption = "Branding — Masterly font page"
+      figdetail = "This example from the branding guidelines illustrates the Masterly typeface to be used. Masterly was designed to be used as for both main content elements, such as titles and headings, but also to contain all of the application and additional icons."
     [[sections.project.figures]]
+      style = "cs-light"
       src = "CraftMaster-Branding-AppIcons@1x.png"
       figcaption = "Sample of icons for CraftMaster"
+      figdetail = "More than 50 icons were designed for the application. The icons use the hexagon silhouette of the CraftMaster logo and provide insight as to the function the button represents. A visual dictionary of application assets and actions was developed to reduced cognitive load through repetition."
     # [[sections.project.figures]]
+    #   style = "cs-light"
     #   src = "CraftMaster-Branding-AppScreenShot1@1x.png"
     #   figcaption = "Screen shot of CraftMaster"
     [[sections.project.videos]]
@@ -246,13 +252,16 @@ media_path = "./assets"
     gallery_class = "flex-gallery-small"
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-1.png"
-      figcaption = "Landing page"
+      figcaption = "Photoshop 3D landing page"
+      figdetail = "The 3D landing page on Photoshop.com was also a direct link in the Help menu of Photoshop."
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-2.png"
-      figcaption = "3D printing page"
+      figcaption = "Photoshop 3D printing page"
+      figdetail = "I developed a 3D printing portal for Photoshop.com, and Adobe Photoshop, to facilitate downloading drivers for various 3D printers easily. This also provided a single location for updated and updated drivers to be added to the list easily."
     [[sections.project.figures]]
       src = "PhotoshopCom-ScreenShot-3.png"
-      figcaption = "3D Content page"
+      figcaption = "Photoshop 3D content page"
+      figdetail = "In addition to designing the graphic assets for the web page, I create actions, scripts, and all of the materials, scenes, and Image Based Light (IBL) content for use in Photoshop."
 
   [[sections.project]]
     name = "photoshopcontent"

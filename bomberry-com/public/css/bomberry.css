@@ -468,18 +468,51 @@ img.thumbnail + span.caption {
 
 #modalDialog {
   margin-top: 7vmin; }
-  #modalDialog .modal-content button.close {
+  #modalDialog .modal-content {
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #303030; }
+    #modalDialog .modal-content button.close {
+      margin-bottom: 1rem;
+      opacity: 0.63;
+      transition: all 0.16s ease-in-out; }
+      #modalDialog .modal-content button.close:hover {
+        color: #101010;
+        opacity: 1;
+        transform: scale(1.5); }
+    #modalDialog .modal-content figcaption {
+      color: #202020; }
+    #modalDialog .modal-content .imagePreview {
+      width: 100%; }
+  #modalDialog .imageCaption,
+  #modalDialog .imageDetail {
+    margin-bottom: 1.62rem; }
+  #modalDialog .imageCaption {
+    font-size: 1rem; }
+  #modalDialog .imageDetail {
+    font-size: 1rem; }
+  #modalDialog .cs-light {
     color: #303030;
-    margin-bottom: 1rem;
-    opacity: 0.63;
-    transition: all 0.16s ease-in-out; }
-    #modalDialog .modal-content button.close:hover {
-      color: #101010;
-      transform: scale(1.5); }
-  #modalDialog .modal-content figcaption {
-    color: #202020; }
-  #modalDialog .modal-content .imagePreview {
-    width: 100%; }
+    background-color: #ececec; }
+    #modalDialog .cs-light .imageCaption {
+      color: #202020; }
+    #modalDialog .cs-light .imageDetail {
+      color: #7c7c7c; }
+    #modalDialog .cs-light button.close {
+      color: #202020; }
+      #modalDialog .cs-light button.close:hover {
+        color: #101010; }
+  #modalDialog .cs-dark {
+    color: white;
+    background-color: #202020; }
+    #modalDialog .cs-dark .imageCaption {
+      color: white; }
+    #modalDialog .cs-dark .imageDetail {
+      color: #9c9c9c; }
+    #modalDialog .cs-dark button.close {
+      color: #9c9c9c; }
+      #modalDialog .cs-dark button.close:hover {
+        color: white; }
 
 #area-site section.pad {
   padding-top: 7vmin;

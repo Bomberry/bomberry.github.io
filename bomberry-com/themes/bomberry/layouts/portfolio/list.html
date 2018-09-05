@@ -52,7 +52,7 @@
                   <figure class="popModal" data-style="{{ .style }}">
                     <img src="{{ $mediaPath }}/{{ $asset_folder }}/{{ .src }}"
                       width="100%" height="100%"
-                      alt="{{ .figcaption }}">
+                      alt="{{ .figcaption }}" data-figcaption="{{ .figcaption }}" data-figdetail="{{ .figdetail }}">
                     <figcaption class="text-center">{{ .figcaption }}</figcaption>
                   </figure>
               {{ end }}

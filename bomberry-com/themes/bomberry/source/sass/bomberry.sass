@@ -677,23 +677,63 @@ img.thumbnail
   // &[data-item-name="blackpepper"]
   //   color: $color-blackpepper
 
+
+//  Modal dialog
 #modalDialog
   margin-top: $layout-breath-unit
   .modal-content
     background-color: $color-white
     box-shadow: $box-shadow-large
+    color: $color-gray-dark
     button.close
-      color: $color-gray-dark
       margin-bottom: 1rem
       opacity: .63
       transition: $transition
       &:hover
         color: $color-gray-darkest
+        opacity: 1
         transform: scale(1.5)
     figcaption
       color: $color-gray-darker
     .imagePreview
       width: 100%
+  //.modal-body
+    max-height: 80%
+  .imageCaption,
+  .imageDetail
+    margin-bottom: 1.62rem
+  .imageCaption
+    font-size: 1rem
+    // font-size: 1.215rem
+  .imageDetail
+    font-size: 1rem
+    // font-size: .75rem
+  .cs-light
+    color: $color-gray-dark
+    background-color: $color-gray-lightest
+    .imageCaption
+      color: $color-gray-darker
+    .imageDetail
+      color: $color-gray
+    button.close
+      color: $color-gray-darker
+      &:hover
+        color: $color-gray-darkest
+  .cs-dark
+    color: $color-white
+    background-color: $color-gray-darker
+    .imageCaption
+      color: $color-white
+    .imageDetail
+      color: $color-gray-light
+    button.close
+      color: $color-gray-light
+      &:hover
+        color: $color-white
+
+
+
+
 
 #area-site
   section

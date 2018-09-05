@@ -27,6 +27,7 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        // document.addEventListener('touchstart', handler, {passive: true});
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
@@ -49,10 +50,24 @@ $('a[href*="#"]')
 // popModal function for showing imaage
 $(function() {
   $('.popModal').on('click', function() {
-    $('.modal-content').attr('data-style', $(this).find('figure').attr(
+    $('.modal-content').attr('class', 'modal-content ' + $(this).attr(
       'data-style'));
     $('.imagePreview').attr('src', $(this).find('img').attr('src'));
-    $('figcaption').text($(this).find('figcaption').text());
+    // $('.imageCaption').text($(this).find('figcaption').text());
+    $('.imageCaption').text($(this).find('img').attr('data-figcaption'));
+    $('.imageDetail').text($(this).find('img').attr('data-figdetail'));
+
+
+    // $('#modalDialog').on('shown.bs.modal', function() {
+    //   $(this).find('.modal-dialog').css({
+    //     width: 'auto',
+    //     height: 'auto',
+    //     'max-height': '100%'
+    //   });
+    // });
+
+
+
     $('#modalDialog').modal('show');
   });
 });
