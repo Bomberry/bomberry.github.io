@@ -43,6 +43,9 @@ footer .fa, .contact .fa {
     footer .fa, .contact .fa {
       margin-right: 0; } }
 
+.wow {
+  visibility: hidden; }
+
 .navbar.location-site, .navbar.location-resume, .navbar.location-portfolio, .navbar.location-kitchen, .navbar.location-1, .navbar.location-projects, .navbar.location-about, .navbar.location-contact, .navbar.location-adobe {
   border-bottom-width: 0.38rem;
   border-bottom-style: solid; }
