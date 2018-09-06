@@ -291,6 +291,8 @@ a.location-site {
     text-overflow: ellipsis;
     min-height: 20%;
     line-height: initial; }
+    .full-carousel .carousel-caption span, .full-carousel .carousel-caption p {
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.62) 0 3px 5px rgba(0, 0, 0, 0.62) 0 1px 2px rgba(0, 0, 0, 0.62); }
     .full-carousel .carousel-caption span {
       display: block;
       font-size: 112%;
@@ -1074,6 +1076,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   .jumbotron.cta.cs-streamlio-bg {
     background: url("../portfolio/assets/streamlio/plexus-bg.png") no-repeat scroll center;
     background-size: cover; }
+  .jumbotron.casestudy.cs-auguste-bg,
+  .jumbotron.projects.cs-auguste-bg,
+  .jumbotron.cta.cs-auguste-bg {
+    background: url("../portfolio/assets/auguste/ApplicationBackgroundHexPattern1920x1280b.png") no-repeat scroll center;
+    background-size: cover; }
 
 .jumbotron.projects h1, .jumbotron.projects h2, .jumbotron.projects h3, .jumbotron.projects h4, .jumbotron.projects h5 {
   color: #3355ff; }
@@ -1191,13 +1198,15 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     width: 100%;
     background-color: #ff8000; }
 
-.shadow-ellipse:after {
+.shadow-ellipse::after {
   display: block;
   content: "";
-  margin-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  clear: both;
   width: 100%;
   height: 1rem;
+  background: -webkit-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
   background: radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%); }
 
 footer {

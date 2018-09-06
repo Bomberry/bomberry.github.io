@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>/portfolio/adobe-auguste/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/portfolio/craftmaster/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -24,14 +31,14 @@
   </url>
   
   <url>
-    <loc>/portfolio/casestudy/</loc>
+    <loc>/portfolio/streamlio/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/portfolio/streamlio/</loc>
+    <loc>/portfolio/casestudy/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -345,6 +352,13 @@
   
   <url>
     <loc>/languages/markdown/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/microsoft-surface/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
