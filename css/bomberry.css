@@ -35,13 +35,26 @@ hr {
 *:focus {
   outline: 0; }
 
-nav .fa {
+nav .fa,
+nav .fab {
   margin-right: 0.75rem; }
-footer .fa, .contact .fa {
+footer .fa, .contact .fa, footer .fab, .contact .fab {
   margin-right: 0.5rem; }
   @media screen and (max-width: 767px) {
-    footer .fa, .contact .fa {
+    footer .fa, .contact .fa, footer .fab, .contact .fab {
       margin-right: 0; } }
+
+.animated.infinite,
+span.caret.animated {
+  -webkit-animation-duration: 1.62s;
+  -moz-animation-duration: 1.62s;
+  animation-duration: 1.62s;
+  -webkit-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  animation-delay: 2.6s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 .wow {
   visibility: hidden; }
@@ -148,7 +161,9 @@ footer .fa, .contact .fa {
 
 @media (max-width: 768px) {
   .nav > li > a.navbar-brand {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .nav > .dropdown.open + li > .navbar-brand {
+    margin-left: 25px; } }
 .lead {
   line-height: 1.61; }
   .carousel-caption .lead {
@@ -471,6 +486,13 @@ img.thumbnail + span.caption {
   .icon.glyphicon[data-item-name="blackpepper"] {
     color: #141211; }
 
+figure:hover.popModal {
+  transition: all 0.16s ease-in-out;
+  transform: scale(1.05); }
+figure.modalPop {
+  transform: scale(1);
+  transition: all 0.16s ease-in-out; }
+
 #modalDialog {
   margin-top: 7vmin; }
   #modalDialog .modal-content {
@@ -538,7 +560,8 @@ img.thumbnail + span.caption {
     text-align: center; }
     #area-site ul.nav.navbar-right li a {
       padding-top: 5px; }
-    #area-site ul.nav.navbar-right li .fa {
+    #area-site ul.nav.navbar-right li .fa,
+    #area-site ul.nav.navbar-right li .fab {
       margin-right: 0.5rem;
       line-height: 20px; }
     #area-site ul.nav.navbar-right li .location-names {
@@ -722,9 +745,11 @@ section .casestudy {
       padding: 2.62rem; }
       .featured > .feature > div a.btn {
         border-radius: 1ch; }
-        .featured > .feature > div a.btn .fa:first-of-type {
+        .featured > .feature > div a.btn .fa:first-of-type,
+        .featured > .feature > div a.btn .fab:first-of-type {
           margin-right: 0.75rem; }
-        .featured > .feature > div a.btn .fa:last-of-type {
+        .featured > .feature > div a.btn .fa:last-of-type,
+        .featured > .feature > div a.btn .fab:last-of-type {
           margin-left: 0.75rem; }
     .featured > .feature.feature-1 {
       background-color: rgba(236, 236, 236, 0.62);
