@@ -24,6 +24,18 @@ svg:hover .icon-svg-compass, svg:hover .icon-svg-spatula, svg:hover .icon-svg-pe
     stroke-width: 4px;
     stroke-linejoin: round; }
 
+figure.popModal {
+  transform: scale(1);
+  transition: all 0.16s ease-in-out; }
+  figure.popModal:hover {
+    transform: scale(1.05); }
+    figure.popModal:hover img {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      z-index: 100; }
+figure img {
+  transition: all 0.16s ease-in-out;
+  z-index: 10; }
+
 nav .fa,
 nav .fab {
   margin-right: 0.75rem; }
@@ -442,6 +454,14 @@ section.no-pad {
     padding-top: 5rem; }
   .pad-top-large {
     padding-top: 10rem; }
+.pad-bottom {
+  padding-bottom: 7.5rem; }
+  .pad-bottom-small {
+    padding-bottom: 2.5rem; }
+  .pad-bottom-medium {
+    padding-bottom: 5rem; }
+  .pad-bottom-large {
+    padding-bottom: 10rem; }
 .pad-all-small {
   padding: 2.5rem; }
 .pad-h-small, .container.contact {
@@ -534,7 +554,7 @@ a.location-projects {
   color: #3355ff !important; }
 .color-about,
 a.location-about {
-  color: #0e84cf !important; }
+  color: #1aa5d8 !important; }
 .color-contact,
 a.location-contact {
   color: #8800cc !important; }
@@ -558,7 +578,7 @@ a.location-site {
 .background-color-projects {
   background-color: #3355ff; }
 .background-color-about {
-  background-color: #0e84cf; }
+  background-color: #1aa5d8; }
 .background-color-contact {
   background-color: #8800cc; }
 .background-color-adobe {
@@ -596,6 +616,7 @@ a.location-site {
 .background-shade-light, .featured > .feature > div, .featured > .feature.feature-invert:hover > div {
   background-color: rgba(255, 255, 255, 0.6); }
 
+/*    HOVER ANIMATION - Center Out    */
 .animated.infinite,
 span.caret.animated {
   -webkit-animation-duration: 1.62s;
@@ -610,6 +631,30 @@ span.caret.animated {
 
 .wow {
   visibility: hidden; }
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-attachment: scroll;
+  overflow: hidden; }
+
+.videoContainer video {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1; }
+
+.videoContainer .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: green;
+  opacity: 0.5; }
 
 .box-shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
@@ -715,9 +760,9 @@ hr {
     text-decoration: none;
     color: #3355ff; }
   .navbar.location-about {
-    border-bottom-color: #0e84cf;
+    border-bottom-color: #1aa5d8;
     text-decoration: none;
-    color: #0e84cf; }
+    color: #1aa5d8; }
   .navbar.location-contact {
     border-bottom-color: #8800cc;
     color: #8800cc; }
@@ -765,7 +810,7 @@ hr {
     .navbar-brand.location-projects {
       color: #3355ff; }
     .navbar-brand.location-about {
-      color: #0e84cf; }
+      color: #1aa5d8; }
     .navbar-brand.location-contact {
       color: #8800cc; }
     .navbar-brand.location-adobe {
@@ -944,13 +989,6 @@ img.thumbnail + span.caption {
   box-shadow: 0px 2px 3px rgba(114, 114, 114, 0.64), 0px 3px 6px rgba(114, 114, 114, 0.52); }
   .item:hover h4.item-name {
     text-shadow: 0px 3px 6px rgba(114, 114, 114, 0.52); }
-
-figure:hover.popModal {
-  transition: all 0.16s ease-in-out;
-  transform: scale(1.05); }
-figure.modalPop {
-  transform: scale(1);
-  transition: all 0.16s ease-in-out; }
 
 #area-site section.pad {
   padding-top: 7vmin;
@@ -1227,7 +1265,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /*    ANIMATIONS:   */
 /*    DROPDOWN ANIMATION    */
 /*    DROPDOWN ANIMATION - TO BE USED/FIXED FOR TOUCH/MOBILE    */
-/*    HOVER ANIMATION - Center Out    */
+.hello-bgc {
+  background-color: #1aa5d8; }
+
 footer {
   position: static;
   bottom: 0;
