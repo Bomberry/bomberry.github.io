@@ -675,6 +675,13 @@ span.caret.animated {
   -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 1ch;
   box-shadow: rgba(0, 0, 0, 0.8) 0 0 1ch; }
 
+.uoh,
+.underline-on-hover {
+  text-decoration: none; }
+  .uoh:hover,
+  .underline-on-hover:hover {
+    text-decoration: underline; }
+
 .underline-center-outward {
   display: inline-block;
   position: relative;
