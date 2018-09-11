@@ -21,16 +21,17 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2{{ if .background_shade }} {{ .background_shade }}{{ end }}">
               <h3 class="underline-center-outward">{{ .title }}</h3>
               <p>{{ with .text }}{{ . | safeHTML }}{{ end }}</p>
+              {{ if or .client_name .project_name .role }}<p class="pad-top-small">
+                {{ if .client_name }}<span class="color-portfolio">Client:</span> {{ .client_name }}<br />{{ end }}
+                {{ if .project_name }}<span class="color-portfolio">Project:</span> {{ .project_name }}<br />{{ end }}
+                {{ if .role }}<span class="color-portfolio">Roles:</span> {{ with .role }}{{ . | safeHTML }}{{ end }}{{ end }}
+              </p>{{ end }}
             </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3></h3>
-              {{ if .client_name }}<p><span class="color-portfolio">Client:</span> {{ .client_name }}</p>{{ end }}
-              {{ if .project_name }}<p><span class="color-portfolio">Project:</span> {{ .project_name }}</p>{{ end }}
-              {{ if .role }}<p><span class="color-portfolio">Roles:</span> {{ with .role }}{{ . | safeHTML }}{{ end }}</p>{{ end }}
-            </div>
+            {{/* <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            </div> */}}
 
             {{ if .has_case_study }}
               <div class="col-xs-12 col-xs-offset-0 breath-top-small">
@@ -44,7 +45,7 @@
                   {{/* {{ if .Params.has_case_study }} */}}
                   {{/* <p>{{ .Content }}</p> */}}
 
-                  <div class="lead"><a href="{{ $permalink }}/{{.name}}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase animated heartBeat infinite"></span></a></div>
+                  <div class="lead"><a href="{{ $permalink }}{{.name}}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase animated heartBeat infinite"></span></a></div>
                   {{/* {{ end }} */}}
                 </div>
               </div>

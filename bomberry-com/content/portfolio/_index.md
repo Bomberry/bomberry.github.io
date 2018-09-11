@@ -135,7 +135,7 @@ media_path = "./assets"
     caption = ""
     media = [""]
     role = "Product Design, Artwork, Development"
-    has_case_study = false
+    has_case_study = true
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
     #   src = "filename.type"
@@ -178,6 +178,7 @@ media_path = "./assets"
     layout = ""
     class = ""
     style = "cs-dark cs-felix"
+    background_shade = "background-shade"
     section = ""
     client_name = "Adobe"
     project_name = "Project Felix (Adobe Dimension)"
