@@ -1,5 +1,5 @@
 +++
-title = "Bomberry - Portfolio - CraftMaster"
+title = "Bomberry - Case Study - CraftMaster"
 date = 2018-05-05T23:11:05-07:00
 #type = "casestudy"
 kind = "casestudy"
@@ -8,7 +8,7 @@ weight = 3
 client_name = "CraftMaster"
 project_name = "craftmaster"
 location_name = "portfolio"
-job_title = "Branding & Identity | Product Design | UX/UI Design"
+job_title = "Branding | Product Design | UX/UI Design"
 job_duration = "2017—2018"
 start_date = "2017"
 end_date = "Present"
@@ -65,26 +65,26 @@ featured = true
   image = ""
   caption = ""
 
-  # Header
-  [header]
-    name = "introduction"
-    title = "Enabling User I/O Workflows with MineCraft"
-    weight = 1000
-    layout = ""
-    class = "cs-craftmaster-bg"
-    style = "cs-dark"
-    section = ""
-    heading = "Enabling User I/O Workflows with MineCraft"
-    text = "How do you help MineCraft users import, export, and share their 3D creations? <strong>Build a companion application for users of all ages.</strong>"
-    summary = ""
-    asset_path = "streamlio"
-    image = ""
-    caption = ""
-    media = [""]
-    footnote = "Background image: CraftMaster tiled background used for web, video, and collateral design"
-    [[header.figures]]
-      # src = "Streamlio-BC-Rendering-PlexusUV.png"
-      # figcaption = "3D rendering of updated business cards"
+# Header
+[header]
+  name = "introduction"
+  title = "Enabling User I/O Workflows with MineCraft"
+  weight = 1000
+  layout = ""
+  class = "cs-craftmaster-bg"
+  style = "cs-dark"
+  section = ""
+  heading = "Enabling User I/O Workflows with MineCraft"
+  text = "How do you help MineCraft users import, export, and share their 3D creations? <strong>Build a companion application for users of all ages.</strong>"
+  summary = ""
+  asset_path = "streamlio"
+  image = ""
+  caption = ""
+  media = [""]
+  footnote = "Background image: CraftMaster tiled background used for web, video, and collateral design"
+  [[header.figures]]
+    # src = "Streamlio-BC-Rendering-PlexusUV.png"
+    # figcaption = "3D rendering of updated business cards"
 
 # Sections
 [sections]
@@ -171,7 +171,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "masterly"
-    title = "Masterly Font"
+    title = "Masterly font"
     weight = 1000
     layout = ""
     class = ""
@@ -232,7 +232,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "uiDev"
-    title = "UI Development"
+    title = "UI development"
     weight = 1000
     layout = ""
     class = ""
@@ -270,7 +270,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "icons"
-    title = "Application Iconography"
+    title = "Application iconography"
     weight = 1000
     layout = ""
     class = ""
@@ -296,7 +296,7 @@ featured = true
 
   # [[sections.case_study_content]]
   #   name = "files"
-  #   title = "File Icons"
+  #   title = "File icons"
   #   weight = 1000
   #   layout = ""
   #   class = ""
@@ -342,7 +342,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "site"
-    title = "Web Site Design"
+    title = "Web site design"
     weight = 1000
     layout = ""
     class = ""
@@ -365,7 +365,7 @@ featured = true
 
   # [[sections.case_study_content]]
   #   name = "media"
-  #   title = "Media Content"
+  #   title = "Media content"
   #   weight = 1000
   #   layout = ""
   #   class = ""
@@ -388,7 +388,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "avatars"
-    title = "Skins & 3D Avatars"
+    title = "Skins & 3D avatars"
     weight = 1000
     layout = ""
     class = ""

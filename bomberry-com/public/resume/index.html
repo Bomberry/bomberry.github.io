@@ -26,7 +26,8 @@
 
 
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
-<link href="/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
 <link href="/css/bomberry.css" type="text/css" rel="stylesheet">
 
@@ -44,7 +45,7 @@
 
 
       <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown"><a href="#" class="animated fadeInDown dropdown-toggle location-resume navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret animated pulse"></span> resume.</a>
+        <li class="dropdown"><a href="#" class="animated fadeInDown dropdown-toggle location-resume navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret animated heartBeat"></span> resume.</a>
           <ul class="dropdown-menu animated fadeIn">
             
             
@@ -56,11 +57,11 @@
 
             
             
-            <li><a class="location-resume active" href="/resume/"><span class='fa fa-address-card'></span>resume</a></li>
+            <li><a class="location-resume active" href="/resume/"><i class='fa fa-clipboard'></i>resume</a></li>
             
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-barcode'> </i>portfolio</a></li>
+            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>portfolio</a></li>
             
-            <li><a class="location-about " href="/about/"><i class='fa fa-user-circle-o'></i>about</a></li>
+            <li><a class="location-about " href="/about/"><i class='fa fa-user'></i>about</a></li>
             
           </ul>
         </li>
@@ -121,14 +122,17 @@
 
   <section class="introduction">
   <a id="introduction"></a>
-  <div class="container">
+  <div class="container animated fadeIn wow">
    <hr class="hr-space">
     <div class="row color-resume">
-      <div class="col-md-5 col-md-offset-1 text-left">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
         <h2>Kevin Bomberry</h2>
       </div>
-      <div class="col-md-5 text-right">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
         <h2>R&eacute;sum&eacute;</h2>
+      </div>
+      <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 text-right">
+        <div class="animated flash wow"><a download href="./Kevin-Bomberry-Product-Designer-Resume.pdf" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->Download PDF <span class="fa fa-file-pdf"></span></a></div>
       </div>
     </div>
     <hr class="hr-space">
@@ -146,7 +150,7 @@
   <a id="experience"></a>
   <div class="container">
    <hr>
-    <div class="row color-resume">
+    <div class="row color-resume animated fadeIn wow">
       <div class="col-md-10 col-md-offset-1 text-left">
         <h2>Experience</h2>
       </div>
@@ -154,32 +158,8 @@
     <hr class="hidden-sm">
 
   
-  <a id="able-pear"></a>
-  <article>
-    <div class="row">
-      <div class="col-md-5 col-md-offset-1">
-        <h4>Founder, CDO</h4>
-      </div>
-      <div class="col-md-3 text-right">
-        <h4>Able Pear Software</h4>
-      </div>
-      <div class="col-md-2 text-right">
-        <h4>2008—Present</h4>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 text-left">
-        <p class="lead">As the primary designer of a boutique consulting firm I am responsible for all aspects of design, branding, experience and interaction design, and production. In addition I work directly with clients and vendors to create solutions from enterprise apps to web sites.</p>
-      </div>
-    </div>
-    
-    
-  </article>
-  <hr>
-  
   <a id="streamlio"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Branding/Web Development (Consultant)</h4>
@@ -196,23 +176,11 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I worked with the VP of Marketing to develop corporate branding and designed the web site using HTML, SASS/CSS, JS, and HUGO. In additional, I created logos, media templates (.PSD, .AI, Keynote), color libraries, and usage/style guides.</p>
       </div>
-    </div>
-    
-    <div class="row breath-top-small">
-      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 text-left">
-        
-      </div>
-      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-right">
-        
-        
-        
-        <div class="lead"><a href="../portfolio/streamlio" class="color-resume">case study <span class="fa fa-briefcase"></span></a></div>
-        
-      </div>
       <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="streamlio-content">
         <div class="card card-body">
-          <p>Logo Design/Refresh (Update?)
-150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)</p>
+          <p>Logo Design/Refresh (Update?)</p>
+
+<p>150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)</p>
 
 <p>100+ page Branding Guideline document</p>
 
@@ -274,11 +242,34 @@
     </div>
     
     
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#streamlio" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+        
+        
+        <div class="lead animated flash wow"><a href="../portfolio/streamlio" class="color-resume">case study <span class="fa fa-briefcase"></span></a></div>
+        
+      </div>
+      
+    </div>
+    
+    
   </article>
   <hr>
   
   <a id="adobe-grimoire"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>3D Content Design (NonDisclosed Project)</h4>
@@ -295,14 +286,55 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">Working with team of two directors and one artist, I created an animated interactive concept for use in Unity. I designed the 3D model, PBR texturing, rigging, animations, renderings, and generated the final asset.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="adobe-grimoire-content">
+        <div class="card card-body">
+          <ul>
+<li>50+ vector illustrations of elements</li>
+<li>Modeling complex mechanical 3D object</li>
+<li>Texturing (shaders, maps, and PBR workflow)</li>
+<li>Rigging and Animation of objects (w/animation comps)</li>
+<li>Rendering (white/clay w/AO comp, and full HDR final)</li>
+</ul>
+
+<div class="row">
+  <div class="col-sm-6">
+    <span>3D Design</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Modeling</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Texture/Material Design</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Rigging</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Interactive Animation</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Touch/Stylus Input</span>
+  </div>
+  <div class="col-sm-6">
+    <span>Unity/Unreal</span>
+  </div>
+
+<p><div class="col-sm-10 col-sm-offset-1">
+    <span class="label label-default">3D</span> <span class="label label-default">Modeling</span> <span class="label label-default">Interaction Animation</span> <span class="label label-default">Unity/Unreal</span>
+  </div>
+</div></p>
+
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
   <hr>
   
-  <a id="adobe-august"></a>
-  <article>
+  <a id="adobe-auguste"></a>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Product Design (Consultant)</h4>
@@ -319,6 +351,67 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">This project had an aggressive four month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals &amp; features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="adobe-auguste-content">
+        <div class="card card-body">
+          <p>Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem</p>
+
+<p>Defined and constructed a user experience that would directly align with Adobe XD&rsquo;s design goals while adding new conventions for touch (primary)/stylus (secondary) focused user input.
+This includes defining interaction models and specifications for single/multi-input gestures; one hand, two hands, stylus, hand + stylus, optional 3D devince input (gyroscope).</p>
+
+<p>Created toolchain for/and all UI assets and states (100+) as texture atlases (5+) with accompanied CVS files to allow for in-app rapid design exploration/iteration while maintaing format flexability (native, web, etc).</p>
+
+<div class="row">
+  <div class="col-sm-5 col-sm-offset-1">
+    <span>Product Design</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-0">
+    <span>Lead Designer</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-1">
+    <span>4 Months Produciton</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-0">
+    <span>3D Modeling Application</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-1">
+    <span>Windows Surface</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-0">
+    <span>Touch/Stylus Input</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-1">
+    <span>Multi-touch input system</span>
+  </div>
+  <div class="col-sm-5 col-sm-offset-0">
+    <span class="label label-default">3D</span> <span class="label label-default">Touch</span> <span class="label label-default">Stylus</span> <span class="label label-default">Gyroscope</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-auguste" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+        
+        
+        <div class="lead animated flash wow"><a href="../portfolio/adobe-auguste" class="color-resume">case study <span class="fa fa-briefcase"></span></a></div>
+        
+      </div>
+      
     </div>
     
     
@@ -326,7 +419,7 @@
   <hr>
   
   <a id="adobe-felix"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>UX/IxD Consultant - Adobe Dimension</h4>
@@ -343,6 +436,30 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">Working from the initial concept of Project Felix to a MAX beta release, focusing on user interaction, experience, and workflows, I worked with design, management, and engineering teams providing deep knowledge and unique perspective on 3D and UX/IxID to help drive the best possible experience for Project Felix (Adobe Dimension).</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="adobe-felix-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-felix" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+      </div>
+      
     </div>
     
     
@@ -350,7 +467,7 @@
   <hr>
   
   <a id="craftmaster"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Founder, CDO</h4>
@@ -367,19 +484,6 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I managed all aspects of CraftMaster Software&#39;s design initiatives, including development of our voxel editing app for windows/macOS/iOS. I created a custom font, icons, interaction, the app UI layer, identity system, web site, and social media marketing/ad campaigns including booth, promotional, and multimedia/video assets.</p>
       </div>
-    </div>
-    
-    <div class="row breath-top-small">
-      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 text-left">
-        
-      </div>
-      <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-right">
-        
-        
-        
-        <div class="lead"><a href="../portfolio/craftmaster" class="color-resume">case study <span class="fa fa-briefcase"></span></a></div>
-        
-      </div>
       <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="craftmaster-content">
         <div class="card card-body">
           
@@ -388,11 +492,34 @@
     </div>
     
     
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#craftmaster" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+        
+        
+        <div class="lead animated flash wow"><a href="../portfolio/craftmaster" class="color-resume">case study <span class="fa fa-briefcase"></span></a></div>
+        
+      </div>
+      
+    </div>
+    
+    
   </article>
   <hr>
   
   <a id="doppler"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Editor-in-Chief, Lead Writer</h4>
@@ -409,6 +536,30 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I was editor-in-chief and lead writer for Photoshop Dimensions, an electronic magazine focused on teaching users about Photoshop’s 3D toolset. As editor-in-chief, I managed contributing writers, conducted design reviews, and laid out articles. As lead writer, I created articles and illustrations covering workflows, material creation, and rendering.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="doppler-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#photoshopdimensions" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+      </div>
+      
     </div>
     
     
@@ -416,10 +567,10 @@
   <hr>
   
   <a id="adobe-photoshop"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Lead 3D UX/UI Designer - Photoshop (Consultant)</h4>
+        <h4>Lead UX/UI Designer - Photoshop (Consultant)</h4>
       </div>
       <div class="col-md-3 text-right">
         <h4>Adobe</h4>
@@ -433,6 +584,47 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I lead the redesign efforts of 3D in Photoshop. I conducted and participated in many user studies and partner meetings, targeting pain-points, and defining strategic goals. I then implemented a course correction to Photoshop’s 3D initiative, creating a realtime 3D editor in Photoshop, implemented 3D printing, and brought the Properties Panel to Photoshop. In addition I helped create several decks for C-Level and vertical teams.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="adobe-photoshop-content">
+        <div class="card card-body">
+          <p>Intergration and simplification of current 3D tools into Photoshop</p>
+
+<p>Worked with engineering to create on-canvas controls for GL widgets:</p>
+
+<ul>
+<li>Lights</li>
+<li>Object 3D controls</li>
+<li>Camera controls</li>
+<li>Properties panel</li>
+<li>On-screen contextual properties panel</li>
+</ul>
+
+<p>Championed then implimented Properties paned in Photoshop, bringing it to parody with other Creative Cloud pillar apps.</p>
+
+<p>Worked with engineering to design and impliment 3D process and printing in Photoshop</p>
+
+<p><a href="/portfolio/" title="portfolio">portfolio</a></p>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-photoshop" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+      </div>
+      
     </div>
     
     
@@ -440,10 +632,10 @@
   <hr>
   
   <a id="adobe-materials"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Content Designer/Contractor (Photoshop 3D)</h4>
+        <h4>Content Designer/Contractor - Photoshop</h4>
       </div>
       <div class="col-md-3 text-right">
         <h4>Adobe</h4>
@@ -457,6 +649,78 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I created a library of two hundred 3D textures and materials for Photoshop and photoshop.com, including collections of wood, paper, plastics, stones, gemstones, synthetics.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="adobe-materials-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#photoshopcontent" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+      </div>
+      
+    </div>
+    
+    
+  </article>
+  <hr>
+  
+  <a id="able-pear"></a>
+  <article class="animated fadeIn wow">
+    <div class="row">
+      <div class="col-md-5 col-md-offset-1">
+        <h4>Founder, CDO</h4>
+      </div>
+      <div class="col-md-3 text-right">
+        <h4>Able Pear Software</h4>
+      </div>
+      <div class="col-md-2 text-right">
+        <h4>2008—Present</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-left">
+        <p class="lead">As the primary designer of a boutique consulting firm I am responsible for all aspects of design, branding, experience and interaction design, and production. In addition I work directly with clients and vendors to create solutions from enterprise apps to web sites.</p>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="able-pear-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="row breath-top-small">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
+        
+        
+        
+        
+        
+        <div class="lead"><a class="color-resume" href="../portfolio/#able-pear" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        
+        
+        
+      </div>
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
+        
+      </div>
+      
     </div>
     
     
@@ -464,7 +728,7 @@
   <hr>
   
   <a id="vlab"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Operations/Web Chair</h4>
@@ -481,14 +745,43 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">VLAB is the Bay Area chapter of the MIT Enterprise Forum, a global non-profit organization dedicated to connecting entrepreneurs, industry experts, venture capitalists, private investors and technologists. As a member of the board, I worked closely with the Chairmen and board members to manage operations. I trained and mentored volunteers for roles within the organization. I lead a rebranding effort, built an automated registration system, planned events, and created event materials.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="vlab-content">
+        <div class="card card-body">
+          
+
+<p>Sitting on the board of directors, developing teams and team training, producing events, and mentoring volunteers was an enjoyable, althought sometime increadable hectic, experience, tought me the lesson of delegation and mentoring, fostering growth in individual contributers to produce events and more.</p>
+
+<h4 id="created-updated-branding-and-templates-for-event-collateral-signage-posters-presentations-lanyards-event-programs-etc">Created Updated Branding, and templates for event collateral (signage, posters, presentations, lanyards, event programs, etc,&hellip; )</h4>
+
+<p>Create update version of the VLAB logo (still used today) in several formats (including vector), as well as all collateral for internal and events.</p>
+
+<h4 id="developed-website">Developed website</h4>
+
+<p>Created an updated version of the VLAB website and CMS (HTML, CSS, ColdFusion, SQL) as well as all graphic assets.</p>
+
+<h4 id="produced-event-on-the-social-and-fiscial-impact-of-online-gaming-mmorpgs">Produced event on the Social and Fiscial impact of Online Gaming (MMORPGs)</h4>
+
+<p>Proposed and lead the development of the number one event of the year, focusing on the social and fiscial impoact of Massive Multiplayer Online Role Playing Games, such as World of Warcraft. Worked to develop moderator quetions to explore the social impact of online gaming communities, such as clans/guilds, and impact of values, such as discrimitition and peer bonding. I also added questions to explor virtual currencies and how they impact real world econimies, bartering, selling, gray-markets, and regional/national taxation.</p>
+
+<h4 id="speaker-ar-mit-enterprise-forum-annual-global-summit">Speaker ar MIT Enterprise Forum Annual Global Summit</h4>
+
+<p>First - Web Design, Data Mining, and Analysis</p>
+
+<p>Second - Creating and Training Teams</p>
+
+<h4 id="alwayson-ceo-pitch-competition">AlwaysOn - CEO Pitch Competition</h4>
+
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
   <hr>
   
   <a id="panalta"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Front End Architect/Consultant</h4>
@@ -505,14 +798,29 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I was a principal in a small technology consulting firm. I managed many aspects of the business, including branding, design, and production. Clients include Johnson &amp; Johnson, WebTV, Microsoft, and GE. Services included corporate identity, business process development, web development, graphic and print design, and photography.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="panalta-content">
+        <div class="card card-body">
+          
+
+<h4 id="microsoft-web-tv">Microsoft/Web TV</h4>
+
+<h4 id="ideo">IDEO</h4>
+
+<h4 id="stanford-university-stanford-university-libraries-academic-information-resources-sular">Stanford University - Stanford University Libraries &amp; Academic Information Resources (SULAR)</h4>
+
+<p>As part of SULAR&rsquo;s <em>Silicon Genesis</em> I produced (and edited) two DVDs working with Rob Walker and several leaders of the dawn of the microprocessor. The First DVD <em>The Fairchild Chronicles</em> was 3+ hours, the second DVD <em>The Microprocessor Chronicles</em> was 4 hours. Production/Editing included audio cleanup/processing, video processing, cuts, transitions, video effects, asset design/generation, DVD authoring/mastering, package design, and finialy sales and distribution (before turing it over to Amazon).</p>
+
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
   <hr>
   
   <a id="bomberry-design"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Designer/Educator</h4>
@@ -529,14 +837,20 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I crafted identity systems, graphic designs, and artwork for clients. I taught renowned designers and students the latest features of Photoshop, Illustrator, Quark, and PageMaker.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="bomberry-design-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
   <hr>
   
   <a id="south-park"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>Location/Production Manager</h4>
@@ -553,14 +867,20 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I managed the designers, prepress team, and pressmen for a leading digital design/prepress production studios. I was responsible for all day-to-day operations. I used my access to the studio to teach myself Photoshop, Illustrator, linear and drum scanning, digital photography, prepress, and offset print production.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="south-park-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
   <hr>
   
   <a id="macys"></a>
-  <article>
+  <article class="animated fadeIn wow">
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <h4>MIS Specialist/Manager</h4>
@@ -577,7 +897,13 @@
       <div class="col-md-10 col-md-offset-1 text-left">
         <p class="lead">I trained 71 buyers, assistants, and department managers on SABER data processing. I advised management on the redefinition of product SKUs for merchandising and logistics.</p>
       </div>
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="macys-content">
+        <div class="card card-body">
+          
+        </div>
+      </div>
     </div>
+    
     
     
   </article>
@@ -591,14 +917,14 @@
   <a id="skills"></a>
   <div class="container">
    <hr>
-    <div class="row color-resume">
+    <div class="row color-resume animated fadeIn wow">
       <div class="col-md-10 col-md-offset-1 text-left">
         <h2>Skills</h2>
       </div>
     </div>
     <hr class="hidden-sm">
     
-    <article>
+    <article class="animated fadeIn wow">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h3>Focus</h3>
@@ -630,7 +956,7 @@
 
     <hr>
     
-    <article>
+    <article class="animated fadeIn wow">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h3>Abilities</h3>
@@ -677,7 +1003,7 @@
 
     <hr>
     
-    <article>
+    <article class="animated fadeIn wow">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h3>Traits</h3>
@@ -761,7 +1087,7 @@
   <a id="tools"></a>
   <div class="container">
     <hr>
-    <div class="row color-resume">
+    <div class="row color-resume animated fadeIn wow">
       <div class="col-md-4 col-md-offset-1">
         <h3>Tools</h3>
       </div>
@@ -779,7 +1105,7 @@
 
       
         
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Photoshop</p>
   </div>
@@ -790,7 +1116,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Illustrator</p>
   </div>
@@ -801,7 +1127,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Dreamweaver</p>
   </div>
@@ -812,7 +1138,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Final Cut Pro</p>
   </div>
@@ -823,7 +1149,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Motion</p>
   </div>
@@ -834,7 +1160,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Pages, Keynote, Numbers</p>
   </div>
@@ -845,7 +1171,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Word, Powerpoint, Excel</p>
   </div>
@@ -856,7 +1182,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Slack, Pivitol, Trello, JIRA</p>
   </div>
@@ -867,7 +1193,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Logic Pro</p>
   </div>
@@ -878,7 +1204,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Xcode/Interface Builder</p>
   </div>
@@ -889,7 +1215,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Atom, Electron, Brackets</p>
   </div>
@@ -900,7 +1226,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">BBEdit, TextWrangler, TextEdit</p>
   </div>
@@ -911,7 +1237,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">GitHub, Git, Subversion</p>
   </div>
@@ -922,7 +1248,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Cinema 4D</p>
   </div>
@@ -933,7 +1259,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn wow">
   <div class="col-md-4 col-md-offset-1">
     <p class="lead">Blender</p>
   </div>
@@ -956,7 +1282,7 @@
   
 <section class="pad-top-small">
   <a id="contact"></a>
-  <div class="container contact">
+  <div class="container contact animated fadeIn wow">
     <div class="row">
       <div class="col-xs-12">
         <h3 class="title">Contact</h3>
@@ -969,8 +1295,8 @@
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1"> <span class="text-right"> </span>
         <address>
-          <span class="fa fa-linkedin-square hidden-xs" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/bomberry/">Linkedin</a><br>
-          <span class="fa fa-envelope-o hidden-xs" aria-hidden="true"></span> <a href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-resume" href="https://www.linkedin.com/in/bomberry/">Linkedin</a><br>
+          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-resume" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
         </address>
       </div>
     </div>
@@ -1000,11 +1326,13 @@
 
 
 
+
 <script src="/js/jquery-1.11.3.min.js"></script>
 
 <script src="/js/bootstrap.js"></script>
 
 <script src="/js/wow.min.js"></script>
+
 
 <script src="/js/bomberry.js"></script>
 

@@ -5,14 +5,17 @@ draft = true
 weight = 8
 client_name = "Adobe"
 project_name = ""
-job_title = "Lead 3D UX/UI Designer - Photoshop (Consultant)"
+job_title = "Lead UX/UI Designer - Photoshop (Consultant)"
 job_duration = "2010—2015"
 start_date = "2010"
 end_date = "2015"
 keywords = []
 job_summary = "I lead the redesign efforts of 3D in Photoshop. I conducted and participated in many user studies and partner meetings, targeting pain-points, and defining strategic goals. I then implemented a course correction to Photoshop’s 3D initiative, creating a realtime 3D editor in Photoshop, implemented 3D printing, and brought the Properties Panel to Photoshop. In addition I helped create several decks for C-Level and vertical teams."
 has_job_details = false
+has_portfolio_link = true
+portfolio_link = "adobe-photoshop"
 has_case_study = false
+case_study_file = "adobe-photoshop"
 +++
 
 Intergration and simplification of current 3D tools into Photoshop

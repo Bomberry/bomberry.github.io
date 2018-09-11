@@ -1,0 +1,197 @@
+
+
+.color,
+a.location
+  &-www
+    color: $color-gray-light !important
+  &-home
+    color: $color-gray-light !important
+  &-resume
+    color: $color-resume !important
+  &-portfolio
+    color: $color-portfolio !important
+  &-kitchen
+    color: $color-kitchen !important
+  &-1
+    color: $color-1 !important
+  &-projects
+    color: $color-projects !important
+  &-about
+    color: $color-about !important
+  &-contact
+    color: $color-contact !important
+  &-adobe
+    color: $color-adobe !important
+  &-site
+    color: $color-gray !important
+
+
+.background-color
+  &-www
+    background-color: $color-gray-light
+  &-resume
+    background-color: $color-resume
+  &-portfolio
+    background-color: $color-portfolio
+  &-kitchen
+    background-color: $color-kitchen
+  &-1
+    background-color: $color-1
+  &-projects
+    background-color: $color-projects
+  &-about
+    background-color: $color-about
+  &-contact
+    background-color: $color-contact
+  &-adobe
+    background-color: $color-adobe
+  &-site
+    background-color: $color-gray
+
+
+.cs-light
+  color: $color-gray-darkest
+  background: $color-gray-lightest
+.cs-dark
+  color: $color-white
+  background: $color-gray-darker
+
+
+.theme
+  &-light
+    color: $color-gray-darkest
+    background: $color-gray-lightest
+    .btn:hover a
+      color: $color-white !important
+  &-dark
+    color: $color-white
+    background: $color-gray-darker
+    .btn:hover a
+      color: $color-white !important
+  &-black
+    color: $color-gray-darkest
+    background: $color-black
+    .btn:hover a
+      color: $color-white !important
+
+
+
+.background-shade
+  background-color: rgba($color-black, .6)
+.background-shade-light
+  background-color: rgba($color-white, .6)
+
+
+
+/*    HOVER ANIMATION - Center Out    */
+.animated.infinite,
+span.caret.animated
+  -webkit-animation-duration: 1.62s
+  -moz-animation-duration: 1.62s
+  animation-duration: 1.62s
+  -webkit-animation-delay: 2.6s
+  -moz-animation-delay: 2.6s
+  animation-delay: 2.6s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+
+
+// WOW.js class setup
+.wow
+  visibility: hidden
+
+
+
+
+// videoContainer not used currently (a video is on About page tho)
+.videoContainer
+    position: relative
+    width: 100%
+    height: 100%
+    //padding: 20px
+    border-radius: 5px
+    background-attachment: scroll
+    overflow: hidden
+.videoContainer video
+    min-width: 100%
+    min-height: 100%
+    position: relative
+    z-index: 1
+.videoContainer .overlay
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: 2
+    background: green
+    opacity: 0.5
+
+
+
+
+
+
+//  Box Shadow Classes
+.box-shadow
+  box-shadow: $box-shadow
+  &-medium
+    box-shadow: $box-shadow-medium
+  &-small
+    box-shadow: $box-shadow-small
+  &-small-white
+    box-shadow: $box-shadow-small-white
+
+//  Box Hover Class
+.box-hover
+  // box-shadow: $box-shadow-small
+  transition: $transition-box-shadow
+  &:hover
+    box-shadow: $box-shadow
+
+
+
+.boxshadow
+  &:hover
+    -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 1ch
+    -moz-box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+    box-shadow: rgba(0,0,0,0.8) 0 0 1ch
+
+
+//  You can use role="button" in the A tag instead of the following
+.uoh,
+.underline-on-hover
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+
+.underline-center-outward
+  display: inline-block
+  position: relative
+  padding-bottom: 1vmin
+  &:after
+    content: ''
+    display: block
+    margin: auto
+    height: .5vmin
+    width: 0px
+    background: transparent
+    transition: width 382ms ease-in-out, background-color 618ms ease-in-out
+  &:hover:after
+    width: 100%
+    background-color: $color-portfolio
+
+.shadow-ellipse::after
+  display: block
+  content: ''
+  margin-top: 0
+  // margin-top: 1rem
+  // border-top: 1px solid rgba(0, 0, 0, 0.3)
+  clear: both
+  width: 100%
+  height: 1rem
+  background: -webkit-radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
+  background: -moz-radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
+  background: radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)

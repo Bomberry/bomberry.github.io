@@ -6,6 +6,10 @@
 
 @import "partials/partials"
 
+@import "layout/layout"
+@import "typography/typography"
+
+@import "styles/styles"
 
 
 //  Main Config Import File
@@ -102,20 +106,6 @@ hr
   outline: 0
 
 
-//  FONTAWESOME OVERRIDES
-.fa
-  nav &
-    margin-right: .75rem
-  footer &,
-  .contact &
-    margin-right: .5rem
-    @media screen and (max-width: 767px)
-      margin-right: 0
-
-
-// WOW.js class setup
-.wow
-  visibility: hidden
 
 
 // BOOTSTRAP OVERRIDES
@@ -136,10 +126,6 @@ hr
     padding-bottom: 10px
 
 
-%navbar-brand-border
-  border-bottom-width: .38rem
-  border-bottom-style: solid
-
 .navbar
   border-radius: 0px
   border: 0px
@@ -147,7 +133,6 @@ hr
     margin-bottom: 0px
   &-nav
     margin: 7.5px -15px
-
     margin-left: 0px
     margin-right: 0px
     > li > a
@@ -155,6 +140,17 @@ hr
       padding-bottom: 10px
       &:hover
         color: $color-white !important
+    // span.caret.animated
+    //   -webkit-animation-duration: 1.62s
+    //   -moz-animation-duration: 1.62s
+    //   animation-duration: 1.62s
+    //   -webkit-animation-delay: 2.6s
+    //   -moz-animation-delay: 2.6s
+    //   animation-delay: 2.6s
+    //   -webkit-animation-iteration-count: infinite
+    //   -moz-animation-iteration-count: infinite
+    //   animation-iteration-count: infinite
+
   > *[class*="location-"]
     border-right: 0
     padding-right: 0
@@ -266,37 +262,15 @@ hr
     padding-left: 0
     color: $color-gray
 
-@media (max-width: 768px)
-  .nav > li > a
-    &.navbar-brand
-      padding-right: 0
+@media (max-width: 767px)
+  .nav
+    > li > a
+      &.navbar-brand
+        padding-right: 0
+    > .dropdown
+      &.open + li > .navbar-brand
+        margin-left: 25px
 
-.lead
-  line-height: 1.61
-  .carousel-caption &
-    line-height: 1
-
-.background-color
-  &-www
-    background-color: $color-gray-light
-  &-resume
-    background-color: $color-resume
-  &-portfolio
-    background-color: $color-portfolio
-  &-kitchen
-    background-color: $color-kitchen
-  &-1
-    background-color: $color-1
-  &-projects
-    background-color: $color-projects
-  &-about
-    background-color: $color-about
-  &-contact
-    background-color: $color-contact
-  &-adobe
-    background-color: $color-adobe
-  &-site
-    background-color: $color-gray
 
 
 //img[src*="Icon-Compass.svg"] path.icon-svg-compass
@@ -315,17 +289,6 @@ hr
 //    //-webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 //    //filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 
-@mixin fx-hover-shadow
-  // -webkit-filter: brightness(40%)
-  // filter: brightness(40%)
-  -webkit-filter: drop-shadow(0px 1em 2em rgba(127,127,127,.64))
-  filter: drop-shadow(0px 1em 2em rgba(127,127,127,.64))
-@mixin fx-hover-stroke
-  stroke: $color-site
-    width: 4px
-    //dasharray: 2,2
-    //dashoffset: 25%
-    linejoin: round
 
 svg
   border: 0
@@ -336,42 +299,14 @@ svg
   &:hover .icon-svg-
     &compass
       fill: $color-resume
-      @include fx-hover-shadow
-      @include fx-hover-stroke
+      @extend %fx-hover-shadow-stroke
     &spatula
       fill: $color-kitchen
-      @include fx-hover-shadow
-      @include fx-hover-stroke
+      @extend %fx-hover-shadow-stroke
     &pencil
       fill: $color-portfolio
-      @include fx-hover-shadow
-      @include fx-hover-stroke
+      @extend %fx-hover-shadow-stroke
 
-
-.color,
-a.location
-  &-www
-    color: $color-gray-light !important
-  &-home
-    color: $color-gray-light !important
-  &-resume
-    color: $color-resume !important
-  &-portfolio
-    color: $color-portfolio !important
-  &-kitchen
-    color: $color-kitchen !important
-  &-1
-    color: $color-1 !important
-  &-projects
-    color: $color-projects !important
-  &-about
-    color: $color-about !important
-  &-contact
-    color: $color-contact !important
-  &-adobe
-    color: $color-adobe !important
-  &-site
-    color: $color-gray !important
 
 .full-carousel
   width: 100%
@@ -447,8 +382,9 @@ a.location
     text-overflow: ellipsis
     min-height: 20%
     line-height: initial
-    // span, p
-      opacity: 0
+    span, p
+      text-shadow: $text-shadow-heavy-mix
+      // opacity: 0
     span
       display: block
       font-size: 112%
@@ -550,6 +486,7 @@ a.location
     &.img-100
       height: 100px
       width: 100px
+
 img, svg
   &.media-object
     height: 75px
@@ -596,148 +533,6 @@ img.thumbnail
     h4.item-name
       text-shadow: 0px 3px 6px rgba(114,114,114,0.52)
 
-.text-tall
-  line-height: 1.62
-  padding-bottom: 2rem
-
-.breath
-  &-top
-    margin-top: $layout-breath-unit
-  &-top-small
-    margin-top: $layout-breath-unit / 2
-  &-bottom
-    margin-bottom: $layout-breath-unit
-  &-left
-    margin-left: $layout-breath-unit
-  &-right
-    margin-right: $layout-breath-unit
-  &-h
-    margin-left: $layout-breath-unit
-    margin-right: $layout-breath-unit
-  &-v
-    margin-top: $layout-breath-unit
-    margin-bottom: $layout-breath-unit
-  &-all
-    margin: $layout-breath-unit
-  &-no-h
-    margin-left: 0
-    margin-right: 0
-  &-no-v
-    margin-top: 0
-    margin-bottom: 0
-  &-none
-    margin: 0
-
-.icon
-  &-pad
-    &-right
-      margin-right: .75rem
-    &-left
-      margin-left: .75rem
-
-.icon.glyphicon
-  height: 48px
-  width: 48px
-  min-height: 48px
-  min-width: 48px
-  font-size: 6ch
-  padding-right: 1.5ch
-  &.icon-large
-    height: 72px
-    width: 72px
-    min-height: 48px
-    min-width: 48px
-    font-size: 8ch
-    padding-right: 2ch
-  @include setDataAndColors
-
-  // &[data-item-name="hibiscus"]
-  //   color: $color-hibiscus
-  // &[data-item-name="cinnamon"]
-  //   color: $color-cinnamon
-  // &[data-item-name="lemongrass"]
-  //   color: $color-lemongrass
-  // &[data-item-name="mint"]
-  //   color: $color-mint
-  // &[data-item-name="ginger"]
-  //   color: $color-ginger
-  // &[data-item-name="galangal"]
-  //   color: $color-galangal
-  // &[data-item-name="greencardamon"]
-  //   color: $color-greencardamon
-  // &[data-item-name="meyerlemon"]
-  //   color: $color-meyerlemon
-  // &[data-item-name="brownsugar"]
-  //   color: $color-brownsugar
-  // &[data-item-name="chicory"]
-  //   color: $color-chicory
-  // &[data-item-name="clove"]
-  //   color: $color-clove
-  // &[data-item-name="staranise"]
-  //   color: $color-staranise
-  // &[data-item-name="coconut"]
-  //   color: $color-coconut
-  // &[data-item-name="chilipepper"]
-  //   color: $color-chilipepper
-  // &[data-item-name="blackpepper"]
-  //   color: $color-blackpepper
-
-
-//  Modal dialog
-#modalDialog
-  margin-top: $layout-breath-unit
-  .modal-content
-    background-color: $color-white
-    box-shadow: $box-shadow-large
-    color: $color-gray-dark
-    button.close
-      margin-bottom: 1rem
-      opacity: .63
-      transition: $transition
-      &:hover
-        color: $color-gray-darkest
-        opacity: 1
-        transform: scale(1.5)
-    figcaption
-      color: $color-gray-darker
-    .imagePreview
-      width: 100%
-  //.modal-body
-    max-height: 80%
-  .imageCaption,
-  .imageDetail
-    margin-bottom: 1.62rem
-  .imageCaption
-    font-size: 1rem
-    // font-size: 1.215rem
-  .imageDetail
-    font-size: 1rem
-    // font-size: .75rem
-  .cs-light
-    color: $color-gray-dark
-    background-color: $color-gray-lightest
-    .imageCaption
-      color: $color-gray-darker
-    .imageDetail
-      color: $color-gray
-    button.close
-      color: $color-gray-darker
-      &:hover
-        color: $color-gray-darkest
-  .cs-dark
-    color: $color-white
-    background-color: $color-gray-darker
-    .imageCaption
-      color: $color-white
-    .imageDetail
-      color: $color-gray-light
-    button.close
-      color: $color-gray-light
-      &:hover
-        color: $color-white
-
-
-
 
 
 #area-site
@@ -765,7 +560,8 @@ img.thumbnail
         text-align: center
         a
           padding-top: 5px
-        .fa
+        .fa,
+        .fab
           margin-right: .5rem
           line-height: 20px
         .location-names
@@ -775,17 +571,6 @@ img.thumbnail
   .container.well
     margin-top: $layout-breath-unit
 
-.container
-  &.contact
-    @extend .pad-h-small
-    &.well
-      background-color: transparent
-      // border-color: transparent
-    address > span
-      margin-top: .5rem
-      margin-bottom: .5rem
-  .title
-    margin-bottom: 1.5rem
 
 
 #area-resume
@@ -881,22 +666,6 @@ img.thumbnail
   #area-resume &
     background-color: $color-gray-lightest
 
-.theme
-  &-light
-    color: $color-gray-darkest
-    background: $color-gray-lightest
-    .btn:hover a
-      color: $color-white !important
-  &-dark
-    color: $color-white
-    background: $color-gray-darker
-    .btn:hover a
-      color: $color-white !important
-  &-black
-    color: $color-gray-darkest
-    background: $color-black
-    .btn:hover a
-      color: $color-white !important
 
 section.indicator-continue
   .btn,
@@ -908,31 +677,23 @@ section.indicator-continue
   &:hover .btn a
     color: $color-white !important
 
-section
-  &.pad
-    padding-top: $layout-breath-unit
-    padding-bottom: $layout-breath-unit
-  &.no-pad
-    padding-top: 0
-    padding-bottom: 0
-
-  .casestudy
-    margin-top: 14vmin
-    margin-bottom: 14vmin
-    &.cs-light
-      color: $color-gray-darkest
-      background: $color-gray-lightest
-    &.cs-dark
-      color: $color-white
-      background: $color-gray-darker
-    > .container.gallery
-      text-align: center
-      .img-thumbnail
-        margin: 2ch 1ch
+section.casestudy
+  margin-top: 14vmin
+  margin-bottom: 14vmin
+  &.cs-light
+    color: $color-gray-darkest
+    background: $color-gray-lightest
+  &.cs-dark
+    color: $color-white
+    background: $color-gray-darker
+  > .container.gallery
+    text-align: center
+    .img-thumbnail
+      margin: 2ch 1ch
+      border-color: transparent
+      &:hover, &:focus, &.active
+        //border-color: $color-portfolio
         border-color: transparent
-        &:hover, &:focus, &.active
-          //border-color: $color-portfolio
-          border-color: transparent
 
 .jumbotron.casestudy
   &.return-portfolio
@@ -942,185 +703,6 @@ section
   padding-top: 0
   > .container
     padding-top: 0
-
-@mixin setBgColorAndHover($baseColor)
-  background-color: lighten(rgba($baseColor, .62), 24%)
-  &:hover
-    background-color: darken(rgba($baseColor, .62), 38%)
-
-@mixin setBgImageColorAndHover
-  background-color: rgba($color-gray-lightest, .62)
-  &:hover
-    background-color: rgba($color-gray-darkest, .38)
-
-@mixin setBgImage($project, $image)
-  background-image: url('/portfolio/assets/#{$project}/#{$image}')
-  background-repeat: no-repeat
-  // background-attachment: fixed
-  background-position: center
-  background-size: cover
-  background-blend-mode: screen, multiply
-  // -webkit-filter: grayscale(100%), alpha(opacity=50)
-  // filter: grayscale(100%), alpha(opacity=50)
-  &:hover
-    background-blend-mode: multiply, screen
-  //   background-color: darken($baseColor, 38%)
-@mixin setBgImageColorAndHoverInvert
-  background-color: rgba($color-gray-darkest, .38)
-  &:hover
-    background-color: rgba($color-gray-lightest, .62)
-
-@mixin setBgImageInvert($project, $image)
-  background-image: url('/portfolio/assets/#{$project}/#{$image}')
-  background-repeat: no-repeat
-  // background-attachment: fixed
-  background-position: center
-  background-size: cover
-  // -webkit-filter: grayscale(100%), alpha(opacity=50)
-  // filter: grayscale(100%), alpha(opacity=50)
-  background-blend-mode: multiply, screen
-  &:hover
-    background-blend-mode: screen, multiply
-  //   background-color: darken($baseColor, 38%)
-
-@mixin setBtnColorAndHover($baseColor)
-  background-color: darken($baseColor, 24%)
-  border: .1rem solid white
-  color: white
-  &:hover
-    background-color: $baseColor
-    color: white
-
-// $feature-padding: 62px
-.featured
-  // $feature-padding: 3rem
-  min-height: 100%
-  display: flex
-  flex-wrap: wrap
-  flex-direction: row
-  > .feature
-    display: flex
-    min-height: 62vh
-    margin: 0
-    flex: 1 1 calc(50% - 60px)
-    flex-direction: row
-    justify-content: center
-    padding: 30px
-    transition: $transition
-    @media screen and (max-width: 767px)
-      flex-basis: 1 1 calc(100% - 60px)
-      flex-direction: column
-      min-height: 38vh
-      margin: 0
-    &:hover
-      // background-color: $color-gray-darkest
-      color: $color-white
-      box-shadow: $box-shadow-large
-      transition: $transition
-      > div
-        @extend .background-shade
-        transition: $transition
-        transform: $transform-grow-small
-        box-shadow: $box-shadow-large
-        .btn
-          box-shadow: $box-shadow
-          transition: $transition
-          &:hover
-            transform: $transform-grow
-            box-shadow: $box-shadow-large
-    > div
-      @extend .background-shade-light
-      transition: $transition
-      transform: $transform-grow-reset
-      box-shadow: $box-shadow
-      display: flex
-      justify-content: center
-      flex-direction: column
-      text-align: center
-      padding: 2.62rem
-      // &:hover
-        @extend .background-shade
-      a.btn
-        border-radius: 1ch
-        .fa:first-of-type
-          margin-right: .75rem
-        .fa:last-of-type
-          margin-left: .75rem
-    &.feature
-      &-1
-        // @include setBgImageAndHover("streamlio", "Streamlio-BC-Rendering-PlexusUV.png")
-        // @include setBgColorAndHover($color-resume)
-        // @include setBgColorAndHover($color-resume)
-        // &::before
-        @include setBgImageColorAndHover
-        @include setBgImage("streamlio", "Streamlio-BC-Rendering.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-      &-2
-        @include setBgImageColorAndHover
-        @include setBgImage("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-      &-3
-        @include setBgImageColorAndHover
-        @include setBgImage("default", "placeholderA.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-      &-4
-        @include setBgImageColorAndHover
-        @include setBgImage("default", "placeholderA.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-  >.feature.feature-invert
-    color: $color-white
-    transition: $transition
-    &:hover
-      transition: $transition
-      color: $color-black
-      > div
-        @extend .background-shade-light
-    > div
-      @extend .background-shade
-      transition: $transition
-    &.feature
-      &-1
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("streamlio", "Streamlio-BC-Rendering.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-      &-2
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
-        & .btn
-          @include setBtnColorAndHover($color-portfolio)
-      &-3
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("default", "placeholderA.png")
-        & .btn
-          @include setBtnColorAndHover($color-projects)
-      &-4
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("default", "placeholderA.png")
-        & .btn
-          @include setBtnColorAndHover($color-projects)
-
-
-// .feature-test
-  background-color: gold
-  margin: 0px
-  padding: 0px
-
-
-.full-width
-  width: 100%
-  height: 100%
-  margin: 0px
-  padding: 0px
-  //background-position: center
-  //background-size: cover
-  .row
-    margin: 0px
-    padding: 0px
 
 
 .thumbnail
@@ -1142,67 +724,9 @@ section
     padding: 9px
     color: $color-gray-darkest
 
-.flex-gallery
-  padding: .5vw
-  // font-size: 0
-  display: -ms-flexbox
-  display: -webkit-box
-  display: flex
-  -ms-flex-wrap: wrap
-  -ms-flex-direction: row
-  -webkit-flex-flow: row wrap
-  flex-flow: row wrap
-  &.flex-gallery-xsmall > figure
-    width: 100px
-  &.flex-gallery-small > figure
-    width: 200px
-  &.flex-gallery-large > figure
-    width: 400px
-  &.flex-gallery-xlarge > figure
-    width: 500px
-  > figure
-    -webkit-box-flex: auto
-    -ms-flex: auto
-    flex: auto
-    width: 300px
-    margin: .5vw
-    > img
-      width: 100%
-      height: auto
-    > figcaption
-      padding-top: 1rem
-      // display: block
-      // position: relative
-      // margin-top: -16px
-      // margin-bottom: 16px
-
-
-
-
 a.thumbnail
   &:hover, &:focus, &.active
     border-color: $color-portfolio
-
-.background-shade
-  background-color: rgba($color-black, .6)
-.background-shade-light
-  background-color: rgba($color-white, .6)
-
-
-%cs-margin-reset
-  margin: 0
-
-%cs-spacing-reset
-  margin: 0
-  padding-top: 0
-  padding-bottom: 0
-
-.cs-light
-  color: $color-gray-darkest
-  background: $color-gray-lightest
-.cs-dark
-  color: $color-white
-  background: $color-gray-darker
 
 
 .jumbotron
@@ -1288,110 +812,13 @@ a.thumbnail
   &.cs-streamlio-bg
     background: url("../portfolio/assets/streamlio/plexus-bg.png") no-repeat scroll center
     background-size: cover
+  &.cs-auguste-bg
+    background: url("../portfolio/assets/auguste/ApplicationBackgroundHexPattern1920x1280b.png") no-repeat scroll center
+    background-size: cover
 
 .jumbotron.projects
   h1, h2, h3, h4, h5
     color: $color-projects
-
-
-.boxshadow
-  &:hover
-    -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 1ch
-    -moz-box-shadow: rgba(0,0,0,0.8) 0 0 1ch
-    box-shadow: rgba(0,0,0,0.8) 0 0 1ch
-
-.label
-  &.tag, &.keyword, &.breadcrumb
-    padding: 1ch 2ch
-    margin-left: 1ch
-    margin-right: 1ch
-    display: inline-block
-    position: relative
-    border: 1px solid rgba(0,0,0,.3)
-    &:first-child
-      margin-left: 0
-    &:last-child
-      margin-right: 0
-    &:hover
-      color: $color-gray-darkest
-      /* box-shadow */
-      -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 1ch
-      -moz-box-shadow: rgba(0,0,0,0.8) 0 0 1ch
-      box-shadow: rgba(0,0,0,0.8) 0 0 1ch
-  &.tag
-    /* border-radius */
-    -webkit-border-radius: 2ch
-    -moz-border-radius: 2ch
-    border-radius: 2ch
-  &.keyword
-    -webkit-border-radius: 0ch 2ch 2ch 0
-    -moz-border-radius: 0ch 2ch 2ch 0
-    border-radius: 0ch 2ch 2ch 0
-  &.breadcrumb
-    border-radius: 1ch
-
-
-.pad
-  &-top
-    padding-top: 7.5rem
-    &-small
-      padding-top: 2.5rem
-    &-medium
-      padding-top: 5rem
-    &-large
-      padding-top: 10rem
-  &-all-small
-    padding: 2.5rem
-  &-h-small
-    padding-left: 2.5rem
-    padding-right: 2.5rem
-  &-h-default
-    padding-left: 15px
-    padding-right: 15px
-  &-h-zero
-    padding-left: 0
-    padding-right: 0
-  &-h-clear
-    padding-left: -15px
-    padding-right: -15px
-  &-v-small
-    padding-left: 2.5rem
-    padding-right: 2.5rem
-  &-v-large
-    padding-left: 7rem
-    padding-right: 7rem
-    background-color: green
-
-.m-pad
-  &-top
-    margin-top: 7.5rem
-    &-small
-      margin-top: 2.5rem
-    &-medium
-      margin-top: 5rem
-    &-large
-      margin-top: 10rem
-  &-bottom
-    margin-bottom: 7.5rem
-    &-small
-      margin-bottom: 2.5rem
-    &-medium
-      margin-bottom: 5rem
-    &-large
-      margin-bottom: 10rem
-  &-v
-    margin-top: 7.5rem
-    margin-bottom: 7.5rem
-
-    &-small
-      margin-top: 2.5rem
-      margin-bottom: 2.5rem
-    &-medium
-      margin-top: 5rem
-      margin-bottom: 5rem
-    &-large
-      margin-top: 10rem
-      margin-bottom: 10rem
 
 
 /*    ANIMATIONS:   */
@@ -1429,34 +856,10 @@ a.thumbnail
   max-height: 200px
   opacity: 1
 
+.hello-bgc
+  background-color: $color-light-blue
 
 
-/*    HOVER ANIMATION - Center Out    */
-
-.underline-center-outward
-  display: inline-block
-  position: relative
-  padding-bottom: 1vmin
-  &:after
-    content: ''
-    display: block
-    margin: auto
-    height: .5vmin
-    width: 0px
-    background: transparent
-    transition: width 382ms ease-in-out, background-color 618ms ease-in-out
-  &:hover:after
-    width: 100%
-    background-color: $color-portfolio
-
-.shadow-ellipse:after
-  display: block
-  content: ""
-  margin-top: 1rem
-  border-top: 1px solid rgba(0, 0, 0, 0.3)
-  width: 100%
-  height: 1rem
-  background: radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
 
 
 footer

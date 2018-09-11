@@ -137,3 +137,54 @@
   @each $map-name, $map-color in $syrupNameColorMap
     &[data-item-name="#{$map-name}"]
       color: #{$map-color}
+
+
+
+
+@mixin setBgColorAndHover($baseColor)
+  background-color: lighten(rgba($baseColor, .62), 24%)
+  &:hover
+    background-color: darken(rgba($baseColor, .62), 38%)
+
+@mixin setBgImageColorAndHover
+  background-color: rgba($color-gray-lightest, .62)
+  &:hover
+    background-color: rgba($color-gray-darkest, .38)
+
+@mixin setBgImage($project, $image)
+  background-image: url('/portfolio/assets/#{$project}/#{$image}')
+  background-repeat: no-repeat
+  // background-attachment: fixed
+  background-position: center
+  background-size: cover
+  background-blend-mode: screen, multiply
+  // -webkit-filter: grayscale(100%), alpha(opacity=50)
+  // filter: grayscale(100%), alpha(opacity=50)
+  &:hover
+    background-blend-mode: multiply, screen
+  //   background-color: darken($baseColor, 38%)
+@mixin setBgImageColorAndHoverInvert
+  background-color: rgba($color-gray-darkest, .38)
+  &:hover
+    background-color: rgba($color-gray-lightest, .62)
+
+@mixin setBgImageInvert($project, $image)
+  background-image: url('/portfolio/assets/#{$project}/#{$image}')
+  background-repeat: no-repeat
+  // background-attachment: fixed
+  background-position: center
+  background-size: cover
+  // -webkit-filter: grayscale(100%), alpha(opacity=50)
+  // filter: grayscale(100%), alpha(opacity=50)
+  background-blend-mode: multiply, screen
+  &:hover
+    background-blend-mode: screen, multiply
+  //   background-color: darken($baseColor, 38%)
+
+@mixin setBtnColorAndHover($baseColor)
+  background-color: darken($baseColor, 24%)
+  border: .1rem solid white
+  color: white
+  &:hover
+    background-color: $baseColor
+    color: white

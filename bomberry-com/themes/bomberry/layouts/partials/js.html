@@ -1,5 +1,6 @@
 <!--Main JS for Bomberry.com-->
-{{ $jsFilename := "bomberry.js" }}
+{{ $bomberryJS := "bomberry.js" }}
+{{/* {{ $jsFilename := "bomberry.js" }} */}}
 {{ $bootstrapJSFilename := "bootstrap.js" }}
 {{ $jQueryJSFilename := "jquery-1.11.3.min.js" }}
 {{ $wowJSFilename := "wow.min.js" }}
@@ -9,5 +10,7 @@
 <script src="/js/{{ $bootstrapJSFilename }}"></script>
 <!-- WOW.js (necessary for WOW.js JavaScript plugin for ANIMATE.CSS — also REQUIRED ) -->
 <script src="/js/{{ $wowJSFilename }}"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/js/{{ $jsFilename }}"></script>
+{{/* <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/{{ $jsFilename }}"></script> */}}
+<!-- Bomberry.js - Include last -->
+<script src="/js/{{ $bomberryJS }}"></script>

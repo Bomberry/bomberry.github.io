@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Bomberry - Case Study - Auguste</title>
+      <link>/portfolio/adobe-auguste/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/portfolio/adobe-auguste/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/portfolio/streamlio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bomberry - Portfolio - Streamlio</title>
       <link>/portfolio/casestudy/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
@@ -19,15 +37,6 @@
       <guid>/portfolio/casestudy/</guid>
       <description>Streamlio Brand and web development for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.
    Updated business cards for Streamlio.</description>
-    </item>
-    
-    <item>
-      <title>Bomberry - Portfolio - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/portfolio/streamlio/</guid>
-      <description></description>
     </item>
     
   </channel>

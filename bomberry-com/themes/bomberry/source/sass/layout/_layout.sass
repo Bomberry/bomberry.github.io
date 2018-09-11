@@ -1,0 +1,134 @@
+
+
+
+section
+  &.pad
+    padding-top: $layout-breath-unit
+    padding-bottom: $layout-breath-unit
+  &.no-pad
+    padding-top: 0
+    padding-bottom: 0
+
+
+.container
+  &.contact
+    @extend .pad-h-small
+    &.well
+      background-color: transparent
+      // border-color: transparent
+    address > span
+      margin-top: .5rem
+      margin-bottom: .5rem
+  .title
+    margin-bottom: 1.5rem
+
+
+.breath
+  &-top
+    margin-top: $layout-breath-unit
+  &-top-small
+    margin-top: $layout-breath-unit / 2
+  &-bottom
+    margin-bottom: $layout-breath-unit
+  &-left
+    margin-left: $layout-breath-unit
+  &-right
+    margin-right: $layout-breath-unit
+  &-h
+    margin-left: $layout-breath-unit
+    margin-right: $layout-breath-unit
+  &-v
+    margin-top: $layout-breath-unit
+    margin-bottom: $layout-breath-unit
+  &-all
+    margin: $layout-breath-unit
+  &-no-h
+    margin-left: 0
+    margin-right: 0
+  &-no-v
+    margin-top: 0
+    margin-bottom: 0
+  &-none
+    margin: 0
+
+.pad
+  &-top
+    padding-top: 7.5rem
+    &-small
+      padding-top: 2.5rem
+    &-medium
+      padding-top: 5rem
+    &-large
+      padding-top: 10rem
+  &-bottom
+    padding-bottom: 7.5rem
+    &-small
+      padding-bottom: 2.5rem
+    &-medium
+      padding-bottom: 5rem
+    &-large
+      padding-bottom: 10rem
+  &-all-small
+    padding: 2.5rem
+  &-h-small
+    padding-left: 2.5rem
+    padding-right: 2.5rem
+  &-h-default
+    padding-left: 15px
+    padding-right: 15px
+  &-h-zero
+    padding-left: 0
+    padding-right: 0
+  &-h-clear
+    padding-left: -15px
+    padding-right: -15px
+  &-v-small
+    padding-left: 2.5rem
+    padding-right: 2.5rem
+  &-v-large
+    padding-left: 7rem
+    padding-right: 7rem
+    background-color: green
+
+.m-pad
+  &-top
+    margin-top: 7.5rem
+    &-small
+      margin-top: 2.5rem
+    &-medium
+      margin-top: 5rem
+    &-large
+      margin-top: 10rem
+  &-bottom
+    margin-bottom: 7.5rem
+    &-small
+      margin-bottom: 2.5rem
+    &-medium
+      margin-bottom: 5rem
+    &-large
+      margin-bottom: 10rem
+  &-v
+    margin-top: 7.5rem
+    margin-bottom: 7.5rem
+
+    &-small
+      margin-top: 2.5rem
+      margin-bottom: 2.5rem
+    &-medium
+      margin-top: 5rem
+      margin-bottom: 5rem
+    &-large
+      margin-top: 10rem
+      margin-bottom: 10rem
+
+
+.full-width
+  width: 100%
+  height: 100%
+  margin: 0px
+  padding: 0px
+  //background-position: center
+  //background-size: cover
+  .row
+    margin: 0px
+    padding: 0px

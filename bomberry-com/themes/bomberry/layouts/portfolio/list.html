@@ -12,20 +12,24 @@
     {{/* {{ $projectName := .Params.project_name }} */}}
     {{ $mediaPath := .Params.sections.media_path }}
     {{ $permalink := .Permalink }}
+    {{/* {{ range sort .Params.sections.project "weight" }} */}}
     {{ range .Params.sections.project }}
       {{ $asset_folder := .asset_path }}
+      <section class="animated fadeIn wow">
       <a id="{{ .name }}"></a>
       <div class="jumbotron casestudy {{ .style }}">
         <div class="container">
           <div class="row">
 
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3>{{ .title }}</h3>
+              <h3 class="underline-center-outward">{{ .title }}</h3>
               <p>{{ with .text }}{{ . | safeHTML }}{{ end }}</p>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
               <h3></h3>
-              <p><span class="color-portfolio">Roles:</span> {{ with .role }}{{ . | safeHTML }}{{ end }}</p>
+              {{ if .client_name }}<p><span class="color-portfolio">Client:</span> {{ .client_name }}</p>{{ end }}
+              {{ if .project_name }}<p><span class="color-portfolio">Project:</span> {{ .project_name }}</p>{{ end }}
+              {{ if .role }}<p><span class="color-portfolio">Roles:</span> {{ with .role }}{{ . | safeHTML }}{{ end }}</p>{{ end }}
             </div>
 
             {{ if .has_case_study }}
@@ -40,7 +44,7 @@
                   {{/* {{ if .Params.has_case_study }} */}}
                   {{/* <p>{{ .Content }}</p> */}}
 
-                  <div class="lead"><a href="{{ $permalink }}/{{.name}}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div>
+                  <div class="lead"><a href="{{ $permalink }}/{{.name}}" class="color-portfolio"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase animated heartBeat infinite"></span></a></div>
                   {{/* {{ end }} */}}
                 </div>
               </div>
@@ -82,6 +86,7 @@
           </div>
         </div>
       </div>
+    </section>
     {{ end }}
   {{ end }}
 

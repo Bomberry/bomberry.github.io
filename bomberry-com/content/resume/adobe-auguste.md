@@ -1,10 +1,10 @@
 +++
-title = "Adobe August"
+title = "Adobe Auguste"
 date = 2018-05-05T23:10:22-07:00
 draft = true
 weight = 12
 client_name = "Adobe"
-project_name = ""
+project_name = "Auguste"
 job_title = "Product Design (Consultant)"
 job_duration = "2016"
 start_date = "2016"
@@ -12,7 +12,10 @@ end_date = "2016"
 keywords = []
 job_summary = "This project had an aggressive four month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals & features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface."
 has_job_details = false
-has_case_study = false
+has_portfolio_link = true
+portfolio_link = "adobe-auguste"
+has_case_study = true
+case_study_file = "adobe-auguste"
 +++
 
 Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem

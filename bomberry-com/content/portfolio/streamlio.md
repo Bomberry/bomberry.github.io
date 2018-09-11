@@ -1,5 +1,5 @@
 +++
-title = "Bomberry - Portfolio - Streamlio"
+title = "Bomberry - Case Study - Streamlio"
 date = 2018-05-05T23:11:05-07:00
 #type = "casestudy"
 kind = "casestudy"
@@ -8,7 +8,7 @@ weight = 3
 client_name = "Streamlio"
 project_name = "streamlio"
 location_name = "portfolio"
-job_title = "Branding Design | Web Development | Graphic Design"
+job_title = "Branding | Web Development | Graphic Design"
 job_duration = "2017—2018"
 start_date = "2017"
 end_date = "Present"
@@ -86,7 +86,6 @@ featured = true
   caption = ""
   media = [""]
   footnote = "Background image: one of a series of plexus graphics created for Streamlio branding"
-
   [[header.figures]]
     # src = "Streamlio-BC-Rendering-PlexusUV.png"
     # figcaption = "3D rendering of updated business cards"
@@ -98,7 +97,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "problem"
-    title = "The Problem"
+    title = "The challange"
     weight = 1000
     layout = ""
     class = ""
@@ -140,7 +139,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "logo"
-    title = "Giving the Logo some Love"
+    title = "Giving the logo some love"
     weight = 1012
     layout = ""
     style = "cs-light"
@@ -163,7 +162,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "glyph"
-    title = "Gettin’ Glyphy with It"
+    title = "Gettin’ glyphy with it"
     weight = 1012
     layout = ""
     style = "cs-light"
@@ -186,7 +185,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "wordmark"
-    title = "The Wordmark"
+    title = "The wordmark"
     weight = 1012
     layout = ""
     style = "cs-light"
@@ -232,7 +231,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "branding"
-    title = "Yay, a Branding Guideline! A Branding Guideline?"
+    title = "Yay, a branding guideline! A branding guideline?"
     weight = 1012
     layout = ""
     style = "cs-dark"
@@ -255,7 +254,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "cards"
-    title = "Business Cards"
+    title = "Business cards"
     weight = 1020
     layout = ""
     style = "cs-light"
@@ -362,7 +361,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "result"
-    title = "The result"
+    title = "In conclusion"
     weight = 1020
     layout = ""
     style = "cs-light"

@@ -12,11 +12,14 @@ end_date = "Present"
 keywords = []
 job_summary = "I worked with the VP of Marketing to develop corporate branding and designed the web site using HTML, SASS/CSS, JS, and HUGO. In additional, I created logos, media templates (.PSD, .AI, Keynote), color libraries, and usage/style guides."
 has_job_details = false
+has_portfolio_link = true
+portfolio_link = "streamlio"
 has_case_study = true
 case_study_file = "streamlio"
 +++
 
 Logo Design/Refresh (Update?)
+
 150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)
 
 100+ page Branding Guideline document

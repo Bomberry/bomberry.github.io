@@ -12,5 +12,8 @@ end_date = "2017"
 keywords = []
 job_summary = "I was editor-in-chief and lead writer for Photoshop Dimensions, an electronic magazine focused on teaching users about Photoshop’s 3D toolset. As editor-in-chief, I managed contributing writers, conducted design reviews, and laid out articles. As lead writer, I created articles and illustrations covering workflows, material creation, and rendering."
 has_job_details = false
+has_portfolio_link = true
+portfolio_link = "photoshopdimensions"
 has_case_study = false
+case_study_file = "photoshopdimensions"
 +++

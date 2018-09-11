@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kevin Bomberry | Designer, writer, cook | Bomberry.com on Bomberry.com</title>
+    <title>Kevin Bomberry | Bomberry.com on Bomberry.com</title>
     <link>/</link>
-    <description>Recent content in Kevin Bomberry | Designer, writer, cook | Bomberry.com on Bomberry.com</description>
+    <description>Recent content in Kevin Bomberry | Bomberry.com on Bomberry.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 May 2018 17:54:50 -0700</lastBuildDate>
@@ -30,11 +30,29 @@
     </item>
     
     <item>
-      <title>Bomberry - Portfolio - CraftMaster</title>
+      <title>Bomberry - Case Study - Auguste</title>
+      <link>/portfolio/adobe-auguste/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/portfolio/adobe-auguste/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bomberry - Case Study - CraftMaster</title>
       <link>/portfolio/craftmaster/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/portfolio/craftmaster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     
@@ -46,15 +64,6 @@
       <guid>/portfolio/casestudy/</guid>
       <description>Streamlio Brand and web development for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.
    Updated business cards for Streamlio.</description>
-    </item>
-    
-    <item>
-      <title>Bomberry - Portfolio - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/portfolio/streamlio/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -93,6 +102,15 @@ I went to several high schools, leaving during my junior year to continue my edu
       <guid>/resume/vlab/</guid>
       <description>Sitting on the board of directors, developing teams and team training, producing events, and mentoring volunteers was an enjoyable, althought sometime increadable hectic, experience, tought me the lesson of delegation and mentoring, fostering growth in individual contributers to produce events and more.
 Created Updated Branding, and templates for event collateral (signage, posters, presentations, lanyards, event programs, etc,&amp;hellip; ) Create update version of the VLAB logo (still used today) in several formats (including vector), as well as all collateral for internal and events.</description>
+    </item>
+    
+    <item>
+      <title>Able Pear</title>
+      <link>/resume/able-pear/</link>
+      <pubDate>Sat, 05 May 2018 23:10:51 -0700</pubDate>
+      
+      <guid>/resume/able-pear/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -145,11 +163,11 @@ portfolio</description>
     </item>
     
     <item>
-      <title>Adobe August</title>
-      <link>/resume/adobe-august/</link>
+      <title>Adobe Auguste</title>
+      <link>/resume/adobe-auguste/</link>
       <pubDate>Sat, 05 May 2018 23:10:22 -0700</pubDate>
       
-      <guid>/resume/adobe-august/</guid>
+      <guid>/resume/adobe-auguste/</guid>
       <description>Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem
 Defined and constructed a user experience that would directly align with Adobe XD&amp;rsquo;s design goals while adding new conventions for touch (primary)/stylus (secondary) focused user input. This includes defining interaction models and specifications for single/multi-input gestures; one hand, two hands, stylus, hand + stylus, optional 3D devince input (gyroscope).
 Created toolchain for/and all UI assets and states (100+) as texture atlases (5+) with accompanied CVS files to allow for in-app rapid design exploration/iteration while maintaing format flexability (native, web, etc).</description>
@@ -170,20 +188,12 @@ Created toolchain for/and all UI assets and states (100+) as texture atlases (5+
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/resume/streamlio/</guid>
-      <description>Logo Design/Refresh (Update?) 150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)
+      <description>Logo Design/Refresh (Update?)
+150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)
 100+ page Branding Guideline document
 Brand Color Swatches for macOS (.clr) and Adobe CC apps (.ace)
 Web Development (HTML, SASS/CSS, JS, HUGO, and GULP) 45+ HTML templates (partials/blocks and pages) 25+ SASS files () Web Branding/Styling Usage Guide (Documentation)
 Business Card Design 3D Renderings .ai master template (print ready) Usage document Design Consulting/Contractor  Branding Developement  Logo Design  Branding Guidelines  Web Developement  Responsive Web Design  Illustration Design  3D Design/Rendering  Asset Generation/Templates  Usage Documentation</description>
-    </item>
-    
-    <item>
-      <title>Able Pear</title>
-      <link>/resume/able-pear/</link>
-      <pubDate>Sat, 05 May 2018 23:10:51 -0700</pubDate>
-      
-      <guid>/resume/able-pear/</guid>
-      <description></description>
     </item>
     
     <item>

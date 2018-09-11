@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>/portfolio/adobe-auguste/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/portfolio/craftmaster/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -24,14 +31,14 @@
   </url>
   
   <url>
-    <loc>/portfolio/casestudy/</loc>
+    <loc>/portfolio/streamlio/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/portfolio/streamlio/</loc>
+    <loc>/portfolio/casestudy/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -94,6 +101,13 @@
   </url>
   
   <url>
+    <loc>/resume/able-pear/</loc>
+    <lastmod>2018-05-05T23:10:51-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/resume/adobe-materials/</loc>
     <lastmod>2018-05-05T23:10:47-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -129,7 +143,7 @@
   </url>
   
   <url>
-    <loc>/resume/adobe-august/</loc>
+    <loc>/resume/adobe-auguste/</loc>
     <lastmod>2018-05-05T23:10:22-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -145,13 +159,6 @@
   <url>
     <loc>/resume/streamlio/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/resume/able-pear/</loc>
-    <lastmod>2018-05-05T23:10:51-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -345,6 +352,13 @@
   
   <url>
     <loc>/languages/markdown/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/platforms/microsoft-surface/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>

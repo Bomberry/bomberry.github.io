@@ -110,8 +110,8 @@ time_format = "3:04 PM"
   [[menu.main]]
     identifier = "resume"
     name = "resume"
-    pre = "<span class='fa fa-address-card'>"
-    post = "</span>"
+    pre = "<i class='fa fa-clipboard'></i>"
+    # post = "</i>"
     url = "/resume/"
     weight = 20
     hidden = false
@@ -119,7 +119,7 @@ time_format = "3:04 PM"
   [[menu.main]]
     identifier = "portfolio"
     name = "portfolio"
-    pre = "<i class='fa fa-barcode'> </i>"
+    pre = "<i class='fa fa-layer-group'> </i>"
     url = "/portfolio/"
     weight = 40
     hidden = false
@@ -151,7 +151,7 @@ time_format = "3:04 PM"
   [[menu.main]]
     identifier = "about"
     name = "about"
-    pre = "<i class='fa fa-user-circle-o'></i>"
+    pre = "<i class='fa fa-user'></i>"
     url = "/about/"
     weight = 110
     hidden = true
@@ -218,7 +218,7 @@ time_format = "3:04 PM"
 
   [[menu.portfolio]]
     name = "Auguste"
-    url = "#adobe-august"
+    url = "#adobe-auguste"
     weight = 1010
 
   [[menu.portfolio]]

@@ -6,18 +6,22 @@ weight = 3
 client_name = "Bomberry Design"
 location_name = "resume"
 keywords = []
+resume_file = "Kevin-Bomberry-Product-Designer-Resume.pdf"
 +++
 
 <section class="introduction">
   <a id="introduction"></a>
-  <div class="container">
+  <div class="container animated fadeIn wow">
    <hr class="hr-space">
     <div class="row color-resume">
-      <div class="col-md-5 col-md-offset-1 text-left">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-1 text-left">
         <h2>Kevin Bomberry</h2>
       </div>
-      <div class="col-md-5 text-right">
+      <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
         <h2>R&eacute;sum&eacute;</h2>
+      </div>
+      <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 text-right">
+        <div class="animated flash wow"><a download href="./Kevin-Bomberry-Product-Designer-Resume.pdf" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->Download PDF <span class="fa fa-file-pdf"></span></a></div>
       </div>
     </div>
     <hr class="hr-space">
