@@ -448,6 +448,8 @@ section.no-pad {
 
 .pad-top {
   padding-top: 7.5rem; }
+  .pad-top-tiny {
+    padding-top: 1.62rem; }
   .pad-top-small {
     padding-top: 2.5rem; }
   .pad-top-medium {
@@ -456,6 +458,8 @@ section.no-pad {
     padding-top: 10rem; }
 .pad-bottom {
   padding-bottom: 7.5rem; }
+  .pad-bottom-tiny {
+    padding-bottom: 1.62rem; }
   .pad-bottom-small {
     padding-bottom: 2.5rem; }
   .pad-bottom-medium {

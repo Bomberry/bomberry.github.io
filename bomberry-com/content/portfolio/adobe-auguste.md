@@ -176,24 +176,21 @@ featured = false
     [[sections.case_study_content.figures]]
       src = "1-Initial-Application-State-with-additional-Elements.png"
       figcaption = "File Manager"
-    [[sections.case_study_content.figures]]
-      src = "2-Main-Interaction-Areas.png"
-      figcaption = "Interaction areas"
+    # [[sections.case_study_content.figures]]
+    #   src = "2-Main-Interaction-Areas.png"
+    #   figcaption = "Interaction areas"
     [[sections.case_study_content.figures]]
       src = "3-Main-Controllers.png"
       figcaption = "Main layout and controllers"
-    [[sections.case_study_content.figures]]
-      src = "4-Brushes.png"
-      figcaption = "Brush tool"
+    # [[sections.case_study_content.figures]]
+    #   src = "4-Brushes.png"
+    #   figcaption = "Brush tool"
     [[sections.case_study_content.figures]]
       src = "5-Brush-Library.png"
       figcaption = "Brush presets"
     [[sections.case_study_content.figures]]
       src = "6-Brush-Settings.png"
       figcaption = "Brush settings"
-    [[sections.case_study_content.figures]]
-      src = "8-Layers.png"
-      figcaption = "Layers panel"
     [[sections.case_study_content.figures]]
       src = "7-Global-Effects-Selected.png"
       figcaption = "Filter Bar"
@@ -203,6 +200,9 @@ featured = false
     [[sections.case_study_content.figures]]
       src = "Global-Effects-Selected-–-Effect-Bar-Scroll-Area-with-Panel-Offset.png"
       figcaption = "Filter Bar adjustment"
+    [[sections.case_study_content.figures]]
+      src = "8-Layers.png"
+      figcaption = "Layers panel"
 
   [[sections.case_study_content]]
     name = "input"
@@ -239,6 +239,9 @@ featured = false
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      src = "Euclid-Touch-Texture-Atlas-Workshop.png"
+      figcaption = "Example texture atlas"
+    [[sections.case_study_content.figures]]
       src = "SurfaceBook-Screen---Illustrations-02b-Splash.png"
       figcaption = "Splash screen"
     [[sections.case_study_content.figures]]
@@ -265,9 +268,6 @@ featured = false
     [[sections.case_study_content.figures]]
       src = "SurfaceBook-Screen---Illustrations-02b-BrushPropertiesAndLayers.png"
       figcaption = "Brush and Layers panels"
-    [[sections.case_study_content.figures]]
-      src = "Euclid-Touch-Texture-Atlas-Workshop.png"
-      figcaption = "Example texture atlas"
 
   [[sections.case_study_content]]
     name = "result"
