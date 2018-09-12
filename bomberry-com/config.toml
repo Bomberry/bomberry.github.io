@@ -262,30 +262,64 @@ time_format = "3:04 PM"
   #   weight = 1090
 
 
-  # [[menu.casestudy_streamlio]]
-  #   name = "introduction"
-  #   url = "#bananas"
-  #   weight = 1000
-  #
-  # [[menu.casestudy_streamlio]]
-  #   name = "Challange"
-  #   url = "#apples"
-  #   weight = 1010
-  #
-  # [[menu.casestudy_streamlio]]
-  #   name = "Process"
-  #   url = "#apples"
-  #   weight = 1020
-  #
-  # [[menu.casestudy_streamlio]]
-  #   name = "Response"
-  #   url = "#apples"
-  #   weight = 1030
-  #
-  # [[menu.casestudy_streamlio]]
-  #   name = "Conclusion"
-  #   url = "#apples"
-  #   weight = 1040
+  [[menu.casestudy_streamlio]]
+    name = "Introduction"
+    url = "#introduction"
+    weight = 1000
+  [[menu.casestudy_streamlio]]
+    name = "Branding"
+    url = "#logo"
+    weight = 2010
+  [[menu.casestudy_streamlio]]
+    name = "Web Site"
+    url = "#sitestart"
+    weight = 2030
+  [[menu.casestudy_streamlio]]
+    name = "Conclusion"
+    url = "#result"
+    weight = 3040
+
+
+  [[menu.casestudy_auguste]]
+    name = "Introduction"
+    url = "#introduction"
+    weight = 1000
+  [[menu.casestudy_auguste]]
+    name = "Planning"
+    url = "#technology"
+    weight = 2010
+  [[menu.casestudy_auguste]]
+    name = "App Design"
+    url = "#wireframes"
+    weight = 2030
+  [[menu.casestudy_auguste]]
+    name = "Conclusion"
+    url = "#result"
+    weight = 3040
+
+
+  [[menu.casestudy_craftmaster]]
+    name = "Introduction"
+    url = "#introduction"
+    weight = 1000
+  [[menu.casestudy_craftmaster]]
+    name = "Branding"
+    url = "#logo"
+    weight = 2010
+  [[menu.casestudy_craftmaster]]
+    name = "App Design"
+    url = "#appPlanning"
+    weight = 2030
+  [[menu.casestudy_craftmaster]]
+    name = "Web Site"
+    url = "#site"
+    weight = 2040
+  [[menu.casestudy_craftmaster]]
+    name = "Conclusion"
+    url = "#conclusion"
+    weight = 3050
+
+
 
 
   [[menu.projects]]

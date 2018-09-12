@@ -57,14 +57,15 @@
       {{ end }}
     {{ else if (eq $location "resume") }}
       {{ range .Site.Menus.resume }}
-      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "resume" . }}active{{end}}{{if $currentNode.IsMenuCurrent "resume" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
     {{ else if (eq .URL "/portfolio/") }}
       {{ range .Site.Menus.portfolio }}
-      <li><a class="animated fadeInDown location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
+      
     {{ else if (eq .URL "/portfolio/streamlio/") }}
-
+      {{/* <h6>streamlio</h6> */}}
       {{/* {{if (eq $casestudy) "craftmaster" }}
         {{ range .Site.Menus.portfolio.craftmaster }}
         <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
@@ -74,10 +75,18 @@
         <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
         {{ end }}
       {{ end }} */}}
-
       {{ range .Site.Menus.casestudy_streamlio }}
-      <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
+    {{ else if (eq .URL "/portfolio/craftmaster/") }}
+      {{ range .Site.Menus.casestudy_craftmaster }}
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+    {{ else if (eq .URL "/portfolio/adobe-auguste/") }}
+      {{ range .Site.Menus.casestudy_auguste }}
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
+
     {{ else if (eq $location "projects") }}
       {{ range .Site.Menus.projects }}
       <li><a class="location-{{ .Name }} {{if $currentNode.IsMenuCurrent "projects" . }}active{{end}}{{if $currentNode.IsMenuCurrent "projects" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>

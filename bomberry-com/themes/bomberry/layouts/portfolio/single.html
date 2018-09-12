@@ -7,7 +7,7 @@
   {{ end }}
 
   {{ .Content }}
-  <a id="JUMP"></a>
+  <a id="introduction"></a>
   <div class="jumbotron casestudy cs-type cs-dark {{ .Params.header.class }}">
     <div class="container cs-intro-block">
       <div class="row cs-job">
@@ -65,7 +65,9 @@
     {{ $projectName := .Params.project_name }}
     {{ $mediaPath := .Params.sections.media_path }}
     {{ range .Params.sections.case_study_content }}
-      <div class="jumbotron casestudy animated fadeIn wow {{ .style }}">
+    <section class="animated fadeIn wow">
+    <a id="{{ .name }}"></a>
+      <div class="jumbotron casestudy {{ .style }}">
         <div class="container">
           <div class="row">
 
@@ -107,6 +109,7 @@
           </div>
         </div>
       </div>
+    </section>
     {{ end }}
   {{ end }}
 

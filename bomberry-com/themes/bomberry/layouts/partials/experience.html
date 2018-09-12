@@ -44,7 +44,7 @@
         {{/* <div class="lead"><a href="{{ .Permalink }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->more info <span class="fa fa-arrow-circle-down"></span></a></div> */}}
         {{/* <div class="lead"><a class="color-resume" data-toggle="collapse" href="#{{ .File }}-content" role="button" aria-expanded="false" aria-controls="{{ .File }}-content"><span class="fa fa-arrow-circle-down"></span> more info</a></div> */}}
         {{/* {{ if .Params.has_portfolio_link}}<div class="lead"><a class="color-resume" href="../portfolio/#{{ .Params.portfolio_link }}" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>{{end}} */}}
-        <div class="lead"><a class="color-resume" href="../portfolio/#{{ .Params.portfolio_link }}" role="button">portfolio&nbsp;<span class="fa fa-chevron-right color-resume"></span></a></div>
+        <div class="lead"><a class="color-resume" href="../portfolio/#{{ .Params.portfolio_link }}" role="button">portfolio<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         {{/* {{ if .Params.has_job_details}}<div class="lead"><a class="color-resume" data-toggle="collapse" href="#{{ .File }}-content" role="button" aria-expanded="false" aria-controls="{{ .File }}-content">more info <span class="fa fa-arrow-alt-circle-down"></span></a></div>{{end}} */}}
         {{/* <div class="lead"><a class="color-resume" href="../portfolio/#{{ .Params.case_study_file }}" role="button">more info <span class="fa fa-arrow-circle-down"></span></a></div> */}}
         {{ end }}
@@ -53,7 +53,7 @@
         {{ if .Params.has_case_study }}
         {{/* <p>{{ .Content }}</p> */}}
         {{/* <div class="lead"><a href="{{ .Permalink }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div> */}}
-        <div class="lead animated flash wow"><a href="../portfolio/{{ .Params.case_study_file }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->case study <span class="fa fa-briefcase"></span></a></div>
+        <div class="lead animated flash wow"><a href="../portfolio/{{ .Params.case_study_file }}" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
         {{ end }}
       </div>
       {{/* <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="{{ .File }}-content">

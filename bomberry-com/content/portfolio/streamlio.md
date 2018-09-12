@@ -63,6 +63,32 @@ url_code = ""
 #   url = "#apples"
 #   weight = 1000
 
+# [menu]
+#   [[casestudy_streamlio]]
+#     name = "introduction"
+#     url = "#bananas"
+#     weight = 1000
+#
+#   [[casestudy_streamlio]]
+#     name = "Challange"
+#     url = "#apples"
+#     weight = 1010
+#
+#   [[casestudy_streamlio]]
+#     name = "Process"
+#     url = "#apples"
+#     weight = 1020
+#
+#   [[casestudy_streamlio]]
+#     name = "Response"
+#     url = "#apples"
+#     weight = 1030
+#
+#   [[casestudy_streamlio]]
+#     name = "Conclusion"
+#     url = "#apples"
+#     weight = 1040
+
 # Featured
 featured = true
 [feature]
