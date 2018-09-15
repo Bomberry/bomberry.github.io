@@ -171,6 +171,25 @@ footer .fa, .contact .fa, footer .fab, .contact .fab {
       #modalDialog .cs-dark button.close:hover {
         color: white; }
 
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .clients-logos .client-logo {
+    max-height: 100%;
+    display: flex;
+    flex: 1 0 calc(30%);
+    padding: 1.5rem 3rem;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 767px) {
+      .clients-logos .client-logo {
+        flex: 1 2 clac(50%);
+        padding: 1.5rem; } }
+    .clients-logos .client-logo img {
+      max-width: 100%;
+      max-height: 5rem; }
+
 .featured {
   min-height: 100%;
   display: flex;
@@ -543,7 +562,7 @@ a.location-home {
   color: #9c9c9c !important; }
 .color-resume,
 a.location-resume {
-  color: #cc0000 !important; }
+  color: #e80000 !important; }
 .color-portfolio,
 a.location-portfolio {
   color: #ff8000 !important; }
@@ -572,7 +591,7 @@ a.location-site {
 .background-color-www {
   background-color: #9c9c9c; }
 .background-color-resume {
-  background-color: #cc0000; }
+  background-color: #e80000; }
 .background-color-portfolio {
   background-color: #ff8000; }
 .background-color-kitchen {
@@ -758,8 +777,8 @@ hr {
     border-bottom-color: black;
     color: #9c9c9c; }
   .navbar.location-resume {
-    border-bottom-color: #cc0000;
-    color: #cc0000; }
+    border-bottom-color: #e80000;
+    color: #e80000; }
   .navbar.location-portfolio {
     border-bottom-color: #ff8000;
     color: #ff8000; }
@@ -814,7 +833,7 @@ hr {
   .navbar-brand.location {
     color: #9c9c9c; }
     .navbar-brand.location-resume {
-      color: #cc0000; }
+      color: #e80000; }
     .navbar-brand.location-portfolio {
       color: #ff8000; }
     .navbar-brand.location-kitchen {
@@ -844,7 +863,7 @@ svg {
   svg > .icon-svg-compass, svg > .icon-svg-spatula, svg > .icon-svg-pencil {
     fill: black; }
   svg:hover .icon-svg-compass {
-    fill: #cc0000; }
+    fill: #e80000; }
   svg:hover .icon-svg-spatula {
     fill: yellow; }
   svg:hover .icon-svg-pencil {
@@ -1046,7 +1065,7 @@ img.thumbnail + span.caption {
       display: none; }
     #area-resume section div.container article div.row.link-portfolio .btn-default:hover {
       color: white;
-      background-color: #cc0000; }
+      background-color: #e80000; }
   #area-resume section div.container article div.col-show-col {
     display: none; }
   #area-resume section div.container article:hover {
@@ -1298,7 +1317,7 @@ footer {
   color: black; }
 .test.location-resume,
 .color-resume {
-  color: #cc0000; }
+  color: #e80000; }
 .test.location-portfolio,
 .color-portfolio {
   color: #ff8000; }

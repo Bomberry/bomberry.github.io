@@ -2,7 +2,7 @@
 title = "Adobe Photoshop"
 date = 2018-05-05T23:10:41-07:00
 draft = true
-weight = 8
+weight = 9
 client_name = "Adobe"
 project_name = ""
 job_title = "Lead UX/UI Designer - Photoshop (Consultant)"

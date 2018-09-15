@@ -21,7 +21,7 @@ resume_file = "Kevin-Bomberry-Product-Designer-Resume.pdf"
         <h2>R&eacute;sum&eacute;</h2>
       </div>
       <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1 text-right">
-        <div class="animated flash wow"><a download href="./Kevin-Bomberry-Product-Designer-Resume.pdf" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->Download PDF <span class="fa fa-file-pdf"></span></a></div>
+        <div class="animated flash wow"><a download href="./Kevin-Bomberry-Product-Designer-Resume.pdf" class="color-resume"><!--<span class="fa fa-briefcase"></span> -->Download PDF<span class="fa fa-file-pdf icon-pad-left"></span></a></div>
       </div>
     </div>
     <hr class="hr-space">

@@ -84,8 +84,32 @@ time_format = "3:04 PM"
     link = "//github.com/bomberry"
 
 
+  client_logos = ["adobe", "ideo", "microsoft", "stanford", "streamlio", "vlab"]
 
-
+  [[params.client_logo]]
+    imgage = "adobe"
+    format = "png"
+    style = "medium"
+  [[params.client_logo]]
+    imgage = "ideo"
+    format = "png"
+    style = "medium"
+  [[params.client_logo]]
+    imgage = "microsoft"
+    format = "png"
+    style = "medium"
+  [[params.client_logo]]
+    imgage = "stanford"
+    format = "png"
+    style = "medium"
+  [[params.client_logo]]
+    imgage = "streamlio"
+    format = "png"
+    style = "medium"
+  [[params.client_logo]]
+    imgage = "vlab"
+    format = "png"
+    style = "medium"
 
 # [permalinks]
 # 	page = "/:title/"

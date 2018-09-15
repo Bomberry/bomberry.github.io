@@ -151,18 +151,27 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-Logo1@1x.png"
       figcaption = "Logo Elements"
+      figdetail = "Individual component breakdown of the composed (signature) logo, showing glyph, logotype, and container."
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-Logo2@1x.png"
       figcaption = "Logo Spacing"
+      figdetail = "Required spacing (clear space) when using the logo. Gray boxes denote, inline or graphic composition, while the white boxes denote logo layout for stationary, ads, or partner lock-up composition."
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-Logo3@1x.png"
       figcaption = "Logo Positioning"
+      figdetail = "The placement of the logo on a page, complete with spacing requirements, presented in order or preferences."
     [[sections.case_study_content.figures]]
-      style = "cs-light"
+      style = "cs-dark"
       src = "CraftMasterLogoGraphicShapeExploration01.png"
       figcaption = "Exploratory logo illustrations"
+      figdetail = "Illustrations of various logo concepts representing the three-tiered relationship between MineCraft, CraftMaster, and your content."
+
+
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -184,8 +193,10 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-Font-Masterly.png"
       figcaption = "Masterly Font"
+      figdetail = "The Masterly font is composed of the base alphanumeric characters(a-z, A-Z, and 0-9), an initial set of 25-30 common punctuation marks, and 40-50 of the application icons, for use in-app, online, and in marketing materials."
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -216,8 +227,10 @@ featured = true
     #   src = "CraftMasterUIComponents.png"
     #   figcaption = "UI components map"
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMasterUserWorkflowUIPaths.png"
       figcaption = "User workflow map"
+      figdetail = "Map showing the 13 main user workflows paths (denoted by end-nodes)."
     # [[sections.case_study_content.figures]]
     #   src = "CraftMasterFeaturesV2.png"
     #   figcaption = "Feature block diagram"
@@ -245,14 +258,20 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMasterFeaturesV2.png"
       figcaption = "Feature block diagram"
+      figdetail = "Engineering diagram showing the feature relationship model of the apps."
     [[sections.case_study_content.figures]]
-      src = "CraftMasterFeatureUIMap.png"
-      figcaption = "UI feature map"
-    [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMasterUIComponents.png"
       figcaption = "UI components map"
+      figdetail = "Map of the UI components and elements, including: views, overlays, controls, and interaction modes."
+    [[sections.case_study_content.figures]]
+      style = "cs-dark"
+      src = "CraftMasterFeatureUIMap.png"
+      figcaption = "UI feature map"
+      figdetail = "Map showing the function in the UI"
     # [[sections.case_study_content.figures]]
     #   src = "CraftMasterUserWorkflowUIPaths.png"
     #   figcaption = "User workflow map"
@@ -283,8 +302,10 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-Branding-AppIcons@2x.png"
       figcaption = "A few application icons"
+      figdetail = "A sample of the application’s UI icons. Each icon has the same hexagon silhouette that reinforces the logo graphic shape, and allows for UI clustering (like a beehive)."
     # [[sections.case_study_content.figures]]
     #   src = "CraftMaster-Branding-AppIcons@2x.png"
     #   figcaption = "A few application icons"
@@ -355,8 +376,10 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMasterSiteDisplayLaptop.png"
       figcaption = "Web site displayed on laptop"
+      figdetail = "The website is presented as a single sales-sheet. Additional navigation (external) links provide access to the blog, forum, help and more."
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""
@@ -401,14 +424,20 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-character_rigged-Kevin.png"
       figcaption = "Kevin's avatar"
+      figdetail = "Chart showing the 13 main user workflows paths (denoted by end-nodes)."
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-character_rigged-Pete.png"
       figcaption = "Pete's avatar"
+      figdetail = "Chart showing the 13 main user workflows paths (denoted by end-nodes)."
     [[sections.case_study_content.figures]]
+      style = "cs-dark"
       src = "CraftMaster-character_rigged-Andy.png"
       figcaption = "Andy's avatar"
+      figdetail = "Chart showing the 13 main user workflows paths (denoted by end-nodes)."
     # [[sections.case_study_content.videos]]
     #   service = ""
     #   service_id = ""

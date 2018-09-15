@@ -2,7 +2,7 @@
 title = "Doppler"
 date = 2018-05-05T23:10:33-07:00
 draft = true
-weight = 9
+weight = 8
 client_name = "Doppler Publishing"
 project_name = ""
 job_title = "Editor-in-Chief, Lead Writer"
