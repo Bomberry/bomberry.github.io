@@ -5,6 +5,7 @@ draft = true
 weight = 3
 client_name = "Bomberry Design"
 location_name = "resume"
+body_attributes = 'data-spy="scroll" data-target="#myInverseNavbar2"'
 keywords = []
 resume_file = "Kevin-Bomberry-Product-Designer-Resume.pdf"
 +++

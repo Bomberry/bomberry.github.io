@@ -167,8 +167,30 @@ media_path = "./assets"
     has_case_study = false
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
-    #   src = "filename.type"
-    #   figcaption = "A short caption"
+    #   style = ""
+    #   src = "CraftMaster-Branding-AppIcons@1x.png"
+    #   figcaption = "Sample of icons for CraftMaster"
+    #   figdetail = "More than 50 icons were designed for the application. The icons use the hexagon silhouette of the CraftMaster logo and provide insight as to the function the button represents. A visual dictionary of application assets and actions was developed to reduced cognitive load through repetition."
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "-wd_NfZB_pQ"
+      src = "https://www.youtube.com/embed/-wd_NfZB_pQ"
+      figcaption = "Adobe Photoshop CC 3D Features"
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "tFA8piu6q_w"
+      src = "https://www.youtube.com/embed/tFA8piu6q_w"
+      figcaption = "Adobe Fuse to Photoshop CC composition workflow"
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "s1jtxwcrkp4"
+      src = "https://www.youtube.com/embed/s1jtxwcrkp4"
+      figcaption = "3D Printing with Photoshop CC"
+    # [[sections.project.videos]]
+    #   service = "youtube"
+    #   service_id = "DO5so3LxGdE?t=3m20s"
+    #   src = "https://www.youtube.com/embed/DO5so3LxGdE?t=3m20s"
+    #   figcaption = "Tips and Tricks for 3D Design — Adobe Creative Cloud"
 
 
   [[sections.project]]
@@ -194,8 +216,11 @@ media_path = "./assets"
     # [[sections.project.figures]]
     #   src = "filename.type"
     #   figcaption = "A short caption"
-
-
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "yaMjHn-RJYA"
+      src = "https://www.youtube.com/embed/yaMjHn-RJYA"
+      figcaption = "First Look at Project Felix"
 
   [[sections.project]]
     name = "adobe-awards"

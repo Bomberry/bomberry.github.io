@@ -768,7 +768,7 @@ hr {
     .navbar-nav > li > a {
       padding-top: 10px;
       padding-bottom: 10px; }
-      .navbar-nav > li > a:hover {
+      .navbar-nav > li > a:hover, .navbar-nav > li > a:active {
         color: white !important; }
   .navbar > *[class*="location-"] {
     border-right: 0;

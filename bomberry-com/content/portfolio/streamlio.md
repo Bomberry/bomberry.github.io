@@ -177,8 +177,11 @@ featured = true
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
     [[sections.case_study_content.figures]]
+      # style = "cs-dark"
       src = "guide-logo.png"
       figcaption = "Logo composition page from Streamlio branding guidlines"
+      # figdetail = "Required spacing (clear space) when using the logo. Gray boxes denote, inline or graphic composition, while the white boxes denote logo layout for stationary, ads, or partner lock-up composition."
+
     # [[sections.case_study_content.figures]]
       # src = "updated-streamlio-buiness-card-1.png"
       # figcaption = "Redesign (SOLUTION END)"
@@ -301,6 +304,9 @@ featured = true
     [[sections.case_study_content.figures]]
       src = "Streamlio-BC-ColorCallout.png"
       figcaption = "Template (Adobe Illustrator)"
+    [[sections.case_study_content.figures]]
+      src = "Streamlio-BusinessCard-Rendering-03a.png"
+      figcaption = "Rendering of business cards"
 
   [[sections.case_study_content]]
     name = "sitestart"
@@ -315,9 +321,11 @@ featured = true
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering.png"]
 
-    # [[sections.case_study_content.figures]]
-    #   src = "Streamlio-BC-Rendering.png"
-    #   figcaption = "Logo"
+    [[sections.case_study_content.figures]]
+      style = "cs-dark"
+      src = "Color-Tint-Contrast-Test-CyanGreenBlue.png"
+      figcaption = "Color-tint contrast accessability matrix"
+      figdetail = "The color-tint contrast metrix provides a user readability testing, to be sure that your web elements are accessable by all users."
     # [[sections.case_study_content.figures]]
     #   src = "Streamlio-BC-Rendering-PlexusUV.png"
     #   figcaption = "RESULT END"
