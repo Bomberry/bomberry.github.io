@@ -136,3 +136,29 @@ section
   .row
     margin: 0px
     padding: 0px
+
+
+
+// videoContainer not used currently (a video is on About page tho)
+.videoContainer
+    position: relative
+    width: 100%
+    height: 100%
+    //padding: 20px
+    border-radius: 5px
+    background-attachment: scroll
+    overflow: hidden
+.videoContainer video
+    min-width: 100%
+    min-height: 100%
+    position: relative
+    z-index: 1
+.videoContainer .overlay
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: 2
+    background: green
+    opacity: 0.5

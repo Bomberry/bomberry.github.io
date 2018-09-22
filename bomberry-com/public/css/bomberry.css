@@ -36,14 +36,17 @@ figure img {
   transition: all 0.16s ease-in-out;
   z-index: 10; }
 
-nav .fa,
-nav .fab {
-  margin-right: 0.75rem; }
-footer .fa, .contact .fa, footer .fab, .contact .fab {
-  margin-right: 0.5rem; }
-  @media screen and (max-width: 767px) {
-    footer .fa, .contact .fa, footer .fab, .contact .fab {
-      margin-right: 0; } }
+.fa, .fab {
+  width: 1rem;
+  text-align: center; }
+  nav .fa,
+  nav .fab {
+    margin-right: 0.75rem; }
+  footer .fa, .contact .fa, footer .fab, .contact .fab {
+    margin-right: 0.5rem; }
+    @media screen and (max-width: 767px) {
+      footer .fa, .contact .fa, footer .fab, .contact .fab {
+        margin-right: 0; } }
 
 .icon-pad-right {
   margin-right: 0.75rem; }
@@ -545,6 +548,30 @@ section.no-pad {
     margin: 0px;
     padding: 0px; }
 
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-attachment: scroll;
+  overflow: hidden; }
+
+.videoContainer video {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1; }
+
+.videoContainer .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: green;
+  opacity: 0.5; }
+
 .lead {
   line-height: 1.61; }
   .carousel-caption .lead {
@@ -658,30 +685,6 @@ span.caret.animated {
 .wow {
   visibility: hidden; }
 
-.videoContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background-attachment: scroll;
-  overflow: hidden; }
-
-.videoContainer video {
-  min-width: 100%;
-  min-height: 100%;
-  position: relative;
-  z-index: 1; }
-
-.videoContainer .overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-  background: green;
-  opacity: 0.5; }
-
 .box-shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
   .box-shadow-medium {
@@ -734,6 +737,13 @@ span.caret.animated {
   background: -webkit-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
   background: -moz-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
   background: radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%); }
+
+.caret {
+  transform: scale(1.25, 1.25); }
+  .caret-left {
+    margin-right: 0.25rem; }
+  .caret-right {
+    margin-left: 0.25rem; }
 
 /* CSS Document */
 html {
@@ -1038,7 +1048,7 @@ img.thumbnail + span.caption {
   padding: 0;
   padding-top: 0.75rem; }
   #area-site ul.nav.navbar-right li {
-    margin-right: 2.5rem;
+    margin-right: 1.25rem;
     text-align: center; }
     #area-site ul.nav.navbar-right li a {
       padding-top: 5px; }

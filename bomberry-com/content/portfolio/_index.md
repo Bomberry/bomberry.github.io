@@ -216,11 +216,11 @@ media_path = "./assets"
     # [[sections.project.figures]]
     #   src = "filename.type"
     #   figcaption = "A short caption"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "yaMjHn-RJYA"
-      src = "https://www.youtube.com/embed/yaMjHn-RJYA"
-      figcaption = "First Look at Project Felix"
+    # [[sections.project.videos]]
+    #   service = "youtube"
+    #   service_id = "yaMjHn-RJYA"
+    #   src = "https://www.youtube.com/embed/yaMjHn-RJYA"
+    #   figcaption = "First Look at Project Felix"
 
   [[sections.project]]
     name = "adobe-awards"

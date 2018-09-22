@@ -1,4 +1,11 @@
-
+body
+  height: 100%
+  width: 100%
+  display: fixed
+  margin: 0
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background: linear-gradient(to bottom, $color-gray-darkest 15%, $color-white 15%)
 
 .color,
 a.location
@@ -142,37 +149,6 @@ span.caret.animated
   visibility: hidden
 
 
-
-
-// videoContainer not used currently (a video is on About page tho)
-.videoContainer
-    position: relative
-    width: 100%
-    height: 100%
-    //padding: 20px
-    border-radius: 5px
-    background-attachment: scroll
-    overflow: hidden
-.videoContainer video
-    min-width: 100%
-    min-height: 100%
-    position: relative
-    z-index: 1
-.videoContainer .overlay
-    height: 100%
-    width: 100%
-    position: absolute
-    top: 0px
-    left: 0px
-    z-index: 2
-    background: green
-    opacity: 0.5
-
-
-
-
-
-
 //  Box Shadow Classes
 .box-shadow
   box-shadow: $box-shadow
@@ -189,8 +165,6 @@ span.caret.animated
   transition: $transition-box-shadow
   &:hover
     box-shadow: $box-shadow
-
-
 
 .boxshadow
   &:hover
@@ -223,6 +197,9 @@ span.caret.animated
     width: 100%
     background-color: $color-portfolio
 
+
+
+
 .shadow-ellipse::after
   display: block
   content: ''
@@ -235,3 +212,14 @@ span.caret.animated
   background: -webkit-radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
   background: -moz-radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
   background: radial-gradient(ellipse at 50% -100%,  rgba(0,0,0,0.6) 0,rgba(255,255,255,0) 70%)
+
+
+
+$caret-margin: .25rem
+$caret-scale: 1.25
+.caret
+  transform: scale($caret-scale, $caret-scale)
+  &-left
+    margin-right: $caret-margin
+  &-right
+    margin-left: $caret-margin
