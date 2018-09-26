@@ -114,7 +114,7 @@ featured = true
     #   figcaption = "3D rendering of redesigned business cards"
 
   [[sections.case_study_content]]
-    name = "challange"
+    name = "challenge"
     title = "Mapping out a path forward"
     weight = 1000
     layout = ""

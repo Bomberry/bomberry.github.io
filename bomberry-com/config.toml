@@ -338,6 +338,32 @@ time_format = "3:04 PM"
     weight = 3040
 
 
+  [[menu.casestudy_photoshop]]
+    name = "Introduction"
+    url = "#introduction"
+    weight = 1000
+  # [[menu.casestudy_photoshop]]
+  #   name = "The Problem"
+  #   url = "#problem"
+  #   weight = 2000
+  [[menu.casestudy_photoshop]]
+    name = "Challenge 1"
+    url = "#challenge1"
+    weight = 2010
+  [[menu.casestudy_photoshop]]
+    name = "Challenge 2"
+    url = "#challenge2"
+    weight = 2020
+  [[menu.casestudy_photoshop]]
+    name = "Challenge 3"
+    url = "#challenge3"
+    weight = 2030
+  [[menu.casestudy_photoshop]]
+    name = "Conclusion"
+    url = "#conclusion"
+    weight = 3000
+
+
   [[menu.casestudy_craftmaster]]
     name = "Introduction"
     url = "#introduction"

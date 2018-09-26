@@ -70,7 +70,7 @@ url_code = ""
 #     weight = 1000
 #
 #   [[casestudy_streamlio]]
-#     name = "Challange"
+#     name = "Challenge"
 #     url = "#apples"
 #     weight = 1010
 #
@@ -123,7 +123,7 @@ featured = true
 
   [[sections.case_study_content]]
     name = "problem"
-    title = "The challange"
+    title = "The challenge"
     weight = 1000
     layout = ""
     class = ""

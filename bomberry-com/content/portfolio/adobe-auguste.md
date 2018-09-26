@@ -97,8 +97,8 @@ featured = false
   media_path = "../assets"
 
   [[sections.case_study_content]]
-    name = "challange"
-    title = "The challange"
+    name = "challenge"
+    title = "The challenge"
     weight = 1000
     layout = ""
     class = ""

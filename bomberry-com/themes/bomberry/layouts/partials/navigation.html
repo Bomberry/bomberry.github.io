@@ -89,6 +89,10 @@ hidden }} */}}
       {{ range .Site.Menus.casestudy_auguste }}
       <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
       {{ end }}
+    {{ else if (eq .URL "/portfolio/adobe-photoshop/") }}
+      {{ range .Site.Menus.casestudy_photoshop }}
+      <li><a class="animated fadeInDown location-{{ $location }} {{if $currentNode.IsMenuCurrent "portfolio" . }}active{{end}}{{if $currentNode.IsMenuCurrent "portfolio" . }}resume{{end}}" href="{{ .URL }}">{{ .Pre }}{{ .Post }}{{ .Name }}</a></li>
+      {{ end }}
 
     {{ else if (eq $location "projects") }}
       {{ range .Site.Menus.projects }}
