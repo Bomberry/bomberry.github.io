@@ -172,6 +172,22 @@ time_format = "3:04 PM"
   #   weight = 100
   #   hidden = false
 
+  # [[menu.main]]
+  #   identifier = "articles"
+  #   name = "articles"
+  #   pre = "<i class='fa fa-book-reader'></i>"
+  #   url = "/articles/"
+  #   weight = 50
+  #   hidden = true
+
+  # [[menu.main]]
+  #   identifier = "freebies"
+  #   name = "freebies"
+  #   pre = "<i class='fa fa-download'></i>"
+  #   url = "/freebies/"
+  #   weight = 60
+  #   hidden = true
+
   [[menu.main]]
     identifier = "about"
     name = "about"

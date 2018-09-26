@@ -164,7 +164,7 @@ media_path = "./assets"
     caption = ""
     media = [""]
     role = "Lead Designer, UX/UI Design, 3D Content Design"
-    has_case_study = false
+    has_case_study = true
     gallery_class = "flex-gallery-small"
     # [[sections.project.figures]]
     #   style = ""
@@ -263,7 +263,7 @@ media_path = "./assets"
     client_name = "Doppler Publishing"
     project_name = "Photoshop Dimensions"
     heading = "Photoshop Dimensions"
-    text = "Executive editor and writer of Photoshop Dimensions – the ultimate guide to 3D in Adobe Photoshop — which explores and explains the extensive functionality of Photoshop’s 3D tools as articles, how-to guides, and tips, on modeling, texturing, lighting, and composition.<br /><br />As well as writing and managing the editing and production of the electronic publication, I created and released new “Freebies” assets, such as Image Based Lights (IBLs), available for everyone to download and use in most 3D applications.<br /><br /><a class='color-portfolio' href='assets/photoshopdimensions/Photoshop-Dimensions-Issue-1.pdf' download>Download Issue 1 PDF<span class='fa fa-file-pdf icon-pad-left'></span></a>"
+    text = "Executive editor and writer of Photoshop Dimensions – the ultimate guide to 3D in Adobe Photoshop — which explores and explains the extensive functionality of Photoshop’s 3D tools as articles, how-to guides, and tips, on modeling, texturing, lighting, and composition.<br /><br />As well as writing and managing the editing and production of the electronic publication, I created and released new “Freebies” assets, such as Image Based Lights (IBLs), available for everyone to download and use in most 3D applications.<br /><br /><a class='color-portfolio' href='assets/photoshopdimensions/Photoshop-Dimensions-Issue-1.pdf'>Read</a> or <a class='color-portfolio' href='assets/photoshopdimensions/Photoshop-Dimensions-Issue-1.pdf' download>Download</a> Issue 1 <span class='fa fa-file-pdf icon-pad-left'></span></a>"
     asset_path = "photoshopdimensions"
     image = ""
     caption = ""

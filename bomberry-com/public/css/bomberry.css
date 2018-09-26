@@ -11,7 +11,7 @@
   padding-top: 0;
   padding-bottom: 0; }
 
-.navbar.location-site, .navbar.location-resume, .navbar.location-portfolio, .navbar.location-kitchen, .navbar.location-1, .navbar.location-projects, .navbar.location-about, .navbar.location-contact, .navbar.location-adobe {
+.navbar.location-site, .navbar.location-resume, .navbar.location-portfolio, .navbar.location-kitchen, .navbar.location-1, .navbar.location-articles, .navbar.location-projects, .navbar.location-about, .navbar.location-contact, .navbar.location-adobe {
   border-bottom-width: 0.38rem;
   border-bottom-style: solid; }
 
@@ -581,6 +581,14 @@ section.no-pad {
   line-height: 1.62;
   padding-bottom: 2rem; }
 
+body#area-site {
+  height: 100%;
+  width: 100%;
+  display: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(to bottom, #101010 15%, white 15%); }
+
 .color-www,
 a.location-www {
   color: #9c9c9c !important; }
@@ -598,6 +606,9 @@ a.location-kitchen {
   color: yellow !important; }
 .color-1,
 a.location-1 {
+  color: #009900 !important; }
+.color-articles,
+a.location-articles {
   color: #009900 !important; }
 .color-projects,
 a.location-projects {
@@ -624,6 +635,8 @@ a.location-site {
 .background-color-kitchen {
   background-color: yellow; }
 .background-color-1 {
+  background-color: #009900; }
+.background-color-articles {
   background-color: #009900; }
 .background-color-projects {
   background-color: #3355ff; }
@@ -798,6 +811,9 @@ hr {
   .navbar.location-1 {
     border-bottom-color: #009900;
     color: #009900; }
+  .navbar.location-articles {
+    border-bottom-color: #009900;
+    color: #009900; }
   .navbar.location-projects {
     border-bottom-color: #3355ff;
     text-decoration: none;
@@ -824,6 +840,10 @@ hr {
       .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu > li:hover > a:hover,
       .navbar.navbar-inverse > .dropdown.open > ul.dropdown-menu > li:hover > a:active {
         background-color: black !important; }
+  .navbar.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #7c7c7c; }
+  .navbar.navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: white; }
 
 .dropdown-menu {
   font-size: 1rem;
@@ -849,6 +869,8 @@ hr {
     .navbar-brand.location-kitchen {
       color: yellow; }
     .navbar-brand.location-1 {
+      color: #009900; }
+    .navbar-brand.location-articles {
       color: #009900; }
     .navbar-brand.location-projects {
       color: #3355ff; }
@@ -1334,6 +1356,12 @@ footer {
 .test.location-kitchen,
 .color-kitchen {
   color: yellow; }
+.test.location-articles,
+.color-articles {
+  color: #009900; }
+.test.location-freebies,
+.color-freebies {
+  color: #3355ff; }
 .test.location-1,
 .color-1 {
   color: #009900; }
