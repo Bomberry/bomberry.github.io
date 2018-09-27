@@ -248,23 +248,22 @@ time_format = "3:04 PM"
   [[menu.portfolio]]
     name = "Streamlio"
     url = "#streamlio"
-    weight = 900
-
+    weight = 1000
 
   [[menu.portfolio]]
     name = "CraftMaster"
     url = "#craftmaster"
-    weight = 1000
+    weight = 1030
 
   [[menu.portfolio]]
     name = "Auguste"
     url = "#adobe-auguste"
-    weight = 1010
+    weight = 1020
 
   [[menu.portfolio]]
     name = "Photoshop"
     url = "#adobe-photoshop"
-    weight = 1020
+    weight = 1010
 
   # [[menu.portfolio]]
   #   name = "Felix"
@@ -291,10 +290,10 @@ time_format = "3:04 PM"
   #   url = "#materials"
   #   weight = 1070
 
-  [[menu.portfolio]]
-    name = "Able Pear"
-    url = "#able-pear"
-    weight = 1080
+  # [[menu.portfolio]]
+  #   name = "Able Pear"
+  #   url = "#able-pear"
+  #   weight = 1080
 
   # [[menu.portfolio]]
   #   name = "Artwork"

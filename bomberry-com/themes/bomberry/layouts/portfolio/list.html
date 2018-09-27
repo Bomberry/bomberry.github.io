@@ -12,7 +12,7 @@
     {{/* {{ $projectName := .Params.project_name }} */}}
     {{ $mediaPath := .Params.sections.media_path }}
     {{ $permalink := .Permalink }}
-    {{/* {{ range sort .Params.sections.project "weight" }} */}}
+    {{/* {{ range sort .Params.sections.project "weight" "desc" }} */}}
     {{ range .Params.sections.project }}
       {{ $asset_folder := .asset_path }}
       <section class="animated fadeIn wow">
@@ -68,7 +68,7 @@
               {{ range .videos }}
               <div class="col-xs-12 breath-top">
                 <div class="embed-responsive embed-responsive-16by9">
-                  {{ if (eq .service "youtube") }}
+                  {{ if or (eq .service "youtube") (eq .service "YouTube") }}
                   <iframe class="embed-responsive-item" src="{{ .src }}" frameborder="0" allowfullscreen></iframe>
                   {{ else if (eq .service "video") }}
                   <video class="embed-responsive-item" autoplay loop muted>

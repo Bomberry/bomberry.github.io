@@ -173,12 +173,6 @@ featured = false
     # [[sections.case_study_content.figures]]
     #   src = "guide-logo.png"
     #   figcaption = "Logo composition page from Streamlio branding guidlines"
-    # [[sections.case_study_content.figures]]
-      # src = "updated-streamlio-buiness-card-1.png"
-      # figcaption = "Redesign (SOLUTION END)"
-    # [[sections.case_study_content.figures]]
-      # src = "Streamlio-BC-ColorCallout.png"
-      # figcaption = "Business Card Template (Adobe Illustrator) (SOLUTION END)"
 
   [[sections.case_study_content]]
     name = "response1"
@@ -193,12 +187,15 @@ featured = false
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    # [[sections.case_study_content.figures]]
-    #   src = "1-Initial-Application-State-with-additional-Elements.png"
-    #   figcaption = "File Manager"
-    # [[sections.case_study_content.figures]]
-    #   src = "3-Main-Controllers.png"
-    #   figcaption = "Main layout and controllers"
+    [[sections.case_study_content.figures]]
+      src = "3DTools-ExcerptFromPhotoshop Help.png"
+      figcaption = "3D Tools from Photoshop help"
+    [[sections.case_study_content.figures]]
+      src = "repouse-dialog.png"
+      figcaption = "Repoussé filter dialog"
+    [[sections.case_study_content.figures]]
+      src = "Toolbar-Teardown.png"
+      figcaption = "Photoshop Toolbar breakdown"
 
   [[sections.case_study_content]]
     name = "response1b"
@@ -207,15 +204,21 @@ featured = false
     layout = ""
     style = "cs-dark"
     heading = ""
-    text = "Simplifying the number of tools and to reduce complexity for the user was an immediate goal. By merging tools with the same functions together, and overloading tools already in the Toolbar, I reduced the number of tools by more than 40%. I was able to refactor the modal dialog UI into a single, multi-pane panel. This enabled user to work with their 3D objects and assets in an all new, yet familiar way, delivering on ease of use and user adoption.<br /><br /><ul class='lead'><li>Simplify number of Tools and Tool Options by 40%</li><li>Real-time interaction and update</li><li>Ground work for Properties Panel</li></ul>"
+    text = "Simplifying the number of tools and to reduce complexity for the user was an immediate goal. By merging tools with the same functions together, and overloading tools already in the Toolbar, I reduced the number of tools by more than 40%. I was able to refactor the modal dialog UI into a single, multi-pane panel. This enabled user to work with their 3D objects and assets in an all new, yet familiar way, delivering on ease of use and user adoption.<br /><br /><ul class='lead'><li>Simplify number of Tools and Tool Options by 40%</li><li>Real-time interaction and update</li><li>groundwork for Properties Panel</li></ul>"
     asset_path = "photoshop"
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
     # [[sections.case_study_content.figures]]
-    #   src = "1-Initial-Application-State-with-additional-Elements.png"
-    #   figcaption = "File Manager"
+    #   src = "3DScenePropertiesDeconstruction1.png"
+    #   figcaption = "Properties Panel Decoupling "
+    [[sections.case_study_content.figures]]
+      src = "3DPropertiesPanelComponents01a.png"
+      figcaption = "3D Properties and property components"
+    [[sections.case_study_content.figures]]
+      src = "painting-eye.png"
+      figcaption = "Redesigned Photoshop 3D experience"
 
   [[sections.case_study_content]]
     name = "challenge2"
@@ -278,9 +281,9 @@ featured = false
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
 
-    # [[sections.case_study_content.figures]]
-    #   src = "guide-logo.png"
-    #   figcaption = "Logo composition page from Streamlio branding guidlines"
+    [[sections.case_study_content.figures]]
+      src = "3D-Printing-Overview.png"
+      figcaption = "3D printing user workflow"
     # [[sections.case_study_content.figures]]
       # src = "updated-streamlio-buiness-card-1.png"
       # figcaption = "Redesign (SOLUTION END)"
@@ -300,18 +303,23 @@ featured = false
     image = "Streamlio-BC-Rendering-PlexusUV.png"
     caption = "Rendered comp"
     media = ["Streamlio-BC-Rendering-PlexusUV.png"]
-    # [[sections.case_study_content.figures]]
-    #   src = "1-Initial-Application-State-with-additional-Elements.png"
-    #   figcaption = "File Manager"
+    [[sections.case_study_content.figures]]
+      src = "Printing-3DWorkspace.png"
+      figcaption = "3D Printing Workspace"
     # # [[sections.case_study_content.figures]]
     # #   src = "2-Main-Interaction-Areas.png"
     # #   figcaption = "Interaction areas"
-    # [[sections.case_study_content.figures]]
-    #   src = "3-Main-Controllers.png"
-    #   figcaption = "Main layout and controllers"
+    [[sections.case_study_content.figures]]
+      src = "Printing-PrintDialog.png"
+      figcaption = "3D Print Dialog"
     # # [[sections.case_study_content.figures]]
     # #   src = "4-Brushes.png"
     # #   figcaption = "Brush tool"
+    [[sections.case_study_content.videos]]
+      service = "YouTube"
+      service_id = "s1jtxwcrkp4"
+      src = "https://www.youtube.com/embed/s1jtxwcrkp4"
+      figcaption = "3D Printing with Photoshop CC"
 
 
   [[sections.case_study_content]]

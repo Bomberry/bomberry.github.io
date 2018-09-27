@@ -93,7 +93,7 @@
               {{ range .videos }}
               <div class="col-xs-12 breath-top">
                 <div class="embed-responsive embed-responsive-16by9">
-                  {{ if eq .service "YouTube" }}
+                  {{ if or (eq .service "youtube") (eq .service "YouTube") }}
                   <iframe class="embed-responsive-item" src="{{.src }}" frameborder="0" allowfullscreen></iframe>
                   {{ else }}
                   <video autoplay>

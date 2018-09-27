@@ -70,9 +70,84 @@ media_path = "./assets"
 
 
   [[sections.project]]
+    name = "adobe-photoshop"
+    title = "Adobe Photoshop"
+    weight = 2000
+    layout = ""
+    class = ""
+    style = "cs-light"
+    section = ""
+    client_name = "Adobe"
+    project_name = "Adobe Photoshop"
+    heading = "Adobe Photoshop (XD Lead for 3D)"
+    text = "For five years I worked on Adobe Photoshop’s 3D toolset, moving it from the modal Repoussé dialog in Photoshop CS3, into an intergraded experience and <em>first-class</em> citizen of Adobe Photoshop CC.<br /><br />During the time I worked with research, engineering, and product management to develop several of the key 3D tools, interaction models, filters, and features available in Photoshop, including, 3D objects, features, and workflows; on-canvas controls, interaction and contextual menu systems; redesigned Lighting Effects; and introduced the Properties panel."
+    asset_path = "photoshop"
+    image = ""
+    caption = ""
+    media = [""]
+    role = "Lead Designer, UX/UI Design, 3D Content Design"
+    has_case_study = true
+    gallery_class = "flex-gallery-small"
+    # [[sections.project.figures]]
+    #   style = ""
+    #   src = "CraftMaster-Branding-AppIcons@1x.png"
+    #   figcaption = "Sample of icons for CraftMaster"
+    #   figdetail = "More than 50 icons were designed for the application. The icons use the hexagon silhouette of the CraftMaster logo and provide insight as to the function the button represents. A visual dictionary of application assets and actions was developed to reduced cognitive load through repetition."
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "-wd_NfZB_pQ"
+      src = "https://www.youtube.com/embed/-wd_NfZB_pQ"
+      figcaption = "Adobe Photoshop CC 3D Features"
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "tFA8piu6q_w"
+      src = "https://www.youtube.com/embed/tFA8piu6q_w"
+      figcaption = "Adobe Fuse to Photoshop CC composition workflow"
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "s1jtxwcrkp4"
+      src = "https://www.youtube.com/embed/s1jtxwcrkp4"
+      figcaption = "3D Printing with Photoshop CC"
+    # [[sections.project.videos]]
+    #   service = "youtube"
+    #   service_id = "DO5so3LxGdE?t=3m20s"
+    #   src = "https://www.youtube.com/embed/DO5so3LxGdE?t=3m20s"
+    #   figcaption = "Tips and Tricks for 3D Design — Adobe Creative Cloud"
+
+
+  [[sections.project]]
+    name = "adobe-auguste"
+    title = "Project Auguste"
+    weight = 2000
+    layout = ""
+    class = ""
+    style = "cs-dark"
+    section = ""
+    client_name = "Adobe"
+    project_name = "Project Auguste"
+    heading = "Project Auguste for Adobe"
+    text = "Project Auguste, <strong>a touch-first interactive sculpting mobile app</strong>, is part of Adobe's Project Felix initiative. My task was to take a technology and wrap a product design around it that would comply with and extend Adobe's application aesthetic. It took three months and a demo was presented during Adobe MAX 2016.<br /><br />Project Auguste's engine was designed by Adobe's Sebastian Marketsmueller and allows the user to <em>sculpt</em> in a virtual space, complete with various brushes, filters, and symmetrical drawing effects. I introduced an interaction system that would allow for users to interact with the <em>camera</em> object while at the same time editing the object's surface using a combination of multi-touch gestures and optionally using a stylus."
+    asset_path = ""
+    image = ""
+    caption = ""
+    media = [""]
+    role = "Product Design, Artwork, Development"
+    has_case_study = true
+    gallery_class = "flex-gallery-small"
+    # [[sections.project.figures]]
+    #   src = "filename.type"
+    #   figcaption = "A short caption"
+    [[sections.project.videos]]
+      service = "youtube"
+      service_id = "arpOCEoxvwg"
+      src = "https://www.youtube.com/embed/arpOCEoxvwg"
+      figcaption = "Adobe's Daichi Ito using a prerelease of Project Auguste on the Surface Pro."
+
+
+  [[sections.project]]
     name = "craftmaster"
     title = "CraftMaster Software"
-    weight = 1000
+    weight = 2000
     layout = ""
     class = ""
     style = "cs-light"
@@ -118,85 +193,11 @@ media_path = "./assets"
     #   figcaption = "Loading animation"
 
 
-  [[sections.project]]
-    name = "adobe-auguste"
-    title = "Project Auguste"
-    weight = 1000
-    layout = ""
-    class = ""
-    style = "cs-dark"
-    section = ""
-    client_name = "Adobe"
-    project_name = "Project Auguste"
-    heading = "Project Auguste for Adobe"
-    text = "Project Auguste, <strong>a touch-first interactive sculpting mobile app</strong>, is part of Adobe's Project Felix initiative. My task was to take a technology and wrap a product design around it that would comply with and extend Adobe's application aesthetic. It took three months and a demo was presented during Adobe MAX 2016.<br /><br />Project Auguste's engine was designed by Adobe's Sebastian Marketsmueller and allows the user to <em>sculpt</em> in a virtual space, complete with various brushes, filters, and symmetrical drawing effects. I introduced an interaction system that would allow for users to interact with the <em>camera</em> object while at the same time editing the object's surface using a combination of multi-touch gestures and optionally using a stylus."
-    asset_path = ""
-    image = ""
-    caption = ""
-    media = [""]
-    role = "Product Design, Artwork, Development"
-    has_case_study = true
-    gallery_class = "flex-gallery-small"
-    # [[sections.project.figures]]
-    #   src = "filename.type"
-    #   figcaption = "A short caption"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "arpOCEoxvwg"
-      src = "https://www.youtube.com/embed/arpOCEoxvwg"
-      figcaption = "Adobe's Daichi Ito using a prerelease of Project Auguste on the Surface Pro."
-
-
-  [[sections.project]]
-    name = "adobe-photoshop"
-    title = "Adobe Photoshop"
-    weight = 1000
-    layout = ""
-    class = ""
-    style = "cs-light"
-    section = ""
-    client_name = "Adobe"
-    project_name = "Adobe Photoshop"
-    heading = "Adobe Photoshop (XD Lead for 3D)"
-    text = "For five years I worked on Adobe Photoshop’s 3D toolset, moving it from the modal Repoussé dialog in Photoshop CS3, into an intergraded experience and <em>first-class</em> citizen of Adobe Photoshop CC.<br /><br />During the time I worked with research, engineering, and product management to develop several of the key 3D tools, interaction models, filters, and features available in Photoshop, including, 3D objects, features, and workflows; on-canvas controls, interaction and contextual menu systems; redesigned Lighting Effects; and introduced the Properties panel."
-    asset_path = "photoshop"
-    image = ""
-    caption = ""
-    media = [""]
-    role = "Lead Designer, UX/UI Design, 3D Content Design"
-    has_case_study = true
-    gallery_class = "flex-gallery-small"
-    # [[sections.project.figures]]
-    #   style = ""
-    #   src = "CraftMaster-Branding-AppIcons@1x.png"
-    #   figcaption = "Sample of icons for CraftMaster"
-    #   figdetail = "More than 50 icons were designed for the application. The icons use the hexagon silhouette of the CraftMaster logo and provide insight as to the function the button represents. A visual dictionary of application assets and actions was developed to reduced cognitive load through repetition."
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "-wd_NfZB_pQ"
-      src = "https://www.youtube.com/embed/-wd_NfZB_pQ"
-      figcaption = "Adobe Photoshop CC 3D Features"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "tFA8piu6q_w"
-      src = "https://www.youtube.com/embed/tFA8piu6q_w"
-      figcaption = "Adobe Fuse to Photoshop CC composition workflow"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "s1jtxwcrkp4"
-      src = "https://www.youtube.com/embed/s1jtxwcrkp4"
-      figcaption = "3D Printing with Photoshop CC"
-    # [[sections.project.videos]]
-    #   service = "youtube"
-    #   service_id = "DO5so3LxGdE?t=3m20s"
-    #   src = "https://www.youtube.com/embed/DO5so3LxGdE?t=3m20s"
-    #   figcaption = "Tips and Tricks for 3D Design — Adobe Creative Cloud"
-
 
   [[sections.project]]
     name = "adobe-felix"
     title = "Project Felix (Adobe Dimension)"
-    weight = 1000
+    weight = 2000
     layout = ""
     class = ""
     style = "cs-dark cs-felix"
@@ -225,7 +226,7 @@ media_path = "./assets"
   [[sections.project]]
     name = "adobe-awards"
     title = "Adobe Employee Service Award"
-    weight = 1000
+    weight = 3000
     layout = ""
     class = ""
     style = "cs-light"
@@ -255,7 +256,7 @@ media_path = "./assets"
   [[sections.project]]
     name = "photoshopdimensions"
     title = "Doppler Publishing"
-    weight = 1000
+    weight = 3000
     layout = ""
     class = ""
     style = "cs-dark"
@@ -285,7 +286,7 @@ media_path = "./assets"
   [[sections.project]]
     name = "photoshop-com"
     title = "Photoshop.com"
-    weight = 1000
+    weight = 3000
     layout = ""
     class = ""
     style = "cs-light"
@@ -318,7 +319,7 @@ media_path = "./assets"
   [[sections.project]]
     name = "photoshopcontent"
     title = "Photoshop 3D Materials"
-    weight = 1000
+    weight = 4000
     layout = ""
     class = ""
     style = "cs-dark"
@@ -342,7 +343,7 @@ media_path = "./assets"
   [[sections.project]]
     name = "able-pear"
     title = "Able Pear Software"
-    weight = 1000
+    weight = 5000
     layout = ""
     class = ""
     style = ""
