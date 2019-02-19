@@ -11,17 +11,17 @@ body
 .color,
 a.location
   &-www
-    color: $color-gray-light !important
+    color: $color-gray-lighter !important
   &-home
-    color: $color-gray-light !important
+    color: $color-gray-lighter !important
   &-resume
     color: $color-resume !important
   &-portfolio
     color: $color-portfolio !important
   &-kitchen
     color: $color-kitchen !important
-  &-1
-    color: $color-1 !important
+  &-casestudies
+    color: $color-casestudies !important
   &-articles
     color: $color-articles !important
   &-projects
@@ -35,18 +35,17 @@ a.location
   &-site
     color: $color-gray !important
 
-
 .background-color
   &-www
-    background-color: $color-gray-light
+    background-color: $color-gray-lighter
   &-resume
     background-color: $color-resume
   &-portfolio
     background-color: $color-portfolio
   &-kitchen
     background-color: $color-kitchen
-  &-1
-    background-color: $color-1
+  &-casestudies
+    background-color: $color-casestudies
   &-articles
     background-color: $color-articles
   &-projects
@@ -92,7 +91,16 @@ a.location
   background-color: rgba($color-black, .6)
 .background-shade-light
   background-color: rgba($color-white, .6)
+.background-shade-heavy
+  background-color: rgba($color-black, .86)
+.background-shade-heavy-light
+  background-color: rgba($color-white, .86)
 
+
+
+
+.indicator-continue
+  z-index: 5
 
 
 
@@ -228,3 +236,5 @@ $caret-scale: 1.25
     margin-right: $caret-margin
   &-right
     margin-left: $caret-margin
+
+@include setLighterColorForSelector(caret)

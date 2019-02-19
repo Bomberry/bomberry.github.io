@@ -1,6 +1,6 @@
 
+$f-padding: 16vh
 
-// $feature-padding: 62px
 .featured
   // $feature-padding: 3rem
   min-height: 100%
@@ -11,16 +11,38 @@
     display: flex
     min-height: 62vh
     margin: 0
-    flex: 1 1 calc(50% - 60px)
+    flex: 1 1 100%
+    // flex: 1 1 calc(100% - $f-padding)
     flex-direction: row
     justify-content: center
-    padding: 30px
+    // padding: $f-padding / 2
+    padding: 0
+    box-shadow: $box-shadow-large
     transition: $transition
     @media screen and (max-width: 767px)
-      flex-basis: 1 1 calc(100% - 60px)
+      flex-basis: 1 1 100%
       flex-direction: column
       min-height: 38vh
       margin: 0
+    &.feature-left
+      justify-content: flex-start
+    &.feature-right
+      justify-content: flex-end
+    &.feature-medium
+      flex-basis: 50%
+    &.feature-large
+      flex-basis: 100%
+    &.feature-condenced
+      > div
+        @media screen and (min-width: 767px)
+          width: 50%
+    &.feature-text-left
+      > div
+        text-align: left
+    &.feature-text-right
+      > div
+        text-align: right
+
     &:hover
       // background-color: $color-gray-darkest
       color: $color-white
@@ -29,7 +51,7 @@
       > div
         @extend .background-shade
         transition: $transition
-        transform: $transform-grow-small
+        //transform: $transform-grow-small
         box-shadow: $box-shadow-large
         .btn
           box-shadow: $box-shadow
@@ -38,7 +60,7 @@
             transform: $transform-grow
             box-shadow: $box-shadow-large
     > div
-      @extend .background-shade-light
+      // @extend .background-shade-light
       transition: $transition
       transform: $transform-grow-reset
       box-shadow: $box-shadow
@@ -57,29 +79,35 @@
         .fa:last-of-type,
         .fab:last-of-type
           margin-left: .75rem
+
+
     &.feature
       &-1
         // @include setBgImageAndHover("streamlio", "Streamlio-BC-Rendering-PlexusUV.png")
         // @include setBgColorAndHover($color-resume)
         // @include setBgColorAndHover($color-resume)
         // &::before
-        @include setBgImageColorAndHover
-        @include setBgImage("streamlio", "Streamlio-BC-Rendering.png")
+        // @include setBgImageColorAndHover
+        @include setBgImage("streamlio", "Streamlio-Site-Device-Comps.png")
+        z-index: 4
         & .btn
           @include setBtnColorAndHover($color-portfolio)
       &-2
-        @include setBgImageColorAndHover
-        @include setBgImage("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
+        // @include setBgImageColorAndHover
+        @include setBgImage("craftmaster", "CraftMasterFeatureUIMap.png")
+        z-index: 3
         & .btn
           @include setBtnColorAndHover($color-portfolio)
       &-3
         @include setBgImageColorAndHover
         @include setBgImage("default", "placeholderA.png")
+        z-index: 2
         & .btn
           @include setBtnColorAndHover($color-portfolio)
       &-4
         @include setBgImageColorAndHover
         @include setBgImage("default", "placeholderA.png")
+        z-index: 1
         & .btn
           @include setBtnColorAndHover($color-portfolio)
   >.feature.feature-invert
@@ -89,19 +117,19 @@
       transition: $transition
       color: $color-black
       > div
-        @extend .background-shade-light
+        @extend .background-shade-heavy-light
     > div
       @extend .background-shade
       transition: $transition
     &.feature
       &-1
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("streamlio", "Streamlio-BC-Rendering.png")
+        // @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("streamlio", "Streamlio-Site-Device-Comps.png")
         & .btn
           @include setBtnColorAndHover($color-portfolio)
       &-2
-        @include setBgImageColorAndHoverInvert
-        @include setBgImageInvert("craftmaster", "CraftMaster-Branding-AppIcons@1x.png")
+        // @include setBgImageColorAndHoverInvert
+        @include setBgImageInvert("craftmaster", "CraftMasterFeatureUIMap.png")
         & .btn
           @include setBtnColorAndHover($color-portfolio)
       &-3

@@ -11,6 +11,7 @@ start_date = "2017"
 end_date = "Present"
 keywords = []
 job_summary = "I worked with the VP of Marketing to develop corporate branding and designed the web site using HTML, SASS/CSS, JS, and HUGO. In additional, I created logos, media templates (.PSD, .AI, Keynote), color libraries, and usage/style guides."
+job_summary_list = ["Created branding guidelines, redesigned logo and generated assets, created templates, and produced a style manual","Designed and developed the corporate website using HTML, SASS/CSS, JavaScript, and HuGo"]
 has_job_details = false
 has_portfolio_link = true
 portfolio_link = "streamlio"

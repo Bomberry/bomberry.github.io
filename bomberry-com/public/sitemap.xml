@@ -213,7 +213,7 @@
   </url>
   
   <url>
-    <loc>/services/a/v-production/</loc>
+    <loc>/services/a-v-production/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -227,14 +227,14 @@
   </url>
   
   <url>
-    <loc>/services/branding--identity/</loc>
+    <loc>/services/branding-guidelines/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/services/branding-guidelines/</loc>
+    <loc>/services/branding-identity/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>
@@ -476,7 +476,7 @@
   </url>
   
   <url>
-    <loc>/services/ux--ui-design/</loc>
+    <loc>/services/ux-ui-design/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0</priority>

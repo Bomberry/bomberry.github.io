@@ -22,19 +22,10 @@
     
     <item>
       <title>A/V Production</title>
-      <link>/services/a/v-production/</link>
+      <link>/services/a-v-production/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/a/v-production/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Branding  Identity</title>
-      <link>/services/branding--identity/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/services/branding--identity/</guid>
+      <guid>/services/a-v-production/</guid>
       <description></description>
     </item>
     
@@ -44,6 +35,15 @@
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/services/branding-guidelines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Branding Identity</title>
+      <link>/services/branding-identity/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/services/branding-identity/</guid>
       <description></description>
     </item>
     
@@ -102,11 +102,11 @@
     </item>
     
     <item>
-      <title>Ux  Ui Design</title>
-      <link>/services/ux--ui-design/</link>
+      <title>Ux Ui Design</title>
+      <link>/services/ux-ui-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/ux--ui-design/</guid>
+      <guid>/services/ux-ui-design/</guid>
       <description></description>
     </item>
     

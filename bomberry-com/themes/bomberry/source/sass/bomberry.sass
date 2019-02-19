@@ -358,7 +358,7 @@ svg
     width: auto
     > .item
       min-height: 35vh
-      height: auto
+      height: 62vh
       width: 100%
       max-height: 70vh
       > .img-responsive
@@ -475,10 +475,37 @@ svg
       margin-left: 0
     //&.right
       margin-right: 0
-// .carousel-indicators
-  background-color: transparent
-  .active
+  //.carousel-indicators
     background-color: transparent
+    .active
+      background-color: transparent
+
+  .carousel-fade
+    .carousel-inner
+      .item
+        opacity: 0
+        transition-property: opacity
+      .active
+        opacity: 1
+        &.left, &.right
+          left: 0
+          opacity: 0
+          z-index: 1
+      .next.left, .prev.right
+        opacity: 1
+    .carousel-control
+      z-index: 2
+
+@media all and (transform-3d), (-webkit-transform-3d)
+  .carousel-fade .carousel-inner > .item
+    &.next, &.active.right, &.prev, &.active.left
+      opacity: 0
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
+    &.next.left, &.prev.right, &.active
+      opacity: 1
+      -webkit-transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 0, 0)
 
 @media (max-width: 598px)
   .carousel-inner
@@ -559,7 +586,8 @@ img.thumbnail
       background-image: url('/media/images/Headshot-DarkGray-Masked.png')
       // background-size: 50%
       background-repeat: no-repeat
-      background-position: 110% 70%
+      background-position: 100% 100%
+      // background-position: 110% 70%
       background-attachment: local
       //@media(xs)
         background-position: 120% 0%
@@ -839,7 +867,8 @@ a.thumbnail
 
 
 .hello-bgc
-  background-color: $color-light-blue
+  // background-color: $color-cyan
+  background-color: $color-black
 
 
 

@@ -71,7 +71,7 @@
     color: $color-orange
   @else if $location-color == kitchen
     color: $color-yellow
-  @else if $location-color == 1
+  @else if $location-color == casestudies
     color: $color-green
   @else if $location-color == projects
     color: $color-blue
@@ -89,6 +89,12 @@
     &-#{$name}
       color: $value
 
+@mixin setLighterColorForSelector($selector, $amount: 24)
+  @each $name, $value in $color-map-B
+    .location-#{$name}
+      .#{$selector}
+          color: lighten($value, $amount)
+
 @mixin setBgColor($location-color)
   @if $location-color == site
     background-color: $color-black
@@ -98,7 +104,7 @@
     background-color: $color-orange
   @else if $location-color == kitchen
     background-color: $color-yellow
-  @else if $location-color == 1
+  @else if $location-color == casestudies
     background-color: $color-green
   @else if $location-color == projects
     background-color: $color-blue
@@ -120,7 +126,7 @@
     border-bottom-color: $color-orange
   @else if $location-color == kitchen
     border-bottom-color: $color-yellow
-  @else if $location-color == 1
+  @else if $location-color == casestudies
     border-bottom-color: $color-green
   @else if $location-color == projects
     border-bottom-color: $color-blue

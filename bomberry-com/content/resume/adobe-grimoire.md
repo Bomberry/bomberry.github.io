@@ -10,7 +10,8 @@ job_duration = "2017"
 start_date = "2017"
 end_date = "2017"
 keywords = []
-job_summary = "Working with team of two directors and one artist, I created an animated interactive concept for use in Unity. I designed the 3D model, PBR texturing, rigging, animations, renderings, and generated the final asset."
+job_summary = "Working with team of two directors and one artist, I created an animated interactive concept for use in Unity."
+job_summary_list = ["Produced a complex 3d model, including PBR texturing, rigging, animations, renderings, and final asset"]
 has_job_details = false
 has_case_study = false
 +++

@@ -11,6 +11,7 @@ start_date = "2016"
 end_date = "2016"
 keywords = []
 job_summary = "This project had an aggressive four month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals & features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface."
+job_summary_list = ["Interviewed participants to defined goals and targets", "Worked with engineering to define features and aligned them with product goals", "Created user workflows, wireframes, mechanicals, UX specifications, and final UI assets"]
 has_job_details = false
 has_portfolio_link = true
 portfolio_link = "adobe-auguste"

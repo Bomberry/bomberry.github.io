@@ -98,16 +98,16 @@ media_path = "./assets"
       service_id = "-wd_NfZB_pQ"
       src = "https://www.youtube.com/embed/-wd_NfZB_pQ"
       figcaption = "Adobe Photoshop CC 3D Features"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "tFA8piu6q_w"
-      src = "https://www.youtube.com/embed/tFA8piu6q_w"
-      figcaption = "Adobe Fuse to Photoshop CC composition workflow"
-    [[sections.project.videos]]
-      service = "youtube"
-      service_id = "s1jtxwcrkp4"
-      src = "https://www.youtube.com/embed/s1jtxwcrkp4"
-      figcaption = "3D Printing with Photoshop CC"
+    # [[sections.project.videos]]
+    #   service = "youtube"
+    #   service_id = "tFA8piu6q_w"
+    #   src = "https://www.youtube.com/embed/tFA8piu6q_w"
+    #   figcaption = "Adobe Fuse to Photoshop CC composition workflow"
+    # [[sections.project.videos]]
+    #   service = "youtube"
+    #   service_id = "s1jtxwcrkp4"
+    #   src = "https://www.youtube.com/embed/s1jtxwcrkp4"
+    #   figcaption = "3D Printing with Photoshop CC"
     # [[sections.project.videos]]
     #   service = "youtube"
     #   service_id = "DO5so3LxGdE?t=3m20s"

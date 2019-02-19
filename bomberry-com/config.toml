@@ -157,10 +157,10 @@ time_format = "3:04 PM"
 #    hidden = false
 
   # [[menu.main]]
-  #   identifier = "1"
-  #   name = "1"
+  #   identifier = "casestudies"
+  #   name = "case studies"
   #   pre = "<i class='fa fa-heart'></i>"
-  #   url = "/1/"
+  #   url = "/casestudies/"
   #   weight = 80
   #   hidden = true
 

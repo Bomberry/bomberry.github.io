@@ -11,6 +11,7 @@ start_date = "2015"
 end_date = "2016"
 keywords = []
 job_summary = "Working from the initial concept of Project Felix to a MAX beta release, focusing on user interaction, experience, and workflows, I worked with design, management, and engineering teams providing deep knowledge and unique perspective on 3D and UX/IxID to help drive the best possible experience for Project Felix (Adobe Dimension)."
+job_summary_list = ["Helped drive product design goals from initial concept the MAX beta release", "Created presentations on user interaction systems, experience, and workflows"]
 has_job_details = false
 has_portfolio_link = true
 portfolio_link = "adobe-felix"

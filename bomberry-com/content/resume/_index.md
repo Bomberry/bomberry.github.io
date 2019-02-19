@@ -28,8 +28,8 @@ resume_file = "Kevin-Bomberry-Product-Designer-Resume.pdf"
     <hr class="hr-space">
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-left">
-        <h3 class="text-tall">I am a product designer and entrepreneur with 20+ years of success developing products, user experiences, and content for amazing organizations: Adobe, IDEO, Microsoft, and the MIT/Stanford Venture Lab (VLAB).</h3>
-        <p class="lead">At Adobe, I spent 7 years working closely with managers, VPs, engineers, and designers helping to shape their 3D initiatives including Photoshop, Dimension, and 3D Printing. My focus is on intuitive and  contextual Interaction design for 3D, AR/VR, touch and mobile user experiences.</p>
+        <h3 class="text-tall">I am a product designer and design strategist with 20 years of success producing products, user experiences, and content for amazing organizations. My focus is on user-centric solutions to contextual interaction systems, 3D / AR / VR tools, immersive UI, and touch-first mobile user experiences.</h3>
+        <!-- <p class="lead">At Adobe, I spent 7 years working closely with managers, VPs, engineers, and designers helping to shape their 3D initiatives including Photoshop, Dimension, and 3D Printing. My focus is on intuitive and  contextual Interaction design for 3D, AR/VR, touch and mobile user experiences.</p> -->
       </div>
     </div>
   </div>

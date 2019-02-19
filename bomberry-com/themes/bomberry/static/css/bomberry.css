@@ -185,9 +185,9 @@ figure img {
     padding: 1.5rem 3rem;
     align-items: center;
     justify-content: center; }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       .clients-logos .client-logo {
-        flex: 1 2 clac(50%);
+        flex-basis: 50%;
         padding: 1.5rem; } }
     .clients-logos .client-logo img {
       max-width: 100%;
@@ -202,24 +202,39 @@ figure img {
     display: flex;
     min-height: 62vh;
     margin: 0;
-    flex: 1 1 calc(50% - 60px);
+    flex: 1 1 100%;
     flex-direction: row;
     justify-content: center;
-    padding: 30px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.16s ease-in-out; }
     @media screen and (max-width: 767px) {
       .featured > .feature {
-        flex-basis: 1 1 calc(100% - 60px);
+        flex-basis: 1 1 100%;
         flex-direction: column;
         min-height: 38vh;
         margin: 0; } }
+    .featured > .feature.feature-left {
+      justify-content: flex-start; }
+    .featured > .feature.feature-right {
+      justify-content: flex-end; }
+    .featured > .feature.feature-medium {
+      flex-basis: 50%; }
+    .featured > .feature.feature-large {
+      flex-basis: 100%; }
+    @media screen and (min-width: 767px) {
+      .featured > .feature.feature-condenced > div {
+        width: 50%; } }
+    .featured > .feature.feature-text-left > div {
+      text-align: left; }
+    .featured > .feature.feature-text-right > div {
+      text-align: right; }
     .featured > .feature:hover {
       color: white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       transition: all 0.16s ease-in-out; }
       .featured > .feature:hover > div {
         transition: all 0.16s ease-in-out;
-        transform: scale(1.05);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
         .featured > .feature:hover > div .btn {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -245,14 +260,12 @@ figure img {
         .featured > .feature > div a.btn .fab:last-of-type {
           margin-left: 0.75rem; }
     .featured > .feature.feature-1 {
-      background-color: rgba(236, 236, 236, 0.62);
-      background-image: url("/portfolio/assets/streamlio/Streamlio-BC-Rendering.png");
+      background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-Comps.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
-      .featured > .feature.feature-1:hover {
-        background-color: rgba(16, 16, 16, 0.38); }
+      background-blend-mode: screen, multiply;
+      z-index: 4; }
       .featured > .feature.feature-1:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-1 .btn {
@@ -263,14 +276,12 @@ figure img {
           background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-2 {
-      background-color: rgba(236, 236, 236, 0.62);
-      background-image: url("/portfolio/assets/craftmaster/CraftMaster-Branding-AppIcons@1x.png");
+      background-image: url("/portfolio/assets/craftmaster/CraftMasterFeatureUIMap.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
-      .featured > .feature.feature-2:hover {
-        background-color: rgba(16, 16, 16, 0.38); }
+      background-blend-mode: screen, multiply;
+      z-index: 3; }
       .featured > .feature.feature-2:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-2 .btn {
@@ -286,7 +297,8 @@ figure img {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 2; }
       .featured > .feature.feature-3:hover {
         background-color: rgba(16, 16, 16, 0.38); }
       .featured > .feature.feature-3:hover {
@@ -304,7 +316,8 @@ figure img {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 1; }
       .featured > .feature.feature-4:hover {
         background-color: rgba(16, 16, 16, 0.38); }
       .featured > .feature.feature-4:hover {
@@ -325,14 +338,11 @@ figure img {
     .featured > .feature.feature-invert > div {
       transition: all 0.16s ease-in-out; }
     .featured > .feature.feature-invert.feature-1 {
-      background-color: rgba(16, 16, 16, 0.38);
-      background-image: url("/portfolio/assets/streamlio/Streamlio-BC-Rendering.png");
+      background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-Comps.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       background-blend-mode: multiply, screen; }
-      .featured > .feature.feature-invert.feature-1:hover {
-        background-color: rgba(236, 236, 236, 0.62); }
       .featured > .feature.feature-invert.feature-1:hover {
         background-blend-mode: screen, multiply; }
       .featured > .feature.feature-invert.feature-1 .btn {
@@ -343,14 +353,11 @@ figure img {
           background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-invert.feature-2 {
-      background-color: rgba(16, 16, 16, 0.38);
-      background-image: url("/portfolio/assets/craftmaster/CraftMaster-Branding-AppIcons@1x.png");
+      background-image: url("/portfolio/assets/craftmaster/CraftMasterFeatureUIMap.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       background-blend-mode: multiply, screen; }
-      .featured > .feature.feature-invert.feature-2:hover {
-        background-color: rgba(236, 236, 236, 0.62); }
       .featured > .feature.feature-invert.feature-2:hover {
         background-blend-mode: screen, multiply; }
       .featured > .feature.feature-invert.feature-2 .btn {
@@ -591,10 +598,10 @@ body#area-site {
 
 .color-www,
 a.location-www {
-  color: #9c9c9c !important; }
+  color: #bcbcbc !important; }
 .color-home,
 a.location-home {
-  color: #9c9c9c !important; }
+  color: #bcbcbc !important; }
 .color-resume,
 a.location-resume {
   color: #e80000 !important; }
@@ -604,18 +611,18 @@ a.location-portfolio {
 .color-kitchen,
 a.location-kitchen {
   color: yellow !important; }
-.color-1,
-a.location-1 {
-  color: #009900 !important; }
+.color-casestudies,
+a.location-casestudies {
+  color: #20b420 !important; }
 .color-articles,
 a.location-articles {
-  color: #009900 !important; }
+  color: #20b420 !important; }
 .color-projects,
 a.location-projects {
   color: #3355ff !important; }
 .color-about,
 a.location-about {
-  color: #1aa5d8 !important; }
+  color: #12c2de !important; }
 .color-contact,
 a.location-contact {
   color: #8800cc !important; }
@@ -627,21 +634,21 @@ a.location-site {
   color: #7c7c7c !important; }
 
 .background-color-www {
-  background-color: #9c9c9c; }
+  background-color: #bcbcbc; }
 .background-color-resume {
   background-color: #e80000; }
 .background-color-portfolio {
   background-color: #ff8000; }
 .background-color-kitchen {
   background-color: yellow; }
-.background-color-1 {
-  background-color: #009900; }
+.background-color-casestudies {
+  background-color: #20b420; }
 .background-color-articles {
-  background-color: #009900; }
+  background-color: #20b420; }
 .background-color-projects {
   background-color: #3355ff; }
 .background-color-about {
-  background-color: #1aa5d8; }
+  background-color: #12c2de; }
 .background-color-contact {
   background-color: #8800cc; }
 .background-color-adobe {
@@ -676,8 +683,17 @@ a.location-site {
 .background-shade, .featured > .feature:hover > div, .featured > .feature.feature-invert > div {
   background-color: rgba(0, 0, 0, 0.6); }
 
-.background-shade-light, .featured > .feature > div, .featured > .feature.feature-invert:hover > div {
+.background-shade-light {
   background-color: rgba(255, 255, 255, 0.6); }
+
+.background-shade-heavy {
+  background-color: rgba(0, 0, 0, 0.86); }
+
+.background-shade-heavy-light, .featured > .feature.feature-invert:hover > div {
+  background-color: rgba(255, 255, 255, 0.86); }
+
+.indicator-continue {
+  z-index: 5; }
 
 /*    ANIMATIONS:   */
 /*    DROPDOWN ANIMATION    */
@@ -758,6 +774,42 @@ span.caret.animated {
   .caret-right {
     margin-left: 0.25rem; }
 
+.location-resume .caret {
+  color: #ff6363; }
+
+.location-portfolio .caret {
+  color: #ffbd7a; }
+
+.location-kitchen .caret {
+  color: #ffff7a; }
+
+.location-casestudies .caret {
+  color: #6ae46a; }
+
+.location-articles .caret {
+  color: #6ae46a; }
+
+.location-freebies .caret {
+  color: #adbbff; }
+
+.location-1 .caret {
+  color: #6ae46a; }
+
+.location-projects .caret {
+  color: #adbbff; }
+
+.location-about .caret {
+  color: #76e3f4; }
+
+.location-contact .caret {
+  color: #c247ff; }
+
+.location-adobe .caret {
+  color: #63bcf4; }
+
+.location-apple .caret {
+  color: #63bcf4; }
+
 /* CSS Document */
 html {
   font-size: 1em; }
@@ -809,19 +861,19 @@ hr {
     border-bottom-color: yellow;
     color: yellow; }
   .navbar.location-1 {
-    border-bottom-color: #009900;
-    color: #009900; }
+    border-bottom-color: #20b420;
+    color: #20b420; }
   .navbar.location-articles {
-    border-bottom-color: #009900;
-    color: #009900; }
+    border-bottom-color: #20b420;
+    color: #20b420; }
   .navbar.location-projects {
     border-bottom-color: #3355ff;
     text-decoration: none;
     color: #3355ff; }
   .navbar.location-about {
-    border-bottom-color: #1aa5d8;
+    border-bottom-color: #12c2de;
     text-decoration: none;
-    color: #1aa5d8; }
+    color: #12c2de; }
   .navbar.location-contact {
     border-bottom-color: #8800cc;
     color: #8800cc; }
@@ -869,13 +921,13 @@ hr {
     .navbar-brand.location-kitchen {
       color: yellow; }
     .navbar-brand.location-1 {
-      color: #009900; }
+      color: #20b420; }
     .navbar-brand.location-articles {
-      color: #009900; }
+      color: #20b420; }
     .navbar-brand.location-projects {
       color: #3355ff; }
     .navbar-brand.location-about {
-      color: #1aa5d8; }
+      color: #12c2de; }
     .navbar-brand.location-contact {
       color: #8800cc; }
     .navbar-brand.location-adobe {
@@ -934,7 +986,7 @@ svg {
     width: auto; }
     .full-carousel .carousel-inner > .item {
       min-height: 35vh;
-      height: auto;
+      height: 62vh;
       width: 100%;
       max-height: 70vh; }
       .full-carousel .carousel-inner > .item > .img-responsive {
@@ -1002,7 +1054,29 @@ svg {
         content: "◇"; }
       .full-carousel .carousel-control .icon-prev:hover::before {
         content: "◆"; }
+  .full-carousel .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity; }
+  .full-carousel .carousel-fade .carousel-inner .active {
+    opacity: 1; }
+    .full-carousel .carousel-fade .carousel-inner .active.left, .full-carousel .carousel-fade .carousel-inner .active.right {
+      left: 0;
+      opacity: 0;
+      z-index: 1; }
+  .full-carousel .carousel-fade .carousel-inner .next.left, .full-carousel .carousel-fade .carousel-inner .prev.right {
+    opacity: 1; }
+  .full-carousel .carousel-fade .carousel-control {
+    z-index: 2; }
 
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right, .carousel-fade .carousel-inner > .item.prev, .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .carousel-fade .carousel-inner > .item.next.left, .carousel-fade .carousel-inner > .item.prev.right, .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 @media (max-width: 598px) {
   .carousel-inner .img-responsive {
     -webkit-filter: brightness(62%);
@@ -1061,7 +1135,7 @@ img.thumbnail + span.caption {
 #area-site section.page-introduction {
   background-image: url("/media/images/Headshot-DarkGray-Masked.png");
   background-repeat: no-repeat;
-  background-position: 110% 70%;
+  background-position: 100% 100%;
   background-attachment: local; }
   #area-site section.page-introduction .animated {
     transition: all 0.32s ease; }
@@ -1328,7 +1402,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   color: #3355ff; }
 
 .hello-bgc {
-  background-color: #1aa5d8; }
+  background-color: black; }
 
 footer {
   position: static;
@@ -1356,21 +1430,24 @@ footer {
 .test.location-kitchen,
 .color-kitchen {
   color: yellow; }
+.test.location-casestudies,
+.color-casestudies {
+  color: #20b420; }
 .test.location-articles,
 .color-articles {
-  color: #009900; }
+  color: #20b420; }
 .test.location-freebies,
 .color-freebies {
   color: #3355ff; }
 .test.location-1,
 .color-1 {
-  color: #009900; }
+  color: #20b420; }
 .test.location-projects,
 .color-projects {
   color: #3355ff; }
 .test.location-about,
 .color-about {
-  color: #3355ff; }
+  color: #12c2de; }
 .test.location-contact,
 .color-contact {
   color: #8800cc; }

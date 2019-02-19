@@ -79,6 +79,11 @@ $(function() {
   });
 });
 
+// Change interval to 2000
+// $("#carousel-index").carousel({
+//   interval: 6000,
+//   pause: 'none'
+// });
 
 
 // WOW.js setup
