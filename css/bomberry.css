@@ -205,7 +205,8 @@ figure img {
     flex: 1 1 100%;
     flex-direction: row;
     justify-content: center;
-    padding: 30px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.16s ease-in-out; }
     @media screen and (max-width: 767px) {
       .featured > .feature {
@@ -234,7 +235,6 @@ figure img {
       transition: all 0.16s ease-in-out; }
       .featured > .feature:hover > div {
         transition: all 0.16s ease-in-out;
-        transform: scale(1.05);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
         .featured > .feature:hover > div .btn {
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -260,11 +260,12 @@ figure img {
         .featured > .feature > div a.btn .fab:last-of-type {
           margin-left: 0.75rem; }
     .featured > .feature.feature-1 {
-      background-image: url("/portfolio/assets/streamlio/Streamlio-BC-Rendering.png");
+      background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-Comps.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 4; }
       .featured > .feature.feature-1:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-1 .btn {
@@ -275,11 +276,12 @@ figure img {
           background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-2 {
-      background-image: url("/portfolio/assets/craftmaster/CraftMaster-Branding-AppIcons@1x.png");
+      background-image: url("/portfolio/assets/craftmaster/CraftMasterFeatureUIMap.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 3; }
       .featured > .feature.feature-2:hover {
         background-blend-mode: multiply, screen; }
       .featured > .feature.feature-2 .btn {
@@ -295,7 +297,8 @@ figure img {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 2; }
       .featured > .feature.feature-3:hover {
         background-color: rgba(16, 16, 16, 0.38); }
       .featured > .feature.feature-3:hover {
@@ -313,7 +316,8 @@ figure img {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-blend-mode: screen, multiply; }
+      background-blend-mode: screen, multiply;
+      z-index: 1; }
       .featured > .feature.feature-4:hover {
         background-color: rgba(16, 16, 16, 0.38); }
       .featured > .feature.feature-4:hover {
@@ -334,7 +338,7 @@ figure img {
     .featured > .feature.feature-invert > div {
       transition: all 0.16s ease-in-out; }
     .featured > .feature.feature-invert.feature-1 {
-      background-image: url("/portfolio/assets/streamlio/Streamlio-BC-Rendering.png");
+      background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-Comps.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -349,7 +353,7 @@ figure img {
           background-color: #ff8000;
           color: white; }
     .featured > .feature.feature-invert.feature-2 {
-      background-image: url("/portfolio/assets/craftmaster/CraftMaster-Branding-AppIcons@1x.png");
+      background-image: url("/portfolio/assets/craftmaster/CraftMasterFeatureUIMap.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -687,6 +691,9 @@ a.location-site {
 
 .background-shade-heavy-light, .featured > .feature.feature-invert:hover > div {
   background-color: rgba(255, 255, 255, 0.86); }
+
+.indicator-continue {
+  z-index: 5; }
 
 /*    ANIMATIONS:   */
 /*    DROPDOWN ANIMATION    */
@@ -1128,7 +1135,7 @@ img.thumbnail + span.caption {
 #area-site section.page-introduction {
   background-image: url("/media/images/Headshot-DarkGray-Masked.png");
   background-repeat: no-repeat;
-  background-position: 110% 70%;
+  background-position: 100% 100%;
   background-attachment: local; }
   #area-site section.page-introduction .animated {
     transition: all 0.32s ease; }
