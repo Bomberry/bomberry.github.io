@@ -126,6 +126,11 @@ figure.popModal {
     figure.popModal:hover img {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       z-index: 100; }
+figure.no-shadow:hover img {
+  box-shadow: none; }
+figure.base-shadow img {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  z-index: 100; }
 figure img {
   transition: all 0.16s ease-in-out;
   z-index: 10; }
@@ -907,6 +912,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     flex: auto;
     width: 100%;
     margin: 0.5vw; }
+    .flex-gallery > figure.fig-space {
+      margin-top: 4.24rem; }
     .flex-gallery > figure > img {
       width: 100%;
       height: auto; }
@@ -1767,6 +1774,14 @@ span.caret.animated {
 
 ul.bullets > li {
   margin-bottom: 0.618rem; }
+
+.navbar-header .navbar-left > li:first-of-type > a,
+.navbar-brand {
+  padding: 0.38rem; }
+
+.icon-kb[src$=".svg"] {
+  height: 1.62rem;
+  width: auto; }
 
 .box-shadow, .fx-nav-active {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
