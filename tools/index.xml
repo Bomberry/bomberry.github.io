@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on Bomberry.com</title>
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Cinema 4d</title>
+      <title>Cinema 4D</title>
       <link>/tools/cinema-4d/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>Iwork</title>
+      <title>iWork</title>
       <link>/tools/iwork/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -75,7 +75,7 @@
     </item>
     
     <item>
-      <title>Mindnode</title>
+      <title>MindNode</title>
       <link>/tools/mindnode/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       

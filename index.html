@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.51" />
+    <meta name="generator" content="Hugo 0.59.1" />
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -25,16 +25,18 @@
 
 
 
-<link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/all.min.css" type="text/css" rel="stylesheet">
+
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
 <link href="/css/bomberry.css" type="text/css" rel="stylesheet">
 
   </head>
 
 
-<body id="area-site" class="location-site">
+<body data-section="" id="area-site" class="location-site">
 
 
 
@@ -43,7 +45,7 @@
 
 
 
-<nav class="navbar navbar-fixed-top navbar-inverse location-site noMargin-bottom">
+<nav class="navbar navbar-fixed-top cs-white location-site noMargin-bottom">
   <div class="container-fluid">
     
     <div class="navbar-header">
@@ -51,31 +53,22 @@
       
 
       <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown"><a href="#" class="animated fadeInDown dropdown-toggle location-www navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret caret-left animated heartBeat"></span>www.</a>
-          <ul class="dropdown-menu animated fadeIn">
+        
+        <li><a class="animated fadeInLeft location-site navbar-brand site wow" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false"><img class="fa" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
+        <li class="dropdown"><a href="#" class="animated fadeInLeft dropdown-toggle location-www navbar-brand wow" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Kevin Bomberry<span class="caret caret-right animated heartBeat"></span></a>
+          <ul class="dropdown-menu animated fadeIn" data-animation="animated fadeInLeft" data-wow-delay="0s">
             
             
+            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>work</a></li>
             
-
-
-
-
-
+            <li><a class="location-resume " href="/resume/"><i class='fa fa-user'></i>resume</a></li>
             
-            
-            <li><a class="location-resume " href="/resume/"><i class='fa fa-clipboard'></i>resume</a></li>
-            
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>portfolio</a></li>
-            
-            <li><a class="location-about " href="/about/"><i class='fa fa-user'></i>about</a></li>
+            <li><a class="location-about " href="/about/"><i class='fa fa-heart'></i>about</a></li>
             
           </ul>
         </li>
-        <li><a class="animated fadeInDown location-site navbar-brand site" href="/" role="button" aria-expanded="false" aria-haspopup="false">bomberry.com</a></li>
-        
-        
       </ul>
-
+     
     </div>
 
 
@@ -88,11 +81,11 @@
   <ul class="nav navbar-nav navbar-right">
     
       
-      <li><a class="animated fadeInDown location-resume " href="/resume/" title="resume" alt="resume"><i class='fa fa-clipboard'></i> <span class="location-resume">resume</span></a></li>
+      <li><a class="animated fadeInRight location-portfolio  wow" data-wow-delay="0.5s" data-animation="animated fadeInRight" data-wow-delay="0s" href="/portfolio/" title="work" alt="work"><i class='fa fa-layer-group'> </i> <span class="location-portfolio">work</span></a></li>
       
-      <li><a class="animated fadeInDown location-portfolio " href="/portfolio/" title="portfolio" alt="portfolio"><i class='fa fa-layer-group'> </i> <span class="location-portfolio">portfolio</span></a></li>
+      <li><a class="animated fadeInRight location-resume  wow" data-wow-delay="0.5s" data-animation="animated fadeInRight" data-wow-delay="0s" href="/resume/" title="resume" alt="resume"><i class='fa fa-user'></i> <span class="location-resume">resume</span></a></li>
       
-      <li><a class="animated fadeInDown location-about " href="/about/" title="about" alt="about"><i class='fa fa-user'></i> <span class="location-about">about</span></a></li>
+      <li><a class="animated fadeInRight location-about  wow" data-wow-delay="0.5s" data-animation="animated fadeInRight" data-wow-delay="0s" href="/about/" title="about" alt="about"><i class='fa fa-heart'></i> <span class="location-about">about</span></a></li>
       
     
 
@@ -104,7 +97,7 @@
 
 
 
-
+    
 
 
 
@@ -122,110 +115,196 @@
   
 
   
-
-  
-
   
 
 
 
-<section class="pad page-introduction cs-dark">
+
+
+
+
+
+
+
+
+<header class="video-header pad page-introduction cs-dark-g backer backer-rev">
+  <div class="overlay">
+  </div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="../media/videos/White-Board.m4v" type="video/m4v">
+  </video>
   <div class="container">
     <div class="row breath-v">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
-        <p class="lead animated fadeIn" data-animation="animated fadeIn"><strong>Hello</strong>, I&rsquo;m <strong>Kevin</strong>. My craft is <strong>product design</strong>, <strong>UX/UI/IxDesign</strong>, and <strong>contextual interaction systems</strong>.<br /><br /><br />Empowered by a user-cetntric process, systems analysis, and working across teams to define and aligning goals, I love to create <strong>engaging and intuitive experience solutions for complex useability problems</strong>.</p>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5">
+        <p class="lead animated fadeIn wow" data-animation="animated fadeIn" data-wow-delay="618ms" data-wow-duration="1618ms"><span class='text-jumbo text-compress'><strong>Hi, I&rsquo;m Kevin</strong>, a passionate <strong>product designer</strong> focusing on <strong>customer experience</strong>, <strong>design systems and strategy</strong>.</span></p>
       </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="feature wide auguste bg-svg-p1">
+  <div id="project-auguste" class="feature-card feature-wrapper full feature-4animated fadeIn wow" data-wow-delay="0.25s">
+    <div class="card parallax">
+      <h6 class="services">Product Design | UX &amp; UI Design | Graphic Design</h6>
+      <p class="company lead">Adobe</p>
+      <h3>From tech to product demo</h3>
+      <p>Create an application from a piece of lab tech… in just four months? Learn how I delivered for Adobe.</p>
+      <div class="button-group breath-top">
+        
+        
+          <a class="btn btn-default" href="/portfolio/adobe-auguste/"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
+        
+      </div>
+    </div>
+    <div class="bg-image">
+      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/auguste/SurfaceBook-Screen---Illustrations-02b-LibraryOptionals.png" alt="Streamlio Homepage">
     </div>
   </div>
 </section>
 
-
-<section id="indicator-continue-1" class="indicator-continue theme-black">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-xs-offset-0 text-center">
-        <div class="btn btn-block">
-          <a class="location-home" href="#indicator-continue-1"><span class="fa fa-arrow-circle-down btn-block animated fadeInDown"></span></a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="featured">
-  <div class="feature feature-large feature-condenced feature-right feature-text-left feature-invert feature-1 animated fadeIn wow">
-    <div class="background-shade-light">
-      <h6 class="services">Branding | Web Development</h6>
+<section class="feature wide streamlio bg-svg-p1">
+  <div id="streamlio-branding-design" class="feature-card feature-wrapper full feature-1animated fadeIn wow" data-wow-delay="0.25s">
+    <div class="card parallax">
+      <h6 class="services">Branding | Web Development | Graphic Design</h6>
       <p class="company lead">Streamlio</p>
-      <h3>Building A Better Brand</h3>
-      <p>Developing a cohesive brand and online presence is a challenge all startups face.</p>
-      <p class="breath-top-small"><a class="btn" href="/portfolio/streamlio/"><span class="fa fa-briefcase"></span> case study <span class="fa fa-chevron-right"></span></a></p>
+      <h3>Building a Better Brand</h3>
+      <p>All startups face the challange of developing a cohesive brand and an online presence.</p>
+      <div class="button-group breath-top">
+        
+        
+          <a class="btn btn-default" href="/portfolio/streamlio/"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
+        
+      </div>
+    </div>
+    <div class="bg-image">
+      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/streamlio/Streamlio-Homepage.png" alt="Streamlio Homepage">
     </div>
   </div>
-  <div class="feature feature-large feature-condenced feature-right feature-text-left feature-invert feature-2 animated fadeIn wow">
-    <div class="background-shade-light">
-      <h6 class="services">Product Design | Branding | Web Development</h6>
-      <p class="company lead">CraftMaster Software</p>
-      <h3>Creating A Cross-Platform MineCraft Utility App</h3>
-      <p>Getting things in and out of MineCraft can be hard, so we made an application to make it easy for everyone.</p>
-      <p class="breath-top-small"><a class="btn" href="/portfolio/craftmaster/"><span class="fa fa-briefcase"></span> case study <span class="fa fa-chevron-right"></span></a></p>
-    </div>
-  </div>
-  
-  
 </section>
+
+<section class="feature wide photoshop bg-svg-p1">
+  <div id="adobe-photoshop-cc" class="feature-card feature-wrapper full feature-3animated fadeIn wow" data-wow-delay="0.25s">
+    <div class="card parallax">
+      <h6 class="services">Product Design | Interaction Design | 3D Strategist</h6>
+      <p class="company lead">Adobe</p>
+      <h3>Implimenting a 3D strategy in Adobe Photoshop</h3>
+      <p>When adding new functionality to the globaly recognized leader in digital content creation, you need to look at the users first.</p>
+      <div class="button-group breath-top">
+        
+        
+          <button class="btn btn-default btn-disabled" href="/portfolio/adobe-photoshop/" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
+        
+      </div>
+    </div>
+    <div class="bg-image">
+      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/photoshop/PS-painting-eye.png" alt="Streamlio Homepage">
+    </div>
+  </div>
+</section>
+
+<section class="feature wide craftmaster bg-svg-p1">
+  <div id="craftmaster-app" class="feature-card feature-wrapper full feature-2animated fadeIn wow" data-wow-delay="0.25s">
+    <div class="card parallax">
+      <h6 class="services">Branding | Product Design | UX/UI Design</h6>
+      <p class="company lead">CraftMaster</p>
+      <h3>Creating A Cross-Platform MineCraft Utility App</h3>
+      <p>Getting 3D models in and out of MineCraft can be hard — very hard. We made an application to make it easy for everyone to build and share their creations.</p>
+      <div class="button-group breath-top">
+        
+        
+          <button class="btn btn-default btn-disabled" href="/portfolio/craftmaster/" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
+        
+      </div>
+    </div>
+    <div class="bg-image">
+      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/craftmaster/CraftMasterSiteDisplayLaptop.png" alt="Streamlio Homepage">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
 <section class="container clients">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 breath-v">
-      <h2 class="pad-top-small text-center">Amazing organizations I've worked with.</h2>
+      <h2 class="pad-top-small text-center">A few of the amazing organizations I've worked with.</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 clients-logos">
       
-        <div class="client-logo animated fadeIn wow">
+      
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.19s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/adobe-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
       
-        <div class="client-logo animated fadeIn wow">
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.38s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/ideo-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
       
-        <div class="client-logo animated fadeIn wow">
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.5700000000000001s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/microsoft-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
       
-        <div class="client-logo animated fadeIn wow">
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.76s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/stanford-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
       
-        <div class="client-logo animated fadeIn wow">
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.95s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/streamlio-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
       
-        <div class="client-logo animated fadeIn wow">
+        
+        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='1.14s' data-wow-duration='1.62s'>
           <figure>
             <img class="img-responsive" src="./media/logos/vlab-medium.png" />
             <figcaption></figcaption>
           </figure>
         </div>
+      
       
     </div>
   </div>
@@ -274,7 +353,7 @@
     <div class="row pad-top-small">
       <div class="col-xs-12">
         
-        <p class="copyrightNotice">Copyright © 2019 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively.</p>
+        <p class="copyrightNotice">Copyright © 2019 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/"><span class="fa fa-seedling color-green"></span></a></p>
         
       </div>
     </div>
@@ -291,7 +370,9 @@
 
 
 
-<script src="/js/jquery-1.11.3.min.js"></script>
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
 
 <script src="/js/bootstrap.js"></script>
 

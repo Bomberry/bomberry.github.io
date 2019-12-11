@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photoshop on Bomberry.com</title>
@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Bomberry - Case Study - CraftMaster</title>
-      <link>/portfolio/craftmaster/</link>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/craftmaster/</guid>
+      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     
@@ -39,15 +39,6 @@
     </item>
     
     <item>
-      <title>Bomberry - Case Study - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/portfolio/streamlio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bomberry - Portfolio - Streamlio</title>
       <link>/portfolio/casestudy/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
@@ -55,6 +46,15 @@
       <guid>/portfolio/casestudy/</guid>
       <description>Streamlio Brand and web development for Streamlio — a Palo Alto startup that provides unified solutions that makes real-time streaming applications easy to build, adapt, and scale reliably.
    Updated business cards for Streamlio.</description>
+    </item>
+    
+    <item>
+      <title>Bomberry - Case Study - CraftMaster</title>
+      <link>/portfolio/craftmaster/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/portfolio/craftmaster/</guid>
+      <description></description>
     </item>
     
   </channel>

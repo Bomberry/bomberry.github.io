@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ux Ui Design on Bomberry.com</title>
+    <title>UX &amp; UI Design on Bomberry.com</title>
     <link>/services/ux-ui-design/</link>
-    <description>Recent content in Ux Ui Design on Bomberry.com</description>
+    <description>Recent content in UX &amp; UI Design on Bomberry.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 May 2018 23:11:05 -0700</lastBuildDate>
@@ -12,20 +12,11 @@
     
     
     <item>
-      <title>Bomberry - Case Study - Auguste</title>
-      <link>/portfolio/adobe-auguste/</link>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/adobe-auguste/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bomberry - Case Study - CraftMaster</title>
-      <link>/portfolio/craftmaster/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/portfolio/craftmaster/</guid>
+      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     
@@ -39,11 +30,11 @@
     </item>
     
     <item>
-      <title>Bomberry - Case Study - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
+      <title>Bomberry - Case Study - CraftMaster</title>
+      <link>/portfolio/craftmaster/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/streamlio/</guid>
+      <guid>/portfolio/craftmaster/</guid>
       <description></description>
     </item>
     

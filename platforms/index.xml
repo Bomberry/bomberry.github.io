@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Platforms on Bomberry.com</title>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Ios</title>
+      <title>iOS</title>
       <link>/platforms/ios/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Macos</title>
+      <title>macOS</title>
       <link>/platforms/macos/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Bomberry.com</title>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>3d Design</title>
+      <title>3D Design</title>
       <link>/services/3d-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -22,10 +22,19 @@
     
     <item>
       <title>A/V Production</title>
-      <link>/services/a-v-production/</link>
+      <link>/services/a/v-production/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/a-v-production/</guid>
+      <guid>/services/a/v-production/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Branding &amp; Identity</title>
+      <link>/services/branding-identity/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/services/branding-identity/</guid>
       <description></description>
     </item>
     
@@ -39,11 +48,11 @@
     </item>
     
     <item>
-      <title>Branding Identity</title>
-      <link>/services/branding-identity/</link>
+      <title>Design Strategy</title>
+      <link>/services/design-strategy/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/services/branding-identity/</guid>
+      <guid>/services/design-strategy/</guid>
       <description></description>
     </item>
     
@@ -102,11 +111,20 @@
     </item>
     
     <item>
-      <title>Ux Ui Design</title>
+      <title>UX &amp; UI Design</title>
       <link>/services/ux-ui-design/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/services/ux-ui-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX Design</title>
+      <link>/services/ux-design/</link>
+      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
+      
+      <guid>/services/ux-design/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="19 37 814 326"><defs/>
+  <g fill="none">
+    <path stroke="#0e84cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M643 126l32-8M643 157l32 8M488 188l32-16"/>
+    <path stroke="#0e84cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M490 220h30M488 251l33 16"/>
+    <path stroke="#0e84cf" stroke-linecap="round" stroke-linejoin="round" d="M331 220h30M174 220h34"/>
+    <path fill="#fff" d="M55 189h116l2 2v56c0 2-1 2-2 2H55c-1 0-2 0-2-2v-56l2-2z"/>
+    <path stroke="#0e84cf" stroke-linecap="square" d="M55 189h116l2 2v56c0 2-1 2-2 2H55c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(58 201)">
+      <tspan x="30.6" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="48.9">Splash</tspan>
+      <tspan x="9.5" y="33.4" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="91">Load Screen</tspan>
+    </text><path fill="#fff" d="M211 189h116l2 2v56c0 2-1 2-2 2H211c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="3" d="M211 189h116l2 2v56c0 2-1 2-2 2H211c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(214 210)">
+      <tspan x="30.4" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="49.2">Library</tspan>
+    </text><path fill="#fff" d="M367 189h116l2 2v56c0 2-1 2-2 2H367c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="9" d="M367 189h116l2 2v56c0 2-1 2-2 2H367c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(370 201)">
+      <tspan x="37.5" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="39.4">Main
+      </tspan>
+      <tspan x="14.6" y="33.4" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="80.9">Workspace</tspan>
+    </text><path fill="#fff" d="M523 111h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="4" d="M523 111h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(526 132)">
+      <tspan x="11.7" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="86.5">Brush Panel</tspan>
+    </text><path fill="#fff" d="M523 189h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="3" d="M523 189h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(526 210)">
+      <tspan x="15.2" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="79.7">Filter Panel</tspan>
+    </text><path fill="#fff" d="M523 267h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="3" d="M523 267h116l2 2v56c0 2-1 2-2 2H523c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(526 288)">
+      <tspan x="9.1" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="91.9">Layers Panel</tspan>
+    </text><path fill="#fff" d="M679 72h116l2 2v56c0 2-1 2-2 2H679c-1 0-2 0-2-2V74l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="4" d="M679 72h116l2 2v56c0 2-1 2-2 2H679c-1 0-2 0-2-2V74l2-2z"/>
+    <text fill="#000" transform="translate(682 93)">
+      <tspan x="7.1" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="95.7">Brush Library</tspan>
+    </text><path fill="#fff" d="M679 150h116l2 2v56c0 2-1 2-2 2H679c-1 0-2 0-2-2v-56l2-2z"/><path stroke="#0e84cf" stroke-linecap="square" stroke-width="4" d="M679 150h116l2 2v56c0 2-1 2-2 2H679c-1 0-2 0-2-2v-56l2-2z"/>
+    <text fill="#000" transform="translate(682 171)">
+      <tspan x="2.4" y="15" font-family="Helvetica Neue" font-size="16" font-weight="500" textLength="105.2">Brush Settings</tspan>
+    </text>
+  </g>
+</svg>

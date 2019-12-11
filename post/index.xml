@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Bomberry.com</title>
@@ -28,6 +28,16 @@
       <guid>/post/second/</guid>
       <description>Second.
 This is my second post — and I&amp;rsquo;m already excited about the coming third!</description>
+    </item>
+    
+    <item>
+      <title>third</title>
+      <link>/post/third/</link>
+      <pubDate>Mon, 29 Sep 2014 21:54:53 -0500</pubDate>
+      
+      <guid>/post/third/</guid>
+      <description>Third.
+This is my second post. POSTINI!</description>
     </item>
     
   </channel>

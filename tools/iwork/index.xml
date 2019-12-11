@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iwork on Bomberry.com</title>
+    <title>iWork on Bomberry.com</title>
     <link>/tools/iwork/</link>
-    <description>Recent content in Iwork on Bomberry.com</description>
+    <description>Recent content in iWork on Bomberry.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 May 2018 23:11:05 -0700</lastBuildDate>
@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Bomberry - Case Study - CraftMaster</title>
-      <link>/portfolio/craftmaster/</link>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/craftmaster/</guid>
+      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     
@@ -39,11 +39,11 @@
     </item>
     
     <item>
-      <title>Bomberry - Case Study - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
+      <title>Bomberry - Case Study - CraftMaster</title>
+      <link>/portfolio/craftmaster/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/streamlio/</guid>
+      <guid>/portfolio/craftmaster/</guid>
       <description></description>
     </item>
     

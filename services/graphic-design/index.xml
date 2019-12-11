@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphic Design on Bomberry.com</title>
@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Bomberry - Case Study - Auguste</title>
-      <link>/portfolio/adobe-auguste/</link>
+      <title>Bomberry - Case Study - Streamlio</title>
+      <link>/portfolio/streamlio/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
-      <guid>/portfolio/adobe-auguste/</guid>
+      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     
@@ -26,15 +26,6 @@
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/portfolio/adobe-photoshop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bomberry - Case Study - Streamlio</title>
-      <link>/portfolio/streamlio/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/portfolio/streamlio/</guid>
       <description></description>
     </item>
     

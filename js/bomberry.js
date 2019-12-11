@@ -86,6 +86,19 @@ $(function() {
 // });
 
 
+// Navbar Effect
+function navbarFX() {
+  $(window).on('load resize scroll', function() {
+    if ($(window).scrollTop() >= 50) {
+      $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
+    } else {
+      $('.navbar-fixed-top').removeClass('box-shadow').removeClass(
+        'short-nav');
+    }
+  });
+}
+
+
 // WOW.js setup
 var wow = new WOW({
   boxClass: 'wow', // animated element css class (default is wow)
@@ -100,3 +113,24 @@ var wow = new WOW({
   scrollContainer: null // optional scroll container selector, otherwise use window
 });
 wow.init();
+
+
+
+$(function() {
+  //  window.alert("OK");
+  navbarFX();
+});
+
+
+// generate TOC
+// $(function() {
+//   var toc = $('section.sidebar.TOC');
+//   var ul = $('<ul />');
+//   toc.append(ul);
+//   $('section.feature').each(function() {
+//     var $this = $(this);
+//     var item = $('<li><a href="#' + $this.attr('id') + '">' + this.attr(
+//       'id') + '</a></li>');
+//     ul.append(item);
+//   });
+// });

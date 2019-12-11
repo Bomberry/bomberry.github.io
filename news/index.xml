@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Bomberry.com</title>
@@ -17,7 +17,9 @@
       <pubDate>Wed, 02 May 2018 17:54:50 -0700</pubDate>
       
       <guid>/news/second/</guid>
-      <description>Second News.</description>
+      <description>Second News.
+Second.
+This is my second post — and I&amp;rsquo;m already excited about the coming third!</description>
     </item>
     
     <item>
@@ -26,7 +28,9 @@
       <pubDate>Wed, 02 May 2018 17:54:46 -0700</pubDate>
       
       <guid>/news/first/</guid>
-      <description>First News!</description>
+      <description>First News!
+First!
+This is my first post. Don&amp;rsquo;t you judge me!</description>
     </item>
     
   </channel>

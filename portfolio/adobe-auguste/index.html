@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="generator" content="Hugo 0.51" />
+    <meta name="generator" content="Hugo 0.59.1" />
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -25,9 +25,11 @@
 
 
 
-<link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/all.min.css" type="text/css" rel="stylesheet">
+
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
 <link href="/css/bomberry.css" type="text/css" rel="stylesheet">
 
@@ -43,39 +45,30 @@
 
 
 
-<nav class="navbar navbar-fixed-top navbar-inverse location-portfolio noMargin-bottom">
+<nav class="navbar navbar-fixed-top cs-white location-portfolio noMargin-bottom">
   <div class="container-fluid">
     
     <div class="navbar-header">
 
-      <button type="button" class="navbar-toggle collapsed animated fadeInDown" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <button type="button" class="navbar-toggle collapsed animated fadeInDown wow" data-toggle="collapse" data-target="#myInverseNavbar2" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
       <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown"><a href="#" class="animated fadeInDown dropdown-toggle location-portfolio navbar-brand" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true"><span class="caret caret-left animated heartBeat"></span>portfolio.</a>
-          <ul class="dropdown-menu animated fadeIn">
+        
+        <li><a class="animated fadeInLeft location-site navbar-brand site wow" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false"><img class="fa" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
+        <li class="dropdown"><a href="#" class="animated fadeInLeft dropdown-toggle location-portfolio navbar-brand wow" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">portfolio<span class="caret caret-right animated heartBeat"></span></a>
+          <ul class="dropdown-menu animated fadeIn" data-animation="animated fadeInLeft" data-wow-delay="0s">
             
             
+            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>work</a></li>
             
-
-
-
-
-
+            <li><a class="location-resume " href="/resume/"><i class='fa fa-user'></i>resume</a></li>
             
-            
-            <li><a class="location-resume " href="/resume/"><i class='fa fa-clipboard'></i>resume</a></li>
-            
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>portfolio</a></li>
-            
-            <li><a class="location-about " href="/about/"><i class='fa fa-user'></i>about</a></li>
+            <li><a class="location-about " href="/about/"><i class='fa fa-heart'></i>about</a></li>
             
           </ul>
         </li>
-        <li><a class="animated fadeInDown location-site navbar-brand site" href="/" role="button" aria-expanded="false" aria-haspopup="false">bomberry.com</a></li>
-        
-        
       </ul>
-
+     
     </div>
 
 
@@ -106,7 +99,7 @@
 
 
 
-
+    
 
 
 
@@ -122,26 +115,27 @@
   
 
   
+
   <a id="introduction"></a>
-  <div class="jumbotron casestudy cs-type cs-dark cs-auguste-bg">
+
+  <div class="jumbotron casestudy cs-type cs-dark cs-dark-g cs-auguste-bg">
     <div class="container cs-intro-block">
       <div class="row cs-job">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-          <h4><small>Product Design | Graphic Design</small></h4>
-        </div>
+        
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
           <h6 class="lead">Adobe | Project Auguste</h6>
         </div>
       </div>
       <div class="row cs-intro">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-          <h3 class="underline-center-outward">From technology demo to product demo</h3>
-          <p>How do you create a new application based on a technology demo while still adhering to a corporate brand — all in four months? <strong>Very carefully.</strong></p>
+          <h1 class="text-jumbo m-pad-bottom-0 color-white">Case Study</h1>
+          <h1 class="underline-center-outward text-jumbo m-pad-bottom-small">Making a product from a technology demo</h1>
+          <p class="text-larger">How do you create a new application based on a piece of technology while staying on brand — all in four months? <strong>Very carefully.</strong></p>
         </div>
       </div>
-      <div class="row cs-taxonomies">
-        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
-          <h4 class="small">Services:</h4>
+      <div class="row cs-taxonomies m-pad-top-large">
+        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 m-pad-top-medium">
+          <h4 class="m-pad-bottom-0">Services:</h4>
           
           <ul id="services" class="taxonomy list-unstyled">
             
@@ -149,15 +143,18 @@
             <li>Product Design</li>
             
             
-            <li>UX &amp; UI Design</li>
+            <li>UX Design</li>
             
             
-            <li>Graphic Design</li>
+            <li>Interaction Design</li>
+            
+            
+            <li>Design Strategy</li>
             
           </ul>
         </div>
-        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
-          <h4 class="small">Tools:</h4>
+        <div class="col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 m-pad-top-medium">
+          <h4 class="m-pad-bottom-0">Tools:</h4>
           
           <ul id="tools" class="taxonomy list-unstyled">
             
@@ -187,318 +184,773 @@
     </div>
   </div>
 
+
   
     
     
+
     
-    <section class="animated fadeIn wow">
-    <a id="challenge"></a>
-      <div class="jumbotron casestudy cs-light">
-        <div class="container">
-          <div class="row">
+      <a id="company"></a>
+      <section class="animated fadeIn wow">
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">The challenge</h3>
-              <p>I was approached by Adobe with a unique opportunity: to develop a working demo application based on a piece of new technology that would look and feel like other Adobe apps — all in four months, in time to demo at Adobe MAX.<br /><br />The challenges of this project were many and varied: building a UI layer, designing the visual components to align with Adobe’s future application styling, creating or extending the core technology functionality, exploring and implementing new user interaction mechanics, and creating an asset toolchain and workflow to easily iterate and test designs, features, and functionality.</p>
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow"></h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    Adobe is changing the world through digital experiences. As augmented reality, 3D and voice are adopted by creatives and consumers alike, Adobe is building intuitive tools that make it possible to easily create for new mediums. In order to realize a new concept, Adobe contacted me with a challenge: develop demo software built around a single piece of tech that feels and acts like other world-class Adobe products… <strong><em>in less than four months.</em></strong>
+    </p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
             </div>
-
-            
-
-            
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     
-    <section class="animated fadeIn wow">
-    <a id="response"></a>
-      <div class="jumbotron casestudy cs-light">
-        <div class="container">
-          <div class="row">
+      <a id="quote1"></a>
+      <section class="animated fadeIn wow">
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">The Response</h3>
-              <p>This was a big task that had a short time to produce deliverables. Project management, weekly sprints, and a quick and easy approach to building and testing the application during development would be critical to completing the project on time.<br /><br />Creating a standard set of visual element templates in Illustrator to reflect Adobe’s UI design goals, and to create a workflow for generating sprites and lookup maps for engineering for implementation would provided a quick and reliable solution to this challenge.</p>
+        <div class="jumbotron casestudy cs-dark-g cs-dark">
+          <div class="container">
+            <div class="row">
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+                
+                  <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 breath-v">
+                    <blockquote class="blockquote animated fadeInUp wow">
+                      <p class="quote" cite="">Preserving the status quo is not a winning business strategy.</p>
+                      <p class="attribution">Shantanu Narayen, Adobe, CEO</p>
+                    </blockquote>
+                  </div>
+                
+              
+
             </div>
-
-            
-
-            
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     
-    <section class="animated fadeIn wow">
-    <a id="technology"></a>
-      <div class="jumbotron casestudy cs-dark">
-        <div class="container">
-          <div class="row">
+      <a id="goals"></a>
+      <section class="animated fadeIn wow">
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">Begin with the technology</h3>
-              <p>The first task was to explore what exactly the technology was, it’s functionality, how it could be extended, who the user was, and how they would use the application. In addition, I had to approach the complexity of multi-input systems: touch, stylus, keyboard, including any combination of them.<br /><br />Fortunately, the user workflows were few and this allowed me to focus on the tasks at hand. Because of the aggressive schedule, I had to start looking at input systems at the same time as I began illustrating wireframes.</p>
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">The goals</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    When Stéfano Corazza (Project Manager) contacted be stating he had seen a technology demo from Sebastian Marketsmueller (Engineer) and wanted to make an application out of it, I was excited, but wanted to hear more; who was this app for and what would it do?
+    <br /><br />
+    He provided an user story, about a creative who wants an application that would make it easy to create/paint 3D objects with the potential to be viewed, used, and shared in other apps.
+    <br /><br />
+    He stated there was a four months deadline to create a fully functional Microsoft SurfaceBook demo application in time for Adobe MAX. It should be on brand with the look and feel — but that there was no internal UI framework we could use for this, and that Sebastian would hove to build it on top of his existing tech demo.
+    <br /><br />
+    I accepted and quickly moved forward developing a process and strategy for our small team of three.
+    <br /><br />
+
+    The brief resulted in these key takeaways:<br />
+    <section class="cs-bullets">
+    <h3 class="pad-top-tiny">Goals</h3>
+    <ul class="lead">
+      <li>Create an easy to use 'touch-first' 3D application.</li>
+      <li>Look and feel like other Adobe products.</li>
+      <li>Develop for the Microsoft SurfaceBook Pro.</li>
+      <li>Work with a stylus and/or touch/multi-touch.</li>
+    </ul>
+    <h3 class="pad-top-tiny">Challenges</h3>
+    <ul class="lead">
+      <li>Limited research opportunity.</li>
+      <li>Develop on-brand UX and UI framework.</li>
+      <li>Rapid or automated design-build sprints.</li>
+      <li>Complete project within four months.</li>
+    </ul>
+    </section>
+    </p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
             </div>
-
-            
-
-            
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     
-    <section class="animated fadeIn wow">
-    <a id="wireframes"></a>
-      <div class="jumbotron casestudy cs-light">
-        <div class="container">
-          <div class="row">
+      <a id="process"></a>
+      <section class="animated fadeIn wow">
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">Wireframes and user-flow</h3>
-              <p>Luckily, there were a couple of internal documents describing what the future UI of Adobe apps would look like. However, there were few assets to work with — everything had to be created from scratch. This would add another level of complexity to the process. I leveraged the power of Fireworks and Illustrator to help with this task, creating symbols and element templates for the UI assets. I also used Illustrator to start designing the wireframes, to illustrate my ideas, user workflows, and to start gathering feedback.<br /><br />Since the flow was simple — open an existing file or create a new one, edit (painting), and save. This meant there would be two main sections: file management and the main workspace. I started with a simple load screen, then the file management screen, and finally the main application workspace. I identified four main sections to the main workspace: the main canvas area, where the user would paint; brushes and properties; layers; and filters.</p>
-            </div>
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
 
-            
-              <div class="col-xs-12 flex-gallery breath-top">
               
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/1-Initial-Application-State-with-additional-Elements.png"
-                      width="100%" height="100%"
-                      alt="File Manager" data-figcaption="File Manager" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">File Manager</figcaption>
-                  </figure>
               
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/3-Main-Controllers.png"
-                      width="100%" height="100%"
-                      alt="Main layout and controllers" data-figcaption="Main layout and controllers" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Main layout and controllers</figcaption>
-                  </figure>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">The process</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    I used a VERY stripped down version of IDEO’s Lean UX Design Thinking process to focus in on my short term goals and initial sprints. Due to the fact that I didn't have the research to empathize with the users I created a super-persona, the one reference I would use to define user stories to develop workflows. I would also have to conduct gorilla testing to get feedback outside of the team.
+    </p>
+                </div>
               
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/5-Brush-Library.png"
-                      width="100%" height="100%"
-                      alt="Brush presets" data-figcaption="Brush presets" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Brush presets</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/6-Brush-Settings.png"
-                      width="100%" height="100%"
-                      alt="Brush settings" data-figcaption="Brush settings" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Brush settings</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/7-Global-Effects-Selected.png"
-                      width="100%" height="100%"
-                      alt="Filter Bar" data-figcaption="Filter Bar" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Filter Bar</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/Global-Effects-Selected-%e2%80%93-Effect-Bar-Dynamic-Scroll-Area.png"
-                      width="100%" height="100%"
-                      alt="Filter Bar scroll area" data-figcaption="Filter Bar scroll area" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Filter Bar scroll area</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/Global-Effects-Selected-%e2%80%93-Effect-Bar-Scroll-Area-with-Panel-Offset.png"
-                      width="100%" height="100%"
-                      alt="Filter Bar adjustment" data-figcaption="Filter Bar adjustment" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Filter Bar adjustment</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/8-Layers.png"
-                      width="100%" height="100%"
-                      alt="Layers panel" data-figcaption="Layers panel" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Layers panel</figcaption>
-                  </figure>
-              
-              </div>
-            
 
-            
 
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="animated fadeIn wow">
-    <a id="input"></a>
-      <div class="jumbotron casestudy cs-dark">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">Defining multi-input system</h3>
-              <p>The main goal was to create an interaction system that would allow for various input systems. This meant defining not only standard input system requirements, keyboard and mouse/trackpad input, but also stylus and touch — and they had to work together or by them selves.<br /><br />One thing I pushed for in the demo release was the ability to use two handed input, including overloading the gestures to perform more than one at a time. This allows a user to use one had to interact with the camera, simultaneously orbiting, rotating, and moving towards or away from the 3D canvas, all while using the other hand (or trackpad, or stylus), to paint in the 3D canvas.<br /><br />We also utilized the hardware for additional input, and extend the user experience by using the accelerometer to move the 3D canvas object, and device camera to project the 3D canvas into the real-world.</p>
-            </div>
-
-            
-              <div class="col-xs-12 flex-gallery breath-top">
               
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/Main-Interaction-Areas-%e2%80%93-Main-CameraViewBrush-Interaction---Definition-A---Default-Two-Hand-Touch-OR-TRACKPAD.png"
-                      width="100%" height="100%"
-                      alt="Default touch/trackpad input gestures" data-figcaption="Default touch/trackpad input gestures" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Default touch/trackpad input gestures</figcaption>
-                  </figure>
               
-              </div>
-            
-
-            
-
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="animated fadeIn wow">
-    <a id="styling"></a>
-      <div class="jumbotron casestudy cs-light">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">Styling the user interface</h3>
-              <p>Once the basics were in place it was time to proceed with hi-fi comps. The trick was to create comps that would adhere to Adobe’s forthcoming application styling, and which would also act as the template for generating the texture atlas and associated code necessary to rapidly iterate UI changes for testing. I spent time reviewing all of the standards for the new UI I could get my hands on, then started generating a set of components in Fireworks, which I then imported into Illustrator to begin the comp designs<br /><br />I created a toolchain that would take a CSS with definitions of the sprites, generated by Illustrator, and create a CSV file to be used by engineering for ingestion. This workflow saved time by generating documents and bypassing manual entry.</p>
-            </div>
-
-            
-              <div class="col-xs-12 flex-gallery breath-top">
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/Euclid-Touch-Texture-Atlas-Workshop.png"
-                      width="100%" height="100%"
-                      alt="Example texture atlas" data-figcaption="Example texture atlas" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Example texture atlas</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Splash.png"
-                      width="100%" height="100%"
-                      alt="Splash screen" data-figcaption="Splash screen" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Splash screen</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-LibraryOptionals.png"
-                      width="100%" height="100%"
-                      alt="File Manager " data-figcaption="File Manager " data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">File Manager </figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Effects.png"
-                      width="100%" height="100%"
-                      alt="Filter Bar" data-figcaption="Filter Bar" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Filter Bar</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Layers.png"
-                      width="100%" height="100%"
-                      alt="Layers panel" data-figcaption="Layers panel" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Layers panel</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPresets.png"
-                      width="100%" height="100%"
-                      alt="Brush presets" data-figcaption="Brush presets" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Brush presets</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushProperties.png"
-                      width="100%" height="100%"
-                      alt="Brush properties" data-figcaption="Brush properties" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Brush properties</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPropertiesOption.png"
-                      width="100%" height="100%"
-                      alt="Optional brush properties" data-figcaption="Optional brush properties" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Optional brush properties</figcaption>
-                  </figure>
-              
-                  <figure class="popModal" data-style="">
-                    <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPropertiesAndLayers.png"
-                      width="100%" height="100%"
-                      alt="Brush and Layers panels" data-figcaption="Brush and Layers panels" data-figdetail="">
-                    <figcaption class="text-center pad-bottom-tiny">Brush and Layers panels</figcaption>
-                  </figure>
-              
-              </div>
-            
-
-            
-
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="animated fadeIn wow">
-    <a id="result"></a>
-      <div class="jumbotron casestudy cs-dark">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">Putting it all together</h3>
-              <p>Incorporating all of the UI and functionality was a bit tricky, and some of the additional features and UI had to be skipped for the initial internal demo, however, the app itself was well received. A sneak video of the pre-demo release was produced and pushed up to Adobe’s blog before MAX. This was well received by the general public and we quickly began to see great interest in the app itself.<br /><br />Finally, the completed demo app was produced in time for MAX. The feedback from the users was great — people loved the new tool. It felt intuitive to use and provided a new tool for creatives.</p>
-            </div>
-
-            
-
-            
-              
-              <div class="col-xs-12 breath-top">
-                <div class="embed-responsive embed-responsive-16by9">
+                
+                <div class="col-xs-12 flex-gallery breath-top">
                   
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/arpOCEoxvwg" frameborder="0" allowfullscreen></iframe>
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/AugusteProcess-2.svg"
+                          width="100%" height="100%"
+                          alt="Product Design Process - Stroke Weighted" data-figcaption="Product Design Process - Stroke Weighted" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Product Design Process - Stroke Weighted</figcaption>
+                      </figure>
                   
                 </div>
-                <p class="small text-muted">Adobe&#39;s Daichi Ito using a prerelease of Project Auguste on the Surface Pro.</p>
-              </div>
+                
               
-            
 
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="animated fadeIn wow">
-    <a id="conclusion"></a>
-      <div class="jumbotron casestudy cs-light">
-        <div class="container">
-          <div class="row">
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-              <h3 class="underline-center-outward">In conclusion</h3>
-              <p>Although Project Auguste has not become a full-fledged Adobe app (yet), working on the project was a great experience, and very rewarding hearing user feedback and interest. It had it’s challenges along the way, but by keeping a living document to track features and assets, and creating tools to enable rapid integration and testing, we were able to accomplish the task in time for the MAX demo.<br /><br />Hopefully, in the not to distant future, Project August will be promoted to a demo version on Adobe Labs, or released into the wild as one of Adobe’s mobile-first apps available though Adobe Creative Cloud.</p>
+              
+              
+
+
+              
+              
+
             </div>
-
-            
-
-            
-
           </div>
         </div>
-      </div>
+      </section>
+    
+      <a id="tasks"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">The tasks</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    With our team of three it was important to keep focus to keep moving the project forward. I outlined  initial tasks to keep us all on target.<br />
+    <section class="cs-bullets">
+    <h3 class="pad-top-tiny">Tasks</h3>
+    <ul class="lead">
+      <li>Understand the engineering demo — specifically the technology, functionality, extensibility, and limitations.</li>
+      <li>Understand who the user is and create persona and user story.</li>
+      <li>Storyboard and prototype user/application workflows.</li>
+      <li>Exploring and implementing new user interaction mechanics.</li>
+      <li>Creating an asset toolchain and workflow.</li>
+      <li>Design UI components to align with Adobe’s future application styling.</li>
+      <li>Use weekly design sprints to iterate and test designs, features, and functionality.</li>
+    </ul>
     </section>
+    </p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="response"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">The Response</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    This was a big task that had a short time to produce deliverables. Project management, weekly sprints, and a quick and easy approach to building and testing the application during development would be critical to completing the project on time.
+    <br /><br />
+    Creating a standard set of visual element templates in Illustrator to reflect Adobe’s UI design goals, and to create a workflow for generating sprites and lookup maps for engineering for implementation and testing would provided an efficient and reliable solution to develop the UI/UX quickly.
+    </p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="technology"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-dark-g cs-dark">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Begin with the technology</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    The first task was to understand what exactly the technology was, and to explore it’s functionality, how it could be extended, and to imagine how the user could interact with and use the application.
+    <br /><br />
+    Sebastian and I spent a day reviewing the technology stack, his application framework, all of the current features, functionality that was backlogged, the input stack, and how we could create a UI system.
+    <br /><br />
+    I outlined the Inforamtion Architecture for the applicaiton workspaces and panels. I also quickly sketched out the main workspace where most of the user interaction would be taking place, as a launching point to start work on the UI framework.
+    </p>
+                </div>
+              
+
+
+              
+              
+                
+                <div class="col-xs-12 flex-gallery breath-top">
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/AugusteApplicationOutline.svg"
+                          width="100%" height="100%"
+                          alt="Application Information Architecture Outline - Stroke Weighted" data-figcaption="Application Information Architecture Outline - Stroke Weighted" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Application Information Architecture Outline - Stroke Weighted</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="124ms">
+                        <img src="../assets/auguste/2-Main-Interaction-Areas.png"
+                          width="100%" height="100%"
+                          alt="Main Workspace sketch/wireframe" data-figcaption="Main Workspace sketch/wireframe" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Main Workspace sketch/wireframe</figcaption>
+                      </figure>
+                  
+                </div>
+                
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="user"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Understanding the user</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    Since there was no practical User Research, I used Stéfano's example user story to create a user persona and story. I then performed a quick gourilla survey asking a few ceatives questions about prefered methods of creating, what they create, how they create, and where they create. I outlined the following user-feature workflows:
+    <br /><br />
+    <section class="cs-bullets">
+    <h3 class="pad-top-tiny">User-feature workflows</h3>
+    <ul class="lead">
+      <li>Start with Object, Paint, Filter, Material.</li>
+      <li>Start with Object Head, Lock/Hide Layer, Paint (New Layer) (3D Print “Mask”).</li>
+      <li>Start with Nothing, Construction Plane, Symmetry, (NPR/Render?).</li>
+      <li>Start with Object in Layer, Add Object in second Layer, Filter (Weld) (one object).</li>
+    </ul>
+    </section>
+    <br /><br />
+    </p>
+                </div>
+              
+
+
+              
+              
+                
+                <div class="col-xs-12 flex-gallery breath-top">
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/AugustePersona.svg"
+                          width="100%" height="100%"
+                          alt="Base Persona" data-figcaption="Base Persona" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Base Persona</figcaption>
+                      </figure>
+                  
+                </div>
+                
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="wireframes"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Wireframes and user-application flow</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    There were a few of internal documents describing the future UI of Adobe apps would look like. However, there were few assets to work with — everything had to be created from scratch. This would add another level of complexity to the process.
+    <br /><br />
+    I used Fireworks and Illustrator to create symbols and element components for the UI assets. I used Illustrator to start designing the wireframes, illustrate ideas, and to start gathering feedback.
+    <br /><br />
+    Since the flow was simple — open an existing file or create a new one, edit (painting), and save. This meant there would be two main sections: file management and the main workspace.
+    <br /><br />
+    I started with a simple load screen, then the file management screen, and finally the main application workspace.
+    <br /><br />
+    I identified four main sections to the main workspace: the main canvas area, where the user would paint; brushes and properties; layers; and filters.
+    </p>
+                </div>
+              
+
+
+              
+              
+                
+                <div class="col-xs-12 flex-gallery breath-top">
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/AugusteWireframePrototype.png"
+                          width="100%" height="100%"
+                          alt="Wireframe Prototype - Base Interactions" data-figcaption="Wireframe Prototype - Base Interactions" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Wireframe Prototype - Base Interactions</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="124ms">
+                        <img src="../assets/auguste/1-Initial-Application-State-with-additional-Elements.png"
+                          width="100%" height="100%"
+                          alt="File Manager" data-figcaption="File Manager" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">File Manager</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="186ms">
+                        <img src="../assets/auguste/3-Main-Controllers.png"
+                          width="100%" height="100%"
+                          alt="Main layout and controllers" data-figcaption="Main layout and controllers" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Main layout and controllers</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="248ms">
+                        <img src="../assets/auguste/5-Brush-Library.png"
+                          width="100%" height="100%"
+                          alt="Brush presets" data-figcaption="Brush presets" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Brush presets</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="310ms">
+                        <img src="../assets/auguste/6-Brush-Settings.png"
+                          width="100%" height="100%"
+                          alt="Brush settings" data-figcaption="Brush settings" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Brush settings</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="372ms">
+                        <img src="../assets/auguste/7-Global-Effects-Selected.png"
+                          width="100%" height="100%"
+                          alt="Filter Bar" data-figcaption="Filter Bar" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Filter Bar</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="434ms">
+                        <img src="../assets/auguste/8-Layers.png"
+                          width="100%" height="100%"
+                          alt="Layers panel" data-figcaption="Layers panel" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Layers panel</figcaption>
+                      </figure>
+                  
+                </div>
+                
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="input"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-dark-g cs-dark">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Defining multi-input system</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    The main goal was to create an interaction system that would allow for various input systems. This meant defining not only standard input system requirements, keyboard and mouse/trackpad input, but also stylus and touch — and they had to work together or by them selves.<br /><br />One thing I pushed for in the demo release was the ability to use two handed input, including overloading the gestures to perform more than one at a time. This allows a user to use one had to interact with the camera, simultaneously orbiting, rotating, and moving towards or away from the 3D canvas, all while using the other hand (or trackpad, or stylus), to paint in the 3D canvas.<br /><br />We also utilized the hardware for additional input, and extend the user experience by using the accelerometer to move the 3D canvas object, and device camera to project the 3D canvas into the real-world.
+
+    <br /><br />
+
+    In addition, I had to approach the complexity of multi-input systems: touch, stylus, keyboard, including any combination of them.
+    <br /><br />
+
+
+
+    </p>
+                </div>
+              
+
+
+              
+              
+                
+                <div class="col-xs-12 flex-gallery breath-top">
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/Main-Interaction-Areas-%e2%80%93-Main-CameraViewBrush-Interaction---Definition-A---Default-Two-Hand-Touch-OR-TRACKPAD.png"
+                          width="100%" height="100%"
+                          alt="Default touch/trackpad input gestures" data-figcaption="Default touch/trackpad input gestures" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Default touch/trackpad input gestures</figcaption>
+                      </figure>
+                  
+                </div>
+                
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="styling"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Styling the user interface</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">Once the basics were in place it was time to proceed with hi-fi comps. The trick was to create comps that would adhere to Adobe’s forthcoming application styling, and which would also act as the template for generating the texture atlas and associated code necessary to rapidly iterate UI changes for testing. I spent time reviewing all of the standards for the new UI I could get my hands on, then started generating a set of components in Fireworks, which I then imported into Illustrator to begin the comp designs<br /><br />I created a toolchain that would take a CSS with definitions of the sprites, generated by Illustrator, and create a CSV file to be used by engineering for ingestion. This workflow saved time by generating documents and bypassing manual entry.</p>
+                </div>
+              
+
+
+              
+              
+                
+                <div class="col-xs-12 flex-gallery breath-top">
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="62ms">
+                        <img src="../assets/auguste/Euclid-Touch-Texture-Atlas-Workshop.png"
+                          width="100%" height="100%"
+                          alt="Example texture atlas" data-figcaption="Example texture atlas" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Example texture atlas</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="124ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Splash.png"
+                          width="100%" height="100%"
+                          alt="Splash screen" data-figcaption="Splash screen" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Splash screen</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="186ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-LibraryOptionals.png"
+                          width="100%" height="100%"
+                          alt="File Manager " data-figcaption="File Manager " data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">File Manager </figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="248ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Effects.png"
+                          width="100%" height="100%"
+                          alt="Filter Bar" data-figcaption="Filter Bar" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Filter Bar</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="310ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-Layers.png"
+                          width="100%" height="100%"
+                          alt="Layers panel" data-figcaption="Layers panel" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Layers panel</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="372ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPresets.png"
+                          width="100%" height="100%"
+                          alt="Brush presets" data-figcaption="Brush presets" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Brush presets</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="434ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushProperties.png"
+                          width="100%" height="100%"
+                          alt="Brush properties" data-figcaption="Brush properties" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Brush properties</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="496ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPropertiesOption.png"
+                          width="100%" height="100%"
+                          alt="Optional brush properties" data-figcaption="Optional brush properties" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Optional brush properties</figcaption>
+                      </figure>
+                  
+                    
+                      <figure class="popModal animated fadeInUp wow" data-style="" data-wow-delay="558ms">
+                        <img src="../assets/auguste/SurfaceBook-Screen---Illustrations-02b-BrushPropertiesAndLayers.png"
+                          width="100%" height="100%"
+                          alt="Brush and Layers panels" data-figcaption="Brush and Layers panels" data-figdetail="">
+                        <figcaption class="text-center pad-bottom-tiny">Brush and Layers panels</figcaption>
+                      </figure>
+                  
+                </div>
+                
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="result"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-dark-g cs-dark">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">Putting it all together</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">Incorporating all of the UI and functionality was a bit tricky, and some of the additional features and UI had to be skipped for the initial internal demo, however, the app itself was well received. A sneak video of the pre-demo release was produced and pushed up to Adobe’s blog before MAX. This was well received by the general public and we quickly began to see great interest in the app itself.<br /><br />Finally, the completed demo app was produced in time for MAX. The feedback from the users was great — people loved the new tool. It felt intuitive to use and provided a new tool for creatives.</p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+                
+                  <div class="col-xs-12 breath-top">
+                    <div class="embed-responsive embed-responsive-16by9 animated fadeInUp wow">
+                      
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/arpOCEoxvwg" frameborder="0" allowfullscreen></iframe>
+                      
+                    </div>
+                    <p class="small text-muted">Adobe&#39;s Daichi Ito using a prerelease of Project Auguste on the Surface Pro.</p>
+                  </div>
+                
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="conclusion"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-light">
+          <div class="container">
+            <div class="row">
+
+              
+              
+                <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                  <h2 class="underline-center-outward animated fadeIn wow">In conclusion</h2>
+                  <p class="animated fadeIn wow" data-wow-delay="192ms" data-wow-offset="25">    Working on the project was a great experience, and very rewarding hearing user feedback and interest. It had it’s challenges along the way, but by keeping a living document to track features and assets, and creating tools to enable rapid integration and testing, we were able to accomplish the task in time for the MAX demo.
+    <br /><br />
+    Althought the product was well received, the interest didn't outweight the general community feedback:
+    <section class="cs-bullets">
+    <ul class="lead pad-top-tiny">
+      <li>Creative professionals want to use tools like Z-Brush.</li>
+      <li>The target market for the product was more artist/sculptural, as opposed to creative hobiest.</li>
+      <li>3D is still a touch sell for creatives and non-creatives alike and this was too niche.</li>
+    </ul>
+    </section>
+    <br /><br />
+    <span class="lead">Because of this, currently there are no plans for more forward with making the app available via Adobe Labs.</span>
+    </p>
+                </div>
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <a id="quote2"></a>
+      <section class="animated fadeIn wow">
+
+        <div class="jumbotron casestudy cs-dark-g cs-dark">
+          <div class="container">
+            <div class="row">
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+
+
+              
+              
+                
+                  <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 breath-v">
+                    <blockquote class="blockquote animated fadeInUp wow">
+                      <p class="quote" cite="">Thank you for the quality of work you delivered. It was great and it was fun to work with you.</p>
+                      <p class="attribution">Stéfano Corazza, Adobe, Sr Director, Engineering (Project Manager)</p>
+                    </blockquote>
+                  </div>
+                
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
     
   
 
@@ -521,21 +973,44 @@
 
   
 
-<div class="jumbotron casestudy return-portfolio">
-  <div class="container">
-    <div class="row breath-top-small">
-      <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 text-left">
-        <div class="lead"><a href="../#adobe-auguste" class="color-portfolio"><span class="fa fa-arrow-circle-left icon-pad-right animated heartBeat infinite"></span>return to portfolio</a></div>
-      </div>
-      <div class="col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-0 text-right">
-        
+
+  
+  
+  
+  
+
+    
+
+    <div class="jumbotron casestudy return-portfolio next-casestudy">
+      <div class="container">
+        <div class="row breath-top-small">
+
+          <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-left">
+            <div class="card">
+              <h5 class="underline pad-bottom-tiny">Next case study</h5>
+              <h5 class="company lead breath-no-v">Streamlio</h5>
+              <h6 class="services breath-no-v">Branding | Web Development | Graphic Design</h6>
+              <h2 class="breath-top">Building a Better Brand</h2>
+              <p class="breath-top">All startups face the challange of developing a cohesive brand and an online presence.</p>
+              <div class="lead text-right pad-top-small">
+                <a href="../streamlio" class="color-portfolio">Streamlio Branding &amp; Design<span class="fa fa-arrow-circle-right icon-pad-left animated heartBeat infinite"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+  
 
 
-  <section class="jumbotron cta">
+
+  
+
+  <section class="jumbotron cta bg-video">
+  
+  
+  
   <div class="container">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 breath-v">
@@ -544,6 +1019,7 @@
       </div>
     </div>
   </div>
+
 </section>
 
 
@@ -579,7 +1055,7 @@
     <div class="row pad-top-small">
       <div class="col-xs-12">
         
-        <p class="copyrightNotice">Copyright © 2019 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively.</p>
+        <p class="copyrightNotice">Copyright © 2019 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/"><span class="fa fa-seedling color-green"></span></a></p>
         
       </div>
     </div>
@@ -596,7 +1072,9 @@
 
 
 
-<script src="/js/jquery-1.11.3.min.js"></script>
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
 
 <script src="/js/bootstrap.js"></script>
 

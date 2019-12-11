@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Bomberry - Resume on Bomberry.com</title>
@@ -54,7 +54,9 @@
       
       <guid>/resume/vlab/</guid>
       <description>Sitting on the board of directors, developing teams and team training, producing events, and mentoring volunteers was an enjoyable, althought sometime increadable hectic, experience, tought me the lesson of delegation and mentoring, fostering growth in individual contributers to produce events and more.
-Created Updated Branding, and templates for event collateral (signage, posters, presentations, lanyards, event programs, etc,&amp;hellip; ) Create update version of the VLAB logo (still used today) in several formats (including vector), as well as all collateral for internal and events.</description>
+Created Updated Branding, and templates for event collateral (signage, posters, presentations, lanyards, event programs, etc,&amp;hellip; ) Create update version of the VLAB logo (still used today) in several formats (including vector), as well as all collateral for internal and events.
+Developed website Created an updated version of the VLAB website and CMS (HTML, CSS, ColdFusion, SQL) as well as all graphic assets.
+Produced event on the Social and Fiscial impact of Online Gaming (MMORPGs) Proposed and lead the development of the number one event of the year, focusing on the social and fiscial impoact of Massive Multiplayer Online Role Playing Games, such as World of Warcraft.</description>
     </item>
     
     <item>
@@ -123,7 +125,8 @@ portfolio</description>
       <guid>/resume/adobe-auguste/</guid>
       <description>Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem
 Defined and constructed a user experience that would directly align with Adobe XD&amp;rsquo;s design goals while adding new conventions for touch (primary)/stylus (secondary) focused user input. This includes defining interaction models and specifications for single/multi-input gestures; one hand, two hands, stylus, hand + stylus, optional 3D devince input (gyroscope).
-Created toolchain for/and all UI assets and states (100+) as texture atlases (5+) with accompanied CVS files to allow for in-app rapid design exploration/iteration while maintaing format flexability (native, web, etc).</description>
+Created toolchain for/and all UI assets and states (100+) as texture atlases (5+) with accompanied CVS files to allow for in-app rapid design exploration/iteration while maintaing format flexability (native, web, etc).
+Product Design  Lead Designer  4 Months Produciton  3D Modeling Application  Windows Surface  Touch/Stylus Input  Multi-touch input system  3D Touch Stylus Gyroscope   </description>
     </item>
     
     <item>
@@ -146,7 +149,8 @@ Created toolchain for/and all UI assets and states (100+) as texture atlases (5+
 100+ page Branding Guideline document
 Brand Color Swatches for macOS (.clr) and Adobe CC apps (.ace)
 Web Development (HTML, SASS/CSS, JS, HUGO, and GULP) 45+ HTML templates (partials/blocks and pages) 25+ SASS files () Web Branding/Styling Usage Guide (Documentation)
-Business Card Design 3D Renderings .ai master template (print ready) Usage document Design Consulting/Contractor  Branding Developement  Logo Design  Branding Guidelines  Web Developement  Responsive Web Design  Illustration Design  3D Design/Rendering  Asset Generation/Templates  Usage Documentation</description>
+Business Card Design 3D Renderings .ai master template (print ready) Usage document Design Consulting/Contractor  Branding Developement  Logo Design  Branding Guidelines  Web Developement  Responsive Web Design  Illustration Design  3D Design/Rendering  Asset Generation/Templates  Usage Documentation  
+Branding Web Programming HTML5 CSS3 SASS JavaScript Hugo Bootstrap Photoshop Photoshop Atom Dreamweaver   </description>
     </item>
     
   </channel>

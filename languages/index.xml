@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Languages on Bomberry.com</title>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Css</title>
+      <title>CSS</title>
       <link>/languages/css/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Html</title>
+      <title>HTML</title>
       <link>/languages/html/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>HuGo</title>
       <link>/languages/hugo/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>Javascript</title>
+      <title>JavaScript</title>
       <link>/languages/javascript/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
