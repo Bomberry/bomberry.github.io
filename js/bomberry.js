@@ -114,6 +114,11 @@ var wow = new WOW({
 });
 wow.init();
 
+// Reinit WOW on page refresh
+$(window).on('load', function() {
+  new WOW().init();
+  // $('.navbar-left').children('li>a').css('visibility', 'visible');
+});
 
 
 $(function() {
