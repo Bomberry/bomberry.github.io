@@ -1783,6 +1783,9 @@ ul.bullets > li {
   height: 1.62rem;
   width: auto; }
 
+.text-centered {
+  text-align: center; }
+
 .box-shadow, .fx-nav-active {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
   .box-shadow-medium {
