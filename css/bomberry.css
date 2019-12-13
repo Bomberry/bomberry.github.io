@@ -1772,8 +1772,22 @@ span.caret.animated {
   top: 125px;
   transform: translateZ(2px) scale(8px-  2/8px); }
 
-ul.bullets > li {
-  margin-bottom: 0.618rem; }
+ul.bullets {
+  padding-left: 0;
+  list-style: none; }
+  ul.bullets > li {
+    margin-bottom: 0.618rem; }
+    ul.bullets > li::before {
+      font-family: "Fontawesome";
+      font-size: 0.618rem;
+      line-height: 1;
+      vertical-align: middle;
+      content: "";
+      color: #0e84cf;
+      display: inline-block;
+      width: 1.618em;
+      margin-left: -1.618em;
+      padding-bottom: 0.162rem; }
 
 .navbar-header .navbar-left > li:first-of-type > a,
 .navbar-brand {
