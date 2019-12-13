@@ -1890,6 +1890,11 @@ ul.bullets {
   color: #bcbcbc;
   font-size: 0.75rem; }
 
+@media print {
+  a:after {
+    content: ' (" attr(href) ") ';
+    font-size: 0.8rem;
+    font-weight: normal; } }
 .media-heading {
   padding-bottom: 0.5rem; }
 
