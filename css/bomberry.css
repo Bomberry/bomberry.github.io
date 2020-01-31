@@ -125,9 +125,11 @@ figure.popModal {
     transform: scale(1.05); }
     figure.popModal:hover img {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      z-index: 100; }
+      z-index: 100;
+      margin-bottom: 1.38rem; }
 figure.no-shadow:hover img {
-  box-shadow: none; }
+  box-shadow: none;
+  transform: scale(1.05); }
 figure.base-shadow img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   z-index: 100; }
@@ -1346,6 +1348,9 @@ section.no-pad {
     margin-bottom: 5rem; }
   .m-pad-bottom-large {
     margin-bottom: 10rem; }
+.m-pad-center {
+  margin-left: auto;
+  margin-right: auto; }
 .m-pad-v {
   margin-top: 7.5rem;
   margin-bottom: 7.5rem; }
@@ -1403,6 +1408,10 @@ section.no-pad {
   width: 100%;
   height: 100%;
   background-image: url(/media/images/3DUX1.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: blur(10px);
   filter: grayscale(100%);
   filter: blur(10px);
   transition: all 0.16s ease; }
@@ -1415,10 +1424,17 @@ section.no-pad {
   position: relative; }
 
 .backer-rev::before {
+  -webkit-filter: blur(0px);
   filter: blur(0px); }
 
 .backer-rev:hover::before {
+  -webkit-filter: blur(10px);
   filter: blur(10px); }
+
+.backer.bgimg-3DUX::before {
+  background-image: url(/media/images/3DUX1.jpg); }
+.backer.bgimg-Watch::before {
+  background-image: url(/media/images/Hero-KevinBomberry-WatchAndGearsIllustration.jpg); }
 
 .videoContainer {
   position: relative;
