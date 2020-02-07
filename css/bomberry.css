@@ -68,12 +68,57 @@ p.lead + p.lead {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between; }
+  .button-group.flex-col {
+    -webkit-flex-flow: row nowrap;
+    -moz-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
   .button-group a {
-    -webkit-box-flex: 0 0 38%;
-    -moz-box-flex: 0 0 38%;
-    -webkit-flex: 0 0 38%;
-    -ms-flex: 0 0 38%;
-    flex: 0 0 38%; }
+    -webkit-box-flex: 1 1 25%;
+    -moz-box-flex: 1 1 25%;
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%; }
+
+.btn-blue {
+  background-color: #084a74;
+  border: 0.1rem solid white;
+  color: white; }
+  .btn-blue:hover {
+    background-color: #0e84cf;
+    color: white; }
+  .btn-blue a {
+    color: white; }
+
+.btn-blue-reverse {
+  background-color: #0e84cf;
+  border: 0.1rem solid white;
+  color: white; }
+  .btn-blue-reverse:hover {
+    background-color: #084a74;
+    color: white; }
+  .btn-blue-reverse a {
+    color: white; }
+
+.btn-orange {
+  background-color: #9e4f00;
+  border: 0.1rem solid white;
+  color: white; }
+  .btn-orange:hover {
+    background-color: #ff8000;
+    color: white; }
+  .btn-orange a {
+    color: white; }
+
+.btn-orange-reverse {
+  background-color: #ff8000;
+  border: 0.1rem solid white;
+  color: white; }
+  .btn-orange-reverse:hover {
+    background-color: #9e4f00;
+    color: white; }
+  .btn-orange-reverse a {
+    color: white; }
 
 .caret {
   transform: scale(1.25, 1.25); }
@@ -121,12 +166,11 @@ p.lead + p.lead {
 figure.popModal {
   transform: scale(1);
   transition: all 0.16s ease-in-out; }
-  figure.popModal:hover {
-    transform: scale(1.05); }
-    figure.popModal:hover img {
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      z-index: 100;
-      margin-bottom: 1.38rem; }
+  figure.popModal:hover img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    z-index: 100;
+    margin-bottom: 1.38rem; }
 figure.no-shadow:hover img {
   box-shadow: none;
   transform: scale(1.05); }
@@ -353,6 +397,74 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
       color: #9c9c9c; }
       #modalDialog .cs-dark button.close:hover {
         color: white; }
+
+.toggle-content {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out; }
+  .toggle-content.is-visible {
+    display: block;
+    height: auto; }
+
+#area-portfolio section .card.casestudy.card-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (max-width: 767px) {
+    #area-portfolio section .card.casestudy.card-flex {
+      -webkit-flex-flow: column nowrap;
+      -moz-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; } }
+  @media (min-width: 768px) {
+    #area-portfolio section .card.casestudy.card-flex {
+      -webkit-flex-flow: row nowrap;
+      -moz-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; } }
+  #area-portfolio section .card.casestudy.card-flex .first {
+    -webkit-box-flex: 0 1 60%;
+    -moz-box-flex: 0 1 60%;
+    -webkit-flex: 0 1 60%;
+    -ms-flex: 0 1 60%;
+    flex: 0 1 60%; }
+    @media (max-width: 767px) {
+      #area-portfolio section .card.casestudy.card-flex .first {
+        flex-basis: 100%;
+        order: 2; } }
+    @media (min-width: 768px) {
+      #area-portfolio section .card.casestudy.card-flex .first {
+        order: 1; } }
+  #area-portfolio section .card.casestudy.card-flex .second {
+    -webkit-box-flex: 0 1 33%;
+    -moz-box-flex: 0 1 33%;
+    -webkit-flex: 0 1 33%;
+    -ms-flex: 0 1 33%;
+    flex: 0 1 33%; }
+    @media (max-width: 767px) {
+      #area-portfolio section .card.casestudy.card-flex .second {
+        flex-basis: 100%;
+        order: 1; } }
+    @media (min-width: 768px) {
+      #area-portfolio section .card.casestudy.card-flex .second {
+        order: 2; } }
 
 /* This container is needed to position the front and back side */
 .card-container {
@@ -1411,12 +1523,13 @@ section.no-pad {
   background-size: cover;
   background-position: center center;
   -webkit-filter: grayscale(100%);
-  -webkit-filter: blur(10px);
   filter: grayscale(100%);
+  -webkit-filter: blur(10px);
   filter: blur(10px);
   transition: all 0.16s ease; }
 
 .backer:hover::before {
+  -webkit-filter: blur(0px);
   filter: blur(0px); }
 
 .backer-content {
@@ -1490,6 +1603,10 @@ p {
 .text-jumbo2 {
   font-size: 6.18vw !important;
   line-height: 6.18vw !important; }
+
+.text-jumbo.text-compress, blockquote .text-compress.quote {
+  font-size: 5vh !important;
+  line-height: 9vh !important; }
 
 blockquote.blockquote {
   padding-left: 10%; }
@@ -1696,6 +1813,33 @@ a.location-white {
 
 .color-white {
   color: white !important; }
+
+.td-o {
+  text-decoration: overline; }
+
+.td-t {
+  text-decoration: line-through; }
+
+.td-u {
+  text-decoration: underline; }
+
+.td-none {
+  text-decoration: none; }
+
+.td-dash {
+  text-decoration-style: dashed; }
+
+.td-dot {
+  text-decoration-style: dotted; }
+
+.td-dubl {
+  text-decoration-style: double; }
+
+.td-wavy {
+  text-decoration-style: wavy; }
+
+ul.lead li {
+  font-weight: 200; }
 
 .bg-svg-topo {
   background-color: transparent;
