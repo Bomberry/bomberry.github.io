@@ -178,13 +178,6 @@
   </url>
   
   <url>
-    <loc>/services/a/v-production/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/tools/atom/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -537,6 +530,12 @@
   <url>
     <loc>/post/third/</loc>
     <lastmod>2014-09-29T21:54:53-05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/services/a/v-production/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

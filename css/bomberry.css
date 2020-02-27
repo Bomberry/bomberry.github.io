@@ -219,7 +219,8 @@ header.video-header {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%); }
-  header.video-header .container {
+  header.video-header .container,
+  header.video-header .container-fluid {
     position: relative;
     z-index: 2;
     color: white; }

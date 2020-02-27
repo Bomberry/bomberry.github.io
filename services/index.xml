@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>A/V Production</title>
-      <link>/services/a/v-production/</link>
-      <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
-      
-      <guid>/services/a/v-production/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Branding &amp; Identity</title>
       <link>/services/branding-identity/</link>
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
@@ -134,6 +125,15 @@
       <pubDate>Sat, 05 May 2018 23:11:05 -0700</pubDate>
       
       <guid>/services/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A/V Production</title>
+      <link>/services/a/v-production/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/a/v-production/</guid>
       <description></description>
     </item>
     
