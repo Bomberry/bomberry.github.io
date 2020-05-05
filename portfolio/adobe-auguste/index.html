@@ -18,7 +18,7 @@
 <meta name="ICBM" content="37.579101, -122.353689" />
 
 
-    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="generator" content="Hugo 0.69.2" />
 
     
     
@@ -48,7 +48,7 @@
   </head>
 
 
-<body id="area-portfolio" class="location-portfolio">
+<body id="area-portfolio" class="location-portfolio" data-spy="scroll" data-target="#navbar-tracking">
 
 
 
@@ -66,16 +66,17 @@
 
       <ul class="nav navbar-nav navbar-left">
         
-        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
-        <li class="dropdown"><a href="#" class="animated fadeInRight dropdown-toggle location-portfolio navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">portfolio<span class="caret caret-right animated heartBeat"></span></a>
-          <ul class="dropdown-menu animated fadeInDown" data-animation="animated fadeInLeft" data-wow-delay="0s">
+        
+        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false" aria-label="Link to Bomberry.com homepage" title="Link to Bomberry.com homepage"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
+        
+        <li class="dropdown navbar-icon"><a href="#" class="animated fadeInRight dropdown-toggle location-portfolio navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Link to current section" title="Link to current section">portfolio<span class="caret caret-right animated heartBeat"></span></a>
+          
+          <ul class="dropdown-menu animated fadeInDown btn btn-default btn-neo" style="overflow: hidden" data-animation="animated fadeInDown" data-wow-delay="0s" data-wow-duration="0.2s">
             
             
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>work</a></li>
+            <li><a class=" location-portfolio " href="/portfolio/" aria-label="Link to work" title="Link to work"><i class='fa fa-layer-group'> </i>work</a></li>
             
-            <li><a class="location-resume " href="/resume/"><i class='fa fa-user'></i>resume</a></li>
-            
-            <li><a class="location-about " href="/about/"><i class='fa fa-heart'></i>about</a></li>
+            <li><a class=" location-resume " href="/resume/" aria-label="Link to resume" title="Link to resume"><i class='fa fa-user'></i>resume</a></li>
             
           </ul>
         </li>
@@ -90,19 +91,20 @@
     
 
 <div class="collapse navbar-collapse" id="myInverseNavbar2">
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav navbar-right" id="navbar-tracking" role="tablist">
     
       
-      <li><a class="animated fadeInDown location-portfolio " href="#introduction">Introduction</a></li>
+      <li><a class="animated fadeInDown location-portfolio " href="#introduction" aria-label="Link to Introduction" title="Link to Introduction">Introduction</a></li>
       
-      <li><a class="animated fadeInDown location-portfolio " href="#technology">Planning</a></li>
+      <li><a class="animated fadeInDown location-portfolio " href="#technology" aria-label="Link to Planning" title="Link to Planning">Planning</a></li>
       
-      <li><a class="animated fadeInDown location-portfolio " href="#wireframes">App Design</a></li>
+      <li><a class="animated fadeInDown location-portfolio " href="#wireframes" aria-label="Link to App Design" title="Link to App Design">App Design</a></li>
       
-      <li><a class="animated fadeInDown location-portfolio " href="#result">Conclusion</a></li>
+      <li><a class="animated fadeInDown location-portfolio " href="#result" aria-label="Link to Conclusion" title="Link to Conclusion">Conclusion</a></li>
       
     
-
+    
+    
     
   </ul>
 </div>
@@ -128,7 +130,7 @@
 
   
 
-  <a id="introduction"></a>
+  <a id="introduction" aria-label="Introduction Section" title="Introduction Section"></a>
 
   <div class="jumbotron casestudy cs-type cs-dark cs-dark-g cs-auguste-bg">
     <div class="container cs-intro-block">
@@ -189,8 +191,8 @@
       
       <div class="row cs-footnote">
         <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 pad-top-small">
-          <h4><small>Background image: sample load screen background from Project Auguste</small></h4>
-          <h4><small><span class="color-portfolio">Reading time:</span><span class="color-white"> 8 minutes.</span></small></h4>
+          
+          <h4><span class="color-portfolio">Reading time:</span><span class="color-white"> 8 minutes.</span></h4>
         </div>
       </div>
       
@@ -203,7 +205,7 @@
     
 
     
-      <a id="company"></a>
+      <a id="company" aria-label="Case Study Section: company" title="Case Study Section: company"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -236,7 +238,7 @@
         </div>
       </section>
     
-      <a id="quote1"></a>
+      <a id="quote1" aria-label="Case Study Section: quote1" title="Case Study Section: quote1"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
@@ -272,7 +274,7 @@
         </div>
       </section>
     
-      <a id="goals"></a>
+      <a id="goals" aria-label="Case Study Section: goals" title="Case Study Section: goals"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -310,7 +312,7 @@
     </ul>
     </section>
     <h6 class="">* The build-design workflow is the loop between designer, handing-off a design change list or updated specification, and engineer, implementing the functionality or feature in the application for testing. This progression can also be started by the engineer with new functionality that can be vetted for a feature. Engineers are creatives too.</h6>
-    <!-- <h6 class=""><a href="#">jump to workflow solution</a></h6> -->
+    <!-- <h6 class=""><a href="#" aria-label="Jump to workflow solution" title="Jump to workflow solution">jump to workflow solution</a></h6> -->
     </p>
                 </div>
               
@@ -346,7 +348,7 @@
         </div>
       </section>
     
-      <a id="process"></a>
+      <a id="process" aria-label="Case Study Section: process" title="Case Study Section: process"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -393,7 +395,7 @@
         </div>
       </section>
     
-      <a id="tasks"></a>
+      <a id="tasks" aria-label="Case Study Section: tasks" title="Case Study Section: tasks"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -438,7 +440,7 @@
         </div>
       </section>
     
-      <a id="response"></a>
+      <a id="response" aria-label="Case Study Section: response" title="Case Study Section: response"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -487,7 +489,7 @@
         </div>
       </section>
     
-      <a id="technology"></a>
+      <a id="technology" aria-label="Case Study Section: technology" title="Case Study Section: technology"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
@@ -546,7 +548,7 @@
         </div>
       </section>
     
-      <a id="user"></a>
+      <a id="user" aria-label="Case Study Section: user" title="Case Study Section: user"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -604,7 +606,7 @@
         </div>
       </section>
     
-      <a id="wireframes"></a>
+      <a id="wireframes" aria-label="Case Study Section: wireframes" title="Case Study Section: wireframes"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -672,7 +674,7 @@
         </div>
       </section>
     
-      <a id="input"></a>
+      <a id="input" aria-label="Case Study Section: input" title="Case Study Section: input"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
@@ -723,7 +725,7 @@
         </div>
       </section>
     
-      <a id="styling"></a>
+      <a id="styling" aria-label="Case Study Section: styling" title="Case Study Section: styling"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -777,7 +779,7 @@
         </div>
       </section>
     
-      <a id="result"></a>
+      <a id="result" aria-label="Case Study Section: result" title="Case Study Section: result"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
@@ -820,7 +822,7 @@
         </div>
       </section>
     
-      <a id="conclusion"></a>
+      <a id="conclusion" aria-label="Case Study Section: conclusion" title="Case Study Section: conclusion"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
@@ -864,7 +866,7 @@
         </div>
       </section>
     
-      <a id="quote2"></a>
+      <a id="quote2" aria-label="Case Study Section: quote2" title="Case Study Section: quote2"></a>
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
@@ -939,9 +941,9 @@
               <h5 class="company lead breath-no-v">Streamlio</h5>
               <h6 class="services breath-no-v">Branding | Web Development | Graphic Design</h6>
               <h2 class="breath-top">Building a Better Brand</h2>
-              <p class="breath-top">All startups face the challenge of developing a cohesive brand and an online presence.</p>
+              <p class="">All startups face the challenge of developing a cohesive brand and online presence.</p>
               <div class="lead text-right pad-top-small">
-                <a href="../streamlio" class="color-portfolio">Streamlio Branding &amp; Design<span class="fa fa-arrow-circle-right icon-pad-left animated heartBeat infinite"></span></a>
+                <a href="../streamlio" class="btn btn-neo color-portfolio" aria-label="Read the case study: Streamlio Branding &amp; Design" title="Read the case study: Streamlio Branding &amp; Design">Streamlio Branding &amp; Design<span class="fa fa-arrow-circle-right icon-pad-left animated heartBeat infinite"></span></a>
               </div>
             </div>
           </div>
@@ -962,8 +964,9 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 breath-v">
-        <h2>Let's talk about how we can work together.</h2>
-        <p class="lead breath-top">Need help with a project? Would you like a design review? Have a problem you need to solve? Let's chat and start a new story together.</p>
+        <h2>Let&#39;s talk about how we can work together.</h2>
+        <p class="">Need help with a project? Would you like a design review? Have a problem you need to solve? Let&#39;s chat and start a new story together.</p>
+        <p class="pad-top-tiny"><a href="mailto:kevin&#43;contact@bomberry.com?subject=Hi&#43;Kevin!" class="btn btn-default btn-neo"><span>Send me an email <i class="fas fa-paper-plane"> </i></span></a></p>
       </div>
     </div>
   </div>
@@ -973,7 +976,7 @@
 
   
 <section class="pad-top-small">
-  <a id="contact"></a>
+  <a id="contact" aria-label="Contact Information" title="Contact Information"></a>
   <div class="container contact animated fadeIn wow">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -987,8 +990,8 @@
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1"> <span class="text-right"> </span>
         <address>
-          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-portfolio" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
-          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-portfolio" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-portfolio" aria-label="LinkedIn profile link" title="LinkedIn profile link" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
+          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-portfolio" aria-label="Contact mailto link" title="Contact mailto link" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
         </address>
       </div>
     </div>
@@ -1003,7 +1006,7 @@
     <div class="row pad-top-small">
       <div class="col-xs-12">
         
-        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
+        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" aria-label="secret link to Kevin's Kitchen" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
         
       </div>
     </div>

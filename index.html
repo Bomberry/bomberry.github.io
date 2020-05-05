@@ -18,7 +18,7 @@
 <meta name="ICBM" content="37.579101, -122.353689" />
 
 
-    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="generator" content="Hugo 0.69.2" />
 
     
     
@@ -66,16 +66,17 @@
 
       <ul class="nav navbar-nav navbar-left">
         
-        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
-        <li class="dropdown"><a href="#" class="animated fadeInRight dropdown-toggle location-www navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Kevin Bomberry<span class="caret caret-right animated heartBeat"></span></a>
-          <ul class="dropdown-menu animated fadeInDown" data-animation="animated fadeInLeft" data-wow-delay="0s">
+        
+        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false" aria-label="Link to Bomberry.com homepage" title="Link to Bomberry.com homepage"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
+        
+        <li class="dropdown navbar-icon"><a href="#" class="animated fadeInRight dropdown-toggle location-www navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Link to current section" title="Link to current section">Kevin Bomberry<span class="caret caret-right animated heartBeat"></span></a>
+          
+          <ul class="dropdown-menu animated fadeInDown btn btn-default btn-neo" style="overflow: hidden" data-animation="animated fadeInDown" data-wow-delay="0s" data-wow-duration="0.2s">
             
             
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>work</a></li>
+            <li><a class=" location-portfolio " href="/portfolio/" aria-label="Link to work" title="Link to work"><i class='fa fa-layer-group'> </i>work</a></li>
             
-            <li><a class="location-resume " href="/resume/"><i class='fa fa-user'></i>resume</a></li>
-            
-            <li><a class="location-about " href="/about/"><i class='fa fa-heart'></i>about</a></li>
+            <li><a class=" location-resume " href="/resume/" aria-label="Link to resume" title="Link to resume"><i class='fa fa-user'></i>resume</a></li>
             
           </ul>
         </li>
@@ -90,17 +91,16 @@
     
 
 <div class="collapse navbar-collapse" id="myInverseNavbar2">
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav navbar-right" id="navbar-tracking" role="tablist">
     
       
-      <li><a class="animated fadeInLeft location-portfolio " data-animation="animated fadeInDown" data-wow-delay="0s" href="/portfolio/" title="work"><i class='fa fa-layer-group'> </i> <span class="location-portfolio">work</span></a></li>
+      <li><a class="animated fadeInLeft location-portfolio " data-animation="animated fadeInDown" data-wow-delay="0s" href="/portfolio/" aria-label="Link to work" title="Link to work"><i class='fa fa-layer-group'> </i> <span class="location-portfolio">work</span></a></li>
       
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInDown" data-wow-delay="0s" href="/resume/" title="resume"><i class='fa fa-user'></i> <span class="location-resume">resume</span></a></li>
-      
-      <li><a class="animated fadeInLeft location-about " data-animation="animated fadeInDown" data-wow-delay="0s" href="/about/" title="about"><i class='fa fa-heart'></i> <span class="location-about">about</span></a></li>
+      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInDown" data-wow-delay="0s" href="/resume/" aria-label="Link to resume" title="Link to resume"><i class='fa fa-user'></i> <span class="location-resume">resume</span></a></li>
       
     
-
+    
+    
     
   </ul>
 </div>
@@ -139,17 +139,15 @@
 
 
 
-<header class="video-header pad page-introduction cs-dark-g backer bgimg-3DUX1 backer-rev">
-  <div class="overlay">
-  </div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="../media/videos/White-Board.m4v" type="video/m4v">
-  </video>
+<header class="video-header-light pad page-introduction">
+  
+  
+  
   <div class="container-fluid">
     <div class="row breath-v">
-      <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-lg-7 col-lg-offset-5">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-5">
         <p class="lead animated fadeIn wow" data-animation="animated fadeIn" data-wow-delay="618ms" data-wow-duration="1618ms">
-          <span class="text-jumbo"><!-- raw HTML omitted --><strong>Hi, I&rsquo;m Kevin</strong>, a passionate <strong>product designer</strong> focusing on <strong>customer experience</strong>, <strong>design systems and strategy</strong>.<!-- raw HTML omitted --></span>
+          <span class="text-jumbo"><!-- raw HTML omitted -->Hi, I&rsquo;m Kevin — a passionate <strong>product designer</strong> focusing on customer experience, design systems and strategy.<!-- raw HTML omitted --></span>
         </p>
       </div>
     </div>
@@ -171,85 +169,189 @@
 
 
 
-<section class="feature wide auguste bg-svg-p2">
-  <div id="project-auguste" class="feature-card feature-wrapper full feature-4animated fadeIn wow" data-wow-delay="0.25s">
-    <div class="card parallax">
-      <h6 class="services">Product Design | UX &amp; UI Design | Graphic Design</h6>
-      <p class="company lead">Adobe</p>
-      <h3>From tech to product demo</h3>
-      <p>Learn how I created a touch-first application from a 3D painting technology demo in just four months for Adobe.</p>
-      <div class="button-group breath-top">
-        
-        
-          <a class="btn btn-default" href="/portfolio/adobe-auguste/"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
-        
+
+
+
+<section class="feature-section auguste cs-light-g">
+  <div id="project-auguste" class="feature-wrapper feature-4animated fadeIn wow" data-wow-delay="0.25s">
+
+    <div class="feature-card animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" >
+      
+      
+
+
+      <div class="card-image">
+        <img class="animated" src="/portfolio/assets/auguste/SurfaceBook-Screen---Illustrations-02b-LibraryOptionals.png" alt="Streamlio Homepage">
       </div>
+
+      
+      
+
     </div>
-    <div class="bg-image">
-      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/auguste/SurfaceBook-Screen---Illustrations-02b-LibraryOptionals.png" alt="Streamlio Homepage">
+
+    <div class="card-info">
+      <h5 class="type underline pad-bottom-tiny">Case Study</h5>
+      <h5 class="company lead breath-no-v">Adobe</h5>
+      <h6 class="services breath-no-v">Product Design | UX &amp; UI Design | Graphic Design</h6>
+      <h2 class="headline breath-top">From tech to product demo</h2>
+      <p class="description">Learn how I created a touch-first application from a 3D painting technology demo in just four months for Adobe.</p>
+      
+      
+        <a class="btn btn-default btn-neo" href="/portfolio/adobe-auguste/" aria-label="Read the case study" title="Read the case study"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
+      
     </div>
+
+
+
+    
+
+    
+
+    
+
   </div>
 </section>
 
-<section class="feature wide streamlio bg-svg-p2">
-  <div id="streamlio-branding--design" class="feature-card feature-wrapper full feature-1animated fadeIn wow" data-wow-delay="0.25s">
-    <div class="card parallax">
-      <h6 class="services">Branding | Web Development | Graphic Design</h6>
-      <p class="company lead">Streamlio</p>
-      <h3>Building a Better Brand</h3>
-      <p>All startups face the challenge of developing a cohesive brand and an online presence.</p>
-      <div class="button-group breath-top">
-        
-        
-          <a class="btn btn-default" href="/portfolio/streamlio/"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
-        
+<section class="feature-section streamlio cs-light-g">
+  <div id="streamlio-branding--design" class="feature-wrapper feature-1animated fadeIn wow" data-wow-delay="0.25s">
+
+    <div class="feature-card animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" >
+      
+      
+
+
+      <div class="card-image">
+        <img class="animated" src="/portfolio/assets/streamlio/Streamlio-Homepage.png" alt="Streamlio Homepage">
       </div>
+
+      
+      
+
     </div>
-    <div class="bg-image">
-      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/streamlio/Streamlio-Homepage.png" alt="Streamlio Homepage">
+
+    <div class="card-info">
+      <h5 class="type underline pad-bottom-tiny">Case Study</h5>
+      <h5 class="company lead breath-no-v">Streamlio</h5>
+      <h6 class="services breath-no-v">Branding | Web Development | Graphic Design</h6>
+      <h2 class="headline breath-top">Building a Better Brand</h2>
+      <p class="description">All startups face the challenge of developing a cohesive brand and online presence.</p>
+      
+      
+        <a class="btn btn-default btn-neo" href="/portfolio/streamlio/" aria-label="Read the case study" title="Read the case study"><span class="fa fa-briefcase"></span> read case study <span class="fa fa-chevron-right"></span></a>
+      
     </div>
+
+
+
+    
+
+    
+
+    
+
   </div>
 </section>
 
-<section class="feature wide photoshop bg-svg-p2">
-  <div id="adobe-photoshop-cc" class="feature-card feature-wrapper full feature-3animated fadeIn wow" data-wow-delay="0.25s">
-    <div class="card parallax">
-      <h6 class="services">Product Design | Interaction Design | 3D Strategist</h6>
-      <p class="company lead">Adobe</p>
-      <h3>Implimenting a 3D strategy in Adobe Photoshop</h3>
-      <p>When adding new functionality to the globaly recognized leader in digital content creation, you need to look at the users first.</p>
-      <div class="button-group breath-top">
-        
-        
-          <button class="btn btn-default btn-disabled" href="/portfolio/adobe-photoshop/" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
-        
+<section class="feature-section photoshop cs-light-g">
+  <div id="adobe-photoshop-cc" class="feature-wrapper feature-3animated fadeIn wow" data-wow-delay="0.25s">
+
+    <div class="feature-card animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" >
+      
+      
+
+
+      <div class="card-image">
+        <img class="animated" src="/portfolio/assets/photoshop/PS-painting-eye.png" alt="Streamlio Homepage">
       </div>
+
+      
+      
+
     </div>
-    <div class="bg-image">
-      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/photoshop/PS-painting-eye.png" alt="Streamlio Homepage">
+
+    <div class="card-info">
+      <h5 class="type underline pad-bottom-tiny">Case Study</h5>
+      <h5 class="company lead breath-no-v">Adobe</h5>
+      <h6 class="services breath-no-v">Product Design | Interaction Design | 3D Strategist</h6>
+      <h2 class="headline breath-top">Implimenting a 3D strategy in Adobe Photoshop</h2>
+      <p class="description">When adding new functionality to the globaly recognized leader in digital content creation, you need to look at the users first.</p>
+      
+      
+        <button class="btn btn-default btn-disabled btn-neo shadow-2-drop-inset" href="/portfolio/adobe-photoshop/" aria-label="content coming soon (disabled link)" title="content coming soon (disabled link)" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
+      
     </div>
+
+
+
+    
+
+    
+
+    
+
   </div>
 </section>
 
-<section class="feature wide craftmaster bg-svg-p2">
-  <div id="craftmaster-app" class="feature-card feature-wrapper full feature-2animated fadeIn wow" data-wow-delay="0.25s">
-    <div class="card parallax">
-      <h6 class="services">Branding | Product Design | UX/UI Design</h6>
-      <p class="company lead">CraftMaster</p>
-      <h3>Creating A Cross-Platform MineCraft Utility App</h3>
-      <p>Getting 3D models in and out of MineCraft can be hard — very hard. We made an application to make it easy for everyone to build and share their creations.</p>
-      <div class="button-group breath-top">
-        
-        
-          <button class="btn btn-default btn-disabled" href="/portfolio/craftmaster/" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
-        
+<section class="feature-section craftmaster cs-light-g">
+  <div id="craftmaster-app" class="feature-wrapper feature-2animated fadeIn wow" data-wow-delay="0.25s">
+
+    <div class="feature-card animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" >
+      
+      
+
+
+      <div class="card-image">
+        <img class="animated" src="/portfolio/assets/craftmaster/CraftMasterSiteDisplayLaptop.png" alt="Streamlio Homepage">
       </div>
+
+      
+      
+
     </div>
-    <div class="bg-image">
-      <img class="animated fadeInUp wow" data-animation="animated fadeIn" data-wow-offset="100" data-wow-delay="38ms" data-wow-duration="682ms" src="/portfolio/assets/craftmaster/CraftMasterSiteDisplayLaptop.png" alt="Streamlio Homepage">
+
+    <div class="card-info">
+      <h5 class="type underline pad-bottom-tiny">Case Study</h5>
+      <h5 class="company lead breath-no-v">CraftMaster</h5>
+      <h6 class="services breath-no-v">Branding | Product Design | UX/UI Design</h6>
+      <h2 class="headline breath-top">Creating A Cross-Platform MineCraft Utility App</h2>
+      <p class="description">Moving 3D models in and out of MineCraft can be very hard. CraftMaster makes it easy for everyone to build and share their 3D creations.</p>
+      
+      
+        <button class="btn btn-default btn-disabled btn-neo shadow-2-drop-inset" href="/portfolio/craftmaster/" aria-label="content coming soon (disabled link)" title="content coming soon (disabled link)" disabled><span class="fa fa-briefcase"></span> coming soon <span class="fa fa-chevron-right"></span></button>
+      
     </div>
+
+
+
+    
+
+    
+
+    
+
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,8 +430,9 @@
 <section class="container animated fadeIn wow">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 breath-v">
-      <h2 class="pad-top-small">Let's set up a call or grab coffee and talk about the exciting opportunities of working together.</h2>
-      <p class="lead breath-top">Need help with a project? Would you like a design review? Have a problem you need to solve? Let's chat and start a new story together.</p>
+      <h2 class="pad-top-small">Let&#39;s set up a call or grab coffee and talk about the exciting opportunities of working together.</h2>
+      <p class="lead pad-top-tiny">Need help with a project? Would you like a design review? Have a problem you need to solve? Let&#39;s chat and start a new story together.</p>
+      <p class="pad-top-tiny"><a href="mailto:kevin&#43;contact@bomberry.com?subject=Hi&#43;Kevin!" class="btn btn-default btn-neo"><span>Send me an email <i class="fas fa-paper-plane"> </i></span></a></p>
     </div>
   </div>
 </section>
@@ -337,7 +440,7 @@
 
 
 <section class="pad-top-small">
-  <a id="contact"></a>
+  <a id="contact" aria-label="Contact Information" title="Contact Information"></a>
   <div class="container contact animated fadeIn wow">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -351,8 +454,8 @@
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1"> <span class="text-right"> </span>
         <address>
-          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
-          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-" aria-label="LinkedIn profile link" title="LinkedIn profile link" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
+          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-" aria-label="Contact mailto link" title="Contact mailto link" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
         </address>
       </div>
     </div>
@@ -367,7 +470,7 @@
     <div class="row pad-top-small">
       <div class="col-xs-12">
         
-        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
+        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" aria-label="secret link to Kevin's Kitchen" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
         
       </div>
     </div>

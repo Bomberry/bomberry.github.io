@@ -18,7 +18,7 @@
 <meta name="ICBM" content="37.579101, -122.353689" />
 
 
-    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="generator" content="Hugo 0.69.2" />
 
     
     
@@ -66,16 +66,17 @@
 
       <ul class="nav navbar-nav navbar-left">
         
-        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
-        <li class="dropdown"><a href="#" class="animated fadeInRight dropdown-toggle location-resume navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Resume<span class="caret caret-right animated heartBeat"></span></a>
-          <ul class="dropdown-menu animated fadeInDown" data-animation="animated fadeInLeft" data-wow-delay="0s">
+        
+        <li><a class="animated fadeInRight location-site navbar-brand site" data-animation="animated fadeInLeft" data-wow-delay="0s" href="/" role="button" aria-expanded="false" aria-haspopup="false" aria-label="Link to Bomberry.com homepage" title="Link to Bomberry.com homepage"><img class="fa icon-kb" src="/favicon.svg" alt="Kevin Bomberry homepage"></a></li>
+        
+        <li class="dropdown navbar-icon"><a href="#" class="animated fadeInRight dropdown-toggle location-resume navbar-brand" data-wow-delay="0.0s" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Link to current section" title="Link to current section">Resume<span class="caret caret-right animated heartBeat"></span></a>
+          
+          <ul class="dropdown-menu animated fadeInDown btn btn-default btn-neo" style="overflow: hidden" data-animation="animated fadeInDown" data-wow-delay="0s" data-wow-duration="0.2s">
             
             
-            <li><a class="location-portfolio " href="/portfolio/"><i class='fa fa-layer-group'> </i>work</a></li>
+            <li><a class=" location-portfolio " href="/portfolio/" aria-label="Link to work" title="Link to work"><i class='fa fa-layer-group'> </i>work</a></li>
             
-            <li><a class="location-resume  active" href="/resume/"><i class='fa fa-user'></i>resume</a></li>
-            
-            <li><a class="location-about " href="/about/"><i class='fa fa-heart'></i>about</a></li>
+            <li><a class=" location-resume  active" href="/resume/" aria-label="Link to resume" title="Link to resume"><i class='fa fa-user'></i>resume</a></li>
             
           </ul>
         </li>
@@ -90,21 +91,20 @@
     
 
 <div class="collapse navbar-collapse" id="myInverseNavbar2">
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav navbar-right" id="navbar-tracking" role="tablist">
     
       
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#introduction">Introduction</a></li>
+      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#experience" aria-label="Link to Experience" title="Link to Experience">Experience</a></li>
       
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#experience">Experience</a></li>
+      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#skills" aria-label="Link to Skills" title="Link to Skills">Skills</a></li>
       
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#skills">Skills</a></li>
+      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#tools" aria-label="Link to Tools" title="Link to Tools">Tools</a></li>
       
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#tools">Tools</a></li>
-      
-      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#contact">Contact</a></li>
+      <li><a class="animated fadeInLeft location-resume " data-animation="animated fadeInRight" data-wow-delay="0.62s" href="#contact" aria-label="Link to Contact" title="Link to Contact">Contact</a></li>
       
     
-
+    
+    
     
   </ul>
 </div>
@@ -132,28 +132,28 @@
 
   
 <section class="pad-top-small">
-  <a id="experience"></a>
-  <div class="container">
+  <a id="experience" aria-label="Experience Section" title="Experience Section"></a>
+  <div class="fluid-container">
    <hr>
-    <div class="row color-resume animated fadeIn wow">
-      <div class="col-md-10 col-md-offset-1 text-left">
+    <div class="row flow-box color-resume animated fadeIn wow">
+      <div class="col-md-10 col-md-offset-1 text-left breath-top-small">
         <h2>Experience</h2>
       </div>
     </div>
     <hr class="hidden-sm">
 
   
-  <a id="resume/streamlio.md"></a>
+  <a id="resume/streamlio.md" aria-label="resume/streamlio.md" title="resume/streamlio.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Branding/Web Development (Consultant)</h4>
+        <h4 class="client_name">Streamlio</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Streamlio</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2017—2019</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2017—2019</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Branding/Web Development (Consultant)</h4>
       </div>
     </div>
 
@@ -162,7 +162,7 @@
         <p class="lead">I worked with the VP of Marketing to develop corporate branding and designed the web site using HTML, SASS/CSS, JS, and HUGO. In addition, I created logos, media templates (.PSD, .AI, Keynote), color libraries, and usage/style guides.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/streamlio.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/streamlio.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -178,7 +178,7 @@
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/streamlio.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/streamlio.md-content">
         <div class="card card-body">
           <p>Logo Design/Refresh (Update?)</p>
 <p>150+ logo assets (.ai and .psd (masters), .svg, .png, and .jpg)</p>
@@ -207,7 +207,7 @@ Usage document
         
         
         
-        <div class="lead animated flash wow"><a href="../portfolio/streamlio" class="color-resume">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
+        <div class="btn btn-default btn-neo lead animated flash wow"><a href="../portfolio/streamlio" class="color-resume" aria-label="Read the case study" title="Read the case study">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
         
       </div>
       <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
@@ -216,7 +216,7 @@ Usage document
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#streamlio" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#streamlio" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -228,17 +228,17 @@ Usage document
   </article>
   <hr>
   
-  <a id="resume/adobe-grimoire.md"></a>
+  <a id="resume/adobe-grimoire.md" aria-label="resume/adobe-grimoire.md" title="resume/adobe-grimoire.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>3D Content Design (NonDisclosed Project)</h4>
+        <h4 class="client_name">Adobe</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Adobe</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2017</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2017</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">3D Content Design (NonDisclosed Project)</h4>
       </div>
     </div>
 
@@ -247,7 +247,7 @@ Usage document
         <p class="lead">Working with a team of two directors and one artist, I created an animated interactive concept for use in Unity.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/adobe-grimoire.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/adobe-grimoire.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -259,7 +259,7 @@ Usage document
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/adobe-grimoire.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/adobe-grimoire.md-content">
         <div class="card card-body">
           <ul>
 <li>50+ vector illustrations of elements</li>
@@ -280,17 +280,17 @@ Usage document
   </article>
   <hr>
   
-  <a id="resume/adobe-auguste.md"></a>
+  <a id="resume/adobe-auguste.md" aria-label="resume/adobe-auguste.md" title="resume/adobe-auguste.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Product Design (Consultant)</h4>
+        <h4 class="client_name">Adobe</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Adobe</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2016</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2016</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Product Design (Consultant)</h4>
       </div>
     </div>
 
@@ -299,7 +299,7 @@ Usage document
         <p class="lead">This project had an aggressive four-month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals &amp; features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/adobe-auguste.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/adobe-auguste.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -319,7 +319,7 @@ Usage document
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/adobe-auguste.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/adobe-auguste.md-content">
         <div class="card card-body">
           <p>Designed a Surface app for Adobe based on an volumetric 3D painting system developed by Sebastain Mulleretererem</p>
 <p>Defined and constructed a user experience that would directly align with Adobe XD&rsquo;s design goals while adding new conventions for touch (primary)/stylus (secondary) focused user input.
@@ -337,7 +337,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead animated flash wow"><a href="../portfolio/adobe-auguste" class="color-resume">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
+        <div class="btn btn-default btn-neo lead animated flash wow"><a href="../portfolio/adobe-auguste" class="color-resume" aria-label="Read the case study" title="Read the case study">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
         
       </div>
       <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
@@ -346,7 +346,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-auguste" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#adobe-auguste" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -358,17 +358,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/adobe-felix.md"></a>
+  <a id="resume/adobe-felix.md" aria-label="resume/adobe-felix.md" title="resume/adobe-felix.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>UX/IxD Consultant - Adobe Dimension</h4>
+        <h4 class="client_name">Adobe</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Adobe</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2015—2016</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2015—2016</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">UX/IxD Consultant - Adobe Dimension</h4>
       </div>
     </div>
 
@@ -377,7 +377,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">Working from the initial concept of Project Felix to a MAX beta release, focusing on user interaction, experience, and workflows, I worked with design, management, and engineering teams providing deep knowledge and unique perspective on 3D and UX/IxID to help drive the best possible experience for Project Felix (Adobe Dimension).</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/adobe-felix.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/adobe-felix.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -393,7 +393,7 @@ This includes defining interaction models and specifications for single/multi-in
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/adobe-felix.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/adobe-felix.md-content">
         <div class="card card-body">
           
         </div>
@@ -411,7 +411,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-felix" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#adobe-felix" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -423,17 +423,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/craftmaster.md"></a>
+  <a id="resume/craftmaster.md" aria-label="resume/craftmaster.md" title="resume/craftmaster.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Founder, CDO</h4>
+        <h4 class="client_name">CraftMaster Software</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>CraftMaster Software</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2015—2018</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2015—2018</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Founder, CDO</h4>
       </div>
     </div>
 
@@ -442,7 +442,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I managed all aspects of CraftMaster Software&#39;s design initiatives, including the development of our voxel editing app for windows/macOS/iOS. I created a custom font, icons, interaction, the app UI layer, identity system, web site, and social media marketing/ad campaigns including booth, promotional, and multimedia/video assets.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/craftmaster.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/craftmaster.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -458,7 +458,7 @@ This includes defining interaction models and specifications for single/multi-in
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/craftmaster.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/craftmaster.md-content">
         <div class="card card-body">
           
         </div>
@@ -471,7 +471,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead animated flash wow"><a href="../portfolio/craftmaster" class="color-resume">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
+        <div class="btn btn-default btn-neo lead animated flash wow"><a href="../portfolio/craftmaster" class="color-resume" aria-label="Read the case study" title="Read the case study">read the case study<span class="fa fa-briefcase icon-pad-left"></span></a></div>
         
       </div>
       <div class="col-xs-6 col-xs-offset-0 col-md-5 col-md-offset-0 text-right">
@@ -480,7 +480,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#craftmaster" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#craftmaster" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -492,17 +492,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/adobe-photoshop.md"></a>
+  <a id="resume/adobe-photoshop.md" aria-label="resume/adobe-photoshop.md" title="resume/adobe-photoshop.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Lead UX/UI Designer - Photoshop (Consultant)</h4>
+        <h4 class="client_name">Adobe</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Adobe</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2010—2015</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2010—2015</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Lead UX/UI Designer - Photoshop (Consultant)</h4>
       </div>
     </div>
 
@@ -511,7 +511,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">Leading the redesign efforts of 3D in Photoshop, I conducted or participated in many user studies and partner meetings to targeting pain-points and define strategic goals and align them with management&#39;s requirements. I then set a course correction to Photoshop’s 3D initiative, creating a realtime 3D editor in Photoshop, implemented 3D printing, and brought the Properties Panel to Photoshop. In addition, I helped create several decks for C-Level and vertical teams.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/adobe-photoshop.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/adobe-photoshop.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -535,7 +535,7 @@ This includes defining interaction models and specifications for single/multi-in
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/adobe-photoshop.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/adobe-photoshop.md-content">
         <div class="card card-body">
           <p>Intergration and simplification of current 3D tools into Photoshop</p>
 <p>Worked with engineering to create on-canvas controls for GL widgets:</p>
@@ -565,7 +565,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#adobe-photoshop" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#adobe-photoshop" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -577,17 +577,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/doppler.md"></a>
+  <a id="resume/doppler.md" aria-label="resume/doppler.md" title="resume/doppler.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Editor-in-Chief, Lead Writer</h4>
+        <h4 class="client_name">Doppler Publishing</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Doppler Publishing</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2012—2017</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2012—2017</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Editor-in-Chief, Lead Writer</h4>
       </div>
     </div>
 
@@ -596,7 +596,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I was editor-in-chief and lead writer for Photoshop Dimensions, an electronic magazine focused on teaching users about Photoshop’s 3D toolset. As editor-in-chief, I managed contributing writers, conducted design reviews, and laid out articles. As lead writer, I created articles and illustrations covering workflows, material creation, and rendering.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/doppler.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/doppler.md-content">
         <div class="card card-body">
           
         </div>
@@ -614,7 +614,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#photoshopdimensions" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#photoshopdimensions" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -626,17 +626,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/adobe-materials.md"></a>
+  <a id="resume/adobe-materials.md" aria-label="resume/adobe-materials.md" title="resume/adobe-materials.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Content Designer/Contractor - Photoshop</h4>
+        <h4 class="client_name">Adobe</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Adobe</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2009</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2009</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Content Designer/Contractor - Photoshop</h4>
       </div>
     </div>
 
@@ -645,7 +645,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I created a library of 200&#43; 3D textures and materials for Photoshop and photoshop.com.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/adobe-materials.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/adobe-materials.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -657,7 +657,7 @@ This includes defining interaction models and specifications for single/multi-in
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/adobe-materials.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/adobe-materials.md-content">
         <div class="card card-body">
           
         </div>
@@ -675,7 +675,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#photoshopcontent" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#photoshopcontent" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -687,17 +687,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/able-pear.md"></a>
+  <a id="resume/able-pear.md" aria-label="resume/able-pear.md" title="resume/able-pear.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Founder, CDO</h4>
+        <h4 class="client_name">Able Pear Software</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Able Pear Software</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2008—2018</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2008—2018</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Founder, CDO</h4>
       </div>
     </div>
 
@@ -706,7 +706,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">As the primary designer of a boutique consulting firm I am responsible for all aspects of design, branding, experience and interaction design, and production. In addition, I work directly with clients and vendors to create solutions from enterprise apps to web sites.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" id="resume/able-pear.md-content">
+      <div class="col-md-10 col-md-offset-1" id="resume/able-pear.md-content">
         <div class="card card-body">
           <ul class="list list-group">
             
@@ -718,7 +718,7 @@ This includes defining interaction models and specifications for single/multi-in
         </div>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/able-pear.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/able-pear.md-content">
         <div class="card card-body">
           
         </div>
@@ -736,7 +736,7 @@ This includes defining interaction models and specifications for single/multi-in
         
         
         
-        <div class="lead"><a class="color-resume" href="../portfolio/#able-pear" role="button">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
+        <div class="btn btn-default btn-neo lead"><a class="color-resume" href="../portfolio/#able-pear" role="button" aria-label="view work" title="view work">view work<span class="fa fa-chevron-right icon-pad-left color-resume"></span></a></div>
         
         
         
@@ -748,17 +748,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/vlab.md"></a>
+  <a id="resume/vlab.md" aria-label="resume/vlab.md" title="resume/vlab.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Operations/Web Chair</h4>
+        <h4 class="client_name">MIT/Stanford Venture Lab (VLAB)</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>MIT/Stanford Venture Lab (VLAB)</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">2001-2007</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>2001-2007</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Operations/Web Chair</h4>
       </div>
     </div>
 
@@ -767,7 +767,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">VLAB is the Bay Area chapter of the MIT Enterprise Forum, a global non-profit organization dedicated to connecting entrepreneurs, industry experts, venture capitalists, private investors, and technologists. As a member of the board, I worked closely with the Chairmen and board members to manage operations. I trained and mentored volunteers for roles within the organization. I lead a rebranding effort, built an automated registration system, planned events, and created event materials.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/vlab.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/vlab.md-content">
         <div class="card card-body">
           <p>Sitting on the board of directors, developing teams and team training, producing events, and mentoring volunteers was an enjoyable, althought sometime increadable hectic, experience, tought me the lesson of delegation and mentoring, fostering growth in individual contributers to produce events and more.</p>
 <h4 id="created-updated-branding-and-templates-for-event-collateral-signage-posters-presentations-lanyards-event-programs-etc-">Created Updated Branding, and templates for event collateral (signage, posters, presentations, lanyards, event programs, etc,&hellip; )</h4>
@@ -790,17 +790,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/panalta.md"></a>
+  <a id="resume/panalta.md" aria-label="resume/panalta.md" title="resume/panalta.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Front End Architect/Consultant</h4>
+        <h4 class="client_name">Panalta</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Panalta</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">1996—2008</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>1996—2008</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Front End Architect/Consultant</h4>
       </div>
     </div>
 
@@ -809,7 +809,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I was a principal in a small technology consulting firm. I managed many aspects of the business, including branding, design, and production. Clients include Johnson &amp; Johnson, WebTV, Microsoft, and GE. Services included corporate identity, business process development, web development, graphic and print design, and photography.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/panalta.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/panalta.md-content">
         <div class="card card-body">
           <h4 id="microsoftweb-tv">Microsoft/Web TV</h4>
 <h4 id="ideo">IDEO</h4>
@@ -825,17 +825,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/bomberry-design.md"></a>
+  <a id="resume/bomberry-design.md" aria-label="resume/bomberry-design.md" title="resume/bomberry-design.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Designer/Educator</h4>
+        <h4 class="client_name">Bomberry Design</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Bomberry Design</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">1994—1996</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>1994—1996</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Designer/Educator</h4>
       </div>
     </div>
 
@@ -844,7 +844,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I crafted identity systems, graphic designs, and artwork for clients. I taught renowned designers and students the latest features of Photoshop, Illustrator, Quark, and PageMaker.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/bomberry-design.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/bomberry-design.md-content">
         <div class="card card-body">
           
         </div>
@@ -856,17 +856,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/south-park.md"></a>
+  <a id="resume/south-park.md" aria-label="resume/south-park.md" title="resume/south-park.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>Location/Production Manager</h4>
+        <h4 class="client_name">South Park Digital</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>South Park Digital</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">1994—1996</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>1994—1996</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">Location/Production Manager</h4>
       </div>
     </div>
 
@@ -875,7 +875,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I managed the designers, prepress team, and pressmen for a leading digital design/prepress production studios. I was responsible for all day-to-day operations. I used my access to the studio to teach myself Photoshop, Illustrator, linear and drum scanning, digital photography, prepress, and offset print production.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/south-park.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/south-park.md-content">
         <div class="card card-body">
           
         </div>
@@ -887,17 +887,17 @@ This includes defining interaction models and specifications for single/multi-in
   </article>
   <hr>
   
-  <a id="resume/macys.md"></a>
+  <a id="resume/macys.md" aria-label="resume/macys.md" title="resume/macys.md"></a>
   <article class="animated fadeIn wow">
-    <div class="row">
+    <div class="row text-info-block">
       <div class="col-md-5 col-md-offset-1">
-        <h4>MIS Specialist/Manager</h4>
+        <h4 class="client_name">Macy&#39;s</h4>
       </div>
-      <div class="col-md-3 text-right">
-        <h4>Macy&#39;s</h4>
+      <div class="col-md-4 col-md-offset-1 text-right">
+        <h4 class="job_duration">1992-1994</h4>
       </div>
-      <div class="col-md-2 text-right">
-        <h4>1992-1994</h4>
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="job_title">MIS Specialist/Manager</h4>
       </div>
     </div>
 
@@ -906,7 +906,7 @@ This includes defining interaction models and specifications for single/multi-in
         <p class="lead">I trained 71 buyers, assistants, and department managers on SABER data processing. I advised management on the redefinition of product SKUs for merchandising and logistics.</p>
       </div>
       
-      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 collapse" id="resume/macys.md-content">
+      <div class="col-md-10 col-md-offset-1 collapse" id="resume/macys.md-content">
         <div class="card card-body">
           
         </div>
@@ -923,11 +923,11 @@ This includes defining interaction models and specifications for single/multi-in
 
   
 <section class="pad-top-small">
-  <a id="skills"></a>
-  <div class="container">
+  <a id="skills" aria-label="Skills Section" title="Skills Section"></a>
+  <div class="fluid-container">
    <hr>
-    <div class="row color-resume animated fadeIn wow">
-      <div class="col-md-10 col-md-offset-1 text-left">
+    <div class="row flow-box color-resume animated fadeIn wow">
+      <div class="col-md-10 col-md-offset-1 text-left breath-top-small">
         <h2>Skills</h2>
       </div>
     </div>
@@ -1093,14 +1093,14 @@ This includes defining interaction models and specifications for single/multi-in
 
   
 <section class="pad-top-small">
-  <a id="tools"></a>
-  <div class="container">
+  <a id="tools" aria-label="Tools Section" title="Tools Section"></a>
+  <div class="fluid-container">
     <hr>
-    <div class="row color-resume animated fadeIn wow">
-      <div class="col-md-4 col-md-offset-1">
+    <div class="row flow-box color-resume animated fadeIn wow">
+      <div class="col-md-4 col-md-offset-1 breath-top-small">
         <h3>Tools</h3>
       </div>
-      <div class="col-md-5 col-md-offset-1 hidden-sm">
+      <div class="col-md-5 col-md-offset-1 hidden-sm breath-top-small">
         
         <h3><span class="text-muted">Proficiency</span></h3>
       </div>
@@ -1120,7 +1120,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
     </div>
   </div>
 </div>
@@ -1131,7 +1132,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
     </div>
   </div>
 </div>
@@ -1142,7 +1144,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
     </div>
   </div>
 </div>
@@ -1153,7 +1156,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"><span>70%</span></div>
     </div>
   </div>
 </div>
@@ -1164,7 +1168,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"><span>80%</span></div>
     </div>
   </div>
 </div>
@@ -1175,7 +1180,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"><span>95%</span></div>
     </div>
   </div>
 </div>
@@ -1186,7 +1192,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"><span>60%</span></div>
     </div>
   </div>
 </div>
@@ -1197,7 +1204,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"><span>70%</span></div>
     </div>
   </div>
 </div>
@@ -1208,7 +1216,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
     </div>
   </div>
 </div>
@@ -1219,7 +1228,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"><span>80%</span></div>
     </div>
   </div>
 </div>
@@ -1230,7 +1240,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
     </div>
   </div>
 </div>
@@ -1241,7 +1252,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"><span>90%</span></div>
     </div>
   </div>
 </div>
@@ -1252,7 +1264,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%"><span>60%</span></div>
     </div>
   </div>
 </div>
@@ -1263,7 +1276,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
     </div>
   </div>
 </div>
@@ -1274,7 +1288,8 @@ This includes defining interaction models and specifications for single/multi-in
   </div>
   <div class="col-md-5 col-md-offset-1">
     <div class="progress">
-      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%"></div>
+      
+      <div class="progress-bar background-color-resume" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%"><span>55%</span></div>
     </div>
   </div>
 </div>
@@ -1290,7 +1305,7 @@ This includes defining interaction models and specifications for single/multi-in
   
   
 <section class="pad-top-small">
-  <a id="contact"></a>
+  <a id="contact" aria-label="Contact Information" title="Contact Information"></a>
   <div class="container contact animated fadeIn wow">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -1304,8 +1319,8 @@ This includes defining interaction models and specifications for single/multi-in
       </div>
       <div class="col-xs-12 col-sm-5 col-sm-offset-1"> <span class="text-right"> </span>
         <address>
-          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-resume" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
-          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-resume" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
+          <span class="fab fa-linkedin hidden-xs" aria-hidden="true"></span> <a class="location-resume" aria-label="LinkedIn profile link" title="LinkedIn profile link" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
+          <span class="fa fa-envelope hidden-xs" aria-hidden="true"></span> <a class="location-resume" aria-label="Contact mailto link" title="Contact mailto link" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
         </address>
       </div>
     </div>
@@ -1319,7 +1334,7 @@ This includes defining interaction models and specifications for single/multi-in
     <div class="row pad-top-small">
       <div class="col-xs-12">
         
-        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
+        <p class="copyrightNotice">Copyright © 2020 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="./kitchen/" aria-label="secret link to Kevin's Kitchen" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
         
       </div>
     </div>

@@ -99,6 +99,16 @@ function navbarFX() {
 }
 
 
+// Navbar "ACTIVE" Button Effect
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+
+
+
+
+
 // WOW.js setup
 var wow = new WOW({
   boxClass: 'wow', // animated element css class (default is wow)
