@@ -284,6 +284,10 @@ svg {
   margin-right: 0.75rem; }
 .icon-pad-left {
   margin-left: 0.75rem; }
+.icon-pad-right-small {
+  margin-right: 0.38rem; }
+.icon-pad-left-small {
+  margin-left: 0.38rem; }
 .icon.glyphicon {
   height: 48px;
   width: 48px;
