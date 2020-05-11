@@ -106,7 +106,37 @@ $(".nav a").on("click", function(){
 });
 
 
+// ShowAll Button Effect
+// $(".btn-show-all").attr("aria-expanded","true");
+// $(".btn-show-all").on("click", function(){
+//    $(".btn-show-all").find(".active").removeClass("active");
+//    $(this).addClass("active");
+// });
 
+// $('.btn-show-all').on('click', function () {
+// if($('.btn-show-all').hasClass('glyphicon-chevron-down')) {
+//   $('.btn-show-all').addClass('showing');
+//   } else {
+//   $('.btn-show-all').removeClass('showing');
+//   }
+// });
+
+$(document).ready(function() {
+  $(".btn-show-all").click(function() {
+    // $(".content").toggle();
+    $(this).text(function(i, t) {
+      return t == 'show all' ? 'show less' : 'show all';
+    })
+  });
+});
+$(document).ready(function() {
+  $(".btn-show-more").click(function() {
+    // $(".content").toggle();
+    $(this).html(function(i, t) {
+      return t == 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' ? 'less info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' : 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>';
+    })
+  });
+});
 
 
 // WOW.js setup

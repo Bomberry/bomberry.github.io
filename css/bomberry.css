@@ -1393,6 +1393,10 @@ nav,
   .navbar.location-adobe {
     border-top-color: #0e84cf;
     color: #0e84cf; }
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #bcbcbc; }
+  .navbar .navbar-toggle:hover .icon-bar {
+    background-color: #0e84cf; }
 
 .navbar-nav > li > a,
 .nav > li > a {
@@ -1882,8 +1886,16 @@ blockquote:before {
 .feature-section .feature-card, .feature-section .feature-info .info-links .btn, .navbar-nav > li > a,
 .nav > li > a, .btn.btn-neo,
 .style-neo,
+.navbar .navbar-toggle,
 #area-resume article .progress, #area-resume article .progress-bar {
   border-radius: 32px !important; }
+
+.btn.btn-neo,
+.style-neo,
+.navbar .navbar-toggle,
+#area-resume article .progress {
+  color: #0e84cf;
+  border-color: #0e84cf; }
 
 .btn.btn-disabled {
   background-color: lightgray; }
@@ -2227,6 +2239,10 @@ ul.bullets {
 .icon-kb[src$=".svg"] {
   height: 1.62rem;
   width: auto; }
+  .icon-kb[src$=".svg"] #path_1,
+  .icon-kb[src$=".svg"] #path_2,
+  .icon-kb[src$=".svg"] #path_3 {
+    fill: #0e84cf; }
 
 .text-centered {
   text-align: center; }
@@ -2313,6 +2329,7 @@ ul.bullets {
 .shadow-2-drop, .feature-section .feature-card, .feature-section .feature-info .info-links .btn, .navbar-nav > li > a,
 .nav > li > a, .btn.btn-neo,
 .style-neo,
+.navbar .navbar-toggle,
 #area-resume article .progress {
   -webkit-box-shadow: 7.071px 7.071px 12.75px 2.25px rgba(0, 0, 0, 0.12), -7.071px -7.071px 12.75px 2.25px rgba(255, 255, 255, 0.38);
   -moz-box-shadow: 7.071px 7.071px 12.75px 2.25px rgba(0, 0, 0, 0.12), -7.071px -7.071px 12.75px 2.25px rgba(255, 255, 255, 0.38);
@@ -2455,9 +2472,31 @@ ul.bullets {
     margin-top: 0; }
   #area-resume article .job_title {
     color: #0e84cf; }
-#area-resume div.btn.btn-default.btn-neo {
+#area-resume div.btn.btn-default.btn-neo, #area-resume .navbar div.btn.btn-neo.navbar-toggle, .navbar #area-resume div.btn.btn-neo.navbar-toggle {
   padding-left: 1.62rem;
   padding-right: 1.38rem; }
+
+#area-portfolio a[class~="button"] span::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  line-height: 1;
+  font-size: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+  padding-bottom: 0.162rem; }
+#area-portfolio a[aria-label="Additional Information"] {
+  content: "more info"; }
+#area-portfolio a[aria-label="Additional Information"] span::after {
+  content: ""; }
+#area-portfolio a[aria-label="Additional Information"][aria-expanded="true"] {
+  content: "less info"; }
+#area-portfolio a[aria-label="Additional Information"][aria-expanded="true"] span::after {
+  content: ""; }
+#area-portfolio a[aria-label="Case Study link"] {
+  content: "case study";
+  margin-left: 5%; }
+#area-portfolio a[aria-label="Case Study link"] span::after {
+  content: ""; }
 
 .fx-overlay-hue-rotate {
   background: linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
@@ -2563,7 +2602,7 @@ img.thumbnail + span.caption {
     padding-bottom: 1.5ch; }
     #area-resume section div.container article div.row.link-portfolio-hide-show {
       display: none; }
-    #area-resume section div.container article div.row.link-portfolio .btn-default:hover {
+    #area-resume section div.container article div.row.link-portfolio .btn-default:hover, #area-resume section div.container article div.row.link-portfolio .navbar .navbar-toggle:hover, .navbar #area-resume section div.container article div.row.link-portfolio .navbar-toggle:hover {
       color: white;
       background-color: #0e84cf; }
   #area-resume section div.container article div.col-show-col {
@@ -2574,7 +2613,7 @@ img.thumbnail + span.caption {
       display: block; }
       #area-resume section div.container article:hover div.row.link-portfolio-hide-show {
         display: block; }
-    #area-resume section div.container article:hover .btn-default {
+    #area-resume section div.container article:hover .btn-default, #area-resume section div.container article:hover .navbar .navbar-toggle, .navbar #area-resume section div.container article:hover .navbar-toggle {
       color: #202020;
       background-color: #ececec; }
     #area-resume section div.container article:hover div.col-show-col {
