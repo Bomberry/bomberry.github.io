@@ -1945,7 +1945,9 @@ blockquote:before {
   border-color: #0e84cf; }
 
 .btn.btn-disabled {
-  background-color: lightgray; }
+  background-color: lightgray;
+  pointer-events: none;
+  cursor: default; }
   .btn.btn-disabled:hover {
     background-color: lightgray; }
 
