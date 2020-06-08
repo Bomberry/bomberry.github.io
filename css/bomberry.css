@@ -209,17 +209,6 @@ header.video-header {
   header.video-header-light {
     background-color: white;
     color: black; }
-    header.video-header-light .text-jumbo, header.video-header-light blockquote .quote, blockquote header.video-header-light .quote {
-      color: #0e84cf;
-      font-weight: lighter; }
-      header.video-header-light .text-jumbo strong, header.video-header-light blockquote .quote strong, blockquote header.video-header-light .quote strong {
-        font-weight: 200;
-        text-decoration: underline; }
-      @media (max-width: 576px) {
-        header.video-header-light .text-jumbo, header.video-header-light blockquote .quote, blockquote header.video-header-light .quote {
-          font-weight: normal; }
-          header.video-header-light .text-jumbo strong, header.video-header-light blockquote .quote strong, blockquote header.video-header-light .quote strong {
-            font-weight: bold; } }
   header.video-header video {
     position: absolute;
     top: 50%;
@@ -885,15 +874,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         line-height: 1.62; }
   .feature-section .card-info {
     color: gray;
-    width: 62vw;
-    padding: 0 1.62rem; }
-    @media (min-width: 1200px) {
-      .feature-section .card-info {
-        width: 38vw;
-        padding: 0; } }
-    @media (max-width: 768px) {
-      .feature-section .card-info {
-        width: 82vw; } }
+    padding: 6.85rem 1.62rem 1.62rem; }
     .feature-section .card-info .btn-neo {
       margin: 1.62rem 0; }
     .feature-section .card-info .type,
@@ -2489,16 +2470,16 @@ ul.bullets {
   color: #bcbcbc;
   font-size: 0.75rem; }
 
-.flow-box, #area-resume .row-flow, #area-resume article .row {
+.flow-box, #area-resume .row-flow {
   width: 62vw; }
   @media (max-width: 992px) {
-    .flow-box, #area-resume .row-flow, #area-resume article .row {
+    .flow-box, #area-resume .row-flow {
       width: 73vw; } }
   @media (max-width: 768px) {
-    .flow-box, #area-resume .row-flow, #area-resume article .row {
+    .flow-box, #area-resume .row-flow {
       width: 84vw; } }
   @media (max-width: 576px) {
-    .flow-box, #area-resume .row-flow, #area-resume article .row {
+    .flow-box, #area-resume .row-flow {
       width: 95vw; } }
 
 .flow-box {
@@ -2513,6 +2494,27 @@ ul.bullets {
 .progress .progress-bar {
   text-align: right;
   padding-right: 0.62rem; }
+
+.text-word-spaced {
+  letter-spacing: 0.062em; }
+
+.text-word-spaced-less {
+  letter-spacing: 0.038em; }
+
+.font-lighter {
+  font-weight: lighter; }
+
+.page-introduction-text, header.video-header-light .text-jumbo, header.video-header-light blockquote .quote, blockquote header.video-header-light .quote {
+  color: #0e84cf;
+  font-weight: lighter; }
+  .page-introduction-text strong, header.video-header-light .text-jumbo strong, header.video-header-light blockquote .quote strong, blockquote header.video-header-light .quote strong {
+    font-weight: 200;
+    text-decoration: underline; }
+  @media (max-width: 576px) {
+    .page-introduction-text, header.video-header-light .text-jumbo, header.video-header-light blockquote .quote, blockquote header.video-header-light .quote {
+      font-weight: normal; }
+      .page-introduction-text strong, header.video-header-light .text-jumbo strong, header.video-header-light blockquote .quote strong, blockquote header.video-header-light .quote strong {
+        font-weight: bold; } }
 
 #area-resume .row-flow {
   margin: 3.5rem auto; }
