@@ -2501,7 +2501,7 @@ ul.bullets {
 .text-word-spaced-less {
   letter-spacing: 0.038em; }
 
-.font-lighter {
+.font-lighter, .feature-section .card-info .headline {
   font-weight: lighter; }
 
 .page-introduction-text, header.video-header-light .text-jumbo, header.video-header-light blockquote .quote, blockquote header.video-header-light .quote {
