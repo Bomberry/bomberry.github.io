@@ -2062,6 +2062,13 @@ a.location-white {
   background-image: -o-linear-gradient(180deg, white 0%, #ececec 100%) !important;
   background-image: linear-gradient(180deg, white 0%, #ececec 100%) !important; }
 
+.cs-light-g-i {
+  color: #101010;
+  background: -webkit-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: -moz-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: -o-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: linear-gradient(0deg, white 0%, #ececec 100%) !important; }
+
 .cs-dark {
   color: white;
   background: #202020; }
@@ -2450,6 +2457,10 @@ ul.bullets {
 
 .txt-focus {
   color: blue; }
+
+.tax-btns {
+  display: inline-block;
+  padding: 0.62rem; }
 
 .shadow-ellipse::after {
   display: block;
