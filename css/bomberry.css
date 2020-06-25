@@ -377,14 +377,16 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #0e84cf; }
 
 #modalDialog {
-  margin-top: 7vmin; }
+  padding-top: 11.34vmin;
+  padding-bottom: 4.34vmin; }
   #modalDialog .modal-content {
     background-color: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    color: #303030; }
+    color: #303030;
+    padding: 0.38rem 0.62rem; }
     #modalDialog .modal-content button.close {
       margin-bottom: 1rem;
-      opacity: 0.63;
+      opacity: 0.62;
       transition: all 0.16s ease-in-out; }
       #modalDialog .modal-content button.close:hover {
         color: #101010;
@@ -1862,6 +1864,12 @@ p {
   line-height: 1.62rem;
   font-weight: lighter; }
 
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 .text-large {
   font-size: 1.62vw !important;
   line-height: 1.62vw !important; }
@@ -1911,7 +1919,7 @@ blockquote:before {
   border-top-width: 0.38rem;
   border-top-style: solid; }
 
-.feature-section .feature-card, .feature-section .feature-info .info-links .btn, .navbar-nav > li > a,
+#modalDialog .modal-content, .feature-section .feature-card, .feature-section .feature-info .info-links .btn, .navbar-nav > li > a,
 .nav > li > a, .btn.btn-neo,
 .style-neo,
 .navbar .navbar-toggle,

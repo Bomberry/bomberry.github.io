@@ -106,6 +106,43 @@ $(".nav a").on("click", function(){
 });
 
 
+
+
+
+// NOTE: Page Fade Out Effect (https://stackoverflow.com/questions/19397515/fading-out-a-whole-page-with-jquery)
+// NOTE: check https://christopheraue.net/design/fading-pages-on-load-and-unload for another process
+// Delegate all clicks on "a" tag (links)
+$(document).on("click", "a", function () {
+  // get the href attribute
+  var newUrl = $(this).attr("href");
+  // veryfy if the new url exists or is a hash
+  if (!newUrl || newUrl[0] === "#") {
+    // set that hash
+    location.hash = newUrl;
+    return;
+  }
+  // now, fadeout the html (whole page)
+  $("html").fadeOut(function () {
+    // when the animation is complete, set the new location
+    location = newUrl;
+  });
+  // prevent the default browser behavior.
+  return false;
+});
+
+// NOTE: Page Fade Out Effect (https://coderwall.com/p/oirbaq/fade-in-page-on-load)
+// $(document).ready(function(){
+// /*! Fades in page on load */
+// $('body').css('display', 'none');
+// $('body').fadeIn(100);
+// });
+
+
+
+
+
+
+
 // ShowAll Button Effect
 // $(".btn-show-all").attr("aria-expanded","true");
 // $(".btn-show-all").on("click", function(){
@@ -158,6 +195,16 @@ wow.init();
 $(window).on('load', function() {
   new WOW().init();
 });
+
+
+
+// NOTE: Page unload animation
+// $(window).on('unload', function() {
+//   document.write("¡¡¡ UNLOADING PAGE !!!");
+// });
+//
+
+
 
 
 $(function() {
