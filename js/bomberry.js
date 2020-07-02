@@ -1,3 +1,12 @@
+// JavaScript and JQuery functions for Bomberry.com
+
+// :: JavaScript ::
+// Blocks of JavaScript
+// :: JQuery ::
+// Blocks of JQuery
+
+
+// :: JQuery ::
 // Variant of https://bootsnipp.com/snippets/WPD9O
 $(function() {
   $('img').on('click', function() {
@@ -6,8 +15,9 @@ $(function() {
   });
 });
 
-
-// Variant of https://css-tricks.com/snippets/jquery/smooth-scrolling/
+// :: JQuery ::
+// Variant of https://css-tricks.com/snippets/jquery/smooth-scrolling/  :: JQuery ::
+// Smooths the scrolling between anchors on a page. Used for showing and hiding/returning to 'work' sections
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -47,6 +57,7 @@ $('a[href*="#"]')
   });
 
 
+// :: JQuery ::
 // popModal function for showing imaage
 $(function() {
   $('.popModal').on('click', function() {
@@ -86,6 +97,9 @@ $(function() {
 // });
 
 
+// :: JavaScript ::
+// Change the hight or effect of the global navbar
+// called in
 // Navbar Effect
 function navbarFX() {
   $(window).on('load resize scroll', function() {
@@ -98,17 +112,26 @@ function navbarFX() {
   });
 }
 
-
-// Navbar "ACTIVE" Button Effect
-$(".nav a").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
+// :: JQuery ::
+// JQuery to call JavaScript functions
+$(function() {
+  //  window.alert("OK");
+  navbarFX();
 });
 
 
 
 
+// :: JQuery ::
+// Navbar "ACTIVE" Button Effect
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+// NOTE: Check to see that his is being used.
 
+
+// :: JQuery ::
 // NOTE: Page Fade Out Effect (https://stackoverflow.com/questions/19397515/fading-out-a-whole-page-with-jquery)
 // NOTE: check https://christopheraue.net/design/fading-pages-on-load-and-unload for another process
 // Delegate all clicks on "a" tag (links)
@@ -142,7 +165,7 @@ $(document).on("click", "a", function () {
 
 
 
-
+// :: JQuery ::
 // ShowAll Button Effect
 // $(".btn-show-all").attr("aria-expanded","true");
 // $(".btn-show-all").on("click", function(){
@@ -158,6 +181,10 @@ $(document).on("click", "a", function () {
 //   }
 // });
 
+
+// :: JQuery ::
+// Show/Hide elements on a page
+// NOTE: This is being used in Resume
 $(document).ready(function() {
   $(".btn-show-all").click(function() {
     // $(".content").toggle();
@@ -174,8 +201,11 @@ $(document).ready(function() {
     })
   });
 });
+// BUG: This code isn't changing the lable properly.
 
 
+
+// :: JavaScript ::
 // WOW.js setup
 var wow = new WOW({
   boxClass: 'wow', // animated element css class (default is wow)
@@ -189,13 +219,15 @@ var wow = new WOW({
   },
   scrollContainer: null // optional scroll container selector, otherwise use window
 });
-wow.init();
 
+// wow.init(); // Is this first instance of WOW?
+
+// :: JQuery ::
 // Reinit WOW on page refresh
 $(window).on('load', function() {
-  new WOW().init();
+  new WOW().init(); // Is this the second instance of WOW?
 });
-
+// NOTE: Check to see which is being used, and remove the other
 
 
 // NOTE: Page unload animation
@@ -204,13 +236,6 @@ $(window).on('load', function() {
 // });
 //
 
-
-
-
-$(function() {
-  //  window.alert("OK");
-  navbarFX();
-});
 
 
 // generate TOC
@@ -227,6 +252,7 @@ $(function() {
 // });
 
 
+// :: JavaScript ::
 // NOTE: Show/Hide Element Toggle button
 // Show an element
 var show = function(elem) {
@@ -249,7 +275,7 @@ var show = function(elem) {
   }, 350);
 
 };
-
+// :: JavaScript ::
 // Hide an element
 var hide = function(elem) {
 
@@ -267,7 +293,6 @@ var hide = function(elem) {
   }, 350);
 
 };
-
 // Toggle element visibility
 var toggle = function(elem, timing) {
 
