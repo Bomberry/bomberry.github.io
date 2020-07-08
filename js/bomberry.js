@@ -135,7 +135,7 @@ $(".nav a").on("click", function(){
 // NOTE: Page Fade Out Effect (https://stackoverflow.com/questions/19397515/fading-out-a-whole-page-with-jquery)
 // NOTE: check https://christopheraue.net/design/fading-pages-on-load-and-unload for another process
 // Delegate all clicks on "a" tag (links)
-$(document).on("click", "a", function () {
+$(document).on("click", "a[href]:not([href^='mailto:'], [href$='#'])", function () {
   // get the href attribute
   var newUrl = $(this).attr("href");
   // veryfy if the new url exists or is a hash

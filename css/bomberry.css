@@ -2593,6 +2593,8 @@ ul.bullets {
   padding: 3.5vmin 0; }
   #area-resume article .row {
     margin: 3.5rem auto; }
+  #area-resume article .progress {
+    background-color: white; }
   #area-resume article .job_title,
   #area-resume article .client_name,
   #area-resume article .job_duration {
