@@ -2,6 +2,7 @@
 
 // :: JavaScript ::
 // Blocks of JavaScript
+
 // :: JQuery ::
 // Blocks of JQuery
 
@@ -14,6 +15,7 @@ $(function() {
     $('#imgModal').modal('show');
   });
 });
+
 
 // :: JQuery ::
 // Variant of https://css-tricks.com/snippets/jquery/smooth-scrolling/  :: JQuery ::
@@ -160,6 +162,13 @@ $(document).on("click", "a[href]:not([href^='mailto:'], [href$='#'])", function 
 // $('body').fadeIn(100);
 // });
 
+// :: JQuery ::
+// NOTE: Fix for Safari bug with "Back" button (Page Fade Out Effect — above)
+$(window).bind("pageshow", function(event) {
+    if (event.originalEvent.persisted) {
+        window.location.reload()
+    }
+});
 
 
 

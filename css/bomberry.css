@@ -1705,6 +1705,10 @@ section.no-pad-mar {
 
 .pad-top {
   padding-top: 7.5rem; }
+  .pad-top-mini {
+    padding-top: 0.62rem; }
+  .pad-top-rem {
+    padding-top: 1rem; }
   .pad-top-tiny {
     padding-top: 1.62rem; }
   .pad-top-small, blockquote .attribution {
@@ -2470,6 +2474,7 @@ ul.bullets {
     display: block;
     margin: auto;
     height: 0.38vmin;
+    border-radius: 0.19vmin;
     width: 100%;
     background: transparent;
     transition: width 382ms ease-in-out, background-color 618ms ease-in-out;
@@ -2495,6 +2500,7 @@ ul.bullets {
     display: block;
     margin: auto;
     height: 0.5vmin;
+    border-radius: 0.25vmin;
     width: 0px;
     background: transparent;
     transition: width 382ms ease-in-out, background-color 618ms ease-in-out; }
@@ -2508,6 +2514,7 @@ ul.bullets {
     display: block;
     margin: auto;
     height: 0.5vmin;
+    border-radius: 0.25vmin;
     width: 100%;
     background-color: #0e84cf; }
 
