@@ -154,40 +154,40 @@ h6 {
     margin-left: 0.25rem; }
 
 .location-resume .caret {
-  color: #ff6363; }
+  color: #e80000; }
 
 .location-portfolio .caret {
-  color: #ffbd7a; }
+  color: #ff8000; }
 
 .location-kitchen .caret {
-  color: #ffff7a; }
+  color: yellow; }
 
 .location-casestudies .caret {
-  color: #6ae46a; }
+  color: #20b420; }
 
 .location-articles .caret {
-  color: #6ae46a; }
+  color: #20b420; }
 
 .location-freebies .caret {
-  color: #adbbff; }
+  color: #3355ff; }
 
 .location-1 .caret {
-  color: #6ae46a; }
+  color: #20b420; }
 
 .location-projects .caret {
-  color: #adbbff; }
+  color: #3355ff; }
 
 .location-about .caret {
-  color: #76e3f4; }
+  color: #0e84cf; }
 
 .location-contact .caret {
-  color: #c247ff; }
+  color: #8800cc; }
 
 .location-adobe .caret {
-  color: #63bcf4; }
+  color: #0e84cf; }
 
 .location-apple .caret {
-  color: #63bcf4; }
+  color: #0e84cf; }
 
 figure.popModal {
   transform: scale(1);
@@ -2541,6 +2541,9 @@ ul.bullets {
 
 .hello-bgc {
   background-color: black; }
+
+.hello-bgc-match {
+  background-color: #057FD5; }
 
 .copyrightNotice {
   text-align: center;
