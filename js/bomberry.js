@@ -9,6 +9,7 @@
 
 // :: JQuery ::
 // Variant of https://bootsnipp.com/snippets/WPD9O
+// NOTE: Show the Modal component
 $(function() {
   $('img').on('click', function() {
     $('.imgSource').attr('src', $(this).attr('src'));

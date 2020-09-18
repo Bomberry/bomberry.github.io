@@ -52,7 +52,77 @@
   </url>
   
   <url>
-    <loc>/guidelines/</loc>
+    <loc>/system/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/brand/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/components/buttons/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/brand/color/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/components/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/brand/icons/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/patterns/introduction/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/components/menus/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/patterns/modal/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/patterns/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/brand/typography/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

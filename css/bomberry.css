@@ -385,8 +385,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-color: #0e84cf; }
 
 #modalDialog {
-  padding-top: 11.34vmin;
+  padding-top: 5rem;
   padding-bottom: 4.34vmin; }
+  #modalDialog.animated {
+    -webkit-animation-duration: 300ms;
+    -moz-animation-duration: 300ms;
+    -ms-animation-duration: 300ms;
+    -o-animation-duration: 300ms;
+    animation-duration: 300ms; }
   #modalDialog .modal-dialog.modal-lg {
     width: 74vw;
     margin: auto;
@@ -395,6 +401,12 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
       #modalDialog .modal-dialog.modal-lg {
         width: 90vw;
         top: 7.5rem; } }
+  #modalDialog .modal-dialog.modal-full {
+    width: 95vw;
+    margin: auto; }
+    @media (max-width: 768px) {
+      #modalDialog .modal-dialog.modal-full {
+        width: 95vw; } }
   #modalDialog .modal-content {
     background-color: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -411,7 +423,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     #modalDialog .modal-content figcaption {
       color: #202020; }
     #modalDialog .modal-content .imagePreview {
-      width: 100%; }
+      width: 100%;
+      margin-top: 1.62rem; }
   #modalDialog .imageCaption,
   #modalDialog .imageDetail {
     margin-bottom: 1.62rem; }
@@ -681,6 +694,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     display: flex;
     flex: 1 0 calc(30%);
     padding: 1.5rem 3rem;
+    margin-bottom: 3rem;
     align-items: center;
     justify-content: center; }
     @media screen and (max-width: 767px) {
@@ -1185,6 +1199,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         height: 100%;
         margin-top: auto; }
 
+.feature-section .feature-card {
+  margin: auto;
+  background-color: #efefef; }
+
+.feature-section .feature-card .row.card-info {
+  padding: unset; }
+
 .flex-gallery {
   padding: 0.5vw;
   display: -ms-flexbox;
@@ -1216,6 +1237,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     flex: auto;
     width: 100%;
     margin: 0.5vw; }
+    .flex-gallery > figure:not(:last-of-type) {
+      margin-bottom: 7rem; }
     .flex-gallery > figure.fig-space {
       margin-top: 4.24rem; }
     .flex-gallery > figure > img {
