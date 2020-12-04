@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>/system/language/colors/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/colors/primary/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/resume/south-park/</loc>
     <lastmod>2018-05-05T23:11:12-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -25,6 +39,20 @@
   
   <url>
     <loc>/portfolio/streamlio/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/colors/secondary/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/typography/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -59,13 +87,6 @@
   </url>
   
   <url>
-    <loc>/system/brand/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/system/components/buttons/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -73,7 +94,7 @@
   </url>
   
   <url>
-    <loc>/system/brand/color/</loc>
+    <loc>/system/language/colors/grays/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -87,7 +108,7 @@
   </url>
   
   <url>
-    <loc>/system/brand/icons/</loc>
+    <loc>/system/language/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -95,6 +116,13 @@
   
   <url>
     <loc>/system/patterns/introduction/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/layout/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -116,13 +144,6 @@
   
   <url>
     <loc>/system/patterns/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/system/brand/typography/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -171,6 +192,13 @@
   </url>
   
   <url>
+    <loc>/system/language/icons/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/resume/panalta/</loc>
     <lastmod>2018-05-05T23:11:02-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -178,8 +206,22 @@
   </url>
   
   <url>
+    <loc>/system/language/interactions/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/resume/vlab/</loc>
     <lastmod>2018-05-05T23:10:57-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/animations/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -194,6 +236,13 @@
   <url>
     <loc>/resume/adobe-materials/</loc>
     <lastmod>2018-05-05T23:10:47-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/resources/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -283,6 +332,13 @@
   </url>
   
   <url>
+    <loc>/post/hugo-table-of-contents/</loc>
+    <lastmod>2014-09-29T21:54:53-05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
     <lastmod>2014-09-29T21:54:53-05:00</lastmod>
     <changefreq>daily</changefreq>
@@ -299,6 +355,24 @@
   <url>
     <loc>/post/third/</loc>
     <lastmod>2014-09-29T21:54:53-05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/animations/grays/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/animations/primary/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/system/language/animations/secondary/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
