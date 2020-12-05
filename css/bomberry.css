@@ -36,6 +36,48 @@
   -moz-box-shadow: 4px 4px 32px -4px rgba(255, 255, 255, 0.62), -8px 32px -4px rgba(0, 0, 0, 0.38), 4px 4px 32px -4px rgba(255, 255, 255, 0.62) inset, -8px 32px -4px rgba(0, 0, 0, 0.38) inset;
   box-shadow: 4px 4px 32px -4px rgba(255, 255, 255, 0.62), -8px 32px -4px rgba(0, 0, 0, 0.38), 4px 4px 32px -4px rgba(255, 255, 255, 0.62) inset, -8px 32px -4px rgba(0, 0, 0, 0.38) inset; }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fx-animation-delay {
+  animation-name: "fade-in";
+  animation-duration: 1600ms;
+  animation-fill-mode: both; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(1) {
+    animation-delay: 600ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(2) {
+    animation-delay: 1200ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(3) {
+    animation-delay: 1800ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(4) {
+    animation-delay: 2400ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(5) {
+    animation-delay: 3000ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(6) {
+    animation-delay: 3600ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(7) {
+    animation-delay: 4200ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(8) {
+    animation-delay: 4800ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(9) {
+    animation-delay: 5400ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(10) {
+    animation-delay: 6000ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(11) {
+    animation-delay: 6600ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(12) {
+    animation-delay: 7200ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(13) {
+    animation-delay: 7800ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(14) {
+    animation-delay: 8400ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(15) {
+    animation-delay: 9000ms; }
+  .fx-animation-delay.fx-animation-delay:nth-of-type(16) {
+    animation-delay: 9600ms; }
+
 * {
   box-sizing: border-box; }
   *:focus {
@@ -708,8 +750,8 @@ aside#toc_aside {
   opacity: 0;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s; }
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms; }
   .tile-overlay.fade-in {
     visibility: visible;
     -webkit-transition-timing-function: ease-out;
@@ -745,8 +787,8 @@ aside#toc_aside {
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform, -webkit-transform;
-    -webkit-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+    -webkit-transition-duration: 800ms;
+    transition-duration: 800ms;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     -webkit-backface-visibility: hidden;
@@ -943,6 +985,10 @@ aside#toc_aside {
   @media only screen and (max-width: 734px) {
     .section-tiles-grid .tiles-container .tile {
       min-height: 450px; } }
+
+.animated {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms; }
 
 .section-tiles-grid {
   position: relative;
@@ -1190,18 +1236,23 @@ aside#toc_aside {
   line-height: 1.381;
   font-weight: 400;
   letter-spacing: 0.011em; }
-  .typography-tile-backface-content.type {
+  .typography-tile-backface-content.type, .typography-tile-backface-content.services {
     font-size: 17px;
     line-height: 1.29412;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: -0.02em; }
   .typography-tile-backface-content.headline {
-    padding-top: 36px;
-    padding-bottom: 12px;
     font-size: 36px;
     line-height: 1.18349;
     font-weight: 500;
-    letter-spacing: -0.003em; }
+    letter-spacing: -0.003em;
+    padding-top: 36px;
+    padding-bottom: 12px; }
+  .typography-tile-backface-content.descripton {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em; }
 
 .typography-tile-backface-link {
   font-size: 21px;
@@ -3343,7 +3394,7 @@ span.caret.animated {
   transform: rotate(-90deg); }
 
 div[id^="collapse-section-"] {
-  transition-duration: 2s; }
+  transition-duration: 0.3s; }
 
 .wow {
   visibility: hidden; }

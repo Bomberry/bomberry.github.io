@@ -43,7 +43,7 @@ $('a[href*="#"]')
         // document.addEventListener('touchstart', handler, {passive: true});
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {
+        }, 300, function() { // value was 1000 (ms)
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -287,7 +287,8 @@ $(document).ready(function() {
   $(".btn-show-more").click(function() {
     // $(".content").toggle();
     $(this).html(function(i, t) {
-      return t == 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' ? 'less info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' : 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>';
+      // return t == 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' ? 'less info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>' : 'more info<span class="fas fa-chevron-circle-down icon-pad-left animated heartBeat infinite"></span>';
+      return t == 'more info' ? 'less info' : 'more info';
     })
   });
 });
