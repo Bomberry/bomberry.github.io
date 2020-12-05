@@ -1114,19 +1114,19 @@ aside#toc_aside {
   background: #f89b2a;
   background: linear-gradient(60deg, #f89b2a 0, #ffc55b 100%); }
   .craftmaster .front-face .image-craftmaster {
-    width: 1600px;
-    height: 1800px;
+    width: 844px;
+    height: 502px;
     background-repeat: no-repeat;
-    background-image: url("/portfolio/assets/craftmaster/CraftMasterSiteDisplayLaptop.png");
+    background-image: url("/portfolio/assets/craftmaster/craftmaster-product-shot-MBP-small.png");
     position: relative;
     left: 50%;
-    margin-left: -800px;
+    margin-left: -422px;
     margin-top: 70px;
     z-index: 1;
-    transform: matrix(0.25, 0, 0, 0.25, 0, -630); }
+    transform: matrix(0.6, 0, 0, 0.6, 0, -100); }
     @media only screen and (max-width: 734px) {
       .craftmaster .front-face .image-craftmaster {
-        transform: matrix(0.3, 0, 0, 0.3, 0, -585); } }
+        transform: matrix(0.6, 0, 0, 0.6, 0, -100); } }
   .craftmaster .front-face .flip-tile-button.icon-wrapper:hover .icon {
     color: #ececec; }
   .craftmaster .front-face .flip-tile-button.icon-wrapper .icon {
@@ -1137,19 +1137,19 @@ aside#toc_aside {
   background: #0d0d4f;
   background: linear-gradient(180deg, #0d0d4f 0%, #132a53 67%, #0f1843 76%, #0c0b32 82%, #0e0a2e 100%); }
   .photoshop .front-face .image-photoshop {
-    width: 1440px;
-    height: 865px;
+    width: 844px;
+    height: 502px;
     background-repeat: no-repeat;
-    background-image: url("/portfolio/assets/photoshop/PS-painting-eye.png");
+    background-image: url("/portfolio/assets/photoshop/photoshop-product-shot-MBP-sm.png");
     position: relative;
     left: 50%;
-    margin-left: -40%;
+    margin-left: -422px;
     margin-top: 70px;
     z-index: 1;
-    transform: matrix(0.32, 0, 0, 0.32, -565, -250); }
+    transform: matrix(0.6, 0, 0, 0.6, 0, -100); }
     @media only screen and (max-width: 734px) {
       .photoshop .front-face .image-photoshop {
-        transform: matrix(0.32, 0, 0, 0.32, -540, -200); } }
+        transform: matrix(0.6, 0, 0, 0.6, 0, -100); } }
   .photoshop .front-face .flip-tile-button.icon-wrapper:hover .icon {
     color: #ececec; }
   .photoshop .front-face .flip-tile-button.icon-wrapper .icon {
