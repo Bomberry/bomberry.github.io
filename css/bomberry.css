@@ -3751,12 +3751,14 @@ ul.bullets {
   vertical-align: middle;
   display: inline-block;
   padding-bottom: 0.162rem; }
-#area-portfolio a[aria-label="Additional Information"] {
-  content: "more info"; }
+#area-portfolio a[aria-label="Additional Information"] span::before {
+  content: "more info";
+  padding-right: 0.62rem; }
 #area-portfolio a[aria-label="Additional Information"] span::after {
   content: ""; }
-#area-portfolio a[aria-label="Additional Information"][aria-expanded="true"] {
-  content: "less info"; }
+#area-portfolio a[aria-label="Additional Information"][aria-expanded="true"] span::before {
+  content: "less info";
+  padding-right: 0.62rem; }
 #area-portfolio a[aria-label="Additional Information"][aria-expanded="true"] span::after {
   content: ""; }
 #area-portfolio a[aria-label="Case Study link"] {
