@@ -2707,6 +2707,9 @@ body {
 
 .card-content {
   padding: 1.62rem; }
+  body.location-portfolio .card-content {
+    padding-left: 12px;
+    padding-right: 12px; }
   .card-content .title, .card-content .description {
     flex: 1 1 auto; }
 
