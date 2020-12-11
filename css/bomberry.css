@@ -1155,13 +1155,6 @@ aside#toc_aside {
   .photoshop .front-face .flip-tile-button.icon-wrapper .icon {
     color: #ececec; }
 
-.typography-headline-reduced + p {
-  margin-top: 1em; }
-.typography-headline-reduced + ul {
-  margin-top: 1em; }
-.typography-headline-reduced + .typography-body {
-  margin-top: 1em; }
-
 .typography-grid-headline {
   font-size: 96px;
   line-height: 1.04167;
@@ -1171,14 +1164,33 @@ aside#toc_aside {
     .typography-grid-headline {
       font-size: 120px;
       line-height: 1;
-      font-weight: 700;
       letter-spacing: -0.018em; } }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-grid-headline {
+      font-size: 80px;
+      line-height: 1.075;
+      letter-spacing: -0.012em; } }
+  @media only screen and (max-width: 734px) {
+    .typography-grid-headline {
+      font-size: 56px;
+      line-height: 1.07143;
+      letter-spacing: -0.005em; } }
 
 .typography-grid-intro {
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
   letter-spacing: 0.004em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-grid-intro {
+      font-size: 24px;
+      line-height: 1.16667;
+      letter-spacing: 0.009em; } }
+  @media only screen and (max-width: 734px) {
+    .typography-grid-intro {
+      font-size: 21px;
+      line-height: 1.381;
+      letter-spacing: 0.011em; } }
 
 .typography-tile-type-info {
   font-size: 21px;
@@ -1229,6 +1241,22 @@ aside#toc_aside {
   line-height: 1.19048;
   font-weight: 700;
   letter-spacing: 0.011em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-tile-subhead {
+      font-size: 17px;
+      line-height: 1.23536;
+      letter-spacing: -0.022em; } }
+  @media only screen and (max-width: 734px) {
+    .typography-tile-subhead {
+      font-size: 19px;
+      line-height: 1.21053;
+      letter-spacing: 0.012em; } }
+
+.typography-tile-frontface-footnote {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0; }
 
 .typography-tile-backface-content {
   color: #202020;
@@ -1236,6 +1264,17 @@ aside#toc_aside {
   line-height: 1.381;
   font-weight: 400;
   letter-spacing: 0.011em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-tile-backface-content {
+      font-size: 14px;
+      line-height: 1.42859;
+      letter-spacing: -0.022em; } }
+  @media only screen and (max-width: 734px) {
+    .typography-tile-backface-content {
+      font-size: 21px;
+      line-height: 1.381;
+      font-weight: 400;
+      letter-spacing: 0.011em; } }
   .typography-tile-backface-content.type, .typography-tile-backface-content.services {
     font-size: 17px;
     line-height: 1.29412;
@@ -1259,36 +1298,69 @@ aside#toc_aside {
   line-height: 1;
   font-weight: 400;
   letter-spacing: 0.011em; }
-
-.typography-tile-frontface-footnote {
-  font-size: 12px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-tile-backface-link {
+      font-size: 14px;
+      letter-spacing: -0.022em; } }
+  @media only screen and (max-width: 734px) {
+    .typography-tile-backface-link {
+      font-size: 21px;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 0.011em; } }
 
 .typography-hero-banner {
   font-size: 17px;
   line-height: 1.29412;
   font-weight: 500;
   letter-spacing: -0.02em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-hero-banner {
+      font-size: 15px;
+      line-height: 1.26667; } }
+  @media only screen and (max-width: 734px) {
+    .typography-hero-banner {
+      font-size: 14px;
+      line-height: 1.28577; } }
 
 .typography-modal-headline {
   font-size: 48px;
   line-height: 1.08349;
   font-weight: 700;
   letter-spacing: -0.003em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-modal-headline {
+      font-size: 40px;
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: 0; } }
+  @media only screen and (max-width: 734px) {
+    .typography-modal-headline {
+      font-size: 32px;
+      line-height: 1.125;
+      letter-spacing: 0.004em; } }
 
 .typography-modal-intro {
   font-size: 24px;
   line-height: 1.16667;
   font-weight: 600;
   letter-spacing: 0.009em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-modal-intro {
+      font-size: 21px;
+      line-height: 1.19048;
+      font-weight: 600;
+      letter-spacing: 0; } }
 
 .typography-modal-body {
   font-size: 17px;
   line-height: 1.47059;
   font-weight: 600;
   letter-spacing: -0.03em; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-modal-body {
+      font-size: 14px;
+      line-height: 1.42859; } }
 
 .typography-modal-disclaimer {
   font-size: 12px;
@@ -1301,9 +1373,35 @@ aside#toc_aside {
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0; }
+  @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
+    .typography-scroll-indicator {
+      font-size: 45px; } }
+  @media only screen and (max-width: 734px) {
+    .typography-scroll-indicator {
+      font-size: 21px;
+      line-height: 1.381;
+      font-weight: 400;
+      letter-spacing: 0.011em; } }
 
-.footnote-number {
-  font-feature-settings: "numr" off; }
+[class*="typography-eyebrow"] {
+  display: block;
+  margin-bottom: 0.4em; }
+  [class*="typography-eyebrow"] + * {
+    margin-top: 0; }
+
+.typography-headline + .typography-intro {
+  margin-top: 1.2em; }
+
+.typography-headline-elevated + .typography-intro-elevated {
+  margin-top: 1.4em; }
+
+.typography-headline-super + .typography-intro-elevated {
+  margin-top: 1.6em; }
+
+.typography-headline-reduced + p,
+.typography-headline-reduced + ul,
+.typography-headline-reduced + .typography-body {
+  margin-top: 1em; }
 
 .full-carousel {
   width: 100%;
@@ -2854,219 +2952,6 @@ blockquote:before {
   margin-left: -10%;
   font: italic 400%/1 sans-serif;
   color: #999; }
-
-.typography-modal-headline {
-  font-size: 48px;
-  line-height: 1.08349;
-  font-weight: 700;
-  letter-spacing: -0.003em; }
-
-@media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-headline {
-    font-size: 40px;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: 0; }
-
-  .typography-modal-intro {
-    font-size: 21px;
-    line-height: 1.19048;
-    font-weight: 600;
-    letter-spacing: 0; }
-
-  .typography-modal-body {
-    font-size: 14px;
-    line-height: 1.42859;
-    font-weight: 600;
-    letter-spacing: -0.03em; }
-
-  .typography-hero-banner {
-    font-size: 15px;
-    line-height: 1.26667;
-    font-weight: 500;
-    letter-spacing: -0.02em; }
-
-  .typography-grid-headline {
-    font-size: 80px;
-    line-height: 1.075;
-    font-weight: 700;
-    letter-spacing: -0.012em; }
-
-  .typography-grid-intro {
-    font-size: 24px;
-    line-height: 1.16667;
-    font-weight: 600;
-    letter-spacing: 0.009em; }
-
-  .typography-tile-subhead {
-    font-size: 17px;
-    line-height: 1.23536;
-    font-weight: 700;
-    letter-spacing: -0.022em; }
-
-  .typography-tile-backface-content {
-    font-size: 14px;
-    line-height: 1.42859;
-    font-weight: 400;
-    letter-spacing: -0.022em; }
-
-  .typography-scroll-indicator {
-    font-size: 45px;
-    line-height: 1;
-    font-weight: 600;
-    letter-spacing: 0; }
-
-  .typography-tile-backface-link {
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: -0.022em; } }
-@media only screen and (max-width: 734px) {
-  .typography-modal-headline {
-    font-size: 32px;
-    line-height: 1.125;
-    font-weight: 700;
-    letter-spacing: 0.004em; }
-
-  .typography-hero-banner {
-    font-size: 14px;
-    line-height: 1.28577;
-    font-weight: 500;
-    letter-spacing: -0.02em; }
-
-  .typography-grid-headline {
-    font-size: 56px;
-    line-height: 1.07143;
-    font-weight: 700;
-    letter-spacing: -0.005em; }
-
-  .typography-grid-intro {
-    font-size: 21px;
-    line-height: 1.381;
-    font-weight: 600;
-    letter-spacing: 0.011em; }
-
-  .typography-tile-subhead {
-    font-size: 19px;
-    line-height: 1.21053;
-    font-weight: 700;
-    letter-spacing: 0.012em; }
-
-  .typography-tile-backface-content {
-    font-size: 21px;
-    line-height: 1.381;
-    font-weight: 400;
-    letter-spacing: 0.011em; }
-
-  .typography-scroll-indicator {
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 600;
-    letter-spacing: 0; }
-
-  .typography-tile-backface-link {
-    font-size: 21px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: 0.011em; } }
-.typography-modal-intro {
-  font-size: 24px;
-  line-height: 1.16667;
-  font-weight: 600;
-  letter-spacing: 0.009em; }
-
-.typography-modal-body {
-  font-size: 17px;
-  line-height: 1.47059;
-  font-weight: 600;
-  letter-spacing: -0.03em; }
-
-.typography-modal-disclaimer {
-  font-size: 12px;
-  line-height: 1.33337;
-  font-weight: 600;
-  letter-spacing: -0.01em; }
-
-.typography-headline-reduced + p {
-  margin-top: 1em; }
-.typography-headline-reduced + ul {
-  margin-top: 1em; }
-.typography-headline-reduced + .typography-body {
-  margin-top: 1em; }
-
-.typography-hero-banner {
-  font-size: 17px;
-  line-height: 1.29412;
-  font-weight: 500;
-  letter-spacing: -0.02em; }
-
-.typography-grid-headline {
-  font-size: 96px;
-  line-height: 1.04167;
-  font-weight: 700;
-  letter-spacing: -0.015em; }
-
-@media only screen and (min-width: 1440px) {
-  .typography-grid-headline {
-    font-size: 120px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: -0.018em; } }
-.typography-grid-intro {
-  font-size: 32px;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: 0.004em; }
-
-.typography-tile-subhead {
-  font-size: 21px;
-  line-height: 1.19048;
-  font-weight: 700;
-  letter-spacing: 0.011em; }
-
-.typography-tile-backface-content {
-  font-size: 21px;
-  line-height: 1.381;
-  font-weight: 400;
-  letter-spacing: 0.011em; }
-
-.typography-scroll-indicator {
-  font-size: 50px;
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: 0; }
-
-.typography-tile-frontface-footnote {
-  font-size: 12px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0; }
-
-.typography-tile-backface-link {
-  font-size: 21px;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 0.011em; }
-
-[class*="typography-eyebrow"] {
-  display: block;
-  margin-bottom: 0.4em; }
-  [class*="typography-eyebrow"] + * {
-    margin-top: 0; }
-
-.typography-headline + .typography-intro {
-  margin-top: 1.2em; }
-
-.typography-headline-super + .typography-intro-elevated {
-  margin-top: 1.6em; }
-
-.typography-headline-elevated + .typography-intro-elevated {
-  margin-top: 1.4em; }
-
-.typography-headline-reduced + p,
-.typography-headline-reduced + ul,
-.typography-headline-reduced + .typography-body {
-  margin-top: 1em; }
 
 .jumbotron.casestudy.cs-type,
 .jumbotron.projects.cs-type,
