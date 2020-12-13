@@ -359,34 +359,8 @@ Bomberry Apex Rapid Design System
 
   
 
-  
-<div class="toc_button" data-module-templat="toc-aside">
-  <a href="#" id="toc-toggle"></a>
-  <button class="openbtn" onclick="openAside()">&#9776; TOC</button>
-</div>
-
-<aside id="toc_aside" class="sidepanel" data-module-templat="toc-aside">
-  
-  
-  <header>
-    <a href="javascript:void(0)" class="closebtn toc-toggle" onclick="closeAside()">&times;</a>
-    
-  </header>
-  
-
-  <nav id="TableOfContents"></nav>
-  
 
   
-
-  
-
-</aside>
-
-
-
-
-
 
 
   Page Content:
@@ -454,7 +428,7 @@ Bomberry Apex Rapid Design System
   
   
 <a id="NAME_OF_SECTION" aria-label="ARIA-LABEL_OF_SECTION" title="TITLE_OF_SECTION"></a>
-<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system-childeren-summary-cards">
+<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system--system-childeren-summary-cards">
   <div class="jumbotron casestudy cs-dark">
     <div class="container">
       <div class="row">
@@ -489,6 +463,15 @@ Bomberry Apex Rapid Design System
                 
                 </div>
               </button>
+            </div><div class="flex-card">
+              <button class="button cs-dark-g" href="/system/language/colors/pantone/" title="PANTONE" alt="PANTONE">
+                <div class="card-content">
+                <h5 class="title">PANTONE Colors</h5>
+                <span class="description">PANTONE colors for the Bomberry Design System.
+</span>
+                
+                </div>
+              </button>
             </div></div>
 
 
@@ -519,11 +502,20 @@ Bomberry Apex Rapid Design System
                 
                 </div>
               </a>
+            </li><li class="flex-card">
+              <a class="button cs-dark-g" href="/system/language/colors/pantone/" title="PANTONE" alt="PANTONE">
+                <div class="card-content">
+                <h5 class="title">PANTONE Colors</h5>
+                <span class="description">PANTONE colors for the Bomberry Design System.
+</span>
+                
+                </div>
+              </a>
             </li></ul>
 
           
           <div class="">
-            <h5>**END** system-childeren-summary-cards</h5>
+            <h5>**END** system--system-childeren-summary-cards</h5>
           </div>
         </div>
       </div>
@@ -535,7 +527,7 @@ Bomberry Apex Rapid Design System
 
   
   <a id="NAME_OF_SECTION" aria-label="ARIA-LABEL_OF_SECTION" title="TITLE_OF_SECTION"></a>
-<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system-childeren-summary-blocks">
+<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system--system-childeren-summary-blocks">
   <div class="jumbotron casestudy cs-light-g">
     <div class="container">
       <div class="row">
@@ -545,8 +537,8 @@ Bomberry Apex Rapid Design System
           <p>B: I&#39;m the Card Common colors in a design system include 1–3 primaries that represent your brand. You may want to include a range of tints—a color mixed with white—and shades—a color mixed with black—to give your designers a few more options.
   </p>
           <h4>colors-primary</h4>
-          <h5>[color-bluer color-orangier color-sky]</h5>
-          <ul>
+          <h5>color-bluer<br />color-orangier<br />color-sky<br /></h5>
+          <ul class="color-map-list">
             
             <li class="color-bg-color-bluer">color-bluer<span>color-bluer</span></li>
             
@@ -560,7 +552,7 @@ Bomberry Apex Rapid Design System
     </div>
   </div>
 </section><a id="NAME_OF_SECTION" aria-label="ARIA-LABEL_OF_SECTION" title="TITLE_OF_SECTION"></a>
-<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system-childeren-summary-blocks">
+<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system--system-childeren-summary-blocks">
   <div class="jumbotron casestudy cs-light-g">
     <div class="container">
       <div class="row">
@@ -569,8 +561,8 @@ Bomberry Apex Rapid Design System
 </h5>
           <p>B: </p>
           <h4>colors-secondary</h4>
-          <h5>[color-butter color-ladybug color-roaylity]</h5>
-          <ul>
+          <h5>color-butter<br />color-ladybug<br />color-roaylity<br /></h5>
+          <ul class="color-map-list">
             
             <li class="color-bg-color-butter">color-butter<span>color-butter</span></li>
             
@@ -584,7 +576,7 @@ Bomberry Apex Rapid Design System
     </div>
   </div>
 </section><a id="NAME_OF_SECTION" aria-label="ARIA-LABEL_OF_SECTION" title="TITLE_OF_SECTION"></a>
-<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system-childeren-summary-blocks">
+<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system--system-childeren-summary-blocks">
   <div class="jumbotron casestudy cs-light-g">
     <div class="container">
       <div class="row">
@@ -593,10 +585,57 @@ Bomberry Apex Rapid Design System
 </h5>
           <p>B: </p>
           <h4>colors-grays</h4>
-          <h5>[color-gray]</h5>
-          <ul>
+          <h5>color-gray<br /></h5>
+          <ul class="color-map-list">
             
             <li class="color-bg-color-gray">color-gray<span>color-gray</span></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><a id="NAME_OF_SECTION" aria-label="ARIA-LABEL_OF_SECTION" title="TITLE_OF_SECTION"></a>
+<section class="fadeIn wow animated" style="visibility: visible; animation-name: fadeIn;" data-module-templat="system--system-childeren-summary-blocks">
+  <div class="jumbotron casestudy cs-light-g">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+          <h5>c: PANTONE colors for the Bomberry Design System.
+</h5>
+          <p>B: I&#39;m totally special, as I am the PANTONE colors. These colors were PANTONE Color of the Year from 2010 to 2021.
+  </p>
+          <h4>colors-pantone</h4>
+          <h5>ultimate-gray<br />illuminating<br />classic-blue<br />living-coral<br />ultra-violet<br />greenery<br />rose-quartz<br />serenity<br />marsala<br />radiant-orchid<br />emerald<br />tangerine-tango<br />honeysuckle<br />turquoise<br /></h5>
+          <ul class="color-map-list">
+            
+            <li class="color-bg-ultimate-gray">ultimate-gray<span>ultimate-gray</span></li>
+            
+            <li class="color-bg-illuminating">illuminating<span>illuminating</span></li>
+            
+            <li class="color-bg-classic-blue">classic-blue<span>classic-blue</span></li>
+            
+            <li class="color-bg-living-coral">living-coral<span>living-coral</span></li>
+            
+            <li class="color-bg-ultra-violet">ultra-violet<span>ultra-violet</span></li>
+            
+            <li class="color-bg-greenery">greenery<span>greenery</span></li>
+            
+            <li class="color-bg-rose-quartz">rose-quartz<span>rose-quartz</span></li>
+            
+            <li class="color-bg-serenity">serenity<span>serenity</span></li>
+            
+            <li class="color-bg-marsala">marsala<span>marsala</span></li>
+            
+            <li class="color-bg-radiant-orchid">radiant-orchid<span>radiant-orchid</span></li>
+            
+            <li class="color-bg-emerald">emerald<span>emerald</span></li>
+            
+            <li class="color-bg-tangerine-tango">tangerine-tango<span>tangerine-tango</span></li>
+            
+            <li class="color-bg-honeysuckle">honeysuckle<span>honeysuckle</span></li>
+            
+            <li class="color-bg-turquoise">turquoise<span>turquoise</span></li>
             
           </ul>
         </div>
