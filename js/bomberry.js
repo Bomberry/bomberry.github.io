@@ -194,7 +194,7 @@ $(document).ready(function() {
 
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
-// NOTE: POPUPS
+// NOTE: POPUPS (MODAL)
 // ----------------------------------------------------------------
 
 
@@ -243,8 +243,11 @@ function navbarFX() {
   $(window).on('load resize scroll', function() {
     if ($(window).scrollTop() >= 50) {
       $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
+      $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
     } else {
       $('.navbar-fixed-top').removeClass('box-shadow').removeClass(
+        'short-nav');
+      $('nav#global-nav').removeClass('box-shadow').removeClass(
         'short-nav');
     }
   });
@@ -270,6 +273,52 @@ $(document).ready(function() {
   });
 });
 
+
+
+
+
+// :: JQuery ::
+// Global Nav Menu Button
+// ----------------------------------------------------------------
+//
+// TODO: Add wondowScrollPosition function
+//      See _navigation-global.sass:846
+$(document).ready(function() {
+
+  $("#global-nav-menustate").change(function() {
+
+    var menustate = $(this)[0].checked;
+
+    if (menustate) {
+      // console.log("menustate: " + menustate);
+
+      // windowScrollPosition();
+
+      $("html").addClass("global-nav-noscroll global-nav-noscroll-long");
+
+      $("#global-nav").addClass("menu-opening");
+      $("#global-nav").delay(800).queue(function(){
+        $(this).removeClass("menu-opening").dequeue();
+      });
+
+      // $("#global-nav").addClass("menu-opening");
+
+    } else {
+      // console.log("menustate: " + menustate);
+      $("html").removeClass("global-nav-noscroll global-nav-noscroll-long");
+
+      // windowScrollPosition();
+
+      $("#global-nav").removeClass("menu-opening");
+      $("#global-nav").addClass("menu-closing");
+      $("#global-nav").delay(800).queue(function(){
+        $(this).removeClass("menu-closing").dequeue();
+      });
+    };
+
+  });
+
+});
 
 
 
@@ -447,6 +496,10 @@ $(document).ready(function() {
       // NOTE: Get the current HTML Scroll position
       windowScrollPosition();
 
+      // // disable Bloom module (animation)
+      // $(".bloom-wrapper").css("display": "none");
+      // $(".bloom-wrapper").addClass("pause-animation");
+
       // set up the modal space and display modal dialog
       $("html").addClass("has-modal-full-viewport");
       $("main").addClass("has-modal");
@@ -516,6 +569,10 @@ $(document).ready(function() {
 
     var theModal = $(".modal.modal-full-viewport.modal-tile-backface");
     theModal.removeClass("modal-open");
+
+    // // enable Bloom module (animation)
+    // $(".bloom-wrapper").css("display": "block");
+    // $(".bloom-wrapper").removeClass("pause-animation");
 
     $("main").removeClass("has-modal");
     $("html").removeClass("has-modal-full-viewport");
