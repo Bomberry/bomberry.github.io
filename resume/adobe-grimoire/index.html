@@ -54,7 +54,9 @@
 
 
 
+
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 <link href="/css/all.min.css" type="text/css" rel="stylesheet">
 
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
@@ -81,14 +83,18 @@
 
 
 
-<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-site" data-module-templat="navigation-global"  role="navigation" aria-label="Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
+
+<nav id="global-nav" class="global-nav location-site" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
-    <ul class="global-nav-header">
+    
+    <ul class="global-nav-header" role="menu">
+
       
-      <li class="global-nav-item global-nav-menuicon">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
             <span class="global-nav-menuicon-bread-crust global-nav-menuicon-bread-crust-top"></span>
@@ -98,17 +104,18 @@
           </span>
         </label>
 
-        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open">
+        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open" title="Open Menu">
           <span class="global-nav-menuanchor-label">Global Nav Open Menu</span>
         </a>
-        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close">
+        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close" title="Close Menu">
           <span class="global-nav-menuanchor-label">Global Nav Close Menu</span>
         </a>
+
       </li>
 
       
-      <li class="global-nav-item global-nav-bomberry">
-        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small" title="Kevin Bomberry - Home" role="menuitem" tabindex="0">
           <span class="global-nav-link-text">Bomberry.com</span>
         </a>
       </li>
@@ -119,40 +126,49 @@
 
 
     
-    <ul class="global-nav-list">
+    <ul class="global-nav-list" role="menu">
 
-      <li class="global-nav-item global-nav-bomberry">
-        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/" role="menuitem">
           <span class="global-nav-link-text">Bomberry</span>
         </a>
       </li>
 
-      <li class="global-nav-item global-nav-item-menu global-nav-work">
-        <a class="global-nav-link global-nav-link-work" href="/portfolio/">
-          <span class="global-nav-link-text">Work</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-resume">
-        <a class="global-nav-link global-nav-link-resume" href="/resume/">
-          <span class="global-nav-link-text">Resume</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-about">
-        <a class="global-nav-link global-nav-link-about" href="/about/">
-          <span class="global-nav-link-text">About</span>
-        </a>
-      </li>
+
+
+      
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-work" role="none">
+          <a class="global-nav-link global-nav-link-work" href="/portfolio/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-resume" role="none">
+          <a class="global-nav-link global-nav-link-resume" href="/resume/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-about" role="none">
+          <a class="global-nav-link global-nav-link-about" href="/about/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+
+
+
+      
+      
+
+
 
     </ul>
-
-    
 
 
   </div>
 </nav>
-
-
-
 
 
 
@@ -310,6 +326,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -319,21 +345,27 @@
 
 
 
-<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
 
 
-<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js" charset="utf-8"></script>
 
 
-<script src="/js/wow.min.js"></script>
-
-
-
+<script src="/js/wow.min.js" charset="utf-8"></script>
 
 
 
-  <script src="/js/bomberry.js"></script>
 
+
+
+
+  <script src="/js/lazysizes.min.js" charset="utf-8"></script>
+
+
+
+
+
+  <script src="/js/bomberry.js" charset="utf-8"></script>
 
 
 

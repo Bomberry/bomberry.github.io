@@ -55,7 +55,9 @@
 
 
 
+
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 <link href="/css/all.min.css" type="text/css" rel="stylesheet">
 
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
@@ -70,7 +72,7 @@
   </head>
 
 
-<body id="area-about" class="location-about ">
+<body id="area-about" class="location-about  nav-pad">
 
 
 
@@ -82,14 +84,18 @@
 
 
 
-<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-about" data-module-templat="navigation-global"  role="navigation" aria-label="Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
+
+<nav id="global-nav" class="global-nav location-about" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
-    <ul class="global-nav-header">
+    
+    <ul class="global-nav-header" role="menu">
+
       
-      <li class="global-nav-item global-nav-menuicon">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
             <span class="global-nav-menuicon-bread-crust global-nav-menuicon-bread-crust-top"></span>
@@ -99,17 +105,18 @@
           </span>
         </label>
 
-        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open">
+        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open" title="Open Menu">
           <span class="global-nav-menuanchor-label">Global Nav Open Menu</span>
         </a>
-        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close">
+        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close" title="Close Menu">
           <span class="global-nav-menuanchor-label">Global Nav Close Menu</span>
         </a>
+
       </li>
 
       
-      <li class="global-nav-item global-nav-bomberry">
-        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small" title="Kevin Bomberry - Home" role="menuitem" tabindex="0">
           <span class="global-nav-link-text">Bomberry.com</span>
         </a>
       </li>
@@ -120,33 +127,45 @@
 
 
     
-    <ul class="global-nav-list">
+    <ul class="global-nav-list" role="menu">
 
-      <li class="global-nav-item global-nav-bomberry">
-        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/" role="menuitem">
           <span class="global-nav-link-text">Bomberry</span>
         </a>
       </li>
 
-      <li class="global-nav-item global-nav-item-menu global-nav-work">
-        <a class="global-nav-link global-nav-link-work" href="/portfolio/">
-          <span class="global-nav-link-text">Work</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-resume">
-        <a class="global-nav-link global-nav-link-resume" href="/resume/">
-          <span class="global-nav-link-text">Resume</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-about">
-        <a class="global-nav-link global-nav-link-about" href="/about/">
-          <span class="global-nav-link-text">About</span>
-        </a>
-      </li>
+
+
+      
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-work" role="none">
+          <a class="global-nav-link global-nav-link-work" href="/portfolio/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-resume" role="none">
+          <a class="global-nav-link global-nav-link-resume" href="/resume/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-about" role="none">
+          <a class="global-nav-link global-nav-link-about" href="/about/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+
+
+
+      
+      
+
+
 
     </ul>
-
-    
 
 
   </div>
@@ -159,14 +178,11 @@
 
 
 
-
-
-
   
 
-  <div class="container-fluid hello-bgc hidden-xs animated fadeIn wow">
+  <div class="container-fluid hello-bgc EDIT_NOTE_1 animated fadeIn wow">
   <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 m-pad-top-small pad-bottom-small">
+    <div class="EDIT_NOTE_2">
       <section>
         <video class="img-responsive m-pad-center" src="/media/videos/Bomberry-com-Hello-A.mp4" autoplay loop controls preload="auto"></video>
       </section>
@@ -178,6 +194,7 @@
     <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 m-pad-top-medium">
       <section class="animated fadeIn wow">
         <h1 class="color-about">About me</h1>
+        <h6 class="">Reading time: <span class="color-about">7 minutes</span></h6>
         <hr>
         <p class="lead">I was born in Southern California, raised in Northern California, and currently reside in Central California's San Francisco Bay Area. At a young age, I took an interest in music, computers, cooking, and Japanese language and culture. These interests have stayed with me to this day.</p>
         <p class="lead">I went to several high schools, leaving during my junior year to continue my education at Sacramento City College, studying music, composition, sound design, psychology, and theater. I competed in several piano competitions, performed recitals, and produced two musicals while there.</p>
@@ -280,6 +297,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -289,21 +316,27 @@
 
 
 
-<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
 
 
-<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js" charset="utf-8"></script>
 
 
-<script src="/js/wow.min.js"></script>
-
-
-
+<script src="/js/wow.min.js" charset="utf-8"></script>
 
 
 
-  <script src="/js/bomberry.js"></script>
 
+
+
+
+  <script src="/js/lazysizes.min.js" charset="utf-8"></script>
+
+
+
+
+
+  <script src="/js/bomberry.js" charset="utf-8"></script>
 
 
 

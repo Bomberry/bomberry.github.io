@@ -55,7 +55,9 @@
 
 
 
+
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 <link href="/css/all.min.css" type="text/css" rel="stylesheet">
 
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
@@ -70,7 +72,7 @@
   </head>
 
 
-<body id="area-portfolio" class="location-portfolio" data-spy="scroll" data-target="#navbar-tracking">
+<body id="area-portfolio" class="location-portfolio nav-pad" data-spy="scroll" data-target="#navbar-tracking">
 
 
 
@@ -82,14 +84,18 @@
 
 
 
-<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-portfolio" data-module-templat="navigation-global"  role="navigation" aria-label="Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
+
+<nav id="global-nav" class="global-nav location-portfolio" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
-    <ul class="global-nav-header">
+    
+    <ul class="global-nav-header" role="menu">
+
       
-      <li class="global-nav-item global-nav-menuicon">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
             <span class="global-nav-menuicon-bread-crust global-nav-menuicon-bread-crust-top"></span>
@@ -99,17 +105,18 @@
           </span>
         </label>
 
-        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open">
+        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open" title="Open Menu">
           <span class="global-nav-menuanchor-label">Global Nav Open Menu</span>
         </a>
-        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close">
+        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close" title="Close Menu">
           <span class="global-nav-menuanchor-label">Global Nav Close Menu</span>
         </a>
+
       </li>
 
       
-      <li class="global-nav-item global-nav-bomberry">
-        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small" title="Kevin Bomberry - Home" role="menuitem" tabindex="0">
           <span class="global-nav-link-text">Bomberry.com</span>
         </a>
       </li>
@@ -120,33 +127,45 @@
 
 
     
-    <ul class="global-nav-list">
+    <ul class="global-nav-list" role="menu">
 
-      <li class="global-nav-item global-nav-bomberry">
-        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/" role="menuitem">
           <span class="global-nav-link-text">Bomberry</span>
         </a>
       </li>
 
-      <li class="global-nav-item global-nav-item-menu global-nav-work">
-        <a class="global-nav-link global-nav-link-work" href="/portfolio/">
-          <span class="global-nav-link-text">Work</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-resume">
-        <a class="global-nav-link global-nav-link-resume" href="/resume/">
-          <span class="global-nav-link-text">Resume</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-about">
-        <a class="global-nav-link global-nav-link-about" href="/about/">
-          <span class="global-nav-link-text">About</span>
-        </a>
-      </li>
+
+
+      
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-work" role="none">
+          <a class="global-nav-link global-nav-link-work" href="/portfolio/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-resume" role="none">
+          <a class="global-nav-link global-nav-link-resume" href="/resume/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-about" role="none">
+          <a class="global-nav-link global-nav-link-about" href="/about/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+
+
+
+      
+      
+
+
 
     </ul>
-
-    
 
 
   </div>
@@ -159,14 +178,9 @@
 
 
 
-
-
-
 <main id="main" class="main" role="main" data-page-template="portfolio--single" data-page-type="casestudy">
 
   
-
-
   
 
 
@@ -206,15 +220,15 @@
         
         <ul id="services" class="taxonomy list-unstyled">
           
-          <li>Product Design</li>
+          <li class="typography-list-item">Product Design</li>
           
-          <li>UX Design</li>
+          <li class="typography-list-item">UX Design</li>
           
-          <li>UI Design</li>
+          <li class="typography-list-item">UI Design</li>
           
-          <li>Interaction Design</li>
+          <li class="typography-list-item">Interaction Design</li>
           
-          <li>Design Strategy</li>
+          <li class="typography-list-item">Design Strategy</li>
           
         </ul>
       </div>
@@ -224,15 +238,15 @@
         
         <ul id="tools" class="taxonomy list-unstyled">
           
-          <li>Illustrator</li>
+          <li class="typography-list-item">Illustrator</li>
           
-          <li>Photoshop</li>
+          <li class="typography-list-item">Photoshop</li>
           
-          <li>Atom</li>
+          <li class="typography-list-item">Atom</li>
           
-          <li>iWork</li>
+          <li class="typography-list-item">iWork</li>
           
-          <li>XD</li>
+          <li class="typography-list-item">XD</li>
           
         </ul>
       </div>
@@ -252,21 +266,24 @@
 </div>
 
 
+
   
   
+
     
     
 
+
     
+      
       <a id="company" aria-label="Case Study Section: company" title="Case Study Section: company"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark cs-dark-g">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -299,19 +316,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="quote1" aria-label="Case Study Section: quote1" title="Case Study Section: quote1"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -344,19 +363,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="overview" aria-label="Case Study Section: overview" title="Case Study Section: overview"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -428,19 +449,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="process" aria-label="Case Study Section: process" title="Case Study Section: process"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -485,19 +508,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="tasks" aria-label="Case Study Section: tasks" title="Case Study Section: tasks"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -557,19 +582,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="response" aria-label="Case Study Section: response" title="Case Study Section: response"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -616,19 +643,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="technology" aria-label="Case Study Section: technology" title="Case Study Section: technology"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -701,19 +730,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="user" aria-label="Case Study Section: user" title="Case Study Section: user"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -769,19 +800,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="wireframes" aria-label="Case Study Section: wireframes" title="Case Study Section: wireframes"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -919,19 +952,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="input" aria-label="Case Study Section: input" title="Case Study Section: input"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -988,19 +1023,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="styling" aria-label="Case Study Section: styling" title="Case Study Section: styling"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -1132,19 +1169,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="result" aria-label="Case Study Section: result" title="Case Study Section: result"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -1185,19 +1224,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="conclusion" aria-label="Case Study Section: conclusion" title="Case Study Section: conclusion"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-light">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -1239,19 +1280,21 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
+      
       <a id="quote2" aria-label="Case Study Section: quote2" title="Case Study Section: quote2"></a>
+      
       <section class="animated fadeIn wow">
 
         <div class="jumbotron casestudy cs-dark-g cs-dark">
           <div class="container">
+
             <div class="row">
-              
-
-
 
               
               
@@ -1284,8 +1327,10 @@
               
 
             </div>
+
           </div>
         </div>
+
       </section>
     
   
@@ -1426,6 +1471,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -1435,21 +1490,27 @@
 
 
 
-<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
 
 
-<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js" charset="utf-8"></script>
 
 
-<script src="/js/wow.min.js"></script>
-
-
-
+<script src="/js/wow.min.js" charset="utf-8"></script>
 
 
 
-  <script src="/js/bomberry.js"></script>
 
+
+
+
+  <script src="/js/lazysizes.min.js" charset="utf-8"></script>
+
+
+
+
+
+  <script src="/js/bomberry.js" charset="utf-8"></script>
 
 
 

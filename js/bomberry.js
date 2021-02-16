@@ -1,5 +1,14 @@
 // JavaScript and JQuery functions for Bomberry.com
 
+
+
+// :: MODULES ::
+// NOTE: Import Modules/Classes
+// import { Mortgage } from "lazylazy.js";
+
+
+
+
 // :: LANGUAGE ::
 // NOTE: Name and comments
 
@@ -21,6 +30,7 @@ $(function() {
     $('#imgModal').modal('show');
   });
 });
+
 
 
 // :: JQuery ::
@@ -52,7 +62,7 @@ $('a[href*="#"]')
       // document.addEventListener('touchstart', handler, {passive: true});
       $('html, body').animate({
         scrollTop: target.offset().top
-      }, 300, function() { // value was 1000 (ms)
+      }, 300, function() { // value was 1000 (ms) // was 300
         // Callback after animation
         // Must change focus!
         var $target = $(target);
@@ -67,6 +77,151 @@ $('a[href*="#"]')
     }
   }
 });
+
+
+// :: JavaScript ::
+// NOTE: Smooth Scroll to an inpage anchors
+// function scrollToAnchor(anchorName){
+//     var aTag = $("a[name='"+ anchorName +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// }
+// $("#SELECTOR").click(function() {
+//    scrollToAnchor('anchorName');
+// });
+
+$(document).ready(function() {
+
+  console.log("——————————");
+  console.log('jQuery version: ' + $.fn.jquery)
+  console.log("——————————");
+
+  var aPage = $(location).attr('href');
+  var aDocument = $(document);
+  var aWindow = $(window);
+  var aScreen = aWindow.screen;
+  var aTile = $("a");
+  var hash = $(location).attr('hash');
+
+  console.log("HASH:");
+
+  if ($(location).attr('hash')) {
+    console.log(true);
+  } else {
+    console.log(false);
+  };
+
+  if (aPage.length > 0) {
+    console.log(true);
+    console.log("host = " + $(location).attr('host') +
+          "\nhostname = " + $(location).attr('hostname') +
+          "\npathname = " + $(location).attr('pathname') +
+          "\nhref = " + $(location).attr('href') +
+          "\nhash = " + $(location).attr('hash') +
+          "\nport = " + $(location).attr('port') +
+          "\nprotocol = " + $(location).attr('protocol'));
+
+  } else {
+    console.log(false);
+    console.log("host = " + $(location).attr('host') +
+          "\nhostname = " + $(location).attr('hostname') +
+          "\npathname = " + $(location).attr('pathname') +
+          "\nhref = " + $(location).attr('href') +
+          "\nhash = " + $(location).attr('hash') +
+          "\nport = " + $(location).attr('port') +
+          "\nprotocol = " + $(location).attr('protocol'));
+
+  };
+
+  console.log("—————");
+  console.log("DOCUMENT:");
+  if (aDocument) {
+    console.log(true);
+  } else {
+    console.log(false);
+  };
+  console.log(aDocument.attr('title'));
+  console.log(aDocument);
+
+  console.log("—————");
+  console.log("WINDOW:");
+  if (aWindow) {
+    console.log(true);
+  } else {
+    console.log(false);
+  };
+  console.log(aWindow.innerHeight());
+  console.log(aWindow.innerWidth());
+  console.log(aWindow.outerHeight());
+  console.log(aWindow.outerWidth());
+  console.log(aWindow.attr('pageXOffset'));
+  console.log(aWindow.attr('pageYOffset'));
+  console.log(aWindow.attr('name'));
+  console.log(aWindow.attr('navigator'));
+  console.log(aWindow);
+
+
+  console.log("—————");
+  console.log("SCREEN:");
+  if (aScreen) {
+    console.log(true);
+  } else {
+    console.log(false);
+  };
+  // console.log(aScreen.attr('title'));
+  console.log(aScreen);
+
+
+});
+// alert("host = " + $(location).attr('host') +
+//       "\nhostname = " + $(location).attr('hostname') +
+//       "\npathname = " + $(location).attr('pathname') +
+//       "\nhref = " + $(location).attr('href') +
+//       "\nport = " + $(location).attr('port') +
+//       "\nprotocol = " + $(location).attr('protocol'));
+
+
+
+
+
+
+
+
+// // NOTE: Add lazy attribute to images
+// BUG: NOT WORKING… Using Lazy Load Remastered (see js.html for for import)
+// $(document).ready(function() {
+//   $("img").attr("loading", "lazy");
+//   console.log("I did it!");
+// });
+// $(document).ready(function() {
+//   $( "img" ).attr({
+//     loading: "lazy"
+//   });
+//   console.log("No, I did it!");
+// });
+// $(document).ready(function() {
+//   $("img").each(function() {
+//     console.log("I wanna do it!");
+//     $(this).attr("loading", "lazy");
+//     console.log($(this).prop("src"));
+//   });
+// });
+// NOTE: https://github.com/tuupola/lazyload/tree/2.x#basic-usage
+// $(document).ready(function() {
+//   $("figure.lala").lazyload();
+//   // let images = document.querySelectorAll(".lala");
+//   // new LazyLoad(images);
+//   // // new LazyLoad(images, {
+//   // //      root: null,
+//   // //      rootMargin: "0px",
+//   // //      threshold: 0
+//   // // });
+// });
+
+
+
+
+
+
 
 
 
@@ -223,6 +378,62 @@ $(document).ready(function() {
     $('#modalDialog').modal('show');
   });
 });
+
+
+
+
+
+
+
+
+// NOTE: Make Full Screen Element
+// $(document).ready(function() {
+//   $('#theButton').click(function() {
+//     $('#theDiv').css({
+//         position: 'fixed',
+//         top: 0,
+//         right: 0,
+//         bottom: 0,
+//         left: 0,
+//         zIndex: 999
+//     });
+//   });
+// });
+$(document).ready(function() {
+  // NOTE: remove unused "el" obejct from function
+  $('[id^="theButton-"]').click(function(el) {
+    var clickedBtnID = $(this).attr('id'); // or var clickedBtnID = this.id
+    // console.log('you clicked on button #' + clickedBtnID);
+    var clickedBtnData = $(this).attr('data-modal-div'); // or var clickedBtnID = this.id
+    // console.log('you clicked on button #' + clickedBtnData);
+    // console.log('[id^="' + clickedBtnData + '"]');
+    $('[id^="' + clickedBtnData + '"]').css({
+        position: 'fixed',
+        top: '30vh',
+        right: '30vh',
+        bottom: '30vh',
+        left: '30vh',
+        zIndex: 999,
+        'transition-delay': '0ms'
+    });
+
+    $('[id^="' + clickedBtnData + '"]').css({
+        position: 'fixed',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        zIndex: 999,
+        'transition-delay': '0ms'
+    });
+
+  });
+});
+
+
+
+
+
 
 
 
@@ -422,14 +633,6 @@ $(document).ready(function() {
     );
   };
 
-  function here() {
-    $(window).on('scroll', function () {
-      if (isWatching) {
-        watcher();
-      };
-    });
-  };
-
   function watcher() {
     if (isWatching) {
       // console .log("** watcher isWatching: TRUE [" + isWatching +"]");
@@ -437,6 +640,14 @@ $(document).ready(function() {
     } else {
       // console .log("** watcher isWatching: FALSE [" + isWatching +"]");
     };
+  };
+
+  function here() {
+    $(window).on('scroll', function () {
+      if (isWatching) {
+        watcher();
+      };
+    });
   };
 
   function startWatching() {
@@ -477,6 +688,7 @@ $(document).ready(function() {
   // NOTE: Tile Button
   // NOTE: flip card to back
   // if the @media screen is sm show modal
+  // TODO: add a call back or section for expand tile (expand tile to full-screen modal)
   $(".open-tile").click(function() {
     if (showModalTileBack) {
       // console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");

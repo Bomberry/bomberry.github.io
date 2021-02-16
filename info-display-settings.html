@@ -76,6 +76,11 @@ html,body {
         <td><span data-js-screen-v>---</span></td>
         <td><span data-js-screen-a>---</span></td>
       </tr>
+      <!-- <tr>
+        <td>screen:</td>
+        <td><span data-js-screen-o>---</span></td>
+        <td><span data-js-window-o>---</span></td>
+      </tr> -->
     </table>
 
     <small>Take a screen shot or save/print this page as a PDF.</small>
@@ -90,6 +95,10 @@ var screenW = false;
 var screenH = false;
 var windowW = false;
 var windowH = false;
+
+// var screenO = false;
+// var windowO = fasle;
+
 
 // use window.matchMedia and loop downwards to find the pixel multiplier.
 // we use dppx becuase iOS only supports -webkit-min-device-pixel-ratio,
@@ -163,6 +172,14 @@ var display = function() {
 
 }
 
+
+// var displayMore = function() {
+//   // display more information that is necessary
+//   document.querySelector('data-js-screen-o').innerinnerText = ( calcScreen() );
+//   document.querySelector('data-js-window-o').innerinnerText = ( window );
+// }
+
+
 // recalculate on resize and turning a device
 var reOrient = function() {
   window.addEventListener('orientationchange',function() {
@@ -171,12 +188,14 @@ var reOrient = function() {
     calcOrientation();
     calcScreen();
     display();
+    // displayMore();
   });
   window.addEventListener('resize',function() {
     calcDPpx();
     calcDpi();
     calcScreen();
     display();
+    // displayMore();
   });
 };
 
@@ -189,6 +208,7 @@ var reOrient = function() {
     calcOrientation();
     calcScreen();
     display();
+    // displayMore();
     reOrient();
   } else {
     document.addEventListener('DOMContentLoaded', function() {
@@ -197,6 +217,7 @@ var reOrient = function() {
       calcOrientation();
       calcScreen();
       display();
+      // displayMore();
       reOrient();
     });
   }

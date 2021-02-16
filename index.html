@@ -55,7 +55,9 @@
 
 
 
+
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap-icons.css" type="text/css" rel="stylesheet">
 <link href="/css/all.min.css" type="text/css" rel="stylesheet">
 
 <link href="/css/animate.css" type="text/css" rel="stylesheet">
@@ -82,14 +84,18 @@
 
 
 
-<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-site" data-module-templat="navigation-global"  role="navigation" aria-label="Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
+
+<nav id="global-nav" class="global-nav location-site" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
-    <ul class="global-nav-header">
+    
+    <ul class="global-nav-header" role="menu">
+
       
-      <li class="global-nav-item global-nav-menuicon">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
             <span class="global-nav-menuicon-bread-crust global-nav-menuicon-bread-crust-top"></span>
@@ -99,17 +105,18 @@
           </span>
         </label>
 
-        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open">
+        <a href="#global-nav-menustate" role="button" id="global-nav-menuanchor-open" class="global-nav-menuanchor global-nav-menuanchor-open" title="Open Menu">
           <span class="global-nav-menuanchor-label">Global Nav Open Menu</span>
         </a>
-        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close">
+        <a href="#" role="button" id="global-nav-menuanchor-close" class="global-nav-menuanchor global-nav-menuanchor-close" title="Close Menu">
           <span class="global-nav-menuanchor-label">Global Nav Close Menu</span>
         </a>
+
       </li>
 
       
-      <li class="global-nav-item global-nav-bomberry">
-        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a class="global-nav-link global-nav-link-bomberry" href="/" id="global-nav-firstfocus-small" title="Kevin Bomberry - Home" role="menuitem" tabindex="0">
           <span class="global-nav-link-text">Bomberry.com</span>
         </a>
       </li>
@@ -120,40 +127,49 @@
 
 
     
-    <ul class="global-nav-list">
+    <ul class="global-nav-list" role="menu">
 
-      <li class="global-nav-item global-nav-bomberry">
-        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/">
+      <li class="global-nav-item global-nav-bomberry" role="none">
+        <a id="global-nav-firstfocus" class="global-nav-link global-nav-link-bomberry" href="/" role="menuitem">
           <span class="global-nav-link-text">Bomberry</span>
         </a>
       </li>
 
-      <li class="global-nav-item global-nav-item-menu global-nav-work">
-        <a class="global-nav-link global-nav-link-work" href="/portfolio/">
-          <span class="global-nav-link-text">Work</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-resume">
-        <a class="global-nav-link global-nav-link-resume" href="/resume/">
-          <span class="global-nav-link-text">Resume</span>
-        </a>
-      </li>
-      <li class="global-nav-item global-nav-item-menu global-nav-about">
-        <a class="global-nav-link global-nav-link-about" href="/about/">
-          <span class="global-nav-link-text">About</span>
-        </a>
-      </li>
+
+
+      
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-work" role="none">
+          <a class="global-nav-link global-nav-link-work" href="/portfolio/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-resume" role="none">
+          <a class="global-nav-link global-nav-link-resume" href="/resume/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+        <li class="global-nav-item global-nav-item-menu global-nav-about" role="none">
+          <a class="global-nav-link global-nav-link-about" href="/about/" title="" role="menuitem">
+            
+          </a>
+        </li>
+      
+
+
+
+      
+      
+
+
 
     </ul>
-
-    
 
 
   </div>
 </nav>
-
-
-
 
 
 
@@ -177,8 +193,8 @@
   <div class="container-fluid">
     <div class="row breath-v">
       <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-5">
-        <p class="typography-introduction lead animated fadeIn wow" data-animation="animated fadeIn" data-wow-delay="382ms" data-wow-duration="618ms">
-          <span class="text-jumbo no-pad"><span class='fx-animation-delay'>Hi</span><span class='fx-animation-delay'>, I&rsquo;m Kevin</span><span class='fx-animation-delay'> — a passionate <strong>product designer</strong></span><span class='fx-animation-delay'> focusing on customer experience</span><span class='fx-animation-delay'>, design systems</span><span class='fx-animation-delay'>, and strategy,</span><span class='fx-animation-delay'> backed by</span><span class='fx-animation-delay'> people-first</span><span class='fx-animation-delay'>  data-informed</span><span class='fx-animation-delay'>  processes.</span></span>
+        <p class="typography-introduction-lead animated fadeIn wow" data-animation="animated fadeIn" data-wow-delay="382ms" data-wow-duration="618ms">
+          <span class="no-pad"><span class='fx-animation-delay'>Hi</span><span class='fx-animation-delay'>, I&rsquo;m Kevin</span><span class='fx-animation-delay'> — a passionate <strong>product designer</strong></span><span class='fx-animation-delay'> focusing on customer experience</span><span class='fx-animation-delay'>, design systems</span><span class='fx-animation-delay'>, and strategy,</span><span class='fx-animation-delay'> backed by</span><span class='fx-animation-delay'> people-first</span><span class='fx-animation-delay'>  data-informed</span><span class='fx-animation-delay'>  processes.</span></span>
         </p>
       </div>
     </div>
@@ -255,43 +271,45 @@
   
   
   <section class="section section-tiles-grid" data-module-templat="tile-flip modal">
+
   <div class="section-content">
     <div class="tiles-container">
-      
+
       <div class="tile-overlay"></div>
+
       
       
       
       <div id="project-auguste" class="tile  full auguste test-tile-1 notAnimated fadeInUp wow" data-wow-delay="0.1s" data-wow-offset="-10" data-tile-flip-direction="h">
 
         <div class="front-face">
+
           
-          <h5 class="typography-tile-type-info company lead breath-no-v">Case Study | Adobe</h5>
-          <h2 class="typography-tile-title">From tech demo to product</h2>
+          <h5 class="typography-tile-type-info company lead breath-no-v wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">Case Study | Adobe</h5>
+          <h2 class="typography-tile-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1200ms">From tech demo to product</h2>
           
             <figure class="image-auguste"></figure>
           
-          <button class="icon-wrapper flip-tile-button open-tile">
+
+          <button class="icon-wrapper flip-tile-button open-tile" aria-label="Select to read more">
       			<i class="icon icon-plussolid"></i>
       			<span class="visuallyhidden">Select to read more</span>
 		      </button>
+
         </div>
 
         <div class="back-face image-layout">
 
-          <div class="content-column">
-            
-            <h5 class="typography-tile-backface-content services lead breath-top m-pad-bottom-small">Product Design | UX &amp; UI Design | Graphic Design</h5>
-            <h2 class="typography-tile-backface-content headline breath-top">From tech demo to product</h2>
+          <div class="content-column content-top">
+            <h5 class="typography-tile-backface-content services lead typography-breath-top m-pad-bottom-small">Product Design | UX &amp; UI Design | Graphic Design</h5>
+            <h2 class="typography-tile-backface-content headline">From tech demo to product</h2>
             <p class="typography-tile-backface-content description pad-bottom-tiny">This project had an aggressive four month deadline to design a desktop/mobile (touch/stylus) app for demo at Adobe MAX 2016. Working with an engineer and PM, I helped define goals &amp; features, created concepts, wireframes, and assets for a mobile, touch-first 3D painting app for Microsoft Surface.</p>
 
-            
             <div class="button-group flow-colnw breath-top-small">
 
               <a href="/portfolio/#adobe-auguste" class="icon-wrapper typography-tile-backface-link" aria-label="Learn more about auguste in 'work'" title="Learn more about auguste in 'work'"><span class="fa fa-layer-group icon-pad-right color-about"></span><span class="icon-copy">Learn more in <span class="color-about">work</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
 
               
-                
                 <a class="icon-wrapper typography-tile-backface-link" href="/portfolio/adobe-auguste/" aria-label="Read the auguste case study" title="Read the auguste case study"><span class="fa fa-briefcase icon-pad-right color-about"></span><span class="icon-copy">Read the <span class="color-about">case study</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
               
 
@@ -308,7 +326,7 @@
             </div>
           
 
-          <button class="icon-wrapper flip-tile-button close-tile">
+          <button class="icon-wrapper flip-tile-button close-tile" aria-label="Select to return">
             <i class="icon icon-timessolid"></i>
             <span class="visuallyhidden">Select to return</span>
           </button>
@@ -321,33 +339,33 @@
       <div id="streamlio-branding--design" class="tile  full streamlio test-tile-1 notAnimated fadeInUp wow" data-wow-delay="0.2s" data-wow-offset="-20" data-tile-flip-direction="h">
 
         <div class="front-face">
+
           
-          <h5 class="typography-tile-type-info company lead breath-no-v">Case Study | Streamlio</h5>
-          <h2 class="typography-tile-title">Building a Better Brand</h2>
+          <h5 class="typography-tile-type-info company lead breath-no-v wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">Case Study | Streamlio</h5>
+          <h2 class="typography-tile-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1200ms">Building a Better Brand</h2>
           
             <figure class="image-streamlio"></figure>
           
-          <button class="icon-wrapper flip-tile-button open-tile">
+
+          <button class="icon-wrapper flip-tile-button open-tile" aria-label="Select to read more">
       			<i class="icon icon-plussolid"></i>
       			<span class="visuallyhidden">Select to read more</span>
 		      </button>
+
         </div>
 
         <div class="back-face image-layout">
 
-          <div class="content-column">
-            
-            <h5 class="typography-tile-backface-content services lead breath-top m-pad-bottom-small">Branding | Web Development | Graphic Design</h5>
-            <h2 class="typography-tile-backface-content headline breath-top">Building a Better Brand</h2>
+          <div class="content-column content-top">
+            <h5 class="typography-tile-backface-content services lead typography-breath-top m-pad-bottom-small">Branding | Web Development | Graphic Design</h5>
+            <h2 class="typography-tile-backface-content headline">Building a Better Brand</h2>
             <p class="typography-tile-backface-content description pad-bottom-tiny">I worked with the VP of Marketing to develop corporate branding and designed the web site using HTML, SASS/CSS, JS, and HUGO. In additional, I created logos, media templates (.PSD, .AI, Keynote), color libraries, and usage/style guides.</p>
 
-            
             <div class="button-group flow-colnw breath-top-small">
 
               <a href="/portfolio/#streamlio" class="icon-wrapper typography-tile-backface-link" aria-label="Learn more about streamlio in 'work'" title="Learn more about streamlio in 'work'"><span class="fa fa-layer-group icon-pad-right color-about"></span><span class="icon-copy">Learn more in <span class="color-about">work</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
 
               
-                
                 <a class="icon-wrapper typography-tile-backface-link" href="/portfolio/streamlio/" aria-label="Read the streamlio case study" title="Read the streamlio case study"><span class="fa fa-briefcase icon-pad-right color-about"></span><span class="icon-copy">Read the <span class="color-about">case study</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
               
 
@@ -366,7 +384,7 @@
             </div>
           
 
-          <button class="icon-wrapper flip-tile-button close-tile">
+          <button class="icon-wrapper flip-tile-button close-tile" aria-label="Select to return">
             <i class="icon icon-timessolid"></i>
             <span class="visuallyhidden">Select to return</span>
           </button>
@@ -379,27 +397,28 @@
       <div id="adobe-photoshop-cc" class="tile  half photoshop test-tile-1 notAnimated fadeInUp wow" data-wow-delay="0.30000000000000004s" data-wow-offset="-30.000000000000004" data-tile-flip-direction="v">
 
         <div class="front-face">
-          <h6 class="typography-tile-status">coming soon</h6>
-          <h5 class="typography-tile-type-info company lead breath-no-v">Case Study | Adobe</h5>
-          <h2 class="typography-tile-title">Developing a 3D strategy for Adobe Photoshop</h2>
+
+          <h6 class="typography-tile-status wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">coming soon</h6>
+          <h5 class="typography-tile-type-info company lead breath-no-v wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">Case Study | Adobe</h5>
+          <h2 class="typography-tile-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1200ms">Developing a 3D strategy for Adobe Photoshop</h2>
           
             <figure class="image-photoshop"></figure>
           
-          <button class="icon-wrapper flip-tile-button open-tile">
+
+          <button class="icon-wrapper flip-tile-button open-tile" aria-label="Select to read more">
       			<i class="icon icon-plussolid"></i>
       			<span class="visuallyhidden">Select to read more</span>
 		      </button>
+
         </div>
 
         <div class="back-face ">
 
-          <div class="content-column">
-            
-            <h5 class="typography-tile-backface-content services lead breath-top m-pad-bottom-small">Product Design | Interaction Design | 3D Strategist</h5>
-            <h2 class="typography-tile-backface-content headline breath-top">Developing a 3D strategy for Adobe Photoshop</h2>
+          <div class="content-column content-top">
+            <h5 class="typography-tile-backface-content services lead typography-breath-top m-pad-bottom-small">Product Design | Interaction Design | 3D Strategist</h5>
+            <h2 class="typography-tile-backface-content headline">Developing a 3D strategy for Adobe Photoshop</h2>
             <p class="typography-tile-backface-content description pad-bottom-tiny">When adding new functionality to the globally recognized leader in digital content creation, you need to look at the users first.</p>
 
-            
             <div class="button-group flow-colnw breath-top-small">
 
               <a href="/portfolio/#adobe-photoshop" class="icon-wrapper typography-tile-backface-link" aria-label="Learn more about photoshop in 'work'" title="Learn more about photoshop in 'work'"><span class="fa fa-layer-group icon-pad-right color-about"></span><span class="icon-copy">Learn more in <span class="color-about">work</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
@@ -414,7 +433,7 @@
 
           
 
-          <button class="icon-wrapper flip-tile-button close-tile">
+          <button class="icon-wrapper flip-tile-button close-tile" aria-label="Select to return">
             <i class="icon icon-timessolid"></i>
             <span class="visuallyhidden">Select to return</span>
           </button>
@@ -427,27 +446,28 @@
       <div id="craftmaster-app" class="tile half craftmaster test-tile-1 notAnimated fadeInUp wow" data-wow-delay="0.4s" data-wow-offset="-40" data-tile-flip-direction="v">
 
         <div class="front-face">
-          <h6 class="typography-tile-status">coming soon</h6>
-          <h5 class="typography-tile-type-info company lead breath-no-v">Case Study | CraftMaster</h5>
-          <h2 class="typography-tile-title">Creating A Cross-Platform Minecraft Utility App</h2>
+
+          <h6 class="typography-tile-status wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">coming soon</h6>
+          <h5 class="typography-tile-type-info company lead breath-no-v wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1200ms">Case Study | CraftMaster</h5>
+          <h2 class="typography-tile-title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1200ms">Creating A Cross-Platform Minecraft Utility App</h2>
           
             <figure class="image-craftmaster"></figure>
           
-          <button class="icon-wrapper flip-tile-button open-tile">
+
+          <button class="icon-wrapper flip-tile-button open-tile" aria-label="Select to read more">
       			<i class="icon icon-plussolid"></i>
       			<span class="visuallyhidden">Select to read more</span>
 		      </button>
+
         </div>
 
         <div class="back-face ">
 
-          <div class="content-column">
-            
-            <h5 class="typography-tile-backface-content services lead breath-top m-pad-bottom-small">Branding | Product Design | UX/UI Design</h5>
-            <h2 class="typography-tile-backface-content headline breath-top">Creating A Cross-Platform Minecraft Utility App</h2>
+          <div class="content-column content-top">
+            <h5 class="typography-tile-backface-content services lead typography-breath-top m-pad-bottom-small">Branding | Product Design | UX/UI Design</h5>
+            <h2 class="typography-tile-backface-content headline">Creating A Cross-Platform Minecraft Utility App</h2>
             <p class="typography-tile-backface-content description pad-bottom-tiny">CXO developing a multiplatorm application, branding, web, and media content.</p>
 
-            
             <div class="button-group flow-colnw breath-top-small">
 
               <a href="/portfolio/#craftmaster" class="icon-wrapper typography-tile-backface-link" aria-label="Learn more about craftmaster in 'work'" title="Learn more about craftmaster in 'work'"><span class="fa fa-layer-group icon-pad-right color-about"></span><span class="icon-copy">Learn more in <span class="color-about">work</span></span><span class="fa fa-chevron-right icon-pad-left"></span></a>
@@ -462,7 +482,7 @@
 
           
 
-          <button class="icon-wrapper flip-tile-button close-tile">
+          <button class="icon-wrapper flip-tile-button close-tile" aria-label="Select to return">
             <i class="icon icon-timessolid"></i>
             <span class="visuallyhidden">Select to return</span>
           </button>
@@ -473,15 +493,6 @@
       
       
 
-      
-      
-            
-
-      
-
-      
-      
-      
       
 <div id="modal-full" class="modal modal-full-viewport modal-tile-backface remove-container-padding" data-module-templat="modal-full" aria-hidden="true" role="dialog" aria-label="Modal" aria-modal="true" tabindex="-1">
 
@@ -500,7 +511,9 @@
 
 
     </div>
+
   </div>
+
 </section>
 
 
@@ -521,7 +534,13 @@
       
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.2s' data-wow-duration="800ms">
+        <div class='client-logo logo-link animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.2s' data-wow-duration="800ms">
+          
+            <a class="icon-wrapper logo-link-item client-tile-button" href="/portfolio/#adobe-auguste" aria-label="Select to learn more">
+        			<i class="icon icon-plussolid"></i>
+        			<span class="visuallyhidden">Select to learn more</span>
+  		      </a>
+          
           <figure>
             <img class="img-responsive" src="./media/logos/adobe-medium.png" alt="Client logo of adobe" />
             <figcaption></figcaption>
@@ -529,7 +548,8 @@
         </div>
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.4s' data-wow-duration="800ms">
+        <div class='client-logo  animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.4s' data-wow-duration="800ms">
+          
           <figure>
             <img class="img-responsive" src="./media/logos/ideo-medium.png" alt="Client logo of ideo" />
             <figcaption></figcaption>
@@ -537,7 +557,8 @@
         </div>
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.6000000000000001s' data-wow-duration="800ms">
+        <div class='client-logo  animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.6000000000000001s' data-wow-duration="800ms">
+          
           <figure>
             <img class="img-responsive" src="./media/logos/microsoft-medium.png" alt="Client logo of microsoft" />
             <figcaption></figcaption>
@@ -545,7 +566,8 @@
         </div>
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.8s' data-wow-duration="800ms">
+        <div class='client-logo  animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='0.8s' data-wow-duration="800ms">
+          
           <figure>
             <img class="img-responsive" src="./media/logos/stanford-medium.png" alt="Client logo of stanford" />
             <figcaption></figcaption>
@@ -553,7 +575,13 @@
         </div>
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='1s' data-wow-duration="800ms">
+        <div class='client-logo logo-link animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='1s' data-wow-duration="800ms">
+          
+            <a class="icon-wrapper logo-link-item client-tile-button" href="/portfolio/#streamlio" aria-label="Select to learn more">
+        			<i class="icon icon-plussolid"></i>
+        			<span class="visuallyhidden">Select to learn more</span>
+  		      </a>
+          
           <figure>
             <img class="img-responsive" src="./media/logos/streamlio-medium.png" alt="Client logo of streamlio" />
             <figcaption></figcaption>
@@ -561,7 +589,8 @@
         </div>
       
         
-        <div class='client-logo animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='1.2s' data-wow-duration="800ms">
+        <div class='client-logo  animated fadeIn wow' data-animation='animated fadeIn' data-wow-delay='1.2s' data-wow-duration="800ms">
+          
           <figure>
             <img class="img-responsive" src="./media/logos/vlab-medium.png" alt="Client logo of vlab" />
             <figcaption></figcaption>
@@ -700,6 +729,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
  
 
 
@@ -709,21 +748,27 @@
 
 
 
-<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
 
 
-<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js" charset="utf-8"></script>
 
 
-<script src="/js/wow.min.js"></script>
-
-
-
+<script src="/js/wow.min.js" charset="utf-8"></script>
 
 
 
-  <script src="/js/bomberry.js"></script>
 
+
+
+
+  <script src="/js/lazysizes.min.js" charset="utf-8"></script>
+
+
+
+
+
+  <script src="/js/bomberry.js" charset="utf-8"></script>
 
 
 
