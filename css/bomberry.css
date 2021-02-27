@@ -337,6 +337,997 @@ main {
   }
 }
 
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] {
+  padding-top: 0;
+}
+
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row {
+  margin-left: 0;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .column {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-0 {
+  margin-left: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-0 {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-1 {
+  -ms-flex-preferred-size: 8.33333%;
+  flex-basis: 8.33333%;
+  max-width: 8.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-1 {
+  margin-left: 8.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-1 {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-2 {
+  -ms-flex-preferred-size: 16.66667%;
+  flex-basis: 16.66667%;
+  max-width: 16.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-2 {
+  margin-left: 16.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-2 {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-3 {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-3 {
+  margin-left: 25%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-3 {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-4 {
+  -ms-flex-preferred-size: 33.33333%;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-4 {
+  margin-left: 33.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-4 {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-5 {
+  -ms-flex-preferred-size: 41.66667%;
+  flex-basis: 41.66667%;
+  max-width: 41.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-5 {
+  margin-left: 41.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-5 {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-6 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-6 {
+  margin-left: 50%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-6 {
+  -webkit-box-ordinal-group: 7;
+  -ms-flex-order: 6;
+  order: 6;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-7 {
+  -ms-flex-preferred-size: 58.33333%;
+  flex-basis: 58.33333%;
+  max-width: 58.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-7 {
+  margin-left: 58.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-7 {
+  -webkit-box-ordinal-group: 8;
+  -ms-flex-order: 7;
+  order: 7;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-8 {
+  -ms-flex-preferred-size: 66.66667%;
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-8 {
+  margin-left: 66.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-8 {
+  -webkit-box-ordinal-group: 9;
+  -ms-flex-order: 8;
+  order: 8;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-9 {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  max-width: 75%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-9 {
+  margin-left: 75%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-9 {
+  -webkit-box-ordinal-group: 10;
+  -ms-flex-order: 9;
+  order: 9;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-10 {
+  -ms-flex-preferred-size: 83.33333%;
+  flex-basis: 83.33333%;
+  max-width: 83.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-10 {
+  margin-left: 83.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-10 {
+  -webkit-box-ordinal-group: 11;
+  -ms-flex-order: 10;
+  order: 10;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-11 {
+  -ms-flex-preferred-size: 91.66667%;
+  flex-basis: 91.66667%;
+  max-width: 91.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-11 {
+  margin-left: 91.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-11 {
+  -webkit-box-ordinal-group: 12;
+  -ms-flex-order: 11;
+  order: 11;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-12 {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-offset-12 {
+  margin-left: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-order-12 {
+  -webkit-box-ordinal-group: 13;
+  -ms-flex-order: 12;
+  order: 12;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-uncentered {
+  margin-left: 0;
+  margin-right: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-last {
+  margin-left: auto;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-notlast {
+  margin-left: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-grow {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  max-width: initial;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .large-ungrow {
+  -webkit-box-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+  max-width: initial;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-0 {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-0 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-1 {
+    -ms-flex-preferred-size: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-1 {
+    margin-left: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-2 {
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-2 {
+    margin-left: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-2 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-3 {
+    margin-left: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-3 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-4 {
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-4 {
+    margin-left: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-4 {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-5 {
+    -ms-flex-preferred-size: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-5 {
+    margin-left: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-5 {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-6 {
+    margin-left: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-6 {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-7 {
+    -ms-flex-preferred-size: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-7 {
+    margin-left: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-7 {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-8 {
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-8 {
+    margin-left: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-8 {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-9 {
+    margin-left: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-9 {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-10 {
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-10 {
+    margin-left: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-10 {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-11 {
+    -ms-flex-preferred-size: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-11 {
+    margin-left: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-11 {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-offset-12 {
+    margin-left: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-order-12 {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-last {
+    margin-left: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-notlast {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-grow {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    max-width: initial;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .xlarge-ungrow {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    max-width: initial;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-0 {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-0 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-1 {
+    -ms-flex-preferred-size: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-1 {
+    margin-left: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-2 {
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-2 {
+    margin-left: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-2 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-3 {
+    margin-left: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-3 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-4 {
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-4 {
+    margin-left: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-4 {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-5 {
+    -ms-flex-preferred-size: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-5 {
+    margin-left: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-5 {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-6 {
+    margin-left: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-6 {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-7 {
+    -ms-flex-preferred-size: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-7 {
+    margin-left: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-7 {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-8 {
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-8 {
+    margin-left: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-8 {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-9 {
+    margin-left: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-9 {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-10 {
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-10 {
+    margin-left: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-10 {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-11 {
+    -ms-flex-preferred-size: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-11 {
+    margin-left: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-11 {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-offset-12 {
+    margin-left: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-order-12 {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-last {
+    margin-left: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-notlast {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-grow {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    max-width: initial;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .medium-ungrow {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    max-width: initial;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-0 {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-0 {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-1 {
+    -ms-flex-preferred-size: 8.33333%;
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-1 {
+    margin-left: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-2 {
+    -ms-flex-preferred-size: 16.66667%;
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-2 {
+    margin-left: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-2 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-3 {
+    margin-left: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-3 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-4 {
+    -ms-flex-preferred-size: 33.33333%;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-4 {
+    margin-left: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-4 {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-5 {
+    -ms-flex-preferred-size: 41.66667%;
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-5 {
+    margin-left: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-5 {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-6 {
+    margin-left: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-6 {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-7 {
+    -ms-flex-preferred-size: 58.33333%;
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-7 {
+    margin-left: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-7 {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-8 {
+    -ms-flex-preferred-size: 66.66667%;
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-8 {
+    margin-left: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-8 {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-9 {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-9 {
+    margin-left: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-9 {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-10 {
+    -ms-flex-preferred-size: 83.33333%;
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-10 {
+    margin-left: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-10 {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-11 {
+    -ms-flex-preferred-size: 91.66667%;
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-11 {
+    margin-left: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-11 {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-offset-12 {
+    margin-left: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-order-12 {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-last {
+    margin-left: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-notlast {
+    margin-left: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-grow {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    max-width: initial;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .small-ungrow {
+    -webkit-box-flex: initial;
+    -ms-flex: initial;
+    flex: initial;
+    max-width: initial;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .column {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-0 {
+  margin-right: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-1 {
+  margin-right: 8.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-2 {
+  margin-right: 16.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-3 {
+  margin-right: 25%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-4 {
+  margin-right: 33.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-5 {
+  margin-right: 41.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-6 {
+  margin-right: 50%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-7 {
+  margin-right: 58.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-8 {
+  margin-right: 66.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-9 {
+  margin-right: 75%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-10 {
+  margin-right: 83.33333%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-11 {
+  margin-right: 91.66667%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-offset-12 {
+  margin-right: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-last {
+  margin-right: auto;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .large-notlast {
+  margin-right: 0;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-0 {
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-1 {
+    margin-right: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-2 {
+    margin-right: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-3 {
+    margin-right: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-4 {
+    margin-right: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-5 {
+    margin-right: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-6 {
+    margin-right: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-7 {
+    margin-right: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-8 {
+    margin-right: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-9 {
+    margin-right: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-10 {
+    margin-right: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-11 {
+    margin-right: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-offset-12 {
+    margin-right: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-last {
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .xlarge-notlast {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-0 {
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-1 {
+    margin-right: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-2 {
+    margin-right: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-3 {
+    margin-right: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-4 {
+    margin-right: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-5 {
+    margin-right: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-6 {
+    margin-right: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-7 {
+    margin-right: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-8 {
+    margin-right: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-9 {
+    margin-right: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-10 {
+    margin-right: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-11 {
+    margin-right: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-offset-12 {
+    margin-right: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-last {
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .medium-notlast {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-0 {
+    margin-right: 0;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-1 {
+    margin-right: 8.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-2 {
+    margin-right: 16.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-3 {
+    margin-right: 25%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-4 {
+    margin-right: 33.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-5 {
+    margin-right: 41.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-6 {
+    margin-right: 50%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-7 {
+    margin-right: 58.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-8 {
+    margin-right: 66.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-9 {
+    margin-right: 75%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-10 {
+    margin-right: 83.33333%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-11 {
+    margin-right: 91.66667%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-offset-12 {
+    margin-right: 100%;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-last {
+    margin-right: auto;
+  }
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-reverse .small-notlast {
+    margin-right: 0;
+  }
+}
+
 nav {
   z-index: 9000;
 }
@@ -379,9 +1370,6 @@ blockquote::before {
   margin-left: -10%;
   font: italic 400%/1 sans-serif;
   color: #999;
-}
-blockquote .quote {
-  font-weight: bold;
 }
 .container.contact.well {
   background-color: transparent;
@@ -453,6 +1441,18 @@ blockquote .quote {
 .breath-v {
   margin-top: 7vmin !important;
   margin-bottom: 7vmin !important;
+}
+.breath-v-large {
+  margin-top: 9.66vmin !important;
+  margin-bottom: 9.66vmin !important;
+}
+.breath-v-larger {
+  margin-top: 14vmin !important;
+  margin-bottom: 7vmin 2 !important;
+}
+.breath-v-largest {
+  margin-top: 18.34vmin !important;
+  margin-bottom: 11.34vmin !important;
 }
 .breath-all {
   margin: 7vmin !important;
@@ -541,6 +1541,14 @@ blockquote .quote {
   padding-top: 7rem !important;
   padding-bottom: 7rem !important;
 }
+.pad-v-larger {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+.pad-v-largest {
+  padding-top: 16rem !important;
+  padding-bottom: 16rem !important;
+}
 
 .m-pad-top {
   margin-top: 7.5rem !important;
@@ -601,6 +1609,14 @@ blockquote .quote {
 .m-pad-v-large {
   margin-top: 10rem !important;
   margin-bottom: 10rem !important;
+}
+.m-pad-v-larger {
+  margin-top: 14rem !important;
+  margin-bottom: 14rem !important;
+}
+.m-pad-v-largest {
+  margin-top: 16rem !important;
+  margin-bottom: 16rem !important;
 }
 
 .no-pad, .no-pad-mar {
@@ -1158,18 +2174,18 @@ table.font-table tfoot td {
   line-height: 1.62vw !important;
 }
 
-.text-larger, blockquote .attribution {
+.text-larger {
   font-size: 2.36vw !important;
   line-height: 3.82vw !important;
 }
 
-.text-jumbo, blockquote .quote,
+.text-jumbo,
 .text-jumbo1 {
   font-size: 3.82vw !important;
   line-height: 3.82vw !important;
 }
 @media only screen and (max-width: 734px) {
-  .text-jumbo, blockquote .quote,
+  .text-jumbo,
 .text-jumbo1 {
     font-size: 6.18vw !important;
   }
@@ -1180,7 +2196,7 @@ table.font-table tfoot td {
   line-height: 6.18vw !important;
 }
 
-.text-jumbo.text-compress, blockquote .text-compress.quote {
+.text-jumbo.text-compress {
   font-size: 5vh !important;
   line-height: 9vh !important;
 }
@@ -1225,21 +2241,21 @@ table.font-table tfoot td {
   }
 }
 
-.typography-grid-intro, #area-resume header.introduction .content-column .typography-content.body {
+.typography-grid-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body, #area-resume header.introduction .content-column .typography-content.body {
   font-size: 32px;
   line-height: 1.125;
   font-weight: 600;
   letter-spacing: 0.004em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-grid-intro, #area-resume header.introduction .content-column .typography-content.body {
+  .typography-grid-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body, #area-resume header.introduction .content-column .typography-content.body {
     font-size: 24px;
     line-height: 1.16667;
     letter-spacing: 0.009em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-grid-intro, #area-resume header.introduction .content-column .typography-content.body {
+  .typography-grid-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body, #area-resume header.introduction .content-column .typography-content.body {
     font-size: 21px;
     line-height: 1.381;
     letter-spacing: 0.011em;
@@ -1260,27 +2276,27 @@ table.font-table tfoot td {
   }
 }
 
-.typography-tile-type-info {
+.typography-tile-type-info, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light {
   font-size: 21px;
   line-height: 1.19048;
   font-weight: 300;
   letter-spacing: 0.011em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-tile-type-info {
+  .typography-tile-type-info, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light {
     font-size: 19px;
     line-height: 1.21053;
     letter-spacing: 0.012em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-tile-type-info {
+  .typography-tile-type-info, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light {
     font-size: 17px;
     line-height: 1.29412;
     letter-spacing: -0.02em;
   }
 }
-.typography-tile-type-info + .typography-tile-title {
+.typography-tile-type-info + .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light + .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-tile-type-info + .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light + .typography-CS-section-title {
   padding-top: 0.1em;
 }
 
@@ -1305,14 +2321,14 @@ table.font-table tfoot td {
   }
 }
 
-.typography-tile-title {
+.typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
   font-size: 72px;
   line-height: 1.05556;
   font-weight: 700;
   letter-spacing: -0.012em;
 }
 @media only screen and (max-width: 1068px), (max-height: 840px) and (min-width: 1067px) {
-  .typography-tile-title {
+  .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
     font-size: 48px;
     line-height: 1.08349;
     font-weight: 700;
@@ -1320,21 +2336,21 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-tile-title {
+  .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: 0.004em;
   }
 }
-.portfolio-tile .typography-tile-title {
+.portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
   font-size: 50px;
   line-height: 1.08349;
   font-weight: 700;
   letter-spacing: -0.003em;
 }
 @media only screen and (max-width: 1068px), (max-height: 840px) and (min-width: 1067px) {
-  .portfolio-tile .typography-tile-title {
+  .portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
@@ -1342,7 +2358,7 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 860px), (max-height: 840px) and (min-width: 735px) {
-  .portfolio-tile .typography-tile-title {
+  .portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
@@ -1350,7 +2366,7 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 734px), (max-height: 840px) and (min-width: 574px) {
-  .portfolio-tile .typography-tile-title {
+  .portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
     font-size: 26px;
     line-height: 1.22;
     font-weight: 600;
@@ -1358,7 +2374,7 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 573px), (max-height: 840px) and (min-width: 321px) {
-  .portfolio-tile .typography-tile-title {
+  .portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
     font-size: 20px;
     line-height: 1.24;
     font-weight: 500;
@@ -1366,21 +2382,21 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 320px) {
-  .portfolio-tile .typography-tile-title {
+  .portfolio-tile .typography-tile-title, .portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .portfolio-tile .typography-CS-section-title {
     font-size: 18px;
     line-height: 1.325;
     font-weight: 400;
     letter-spacing: 0.027em;
   }
 }
-.tile.half .typography-tile-title {
+.tile.half .typography-tile-title, .tile.half main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half .typography-CS-section-title {
   font-size: 50px;
   line-height: 1.08349;
   font-weight: 700;
   letter-spacing: -0.003em;
 }
 @media only screen and (max-width: 1068px), (max-height: 840px) and (min-width: 1067px) {
-  .tile.half .typography-tile-title {
+  .tile.half .typography-tile-title, .tile.half main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half .typography-CS-section-title {
     font-size: 46px;
     line-height: 1.06278;
     font-weight: 700;
@@ -1388,35 +2404,35 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 734px) {
-  .tile.half .typography-tile-title {
+  .tile.half .typography-tile-title, .tile.half main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half .typography-CS-section-title {
     font-size: 32px;
     line-height: 1.125;
     font-weight: 600;
     letter-spacing: 0.004em;
   }
 }
-.tile.half.portfolio-tile .typography-tile-title {
+.tile.half.portfolio-tile .typography-tile-title, .tile.half.portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half.portfolio-tile .typography-CS-section-title {
   font-size: 32px;
   line-height: 1.38;
   font-weight: 600;
   letter-spacing: 0.004em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .tile.half.portfolio-tile .typography-tile-title {
+  .tile.half.portfolio-tile .typography-tile-title, .tile.half.portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half.portfolio-tile .typography-CS-section-title {
     font-size: 24px;
     line-height: 1.35;
     letter-spacing: 0.009em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .tile.half.portfolio-tile .typography-tile-title {
+  .tile.half.portfolio-tile .typography-tile-title, .tile.half.portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half.portfolio-tile .typography-CS-section-title {
     font-size: 22px;
     line-height: 1.45;
     letter-spacing: 0.011em;
   }
 }
 @media only screen and (max-width: 320px) {
-  .tile.half.portfolio-tile .typography-tile-title {
+  .tile.half.portfolio-tile .typography-tile-title, .tile.half.portfolio-tile main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.half.portfolio-tile .typography-CS-section-title {
     font-size: 21px;
     line-height: 1.381;
     letter-spacing: 0.011em;
@@ -1451,44 +2467,54 @@ table.font-table tfoot td {
   letter-spacing: 0;
 }
 
-.typography-tile-backface-content {
+.typography-tile-backface-content, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
   font-size: 21px;
   line-height: 1.381;
   font-weight: 400;
   letter-spacing: 0.011em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-tile-backface-content {
+  .typography-tile-backface-content, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
     font-size: 14px;
     line-height: 1.42859;
     letter-spacing: -0.022em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-tile-backface-content {
+  .typography-tile-backface-content, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
     font-size: 21px;
     line-height: 1.381;
     font-weight: 400;
     letter-spacing: 0.011em;
   }
 }
-.typography-tile-backface-content.type, .typography-tile-backface-content.services {
+.typography-tile-backface-content.type, .typography-tile-backface-content.services, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
   font-size: 17px;
   line-height: 1.29412;
   font-weight: 300;
   letter-spacing: -0.02em;
 }
 @media only screen and (max-width: 734px) {
-  .typography-tile-backface-content.type, .typography-tile-backface-content.services {
+  .typography-tile-backface-content.type, .typography-tile-backface-content.services, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
     font-size: 14px;
     line-height: 1.42859;
     letter-spacing: -0.022em;
   }
 }
-+ .typography-tile-backface-content.type, + .typography-tile-backface-content.services {
++ .typography-tile-backface-content.type, + #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .type.imageCaption,
++ #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .type.imageDetail, + .typography-tile-backface-content.services, + #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .typography-tile-backface-content.imageCaption,
++ #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .typography-tile-backface-content.imageDetail, + #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .services.imageCaption, + #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption,
++ #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .services.imageDetail,
++ #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail {
   margin-top: 1.62rem;
 }
-.typography-tile-backface-content.headline {
+.typography-tile-backface-content.headline, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail {
   font-size: 24px;
   line-height: 1.16667;
   font-weight: 600;
@@ -1496,21 +2522,24 @@ table.font-table tfoot td {
   padding-top: 36px;
   padding-bottom: 12px;
 }
-.typography-tile-backface-content.description {
+.typography-tile-backface-content.description, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail {
   line-height: 1.381;
   font-size: 19px;
   font-weight: 300;
   letter-spacing: 0.012em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-tile-backface-content.description {
+  .typography-tile-backface-content.description, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail {
     font-size: 17px;
     line-height: 1.29412;
     letter-spacing: -0.02em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-tile-backface-content.description {
+  .typography-tile-backface-content.description, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail {
     font-size: 14px;
     line-height: 1.42859;
     letter-spacing: -0.022em;
@@ -1547,6 +2576,144 @@ table.font-table tfoot td {
   }
 }
 
+.typography-headline, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-quote {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-quote {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-quote {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+  }
+}
+
+.typography-headline-reduced {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline-reduced {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline-reduced {
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+  }
+}
+
+.typography-headline-elevated {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline-elevated {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline-elevated {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+
+.typography-headline-standalone {
+  font-size: 96px;
+  line-height: 1.04167;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline-standalone {
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline-standalone {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+  }
+}
+
+.typography-headline-super {
+  font-size: 80px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline-super {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline-super {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+  }
+}
+
+.typography-headline-description, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-attribution, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-introduction-lead {
+  font-size: 28px;
+  line-height: 1.28583;
+  font-weight: 400;
+  letter-spacing: 0.007em;
+}
+@media only screen and (max-width: 1068px) {
+  .typography-headline-description, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-attribution, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-introduction-lead {
+    font-size: 24px;
+    line-height: 1.33341;
+    font-weight: 400;
+    letter-spacing: 0.009em;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .typography-headline-description, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-attribution, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-introduction-lead {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+  }
+}
+
 .typography-hero-banner {
   font-size: 17px;
   line-height: 1.29412;
@@ -1566,14 +2733,18 @@ table.font-table tfoot td {
   }
 }
 
-.typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline {
+.typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
   font-size: 48px;
   line-height: 1.08349;
   font-weight: 700;
   letter-spacing: -0.003em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline {
+  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
     font-size: 40px;
     line-height: 1.1;
     font-weight: 700;
@@ -1581,21 +2752,27 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline {
+  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
     font-size: 32px;
     line-height: 1.125;
     letter-spacing: 0.004em;
   }
 }
 
-.typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .modal-content .content-column .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.description {
+.typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .modal-content .content-column .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
   font-size: 24px;
   line-height: 1.16667;
   font-weight: 600;
   letter-spacing: 0.009em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .modal-content .content-column .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.description {
+  .typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .modal-content .content-column .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
     font-size: 21px;
     line-height: 1.19048;
     font-weight: 600;
@@ -1603,14 +2780,32 @@ table.font-table tfoot td {
   }
 }
 
-.typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.services {
+.typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_duration,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_title,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.services, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .imageDetail {
   font-size: 17px;
   line-height: 1.47059;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.services {
+  .typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_duration,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_title,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_title, .modal-content .content-column .typography-tile-backface-content.services, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .imageDetail {
     font-size: 14px;
     line-height: 1.42859;
   }
@@ -1623,20 +2818,33 @@ table.font-table tfoot td {
   letter-spacing: -0.01em;
 }
 
-.modal-content .content-column .typography-tile-backface-content.description {
+.modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
   font-weight: 400;
 }
-.typography-tile-backface-content .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title {
+.typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_duration,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_duration,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_duration, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_title, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_title, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_title,
+#area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_title,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageDetail .typography-content.job_title {
   font-weight: 300;
 }
-.typography-tile-backface-content .button-group {
+.typography-tile-backface-content .button-group, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .button-group,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .button-group {
   padding-top: 3.75rem;
 }
-.typography-tile-backface-content .button-group a:not(:first-of-type) {
+.typography-tile-backface-content .button-group a:not(:first-of-type), #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .button-group a:not(:first-of-type),
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .button-group a:not(:first-of-type) {
   padding-top: 0.82rem;
 }
 
-.modal-content .content-column .typography-tile-backface-content.description {
+.modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+.modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
   font-weight: 400;
 }
 .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content #area-resume section.experiences .content-column .typography-content.job_title, #area-resume section.experiences .modal-content .content-column .typography-content.job_title {
@@ -1809,7 +3017,7 @@ table.font-table tfoot td {
   margin-top: 0;
 }
 
-.typography-headline + .typography-intro {
+.typography-headline + .typography-intro, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-quote + .typography-intro {
   margin-top: 1.2em;
 }
 
@@ -1960,41 +3168,70 @@ table.font-table tfoot td {
   }
 }
 
-.page-introduction-text, header .video-header-light .text-jumbo, header .video-header-light blockquote .quote, blockquote header .video-header-light .quote {
+.page-introduction-text, header .video-header-light .text-jumbo {
   color: #0e84cf;
   font-weight: lighter;
   padding: 0 15px;
 }
-.page-introduction-text strong, header .video-header-light .text-jumbo strong, header .video-header-light blockquote .quote strong, blockquote header .video-header-light .quote strong {
+.page-introduction-text strong, header .video-header-light .text-jumbo strong {
   font-weight: 200;
   text-decoration: underline;
 }
 @media (max-width: 576px) {
-  .page-introduction-text, header .video-header-light .text-jumbo, header .video-header-light blockquote .quote, blockquote header .video-header-light .quote {
+  .page-introduction-text, header .video-header-light .text-jumbo {
     font-weight: normal;
   }
-  .page-introduction-text strong, header .video-header-light .text-jumbo strong, header .video-header-light blockquote .quote strong, blockquote header .video-header-light .quote strong {
+  .page-introduction-text strong, header .video-header-light .text-jumbo strong {
     font-weight: bold;
   }
 }
 
-.typography-introduction.lead .text-jumbo, .typography-introduction.lead blockquote .quote, blockquote .typography-introduction.lead .quote {
+.typography-introduction.lead .text-jumbo {
   font-weight: 100;
   line-height: calc(calc(100vw / 3.83) / 5) !important;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-introduction.lead .text-jumbo, .typography-introduction.lead blockquote .quote, blockquote .typography-introduction.lead .quote {
+  .typography-introduction.lead .text-jumbo {
     font-weight: 200;
     line-height: calc(calc(100vw / 3.83) / 5) !important;
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-introduction.lead .text-jumbo, .typography-introduction.lead blockquote .quote, blockquote .typography-introduction.lead .quote {
+  .typography-introduction.lead .text-jumbo {
     font-size: 38px;
     font-weight: 300;
     letter-spacing: 0.011em;
     line-height: calc(calc(100vw / 6.18) / 2) !important;
   }
+}
+
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
+  padding-bottom: 0.38em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body {
+  letter-spacing: 0.0387em;
+  line-height: 1.62;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light {
+  letter-spacing: 0.0387em;
+  line-height: 1.62;
+  font-weight: 200;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-introduction-lead {
+  padding-bottom: 1.62rem;
+  line-height: 1.38;
+  font-weight: inherit;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-intro {
+  padding-bottom: 1.62rem;
+  line-height: 1.38;
+  font-weight: inherit;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-quote {
+  line-height: 1.38;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-attribution {
+  line-height: 1.38;
 }
 
 * {
@@ -2237,7 +3474,7 @@ figure.popModal:hover img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
   z-index: 100;
-  margin-bottom: 1.38rem;
+  margin-bottom: 0;
 }
 figure.no-shadow:hover img {
   box-shadow: none;
@@ -2598,6 +3835,8 @@ aside#toc_aside .closebtn {
 #modalDialog .imageCaption,
 #modalDialog .imageDetail {
   margin-bottom: 1.62rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 #modalDialog .imageCaption {
   font-size: 1rem;
@@ -2636,6 +3875,89 @@ aside#toc_aside .closebtn {
 }
 #modalDialog .cs-dark button.close:hover {
   color: white;
+}
+
+.modal.theme-dark.modal-standard {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.modal.theme-ug {
+  background: rgba(147, 149, 151, 0.7);
+}
+
+.modal.modal-full-viewport.screen-light {
+  background: rgba(241, 241, 241, 0.7);
+}
+.modal.modal-full-viewport.screen-white {
+  background: white;
+}
+
+.modal.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-content {
+  box-shadow: none;
+}
+
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] {
+  z-index: 9090;
+  padding-top: 50px;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-content {
+  box-shadow: none;
+  max-width: 1440px;
+  padding: 3rem 5rem;
+}
+@media only screen and (max-width: 840px) {
+  #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-content {
+    padding: 2.5rem 3rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-content {
+    padding: 2rem 2.5rem;
+  }
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close-wrapper {
+  position: fixed;
+  height: 50px;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close {
+  top: 0;
+  left: 0;
+  color: #333435;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close::after {
+  font-family: "BomberryComIcons", BomberryComIcons;
+  font-size: 42px;
+  font-weight: 300;
+  content: "";
+  top: 0;
+  width: 44px;
+  height: 44px;
+  padding: 1px;
+}
+@media only screen and (max-width: 320px) {
+  #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close::after {
+    font-size: 26px;
+    width: 28px;
+    height: 28px;
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close.close {
+  opacity: 0.82;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-close.close:hover {
+  opacity: 0.48;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container {
+  margin: auto;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption {
+  color: #0e84cf;
+}
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-content .imagePreview {
+  width: 100%;
+  margin: 1.62rem 0;
 }
 
 .has-modal {
@@ -3796,6 +5118,316 @@ html[dir=rtl] .controls-social-tray {
 #area-portfolio section .card.casestudy.card-buttons {
   margin-top: 3.5vmin;
 }
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top {
+  padding-top: 7rem;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top {
+    padding-top: 7rem;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top {
+    padding-top: 3.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top {
+    padding-top: 2.5rem;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom {
+  padding-bottom: 7rem;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom {
+    padding-bottom: 7rem;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom {
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom {
+    padding-bottom: 3.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom {
+    padding-bottom: 2.5rem;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content {
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+  width: 980px;
+}
+@media only screen and (min-width: 1441px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content {
+    width: 980px;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content {
+    width: 692px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content {
+    width: 87.5%;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block {
+    padding-top: 7rem;
+    padding-bottom: 3.82rem;
+  }
+}
+@media only screen and (max-width: 734px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block {
+    padding-top: 4.25rem;
+    padding-bottom: 2.62rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block {
+    padding-top: 2.5rem;
+    padding-bottom: 1.62rem;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::before, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::after {
+  content: " ";
+  display: table;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::after {
+  clear: both;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-list-container {
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: calc(100% - $slc-borw - $slc-inl - $slc-inr);
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-figures {
+  width: 100%;
+  padding-bottom: 1.62rem;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .column {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .align-items-center {
+  align-items: center;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .justify-content-center {
+  justify-content: center;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-image-content {
+  position: absolute;
+  z-index: -1;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-image-content .section-image {
+  background-color: transparent;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy][data-page-data=adobe-auguste-0] .section-image-overview {
+  content: "2323";
+  width: 1280px;
+  height: 720px;
+  background-repeat: no-repeat;
+  background-image: url("/portfolio/assets/artwork/AdobeServiceAward05a-PortfolioWork-8.png");
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 0;
+  margin-left: -640px;
+  margin-top: 0;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > * {
+  opacity: 0;
+  animation: stagger-fade-in 1200ms ease forwards;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(1) {
+  content: "1";
+  animation-delay: 0ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(2) {
+  content: "2";
+  animation-delay: 300ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(3) {
+  content: "3";
+  animation-delay: 600ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(4) {
+  content: "4";
+  animation-delay: 900ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(5) {
+  content: "5";
+  animation-delay: 1200ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(6) {
+  content: "6";
+  animation-delay: 1500ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(7) {
+  content: "7";
+  animation-delay: 1800ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(8) {
+  content: "8";
+  animation-delay: 2100ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(9) {
+  content: "9";
+  animation-delay: 2400ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(10) {
+  content: "10";
+  animation-delay: 2700ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(11) {
+  content: "11";
+  animation-delay: 3000ms;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(12) {
+  content: "12";
+  animation-delay: 3300ms;
+}
+@keyframes stagger-fade-in {
+  to {
+    opacity: 1;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .lead.typography-tile-type-info, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .lead.typography-CS-section-body-light {
+  padding-top: 0.38rem;
+  padding-bottom: 2.62em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-CS-section-title {
+  padding-bottom: 1.62em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-wireframes .section-content {
+  overflow: visible;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper {
+  padding-top: 3.125em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper.wrapper-background {
+  background-color: #f6f6f6;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper .video-caption {
+  padding: 1.62em 0 2.62em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-callouts .feature-cards-container .feature-card figcaption {
+  padding: 2.38em 0 2.62em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "";
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5vw;
+}
+@media only screen and (max-width: 1440px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1068px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 732px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection {
+    grid-template-columns: 1fr;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-wide {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 732px) {
+  main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-wide {
+    grid-template-columns: 1fr;
+  }
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 0px;
+  border-style: none;
+  overflow: visible;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom-width: 12px;
+  width: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure img {
+  width: 100%;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure figcaption {
+  padding: 1.38em 0 2.62em;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .child-shadow-filter img {
+  filter: drop-shadow(0.25px 2px 4px #d1d2d3);
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .child-shadow-filter:hover img {
+  filter: drop-shadow(1px 6px 12px #b2b4b5);
+}
+
 .section-tiles-grid ul, .section-tiles-grid ol, .section-tiles-grid li, .section-tiles-grid dl, .section-tiles-grid dt, .section-tiles-grid dd, .section-tiles-grid h1, .section-tiles-grid h2, .section-tiles-grid h3, .section-tiles-grid h4, .section-tiles-grid h5, .section-tiles-grid h6, .section-tiles-grid hgroup, .section-tiles-grid p, .section-tiles-grid blockquote, .section-tiles-grid figure, .section-tiles-grid form, .section-tiles-grid fieldset, .section-tiles-grid input, .section-tiles-grid legend, .section-tiles-grid pre, .section-tiles-grid abbr, .section-tiles-grid button {
   margin: 0;
   padding: 0;
@@ -5326,13 +6958,13 @@ main[data-page-template=portfolio--single][data-page-type=casestudy] {
   text-shadow: 1px 1px 2px rgba(27, 27, 27, 0.8), -2px 6px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 0, 0, 0.38);
 }
 @media only screen and (max-width: 573px), (max-height: 840px) and (min-width: 321px) {
-  .tile.photoshop-com.portfolio-tile .front-face .typography-tile-title {
+  .tile.photoshop-com.portfolio-tile .front-face .typography-tile-title, .tile.photoshop-com.portfolio-tile .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshop-com.portfolio-tile .front-face .typography-CS-section-title {
     font-size: 22px;
     line-height: 1.5;
   }
 }
 @media only screen and (max-width: 320px) {
-  .tile.photoshop-com.portfolio-tile .front-face .typography-tile-title {
+  .tile.photoshop-com.portfolio-tile .front-face .typography-tile-title, .tile.photoshop-com.portfolio-tile .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshop-com.portfolio-tile .front-face .typography-CS-section-title {
     font-size: 19px;
     line-height: 1.62;
   }
@@ -5447,21 +7079,21 @@ main[data-page-template=portfolio--single][data-page-type=casestudy] {
   text-shadow: 1px 1px 2px rgba(27, 27, 27, 0.8), -2px 6px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 0, 0, 0.38);
 }
 @media only screen and (max-width: 1068px), (max-height: 840px) and (min-width: 859px) {
-  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title {
+  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title, .tile.adobe-felix.portfolio-tile .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.adobe-felix.portfolio-tile .front-face .typography-CS-section-title {
     font-size: 29px;
     line-height: 1.5;
     letter-spacing: -0.011em;
   }
 }
 @media only screen and (max-width: 734px) {
-  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title {
+  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title, .tile.adobe-felix.portfolio-tile .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.adobe-felix.portfolio-tile .front-face .typography-CS-section-title {
     font-size: 29px;
     line-height: 1.5;
     letter-spacing: -0.011em;
   }
 }
 @media only screen and (max-width: 320px) {
-  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title {
+  .tile.adobe-felix.portfolio-tile .front-face .typography-tile-title, .tile.adobe-felix.portfolio-tile .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.adobe-felix.portfolio-tile .front-face .typography-CS-section-title {
     font-size: 24px;
     line-height: 1.45;
     letter-spacing: 0.007em;
@@ -5771,24 +7403,24 @@ main[data-page-template=portfolio--single][data-page-type=casestudy] {
 .tile.photoshopcontent .front-face [class^=typography-] {
   text-shadow: 1px 1px 2px rgba(27, 27, 27, 0.8), -2px 6px 24px rgba(0, 0, 0, 0.3), 0 0 16px rgba(0, 0, 0, 0.38);
 }
-.tile.photoshopcontent .front-face .typography-tile-title {
+.tile.photoshopcontent .front-face .typography-tile-title, .tile.photoshopcontent .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshopcontent .front-face .typography-CS-section-title {
   font-size: 37px;
   line-height: 1.125;
 }
 @media only screen and (max-width: 1068px), (max-height: 840px) and (min-width: 859px) {
-  .tile.photoshopcontent .front-face .typography-tile-title {
+  .tile.photoshopcontent .front-face .typography-tile-title, .tile.photoshopcontent .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshopcontent .front-face .typography-CS-section-title {
     font-size: 26px;
     line-height: 1.25;
   }
 }
 @media only screen and (max-width: 573px), (max-height: 840px) and (min-width: 321px) {
-  .tile.photoshopcontent .front-face .typography-tile-title {
+  .tile.photoshopcontent .front-face .typography-tile-title, .tile.photoshopcontent .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshopcontent .front-face .typography-CS-section-title {
     font-size: 22px;
     line-height: 1.5;
   }
 }
 @media only screen and (max-width: 320px) {
-  .tile.photoshopcontent .front-face .typography-tile-title {
+  .tile.photoshopcontent .front-face .typography-tile-title, .tile.photoshopcontent .front-face main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .tile.photoshopcontent .front-face .typography-CS-section-title {
     font-size: 19px;
     line-height: 1.62;
   }
@@ -6917,12 +8549,23 @@ html.no-js .hero-scroll-indicator .icon, html.base-experience .hero-scroll-indic
   -ms-flex-direction: row;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  width: 100%;
 }
 .flex-gallery.flex-gallery-xsmall > figure {
   width: 100px;
 }
 .flex-gallery.flex-gallery-xsmall-p > figure {
   flex: 1 1 25%;
+}
+@media only screen and (max-width: 1068px) {
+  .flex-gallery.flex-gallery-xsmall-p > figure {
+    flex-basis: 35%;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .flex-gallery.flex-gallery-xsmall-p > figure {
+    flex-basis: 100%;
+  }
 }
 .flex-gallery.flex-gallery-small > figure {
   width: 200px;
@@ -6947,10 +8590,25 @@ html.no-js .hero-scroll-indicator .icon, html.base-experience .hero-scroll-indic
   -ms-flex: auto;
   flex: auto;
   width: 100%;
-  margin: 0.5vw;
+  margin: 0.5%;
 }
 .flex-gallery > figure:not(:last-of-type) {
   margin-bottom: 7rem;
+}
+@media only screen and (max-width: 1068px) {
+  .flex-gallery > figure:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .flex-gallery > figure:not(:last-of-type) {
+    margin-bottom: 3.9rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .flex-gallery > figure:not(:last-of-type) {
+    margin-bottom: 2.62rem;
+  }
 }
 .flex-gallery > figure.fig-space {
   margin-top: 4.24rem;
@@ -8068,6 +9726,288 @@ html.global-nav-noscroll body {
   background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-Laptop.png");
 }
 
+.stagger-item {
+  opacity: 0;
+  animation: stagger-fade-in 1200ms ease forwards;
+}
+.stagger-item:nth-child(2) {
+  animation-delay: 100ms;
+}
+.stagger-item:nth-child(3) {
+  animation-delay: 200ms;
+}
+.stagger-item:nth-child(4) {
+  animation-delay: 300ms;
+}
+.stagger-item:nth-child(5) {
+  animation-delay: 400ms;
+}
+.stagger-item:nth-child(6) {
+  animation-delay: 500ms;
+}
+.stagger-item:nth-child(7) {
+  animation-delay: 600ms;
+}
+.stagger-item:nth-child(8) {
+  animation-delay: 700ms;
+}
+.stagger-item:nth-child(9) {
+  animation-delay: 800ms;
+}
+.stagger-item:nth-child(10) {
+  animation-delay: 900ms;
+}
+.stagger-item:nth-child(11) {
+  animation-delay: 1000ms;
+}
+.stagger-item:nth-child(12) {
+  animation-delay: 1100ms;
+}
+.stagger-item-reverse:nth-child(1) {
+  animation-delay: 1100ms;
+}
+.stagger-item-reverse:nth-child(2) {
+  animation-delay: 1000ms;
+}
+.stagger-item-reverse:nth-child(3) {
+  animation-delay: 900ms;
+}
+.stagger-item-reverse:nth-child(4) {
+  animation-delay: 800ms;
+}
+.stagger-item-reverse:nth-child(5) {
+  animation-delay: 700ms;
+}
+.stagger-item-reverse:nth-child(6) {
+  animation-delay: 600ms;
+}
+.stagger-item-reverse:nth-child(7) {
+  animation-delay: 500ms;
+}
+.stagger-item-reverse:nth-child(8) {
+  animation-delay: 400ms;
+}
+.stagger-item-reverse:nth-child(9) {
+  animation-delay: 300ms;
+}
+.stagger-item-reverse:nth-child(10) {
+  animation-delay: 200ms;
+}
+.stagger-item-reverse:nth-child(11) {
+  animation-delay: 100ms;
+}
+.stagger-item-ease-in:nth-child(2) {
+  animation-delay: 600ms;
+}
+.stagger-item-ease-in:nth-child(3) {
+  animation-delay: 800ms;
+}
+.stagger-item-ease-in:nth-child(4) {
+  animation-delay: 900ms;
+}
+.stagger-item-ease-in:nth-child(5) {
+  animation-delay: 960ms;
+}
+.stagger-item-ease-in:nth-child(6) {
+  animation-delay: 1000ms;
+}
+.stagger-item-ease-in:nth-child(7) {
+  animation-delay: 1028.5714285714ms;
+}
+.stagger-item-ease-in:nth-child(8) {
+  animation-delay: 1050ms;
+}
+.stagger-item-ease-in:nth-child(9) {
+  animation-delay: 1066.6666666667ms;
+}
+.stagger-item-ease-in:nth-child(10) {
+  animation-delay: 1080ms;
+}
+.stagger-item-ease-in:nth-child(11) {
+  animation-delay: 1090.9090909091ms;
+}
+.stagger-item-ease-in:nth-child(12) {
+  animation-delay: 1100ms;
+}
+.stagger-item-ease-out:nth-child(2) {
+  animation-delay: 16.6666666667ms;
+}
+.stagger-item-ease-out:nth-child(3) {
+  animation-delay: 50ms;
+}
+.stagger-item-ease-out:nth-child(4) {
+  animation-delay: 100ms;
+}
+.stagger-item-ease-out:nth-child(5) {
+  animation-delay: 166.6666666667ms;
+}
+.stagger-item-ease-out:nth-child(6) {
+  animation-delay: 250ms;
+}
+.stagger-item-ease-out:nth-child(7) {
+  animation-delay: 350ms;
+}
+.stagger-item-ease-out:nth-child(8) {
+  animation-delay: 466.6666666667ms;
+}
+.stagger-item-ease-out:nth-child(9) {
+  animation-delay: 600ms;
+}
+.stagger-item-ease-out:nth-child(10) {
+  animation-delay: 750ms;
+}
+.stagger-item-ease-out:nth-child(11) {
+  animation-delay: 916.6666666667ms;
+}
+.stagger-item-ease-out:nth-child(12) {
+  animation-delay: 1100ms;
+}
+
+.stagger-children {
+  opacity: 0;
+  animation: stagger-fade-in 1200ms ease forwards;
+}
+.stagger-children > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.stagger-children > *:nth-child(2) {
+  animation-delay: 100ms;
+}
+.stagger-children > *:nth-child(3) {
+  animation-delay: 200ms;
+}
+.stagger-children > *:nth-child(4) {
+  animation-delay: 300ms;
+}
+.stagger-children > *:nth-child(5) {
+  animation-delay: 400ms;
+}
+.stagger-children > *:nth-child(6) {
+  animation-delay: 500ms;
+}
+.stagger-children > *:nth-child(7) {
+  animation-delay: 600ms;
+}
+.stagger-children > *:nth-child(8) {
+  animation-delay: 700ms;
+}
+.stagger-children > *:nth-child(9) {
+  animation-delay: 800ms;
+}
+.stagger-children > *:nth-child(10) {
+  animation-delay: 900ms;
+}
+.stagger-children > *:nth-child(11) {
+  animation-delay: 1000ms;
+}
+.stagger-children > *:nth-child(12) {
+  animation-delay: 1100ms;
+}
+.stagger-children-reverse > *:nth-child(1) {
+  animation-delay: 1100ms;
+}
+.stagger-children-reverse > *:nth-child(2) {
+  animation-delay: 1000ms;
+}
+.stagger-children-reverse > *:nth-child(3) {
+  animation-delay: 900ms;
+}
+.stagger-children-reverse > *:nth-child(4) {
+  animation-delay: 800ms;
+}
+.stagger-children-reverse > *:nth-child(5) {
+  animation-delay: 700ms;
+}
+.stagger-children-reverse > *:nth-child(6) {
+  animation-delay: 600ms;
+}
+.stagger-children-reverse > *:nth-child(7) {
+  animation-delay: 500ms;
+}
+.stagger-children-reverse > *:nth-child(8) {
+  animation-delay: 400ms;
+}
+.stagger-children-reverse > *:nth-child(9) {
+  animation-delay: 300ms;
+}
+.stagger-children-reverse > *:nth-child(10) {
+  animation-delay: 200ms;
+}
+.stagger-children-reverse > *:nth-child(11) {
+  animation-delay: 100ms;
+}
+.stagger-children-ease-in > *:nth-child(2) {
+  animation-delay: 600ms;
+}
+.stagger-children-ease-in > *:nth-child(3) {
+  animation-delay: 800ms;
+}
+.stagger-children-ease-in > *:nth-child(4) {
+  animation-delay: 900ms;
+}
+.stagger-children-ease-in > *:nth-child(5) {
+  animation-delay: 960ms;
+}
+.stagger-children-ease-in > *:nth-child(6) {
+  animation-delay: 1000ms;
+}
+.stagger-children-ease-in > *:nth-child(7) {
+  animation-delay: 1028.5714285714ms;
+}
+.stagger-children-ease-in > *:nth-child(8) {
+  animation-delay: 1050ms;
+}
+.stagger-children-ease-in > *:nth-child(9) {
+  animation-delay: 1066.6666666667ms;
+}
+.stagger-children-ease-in > *:nth-child(10) {
+  animation-delay: 1080ms;
+}
+.stagger-children-ease-in > *:nth-child(11) {
+  animation-delay: 1090.9090909091ms;
+}
+.stagger-children-ease-in > *:nth-child(12) {
+  animation-delay: 1100ms;
+}
+.stagger-children-ease-out > *:nth-child(2) {
+  animation-delay: 16.6666666667ms;
+}
+.stagger-children-ease-out > *:nth-child(3) {
+  animation-delay: 50ms;
+}
+.stagger-children-ease-out > *:nth-child(4) {
+  animation-delay: 100ms;
+}
+.stagger-children-ease-out > *:nth-child(5) {
+  animation-delay: 166.6666666667ms;
+}
+.stagger-children-ease-out > *:nth-child(6) {
+  animation-delay: 250ms;
+}
+.stagger-children-ease-out > *:nth-child(7) {
+  animation-delay: 350ms;
+}
+.stagger-children-ease-out > *:nth-child(8) {
+  animation-delay: 466.6666666667ms;
+}
+.stagger-children-ease-out > *:nth-child(9) {
+  animation-delay: 600ms;
+}
+.stagger-children-ease-out > *:nth-child(10) {
+  animation-delay: 750ms;
+}
+.stagger-children-ease-out > *:nth-child(11) {
+  animation-delay: 916.6666666667ms;
+}
+.stagger-children-ease-out > *:nth-child(12) {
+  animation-delay: 1100ms;
+}
+
+@keyframes stagger-fade-in {
+  to {
+    opacity: 1;
+  }
+}
 svg:hover .icon-svg-compass, svg:hover .icon-svg-spatula, svg:hover .icon-svg-pencil {
   -webkit-filter: drop-shadow(0px 1em 2em rgba(127, 127, 127, 0.64));
   filter: drop-shadow(0px 1em 2em rgba(127, 127, 127, 0.64));
@@ -8520,6 +10460,13 @@ div[id^=collapse-section-] {
   background: -webkit-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
   background: -moz-radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
   background: radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
+}
+
+.child-img-shadow-hover img {
+  filter: drop-shadow(0.25px 2px 4px #d1d2d3);
+}
+.child-img-shadow-hover:hover img {
+  filter: drop-shadow(1px 6px 12px #b2b4b5);
 }
 
 .btn.btn-neo,
