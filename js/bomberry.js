@@ -360,12 +360,14 @@ $(document).ready(function() {
 // $(function() {
 $(document).ready(function() {
   $('.popModal').on('click', function() {
+    // $('#modalDialog').attr('class', $(this).find('img').attr('data-modal-style'));
+    // $('#modalDialog').toggleClass($(this).find('img').attr('data-modal-style'));
     $('.modal-content').attr('class', 'modal-content ' + $(this).attr(
       'data-style'));
     $('.imagePreview').attr('src', $(this).find('img').attr('src'));
     // $('.imageCaption').text($(this).find('figcaption').text());
     $('.imageCaption').text($(this).find('img').attr('data-figcaption'));
-    $('.imageDetail').text($(this).find('img').attr('data-figdetail'));
+    $('.imageDetail').html($(this).find('img').attr('data-figdetail')).text();
 
     $('#modal').on('show', function() {
       $(this).find('.modal-body').css({

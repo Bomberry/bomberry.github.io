@@ -187,8 +187,24 @@
     opacity: 1;
   }
 }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .fx-animation-delay {
-  animation-name: "fade-in";
+  animation-name: fade-in;
   animation-duration: 1600ms;
   animation-fill-mode: both;
 }
@@ -3234,6 +3250,10 @@ main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typog
   line-height: 1.38;
 }
 
+section:not([class*=cs-dark]) .typography-CS-section-body-light {
+  color: #333435;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -3815,6 +3835,9 @@ aside#toc_aside .closebtn {
   color: #303030;
   padding: 0.38rem 0.62rem;
 }
+#modalDialog .modal-content .bg-trans {
+  background-color: transparent;
+}
 #modalDialog .modal-content button.close {
   margin-bottom: 1rem;
   opacity: 0.62;
@@ -3834,7 +3857,7 @@ aside#toc_aside .closebtn {
 }
 #modalDialog .imageCaption,
 #modalDialog .imageDetail {
-  margin-bottom: 1.62rem;
+  margin-bottom: 3.82em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3842,6 +3865,7 @@ aside#toc_aside .closebtn {
   font-size: 1rem;
 }
 #modalDialog .imageDetail {
+  margin-top: 3.82em;
   font-size: 1rem;
 }
 #modalDialog .cs-light {
@@ -3951,6 +3975,7 @@ aside#toc_aside .closebtn {
 }
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container {
   margin: auto;
+  min-width: 50%;
 }
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption {
   color: #0e84cf;
@@ -10724,6 +10749,7 @@ body#area-site {
 
 ul.lead li {
   font-weight: 200;
+  color: #333435;
 }
 
 ul.bullets {
