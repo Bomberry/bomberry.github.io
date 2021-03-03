@@ -2278,18 +2278,29 @@ table.font-table tfoot td {
   }
 }
 
-.typography-list-item {
+.typography-list-heading,
+.typography-list-item,
+.typography-footnote-label,
+.typography-footnote-value {
   font-size: 17px;
   line-height: 1.29412;
   font-weight: 300;
   letter-spacing: -0.02em;
 }
 @media only screen and (max-width: 734px) {
-  .typography-list-item {
+  .typography-list-heading,
+.typography-list-item,
+.typography-footnote-label,
+.typography-footnote-value {
     font-size: 19px;
     line-height: 1.21053;
     letter-spacing: 0.012em;
   }
+}
+
+.typography-list-heading,
+.typography-footnote-label {
+  font-weight: 600;
 }
 
 .typography-tile-type-info, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-body-light {
@@ -5379,8 +5390,14 @@ main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] sectio
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-CS-section-title {
   padding-bottom: 1.62em;
 }
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .typography-list-heading {
+  padding-bottom: 0.62em;
+}
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-wireframes .section-content {
   overflow: visible;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-blocks .section-content {
+  min-height: 44vmin;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper {
   padding-top: 3.125em;
