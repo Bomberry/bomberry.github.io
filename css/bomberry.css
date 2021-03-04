@@ -5399,6 +5399,24 @@ main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] sectio
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-blocks .section-content {
   min-height: 44vmin;
 }
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure figcaption.figdetail-padding {
+  padding-left: 1.62em !important;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure .icon-figdetail-more::before {
+  margin-left: 0.62em;
+  opacity: 0;
+  display: inline-block;
+  font-family: "BomberryComIcons", BomberryComIcons, sans-serif !important;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure:hover .icon-figdetail-more::before {
+  opacity: 1;
+}
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper {
   padding-top: 3.125em;
 }
@@ -10655,6 +10673,20 @@ a.location-light {
   background: #ececec;
 }
 
+.cs-bg-light-g {
+  background: -webkit-linear-gradient(180deg, white 0%, #ececec 100%) !important;
+  background-image: -moz-linear-gradient(180deg, white 0%, #ececec 100%) !important;
+  background-image: -o-linear-gradient(180deg, white 0%, #ececec 100%) !important;
+  background-image: linear-gradient(180deg, white 0%, #ececec 100%) !important;
+}
+
+.cs-bg-light-g-i {
+  background: -webkit-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: -moz-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: -o-linear-gradient(0deg, white 0%, #ececec 100%) !important;
+  background-image: linear-gradient(0deg, white 0%, #ececec 100%) !important;
+}
+
 .cs-light-g {
   color: #101010;
   background: -webkit-linear-gradient(180deg, white 0%, #ececec 100%) !important;
@@ -10676,6 +10708,20 @@ a.location-light {
   background: #202020;
 }
 
+.cs-bg-dark-g {
+  background: -webkit-linear-gradient(180deg, black 0%, #202020 100%) !important;
+  background: -moz-linear-gradient(180deg, black 0%, #202020 100%) !important;
+  background: -o-linear-gradient(180deg, black 0%, #202020 100%) !important;
+  background: linear-gradient(180deg, black 0%, #202020 100%) !important;
+}
+
+.cs-bg-dark-g-i {
+  background: -webkit-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: -moz-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: -o-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: linear-gradient(0deg, black 0%, #202020 100%) !important;
+}
+
 .cs-dark-g {
   color: white;
   background: #202020;
@@ -10683,6 +10729,15 @@ a.location-light {
   background: -moz-linear-gradient(180deg, black 0%, #202020 100%) !important;
   background: -o-linear-gradient(180deg, black 0%, #202020 100%) !important;
   background: linear-gradient(180deg, black 0%, #202020 100%) !important;
+}
+
+.cs-dark-g-i {
+  color: white;
+  background: #202020;
+  background: -webkit-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: -moz-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: -o-linear-gradient(0deg, black 0%, #202020 100%) !important;
+  background: linear-gradient(0deg, black 0%, #202020 100%) !important;
 }
 
 .cs-black {
