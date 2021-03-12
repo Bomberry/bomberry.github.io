@@ -5652,26 +5652,25 @@ html[dir=rtl] .controls-social-tray {
 #area-portfolio section .card.casestudy.card-buttons {
   margin-top: 3.5vmin;
 }
-section.section > .section-content {
+section.section.section-contact > .section-content, section.section.section-cta > .section-content {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
   position: relative;
-  padding: 0 20px;
   width: 980px;
 }
 @media only screen and (min-width: 1441px) {
-  section.section > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content {
     width: 980px;
   }
 }
 @media only screen and (max-width: 1068px) {
-  section.section > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content {
     width: 692px;
   }
 }
 @media only screen and (max-width: 734px) {
-  section.section > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content {
     width: 87.5%;
   }
 }
@@ -9462,22 +9461,22 @@ main[data-page-template=resume--list][data-page-type=resume] .section-content {
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=resume--list][data-page-type=resume] .section-content {
-    padding: 0 20px;
+    padding: 0 6.89rem;
   }
 }
 @media only screen and (max-width: 860px) {
   main[data-page-template=resume--list][data-page-type=resume] .section-content {
-    padding: 0 2.38rem;
+    padding: 0 4.25rem;
   }
 }
 @media only screen and (max-width: 573px) {
   main[data-page-template=resume--list][data-page-type=resume] .section-content {
-    padding: 0 1.62rem;
+    padding: 0 2.62rem;
   }
 }
 @media only screen and (max-width: 320px) {
   main[data-page-template=resume--list][data-page-type=resume] .section-content {
-    padding: 0 1.38rem;
+    padding: 0 1.62rem;
   }
 }
 main[data-page-template=resume--list][data-page-type=resume] .job_title {
