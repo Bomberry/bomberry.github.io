@@ -5675,6 +5675,15 @@ section.section.section-contact > .section-content, section.section.section-cta 
   }
 }
 
+[data-module-templat=toolsList] .typography-content.tool {
+  text-align: right;
+}
+@media only screen and (max-width: 734px) {
+  [data-module-templat=toolsList] .typography-content.tool {
+    text-align: left;
+  }
+}
+
 #area-typography section.section-typography-classes p {
   margin-bottom: 1.62em;
 }
@@ -11856,7 +11865,7 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   margin: 10rem auto 5rem 5rem;
   margin: 10rem 5rem;
   font-size: 22px;
-  opacity: 0.5;
+  opacity: 0.38;
   animation-name: spin-bloom;
   animation-duration: 420s;
   animation-delay: 0;
@@ -11867,7 +11876,7 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   position: absolute;
   top: 50%;
   left: 50%;
-  background: rgba(14, 132, 207, 0.16);
+  background: rgba(14, 132, 207, 0.32);
   display: block;
   height: 12vmax;
   width: 12vmax;
@@ -11885,102 +11894,74 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   box-shadow: 0 0 1px black;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(1) {
-  transform: rotate(25.7142857143deg);
+  transform: rotate(36deg);
   transition: all 0.2s 0.1s ease-in;
   animation-name: show-petals;
   animation-delay: 0.25s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(2) {
-  transform: rotate(51.4285714286deg);
+  transform: rotate(72deg);
   transition: all 0.2s 0.2s ease-in;
   animation-name: show-petals;
   animation-delay: 0.5s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(3) {
-  transform: rotate(77.1428571429deg);
+  transform: rotate(108deg);
   transition: all 0.2s 0.3s ease-in;
   animation-name: show-petals;
   animation-delay: 0.75s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(4) {
-  transform: rotate(102.8571428571deg);
+  transform: rotate(144deg);
   transition: all 0.2s 0.4s ease-in;
   animation-name: show-petals;
   animation-delay: 1s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(5) {
-  transform: rotate(128.5714285714deg);
+  transform: rotate(180deg);
   transition: all 0.2s 0.5s ease-in;
   animation-name: show-petals;
   animation-delay: 1.25s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(6) {
-  transform: rotate(154.2857142857deg);
+  transform: rotate(216deg);
   transition: all 0.2s 0.6s ease-in;
   animation-name: show-petals;
   animation-delay: 1.5s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(7) {
-  transform: rotate(180deg);
+  transform: rotate(252deg);
   transition: all 0.2s 0.7s ease-in;
   animation-name: show-petals;
   animation-delay: 1.75s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(8) {
-  transform: rotate(205.7142857143deg);
+  transform: rotate(288deg);
   transition: all 0.2s 0.8s ease-in;
   animation-name: show-petals;
   animation-delay: 2s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(9) {
-  transform: rotate(231.4285714286deg);
+  transform: rotate(324deg);
   transition: all 0.2s 0.9s ease-in;
   animation-name: show-petals;
   animation-delay: 2.25s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .petals .bloom-petal:nth-child(10) {
-  transform: rotate(257.1428571429deg);
+  transform: rotate(360deg);
   transition: all 0.2s 1s ease-in;
   animation-name: show-petals;
   animation-delay: 2.5s;
-  z-index: -3;
-}
-.bloom-wrapper .bloom .petals .bloom-petal:nth-child(11) {
-  transform: rotate(282.8571428571deg);
-  transition: all 0.2s 1.1s ease-in;
-  animation-name: show-petals;
-  animation-delay: 2.75s;
-  z-index: -3;
-}
-.bloom-wrapper .bloom .petals .bloom-petal:nth-child(12) {
-  transform: rotate(308.5714285714deg);
-  transition: all 0.2s 1.2s ease-in;
-  animation-name: show-petals;
-  animation-delay: 3s;
-  z-index: -3;
-}
-.bloom-wrapper .bloom .petals .bloom-petal:nth-child(13) {
-  transform: rotate(334.2857142857deg);
-  transition: all 0.2s 1.3s ease-in;
-  animation-name: show-petals;
-  animation-delay: 3.25s;
-  z-index: -3;
-}
-.bloom-wrapper .bloom .petals .bloom-petal:nth-child(14) {
-  transform: rotate(360deg);
-  transition: all 0.2s 1.4s ease-in;
-  animation-name: show-petals;
-  animation-delay: 3.5s;
-  z-index: -3;
+  z-index: -4;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf {
   position: absolute;
@@ -11988,7 +11969,7 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   left: 50%;
   height: 18vmax;
   width: 18vmax;
-  background: rgba(255, 255, 255, 0.86) !important;
+  background: rgba(255, 255, 255, 0.32) !important;
   display: block;
   border-radius: 100% 0;
   margin: -18vmax 0 0;
@@ -12002,52 +11983,38 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   animation: linear forwards 4s;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(1) {
-  transform: rotate(77.1428571429deg);
+  transform: rotate(108deg);
   transition: all 0.2s 0.1s ease-in;
   animation-name: show-leaves;
   animation-delay: 3s;
   z-index: -5;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(2) {
-  transform: rotate(128.5714285714deg);
+  transform: rotate(180deg);
   transition: all 0.2s 0.2s ease-in;
   animation-name: show-leaves;
   animation-delay: 3.75s;
   z-index: -5;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(3) {
-  transform: rotate(180deg);
+  transform: rotate(252deg);
   transition: all 0.2s 0.3s ease-in;
   animation-name: show-leaves;
   animation-delay: 4.5s;
   z-index: -5;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(4) {
-  transform: rotate(231.4285714286deg);
+  transform: rotate(324deg);
   transition: all 0.2s 0.4s ease-in;
   animation-name: show-leaves;
   animation-delay: 5.25s;
   z-index: -5;
 }
 .bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(5) {
-  transform: rotate(282.8571428571deg);
+  transform: rotate(396deg);
   transition: all 0.2s 0.5s ease-in;
   animation-name: show-leaves;
   animation-delay: 6s;
-  z-index: -5;
-}
-.bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(6) {
-  transform: rotate(334.2857142857deg);
-  transition: all 0.2s 0.6s ease-in;
-  animation-name: show-leaves;
-  animation-delay: 6.75s;
-  z-index: -5;
-}
-.bloom-wrapper .bloom .leaves .bloom-leaf:nth-child(7) {
-  transform: rotate(385.7142857143deg);
-  transition: all 0.2s 0.7s ease-in;
-  animation-name: show-leaves;
-  animation-delay: 7.5s;
   z-index: -5;
 }
 
