@@ -6165,6 +6165,29 @@ html[dir=rtl] .controls-social-tray {
 #area-portfolio section .card.casestudy.card-buttons {
   margin-top: 3.5vmin;
 }
+.section-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+@media only screen and (min-width: 1140px) {
+  .section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .section-content {
+    width: 692px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-content {
+    width: 87.5%;
+  }
+}
+
 section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content, section.section.section-clients > .section-content {
   margin-left: auto;
   margin-right: auto;
@@ -6277,112 +6300,96 @@ section.section.section-contact > .section-content, section.section.section-cta 
 }
 
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=list][data-page-type=list] .section-pad-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
 @media only screen and (min-width: 1441px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=list][data-page-type=list] .section-pad-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=list][data-page-type=list] .section-pad-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 }
 @media only screen and (max-width: 734px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=list][data-page-type=list] .section-pad-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
 }
 @media only screen and (max-width: 320px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content,
-main[data-page-template=list][data-page-type=list] .section-pad-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-content {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=list][data-page-type=list] .section-pad-top {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top {
   padding-top: 7rem;
 }
 @media only screen and (min-width: 1441px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=list][data-page-type=list] .section-pad-top {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top {
     padding-top: 7rem;
   }
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=list][data-page-type=list] .section-pad-top {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top {
     padding-top: 5rem;
   }
 }
 @media only screen and (max-width: 734px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=list][data-page-type=list] .section-pad-top {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top {
     padding-top: 3.5rem;
   }
 }
 @media only screen and (max-width: 320px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top,
-main[data-page-template=list][data-page-type=list] .section-pad-top {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-top {
     padding-top: 2.5rem;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=list][data-page-type=list] .section-pad-bottom {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom {
   padding-bottom: 7rem;
 }
 @media only screen and (min-width: 1441px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=list][data-page-type=list] .section-pad-bottom {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom {
     padding-bottom: 7rem;
   }
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=list][data-page-type=list] .section-pad-bottom {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom {
     padding-bottom: 5rem;
   }
 }
 @media only screen and (max-width: 734px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=list][data-page-type=list] .section-pad-bottom {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom {
     padding-bottom: 3.5rem;
   }
 }
 @media only screen and (max-width: 320px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom,
-main[data-page-template=list][data-page-type=list] .section-pad-bottom {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-pad-bottom {
     padding-bottom: 2.5rem;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content,
-main[data-page-template=list][data-page-type=list] .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -6391,77 +6398,65 @@ main[data-page-template=list][data-page-type=list] .section-content {
 }
 @media only screen and (min-width: 1441px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content,
-main[data-page-template=list][data-page-type=list] .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content {
     width: 980px;
   }
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content,
-main[data-page-template=list][data-page-type=list] .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content {
     width: 692px;
   }
 }
 @media only screen and (max-width: 734px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content,
-main[data-page-template=list][data-page-type=list] .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content {
     width: 87.5%;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=list][data-page-type=list] .section-content.cs-intro-block {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block {
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=list][data-page-type=list] .section-content.cs-intro-block {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block {
     padding-top: 7rem;
     padding-bottom: 3.82rem;
   }
 }
 @media only screen and (max-width: 734px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=list][data-page-type=list] .section-content.cs-intro-block {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block {
     padding-top: 4.25rem;
     padding-bottom: 2.62rem;
   }
 }
 @media only screen and (max-width: 320px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block,
-main[data-page-template=list][data-page-type=list] .section-content.cs-intro-block {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content.cs-intro-block {
     padding-top: 2.5rem;
     padding-bottom: 1.62rem;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::before, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::after,
 main[data-page-template=resume--list][data-page-type=casestudy] .section-content::before,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content::after,
-main[data-page-template=list][data-page-type=list] .section-content::before,
-main[data-page-template=list][data-page-type=list] .section-content::after {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content::after {
   content: " ";
   display: table;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-content::after,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-content::after,
-main[data-page-template=list][data-page-type=list] .section-content::after {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-content::after {
   clear: both;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper,
-main[data-page-template=list][data-page-type=list] .section-video-wrapper {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-list-container,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-list-container,
-main[data-page-template=list][data-page-type=list] .section-list-container {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-list-container {
   display: grid;
   width: 100%;
   grid-gap: 1rem;
@@ -6469,43 +6464,36 @@ main[data-page-template=list][data-page-type=list] .section-list-container {
   width: calc(100% - $slc-borw - $slc-inl - $slc-inr);
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-figures,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-figures,
-main[data-page-template=list][data-page-type=list] .section-figures {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-figures {
   width: 100%;
   padding-bottom: 1.62rem;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .column,
-main[data-page-template=resume--list][data-page-type=casestudy] .column,
-main[data-page-template=list][data-page-type=list] .column {
+main[data-page-template=resume--list][data-page-type=casestudy] .column {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   min-width: 0px;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .align-items-center,
-main[data-page-template=resume--list][data-page-type=casestudy] .align-items-center,
-main[data-page-template=list][data-page-type=list] .align-items-center {
+main[data-page-template=resume--list][data-page-type=casestudy] .align-items-center {
   align-items: center;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .justify-content-center,
-main[data-page-template=resume--list][data-page-type=casestudy] .justify-content-center,
-main[data-page-template=list][data-page-type=list] .justify-content-center {
+main[data-page-template=resume--list][data-page-type=casestudy] .justify-content-center {
   justify-content: center;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-image-content,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-image-content,
-main[data-page-template=list][data-page-type=list] .section-image-content {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-image-content {
   position: absolute;
   z-index: -1;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-image-content .section-image,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-image-content .section-image,
-main[data-page-template=list][data-page-type=list] .section-image-content .section-image {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-image-content .section-image {
   background-color: transparent;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy][data-page-data=adobe-auguste-0] .section-image-overview,
-main[data-page-template=resume--list][data-page-type=casestudy][data-page-data=adobe-auguste-0] .section-image-overview,
-main[data-page-template=list][data-page-type=list][data-page-data=adobe-auguste-0] .section-image-overview {
+main[data-page-template=resume--list][data-page-type=casestudy][data-page-data=adobe-auguste-0] .section-image-overview {
   content: "2323";
   width: 1280px;
   height: 720px;
@@ -6519,80 +6507,67 @@ main[data-page-template=list][data-page-type=list][data-page-data=adobe-auguste-
   margin-top: 0;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *,
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *,
-main[data-page-template=list][data-page-type=list] .stagger-section-items > * {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > * {
   opacity: 0;
   animation: stagger-fade-in 1200ms ease forwards;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(1),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(1),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(1) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(1) {
   content: "1";
   animation-delay: 0ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(2),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(2),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(2) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(2) {
   content: "2";
   animation-delay: 300ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(3),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(3),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(3) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(3) {
   content: "3";
   animation-delay: 600ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(4),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(4),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(4) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(4) {
   content: "4";
   animation-delay: 900ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(5),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(5),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(5) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(5) {
   content: "5";
   animation-delay: 1200ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(6),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(6),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(6) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(6) {
   content: "6";
   animation-delay: 1500ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(7),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(7),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(7) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(7) {
   content: "7";
   animation-delay: 1800ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(8),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(8),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(8) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(8) {
   content: "8";
   animation-delay: 2100ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(9),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(9),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(9) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(9) {
   content: "9";
   animation-delay: 2400ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(10),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(10),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(10) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(10) {
   content: "10";
   animation-delay: 2700ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(11),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(11),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(11) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(11) {
   content: "11";
   animation-delay: 3000ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .stagger-section-items > *:nth-child(12),
-main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(12),
-main[data-page-template=list][data-page-type=list] .stagger-section-items > *:nth-child(12) {
+main[data-page-template=resume--list][data-page-type=casestudy] .stagger-section-items > *:nth-child(12) {
   content: "12";
   animation-delay: 3300ms;
 }
@@ -6613,52 +6588,33 @@ main[data-page-template=resume--list][data-page-type=casestudy] section.section-
 #area-resume section.experiences .content-column .typography-content.job-bullet-list main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy .lead.job-bullet-item,
 main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy #area-resume section.skills .content-column .lead.typography-content.skill,
 #area-resume section.skills .content-column main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy .lead.typography-content.skill,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .lead.typography-CS-section-body-light,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.typography-tile-type-info,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy #area-resume section.experiences .content-column .lead.typography-content.job_title,
-#area-resume section.experiences .content-column main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.typography-content.job_title,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy #area-resume section.experiences .content-column .lead.typography-content.job_description,
-#area-resume section.experiences .content-column main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.typography-content.job_description,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy #area-resume section.experiences .content-column .typography-content.job_bullet_list .lead.list-group-item,
-#area-resume section.experiences .content-column .typography-content.job_bullet_list main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.list-group-item,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy #area-resume section.experiences .content-column .typography-content.job-bullet-list .lead.job-bullet-item,
-#area-resume section.experiences .content-column .typography-content.job-bullet-list main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.job-bullet-item,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy #area-resume section.skills .content-column .lead.typography-content.skill,
-#area-resume section.skills .content-column main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .lead.typography-content.skill,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .lead.typography-CS-section-body-light {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .lead.typography-CS-section-body-light {
   padding-top: 0.38rem;
   padding-bottom: 2.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-tile-title, main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .section-copy .typography-CS-section-title,
 main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy .typography-tile-title,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy .typography-tile-title,
-main[data-page-template=list][data-page-type=list] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .section-copy main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .typography-CS-section-title {
   padding-bottom: 1.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section-introduction .typography-list-heading,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .typography-list-heading,
-main[data-page-template=list][data-page-type=list] section.section-introduction .typography-list-heading {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section-introduction .typography-list-heading {
   padding-bottom: 0.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-wireframes .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section.section-wireframes .section-content,
-main[data-page-template=list][data-page-type=list] section.section.section-wireframes .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section.section-wireframes .section-content {
   overflow: visible;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section.section-blocks .section-content,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section.section-blocks .section-content,
-main[data-page-template=list][data-page-type=list] section.section.section-blocks .section-content {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section.section-blocks .section-content {
   min-height: 44vmin;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure figcaption.figdetail-padding,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure figcaption.figdetail-padding,
-main[data-page-template=list][data-page-type=list] section.section .section-content figure figcaption.figdetail-padding {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure figcaption.figdetail-padding {
   padding-left: 0.62em !important;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure .icon-figdetail-more::before,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure .icon-figdetail-more::before,
-main[data-page-template=list][data-page-type=list] section.section .section-content figure .icon-figdetail-more::before {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure .icon-figdetail-more::before {
   margin-left: 0.38em;
   margin-right: -0.38em;
   opacity: 0;
@@ -6673,33 +6629,27 @@ main[data-page-template=list][data-page-type=list] section.section .section-cont
   transition: opacity 160ms ease-in-out 40ms;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] section.section .section-content figure:hover .icon-figdetail-more::before,
-main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure:hover .icon-figdetail-more::before,
-main[data-page-template=list][data-page-type=list] section.section .section-content figure:hover .icon-figdetail-more::before {
+main[data-page-template=resume--list][data-page-type=casestudy] section.section .section-content figure:hover .icon-figdetail-more::before {
   opacity: 1;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper,
-main[data-page-template=list][data-page-type=list] .section-video-wrapper {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper {
   padding-top: 3.125em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper.wrapper-background,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper.wrapper-background,
-main[data-page-template=list][data-page-type=list] .section-video-wrapper.wrapper-background {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper.wrapper-background {
   background-color: #f6f6f6;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .section-video-wrapper .video-caption,
-main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper .video-caption,
-main[data-page-template=list][data-page-type=list] .section-video-wrapper .video-caption {
+main[data-page-template=resume--list][data-page-type=casestudy] .section-video-wrapper .video-caption {
   padding: 1.62em 0 2.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .row-callouts .feature-cards-container .feature-card figcaption,
-main[data-page-template=resume--list][data-page-type=casestudy] .row-callouts .feature-cards-container .feature-card figcaption,
-main[data-page-template=list][data-page-type=list] .row-callouts .feature-cards-container .feature-card figcaption {
+main[data-page-template=resume--list][data-page-type=casestudy] .row-callouts .feature-cards-container .feature-card figcaption {
   padding: 2.38em 0 2.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection,
-main[data-page-template=list][data-page-type=list] .card-collection {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
@@ -6710,47 +6660,40 @@ main[data-page-template=list][data-page-type=list] .card-collection {
 }
 @media only screen and (max-width: 1068px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection,
-main[data-page-template=list][data-page-type=list] .card-collection {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 732px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection,
-main[data-page-template=list][data-page-type=list] .card-collection {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 1601px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-4-up-wide,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-4-up-wide,
-main[data-page-template=list][data-page-type=list] .card-collection.collection-4-up-wide {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-4-up-wide {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media only screen and (min-width: 1441px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-4-up,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-4-up,
-main[data-page-template=list][data-page-type=list] .card-collection.collection-4-up {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-4-up {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-wide,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-wide,
-main[data-page-template=list][data-page-type=list] .card-collection.collection-wide {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-wide {
   grid-template-columns: repeat(2, 1fr);
 }
 @media only screen and (max-width: 732px) {
   main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection.collection-wide,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-wide,
-main[data-page-template=list][data-page-type=list] .card-collection.collection-wide {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection.collection-wide {
     grid-template-columns: 1fr;
   }
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure,
-main[data-page-template=list][data-page-type=list] .card-collection .card-gallery-figure {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -6765,23 +6708,19 @@ main[data-page-template=list][data-page-type=list] .card-collection .card-galler
   width: 100%;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure img,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure img,
-main[data-page-template=list][data-page-type=list] .card-collection .card-gallery-figure img {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure img {
   width: 100%;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure figcaption,
-main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure figcaption,
-main[data-page-template=list][data-page-type=list] .card-collection .card-gallery-figure figcaption {
+main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure figcaption {
   padding: 1.38em 0 2.62em;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .child-shadow-filter img,
-main[data-page-template=resume--list][data-page-type=casestudy] .child-shadow-filter img,
-main[data-page-template=list][data-page-type=list] .child-shadow-filter img {
+main[data-page-template=resume--list][data-page-type=casestudy] .child-shadow-filter img {
   filter: drop-shadow(0.25px 2px 4px #d1d2d3);
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .child-shadow-filter:hover img,
-main[data-page-template=resume--list][data-page-type=casestudy] .child-shadow-filter:hover img,
-main[data-page-template=list][data-page-type=list] .child-shadow-filter:hover img {
+main[data-page-template=resume--list][data-page-type=casestudy] .child-shadow-filter:hover img {
   filter: drop-shadow(1px 6px 12px #b2b4b5);
 }
 
@@ -6870,14 +6809,13 @@ main[data-page-template=list][data-page-type=list] .child-shadow-filter:hover im
   opacity: 0.8;
   font-size: 40px;
 }
-
-.section-content {
+.section-tiles-grid .section-content {
   margin-left: auto;
   margin-right: auto;
   width: 980px;
 }
 @media only screen and (min-width: 1140px) {
-  .section-content {
+  .section-tiles-grid .section-content {
     margin-left: auto;
     margin-right: auto;
     width: 980px;
