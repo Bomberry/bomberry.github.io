@@ -6165,7 +6165,7 @@ html[dir=rtl] .controls-social-tray {
 #area-portfolio section .card.casestudy.card-buttons {
   margin-top: 3.5vmin;
 }
-section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content {
+section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content, section.section.section-clients > .section-content {
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -6173,17 +6173,17 @@ section.section.section-contact > .section-content, section.section.section-cta 
   width: 980px;
 }
 @media only screen and (min-width: 1441px) {
-  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content, section.section.section-clients > .section-content {
     width: 980px;
   }
 }
 @media only screen and (max-width: 1068px) {
-  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content, section.section.section-clients > .section-content {
     width: 692px;
   }
 }
 @media only screen and (max-width: 734px) {
-  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content {
+  section.section.section-contact > .section-content, section.section.section-cta > .section-content, section.section.section-about > .section-content, section.section.section-clients > .section-content {
     width: 87.5%;
   }
 }
@@ -9172,10 +9172,6 @@ section.section-clients .section-copy .section-headline {
   align-items: center;
   justify-content: center;
 }
-.clients-logos .client-logo img {
-  max-height: 5rem;
-  max-width: 100%;
-}
 @media screen and (min-width: 768px) and (max-width: 860px) {
   .clients-logos .client-logo {
     flex-basis: 50%;
@@ -9200,6 +9196,10 @@ section.section-clients .section-copy .section-headline {
     padding: 1.5rem;
     max-width: 62vw;
   }
+}
+.clients-logos .client-logo img {
+  max-height: 5rem;
+  max-width: 100%;
 }
 .clients-logos .client-logo.logo-link {
   background-color: rgba(255, 255, 255, 0);
