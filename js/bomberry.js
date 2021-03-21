@@ -700,12 +700,15 @@ $(document).ready(function() {
       var theModal = $("#modal-full");
       // Modal Content
       var theModalContent = theModal.find($(".content-column"));
+      var theModalContentCTA = theModal.find($(".content-CTA"));
       // Source Tile
       var thisTile = $(this).closest(".tile");
       // Tile Content
-      var thisTileContent = thisTile.find('[class*="back-face"]').first().find('[class*="content-column"]').clone();
-
+      var thisTileContent = thisTile.find('[class*="back-face"]').first().find('[class*="content-column"]').clone(true);
       theModalContent.replaceWith(thisTileContent)
+      var thisTileContentCTA = thisTile.find('[class*="back-face"]').first().find('[class*="tile-backface-link-item"]').clone(true);
+      theModalContentCTA.html(thisTileContentCTA)
+
 
       // NOTE: Get the current HTML Scroll position
       windowScrollPosition();
