@@ -13227,6 +13227,18 @@ section.casestudy > .container.gallery .img-thumbnail:hover, section.casestudy >
   padding: 0.62rem;
 }
 
+[data-module-templat=scrim] {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 255, 255, 0.5);
+  opacity: 0.125;
+}
+
 @keyframes show-bloom {
   0% {
     opacity: 0;
