@@ -1,2 +1,2 @@
 # bomberry.github.io
-Bomberry.com web site
+[Bomberry.com](http://bomberry.com) web site
