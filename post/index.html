@@ -97,7 +97,9 @@ if (!doNotTrack) {
   </head>
 
 
-<body id="area-" class="LIST location-">
+
+  <body id="area-post" class="LIST location-post">
+
 
 
 
@@ -112,14 +114,14 @@ if (!doNotTrack) {
 
 <input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-site" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<nav id="global-nav" class="global-nav  location-site" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
     
     <ul class="global-nav-header" role="menu">
 
       
-      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Global Menu">
 
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
@@ -197,6 +199,9 @@ if (!doNotTrack) {
 </nav>
 
 
+<div id="global-nav-placeholder" class="global-nav-placeholder"></div>
+
+
 
 
 
@@ -204,71 +209,114 @@ if (!doNotTrack) {
 
 
   
+  <main id="main" class="main" role="main" data-page-template="post--list" data-page-type="post">
 
-  
-
-  <ul>
     
-    <li><a aria-label="first" title="first" href="/post/first/">first</a><br />
-    <p><p>First!
-This is my first post. Don&rsquo;t you judge me!</p>
-</p></li>
     
-    <li><a aria-label="HUGO Table of Contents" title="HUGO Table of Contents" href="/post/hugo-table-of-contents/">HUGO Table of Contents</a><br />
-    <p>
+
+    
+    
+
+    
+
+    <header class="video-header-light pad page-introduction introduction pad-top" data-module-templat="introduction">
+  <a id="introduction" class="section-anchor"></a>
+  <div class="section-content content-column breath-v animated fadeIn wow">
+
+    <div class="row breath-v color-portfolio">
+      <div class="xlarge-5 xlarge-offset-0 large-5 large-offset-0 medium-5 medium-offset-0 small-12 small-offset-0 small-order-2 text-left">
+        <p class="typography-tile-title animated fadeInDown wow">Writings.</p>
+      </div>
+    </div>
+    
+
+  </div>
+</header>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section  >
+    
+    <section class="section section-post-list">
   <div class="section-content">
+    <div class="tile-card-container row_ stagger-children">
 
         
-          
-          <h1 id="hugo-table-of-contents">HUGO Table of Contents</h1>
-<h3 id="working-with-hugos-tableofcontents-module">Working with Hugo&rsquo;s TableOfContents module</h3>
-<p>Hugo does a great many things for you, with built-in modules, functions, templates, and shortcodes. One of those usefule elements is the {{ .TableOfContents }} module.</p>
-<p>However, the output of the code can be less than beautiful, and a little problematic.</p>
-<p>So, how do you fix the output to do things like, add a class, or onclick attribute? <em>JavaScript</em> or <em>JQuery</em> can easily help with this, and I&rsquo;ll show you how it helped me.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
-    <span style="color:#75715e">// $(&#34;#toc_aside&#34;).find(&#34;ul, li&#34;).contents().unwrap();
-</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#TableOfContents&#34;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;a&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;data-value&#39;</span>, <span style="color:#e6db74">&#39;no-show&#39;</span>);
-    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#TableOfContents&#34;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;a&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;onclick&#39;</span>, <span style="color:#e6db74">&#39;closeAside()&#39;</span>);
-});
-</code></pre></div>
+          <div class="tile-card tile-card-firsttheme-light animated fadeInUp wow">
+            <div class="tile-card-media">
+              <a aria-label="first" title="first" href="/post/first/">First</a><br/>
+            </div>
+            <div class="tile-card-copy">
+              
+              
+              <p>
+                
+                  This is some information about the tile-card.
+                
+              </p>
+            </div>
+            <button class="tile-card-link" type="button" name="button" onclick="window.location.href = '\/post\/first\/';"></button>
+          </div>
+        
+          <div class="tile-card tile-card-secondtheme-light animated fadeInUp wow">
+            <div class="tile-card-media">
+              <a aria-label="second" title="second" href="/post/second/">Second</a><br/>
+            </div>
+            <div class="tile-card-copy">
+              
+              
+              <p>
+                
+                  
+                
+              </p>
+            </div>
+            <button class="tile-card-link" type="button" name="button" onclick="window.location.href = '\/post\/second\/';"></button>
+          </div>
+        
+          <div class="tile-card tile-card-thirdtheme-light animated fadeInUp wow">
+            <div class="tile-card-media">
+              <a aria-label="third" title="third" href="/post/third/">Third</a><br/>
+            </div>
+            <div class="tile-card-copy">
+              
+              
+              <p>
+                
+                  
+                
+              </p>
+            </div>
+            <button class="tile-card-link" type="button" name="button" onclick="window.location.href = '\/post\/third\/';"></button>
+          </div>
+        
+          <div class="tile-card tile-card-hugo-table-of-contentstheme-light animated fadeInUp wow">
+            <div class="tile-card-media">
+              <a aria-label="HUGO Table of Contents" title="HUGO Table of Contents" href="/post/hugo-table-of-contents/">HUGO Table of Contents</a><br/>
+            </div>
+            <div class="tile-card-copy">
+              
+              
+              <p>
+                
+                  
+                
+              </p>
+            </div>
+            <button class="tile-card-link" type="button" name="button" onclick="window.location.href = '\/post\/hugo-table-of-contents\/';"></button>
+          </div>
         
 
+    </div>
   </div>
 </section>
 
-</p></li>
-    
-    <li><a aria-label="second" title="second" href="/post/second/">second</a><br />
-    <p><p>Second.</p>
-<p>This is my second post — and I&rsquo;m already excited about the coming third!</p>
-</p></li>
-    
-    <li><a aria-label="third" title="third" href="/post/third/">third</a><br />
-    <p><p>Third.</p>
-<p>This is my second post. POSTINI!</p>
-</p></li>
-    
-  </ul>
 
-  
+
+
+
+    
+    
 <section class="section section-contact" data-module-templat="contact-tiny">
-  <a id="contact" aria-label="Contact Information" title="Contact Information"></a>
+  <a id="contact" class="section-anchor" aria-label="Contact Information" title="Contact Information"></a>
   <div class="section-content contact pad-v-small animated fadeIn wow">
 
     <div class="row section-copy">
@@ -294,6 +342,8 @@ This is my first post. Don&rsquo;t you judge me!</p>
 </section>
 
 
+  </main>
+  
 
 
 <footer data-module-templat="footer">

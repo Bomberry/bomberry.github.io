@@ -80,7 +80,7 @@ $('a[href*="#"]')
 
 
 // :: JavaScript ::
-// NOTE: Smooth Scroll to an inpage anchors
+// NOTE: Smooth Scroll to an image anchors
 // function scrollToAnchor(anchorName){
 //     var aTag = $("a[name='"+ anchorName +"']");
 //     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
@@ -453,18 +453,100 @@ $(document).ready(function() {
 // called in
 // Navbar Effect
 function navbarFX() {
+
+  var HAS_LOCAL_NAV = false;
+  console.log(HAS_LOCAL_NAV);
+  if ($('nav#global-nav').hasClass('HAS_LOCAL_NAV')) {
+    HAS_LOCAL_NAV = true;
+  };
+  console.log(HAS_LOCAL_NAV);
+
   $(window).on('load resize scroll', function() {
-    if ($(window).scrollTop() >= 50) {
-      $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
-      $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
+
+    // NOTE: Scrolled beyond 132px
+    if ($(window).scrollTop() >= 132) {
+      // $('.navbar-fixed-top').removeClass('box-shadow').removeClass('short-nav');
+      // $('nav#global-nav').addClass('box-shadow').removeClass('short-nav');
+      if (! HAS_LOCAL_NAV) {
+        $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
+      }
+      console.log('A LOT');
+
+      $('#local-nav-placeholder').removeClass('my_action_class');
+      $('nav#local-nav').addClass('box-shadow').addClass('no-sticking').addClass('local-nav-sticking');
+      // $('nav#local-nav').addClass('no-sticking').addClass('local-nav-sticking');
+      // $('.local-nav-background').addClass('box-shadow');
+
+
+
+    // NOTE: IN the 66px – 131px range
+    } else if ($(window).scrollTop() >= 66) {
+      // $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
+      // $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
+      if (! HAS_LOCAL_NAV) {
+        $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
+      }
+      console.log('A LITTLE');
+
+      $('#local-nav-placeholder').addClass('my_action_class');
+      $('nav#local-nav').removeClass('no-sticking');
+
+    // NOTE: Less than 65px scroll
     } else {
-      $('.navbar-fixed-top').removeClass('box-shadow').removeClass(
-        'short-nav');
-      $('nav#global-nav').removeClass('box-shadow').removeClass(
-        'short-nav');
-    }
+      // $('.navbar-fixed-top').removeClass('box-shadow').removeClass('short-nav');
+      $('nav#global-nav').removeClass('box-shadow').removeClass('short-nav');
+      console.log('NOTHING');
+
+      $('#local-nav-placeholder').removeClass('my_action_class');
+      $('nav#local-nav').removeClass('box-shadow').removeClass('local-nav-sticking').addClass('no-sticking');
+      // $('nav#local-nav').removeClass('local-nav-sticking').addClass('no-sticking');
+      // $('.local-nav-background').removeClass('box-shadow');
+
+    };
+
   });
 }
+
+// NOTE: Look into throttleing the on scroll calls to help with performance
+// NOTE: throttling function
+// function throttle(func, timeFrame) {
+//   var lastTime = 0;
+//   return function () {
+//       var now = new Date();
+//       if (now - lastTime >= timeFrame) {
+//           func();
+//           lastTime = now;
+//       }
+//   };
+// }
+// NOTE: debounce pattern for throttling
+// function debounce(method, delay) {
+//     clearTimeout(method._tId);
+//     method._tId= setTimeout(function(){
+//         method();
+//     }, delay);
+// }
+//
+// $(window).scroll(function() {
+//     debounce(handleScroll, 100);
+// });
+
+
+
+
+// :: JQuery ::
+// NOTE: Scroll to Anchor Tag Offset
+// ----------------------------------------------------------------
+// $(document).ready(function() {
+//   var offset = $(':target').offset();
+//   var scrollto = offset.top - 88; // minus fixed header height
+//   $('html, body').animate({scrollTop:scrollto}, 0);
+// });
+
+
+
+
+
 
 // JQuery to call JavaScript functions
 // ----------------------------------------------------------------
@@ -472,6 +554,7 @@ $(document).ready(function() {
   //  window.alert("OK");
   navbarFX();
 });
+
 
 
 // :: JQuery ::
@@ -525,6 +608,49 @@ $(document).ready(function() {
       $("#global-nav").removeClass("menu-opening");
       $("#global-nav").addClass("menu-closing");
       $("#global-nav").delay(800).queue(function(){
+        $(this).removeClass("menu-closing").dequeue();
+      });
+    };
+
+  });
+
+});
+
+
+// :: JQuery ::
+// Local Nav Menu Button
+// ----------------------------------------------------------------
+//
+// TODO: add callback when nav-menu-item/link is clicked to dismiss dropdown
+$(document).ready(function() {
+
+  $("#local-nav-menustate").change(function() {
+
+    var menustate = $(this)[0].checked;
+
+    if (menustate) {
+      // console.log("menustate: " + menustate);
+
+      // windowScrollPosition();
+
+      $("html").addClass("global-nav-noscroll global-nav-noscroll-long LOCAL_NAV_ACTION");
+
+      $("#local-nav").addClass("menu-opening");
+      $("#local-nav").delay(800).queue(function(){
+        $(this).removeClass("menu-opening").dequeue();
+      });
+
+      // $("#global-nav").addClass("menu-opening");
+
+    } else {
+      // console.log("menustate: " + menustate);
+      $("html").removeClass("global-nav-noscroll global-nav-noscroll-long LOCAL_NAV_ACTION");
+
+      // windowScrollPosition();
+
+      $("#local-nav").removeClass("menu-opening");
+      $("#local-nav").addClass("menu-closing");
+      $("#local-nav").delay(800).queue(function(){
         $(this).removeClass("menu-closing").dequeue();
       });
     };

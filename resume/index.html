@@ -113,14 +113,14 @@ if (!doNotTrack) {
 
 <input type="checkbox" id="global-nav-menustate" class="global-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
 
-<nav id="global-nav" class="global-nav location-resume" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+<nav id="global-nav" class="global-nav HAS_LOCAL_NAV location-resume" data-module-templat="navigation-global" role="navigation" aria-label="Kevin Bomberry - Global Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
   <div class="global-nav-content">
 
     
     <ul class="global-nav-header" role="menu">
 
       
-      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Menu">
+      <li class="global-nav-item global-nav-menuicon" role="menuitem" title="Open/Close Global Menu">
 
         <label class="global-nav-menuicon-label" for="global-nav-menustate" aria-hidden="true">
           <span class="global-nav-menuicon-bread global-nav-menuicon-bread-top">
@@ -198,6 +198,120 @@ if (!doNotTrack) {
 </nav>
 
 
+<div id="global-nav-placeholder" class="global-nav-placeholder"></div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<div id="local-nav-placeholder" class="css-sticky"></div>
+
+
+<input type="checkbox" id="local-nav-menustate" class="local-nav-menustate visuallyhidden" data-original-tabindex="" data-original-aria-hidden="">
+
+
+<nav id="local-nav" class="local-nav location-resume css-sticky no-sticking" data-module-templat="navigation-local" role="navigation" aria-label="Local Navigation" data-hires="false" lang="en-US" dir="ltr" data-www-domain="www.bomberry.com">
+
+  <div class="local-nav-wrapper">
+
+    
+    <div class="local-nav-background"></div>
+
+
+    <div class="local-nav-content">
+
+      <div class="local-nav-title">
+          
+          <a href="/resume/">Résumé</a>
+      </div>
+
+
+      <div class="local-nav-menu">
+
+        
+        <a id="local-nav-menustate-open" class="local-nav-menulocal-anchor local-nav-menuanchor-open" href="#local-nav-menustate" role="button">
+          <span class="local-nav-menulocal-anchor-label">Local Nav Open Menu</span>
+        </a>
+        <a id="local-nav-menustate-close" class="local-nav-menulocal-anchor local-nav-menuanchor-closed" href="#" role="button">
+          <span class="local-nav-menulocal-anchor-label">Local Nav Close Menu</span>
+        </a>
+
+        
+        <div class="local-nav-menu-tray">
+
+          <ul class="local-nav-menu-items">
+            
+            
+            <li class="local-nav-menu-item local-nav-experience">
+              <a class="local-nav-menu-link local-nav-link-experience" href="#experience" title="Experience" role="menuitem">
+                <span class="local-nav-menu-link-text no-clip">Experience</span>
+              </a>
+            </li>
+            
+            <li class="local-nav-menu-item local-nav-skills">
+              <a class="local-nav-menu-link local-nav-link-skills" href="#skills" title="Skills" role="menuitem">
+                <span class="local-nav-menu-link-text no-clip">Skills</span>
+              </a>
+            </li>
+            
+            <li class="local-nav-menu-item local-nav-tools">
+              <a class="local-nav-menu-link local-nav-link-tools" href="#tools" title="Tools" role="menuitem">
+                <span class="local-nav-menu-link-text no-clip">Tools</span>
+              </a>
+            </li>
+            
+            <li class="local-nav-menu-item local-nav-contact">
+              <a class="local-nav-menu-link local-nav-link-contact" href="#contact" title="Contact" role="menuitem">
+                <span class="local-nav-menu-link-text no-clip">Contact</span>
+              </a>
+            </li>
+            
+          </ul>
+
+        </div>
+
+        
+        <div class="local-nav-actions">
+
+          
+          <div class="local-nav-action local-nav-action-menulocal" aria-hidden="true">
+            <label for="local-nav-menustate" class="local-nav-menulocal">
+              <span class="local-nav-menulocal-chevron"></span>
+            </label>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+</nav>
+
 
 
 
@@ -270,7 +384,7 @@ if (!doNotTrack) {
 
   
   <header class="video-header-light pad page-introduction introduction pad-top" data-module-templat="introduction">
-  <a id="introduction"></a>
+  <a id="introduction" class="section-anchor"></a>
   <div class="section-content content-column breath-v animated fadeIn wow">
 
     <div class="row breath-v color-resume">
@@ -304,7 +418,7 @@ if (!doNotTrack) {
   
   
 <section class="section section-experience experiences pad-top-small" data-module-templat="experiences">
-  <a id="experience" aria-label="Experience Section" title="Experience Section"></a>
+  <a id="experience" class="section-anchor" aria-label="Experience Section" title="Experience Section"></a>
 
   
   <div class="section-content">
@@ -317,7 +431,7 @@ if (!doNotTrack) {
       
 
         <div  class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  " data-content-block="streamlio">
-          <a id="streamlio" aria-label="streamlio experience" title="streamlio experience"></a>
+          <a id="streamlio" class="section-anchor" aria-label="streamlio experience" title="streamlio experience"></a>
           <div class="content-column">
 
 
@@ -371,7 +485,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-adobe-grimoire" class="large-6 large-offset-3 medium-8 medium-offset-2 small-12 small-offset-0  collapse collapsible-article" data-content-block="adobe-grimoire">
-          <a id="adobe-grimoire" aria-label="adobe-grimoire experience" title="adobe-grimoire experience"></a>
+          <a id="adobe-grimoire" class="section-anchor" aria-label="adobe-grimoire experience" title="adobe-grimoire experience"></a>
           <div class="content-column">
 
 
@@ -413,7 +527,7 @@ if (!doNotTrack) {
       
 
         <div  class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  " data-content-block="adobe-auguste">
-          <a id="adobe-auguste" aria-label="adobe-auguste experience" title="adobe-auguste experience"></a>
+          <a id="adobe-auguste" class="section-anchor" aria-label="adobe-auguste experience" title="adobe-auguste experience"></a>
           <div class="content-column">
 
 
@@ -467,7 +581,7 @@ if (!doNotTrack) {
       
 
         <div  class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  " data-content-block="adobe-felix">
-          <a id="adobe-felix" aria-label="adobe-felix experience" title="adobe-felix experience"></a>
+          <a id="adobe-felix" class="section-anchor" aria-label="adobe-felix experience" title="adobe-felix experience"></a>
           <div class="content-column">
 
 
@@ -519,7 +633,7 @@ if (!doNotTrack) {
       
 
         <div  class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  " data-content-block="craftmaster">
-          <a id="craftmaster" aria-label="craftmaster experience" title="craftmaster experience"></a>
+          <a id="craftmaster" class="section-anchor" aria-label="craftmaster experience" title="craftmaster experience"></a>
           <div class="content-column">
 
 
@@ -573,7 +687,7 @@ if (!doNotTrack) {
       
 
         <div  class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  " data-content-block="adobe-photoshop">
-          <a id="adobe-photoshop" aria-label="adobe-photoshop experience" title="adobe-photoshop experience"></a>
+          <a id="adobe-photoshop" class="section-anchor" aria-label="adobe-photoshop experience" title="adobe-photoshop experience"></a>
           <div class="content-column">
 
 
@@ -631,7 +745,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-doppler" class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  collapse collapsible-article" data-content-block="doppler">
-          <a id="doppler" aria-label="doppler experience" title="doppler experience"></a>
+          <a id="doppler" class="section-anchor" aria-label="doppler experience" title="doppler experience"></a>
           <div class="content-column">
 
 
@@ -665,7 +779,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-adobe-materials" class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  collapse collapsible-article" data-content-block="adobe-materials">
-          <a id="adobe-materials" aria-label="adobe-materials experience" title="adobe-materials experience"></a>
+          <a id="adobe-materials" class="section-anchor" aria-label="adobe-materials experience" title="adobe-materials experience"></a>
           <div class="content-column">
 
 
@@ -714,7 +828,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-able-pear" class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  collapse collapsible-article" data-content-block="able-pear">
-          <a id="able-pear" aria-label="able-pear experience" title="able-pear experience"></a>
+          <a id="able-pear" class="section-anchor" aria-label="able-pear experience" title="able-pear experience"></a>
           <div class="content-column">
 
 
@@ -763,7 +877,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-vlab" class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  collapse collapsible-article" data-content-block="vlab">
-          <a id="vlab" aria-label="vlab experience" title="vlab experience"></a>
+          <a id="vlab" class="section-anchor" aria-label="vlab experience" title="vlab experience"></a>
           <div class="content-column">
 
 
@@ -790,7 +904,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-panalta" class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  collapse collapsible-article" data-content-block="panalta">
-          <a id="panalta" aria-label="panalta experience" title="panalta experience"></a>
+          <a id="panalta" class="section-anchor" aria-label="panalta experience" title="panalta experience"></a>
           <div class="content-column">
 
 
@@ -817,7 +931,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-bomberry-design" class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  collapse collapsible-article" data-content-block="bomberry-design">
-          <a id="bomberry-design" aria-label="bomberry-design experience" title="bomberry-design experience"></a>
+          <a id="bomberry-design" class="section-anchor" aria-label="bomberry-design experience" title="bomberry-design experience"></a>
           <div class="content-column">
 
 
@@ -844,7 +958,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-south-park" class="large-7 medium-7 medium-offset-1 small-12 small-offset-0  collapse collapsible-article" data-content-block="south-park">
-          <a id="south-park" aria-label="south-park experience" title="south-park experience"></a>
+          <a id="south-park" class="section-anchor" aria-label="south-park experience" title="south-park experience"></a>
           <div class="content-column">
 
 
@@ -871,7 +985,7 @@ if (!doNotTrack) {
       
 
         <div id="cv-macys" class="large-7 large-offset-5 medium-7 medium-offset-4 small-12 small-offset-0  collapse collapsible-article" data-content-block="macys">
-          <a id="macys" aria-label="macys experience" title="macys experience"></a>
+          <a id="macys" class="section-anchor" aria-label="macys experience" title="macys experience"></a>
           <div class="content-column">
 
 
@@ -907,7 +1021,7 @@ if (!doNotTrack) {
   
   
 <section class="section section-skills skills breath-v" data-module-templat="skills">
-  <a id="skills" aria-label="Skills Section" title="Skills Section"></a>
+  <a id="skills" class="section-anchor" aria-label="Skills Section" title="Skills Section"></a>
   <div class="section-content">
 
       
@@ -1090,7 +1204,7 @@ if (!doNotTrack) {
   
   
 <section class="section section-tools breath-v-larger" data-module-templat="tools">
-  <a id="tools" aria-label="Tools Section" title="Tools Section"></a>
+  <a id="tools" class="section-anchor" aria-label="Tools Section" title="Tools Section"></a>
   <div class="section-content">
 
     <div class="row breath-bottom-small">
@@ -1306,7 +1420,7 @@ if (!doNotTrack) {
   
   
 <section class="section section-contact" data-module-templat="contact-tiny">
-  <a id="contact" aria-label="Contact Information" title="Contact Information"></a>
+  <a id="contact" class="section-anchor" aria-label="Contact Information" title="Contact Information"></a>
   <div class="section-content contact pad-v-small animated fadeIn wow">
 
     <div class="row section-copy">
