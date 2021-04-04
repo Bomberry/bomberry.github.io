@@ -89,89 +89,90 @@ $('a[href*="#"]')
 //    scrollToAnchor('anchorName');
 // });
 
-$(document).ready(function() {
+// $(document).ready(function() {
+//
+//   console.log("——————————");
+//   console.log('jQuery version: ' + $.fn.jquery)
+//   console.log("——————————");
+//
+//   var aPage = $(location).attr('href');
+//   var aDocument = $(document);
+//   var aWindow = $(window);
+//   var aScreen = aWindow.screen;
+//   var aTile = $("a");
+//   var hash = $(location).attr('hash');
+//
+//   console.log("HASH:");
+//
+//   if ($(location).attr('hash')) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//
+//   if (aPage.length > 0) {
+//     console.log(true);
+//     console.log("host = " + $(location).attr('host') +
+//           "\nhostname = " + $(location).attr('hostname') +
+//           "\npathname = " + $(location).attr('pathname') +
+//           "\nhref = " + $(location).attr('href') +
+//           "\nhash = " + $(location).attr('hash') +
+//           "\nport = " + $(location).attr('port') +
+//           "\nprotocol = " + $(location).attr('protocol'));
+//
+//   } else {
+//     console.log(false);
+//     console.log("host = " + $(location).attr('host') +
+//           "\nhostname = " + $(location).attr('hostname') +
+//           "\npathname = " + $(location).attr('pathname') +
+//           "\nhref = " + $(location).attr('href') +
+//           "\nhash = " + $(location).attr('hash') +
+//           "\nport = " + $(location).attr('port') +
+//           "\nprotocol = " + $(location).attr('protocol'));
+//
+//   };
+//
+//   console.log("—————");
+//   console.log("DOCUMENT:");
+//   if (aDocument) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   console.log(aDocument.attr('title'));
+//   console.log(aDocument);
+//
+//   console.log("—————");
+//   console.log("WINDOW:");
+//   if (aWindow) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   console.log(aWindow.innerHeight());
+//   console.log(aWindow.innerWidth());
+//   console.log(aWindow.outerHeight());
+//   console.log(aWindow.outerWidth());
+//   console.log(aWindow.attr('pageXOffset'));
+//   console.log(aWindow.attr('pageYOffset'));
+//   console.log(aWindow.attr('name'));
+//   console.log(aWindow.attr('navigator'));
+//   console.log(aWindow);
+//
+//
+//   console.log("—————");
+//   console.log("SCREEN:");
+//   if (aScreen) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   // console.log(aScreen.attr('title'));
+//   console.log(aScreen);
+//
+//
+// });
 
-  console.log("——————————");
-  console.log('jQuery version: ' + $.fn.jquery)
-  console.log("——————————");
-
-  var aPage = $(location).attr('href');
-  var aDocument = $(document);
-  var aWindow = $(window);
-  var aScreen = aWindow.screen;
-  var aTile = $("a");
-  var hash = $(location).attr('hash');
-
-  console.log("HASH:");
-
-  if ($(location).attr('hash')) {
-    console.log(true);
-  } else {
-    console.log(false);
-  };
-
-  if (aPage.length > 0) {
-    console.log(true);
-    console.log("host = " + $(location).attr('host') +
-          "\nhostname = " + $(location).attr('hostname') +
-          "\npathname = " + $(location).attr('pathname') +
-          "\nhref = " + $(location).attr('href') +
-          "\nhash = " + $(location).attr('hash') +
-          "\nport = " + $(location).attr('port') +
-          "\nprotocol = " + $(location).attr('protocol'));
-
-  } else {
-    console.log(false);
-    console.log("host = " + $(location).attr('host') +
-          "\nhostname = " + $(location).attr('hostname') +
-          "\npathname = " + $(location).attr('pathname') +
-          "\nhref = " + $(location).attr('href') +
-          "\nhash = " + $(location).attr('hash') +
-          "\nport = " + $(location).attr('port') +
-          "\nprotocol = " + $(location).attr('protocol'));
-
-  };
-
-  console.log("—————");
-  console.log("DOCUMENT:");
-  if (aDocument) {
-    console.log(true);
-  } else {
-    console.log(false);
-  };
-  console.log(aDocument.attr('title'));
-  console.log(aDocument);
-
-  console.log("—————");
-  console.log("WINDOW:");
-  if (aWindow) {
-    console.log(true);
-  } else {
-    console.log(false);
-  };
-  console.log(aWindow.innerHeight());
-  console.log(aWindow.innerWidth());
-  console.log(aWindow.outerHeight());
-  console.log(aWindow.outerWidth());
-  console.log(aWindow.attr('pageXOffset'));
-  console.log(aWindow.attr('pageYOffset'));
-  console.log(aWindow.attr('name'));
-  console.log(aWindow.attr('navigator'));
-  console.log(aWindow);
-
-
-  console.log("—————");
-  console.log("SCREEN:");
-  if (aScreen) {
-    console.log(true);
-  } else {
-    console.log(false);
-  };
-  // console.log(aScreen.attr('title'));
-  console.log(aScreen);
-
-
-});
 // alert("host = " + $(location).attr('host') +
 //       "\nhostname = " + $(location).attr('hostname') +
 //       "\npathname = " + $(location).attr('pathname') +
@@ -180,7 +181,42 @@ $(document).ready(function() {
 //       "\nprotocol = " + $(location).attr('protocol'));
 
 
+//
+// function someMethodIThinkMightBeSlow() {
+//     const startTime = performance.now();
+//
+//     // Do the normal stuff for this function
+//
+//     const duration = performance.now() - startTime;
+//     console.log(`someMethodIThinkMightBeSlow took ${duration}ms`);
+// };
 
+
+
+
+
+// // NOTE: OPTIMIZE EXAMPLE
+// // NOTE: BEFORE
+// search.addEventListener('keyup', function() {
+//     for (const node of nodes)
+//         if (node.innerText.toLowerCase().includes(this.value.toLowerCase()))
+//             node.classList.remove('hidden');
+//         else
+//             node.classList.add('hidden');
+// });
+// // NOTE: AFTER
+// search.addEventListener('keyup', function() {
+//     const nodesToHide = [];
+//     const nodesToShow = [];
+//     for (const node of nodes)
+//         if (node.innerText.toLowerCase().includes(this.value.toLowerCase()))
+//             nodesToShow.push(node);
+//         else
+//             nodesToHide.push(node);
+//
+//     nodesToHide.forEach(node => node.classList.add('hidden'));
+//     nodesToShow.forEach(node => node.classList.remove('hidden'));
+// });
 
 
 
@@ -569,6 +605,28 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+
+  function setActiveLinks() {
+    var current = location.pathname;
+    $('.local-nav li a').each(function() {
+      var $this = $(this);
+      // Get hash value
+      var $hash = location.href.substr(location.href.indexOf('#') + 1);
+      if ($this.attr('href') == '#' + $hash) {
+        $this.parent().addClass('active');
+      }
+    })
+  }
+
+  setActiveLinks();
+
+  $('.local-nav li a').click(function() {
+    $('.local-nav li').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+
+});
 
 
 

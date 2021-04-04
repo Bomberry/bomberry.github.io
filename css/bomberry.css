@@ -356,8 +356,8 @@ main {
   position: relative;
   max-width: 2560px;
   margin: 0 auto;
-  -webkit-transition: padding-top 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: padding-top 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: padding-top 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: padding-top 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
   padding-top: 0;
 }
 @media only screen and (min-width: 1601px) {
@@ -2511,6 +2511,10 @@ main[data-page-template=list][data-page-type=list] .row-reverse .xsmall-notlast 
   }
 }
 
+.align-end {
+  align-self: flex-end;
+}
+
 nav {
   z-index: 9000;
 }
@@ -3400,6 +3404,14 @@ table.font-table tfoot td {
   letter-spacing: -0.022em;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
 .typography-body {
   font-size: 32px;
   font-weight: 200;
@@ -4073,7 +4085,7 @@ table.font-table tfoot td {
   }
 }
 
-.typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+.typography-modal-headline, [data-module-templat=next-casestudy] .headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
 .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
   font-size: 48px;
@@ -4082,7 +4094,7 @@ table.font-table tfoot td {
   letter-spacing: -0.003em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+  .typography-modal-headline, [data-module-templat=next-casestudy] .headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
 .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
     font-size: 40px;
@@ -4092,7 +4104,7 @@ table.font-table tfoot td {
   }
 }
 @media only screen and (max-width: 734px) {
-  .typography-modal-headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
+  .typography-modal-headline, [data-module-templat=next-casestudy] .headline, #area-resume section.experiences .content-column .typography-content.client_name, #area-resume header.introduction .content-column .typography-content.description, #area-resume header.introduction .content-column .typography-content.headline, .modal-content .content-column .typography-tile-backface-content.headline, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageCaption,
 .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .headline.imageDetail,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .headline.imageDetail {
     font-size: 32px;
@@ -4101,7 +4113,7 @@ table.font-table tfoot td {
   }
 }
 
-.typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+.typography-modal-intro, [data-module-templat=next-casestudy] .description, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
 .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
   font-size: 24px;
@@ -4110,7 +4122,7 @@ table.font-table tfoot td {
   letter-spacing: 0.009em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-intro, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
+  .typography-modal-intro, [data-module-templat=next-casestudy] .description, .modal-content .content-column .typography-tile-backface-link, .modal-content #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .modal-content .content-column .typography-content.job_duration, .modal-content .content-column .typography-tile-backface-content.description, .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageCaption,
 .modal-content .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .description.imageDetail,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .modal-content .content-column .description.imageDetail {
     font-size: 21px;
@@ -4120,7 +4132,9 @@ table.font-table tfoot td {
   }
 }
 
-.typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
+.typography-modal-body, [data-module-templat=next-casestudy] .services, [data-module-templat=next-casestudy] #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container [data-module-templat=next-casestudy] .imageCaption,
+[data-module-templat=next-casestudy] #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container [data-module-templat=next-casestudy] .imageDetail, .typography-section-title-small, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_duration,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_duration,
 #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_duration,
@@ -4133,7 +4147,9 @@ table.font-table tfoot td {
   letter-spacing: -0.03em;
 }
 @media only screen and (max-width: 1068px), (min-width: 1067px) and (max-height: 840px) {
-  .typography-modal-body, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
+  .typography-modal-body, [data-module-templat=next-casestudy] .services, [data-module-templat=next-casestudy] #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container [data-module-templat=next-casestudy] .imageCaption,
+[data-module-templat=next-casestudy] #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail,
+#modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container [data-module-templat=next-casestudy] .imageDetail, .typography-section-title-small, #area-resume header.introduction .content-column .typography-content.link, .typography-tile-backface-content .typography-tile-backface-link, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-tile-backface-link,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-tile-backface-link, .typography-tile-backface-content #area-resume section.experiences .content-column .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption #area-resume section.experiences .content-column .typography-content.job_duration,
 #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail #area-resume section.experiences .content-column .typography-content.job_duration, #area-resume section.experiences .content-column .typography-tile-backface-content .typography-content.job_duration, #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageCaption .typography-content.job_duration, #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container #area-resume section.experiences .content-column .imageCaption .typography-content.job_duration,
 #area-resume section.experiences .content-column #modalDialog.modal-full-viewport.screen-white[data-module-templat=modal-dialog-0] .modal-figure-container .imageDetail .typography-content.job_duration,
@@ -4517,6 +4533,10 @@ table.font-table tfoot td {
   letter-spacing: 0.038em;
 }
 
+[data-module-templat=next-casestudy] .description {
+  font-weight: 400;
+}
+
 [data-module-templat=introduction] .lead {
   font-weight: 100;
 }
@@ -4678,6 +4698,7 @@ h6 {
 
 .btn {
   font-size: 1rem;
+  transition: all 100ms cubic-bezier(0.3, 1, 0.3, 1) 0ms;
 }
 
 .navbar-toggle {
@@ -4955,13 +4976,6 @@ footer .fa, .contact .fa,
 footer .fab,
 .contact .fab {
   margin-right: 0.5rem;
-}
-@media screen and (max-width: 767px) {
-  footer .fa, .contact .fa,
-footer .fab,
-.contact .fab {
-    margin-right: 0;
-  }
 }
 
 .icon-pad-right {
@@ -5380,10 +5394,10 @@ aside#toc_aside .closebtn {
 }
 .modal-full-viewport.modal-tile-backface {
   opacity: 0 !important;
-  transition: opacity 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1) !important;
+  transition: opacity 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1) !important;
 }
 .modal-full-viewport.modal-tile-backface.modal-open {
-  transition: opacity 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1) !important;
+  transition: opacity 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1) !important;
   opacity: 1 !important;
 }
 
@@ -5501,7 +5515,7 @@ aside#toc_aside .closebtn {
   opacity: 0.6;
   font-size: 30px;
   transform: translate(12px, 12px);
-  transition: opacity 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  transition: opacity 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 #modal-full .modal-close:hover::after {
   opacity: 1;
@@ -5536,7 +5550,7 @@ aside#toc_aside .closebtn {
   opacity: 0.6;
   font-size: 30px;
   transform: translate(12px, 8px);
-  transition: opacity 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  transition: opacity 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 #modal-full .modal-close::after:hover::after {
   opacity: 1;
@@ -5583,10 +5597,10 @@ aside#toc_aside .closebtn {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  -webkit-transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 0.05s, -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
-  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 0.05s, -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
-  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 0.05s, transform 0.5s cubic-bezier(0, 0, 0.2, 1);
-  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 0.05s, transform 0.5s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 50ms, -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 50ms, -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 50ms, transform 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1) 50ms, transform 0.5s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .user-hover .start-state .controls-container {
@@ -5603,10 +5617,10 @@ aside#toc_aside .closebtn {
 }
 
 .initial-play .center-button-container, .initial-play .controls-social-tray, .initial-play .main-controls-container {
-  -webkit-transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 0.05s, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 0.05s, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 0.05s, transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 0.05s, transform 0.5s cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 50ms, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 50ms, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 50ms, transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1) 50ms, transform 0.5s cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .threesixty-video {
@@ -6136,10 +6150,10 @@ html[dir=rtl] .controls-social-tray {
   height: 100%;
   position: absolute;
   pointer-events: none;
-  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
+  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
 }
 
 .compass-wrapper.show-arrows .compass-background {
@@ -6210,8 +6224,8 @@ html[dir=rtl] .controls-social-tray {
   top: -15px;
   left: -15px;
   opacity: 0;
-  -webkit-transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
+  -webkit-transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
 }
 
 .compass-wrapper .compass-arrows .compass-arrow-top, .compass-wrapper .compass-arrows .compass-arrow-right, .compass-wrapper .compass-arrows .compass-arrow-bottom, .compass-wrapper .compass-arrows .compass-arrow-left {
@@ -6230,10 +6244,10 @@ html[dir=rtl] .controls-social-tray {
   height: 19px;
   opacity: 0.56;
   will-change: opacity;
-  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.03s;
-  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.03s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.03s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.03s, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.03s;
+  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 30ms;
+  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 30ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 30ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 30ms, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 30ms;
 }
 
 .compass-wrapper .compass-arrows .compass-arrow-top:focus, .compass-wrapper .compass-arrows .compass-arrow-top:active, .compass-wrapper .compass-arrows .compass-arrow-right:focus, .compass-wrapper .compass-arrows .compass-arrow-right:active, .compass-wrapper .compass-arrows .compass-arrow-bottom:focus, .compass-wrapper .compass-arrows .compass-arrow-bottom:active, .compass-wrapper .compass-arrows .compass-arrow-left:focus, .compass-wrapper .compass-arrows .compass-arrow-left:active {
@@ -6270,16 +6284,16 @@ html[dir=rtl] .controls-social-tray {
 
 .compass-wrapper.show-arrows .compass-arrows {
   opacity: 1;
-  -webkit-transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
+  -webkit-transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: opacity 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
 }
 
 .compass-wrapper.show-arrows .compass-arrow-top, .compass-wrapper.show-arrows .compass-arrow-right, .compass-wrapper.show-arrows .compass-arrow-bottom, .compass-wrapper.show-arrows .compass-arrow-left {
   pointer-events: all;
-  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
-  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 0.06s;
+  -webkit-transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
+  transition: transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms, -webkit-transform 0.275s cubic-bezier(0.4, 0, 0.6, 1) 75ms;
 }
 
 .compass-wrapper.show-arrows .compass-arrow-top {
@@ -10514,11 +10528,11 @@ html #global-nav ~ .global-nav-blur {
     max-height: none;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    -webkit-transition: background 0.44s 0.2s cubic-bezier(0.52, 0.16, 0.24, 1), height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
-    transition: background 0.44s 0.2s cubic-bezier(0.52, 0.16, 0.24, 1), height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+    -webkit-transition: background 0.44s 0.2s cubic-bezier(0.5, 0.15, 0.25, 1), height 550ms cubic-bezier(0.5, 0.15, 0.25, 1);
+    transition: background 0.44s 0.2s cubic-bezier(0.5, 0.15, 0.25, 1), height 550ms cubic-bezier(0.5, 0.15, 0.25, 1);
   }
 }
-@supports (-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px)) {
+@supports (-webkit-backdrop-filter: initial) or (backdrop-filter: initial) {
   html #global-nav {
     background: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -10649,8 +10663,8 @@ html #global-nav.HAS_LOCAL_NAV ~ .global-nav-blur {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: height 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1), max-height 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: height 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1), max-height 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (min-width: 1601px) {
   #global-nav {
@@ -10740,27 +10754,27 @@ html.has-modal-full-viewport #global-nav {
   #global-nav .global-nav-item-menu:nth-child(2) {
     -webkit-transform: translateY(-44px);
     transform: translateY(-44px);
-    -webkit-transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
+    -webkit-transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
     padding-top: 1px;
   }
   #global-nav .global-nav-item-menu:nth-child(3) {
     -webkit-transform: translateY(-40px);
     transform: translateY(-40px);
-    -webkit-transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
+    -webkit-transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
   }
   #global-nav .global-nav-item-menu:nth-child(4) {
     -webkit-transform: translateY(-36px);
     transform: translateY(-36px);
-    -webkit-transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
+    -webkit-transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
   }
 }
 #global-nav .global-nav-item.global-nav-item-menu:nth-of-type(2) {
@@ -10787,7 +10801,7 @@ html.has-modal-full-viewport #global-nav {
   -webkit-tap-highlight-color: transparent;
   outline-offset: -7px;
 }
-#global-nav .global-nav-link:active {
+#global-nav .global-nav-link:active, #global-nav .global-nav-link.active {
   opacity: 1;
 }
 #global-nav .global-nav-link:hover {
@@ -10902,27 +10916,27 @@ html.has-modal-full-viewport #global-nav {
   #global-nav-menustate .global-nav-item-menu:nth-child(2) {
     -webkit-transform: translateY(-44px);
     transform: translateY(-44px);
-    -webkit-transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
-    transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
+    -webkit-transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
+    transition: opacity 0.3345s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.15s, transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s, -webkit-transform 0.4669s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.108s;
     padding-top: 1px;
   }
   #global-nav-menustate .global-nav-item-menu:nth-child(3) {
     -webkit-transform: translateY(-40px);
     transform: translateY(-40px);
-    -webkit-transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
-    transition: opacity 0.29294s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s, -webkit-transform 0.45043s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.095s;
+    -webkit-transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
+    transition: opacity 0.29294s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.13s, transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s, -webkit-transform 0.45043s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.095s;
   }
   #global-nav-menustate .global-nav-item-menu:nth-child(4) {
     -webkit-transform: translateY(-36px);
     transform: translateY(-36px);
-    -webkit-transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
-    transition: opacity 0.26098s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.11s, transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s, -webkit-transform 0.43756s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.082s;
+    -webkit-transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
+    transition: opacity 0.26098s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.11s, transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s, -webkit-transform 0.43756s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.082s;
   }
 }
 #global-nav-menustate .global-nav-link {
@@ -11006,19 +11020,19 @@ html.has-modal-full-viewport #global-nav {
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 #global-nav .global-nav-menuicon-bread-top {
-  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95), -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
   -webkit-transform: none;
   transform: none;
   z-index: 4;
 }
 #global-nav .global-nav-menuicon-bread-bottom {
-  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95), -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
   -webkit-transform: none;
   transform: none;
 }
@@ -11036,19 +11050,19 @@ html.has-modal-full-viewport #global-nav {
   top: 14px;
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
-  -webkit-transition: -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s, -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+  -webkit-transition: -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s, -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
 }
 #global-nav .global-nav-menuicon-bread-crust-bottom {
   bottom: 14px;
   -webkit-transform: translateY(3px);
   transform: translateY(3px);
-  -webkit-transition: -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
-  transition: transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s, -webkit-transform 0.1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1008s;
+  -webkit-transition: -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
+  transition: transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s, -webkit-transform 0.1596s cubic-bezier(0.5, 0.15, 0.5, 0.85) 0.1008s;
 }
 #global-nav .global-nav-menuanchor {
   left: 0;
@@ -11077,8 +11091,8 @@ html.has-modal-full-viewport #global-nav {
 #global-nav-menustate:checked ~ #global-nav, #global-nav-menustate:target ~ #global-nav {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  -webkit-transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1), height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1), height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: background 350ms cubic-bezier(0.25, 0.1, 0.25, 1), height 550ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: background 350ms cubic-bezier(0.25, 0.1, 0.25, 1), height 550ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-item-menu, #global-nav-menustate:target ~ #global-nav .global-nav-item-menu {
   opacity: 1;
@@ -11087,22 +11101,22 @@ html.has-modal-full-viewport #global-nav {
   transform: none;
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-item-menu:nth-child(2), #global-nav-menustate:target ~ #global-nav .global-nav-item-menu:nth-child(2) {
-  -webkit-transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-  transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-  transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-  transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
+  -webkit-transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, -webkit-transform 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+  transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, -webkit-transform 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+  transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, transform 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+  transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, transform 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-item-menu:nth-child(3), #global-nav-menustate:target ~ #global-nav .global-nav-item-menu:nth-child(3) {
-  -webkit-transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-  transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-  transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-  transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
+  -webkit-transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+  transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+  transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+  transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-item-menu:nth-child(4), #global-nav-menustate:target ~ #global-nav .global-nav-item-menu:nth-child(4) {
-  -webkit-transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-  transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-  transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-  transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
+  -webkit-transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+  transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+  transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+  transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11124,10 +11138,10 @@ html.has-modal-full-viewport #global-nav {
   }
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-crust-top, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-crust-top, #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-crust-bottom, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-crust-bottom {
-  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95), -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
   -webkit-transform: none;
   transform: none;
 }
@@ -11145,45 +11159,45 @@ html.has-modal-full-viewport #global-nav {
     transform: none;
   }
   #global-nav-menustate:checked ~ #global-nav .ac-gn-item-menu:nth-child(2), #global-nav-menustate:target ~ #global-nav .ac-gn-item-menu:nth-child(2) {
-    -webkit-transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-    transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-    transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
-    transition: opacity 0.3091s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
+    -webkit-transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+    transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+    transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
+    transition: opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1) 30ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 25ms;
   }
   #global-nav-menustate:checked ~ #global-nav .ac-gn-item-menu:nth-child(3), #global-nav-menustate:target ~ #global-nav .ac-gn-item-menu:nth-child(3) {
-    -webkit-transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-    transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-    transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
-    transition: opacity 0.32244s cubic-bezier(0.32, 0.08, 0.24, 1) 0.05s, transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s, -webkit-transform 0.35825s cubic-bezier(0.32, 0.08, 0.24, 1) 0.04s;
+    -webkit-transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+    transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+    transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+    transition: opacity 325ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms, -webkit-transform 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
   }
   #global-nav-menustate:checked ~ #global-nav .ac-gn-item-menu:nth-child(4), #global-nav-menustate:target ~ #global-nav .ac-gn-item-menu:nth-child(4) {
-    -webkit-transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-    transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-    transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
-    transition: opacity 0.33467s cubic-bezier(0.32, 0.08, 0.24, 1) 0.07s, transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s, -webkit-transform 0.37539s cubic-bezier(0.32, 0.08, 0.24, 1) 0.06s;
+    -webkit-transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+    transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+    transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
+    transition: opacity 350ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms, -webkit-transform 375ms cubic-bezier(0.25, 0.1, 0.25, 1) 75ms;
   }
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-top, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-top {
-  -webkit-transition: -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s, -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  -webkit-transition: -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s, -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-bottom, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-bottom {
-  -webkit-transition: -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  transition: transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s, -webkit-transform 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  -webkit-transition: -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
+  transition: transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s, -webkit-transform 0.3192s cubic-bezier(0.05, 0.05, 0.1, 0.95) 0.1008s;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-crust-top, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-crust-top, #global-nav-menustate:checked ~ #global-nav .global-nav-menuicon-bread-crust-bottom, #global-nav-menustate:target ~ #global-nav .global-nav-menuicon-bread-crust-bottom {
-  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96), -webkit-transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  -webkit-transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
+  transition: transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95), -webkit-transform 0.1806s cubic-bezier(0.05, 0.05, 0.1, 0.95);
   -webkit-transform: none;
   transform: none;
 }
@@ -11206,8 +11220,8 @@ html.has-modal-full-viewport #global-nav {
   background-repeat: no-repeat;
   background-image: url("/media/images/global-nav/global-nav-bomberry-black-r.svg");
   background-position: center center;
-  -webkit-transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (max-width: 767px) {
   #global-nav .global-nav-link-bomberry {
@@ -11231,8 +11245,8 @@ html.has-modal-full-viewport #global-nav {
   background-size: cover;
   width: 33px;
   max-width: 33px;
-  -webkit-transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (max-width: 767px) {
   #global-nav .global-nav-link-work {
@@ -11257,8 +11271,8 @@ html.has-modal-full-viewport #global-nav {
   background-size: cover;
   width: 49px;
   max-width: 49px;
-  -webkit-transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (max-width: 767px) {
   #global-nav .global-nav-link-resume {
@@ -11283,8 +11297,8 @@ html.has-modal-full-viewport #global-nav {
   background-size: cover;
   width: 39px;
   max-width: 39px;
-  -webkit-transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 400ms 100ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 400ms 100ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (max-width: 767px) {
   #global-nav .global-nav-link-about {
@@ -11303,8 +11317,8 @@ html.has-modal-full-viewport #global-nav {
 
 nav#global-nav {
   box-shadow: 0px 0px 0px 0px rgba(63, 63, 63, 0);
-  -webkit-transition: all 800ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 800ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 nav#global-nav.box-shadow, nav#global-nav.fx-nav-active {
   box-shadow: 0px 0px 16px 2px rgba(63, 63, 63, 0.3);
@@ -11318,6 +11332,8 @@ html.global-nav-noscroll body {
 #global-nav-placeholder {
   height: 44px;
   max-height: 44px;
+  -webkit-transition: height 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: height 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (min-width: 1601px) {
   #global-nav-placeholder {
@@ -11488,6 +11504,13 @@ html #local-nav.css-sticky {
   #local-nav .local-nav-content {
     padding-left: 44px;
     padding-right: 44px;
+  }
+}
+@media only screen and (min-width: 1601px) {
+  #local-nav .local-nav-content {
+    max-width: 1060px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -11677,10 +11700,10 @@ html #local-nav.css-sticky {
   width: 100%;
   height: 100%;
   z-index: 1;
-  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: transform 600ms cubic-bezier(0.42, 0, 0.58, 1), transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: transform 600ms cubic-bezier(0.42, 0, 0.58, 1), transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.6, 1), transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.6, 1), transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 0.8;
@@ -11693,10 +11716,10 @@ html #local-nav.css-sticky {
   width: 11px;
   height: 1px;
   z-index: 1;
-  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: transform 600ms cubic-bezier(0.42, 0, 0.58, 1), transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
-  transition: transform 600ms cubic-bezier(0.42, 0, 0.58, 1), transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform 600ms cubic-bezier(0.42, 0, 0.58, 1), -webkit-transform-origin 600ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.6, 1), transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.6, 1), transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform-origin 600ms cubic-bezier(0.4, 0, 0.6, 1);
 }
 #local-nav .local-nav-menulocal-chevron::before {
   right: 50%;
@@ -11731,12 +11754,15 @@ html #local-nav.css-sticky {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.38);
-  -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
 }
 @supports (-webkit-backdrop-filter: initial) or (backdrop-filter: initial) {
   #local-nav .local-nav-background {
+    background-color: rgba(255, 255, 255, 0.38);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
   }
@@ -11768,19 +11794,18 @@ html #local-nav.css-sticky {
   }
 }
 #local-nav.local-nav-scrim .local-nav-background {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.92);
 }
 @supports (-webkit-backdrop-filter: initial) or (backdrop-filter: initial) {
   #local-nav.local-nav-scrim .local-nav-background {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.72);
   }
 }
 #local-nav.local-nav-sticking .local-nav-background {
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
@@ -11788,9 +11813,9 @@ html #local-nav.css-sticky {
 }
 @supports (-webkit-backdrop-filter: initial) or (backdrop-filter: initial) {
   #local-nav.local-nav-sticking .local-nav-background {
+    background-color: rgba(255, 255, 255, 0.92);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.72);
   }
 }
 #local-nav.local-nav-scrim .local-nav-background::after, #local-nav.local-nav-sticking .local-nav-background::after {
@@ -11812,8 +11837,8 @@ html #local-nav.css-sticky {
   height: 44px;
   white-space: nowrap;
   color: #000;
-  -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  -webkit-transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-title {
@@ -11836,8 +11861,8 @@ html #local-nav.css-sticky {
   white-space: nowrap;
   opacity: 0.88;
   color: #000;
-  -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-  transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  -webkit-transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
 }
 #local-nav .local-nav-title a:hover {
   text-decoration: none;
@@ -11876,8 +11901,8 @@ html #local-nav.css-sticky {
     width: 100%;
     padding-top: 0;
     max-height: 0;
-    -webkit-transition: max-height 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s, visibility 0s linear 1s;
-    transition: max-height 0.5s cubic-bezier(0.28, 0.11, 0.32, 1) 0.4s, visibility 0s linear 1s;
+    -webkit-transition: max-height 0.5s cubic-bezier(0.3, 0, 0.3, 1) 0.4s, visibility 0s linear 1s;
+    transition: max-height 0.5s cubic-bezier(0.3, 0, 0.3, 1) 0.4s, visibility 0s linear 1s;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11887,10 +11912,10 @@ html #local-nav.css-sticky {
     padding: 22px 0 44px;
     -webkit-transform: translate3d(0, -150px, 0);
     transform: translate3d(0, -150px, 0);
-    -webkit-transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
-    transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
-    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s, opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s;
-    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s, opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+    -webkit-transition: opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
+    transition: opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
+    transition: transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s, opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s;
+    transition: transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s, opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
   }
 }
 #local-nav .local-nav-menu-item {
@@ -11944,7 +11969,7 @@ html #local-nav.css-sticky {
   }
 }
 #local-nav .local-nav-menu-link {
-  color: #000;
+  color: #101010;
   display: inline-block;
   line-height: 22px;
   white-space: nowrap;
@@ -11973,17 +11998,17 @@ html #local-nav.css-sticky {
   }
 }
 #local-nav .local-nav-menu-link:hover {
-  color: #06c;
+  color: #0e84cf;
   opacity: 1;
   text-decoration: none;
 }
 #local-nav .local-nav-menu-link.current {
-  color: #000;
-  opacity: 0.56;
+  color: #202020;
+  opacity: 0.82;
   cursor: default;
 }
 #local-nav .local-nav-menu-link.current:hover {
-  color: #000;
+  color: #101010;
 }
 #local-nav .local-nav-menulocal-anchor {
   display: none;
@@ -12042,7 +12067,7 @@ html #local-nav.css-sticky {
 }
 
 #local-nav-curtain {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(16, 16, 16, 0.38);
   opacity: 0;
   position: fixed;
   top: 0;
@@ -12077,8 +12102,7 @@ html #local-nav.css-sticky {
   }
 }
 #local-nav-menustate:checked ~ #local-nav .local-nav-background, #local-nav-menustate:target ~ #local-nav .local-nav-background {
-  background-color: rgba(255, 255, 255, 0.38);
-  max-height: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.92);
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   -webkit-transition-property: background-color, -webkit-backdrop-filter;
@@ -12202,8 +12226,8 @@ html #local-nav.css-sticky {
 
 nav#local-nav {
   box-shadow: 0px 0px 0px 0px rgba(63, 63, 63, 0);
-  -webkit-transition: all 800ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: all 800ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: all 800ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: all 800ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 nav#local-nav.box-shadow, nav#local-nav.fx-nav-active {
   box-shadow: 0px 0px 16px 2px rgba(63, 63, 63, 0.3);
@@ -12241,6 +12265,20 @@ nav#local-nav.box-shadow, nav#local-nav.fx-nav-active {
   padding: 1em 1.5em;
   list-style: none;
   background-color: #ececec;
+}
+
+[data-module-templat=settings] {
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  left: 45%;
+  right: 45%;
+  height: 10%;
+  width: 10%;
+  background-color: green;
+  border-radius: 50%;
+  z-index: 9000;
 }
 
 .ws-container-1 {
@@ -12781,6 +12819,14 @@ main[data-page-template=resume--list][data-page-type=resume] .job-bullet-item {
   padding-bottom: 0.83em;
 }
 
+.resume-download-link {
+  opacity: 0.38;
+  transition: opacity 100ms cubic-bezier(0.3, 1, 0.3, 1) 0ms;
+}
+.resume-download-link:hover {
+  opacity: 1;
+}
+
 .tools-header-label-optional {
   color: #939597;
 }
@@ -12793,6 +12839,17 @@ main[data-page-template=resume--list][data-page-type=resume] .job-bullet-item {
 }
 [data-module-templat=skills] [data-module-templat=skillsList-item] {
   margin-bottom: 0.62em;
+}
+
+.introduction-section-download {
+  padding-bottom: 2.5rem;
+}
+@media only screen and (min-width: 735px) {
+  .introduction-section-download {
+    align-self: flex-end;
+    padding-bottom: 0;
+    margin-bottom: -20px;
+  }
 }
 
 @media print {
@@ -13141,6 +13198,34 @@ main[data-page-template=resume--list][data-page-type=resume] .job-bullet-item {
     opacity: 1;
   }
 }
+/* SIBLING FADE: fade out siblings around a hovered item */
+.sibling-fade {
+  visibility: hidden;
+}
+
+/* Prevents :hover from triggering in the gaps between items */
+.sibling-fade > * {
+  visibility: visible;
+  opacity: 0.75;
+}
+
+/* Brings the child items back in, even though the parent is `hidden` */
+.sibling-fade > * {
+  transition: opacity 150ms linear 100ms;
+}
+
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+.sibling-fade:hover > * {
+  opacity: 0.5;
+}
+
+/* Fade out all items when the parent is hovered */
+.sibling-fade > *:hover {
+  opacity: 1;
+  transition-delay: 0ms, 0ms;
+}
+
+/* Fade in the currently hovered item */
 svg:hover .icon-svg-compass, svg:hover .icon-svg-spatula, svg:hover .icon-svg-pencil {
   -webkit-filter: drop-shadow(0px 1em 2em rgba(127, 127, 127, 0.64));
   filter: drop-shadow(0px 1em 2em rgba(127, 127, 127, 0.64));
@@ -13220,8 +13305,8 @@ div[id^=collapse-section-] {
 
 .collapsing-delay {
   /* delay BS transition for animated fadeOut to show */
-  -webkit-transition-delay: 5s !important;
-  transition-delay: 5s !important;
+  -webkit-transition-delay: 3600ms !important;
+  transition-delay: 3600ms !important;
 }
 
 /* Parallax Styles */
@@ -13618,8 +13703,19 @@ div[id^=collapse-section-] {
 .progress-bar {
   line-height: 24px;
   background-color: #939597;
+  transition: background-color 400ms cubic-bezier(0.3, 1, 0.3, 1) 0ms;
 }
 .progress-bar-value {
+  color: white;
+}
+
+[data-module-templat=toolsList]:hover .tool {
+  color: #0e84cf;
+}
+[data-module-templat=toolsList]:hover .progress-bar {
+  background-color: #0e84cf;
+}
+[data-module-templat=toolsList]:hover .progress-bar-value {
   color: white;
 }
 
@@ -13916,8 +14012,8 @@ body a:hover, body a:focus {
 body.nav-pad {
   margin-top: 0;
   padding-top: 44px;
-  -webkit-transition: padding-top 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition: padding-top 300ms 1ms cubic-bezier(0.52, 0.16, 0.24, 1);
+  -webkit-transition: padding-top 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  transition: padding-top 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
 @media only screen and (min-width: 1601px) {
   body.nav-pad {
