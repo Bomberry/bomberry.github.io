@@ -89,6 +89,36 @@ $('a[href*="#"]')
 //    scrollToAnchor('anchorName');
 // });
 
+
+
+
+// :: JQuery ::
+// NOTE: Flip Tile when PORTFOLIO URL has HASH (.click() on load with hash)
+$(document).ready(function() {
+  var thisLocation = $(location).attr('pathname')
+  var thisHash = $(location).attr('hash')
+  if (thisLocation === "/portfolio/") {
+    if (thisHash) {
+      $(thisHash).delay(1800).queue(function(){
+        $(thisHash).siblings(".front-face").children('button.icon-wrapper.flip-tile-button.open-tile').click();
+      });
+    };
+  };
+  return false;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// // NOTE: jQuery version and additional data…
 // $(document).ready(function() {
 //
 //   console.log("——————————");
@@ -181,7 +211,10 @@ $('a[href*="#"]')
 //       "\nprotocol = " + $(location).attr('protocol'));
 
 
-//
+
+
+
+
 // function someMethodIThinkMightBeSlow() {
 //     const startTime = performance.now();
 //
@@ -190,9 +223,6 @@ $('a[href*="#"]')
 //     const duration = performance.now() - startTime;
 //     console.log(`someMethodIThinkMightBeSlow took ${duration}ms`);
 // };
-
-
-
 
 
 // // NOTE: OPTIMIZE EXAMPLE
@@ -593,18 +623,19 @@ $(document).ready(function() {
 
 
 
+
+
+
 // :: JQuery ::
 // Navbar "ACTIVE" Button Effect
 // ----------------------------------------------------------------
 // TODO: Check to see that his is being used.
-
-$(document).ready(function() {
-  $(".nav a").on("click", function(){
-     $(".nav").find(".active").removeClass("active");
-     $(this).parent().addClass("active");
-  });
-});
-
+// $(document).ready(function() {
+//   $(".nav a").on("click", function(){
+//      $(".nav").find(".active").removeClass("active");
+//      $(this).parent().addClass("active");
+//   });
+// });
 $(document).ready(function() {
 
   function setActiveLinks() {
@@ -1015,6 +1046,12 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+
+
 
 
 

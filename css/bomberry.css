@@ -166,6 +166,11 @@
   }
 }
 
+#global-nav :focus {
+  outline: 2px solid rgba(14, 132, 207, 0.62);
+  outline-offset: 1px;
+}
+
 .streamlio_images {
   background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-iPhone.png");
   background-image: url("/portfolio/assets/streamlio/Streamlio-Site-Device-iPad.png");
@@ -10084,7 +10089,7 @@ section.section-clients .section-copy .section-headline {
   overflow: hidden;
   border-radius: 1rem;
   height: 50vw;
-  height: calc 100vh-80pxpx;
+  height: calc 100vh-1408pxpx;
   width: 70vw;
   flex: 0 0 auto;
   margin: 1.618rem 1.618rem 1.618rem;
@@ -10671,11 +10676,6 @@ html #global-nav.HAS_LOCAL_NAV ~ .global-nav-blur {
     height: 88px;
     max-height: 88px;
   }
-}
-#global-nav :focus,
-#global-nav * :focus {
-  outline: 4px solid rgba(0, 125, 250, 0.6);
-  outline-offset: 1px;
 }
 html.has-modal-full-viewport #global-nav {
   display: none;
@@ -11317,8 +11317,8 @@ html.has-modal-full-viewport #global-nav {
 
 nav#global-nav {
   box-shadow: 0px 0px 0px 0px rgba(63, 63, 63, 0);
-  -webkit-transition: all 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
-  transition: all 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  -webkit-transition: box-shadow 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms, height 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms, max-height 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms;
+  transition: box-shadow 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms, height 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms, max-height 600ms cubic-bezier(0.3, 0, 0.3, 1) 0ms;
 }
 nav#global-nav.box-shadow, nav#global-nav.fx-nav-active {
   box-shadow: 0px 0px 16px 2px rgba(63, 63, 63, 0.3);
@@ -11332,8 +11332,8 @@ html.global-nav-noscroll body {
 #global-nav-placeholder {
   height: 44px;
   max-height: 44px;
-  -webkit-transition: height 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
-  transition: height 600ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
+  -webkit-transition: height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms, max-height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms;
+  transition: height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms, max-height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms;
 }
 @media only screen and (min-width: 1601px) {
   #global-nav-placeholder {
@@ -11556,22 +11556,21 @@ html #local-nav.css-sticky {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
-  background: #0071e3;
-  color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -0.01em;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  min-width: 23px;
-  padding-left: 11px;
-  padding-right: 11px;
+  min-width: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   border-radius: 12px;
 }
 #local-nav .local-nav-button:hover {
   text-decoration: none;
+  background-color: #939597;
 }
 #local-nav .local-nav-button:focus {
   -webkit-box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
@@ -11589,13 +11588,14 @@ html #local-nav.css-sticky {
   cursor: default;
 }
 #local-nav .local-nav-button:hover {
-  background: #147ce5;
+  color: white;
+  background: #0e84cf;
 }
 #local-nav .local-nav-button:active {
-  background: #0068d1;
+  background: #ececec;
 }
 #local-nav .local-nav-button:disabled, #local-nav .local-nav-button.disabled, #local-nav .local-nav-button.current {
-  background: #0071e3;
+  background: #939597;
   color: #fff;
   opacity: 0.32;
 }
@@ -11614,7 +11614,7 @@ html #local-nav.css-sticky {
 }
 #local-nav .local-nav-actions {
   float: left;
-  padding-top: 18px;
+  padding-top: 13px;
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-actions {
@@ -11644,7 +11644,7 @@ html #local-nav.css-sticky {
 }
 #local-nav .local-nav-action {
   float: left;
-  margin-right: 24px;
+  margin-left: 24px;
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-action {
@@ -11890,7 +11890,7 @@ html #local-nav.css-sticky {
 }
 #local-nav .local-nav-menu-tray {
   float: left;
-  padding-top: 17.25px;
+  padding-top: 15px;
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-menu-tray {
@@ -12009,6 +12009,9 @@ html #local-nav.css-sticky {
 }
 #local-nav .local-nav-menu-link.current:hover {
   color: #101010;
+}
+#local-nav .local-nav-menu-item.active .local-nav-menu-link {
+  color: #0e84cf;
 }
 #local-nav .local-nav-menulocal-anchor {
   display: none;
@@ -13360,6 +13363,14 @@ div[id^=collapse-section-] {
   filter: blur(0px) brightness(0.5);
 }
 
+.fx-hover-shadow {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.16s ease-in-out;
+}
+.fx-hover-shadow:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
 .fx-hover-shadow-outer {
   transition: box-shadow 0.16s ease-in-out;
 }
@@ -13699,6 +13710,8 @@ div[id^=collapse-section-] {
 
 .progress {
   height: 24px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.16s ease-in-out;
 }
 .progress-bar {
   line-height: 24px;
@@ -13711,6 +13724,9 @@ div[id^=collapse-section-] {
 
 [data-module-templat=toolsList]:hover .tool {
   color: #0e84cf;
+}
+[data-module-templat=toolsList]:hover .progress {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 [data-module-templat=toolsList]:hover .progress-bar {
   background-color: #0e84cf;
