@@ -318,7 +318,7 @@ blockquote table {
   border-spacing: 0;
 }
 
-.visuallyhidden {
+#local-nav .local-nav-menulocal-anchor-label, #local-nav .local-nav-action-anchor, #global-nav .global-nav-menuanchor-label, #global-nav .global-nav-link-text, .controls-progress-time .label, .visuallyhidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
@@ -3323,7 +3323,7 @@ table.font-table tfoot td {
 
 .font-bold,
 .text-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .font-light,
@@ -5775,19 +5775,6 @@ aside#toc_aside .closebtn {
   line-height: 1;
   letter-spacing: -0.11px;
   position: relative;
-}
-
-.controls-progress-time .label {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
 }
 
 .controls-elapsed-time, .controls-remaining-time {
@@ -10671,12 +10658,6 @@ html #global-nav.HAS_LOCAL_NAV ~ .global-nav-blur {
   -webkit-transition: height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
   transition: height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1), max-height 300ms 1ms cubic-bezier(0.5, 0.15, 0.25, 1);
 }
-@media only screen and (min-width: 1601px) {
-  #global-nav {
-    height: 88px;
-    max-height: 88px;
-  }
-}
 html.has-modal-full-viewport #global-nav {
   display: none;
 }
@@ -10732,11 +10713,6 @@ html.has-modal-full-viewport #global-nav {
   #global-nav .global-nav-item {
     width: 100%;
     height: 44px;
-  }
-}
-@media only screen and (min-width: 1601px) {
-  #global-nav .global-nav-item {
-    height: 88px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -10818,7 +10794,6 @@ html.has-modal-full-viewport #global-nav {
 }
 @media only screen and (min-width: 1601px) {
   #global-nav .global-nav-link {
-    height: 88px;
     padding: 0 20px;
   }
 }
@@ -10973,15 +10948,6 @@ html.has-modal-full-viewport #global-nav {
 }
 
 #global-nav .global-nav-link-text {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
   top: 50%;
 }
 
@@ -11076,18 +11042,6 @@ html.has-modal-full-viewport #global-nav {
 #global-nav .global-nav-menuanchor-close {
   display: none;
 }
-#global-nav .global-nav-menuanchor-label {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
-}
-
 #global-nav-menustate:checked ~ #global-nav, #global-nav-menustate:target ~ #global-nav {
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
@@ -11230,12 +11184,6 @@ html.has-modal-full-viewport #global-nav {
     background-image: url("/media/images/global-nav/global-nav-bomberry-black-r.svg");
   }
 }
-@media only screen and (min-width: 1601px) {
-  #global-nav .global-nav-link-bomberry {
-    width: 46px;
-    background-size: 46px 88px;
-  }
-}
 #global-nav .global-nav-link-work {
   background-size: 66px 44px;
   background-repeat: no-repeat;
@@ -11253,13 +11201,6 @@ html.has-modal-full-viewport #global-nav {
     background-size: 33px 44px;
     background-repeat: no-repeat;
     background-image: url("/media/images/global-nav/global-nav-work-black-r.svg");
-  }
-}
-@media only screen and (min-width: 1601px) {
-  #global-nav .global-nav-link-work {
-    width: 66px;
-    max-width: 66px;
-    background-size: 66px 88px;
   }
 }
 #global-nav .global-nav-link-resume {
@@ -11281,13 +11222,6 @@ html.has-modal-full-viewport #global-nav {
     background-image: url("/media/images/global-nav/global-nav-resume-black-r.svg");
   }
 }
-@media only screen and (min-width: 1601px) {
-  #global-nav .global-nav-link-resume {
-    width: 98px;
-    max-width: 98px;
-    background-size: 98px 88px;
-  }
-}
 #global-nav .global-nav-link-about {
   background-size: 78px 44px;
   background-repeat: no-repeat;
@@ -11305,13 +11239,6 @@ html.has-modal-full-viewport #global-nav {
     background-size: 39px 44px;
     background-repeat: no-repeat;
     background-image: url("/media/images/global-nav/global-nav-about-black-r.svg");
-  }
-}
-@media only screen and (min-width: 1601px) {
-  #global-nav .global-nav-link-about {
-    width: 78px;
-    max-width: 78px;
-    background-size: 78px 88px;
   }
 }
 
@@ -11334,12 +11261,6 @@ html.global-nav-noscroll body {
   max-height: 44px;
   -webkit-transition: height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms, max-height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms;
   transition: height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms, max-height 600ms cubic-bezier(0.3, 1, 0.3, 1) 100ms;
-}
-@media only screen and (min-width: 1601px) {
-  #global-nav-placeholder {
-    height: 88px;
-    max-height: 88px;
-  }
 }
 
 nav#local-nav + main {
@@ -11661,15 +11582,6 @@ html #local-nav.css-sticky {
   margin-top: -1px;
 }
 #local-nav .local-nav-action-anchor {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
   top: auto;
   left: auto;
 }
@@ -11757,8 +11669,8 @@ html #local-nav.css-sticky {
   background-color: rgba(255, 255, 255, 0.92);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  -webkit-transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: background-color 400ms cubic-bezier(0.3, 0, 0.3, 1);
+  transition: background-color 400ms cubic-bezier(0.3, 0, 0.3, 1);
 }
 @supports (-webkit-backdrop-filter: initial) or (backdrop-filter: initial) {
   #local-nav .local-nav-background {
@@ -11793,6 +11705,12 @@ html #local-nav.css-sticky {
     width: 100%;
   }
 }
+@media only screen and (min-width: 1601px) {
+  #local-nav .local-nav-background::after {
+    margin-left: -530px;
+    width: 1060px;
+  }
+}
 #local-nav.local-nav-scrim .local-nav-background {
   background-color: rgba(255, 255, 255, 0.92);
 }
@@ -11804,8 +11722,8 @@ html #local-nav.css-sticky {
 }
 #local-nav.local-nav-sticking .local-nav-background {
   background-color: rgba(255, 255, 255, 0.92);
-  -webkit-transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: background-color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: background-color 400ms cubic-bezier(0.3, 0, 0.3, 1);
+  transition: background-color 400ms cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
@@ -11837,8 +11755,8 @@ html #local-nav.css-sticky {
   height: 44px;
   white-space: nowrap;
   color: #000;
-  -webkit-transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: color 400ms cubic-bezier(0.3, 0, 0.3, 1);
+  transition: color 400ms cubic-bezier(0.3, 0, 0.3, 1);
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-title {
@@ -11861,8 +11779,8 @@ html #local-nav.css-sticky {
   white-space: nowrap;
   opacity: 0.88;
   color: #000;
-  -webkit-transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
-  transition: color 0.5s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: color 400ms cubic-bezier(0.3, 0, 0.3, 1);
+  transition: color 400ms cubic-bezier(0.3, 0, 0.3, 1);
 }
 #local-nav .local-nav-title a:hover {
   text-decoration: none;
@@ -11901,8 +11819,8 @@ html #local-nav.css-sticky {
     width: 100%;
     padding-top: 0;
     max-height: 0;
-    -webkit-transition: max-height 0.5s cubic-bezier(0.3, 0, 0.3, 1) 0.4s, visibility 0s linear 1s;
-    transition: max-height 0.5s cubic-bezier(0.3, 0, 0.3, 1) 0.4s, visibility 0s linear 1s;
+    -webkit-transition: max-height 400ms cubic-bezier(0.3, 0, 0.3, 1) 400ms, visibility 0ms linear 800ms;
+    transition: max-height 400ms cubic-bezier(0.3, 0, 0.3, 1) 400ms, visibility 0ms linear 800ms;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -11912,10 +11830,10 @@ html #local-nav.css-sticky {
     padding: 22px 0 44px;
     -webkit-transform: translate3d(0, -150px, 0);
     transform: translate3d(0, -150px, 0);
-    -webkit-transition: opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
-    transition: opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
-    transition: transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s, opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s;
-    transition: transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s, opacity 0.7s cubic-bezier(0.3, 1, 0.3, 1) 0.2s, -webkit-transform 1s cubic-bezier(0.3, 1, 0.3, 1) 0.5s;
+    -webkit-transition: opacity 600ms cubic-bezier(0.3, 1, 0.3, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.3, 1, 0.3, 1) 400ms;
+    transition: opacity 600ms cubic-bezier(0.3, 1, 0.3, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.3, 1, 0.3, 1) 400ms;
+    transition: transform 1000ms cubic-bezier(0.3, 1, 0.3, 1) 400ms, opacity 600ms cubic-bezier(0.3, 1, 0.3, 1) 200ms;
+    transition: transform 1000ms cubic-bezier(0.3, 1, 0.3, 1) 400ms, opacity 600ms cubic-bezier(0.3, 1, 0.3, 1) 200ms, -webkit-transform 1000ms cubic-bezier(0.3, 1, 0.3, 1) 400ms;
   }
 }
 #local-nav .local-nav-menu-item {
@@ -11927,6 +11845,8 @@ html #local-nav.css-sticky {
   font-weight: 400;
   letter-spacing: 0.037em;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -webkit-transition: color 1000ms ease 100ms;
+  transition: color 1000ms ease 100ms;
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-menu-item {
@@ -11940,33 +11860,42 @@ html #local-nav.css-sticky {
     border-top: 0;
   }
   #local-nav .local-nav-menu-item:nth-child(1) .local-nav-menu-link {
-    -webkit-transition-delay: 0.07s;
-    transition-delay: 0.07s;
+    -webkit-transition-delay: 75ms;
+    transition-delay: 75ms;
   }
   #local-nav .local-nav-menu-item:nth-child(2) .local-nav-menu-link {
-    -webkit-transition-delay: 0.14s;
-    transition-delay: 0.14s;
+    -webkit-transition-delay: 150ms;
+    transition-delay: 150ms;
   }
   #local-nav .local-nav-menu-item:nth-child(3) .local-nav-menu-link {
-    -webkit-transition-delay: 0.21s;
-    transition-delay: 0.21s;
+    -webkit-transition-delay: 225ms;
+    transition-delay: 225ms;
   }
   #local-nav .local-nav-menu-item:nth-child(4) .local-nav-menu-link {
-    -webkit-transition-delay: 0.28s;
-    transition-delay: 0.28s;
+    -webkit-transition-delay: 300ms;
+    transition-delay: 300ms;
   }
   #local-nav .local-nav-menu-item:nth-child(5) .local-nav-menu-link {
-    -webkit-transition-delay: 0.35s;
-    transition-delay: 0.35s;
+    -webkit-transition-delay: 375ms;
+    transition-delay: 375ms;
   }
   #local-nav .local-nav-menu-item:nth-child(6) .local-nav-menu-link {
-    -webkit-transition-delay: 0.42s;
-    transition-delay: 0.42s;
+    -webkit-transition-delay: 450ms;
+    transition-delay: 450ms;
   }
   #local-nav .local-nav-menu-item:nth-child(7) .local-nav-menu-link {
-    -webkit-transition-delay: 0.49s;
-    transition-delay: 0.49s;
+    -webkit-transition-delay: 525ms;
+    transition-delay: 525ms;
   }
+}
+#local-nav .local-nav-menu-item:hover .local-nav-menu-link, #local-nav .local-nav-menu-item:hover .local-nav-menu-link .local-nav-menu-link-text {
+  color: #0e84cf;
+  opacity: 1;
+  text-decoration: none;
+}
+#local-nav .local-nav-menu-link-text {
+  -webkit-transition: color 200ms cubic-bezier(0.3, 1, 0.3, 1);
+  transition: color 200ms cubic-bezier(0.3, 1, 0.3, 1);
 }
 #local-nav .local-nav-menu-link {
   color: #101010;
@@ -11974,6 +11903,8 @@ html #local-nav.css-sticky {
   line-height: 22px;
   white-space: nowrap;
   opacity: 0.88;
+  -webkit-transition: opacity 1600ms cubic-bezier(0.3, 1, 0.3, 1);
+  transition: opacity 1600ms cubic-bezier(0.3, 1, 0.3, 1);
 }
 @media only screen and (max-width: 767px) {
   #local-nav .local-nav-menu-link {
@@ -11996,11 +11927,6 @@ html #local-nav.css-sticky {
     transition-property: transform, opacity;
     transition-property: transform, opacity, -webkit-transform;
   }
-}
-#local-nav .local-nav-menu-link:hover {
-  color: #0e84cf;
-  opacity: 1;
-  text-decoration: none;
 }
 #local-nav .local-nav-menu-link.current {
   color: #202020;
@@ -12040,18 +11966,6 @@ html #local-nav.css-sticky {
     display: none;
   }
 }
-#local-nav .local-nav-menulocal-anchor-label {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
-  clip-path: inset(0px 0px 99.9% 99.9%);
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
-}
-
 #local-nav-placeholder {
   display: block;
   margin: 0;
@@ -12083,8 +11997,8 @@ html #local-nav.css-sticky {
 }
 @media only screen and (max-width: 767px) {
   #local-nav-curtain {
-    -webkit-transition: opacity 1s ease 0.2s, width 0s ease 1.2s, height 0s ease 1.2s;
-    transition: opacity 1s ease 0.2s, width 0s ease 1.2s, height 0s ease 1.2s;
+    -webkit-transition: opacity 1000ms ease 200ms, width 0ms ease 1.2s, height 0ms ease 1.2s;
+    transition: opacity 1000ms ease 200ms, width 0ms ease 1.2s, height 0ms ease 1.2s;
   }
 }
 
@@ -12092,8 +12006,8 @@ html #local-nav.css-sticky {
   display: none;
 }
 #local-nav-menustate:checked ~ #local-nav-curtain, #local-nav-menustate:target ~ #local-nav-curtain {
-  -webkit-transition: opacity 1s ease 0.1s;
-  transition: opacity 1s ease 0.1s;
+  -webkit-transition: opacity 1000ms ease 100ms;
+  transition: opacity 1000ms ease 100ms;
 }
 @media only screen and (max-width: 767px) {
   #local-nav-menustate:checked ~ #local-nav-curtain, #local-nav-menustate:target ~ #local-nav-curtain {
