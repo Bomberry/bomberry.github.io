@@ -379,33 +379,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// ----------------------------------------------------------------
-// NOTE: Lazy Loader
-// ----------------------------------------------------------------
-
-
-// :: JavaScript ::
-// NOTE: Lazy load image assets
-// FILE: jquery.lazy.js / jquery.lazy.min.js
-// http://jquery.eisbehr.de/lazy
-$(function() {
-    $('.lazy').lazy();
-});
-
-
-
-
-
-
 // // NOTE: Add lazy attribute to images
 // BUG: NOT WORKING… Using Lazy Load Remastered (see js.html for for import)
 // $(document).ready(function() {
@@ -1531,11 +1504,6 @@ $("#page-scroll-hint").hide().delay(7000).fadeIn().delay(3000).fadeOut();
 //     console.log("event " + "module scrolled to bottom" + " @Model.documentFilename @Model.requestorId");
 //   }
 // });
-
-
-
-
-
 
 
 

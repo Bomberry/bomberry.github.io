@@ -14,226 +14,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// ----------------------------------------------------------------
-// NOTE: Some Information for Development
-// ----------------------------------------------------------------
-// // NOTE: jQuery version and additional data…
-// $(document).ready(function() {
-//
-//   console.log("——————————");
-//   console.log('jQuery version: ' + $.fn.jquery)
-//   console.log("——————————");
-//
-//   var aPage = $(location).attr('href');
-//   var aDocument = $(document);
-//   var aWindow = $(window);
-//   var aScreen = aWindow.screen;
-//   var aTile = $("a");
-//   var hash = $(location).attr('hash');
-//
-//   var referrer = document.referrer;
-//   // var referrerMatch = referrer.match(/:\/\/(.[^/]+)/)[1];
-//   console.log("REFERRER: " + referrer);
-//   // console.log("REFERRERmatch: " + referrerMatch);
-//   // if (referrer == "http://") {
-//   //   console.log("I'm coming from the HOME PAGE.");
-//   // }
-//   // if (document.referrer) {
-//   //   console.log("I HAVE a referrer.");
-//   // } else {
-//   //   console.log("I DO NOT HAVE a referrer.");
-//   // };
-//
-//   // console.log("HASH:");
-//   if ($(location).attr('hash')) {
-//     console.log("HASH: " + true);
-//   } else {
-//     console.log("HASH: " + false);
-//   };
-//
-//
-//   if (aPage.length > 0) {
-//     console.log(true);
-//     console.log("host = " + $(location).attr('host') +
-//           "\nhostname = " + $(location).attr('hostname') +
-//           "\npathname = " + $(location).attr('pathname') +
-//           "\nhref = " + $(location).attr('href') +
-//           "\nhash = " + $(location).attr('hash') +
-//           "\nport = " + $(location).attr('port') +
-//           "\nprotocol = " + $(location).attr('protocol'));
-//
-//   } else {
-//     console.log(false);
-//     console.log("host = " + $(location).attr('host') +
-//           "\nhostname = " + $(location).attr('hostname') +
-//           "\npathname = " + $(location).attr('pathname') +
-//           "\nhref = " + $(location).attr('href') +
-//           "\nhash = " + $(location).attr('hash') +
-//           "\nport = " + $(location).attr('port') +
-//           "\nprotocol = " + $(location).attr('protocol'));
-//
-//   };
-//
-//   console.log("—————");
-//   // console.log("DOCUMENT:");
-//   if (aDocument) {
-//     console.log("DOCUMENT: true " + true);
-//   } else {
-//     console.log("DOCUMENT: false " + false);
-//   };
-//   console.log(aDocument.attr('title'));
-//   console.log(aDocument);
-//
-//   console.log("—————");
-//   // console.log("WINDOW:");
-//   if (aWindow) {
-//     console.log("WINDOW: true " + true);
-//   } else {
-//     console.log("WINDOW: false " + false);
-//   };
-//   console.log("innerHeight: " + aWindow.innerHeight());
-//   console.log("innerWidth: " + aWindow.innerWidth());
-//   console.log("outerHeight: " + aWindow.outerHeight());
-//   console.log("outerWidth: " + aWindow.outerWidth());
-//   console.log("pageXOffset: " + aWindow.attr('pageXOffset'));
-//   console.log("pageYOffset: " + aWindow.attr('pageYOffset'));
-//   console.log("name: " + aWindow.attr('name'));
-//   console.log("navigator: " + aWindow.attr('navigator'));
-//   console.log("aWindow: " + aWindow);
-//
-//
-//   console.log("—————");
-//   // console.log("SCREEN:");
-//   if (aScreen) {
-//     console.log("SCREEN: true " + true);
-//   } else {
-//     console.log("SCREEN: false " + false);
-//   };
-//   // console.log(aScreen.attr('title'));
-//   console.log("aScreen: " + aScreen);
-//
-//
-// });
-
-// alert("host = " + $(location).attr('host') +
-//       "\nhostname = " + $(location).attr('hostname') +
-//       "\npathname = " + $(location).attr('pathname') +
-//       "\nhref = " + $(location).attr('href') +
-//       "\nport = " + $(location).attr('port') +
-//       "\nprotocol = " + $(location).attr('protocol'));
-
-
-
-
-
-
-
-
-
-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// ----------------------------------------------------------------
-// NOTE: HELPER FUNCTIONS
-// ----------------------------------------------------------------
-
-
-// :: JavaScript ::
-// NOTE: Query String Helper Function
-// ----------------------------------------------------------------
-// From https://stackoverflow.com/questions/19491336/how-to-get-url-parameter-using-jquery-or-plain-javascript?page=1&tab=votes#tab-top
-// By Sameer Kazi & StackOverflow Community
-// Original post by vikas (https://www.learningjquery.com/2012/06/get-url-parameters-using-jquery)
-// NOTE: Example Usage
-// http://dummy.com/?technology=jquery&blog=jquerybyexample.
-// var tech = getUrlParameter('technology');
-// var blog = getUrlParameter('blog');
-var getUrlParameter = function getUrlParameter(sParam) {
-  var sPageURL = window.location.search.substring(1),
-      sURLVariables = sPageURL.split('&'),
-      sParameterName,
-      i;
-  console.log("sPageURL: " + sPageURL);
-  console.log("sURLVariables: " + sURLVariables);
-  console.log("sParameterName: " + sParameterName);
-  for (i = 0; i < sURLVariables.length; i++) {
-    sParameterName = sURLVariables[i].split('=');
-    if (sParameterName[0] === sParam) {
-      return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-    }
-  }
-  return false;
-};
-
-
-
-
-
-
-
-
-
-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// ----------------------------------------------------------------
-// NOTE: SCROLL EVENTS
-// ----------------------------------------------------------------
-
-
-// :: JavaScript ::
-// NOTE: Show/Update Page-Scroll-Indicator module
-// ----------------------------------------------------------------
-// Abstracted from https://medium.com/@nilayvishwakarma/build-a-scroll-progress-bar-with-vanilla-js-in-10-minutes-or-less-4ba07e2554f3
-// by Nilay Vishwakarma www.nilayvishwakarma.com
-// document.addEventListener("scroll", function() {
-//   var scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
-//   var scrollBottom = (document.documentElement["scrollHeight"] || document.body["scrollHeight"]) - document.documentElement.clientHeight;
-//   scrollPercent = scrollTop / scrollBottom * 100 + "%";
-//   if (document.getElementById("page-scroll-indicator")) {
-//     document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
-//   }
-//   // document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
-//
-//   }, {
-//     passive: true
-//   }
-// );
-document.addEventListener("scroll", function() {
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  var scrollBottom = (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight;
-  scrollPercent = scrollTop / scrollBottom * 100 + "%";
-  if (document.getElementById("page-scroll-indicator")) {
-    document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
-  }
-  // document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
-
-  }, {
-    passive: true
-  }
-);
-
-
-
-
-
-
-
-
-
-
-
-
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
 // NOTE: CLICK EVENTS
@@ -315,19 +95,13 @@ $('a[href*="#"]')
 // :: JQuery ::
 // NOTE: Flip Tile when PORTFOLIO URL has HASH (.click() on load with hash)
 $(document).ready(function() {
-
-  var thisLocation = $(location).attr('pathname');
-  var thisHash = $(location).attr('hash');
-  var showTile = getUrlParameter('flipTile');
-  console.log("showTile: " + showTile);
-
-  if (showTile != 'false') {
-    if (thisLocation === "/portfolio/") {
-      if (thisHash) {
-        $(thisHash).delay(1800).queue(function(){
-          $(thisHash).siblings(".front-face").children('button.icon-wrapper.flip-tile-button.open-tile').click();
-        });
-      };
+  var thisLocation = $(location).attr('pathname')
+  var thisHash = $(location).attr('hash')
+  if (thisLocation === "/portfolio/") {
+    if (thisHash) {
+      $(thisHash).delay(1800).queue(function(){
+        $(thisHash).siblings(".front-face").children('button.icon-wrapper.flip-tile-button.open-tile').click();
+      });
     };
   };
   return false;
@@ -343,6 +117,104 @@ $(document).ready(function() {
 
 
 
+
+// // NOTE: jQuery version and additional data…
+// $(document).ready(function() {
+//
+//   console.log("——————————");
+//   console.log('jQuery version: ' + $.fn.jquery)
+//   console.log("——————————");
+//
+//   var aPage = $(location).attr('href');
+//   var aDocument = $(document);
+//   var aWindow = $(window);
+//   var aScreen = aWindow.screen;
+//   var aTile = $("a");
+//   var hash = $(location).attr('hash');
+//
+//   console.log("HASH:");
+//
+//   if ($(location).attr('hash')) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//
+//   if (aPage.length > 0) {
+//     console.log(true);
+//     console.log("host = " + $(location).attr('host') +
+//           "\nhostname = " + $(location).attr('hostname') +
+//           "\npathname = " + $(location).attr('pathname') +
+//           "\nhref = " + $(location).attr('href') +
+//           "\nhash = " + $(location).attr('hash') +
+//           "\nport = " + $(location).attr('port') +
+//           "\nprotocol = " + $(location).attr('protocol'));
+//
+//   } else {
+//     console.log(false);
+//     console.log("host = " + $(location).attr('host') +
+//           "\nhostname = " + $(location).attr('hostname') +
+//           "\npathname = " + $(location).attr('pathname') +
+//           "\nhref = " + $(location).attr('href') +
+//           "\nhash = " + $(location).attr('hash') +
+//           "\nport = " + $(location).attr('port') +
+//           "\nprotocol = " + $(location).attr('protocol'));
+//
+//   };
+//
+//   console.log("—————");
+//   console.log("DOCUMENT:");
+//   if (aDocument) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   console.log(aDocument.attr('title'));
+//   console.log(aDocument);
+//
+//   console.log("—————");
+//   console.log("WINDOW:");
+//   if (aWindow) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   console.log(aWindow.innerHeight());
+//   console.log(aWindow.innerWidth());
+//   console.log(aWindow.outerHeight());
+//   console.log(aWindow.outerWidth());
+//   console.log(aWindow.attr('pageXOffset'));
+//   console.log(aWindow.attr('pageYOffset'));
+//   console.log(aWindow.attr('name'));
+//   console.log(aWindow.attr('navigator'));
+//   console.log(aWindow);
+//
+//
+//   console.log("—————");
+//   console.log("SCREEN:");
+//   if (aScreen) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+//   // console.log(aScreen.attr('title'));
+//   console.log(aScreen);
+//
+//
+// });
+
+// alert("host = " + $(location).attr('host') +
+//       "\nhostname = " + $(location).attr('hostname') +
+//       "\npathname = " + $(location).attr('pathname') +
+//       "\nhref = " + $(location).attr('href') +
+//       "\nport = " + $(location).attr('port') +
+//       "\nprotocol = " + $(location).attr('protocol'));
+
+
+
+
+
+
 // function someMethodIThinkMightBeSlow() {
 //     const startTime = performance.now();
 //
@@ -351,6 +223,7 @@ $(document).ready(function() {
 //     const duration = performance.now() - startTime;
 //     console.log(`someMethodIThinkMightBeSlow took ${duration}ms`);
 // };
+
 
 // // NOTE: OPTIMIZE EXAMPLE
 // // NOTE: BEFORE
@@ -374,33 +247,6 @@ $(document).ready(function() {
 //     nodesToHide.forEach(node => node.classList.add('hidden'));
 //     nodesToShow.forEach(node => node.classList.remove('hidden'));
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// ----------------------------------------------------------------
-// NOTE: Lazy Loader
-// ----------------------------------------------------------------
-
-
-// :: JavaScript ::
-// NOTE: Lazy load image assets
-// FILE: jquery.lazy.js / jquery.lazy.min.js
-// http://jquery.eisbehr.de/lazy
-$(function() {
-    $('.lazy').lazy();
-});
-
 
 
 
@@ -567,10 +413,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
 // NOTE: POPUPS (MODAL)
@@ -625,38 +467,36 @@ $(document).ready(function() {
 //     });
 //   });
 // });
-// NOTE: Expand an element to Full Screen
-// TODO: Make it work - used in layouts/partials/portfolio-cards-grid.html (line:45)
-// $(document).ready(function() {
-//   // NOTE: remove unused "el" obejct from function
-//   $('[id^="theButton-"]').click(function(el) {
-//     var clickedBtnID = $(this).attr('id'); // or var clickedBtnID = this.id
-//     // console.log('you clicked on button #' + clickedBtnID);
-//     var clickedBtnData = $(this).attr('data-modal-div'); // or var clickedBtnID = this.id
-//     // console.log('you clicked on button #' + clickedBtnData);
-//     // console.log('[id^="' + clickedBtnData + '"]');
-//     $('[id^="' + clickedBtnData + '"]').css({
-//         position: 'fixed',
-//         top: '30vh',
-//         right: '30vh',
-//         bottom: '30vh',
-//         left: '30vh',
-//         zIndex: 999,
-//         'transition-delay': '0ms'
-//     });
-//
-//     $('[id^="' + clickedBtnData + '"]').css({
-//         position: 'fixed',
-//         top: 0,
-//         right: 0,
-//         bottom: 0,
-//         left: 0,
-//         zIndex: 999,
-//         'transition-delay': '0ms'
-//     });
-//
-//   });
-// });
+$(document).ready(function() {
+  // NOTE: remove unused "el" obejct from function
+  $('[id^="theButton-"]').click(function(el) {
+    var clickedBtnID = $(this).attr('id'); // or var clickedBtnID = this.id
+    // console.log('you clicked on button #' + clickedBtnID);
+    var clickedBtnData = $(this).attr('data-modal-div'); // or var clickedBtnID = this.id
+    // console.log('you clicked on button #' + clickedBtnData);
+    // console.log('[id^="' + clickedBtnData + '"]');
+    $('[id^="' + clickedBtnData + '"]').css({
+        position: 'fixed',
+        top: '30vh',
+        right: '30vh',
+        bottom: '30vh',
+        left: '30vh',
+        zIndex: 999,
+        'transition-delay': '0ms'
+    });
+
+    $('[id^="' + clickedBtnData + '"]').css({
+        position: 'fixed',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        zIndex: 999,
+        'transition-delay': '0ms'
+    });
+
+  });
+});
 
 
 
@@ -680,43 +520,42 @@ $(document).ready(function() {
 // Navbar Effect
 function navbarFX() {
 
-  var hasLocalNav = false;
-  console.log(hasLocalNav);
-  if ($('nav#global-nav').hasClass('nav-stacked')) {
-    hasLocalNav = true;
+  var HAS_LOCAL_NAV = false;
+  console.log(HAS_LOCAL_NAV);
+  if ($('nav#global-nav').hasClass('HAS_LOCAL_NAV')) {
+    HAS_LOCAL_NAV = true;
   };
-  console.log(hasLocalNav);
+  console.log(HAS_LOCAL_NAV);
 
   $(window).on('load resize scroll', function() {
-    var scrollTopHeightTall = 132
-    var scrollTopHeightShort = 66
+
     // NOTE: Scrolled beyond 132px
-    if ($(window).scrollTop() >= scrollTopHeightTall) {
+    if ($(window).scrollTop() >= 132) {
       // $('.navbar-fixed-top').removeClass('box-shadow').removeClass('short-nav');
       // $('nav#global-nav').addClass('box-shadow').removeClass('short-nav');
-      if (! hasLocalNav) {
+      if (! HAS_LOCAL_NAV) {
         $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
       }
       console.log('A LOT');
 
-      // $('#local-nav-placeholder').removeClass('local-nav-placeholder-CLASS');
+      $('#local-nav-placeholder').removeClass('my_action_class');
       $('nav#local-nav').addClass('box-shadow').addClass('no-sticking').addClass('local-nav-sticking');
       // $('nav#local-nav').addClass('no-sticking').addClass('local-nav-sticking');
       // $('.local-nav-background').addClass('box-shadow');
 
 
+
     // NOTE: IN the 66px – 131px range
-  } else if ($(window).scrollTop() >= scrollTopHeightShort) {
+    } else if ($(window).scrollTop() >= 66) {
       // $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
       // $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
-      if (! hasLocalNav) {
+      if (! HAS_LOCAL_NAV) {
         $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
       }
       console.log('A LITTLE');
 
-      // $('#local-nav-placeholder').addClass('local-nav-placeholder-CLASS');
+      $('#local-nav-placeholder').addClass('my_action_class');
       $('nav#local-nav').removeClass('no-sticking');
-
 
     // NOTE: Less than 65px scroll
     } else {
@@ -724,7 +563,7 @@ function navbarFX() {
       $('nav#global-nav').removeClass('box-shadow').removeClass('short-nav');
       console.log('NOTHING');
 
-      // $('#local-nav-placeholder').removeClass('local-nav-placeholder-CLASS');
+      $('#local-nav-placeholder').removeClass('my_action_class');
       $('nav#local-nav').removeClass('box-shadow').removeClass('local-nav-sticking').addClass('no-sticking');
       // $('nav#local-nav').removeClass('local-nav-sticking').addClass('no-sticking');
       // $('.local-nav-background').removeClass('box-shadow');
@@ -759,6 +598,8 @@ function navbarFX() {
 // });
 
 
+
+
 // :: JQuery ::
 // NOTE: Scroll to Anchor Tag Offset
 // ----------------------------------------------------------------
@@ -769,12 +610,18 @@ function navbarFX() {
 // });
 
 
+
+
+
+
 // JQuery to call JavaScript functions
 // ----------------------------------------------------------------
 $(document).ready(function() {
   //  window.alert("OK");
   navbarFX();
 });
+
+
 
 
 
@@ -926,9 +773,7 @@ var showModalTileBack = false;
 //     showModalTileBack = false;
 //   };
 // };
-function toggleModalState(){
-  showModalTileBack=$(window).width()<=734
-};
+function toggleModalState(){showModalTileBack=$(window).width()<=734};
 
 $(document).ready(function(){
   toggleModalState();
@@ -940,8 +785,6 @@ $(document).ready(function(){
   });
 
 });
-
-
 
 
 
@@ -960,6 +803,7 @@ $(document).ready(function(){
 // NOTE: Flip selected tile element on a page
 // NOTE: This is being used for (tile-flip) tiles
 
+
 var hasViewportLocation = false;
 var currentScrollTop = $("html").scrollTop();
 
@@ -969,6 +813,7 @@ var watchElement = "";
 
 var isWatching = 0;
 // console.log("initial isWatching: FALSE [" + isWatching + "]");
+
 
 $(document).ready(function() {
 
@@ -1005,117 +850,6 @@ $(document).ready(function() {
     );
   };
 
-  // // NOTE: Is near center viewport helper function
-  // var isNearViewportCenter = function (elem) {
-  //   // console .log(elem);
-  //   var tileOffsetLocation;
-  //   var elementBCR = $(elem)[0].getBoundingClientRect();
-  //   var boxPadding = 210;
-  //   var boxHeight = elementBCR.bottom - elementBCR.top;
-  //   var boxCenter = boxHeight / 2;
-  //   var windowTop = $(window).scrollTop();
-  //   var windowHeight = $(window).height();
-  //   var scrollTopHeight = 0;
-  //   console.log("boxHeight: " + boxHeight);
-  //   console.log("boxCenter: " + boxCenter);
-  //   console.log("elementBCR: " + elementBCR);
-  //   console.log(elementBCR);
-  //   console.log("windowTop: " + windowTop);
-  //   console.log("windowHeight: " + windowHeight);
-  //   console.log("windowHeight calc: " + windowHeight / 2);
-  //   var elementScrollOffset = (windowHeight - boxHeight) / 2;
-  //   console.log("windowHeight-boxHeight calc: " + (windowHeight - boxHeight) / 2);
-  //   console.log("scrollTopHeight: " + scrollTopHeight);
-  //   console.log(scrollTopHeight);
-  //   $(elem).scrollTop(elementScrollOffset);
-  //   console.log("elementScrollOffset: " + elementScrollOffset);
-  //   //THis will scroll top the top fo the page. Sub 0 with variable for center of the card - window height from scroll height
-  //   // $(window).scrollTop(0);
-  //   // $(window).scrollTop(tileOffsetLocation);
-  //   return (
-  //     // elementBCR.top >= 0 &&
-  //     elementBCR.top >= 0 - elementBCR.height + boxPadding &&
-  //     // elementBCR.left >= 0 &&
-  //     // elementBCR.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  //     elementBCR.bottom <= (window.innerHeight + elementBCR.height - boxPadding)
-  //     // elementBCR.right <= (window.innerWidth || document.documentElement.clientWidth)
-  //   );
-  // };
-
-  // NOTE: Is near center viewport helper function
-  // var isNearViewportCenter = function (elem) {
-  //   // console .log(elem);
-  //   var tileOffsetLocation;
-  //   var elementBCR = $(elem)[0].getBoundingClientRect();
-  //   var boxPadding = 210;
-  //   var boxHeight = elementBCR.bottom - elementBCR.top;
-  //   var boxCenter = boxHeight / 2;
-  //   var windowTop = $(window).scrollTop();
-  //   var windowHeight = $(window).height();
-  //   var scrollTopHeight = 0;
-  //   console.log("boxHeight: " + boxHeight);
-  //   console.log("boxCenter: " + boxCenter);
-  //   console.log("elementBCR: " + elementBCR);
-  //   console.log(elementBCR);
-  //   console.log("windowTop: " + windowTop);
-  //   console.log("windowHeight: " + windowHeight);
-  //   console.log("windowHeight calc: " + windowHeight / 2);
-  //   var elementScrollOffset = (windowHeight - boxHeight) / 2;
-  //   console.log("windowHeight-boxHeight calc: " + (windowHeight - boxHeight) / 2);
-  //   console.log("scrollTopHeight: " + scrollTopHeight);
-  //   console.log(scrollTopHeight);
-  //   $(elem).scrollTop(elementScrollOffset);
-  //   console.log("elementScrollOffset: " + elementScrollOffset);
-  //   $('html, body').animate(
-  //     {scrollTop($(elem).offset(elementScrollOffset)));
-  //   //THis will scroll top the top fo the page. Sub 0 with variable for center of the card - window height from scroll height
-  //   // $(window).scrollTop(0);
-  //   // $(window).scrollTop(tileOffsetLocation);
-  //   return (
-  //     // elementBCR.top >= 0 &&
-  //     elementBCR.top >= 0 - elementBCR.height + boxPadding &&
-  //     // elementBCR.left >= 0 &&
-  //     // elementBCR.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  //     elementBCR.bottom <= (window.innerHeight + elementBCR.height - boxPadding)
-  //     // elementBCR.right <= (window.innerWidth || document.documentElement.clientWidth)
-  //   );
-  // };
-
-
-
-
-  // function scrollToCenter(element) {
-  //
-  //   var el = $( element.target.getAttribute('href') );
-  //   var elOffset = el.offset().top;
-  //   var elHeight = el.height();
-  //   var windowHeight = $(window).height();
-  //   var offset;
-  //
-  //   if (elHeight < windowHeight) {
-  //     offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
-  //   }
-  //   else {
-  //     offset = elOffset;
-  //   }
-  //
-  //   $.smoothScroll({ speed: 700 }, offset);
-  //   return false;
-  //
-  // };
-
-
-  // TODO: Reinstitue (line:1183)
-  // FIXME: Clashing with other animations.
-  function centerThis(element) {
-    console.log("CenterThis Was Called!  " + element);
-    $('html,body').animate({
-      scrollTop: $(element).offset().top - ( $(window).height() - $(element).outerHeight(true) ) / 2
-    }, 600);
-  };
-
-
-
   function watcher() {
     if (isWatching) {
       // console .log("** watcher isWatching: TRUE [" + isWatching +"]");
@@ -1150,6 +884,7 @@ $(document).ready(function() {
   };
 
 
+
   var testIsElementInViewport = function(elem) {
     // console .log("watching: " + elem);
     // console .log(elem);
@@ -1163,12 +898,14 @@ $(document).ready(function() {
   };
 
 
+
   // NOTE: BUTTONS
+
 
   // NOTE: Tile Button
   // NOTE: flip card to back
-  // If the @media screen is sm (small) show (full screen) modal
-  // TODO: add a call back or section for expand tile - expand tile to full-screen modal - bomberry.js (line:571)
+  // if the @media screen is sm show modal
+  // TODO: add a call back or section for expand tile (expand tile to full-screen modal)
   $(".open-tile").click(function() {
     if (showModalTileBack) {
       // console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");
@@ -1187,6 +924,7 @@ $(document).ready(function() {
       var thisTileContentCTA = thisTile.find('[class*="back-face"]').first().find('[class*="tile-backface-link-item"]').clone(true);
       theModalContentCTA.html(thisTileContentCTA)
 
+
       // NOTE: Get the current HTML Scroll position
       windowScrollPosition();
 
@@ -1203,28 +941,6 @@ $(document).ready(function() {
     } else {
       // console .log(".open-tile.click showModalTileBack = FALSE [" + showModalTileBack + "]");
       // console .log("*** Showing the Tile Back ***");
-
-
-      // TODO: Move tile into vertical center of window
-      var cardCenter = 0;
-      console.log("cardCenter INIT");
-      var currentWindowCenter = 0;
-      console.log("currentWindowCenter INIT");
-      var thisTile = $(this).closest(".tile");
-      console.log("thisTile = " + thisTile);
-      console.log(thisTile);
-
-      console.log("isInViewport::");
-      console.log(isInViewport(thisTile));
-      // console.log("isNearViewportCenter::");
-      // console.log(isNearViewportCenter(thisTile));
-
-      // if (isNearViewportCenter(thisTile)) {
-      //   console .log("testIsElementInViewport isInViewport TRUE: " + thisTile);
-      //   return;
-      // };
-
-      // centerThis(thisTile);
 
       $(this).closest(".tile").addClass("flip-card transitioning");
       $(".tile-overlay").addClass("fade-in");
@@ -1412,135 +1128,6 @@ $(window).on('load', function() {
   new WOW().init(); // Is this the second instance of WOW?
 });
 // NOTE: Check to see which is being used, and remove the other
-
-
-
-
-
-
-
-
-
-// NOTE: animateCSS function from https://animate.style for Animate.CSS
-// const element = document.querySelector('.trackpad-wrapper');
-// element.classList.add('animate__animated', 'animate__bounceInLeft');
-// const animateCSS = (element, animation, prefix = 'animate__') =>
-//   // We create a Promise and return it
-//   new Promise((resolve, reject) => {
-//     const animationName = `${prefix}${animation}`;
-//     const node = document.querySelector(element);
-//
-//     node.classList.add(`${prefix}animated`, animationName);
-//
-//     // When the animation ends, we clean the classes and resolve the Promise
-//     function handleAnimationEnd(event) {
-//       event.stopPropagation();
-//       node.classList.remove(`${prefix}animated`, animationName);
-//       resolve('Animation ended');
-//     }
-//
-//     node.addEventListener('animationend', handleAnimationEnd, {once: true});
-//   });
-
-// $("#page-scroll-hint .trackpad-wrapper").on("click", function() {
-//   $(this).after("<p>Another paragraph! " + (++count) + "</p>");
-// });
-
-
-// NOTE: Works
-// $(document).ready(function() {
-//   // NOTE: FadeOut on Click
-//   $("#page-scroll-hint .trackpad-wrapper").click(function() {
-//     $("#page-scroll-hint").fadeOut(200);
-//   });
-//
-//   // NOTE: Scroll
-//   // animateCSS('.trackpad-wrapper', 'bounce');
-//   animateCSS('#page-scroll-hint', 'fadeInUp').then((message) => {
-//     $("#page-scroll-hint").css('opacity', 1);
-//
-//
-//     $(window).scroll(function() {
-//         if($(window).scrollTop() > 0) {
-//             // headerOff();
-//             console.log("headerOff");
-//         } else {
-//             // headerOn();
-//             console.log("headerOn");
-//         }
-//     });
-//
-//     setTimeout(function() {
-//       $("#page-scroll-hint").fadeOut(600);
-//     }, 4500);
-//     // animateCSS('.trackpad-wrapper', 'bounceOut');
-//   });
-// });
-
-// NOTE: works:
-$("#page-scroll-hint").hide().delay(7000).fadeIn().delay(3000).fadeOut();
-
-
-// document.addEventListener("scroll", function() {
-//   if ($(window).scrollTop() >= 66) {
-//     // $("#page-scroll-hint .trackpad-wrapper").fadeOut(200);
-//     $("#page-scroll-hint").fadeOut(200);
-//   }
-// });
-// $(window).on("scroll", function(){
-//   if($("body").scrollTop() >= 66){
-//     $(window).off("scroll");
-//     $("#page-scroll-hint").fadeOut(200);
-//   };
-// });
-
-
-// var currentPageHintSelector = document.querySelector("#page-scroll-hint");
-//
-// function HintSelectorCallback(entries, observer) {
-//   // The callback will return an array of entries, even if you are only observing a single item
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       // Show button
-//       // scrollToTopBtn.classList.add('showBtn')
-//       console.log("AAAAA");
-//     } else {
-//       // Hide button
-//       // scrollToTopBtn.classList.remove('showBtn')
-//       console.log("ZZZZZ");
-//     }
-//   });
-// }
-//
-// let hintObserver = new IntersectionObserver(HintSelectorCallback);
-//
-// hintObserver.observe(currentPageHintSelector);
-
-
-
-// $(window).on("scroll", function() {
-//   var docHeight = $(document).height();
-//   var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
-//   if ((docHeight - winScrolled) < 1) {
-//     console.log("event " + "module scrolled to bottom" + " @Model.documentFilename @Model.requestorId");
-//   }
-// });
-
-// $(window).on("scroll", function() {
-//   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-//     console.log("event " + "module scrolled to bottom" + " @Model.documentFilename @Model.requestorId");
-//   }
-// });
-
-
-
-
-
-
-
-
-
-
 
 
 

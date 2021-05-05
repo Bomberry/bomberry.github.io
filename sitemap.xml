@@ -7,17 +7,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/portfolio/_adobe-auguste-archive/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>/portfolio/adobe-auguste-0/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>/portfolio/adobe-auguste/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/portfolio/_adobe-auguste-archive/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -42,11 +42,6 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/portfolio/streamlio/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>/system/language/colors/secondary/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
@@ -57,12 +52,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/portfolio/_adobe-photoshop-archive/</loc>
+    <loc>/portfolio/streamlio/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>/portfolio/adobe-photoshop/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/portfolio/_adobe-photoshop-archive/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -152,7 +152,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/portfolio/</loc>
+    <loc>/kitchen/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -162,12 +162,12 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/projects/</loc>
+    <loc>/portfolio/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/kitchen/</loc>
+    <loc>/projects/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -182,17 +182,17 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/portfolio/craftmaster/</loc>
-    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>/system/language/colors/pantone/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>/system/language/icons/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/portfolio/craftmaster/</loc>
     <lastmod>2018-05-05T23:11:05-07:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
