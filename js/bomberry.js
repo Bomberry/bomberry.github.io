@@ -5,12 +5,19 @@
 // :: MODULES ::
 // NOTE: Import Modules/Classes
 // import { Mortgage } from "lazylazy.js";
+// NOTE: Mortgage is the class, object or function, and lazylazy.js is the (sibling) file
 
 
 
-
+// :: SECTION CODE FORMAT ::
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
+// ----------------------------------------------------------------
+// NOTE: Content Sections Name or Description (modals, scroll, etc…)
+// ----------------------------------------------------------------
+//
 // :: LANGUAGE ::
 // NOTE: Name and comments
+// …script…
 
 
 
@@ -30,11 +37,11 @@
 // NOTE: Some Information for Development
 // ----------------------------------------------------------------
 // // NOTE: jQuery version and additional data…
-// $(document).ready(function() {
-//
-//   console.log("——————————");
-//   console.log('jQuery version: ' + $.fn.jquery)
-//   console.log("——————————");
+$(document).ready(function() {
+
+  console.log("——————————");
+  console.log('jQuery version: ' + $.fn.jquery)
+  console.log("——————————");
 //
 //   var aPage = $(location).attr('href');
 //   var aDocument = $(document);
@@ -125,7 +132,7 @@
 //   console.log("aScreen: " + aScreen);
 //
 //
-// });
+});
 
 // alert("host = " + $(location).attr('host') +
 //       "\nhostname = " + $(location).attr('hostname') +
@@ -151,6 +158,7 @@
 
 // :: JavaScript ::
 // NOTE: Query String Helper Function
+// Global Variable-Function getUrlParameter(sParam)
 // ----------------------------------------------------------------
 // From https://stackoverflow.com/questions/19491336/how-to-get-url-parameter-using-jquery-or-plain-javascript?page=1&tab=votes#tab-top
 // By Sameer Kazi & StackOverflow Community
@@ -212,9 +220,10 @@ var getUrlParameter = function getUrlParameter(sParam) {
 document.addEventListener("scroll", function() {
   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   var scrollBottom = (document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight;
+  var pageScrollIndicator = document.getElementById("page-scroll-indicator");
   scrollPercent = scrollTop / scrollBottom * 100 + "%";
-  if (document.getElementById("page-scroll-indicator")) {
-    document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
+  if (pageScrollIndicator) {
+    pageScrollIndicator.style.setProperty("--scroll", scrollPercent);
   }
   // document.getElementById("page-scroll-indicator").style.setProperty("--scroll", scrollPercent);
 
@@ -222,6 +231,160 @@ document.addEventListener("scroll", function() {
     passive: true
   }
 );
+
+
+// NOTE: Commented out following function/command as the page-scroll-element's
+// background linear-gradient property cannot be animated. Fine other solution for this. (See above)
+
+
+// setInterval(updateDocumentScrollIndicator, 250);
+
+// function updateDocumentScrollIndicator() {
+//   var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+//   var scrollHeight = (document.documentElement.scrollHeight || document.body.scrollHeight);
+//   var clientHeight = document.documentElement.clientHeight;
+//   var scrollBottom = scrollHeight - clientHeight;
+//   var pageScrollIndicator = document.getElementById("page-scroll-indicator");
+//   var scrollPercentage = "";
+//   scrollPercentage = scrollTop / scrollBottom * 100 + "%";
+//   pageScrollIndicator.style.setProperty("--scroll", scrollPercentage);
+//   console.log(pageScrollIndicator);
+//   console.log(scrollPercentage);
+// };
+//
+// $(document).ready(function() {
+//    if (document.getElementById("page-scroll-indicator")) {
+//      setInterval(updateDocumentScrollIndicator, 250);
+//    }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GC MODIF FROM https://codepen.io/onigetoc/pen/zPvLLG
+$("#viewContainer div").on("click", function() {
+  // "active" is cosmetic, and used to identify the active element
+  // consider changing name and remove cosmetics
+  // NOTE: Changed "active" to "centerActive"
+  $("#viewContainer div").removeClass("centerActive");
+  $(this).addClass("centerActive");
+
+  // CALL scrollCenter PLUGIN
+  $("#viewContainer").scrollCenter(".centerActive", 300);
+});
+
+// NOTE: function: ScrollCenter
+jQuery.fn.scrollCenter = function(elem, speed) {
+
+  // this = #timepicker
+  // elem = .centerActive
+
+  var active = jQuery(this).find(elem); // find the active element
+  //var activeWidth = active.width(); // get active width
+  var activeWidth = active.width() / 2; // get active width center
+
+  //alert(activeWidth)
+
+  //var pos = jQuery('#timepicker .active').position().left; //get left position of active li
+  // var pos = jQuery(elem).position().left; //get left position of active li
+  //var pos = jQuery(this).find(elem).position().left; //get left position of active li
+  var pos = active.position().left + activeWidth; //get left position of active li + center position
+  var elpos = jQuery(this).scrollLeft(); // get current scroll position
+  var elW = jQuery(this).width(); //get div width
+  //var divwidth = jQuery(elem).width(); //get div width
+  pos = pos + elpos - elW / 2; // for center position if you want adjust then change this
+
+  jQuery(this).animate({
+    scrollLeft: pos
+  }, speed == undefined ? 1000 : speed);
+  return this;
+};
+
+// // http://podzic.com/wp-content/plugins/podzic/include/js/podzic.js
+// jQuery.fn.scrollCenterORI = function(elem, speed) {
+//   jQuery(this).animate({
+//     scrollLeft: jQuery(this).scrollLeft() - jQuery(this).offset().left + jQuery(elem).offset().left
+//   }, speed == undefined ? 1000 : speed);
+//   return this;
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // NOTE: https://stackoverflow.com/questions/38116241/scrolling-to-and-vertically-centering-an-element-inside-a-div-with-jquery
+// $(document).on('click', '#tile-1-button.tile-button', function(e) {
+//     var el = $( ".collection-tile-1" );
+//     var elOffset = el.offset().top;
+//     var elHeight = el.height();
+//     // var windowHeight = $(".collection-center-element-tiles").height();
+//     var windowHeight = $("body").height();
+//     var screenHeight = $(window).innerHeight();
+//     var navHeightDefault = 44
+//     var globalNavHeight = navHeightDefault;
+//     var localNavHeight = navHeightDefault;
+//     // var combinedNavHeight = globalNavHeight + localNavHeight;
+//     var combinedNavHeight = 66;
+//     var elScreenOffset = screenHeight - elHeight;
+//     var elScreenNavOffset = elScreenOffset - combinedNavHeight;
+//     var offset;
+//
+//     console.log("offset=" + el);
+//     console.log(el);
+//     console.log("elHeight=" + elHeight);
+//     console.log("elOffset=" + elOffset);
+//     console.log("windowHeight=" + windowHeight);
+//     console.log("screenHeight=" + screenHeight);
+//     console.log("combinedNavHeight=" + combinedNavHeight);
+//     console.log("elScreenOffset=" + elScreenOffset);
+//     console.log("elScreenNavOffset=" + elScreenNavOffset);
+//
+//     if (elHeight < windowHeight) {
+//         offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+//         console.log("__YES__");
+//         console.log("offset=" + offset);
+//     }
+//     else {
+//         offset = elOffset;
+//         console.log("__NO__");
+//         console.log("offset=" + offset);
+//     }
+//
+//     $('html, body').animate({
+//         // scrollTop: $(".collection-tile-1").offset().top;
+//         // scrollTop: offset
+//         // console.log("Am I Being Called?");
+//         scrollTop: el.offset().top - (navHeightDefault + elScreenNavOffset)
+//         // console.log("Or Am I Being Called?");
+//     }, 350);
+//
+//
+// });
+
+
+// function scrollToCenter() {
+//
+// };
+
+
+
 
 
 
@@ -690,6 +853,7 @@ function navbarFX() {
   $(window).on('load resize scroll', function() {
     var scrollTopHeightTall = 132
     var scrollTopHeightShort = 66
+
     // NOTE: Scrolled beyond 132px
     if ($(window).scrollTop() >= scrollTopHeightTall) {
       // $('.navbar-fixed-top').removeClass('box-shadow').removeClass('short-nav');
@@ -706,7 +870,7 @@ function navbarFX() {
 
 
     // NOTE: IN the 66px – 131px range
-  } else if ($(window).scrollTop() >= scrollTopHeightShort) {
+    } else if ($(window).scrollTop() >= scrollTopHeightShort) {
       // $('.navbar-fixed-top').addClass('box-shadow').addClass('short-nav');
       // $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
       if (! hasLocalNav) {
@@ -974,7 +1138,7 @@ $(document).ready(function() {
 
   // NOTE: windowScrollPosition
   // Function for Modal FullScreen Content
-  // Moves the HTML view back to the positon before showing the modal
+  // Moves the HTML view back to the positon before showing the modal module
 
   // NOTE: window scroll position helper function
   function windowScrollPosition() {
@@ -1108,9 +1272,24 @@ $(document).ready(function() {
   // TODO: Reinstitue (line:1183)
   // FIXME: Clashing with other animations.
   function centerThis(element) {
-    console.log("CenterThis Was Called!  " + element);
+    console.log("CenterThis Was Called!  ", element);
+    var thisElement = element;
+    // console.log("$(element).offset().top : " + $(element).offset().top);
+    var thisElementOffsetTop = $(element).offset().top;
+    // console.log("$(window).height() : " + $(window).height());
+    var thisWindowHeight = $(window).height();
+    // console.log("$(element).outerHeight(true) : " + $(element).outerHeight(true));
+    var thisElementOuterHeight = $(element).outerHeight(true);
+    // console.log("element.height() : " + element.height());
+    var thisElementHeight = element.height();
+    // console.log("navHeight : " + "44");
+    var thisNavHeight = 44;
+    var centeringOffset = $(element).offset().top - ( $(window).height() - $(element).outerHeight(true) ) / 2;
+    var centeringNewOffset = thisElementOffsetTop - ( thisWindowHeight - thisElementOuterHeight ) / 2 - thisNavHeight / 2;
+    // console.log("offsetting to: " + centeringOffset);
+    // console.log("offsettingNEW to: " + centeringNewOffset);
     $('html,body').animate({
-      scrollTop: $(element).offset().top - ( $(window).height() - $(element).outerHeight(true) ) / 2
+      scrollTop: centeringNewOffset
     }, 600);
   };
 
@@ -1170,7 +1349,13 @@ $(document).ready(function() {
   // If the @media screen is sm (small) show (full screen) modal
   // TODO: add a call back or section for expand tile - expand tile to full-screen modal - bomberry.js (line:571)
   $(".open-tile").click(function() {
+    console.log("———————————————————————————————");
+    console.log(".open-tile click function");
+    console.log("———————————————————————————————");
     if (showModalTileBack) {
+      console.log("––––––––––––––––");
+      console.log("showModalTileBack = true:");
+      console.log("––––––––––––––––");
       // console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");
       // console .log("elementExists = [" + elementExists + "]");
       // console .log("*** Showing the Modal Dialog ***");
@@ -1188,6 +1373,9 @@ $(document).ready(function() {
       theModalContentCTA.html(thisTileContentCTA)
 
       // NOTE: Get the current HTML Scroll position
+      console.log("––––––––––––––––");
+      console.log("windowScrollPosition()");
+      console.log("––––––––––––––––");
       windowScrollPosition();
 
       // // disable Bloom module (animation)
@@ -1201,30 +1389,54 @@ $(document).ready(function() {
 
     // Otherwise, flip the tile
     } else {
+      console.log("––––––––––––––––");
+      console.log("showModalTileBack ELSE");
+      console.log("––––––––––––––––");
       // console .log(".open-tile.click showModalTileBack = FALSE [" + showModalTileBack + "]");
       // console .log("*** Showing the Tile Back ***");
 
 
-      // TODO: Move tile into vertical center of window
-      var cardCenter = 0;
-      console.log("cardCenter INIT");
-      var currentWindowCenter = 0;
-      console.log("currentWindowCenter INIT");
+      // // TODO: Move tile into vertical center of window
+      // var cardCenter = 0;
+      // var cardOffsetTop = 0;
+      // console.log("cardCenter INIT");
+      // var combinedNavHeight = 44; // was 0 setting to 44
+      // var globalNav = 44;
+      // var localNav = 44;
+      // var currentWindowCenter = 0;
+      // console.log("currentWindowCenter INIT");
       var thisTile = $(this).closest(".tile");
-      console.log("thisTile = " + thisTile);
-      console.log(thisTile);
-
-      console.log("isInViewport::");
-      console.log(isInViewport(thisTile));
-      // console.log("isNearViewportCenter::");
-      // console.log(isNearViewportCenter(thisTile));
-
-      // if (isNearViewportCenter(thisTile)) {
-      //   console .log("testIsElementInViewport isInViewport TRUE: " + thisTile);
-      //   return;
-      // };
-
-      // centerThis(thisTile);
+      // var thisTileOffsetTop = thisTile.offset().top;
+      // var thisWindow = $(window)
+      // currentWindowCenter = (thisWindow.innerHeight() - combinedNavHeight) / 2;
+      // var thisDocument = $(document)
+      // console.log("thisTile = ", thisTile);
+      // console.log(thisTile);
+      // console.log("thisTile.innerHeight: " + thisTile.innerHeight());
+      // console.log("thisWindow.innerHeight: " + thisWindow.innerHeight());
+      // console.log("currentWindowCenter: " + currentWindowCenter);
+      // console.log("thisDocument.innerHeight: " + thisDocument.innerHeight());
+      // console.log("thisTile.offset().top: " + thisTile.offset().top);
+      //
+      // if (thisTileOffsetTop) {
+      //   cardOffsetTop = thisTileOffsetTop;
+      // } else {
+      //   cardOffsetTop = thisTileOffsetTop;
+      // }
+      //
+      // console.log("isInViewport::");
+      // console.log(isInViewport(thisTile));
+      // // console.log("isNearViewportCenter::");
+      // // console.log(isNearViewportCenter(thisTile));
+      //
+      // // if (isNearViewportCenter(thisTile)) {
+      // //   console .log("testIsElementInViewport isInViewport TRUE: " + thisTile);
+      // //   return;
+      // // };
+      console.log("––––––––––––––––");
+      console.log("centerThis(thisTile)");
+      console.log("––––––––––––––––");
+      centerThis(thisTile);
 
       $(this).closest(".tile").addClass("flip-card transitioning");
       $(".tile-overlay").addClass("fade-in");
@@ -1380,6 +1592,11 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
 // NOTE: WOW Setup and Init
@@ -1421,116 +1638,6 @@ $(window).on('load', function() {
 
 
 
-// NOTE: animateCSS function from https://animate.style for Animate.CSS
-// const element = document.querySelector('.trackpad-wrapper');
-// element.classList.add('animate__animated', 'animate__bounceInLeft');
-// const animateCSS = (element, animation, prefix = 'animate__') =>
-//   // We create a Promise and return it
-//   new Promise((resolve, reject) => {
-//     const animationName = `${prefix}${animation}`;
-//     const node = document.querySelector(element);
-//
-//     node.classList.add(`${prefix}animated`, animationName);
-//
-//     // When the animation ends, we clean the classes and resolve the Promise
-//     function handleAnimationEnd(event) {
-//       event.stopPropagation();
-//       node.classList.remove(`${prefix}animated`, animationName);
-//       resolve('Animation ended');
-//     }
-//
-//     node.addEventListener('animationend', handleAnimationEnd, {once: true});
-//   });
-
-// $("#page-scroll-hint .trackpad-wrapper").on("click", function() {
-//   $(this).after("<p>Another paragraph! " + (++count) + "</p>");
-// });
-
-
-// NOTE: Works
-// $(document).ready(function() {
-//   // NOTE: FadeOut on Click
-//   $("#page-scroll-hint .trackpad-wrapper").click(function() {
-//     $("#page-scroll-hint").fadeOut(200);
-//   });
-//
-//   // NOTE: Scroll
-//   // animateCSS('.trackpad-wrapper', 'bounce');
-//   animateCSS('#page-scroll-hint', 'fadeInUp').then((message) => {
-//     $("#page-scroll-hint").css('opacity', 1);
-//
-//
-//     $(window).scroll(function() {
-//         if($(window).scrollTop() > 0) {
-//             // headerOff();
-//             console.log("headerOff");
-//         } else {
-//             // headerOn();
-//             console.log("headerOn");
-//         }
-//     });
-//
-//     setTimeout(function() {
-//       $("#page-scroll-hint").fadeOut(600);
-//     }, 4500);
-//     // animateCSS('.trackpad-wrapper', 'bounceOut');
-//   });
-// });
-
-// NOTE: works:
-$("#page-scroll-hint").hide().delay(7000).fadeIn().delay(3000).fadeOut();
-
-
-// document.addEventListener("scroll", function() {
-//   if ($(window).scrollTop() >= 66) {
-//     // $("#page-scroll-hint .trackpad-wrapper").fadeOut(200);
-//     $("#page-scroll-hint").fadeOut(200);
-//   }
-// });
-// $(window).on("scroll", function(){
-//   if($("body").scrollTop() >= 66){
-//     $(window).off("scroll");
-//     $("#page-scroll-hint").fadeOut(200);
-//   };
-// });
-
-
-// var currentPageHintSelector = document.querySelector("#page-scroll-hint");
-//
-// function HintSelectorCallback(entries, observer) {
-//   // The callback will return an array of entries, even if you are only observing a single item
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       // Show button
-//       // scrollToTopBtn.classList.add('showBtn')
-//       console.log("AAAAA");
-//     } else {
-//       // Hide button
-//       // scrollToTopBtn.classList.remove('showBtn')
-//       console.log("ZZZZZ");
-//     }
-//   });
-// }
-//
-// let hintObserver = new IntersectionObserver(HintSelectorCallback);
-//
-// hintObserver.observe(currentPageHintSelector);
-
-
-
-// $(window).on("scroll", function() {
-//   var docHeight = $(document).height();
-//   var winScrolled = $(window).height() + $(window).scrollTop(); // Sum never quite reaches
-//   if ((docHeight - winScrolled) < 1) {
-//     console.log("event " + "module scrolled to bottom" + " @Model.documentFilename @Model.requestorId");
-//   }
-// });
-
-// $(window).on("scroll", function() {
-//   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-//     console.log("event " + "module scrolled to bottom" + " @Model.documentFilename @Model.requestorId");
-//   }
-// });
 
 
 
@@ -1538,15 +1645,65 @@ $("#page-scroll-hint").hide().delay(7000).fadeIn().delay(3000).fadeOut();
 
 
 
-
-
-
-
-
-
-
-
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
+// NOTE: Hint : Scroll Indicator
+// ----------------------------------------------------------------
+// Adds and removes a HINT element to the screen, indicating you con
+// scroll the screen, ten hides and removes the listener and element
+//
+// :: jQuery/JavaScript ::
+// ----------------------------------------------------------------
+$(document).ready(function() {
+
+  var pageScrollHint = $("#page-scroll-hint");
+
+  // if ( pageScrollHint.length ) {
+  //   console.log("I Exist.");
+  // };
+
+  function scrollHintListener() {
+    if (pageScrollHint != null) {
+      if ($(window).scrollTop() >= 66) {
+        pageScrollHint.animate({"opacity": 0});
+        pageScrollHint.delay(1200);
+        // console.log("FADE OUT HINT");
+        setTimeout(function() {
+          pageScrollHint.remove();
+        }, 1200);
+        removeScrollHintListener();
+      };
+    };
+  };
+
+  function removeScrollHintListener() {
+    document.removeEventListener("scroll", scrollHintListener)
+  }
+
+  if ($(window).scrollTop() <= 65) {
+    pageScrollHint.animate({"opacity": 1}, 1200);
+    pageScrollHint.css("opacity", 1);
+    // console.log("FADE IN HINT");
+  };
+
+  document.addEventListener("scroll", scrollHintListener);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------------------------maps
+
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
@@ -1554,3 +1711,20 @@ $("#page-scroll-hint").hide().delay(7000).fadeIn().delay(3000).fadeOut();
 // NOTE: bomberryDev.js TEMP
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
+
+
+
+
+// // NOTE: OUTPUT IDENTIFIERS
+// var n, arg, name;
+// console.log("typeof this = " + typeof this);
+// for (name in this) {
+//     console.log("this[" + name + "]=" + this[name]);
+// }
+// for (n = 0; n < arguments.length; ++n) {
+//     arg = arguments[n];
+//     console.log("typeof arguments[" + n + "] = " + typeof arg);
+//     for (name in arg) {
+//         console.log("arguments[" + n + "][" + name + "]=" + arg[name]);
+//     }
+// }

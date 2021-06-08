@@ -63,7 +63,7 @@ if (!doNotTrack) {
 
 
 
-    <meta name="generator" content="Hugo 0.82.1" />
+    <meta name="generator" content="Hugo 0.83.1" />
 
     
     
@@ -94,7 +94,7 @@ if (!doNotTrack) {
 
 <link href="/css/bootstrap.css" type="text/css" rel="stylesheet" media="screen">
 
-<link href="/css/all.used.css" type="text/css" rel="stylesheet" media="screen">
+
 
 <link href="/css/animate.compat.css" type="text/css" rel="stylesheet" media="screen">
 
@@ -175,21 +175,21 @@ if (!doNotTrack) {
       
       
         <li class="global-nav-item global-nav-item-menu global-nav-work" role="none">
-          <a class='global-nav-link  global-nav-link-work' href='/portfolio/' title='' role='menuitem'>
+          <a class='global-nav-link  global-nav-link-work' href='/portfolio/' title='work' role='menuitem'>
             
             
           </a>
         </li>
       
         <li class="global-nav-item global-nav-item-menu global-nav-resume" role="none">
-          <a class='global-nav-link  global-nav-link-resume' href='/resume/' title='' role='menuitem'>
+          <a class='global-nav-link  global-nav-link-resume' href='/resume/' title='resume' role='menuitem'>
             
             
           </a>
         </li>
       
         <li class="global-nav-item global-nav-item-menu global-nav-about" role="none">
-          <a class='global-nav-link  global-nav-link-about' href='/about/' title='' role='menuitem'>
+          <a class='global-nav-link  global-nav-link-about' href='/about/' title='about' role='menuitem'>
             
             
           </a>
@@ -212,7 +212,7 @@ if (!doNotTrack) {
 
 
 
-<main role="main">
+<main id="main" class="main" role="main" data-page-template="system--list" data-page-type="system">
 
   
 
@@ -759,8 +759,9 @@ if (!doNotTrack) {
 
   
   
+
 <section class="section section-contact" data-module-templat="contact-tiny">
-  <a id="contact" class="section-anchor" aria-label="Contact Information" title="Contact Information"></a>
+  <a id="contact" class="section-anchor" aria-label="Contact Information" title="Contact Information"><span class="visuallyhidden">Contact Information</span></a>
   <div class="section-content contact pad-v-small animated fadeIn wow">
 
     <div class="row section-copy">
@@ -771,18 +772,11 @@ if (!doNotTrack) {
     </div>
     <div class="row section-copy">
       
-      <div class="flex-card xlarge-6 xlarge-offset-0 large-6 large-offset-0 medium-6 medium-offset-0 small-12 small-offset-0">
-        <address>
-          <span class="fa fa-user-circle color-portfolio" aria-hidden="true"></span> <strong>Kevin Bomberry</strong><br>
-          <span class="fa fa-home color-portfolio" aria-hidden="true"></span> Burlingame, CA 94010<br>
-        </address>
-      </div>
-      
-      <div class="flex-card xlarge-5 xlarge-offset-1 large-5 large-offset-1 medium-5 medium-offset-1 small-12 small-offset-0">
-        <address>
-          <span class="fab fa-linkedin color-portfolio" aria-hidden="true"></span> <a class="location-colors" aria-label="LinkedIn profile link" title="LinkedIn profile link" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a><br>
-          <span class="fa fa-envelope color-portfolio" aria-hidden="true"></span> <a class="location-colors" aria-label="Contact mailto link" title="Contact mailto link" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a>
-        </address>
+      <div class="contact-links">
+          <div class="contact-link"><span class="bci-user-circle contact-link-icon" aria-hidden="true"></span><span class="contact-link-text"><strong>Kevin Bomberry</strong></span></div>
+          <div class="contact-link"><span class="bci-home contact-link-icon" aria-hidden="true"></span><span class="contact-link-text">Burlingame, CA 94010</span></div>
+          <div class="contact-link"><span class="bci-linkedin-square contact-link-icon" aria-hidden="true"></span><span class="contact-link-text"><a class="location-colors" aria-label="LinkedIn profile link" title="LinkedIn profile link" href="https://www.linkedin.com/in/bomberry/">LinkedIn</a></span></div>
+          <div class="contact-link"><span class="bci-envelope contact-link-icon" aria-hidden="true"></span><span class="contact-link-text"><a class="location-colors" aria-label="Contact mailto link" title="Contact mailto link" href="mailto:kevin+contact@bomberry.com">kevin+contact@bomberry.com</a></span></div>
       </div>
     </div>
   </div>
@@ -819,12 +813,13 @@ if (!doNotTrack) {
     <div class="row">
       <div class="col-xs-12 col-xs-offset-0">
         
-        <p class="copyrightNotice">Copyright © 2021 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="/kitchen/" aria-label="secret link to Kevin's Kitchen" title="secret link to Kevin's Kitchen"><span class="fa fa-seedling color-green"></span></a></p>
+        <p class="copyrightNotice">Copyright © 2021 Kevin Bomberry. All rights reserved. All other © | ® | ™ rights reserved by original holders respectively. <a class="kitchen-link" href="/kitchen/" aria-label="secret link to Kevin's Kitchen" title="secret link to Kevin's Kitchen"><span class="bci-mortar-pestle secret-icon color-green"></span></a></p>
         
       </div>
     </div>
   </div>
 </footer>
+
 
 
 
@@ -871,7 +866,7 @@ if (!doNotTrack) {
 
 
 
-<script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
+<script src="/js/jquery-3.6.0.min.js" charset="utf-8"></script>
 
 
 <script defer src="/js/bootstrap.min.js" charset="utf-8"></script>

@@ -1,0 +1,229 @@
+User-agent: *
+
+
+Disallow: /resume/macys/
+
+Disallow: /portfolio/adobe-auguste-0/
+
+Disallow: /portfolio/adobe-auguste/
+
+Disallow: /portfolio/_adobe-auguste-archive/
+
+Disallow: /system/language/colors/
+
+Disallow: /system/language/colors/primary/
+
+Disallow: /resume/south-park/
+
+Disallow: /portfolio/_streamlio-archive/
+
+Disallow: /system/language/colors/secondary/
+
+Disallow: /system/language/typography/
+
+Disallow: /portfolio/streamlio/
+
+Disallow: /portfolio/adobe-photoshop/
+
+Disallow: /portfolio/_adobe-photoshop-archive/
+
+Disallow: /portfolio/casestudy/
+
+Disallow: /resume/bomberry-design/
+
+Disallow: /system/
+
+Disallow: /system/components/buttons/
+
+Disallow: /system/language/colors/grays/
+
+Disallow: /system/components/
+
+Disallow: /system/language/
+
+Disallow: /system/patterns/introduction/
+
+Disallow: /system/language/layout/
+
+Disallow: /system/language/media/
+
+Disallow: /system/components/menus/
+
+Disallow: /system/patterns/modal/
+
+Disallow: /system/patterns/
+
+Disallow: /system/playground/
+
+Disallow: /system/playground/media/
+
+Disallow: /categories/
+
+Disallow: /services/
+
+Disallow: /kitchen/
+
+Disallow: /resume/
+
+Disallow: /portfolio/
+
+Disallow: /projects/
+
+Disallow: /about/
+
+Disallow: /portfolio/_craftmaster-archive/
+
+Disallow: /system/language/colors/pantone/
+
+Disallow: /system/language/icons/
+
+Disallow: /portfolio/craftmaster/
+
+Disallow: /resume/panalta/
+
+Disallow: /system/language/interactions/
+
+Disallow: /system/language/interactions/scroll/center-element/
+
+Disallow: /resume/vlab/
+
+Disallow: /system/language/animations/
+
+Disallow: /resume/able-pear/
+
+Disallow: /resume/adobe-materials/
+
+Disallow: /system/language/resources/
+
+Disallow: /resume/doppler/
+
+Disallow: /resume/adobe-photoshop/
+
+Disallow: /resume/craftmaster/
+
+Disallow: /resume/adobe-felix/
+
+Disallow: /resume/adobe-auguste/
+
+Disallow: /resume/adobe-grimoire/
+
+Disallow: /resume/streamlio/
+
+Disallow: /services/3d-design/
+
+Disallow: /tools/atom/
+
+Disallow: /services/branding-identity/
+
+Disallow: /services/branding-guidelines/
+
+Disallow: /tags/case-study/
+
+Disallow: /keywords/case-study/
+
+Disallow: /categories/case-study/
+
+Disallow: /tools/cinema-4d/
+
+Disallow: /languages/css/
+
+Disallow: /services/design-strategy/
+
+Disallow: /tools/dreamweaver/
+
+Disallow: /tools/final-cut/
+
+Disallow: /services/graphic-design/
+
+Disallow: /languages/html/
+
+Disallow: /languages/hugo/
+
+Disallow: /tools/illustrator/
+
+Disallow: /services/interaction-design/
+
+Disallow: /platforms/ios/
+
+Disallow: /tools/iwork/
+
+Disallow: /languages/javascript/
+
+Disallow: /keywords/
+
+Disallow: /languages/
+
+Disallow: /tools/logic/
+
+Disallow: /services/logo-update/
+
+Disallow: /platforms/mac/
+
+Disallow: /platforms/macos/
+
+Disallow: /languages/markdown/
+
+Disallow: /platforms/microsoft-surface/
+
+Disallow: /tools/mindnode/
+
+Disallow: /tools/motion/
+
+Disallow: /tools/photoshop/
+
+Disallow: /platforms/
+
+Disallow: /services/product-design/
+
+Disallow: /services/strategic-planning/
+
+Disallow: /tags/
+
+Disallow: /tools/
+
+Disallow: /services/ui-design/
+
+Disallow: /services/user-research/
+
+Disallow: /services/ux-ui-design/
+
+Disallow: /services/ux-design/
+
+Disallow: /platforms/web-browsers/
+
+Disallow: /services/web-development/
+
+Disallow: /platforms/windows/
+
+Disallow: /tools/xd/
+
+Disallow: /
+
+Disallow: /news/
+
+Disallow: /categories/news/
+
+Disallow: /news/second/
+
+Disallow: /news/first/
+
+Disallow: /post/hugo-table-of-contents/
+
+Disallow: /post/
+
+Disallow: /post/third/
+
+Disallow: /post/second/
+
+Disallow: /post/first/
+
+Disallow: /system/language/animations/grays/
+
+Disallow: /system/language/animations/primary/
+
+Disallow: /system/language/animations/secondary/
+
+Disallow: /services/a/v-production/
+
+Disallow: /casestudies/
+

@@ -207,6 +207,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>/system/language/interactions/scroll/center-element/</loc>
+    <lastmod>2018-05-05T23:11:05-07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>/resume/vlab/</loc>
     <lastmod>2018-05-05T23:10:57-07:00</lastmod>
     <changefreq>daily</changefreq>
