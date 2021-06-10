@@ -39,9 +39,9 @@
 // // NOTE: jQuery version and additional data…
 $(document).ready(function() {
 
-  console.log("——————————");
-  console.log('jQuery version: ' + $.fn.jquery)
-  console.log("——————————");
+  // console.log("——————————");
+  // console.log('jQuery version: ' + $.fn.jquery)
+  // console.log("——————————");
 //
 //   var aPage = $(location).attr('href');
 //   var aDocument = $(document);
@@ -172,9 +172,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
       sURLVariables = sPageURL.split('&'),
       sParameterName,
       i;
-  console.log("sPageURL: " + sPageURL);
-  console.log("sURLVariables: " + sURLVariables);
-  console.log("sParameterName: " + sParameterName);
+  // console.log("sPageURL: " + sPageURL);
+  // console.log("sURLVariables: " + sURLVariables);
+  // console.log("sParameterName: " + sParameterName);
   for (i = 0; i < sURLVariables.length; i++) {
     sParameterName = sURLVariables[i].split('=');
     if (sParameterName[0] === sParam) {
@@ -482,7 +482,7 @@ $(document).ready(function() {
   var thisLocation = $(location).attr('pathname');
   var thisHash = $(location).attr('hash');
   var showTile = getUrlParameter('flipTile');
-  console.log("showTile: " + showTile);
+  // console.log("showTile: " + showTile);
 
   if (showTile != 'false') {
     if (thisLocation === "/portfolio/") {
@@ -844,11 +844,11 @@ $(document).ready(function() {
 function navbarFX() {
 
   var hasLocalNav = false;
-  console.log(hasLocalNav);
+  // console.log(hasLocalNav);
   if ($('nav#global-nav').hasClass('nav-stacked')) {
     hasLocalNav = true;
   };
-  console.log(hasLocalNav);
+  // console.log(hasLocalNav);
 
   $(window).on('load resize scroll', function() {
     var scrollTopHeightTall = 132
@@ -861,7 +861,7 @@ function navbarFX() {
       if (! hasLocalNav) {
         $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
       }
-      console.log('A LOT');
+      // console.log('A LOT');
 
       // $('#local-nav-placeholder').removeClass('local-nav-placeholder-CLASS');
       $('nav#local-nav').addClass('box-shadow').addClass('no-sticking').addClass('local-nav-sticking');
@@ -876,7 +876,7 @@ function navbarFX() {
       if (! hasLocalNav) {
         $('nav#global-nav').addClass('box-shadow').addClass('short-nav');
       }
-      console.log('A LITTLE');
+      // console.log('A LITTLE');
 
       // $('#local-nav-placeholder').addClass('local-nav-placeholder-CLASS');
       $('nav#local-nav').removeClass('no-sticking');
@@ -886,7 +886,7 @@ function navbarFX() {
     } else {
       // $('.navbar-fixed-top').removeClass('box-shadow').removeClass('short-nav');
       $('nav#global-nav').removeClass('box-shadow').removeClass('short-nav');
-      console.log('NOTHING');
+      // console.log('NOTHING');
 
       // $('#local-nav-placeholder').removeClass('local-nav-placeholder-CLASS');
       $('nav#local-nav').removeClass('box-shadow').removeClass('local-nav-sticking').addClass('no-sticking');
@@ -1349,13 +1349,13 @@ $(document).ready(function() {
   // If the @media screen is sm (small) show (full screen) modal
   // TODO: add a call back or section for expand tile - expand tile to full-screen modal - bomberry.js (line:571)
   $(".open-tile").click(function() {
-    console.log("———————————————————————————————");
-    console.log(".open-tile click function");
-    console.log("———————————————————————————————");
+    // console.log("———————————————————————————————");
+    // console.log(".open-tile click function");
+    // console.log("———————————————————————————————");
     if (showModalTileBack) {
-      console.log("––––––––––––––––");
-      console.log("showModalTileBack = true:");
-      console.log("––––––––––––––––");
+      // console.log("––––––––––––––––");
+      // console.log("showModalTileBack = true:");
+      // console.log("––––––––––––––––");
       // console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");
       // console .log("elementExists = [" + elementExists + "]");
       // console .log("*** Showing the Modal Dialog ***");
@@ -1373,9 +1373,9 @@ $(document).ready(function() {
       theModalContentCTA.html(thisTileContentCTA)
 
       // NOTE: Get the current HTML Scroll position
-      console.log("––––––––––––––––");
-      console.log("windowScrollPosition()");
-      console.log("––––––––––––––––");
+      // console.log("––––––––––––––––");
+      // console.log("windowScrollPosition()");
+      // console.log("––––––––––––––––");
       windowScrollPosition();
 
       // // disable Bloom module (animation)
@@ -1389,9 +1389,9 @@ $(document).ready(function() {
 
     // Otherwise, flip the tile
     } else {
-      console.log("––––––––––––––––");
-      console.log("showModalTileBack ELSE");
-      console.log("––––––––––––––––");
+      // console.log("––––––––––––––––");
+      // console.log("showModalTileBack ELSE");
+      // console.log("––––––––––––––––");
       // console .log(".open-tile.click showModalTileBack = FALSE [" + showModalTileBack + "]");
       // console .log("*** Showing the Tile Back ***");
 
@@ -1433,9 +1433,9 @@ $(document).ready(function() {
       // //   console .log("testIsElementInViewport isInViewport TRUE: " + thisTile);
       // //   return;
       // // };
-      console.log("––––––––––––––––");
-      console.log("centerThis(thisTile)");
-      console.log("––––––––––––––––");
+      // console.log("––––––––––––––––");
+      // console.log("centerThis(thisTile)");
+      // console.log("––––––––––––––––");
       centerThis(thisTile);
 
       $(this).closest(".tile").addClass("flip-card transitioning");

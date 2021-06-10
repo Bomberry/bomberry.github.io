@@ -3147,6 +3147,7 @@ body.location-portfolio .card-content {
   src: url("/fonts/BomberryComIcons-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/BomberryComIcons-Regular.otf?") format("opentype"), url("/fonts/BomberryComIcons-Regular.woff2?") format("woff2"), url("/fonts/BomberryComIcons-Regular.woff?") format("woff"), url("/fonts/BomberryComIcons-Regular.ttf?") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 [class^=bci]::before,
 [class^=bci]::after,
@@ -3169,6 +3170,11 @@ body.location-portfolio .card-content {
   font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
+}
+
+.bci-fw {
+  width: 1.28571429em;
+  text-align: center;
 }
 
 .bci-1x {
@@ -3219,11 +3225,6 @@ body.location-portfolio .card-content {
 .bci-44px::before {
   font-size: 44px;
   width: 44px;
-}
-
-.bci-fw {
-  width: 1.28571429em;
-  text-align: center;
 }
 
 [class*=bci-]::before {
