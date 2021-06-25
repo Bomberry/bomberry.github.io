@@ -37,102 +37,102 @@
 // NOTE: Some Information for Development
 // ----------------------------------------------------------------
 // // NOTE: jQuery version and additional data…
-$(document).ready(function() {
-
-  // console.log("——————————");
-  // console.log('jQuery version: ' + $.fn.jquery)
-  // console.log("——————————");
+// $(document).ready(function() {
 //
-//   var aPage = $(location).attr('href');
-//   var aDocument = $(document);
-//   var aWindow = $(window);
-//   var aScreen = aWindow.screen;
-//   var aTile = $("a");
-//   var hash = $(location).attr('hash');
-//
-//   var referrer = document.referrer;
-//   // var referrerMatch = referrer.match(/:\/\/(.[^/]+)/)[1];
-//   console.log("REFERRER: " + referrer);
-//   // console.log("REFERRERmatch: " + referrerMatch);
-//   // if (referrer == "http://") {
-//   //   console.log("I'm coming from the HOME PAGE.");
-//   // }
-//   // if (document.referrer) {
-//   //   console.log("I HAVE a referrer.");
-//   // } else {
-//   //   console.log("I DO NOT HAVE a referrer.");
-//   // };
-//
-//   // console.log("HASH:");
-//   if ($(location).attr('hash')) {
-//     console.log("HASH: " + true);
-//   } else {
-//     console.log("HASH: " + false);
-//   };
-//
-//
-//   if (aPage.length > 0) {
-//     console.log(true);
-//     console.log("host = " + $(location).attr('host') +
-//           "\nhostname = " + $(location).attr('hostname') +
-//           "\npathname = " + $(location).attr('pathname') +
-//           "\nhref = " + $(location).attr('href') +
-//           "\nhash = " + $(location).attr('hash') +
-//           "\nport = " + $(location).attr('port') +
-//           "\nprotocol = " + $(location).attr('protocol'));
-//
-//   } else {
-//     console.log(false);
-//     console.log("host = " + $(location).attr('host') +
-//           "\nhostname = " + $(location).attr('hostname') +
-//           "\npathname = " + $(location).attr('pathname') +
-//           "\nhref = " + $(location).attr('href') +
-//           "\nhash = " + $(location).attr('hash') +
-//           "\nport = " + $(location).attr('port') +
-//           "\nprotocol = " + $(location).attr('protocol'));
-//
-//   };
-//
-//   console.log("—————");
-//   // console.log("DOCUMENT:");
-//   if (aDocument) {
-//     console.log("DOCUMENT: true " + true);
-//   } else {
-//     console.log("DOCUMENT: false " + false);
-//   };
-//   console.log(aDocument.attr('title'));
-//   console.log(aDocument);
-//
-//   console.log("—————");
-//   // console.log("WINDOW:");
-//   if (aWindow) {
-//     console.log("WINDOW: true " + true);
-//   } else {
-//     console.log("WINDOW: false " + false);
-//   };
-//   console.log("innerHeight: " + aWindow.innerHeight());
-//   console.log("innerWidth: " + aWindow.innerWidth());
-//   console.log("outerHeight: " + aWindow.outerHeight());
-//   console.log("outerWidth: " + aWindow.outerWidth());
-//   console.log("pageXOffset: " + aWindow.attr('pageXOffset'));
-//   console.log("pageYOffset: " + aWindow.attr('pageYOffset'));
-//   console.log("name: " + aWindow.attr('name'));
-//   console.log("navigator: " + aWindow.attr('navigator'));
-//   console.log("aWindow: " + aWindow);
-//
-//
-//   console.log("—————");
-//   // console.log("SCREEN:");
-//   if (aScreen) {
-//     console.log("SCREEN: true " + true);
-//   } else {
-//     console.log("SCREEN: false " + false);
-//   };
-//   // console.log(aScreen.attr('title'));
-//   console.log("aScreen: " + aScreen);
-//
-//
-});
+//   // console.log("——————————");
+//   // console.log('jQuery version: ' + $.fn.jquery)
+//   // console.log("——————————");
+// //
+// //   var aPage = $(location).attr('href');
+// //   var aDocument = $(document);
+// //   var aWindow = $(window);
+// //   var aScreen = aWindow.screen;
+// //   var aTile = $("a");
+// //   var hash = $(location).attr('hash');
+// //
+// //   var referrer = document.referrer;
+// //   // var referrerMatch = referrer.match(/:\/\/(.[^/]+)/)[1];
+// //   console.log("REFERRER: " + referrer);
+// //   // console.log("REFERRERmatch: " + referrerMatch);
+// //   // if (referrer == "http://") {
+// //   //   console.log("I'm coming from the HOME PAGE.");
+// //   // }
+// //   // if (document.referrer) {
+// //   //   console.log("I HAVE a referrer.");
+// //   // } else {
+// //   //   console.log("I DO NOT HAVE a referrer.");
+// //   // };
+// //
+// //   // console.log("HASH:");
+// //   if ($(location).attr('hash')) {
+// //     console.log("HASH: " + true);
+// //   } else {
+// //     console.log("HASH: " + false);
+// //   };
+// //
+// //
+// //   if (aPage.length > 0) {
+// //     console.log(true);
+// //     console.log("host = " + $(location).attr('host') +
+// //           "\nhostname = " + $(location).attr('hostname') +
+// //           "\npathname = " + $(location).attr('pathname') +
+// //           "\nhref = " + $(location).attr('href') +
+// //           "\nhash = " + $(location).attr('hash') +
+// //           "\nport = " + $(location).attr('port') +
+// //           "\nprotocol = " + $(location).attr('protocol'));
+// //
+// //   } else {
+// //     console.log(false);
+// //     console.log("host = " + $(location).attr('host') +
+// //           "\nhostname = " + $(location).attr('hostname') +
+// //           "\npathname = " + $(location).attr('pathname') +
+// //           "\nhref = " + $(location).attr('href') +
+// //           "\nhash = " + $(location).attr('hash') +
+// //           "\nport = " + $(location).attr('port') +
+// //           "\nprotocol = " + $(location).attr('protocol'));
+// //
+// //   };
+// //
+// //   console.log("—————");
+// //   // console.log("DOCUMENT:");
+// //   if (aDocument) {
+// //     console.log("DOCUMENT: true " + true);
+// //   } else {
+// //     console.log("DOCUMENT: false " + false);
+// //   };
+// //   console.log(aDocument.attr('title'));
+// //   console.log(aDocument);
+// //
+// //   console.log("—————");
+// //   // console.log("WINDOW:");
+// //   if (aWindow) {
+// //     console.log("WINDOW: true " + true);
+// //   } else {
+// //     console.log("WINDOW: false " + false);
+// //   };
+// //   console.log("innerHeight: " + aWindow.innerHeight());
+// //   console.log("innerWidth: " + aWindow.innerWidth());
+// //   console.log("outerHeight: " + aWindow.outerHeight());
+// //   console.log("outerWidth: " + aWindow.outerWidth());
+// //   console.log("pageXOffset: " + aWindow.attr('pageXOffset'));
+// //   console.log("pageYOffset: " + aWindow.attr('pageYOffset'));
+// //   console.log("name: " + aWindow.attr('name'));
+// //   console.log("navigator: " + aWindow.attr('navigator'));
+// //   console.log("aWindow: " + aWindow);
+// //
+// //
+// //   console.log("—————");
+// //   // console.log("SCREEN:");
+// //   if (aScreen) {
+// //     console.log("SCREEN: true " + true);
+// //   } else {
+// //     console.log("SCREEN: false " + false);
+// //   };
+// //   // console.log(aScreen.attr('title'));
+// //   console.log("aScreen: " + aScreen);
+// //
+// //
+// });
 
 // alert("host = " + $(location).attr('host') +
 //       "\nhostname = " + $(location).attr('hostname') +
@@ -1687,6 +1687,75 @@ $(document).ready(function() {
   };
 
   document.addEventListener("scroll", scrollHintListener);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
+// ----------------------------------------------------------------
+// NOTE: Hint : Callout Hint
+// ----------------------------------------------------------------
+// Adds and removes a HINT element to the screen, indicating you con
+// select (click/tap) the image to show a modal dialog with additional
+// information, then hides and removes the listener and element.
+//
+// :: jQuery/JavaScript ::
+// ----------------------------------------------------------------
+$(document).ready(function() {
+
+  // var pageHint = $("#page-hint");
+  var pageHintContainer = $("#page-hint-container");
+  var hintParent = $(".has-hint-details");
+  // var hintScrollPosition = 0;
+  // if ( pageScrollHint.length ) {
+  //   console.log("I Exist.");
+  // };
+
+  // if (hintParent) {
+  //   console.log("Look! I'm a parent!");
+  // };
+
+  hintParent.on('click', function() {
+    pageHintContainer.remove();
+    // console.log("Remove the hint!");
+  });
+
+  // function pageHintListener() {
+  //   if (pageHint != null) {
+  //     if ($(window).scrollTop() >= 66) {
+  //       pageHint.animate({"opacity": 0});
+  //       pageHint.delay(1200);
+  //       // console.log("FADE OUT HINT");
+  //       setTimeout(function() {
+  //         pageHint.remove();
+  //       }, 1200);
+  //       removePageHintListener();
+  //     };
+  //   };
+  // };
+  //
+  // function removePageHintListener() {
+  //   document.removeEventListener("scroll", pageHintListener)
+  // }
+  //
+  // if ($(window).scrollTop() <= 65) {
+  //   pageHint.animate({"opacity": 1}, 1200);
+  //   pageHint.css("opacity", 1);
+  //   // console.log("FADE IN HINT");
+  // };
+  //
+  // document.addEventListener("scroll", pageHintListener);
 
 });
 
