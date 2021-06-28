@@ -14452,6 +14452,10 @@ div[id^=collapse-section-] {
   background: radial-gradient(ellipse at 50% -100%, rgba(0, 0, 0, 0.6) 0, rgba(255, 255, 255, 0) 70%);
 }
 
+.shadow-content-block, .tile.full .back-face .content-column.scrollable-block, .tile.half .back-face .content-column.scrollable-block {
+  box-shadow: 0 16px 16px -16px rgba(0, 0, 0, 0.38);
+}
+
 .child-img-shadow-hover img {
   filter: drop-shadow(0.25px 2px 4px #d1d2d3);
 }

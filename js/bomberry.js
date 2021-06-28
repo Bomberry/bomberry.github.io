@@ -269,7 +269,9 @@ document.addEventListener("scroll", function() {
 
 
 
-
+// :: jQuery ::
+// NOTE: Center element in view
+// ----------------------------------------------------------------
 // GC MODIF FROM https://codepen.io/onigetoc/pen/zPvLLG
 $("#viewContainer div").on("click", function() {
   // "active" is cosmetic, and used to identify the active element
@@ -561,9 +563,52 @@ $(document).ready(function() {
 // FILE: jquery.lazy.js / jquery.lazy.min.js
 // http://jquery.eisbehr.de/lazy
 $(function() {
-    $('.lazy').lazy();
+  $('.lazy').lazy();
+  // $('.scrollable-block .lazy').lazy({
+  //     appendScroll: $('.scrollable-block')
+  // });
+});
+$(function() {
+  $('.scrollable-block .lazy').lazy({
+      appendScroll: $('.scrollable-block')
+  });
+});
+// var #modal-full
+// FIXME: This isn't working because the element/object' contents isn't populated until "click"
+// NOTE: Until this is fixed, removing .lazy from modal fig/image objects
+$(function() {
+  $('.modal-content .back-face .lazy').lazy({
+      appendScroll: $('.modal-content .back-face')
+  });
 });
 
+
+
+// var modalLazyLoad;
+// $('.modal-open')
+//   .bind('shown.bs.modal', function () {
+//     modalLazyLoad = new LazyLoad({
+//       container: this
+//     });
+//   })
+//   .bind('hidden.bs.modal', function () {
+//     modalLazyLoad.destroy();
+//   });
+
+
+
+
+// var globalLazyLoad = new LazyLoad();
+// var modalLazyLoad;
+// $('.modal')
+//   .bind('shown.bs.modal', function () {
+//     modalLazyLoad = new LazyLoad({
+//       container: this
+//     });
+//   })
+//   .bind('hidden.bs.modal', function () {
+//     modalLazyLoad.destroy();
+//   });
 
 
 
@@ -1386,6 +1431,10 @@ $(document).ready(function() {
       $("html").addClass("has-modal-full-viewport");
       $("main").addClass("has-modal");
       theModal.addClass("modal-open");
+
+      // $("#modal-full .lazy").lazy({
+      //   appendScroll: $('#modal-full .content-column')
+      // });
 
     // Otherwise, flip the tile
     } else {
