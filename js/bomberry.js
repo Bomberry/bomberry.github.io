@@ -569,9 +569,17 @@ $(function() {
   // });
 });
 $(function() {
-  $('.scrollable-block .lazy').lazy({
+  $('.tile .back-face .content-column.scrollable-block .lazy').lazy({
       appendScroll: $('.scrollable-block')
   });
+  console.log("Called 2")
+});
+
+$(function () {
+  $('.modal .content-column .lazy').lazy({
+      appendScroll: $('.modal .content-column')
+  });
+  console.log("Called 3")
 });
 // var #modal-full
 // FIXME: This isn't working because the element/object' contents isn't populated until "click"
@@ -580,6 +588,7 @@ $(function() {
   $('.modal-content .back-face .lazy').lazy({
       appendScroll: $('.modal-content .back-face')
   });
+  console.log("Called 4")
 });
 
 
@@ -1398,12 +1407,12 @@ $(document).ready(function() {
     // console.log(".open-tile click function");
     // console.log("———————————————————————————————");
     if (showModalTileBack) {
-      // console.log("––––––––––––––––");
-      // console.log("showModalTileBack = true:");
-      // console.log("––––––––––––––––");
-      // console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");
-      // console .log("elementExists = [" + elementExists + "]");
-      // console .log("*** Showing the Modal Dialog ***");
+      console.log("––––––––––––––––");
+      console.log("showModalTileBack = true:");
+      console.log("––––––––––––––––");
+      console .log(".open-tile.click showModalTileBack = TRUE [" + showModalTileBack + "]");
+      console .log("elementExists = [" + elementExists + "]");
+      console .log("*** Showing the Modal Dialog ***");
       // Modal dialog
       var theModal = $("#modal-full");
       // Modal Content
@@ -1435,6 +1444,9 @@ $(document).ready(function() {
       // $("#modal-full .lazy").lazy({
       //   appendScroll: $('#modal-full .content-column')
       // });
+      $('#modal-full .modal-content .back-face .lazy').lazy({
+          appendScroll: $('#modal-full .modal-content .back-face ')
+      });
 
     // Otherwise, flip the tile
     } else {
