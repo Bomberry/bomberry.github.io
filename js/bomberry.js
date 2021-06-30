@@ -14,6 +14,8 @@
 // ----------------------------------------------------------------
 // NOTE: Content Sections Name or Description (modals, scroll, etc…)
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
+//
 //
 // :: LANGUAGE ::
 // NOTE: Name and comments
@@ -36,7 +38,8 @@
 // ----------------------------------------------------------------
 // NOTE: Some Information for Development
 // ----------------------------------------------------------------
-// // NOTE: jQuery version and additional data…
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
+// NOTE: jQuery version and additional data…
 // $(document).ready(function() {
 //
 //   // console.log("——————————");
@@ -154,6 +157,7 @@
 // ----------------------------------------------------------------
 // NOTE: HELPER FUNCTIONS
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JavaScript ::
@@ -197,6 +201,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 // ----------------------------------------------------------------
 // NOTE: SCROLL EVENTS
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JavaScript ::
@@ -403,6 +408,7 @@ jQuery.fn.scrollCenter = function(elem, speed) {
 // ----------------------------------------------------------------
 // NOTE: CLICK EVENTS
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JQuery ::
@@ -556,25 +562,28 @@ $(document).ready(function() {
 // ----------------------------------------------------------------
 // NOTE: Lazy Loader
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JavaScript ::
 // NOTE: Lazy load image assets
 // FILE: jquery.lazy.js / jquery.lazy.min.js
 // http://jquery.eisbehr.de/lazy
+// NOTE: Base class - applied to (window)
 $(function() {
   $('.lazy').lazy();
   // $('.scrollable-block .lazy').lazy({
   //     appendScroll: $('.scrollable-block')
   // });
 });
+// NOTE: Tile back-face scroll area
 $(function() {
   $('.tile .back-face .content-column.scrollable-block .lazy').lazy({
       appendScroll: $('.scrollable-block')
   });
   console.log("Called 2")
 });
-
+// NOTE: Modail dialog scroll area
 $(function () {
   $('.modal .content-column .lazy').lazy({
       appendScroll: $('.modal .content-column')
@@ -593,66 +602,6 @@ $(function() {
 
 
 
-// var modalLazyLoad;
-// $('.modal-open')
-//   .bind('shown.bs.modal', function () {
-//     modalLazyLoad = new LazyLoad({
-//       container: this
-//     });
-//   })
-//   .bind('hidden.bs.modal', function () {
-//     modalLazyLoad.destroy();
-//   });
-
-
-
-
-// var globalLazyLoad = new LazyLoad();
-// var modalLazyLoad;
-// $('.modal')
-//   .bind('shown.bs.modal', function () {
-//     modalLazyLoad = new LazyLoad({
-//       container: this
-//     });
-//   })
-//   .bind('hidden.bs.modal', function () {
-//     modalLazyLoad.destroy();
-//   });
-
-
-
-
-
-// // NOTE: Add lazy attribute to images
-// BUG: NOT WORKING… Using Lazy Load Remastered (see js.html for for import)
-// $(document).ready(function() {
-//   $("img").attr("loading", "lazy");
-//   console.log("I did it!");
-// });
-// $(document).ready(function() {
-//   $( "img" ).attr({
-//     loading: "lazy"
-//   });
-//   console.log("No, I did it!");
-// });
-// $(document).ready(function() {
-//   $("img").each(function() {
-//     console.log("I wanna do it!");
-//     $(this).attr("loading", "lazy");
-//     console.log($(this).prop("src"));
-//   });
-// });
-// NOTE: https://github.com/tuupola/lazyload/tree/2.x#basic-usage
-// $(document).ready(function() {
-//   $("figure.lala").lazyload();
-//   // let images = document.querySelectorAll(".lala");
-//   // new LazyLoad(images);
-//   // // new LazyLoad(images, {
-//   // //      root: null,
-//   // //      rootMargin: "0px",
-//   // //      threshold: 0
-//   // // });
-// });
 
 
 
@@ -792,6 +741,7 @@ $(document).ready(function() {
 // ----------------------------------------------------------------
 // NOTE: POPUPS (MODAL)
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JQuery ::
@@ -887,6 +837,7 @@ $(document).ready(function() {
 // ----------------------------------------------------------------
 // NOTE: NAVIGATION
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JavaScript ::
@@ -1128,6 +1079,7 @@ $(document).ready(function() {
 // ----------------------------------------------------------------
 // NOTE: MODAL
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 
@@ -1170,6 +1122,7 @@ $(document).ready(function(){
 // ----------------------------------------------------------------
 // NOTE: FILE FLIP
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JQuery ::
@@ -1619,6 +1572,7 @@ $(document).ready(function() {
 // ----------------------------------------------------------------
 // NOTE: TOC/ASIDE
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JQuery ::
@@ -1662,6 +1616,7 @@ $(document).ready(function(){
 // ----------------------------------------------------------------
 // NOTE: WOW Setup and Init
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 // :: JavaScript ::
@@ -1835,12 +1790,12 @@ $(document).ready(function() {
 // ----------------------------------------------------------------maps
 
 // -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
-// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
 // NOTE: bomberryDev.js TEMP
 // ----------------------------------------------------------------
 // ----------------------------------------------------------------
+// -**--**--**--**-        -**--**--**--**-        -**--**--**--**-
 
 
 

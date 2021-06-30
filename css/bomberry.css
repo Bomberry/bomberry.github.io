@@ -6281,8 +6281,8 @@ aside#toc_aside .closebtn {
 #modal-full .modal-close::after:hover::after {
   opacity: 1;
 }
-#modal-full .content-CTA-wrapper {
-  padding: 2.62rem 0 1.62rem 40px;
+#area-portfolio #modal-full .content-CTA-wrapper {
+  padding: 1.38rem 0 1.38rem 40px;
   display: block;
   position: fixed;
   bottom: 0;
@@ -7081,7 +7081,6 @@ html[dir=rtl] .controls-social-tray {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5rem;
 }
 
 .modal-content {
@@ -7103,6 +7102,10 @@ html[dir=rtl] .controls-social-tray {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.modal .modal-content {
+  padding-bottom: 0;
 }
 
 .modal-content .back-face {
