@@ -581,14 +581,14 @@ $(function() {
   $('.tile .back-face .content-column.scrollable-block .lazy').lazy({
       appendScroll: $('.scrollable-block')
   });
-  console.log("Called 2")
+  console.log("Called 2 - lazy - (.tile .back-face .content-column).scrollable-block")
 });
 // NOTE: Modail dialog scroll area
 $(function () {
   $('.modal .content-column .lazy').lazy({
       appendScroll: $('.modal .content-column')
   });
-  console.log("Called 3")
+  console.log("Called 3 - lazy - .modal .content-column")
 });
 // var #modal-full
 // FIXME: This isn't working because the element/object' contents isn't populated until "click"
@@ -597,7 +597,7 @@ $(function() {
   $('.modal-content .back-face .lazy').lazy({
       appendScroll: $('.modal-content .back-face')
   });
-  console.log("Called 4")
+  console.log("Called 4 - lazy - .modal-content .back-face")
 });
 
 
@@ -750,15 +750,28 @@ $(document).ready(function() {
 // popModal function for showing imaage(s)
 // $(function() {
 $(document).ready(function() {
+
   $('.popModal').on('click', function() {
     // $('#modalDialog').attr('class', $(this).find('img').attr('data-modal-style'));
     // $('#modalDialog').toggleClass($(this).find('img').attr('data-modal-style'));
     $('.modal-content').attr('class', 'modal-content ' + $(this).attr(
       'data-style'));
+    $('.modal-content').removeAttr('data-modal-gallery');
+    $('.modal-content').attr('data-modal-gallery', $(this).parent().attr('data-modal-gallery'));
     $('.imagePreview').attr('src', $(this).find('img').attr('src'));
     // $('.imageCaption').text($(this).find('figcaption').text());
     $('.imageCaption').text($(this).find('img').attr('data-figcaption'));
     $('.imageDetail').html($(this).find('img').attr('data-figdetail')).text();
+
+    $(this).parent().has('data-modal-gallery');
+    $(this).parent().attr('data-modal-gallery');
+
+
+    $('.button-previous').attr('data-previous', $(this).attr('data-previous'));
+    $('.button-previous').attr('title', $(this).attr('data-previous'));
+    $('.button-next').attr('data-next', $(this).attr('data-next'));
+    $('.button-next').attr('title', $(this).attr('data-next'));
+
 
     $('#modal').on('show', function() {
       $(this).find('.modal-body').css({
@@ -769,6 +782,17 @@ $(document).ready(function() {
     });
 
     $('#modalDialog').modal('show');
+  });
+
+  $('#modalDialog .button-previous').on('click', function() {
+    console.log("I WAS CLICKED TO GO BACKWARD!!!");
+    // var previous_item
+
+  });
+
+  $('#modalDialog .button-next').on('click', function() {
+    console.log("I WAS CLICKED TO GO FORWARD!!!");
+    // var next_item =
   });
 });
 
@@ -1507,7 +1531,7 @@ $(document).ready(function() {
   // NOTE: Close the modal-full-viewport dialog
   $("#modal-full .modal-close").click(function() {
     // console .log("#modal-full .modal-close.click showModalTileBack = [" + showModalTileBack + "]");
-    // console .log("*** Closing the Modal Dialog ***");
+    console .log("*** Closing the Modal(-full) Dialog ***");
 
     var theModal = $(".modal.modal-full-viewport.modal-tile-backface");
     theModal.removeClass("modal-open");

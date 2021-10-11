@@ -59,7 +59,7 @@ if (!doNotTrack) {
 
 
 
-    <meta name="generator" content="Hugo 0.84.1" />
+    <meta name="generator" content="Hugo 0.88.1" />
 
     
     
@@ -248,7 +248,7 @@ if (!doNotTrack) {
 <p>Hugo does a great many things for you, with built-in modules, functions, templates, and shortcodes. One of those usefule elements is the {{ .TableOfContents }} module.</p>
 <p>However, the output of the code can be less than beautiful, and a little problematic.</p>
 <p>So, how do you fix the output to do things like, add a class, or onclick attribute? <em>JavaScript</em> or <em>JQuery</em> can easily help with this, and I&rsquo;ll show you how it helped me.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
     <span style="color:#75715e">// $(&#34;#toc_aside&#34;).find(&#34;ul, li&#34;).contents().unwrap();
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#TableOfContents&#34;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;a&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;data-value&#39;</span>, <span style="color:#e6db74">&#39;no-show&#39;</span>);
     <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#TableOfContents&#34;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;a&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;onclick&#39;</span>, <span style="color:#e6db74">&#39;closeAside()&#39;</span>);
