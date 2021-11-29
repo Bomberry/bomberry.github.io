@@ -208,6 +208,10 @@ Disallow: /services/3d-design/
 
 
 
+Disallow: /tools/adobe-xd/
+
+
+
 Disallow: /tools/atom/
 
 
@@ -337,6 +341,10 @@ Disallow: /services/product-design/
 
 
 Disallow: /services/strategic-planning/
+
+
+
+Disallow: /services/system-design/
 
 
 

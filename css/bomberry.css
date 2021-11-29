@@ -2551,6 +2551,13 @@ section.no-pad-mar {
   padding-top: 0;
   padding-bottom: 0;
 }
+header .container-fluid,
+section .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 blockquote.blockquote {
   padding-left: 10%;
@@ -3633,6 +3640,12 @@ span[class*=bci-arrow-left-circle]::before {
   content: "";
 }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
 p {
   line-height: 1.62;
 }
@@ -3779,14 +3792,6 @@ table.font-table tfoot td {
   font-size: 14px;
   line-height: 1.42859;
   letter-spacing: -0.022em;
-}
-
-.strikethrough {
-  text-decoration: line-through;
-}
-
-.no-text-decoration {
-  text-decoration: none;
 }
 
 .typography-body {
@@ -4815,11 +4820,17 @@ table.font-table tfoot td {
   margin-top: 1em;
 }
 
+.td-none,
+.no-text-decoration {
+  text-decoration: none;
+}
+
 .td-o {
   text-decoration: overline;
 }
 
-.td-t {
+.td-t,
+.strikethrough {
   text-decoration: line-through;
 }
 
@@ -4845,6 +4856,15 @@ table.font-table tfoot td {
 
 .td-wavy {
   text-decoration-style: wavy;
+}
+
+.text-em {
+  font-weight: bold;
+}
+
+.text-link {
+  color: #0e84cf;
+  text-decoration: underline;
 }
 
 .text-centered {
@@ -5148,6 +5168,12 @@ h6 {
 }
 .btn-orange-reverse a {
   color: white;
+}
+
+.btn-cta-flat, .section-cta-link .link-container .btn-cta-link {
+  background-color: #0e84cf;
+  color: white;
+  padding: 12px 24px;
 }
 
 .button-group {
@@ -7398,11 +7424,6 @@ section.section.section-contact > .section-content, section.section.section-cta 
 .section-cta-link .link-container p[class*=typography-] {
   color: #202020;
 }
-.section-cta-link .link-container .btn-cta-link {
-  background-color: #0e84cf;
-  color: white;
-  padding: 12px 24px;
-}
 .section-cta-link .link-container .btn-cta-link .icon-copy {
   font-size: 116%;
   letter-spacing: 0.038em;
@@ -7904,6 +7925,7 @@ main[data-page-template=resume--list][data-page-type=casestudy] .card-collection
   background-color: transparent;
   border-bottom-width: 12px;
   width: 100%;
+  cursor: zoom-in;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure img,
 main[data-page-template=resume--list][data-page-type=casestudy] .card-collection .card-gallery-figure img {
@@ -11157,7 +11179,7 @@ section.section-clients .section-copy .section-headline {
   flex: auto;
   width: 100%;
   margin: 0.5%;
-  cursor: help;
+  cursor: zoom-in;
 }
 .flex-gallery > figure:not(:last-of-type) {
   margin-bottom: 7rem;
@@ -13592,6 +13614,7 @@ main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-
   background-color: transparent;
   border-bottom-width: 12px;
   width: 100%;
+  cursor: zoom-in;
 }
 main[data-page-template=portfolio--casestudy-0][data-page-type=casestudy] .card-collection .card-gallery-figure img {
   width: 100%;
@@ -14343,7 +14366,7 @@ div[id^=collapse-section-] {
   }
 }
 .btn.btn-neo,
-.style-neo, .feature-section .feature-card, .feature-section .feature-info .info-links .btn, #modalDialog .modal-content, .section-cta-link .link-container .btn-cta-link, .breadcrumb {
+.style-neo, .feature-section .feature-card, .feature-section .feature-info .info-links .btn, .btn-cta-flat, #modalDialog .modal-content, .section-cta-link .link-container .btn-cta-link, .breadcrumb {
   border-radius: 32px !important;
 }
 

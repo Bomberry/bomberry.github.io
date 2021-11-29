@@ -619,7 +619,7 @@ $(function() {
 //
 // Delegate all clicks on "a" tag (links)
 // Remove target elements using [attribute_to_match$='value_to_match'] in the list on"click" list
-$(document).on("click", "a[href]:not([href^='mailto:'], [href$='javascript:void(0)'], [href$='#'], [data-js-page-fade$='false'])", function () {
+$(document).on("click", "a[href]:not([href^='mailto:'], [href$='javascript:void(0)'], [href$='#'], [target='_blank'], [data-js-page-fade$='false'])", function () {
   // get the href attribute
   var newUrl = $(this).attr("href");
   // veryfy if the new url exists or is a hash
