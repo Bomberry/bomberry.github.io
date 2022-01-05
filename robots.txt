@@ -406,6 +406,18 @@ Disallow: /news/first/
 
 
 
+Disallow: /blog/
+
+
+
+Disallow: /blog/hide-and-show-desktop-icons-on-macos/
+
+
+
+Disallow: /post/hide-and-show-desktop-icons-on-macos/
+
+
+
 Disallow: /post/hugo-table-of-contents/
 
 
